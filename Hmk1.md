@@ -1,4 +1,4 @@
-# Homework Assignment #1 
+## Homework Assignment #1 (due Jan 26)
 
 Please complete the following textbook exercises:  
 
