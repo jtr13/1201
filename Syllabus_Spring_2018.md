@@ -809,4 +809,4 @@ Regression with transformed variables
 </table>
 <p>
 </p>
-<a href="https://github.com/jtr13/1201/edit/master/Syllabus_Spring_2018.md">Tuesday Thursday Schedule</a>
+<a href="Tues_Thurs_Schedule.md">Tuesday Thursday Schedule</a>
