@@ -447,6 +447,6 @@ Regression with transformed variables
 </tbody>
 </table>
 
-* Homework assignment due <br>
+\* Homework assignment due <br>
 Note: The assignment due on 1/23 is a sample homework submission to practice submitting assignments on CourseWorks. It is worth 5 points (rather than the usual 20 points). If you are admitted off the waitlist after 1/20, you will have until 1/29 to complete this assignment without penalty.
 
