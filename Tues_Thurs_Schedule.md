@@ -58,7 +58,7 @@ Descriptive Statistics
 </td>
 <td style="width: 19.5971%;">
 <p>
-Tues 1/23
+Tues 1/23*
 </p>
 <p>
 Thurs 1/25
@@ -83,7 +83,7 @@ Probability
 </td>
 <td style="width: 19.5971%;">
 <p>
-Tues 1/30
+Tues 1/30*
 </p>
 <p>
 Thurs 2/1
@@ -108,7 +108,7 @@ Discrete random variables 
 </td>
 <td style="width: 19.5971%;">
 <p>
-Tues 2/6
+Tues 2/6*
 </p>
 <p>
 Thurs 2/8
@@ -170,7 +170,7 @@ Normal distribution
 Tues 2/20
 </p>
 <p>
-Thurs 2/22
+Thurs 2/22*
 </p>
 </td>
 <td style="width: 55.4029%;">
@@ -201,7 +201,7 @@ Sampling distributions
 Tues 2/27
 </p>
 <p>
-Thurs 3/1
+Thurs 3/1*
 </p>
 </td>
 <td style="width: 55.4029%;">
@@ -232,7 +232,7 @@ Point estimation 
 Tues 3/6
 </p>
 <p>
-Thurs 3/8
+Thurs 3/8*
 </p>
 </td>
 <td style="width: 55.4029%;">
@@ -284,7 +284,7 @@ Spring Break
 Tues 3/20
 </p>
 <p>
-Thurs 3/22
+Thurs 3/22*
 </p>
 </td>
 <td style="width: 55.4029%;">
@@ -362,7 +362,7 @@ Hypothesis testing -- two samples
 </td>
 <td style="width: 19.5971%;">
 <p>
-Tues 4/10
+Tues 4/10*
 </p>
 <p>
 Thurs 4/12
@@ -424,7 +424,7 @@ Covariance, correlation
 </td>
 <td style="width: 19.5971%;">
 <p>
-Tues 4/24
+Tues 4/24*
 </p>
 <p>
 Tues 4/26
@@ -449,6 +449,7 @@ Regression with transformed variables
 </tr>
 </tbody>
 </table>
-<p>
- 
-</p>
+
+* Homework assignment due
+Note: The assignment due on 1/23 is a sample homework submission to practice submitting assignments on CourseWorks. It is worth 5 points (rather than the usual 20 points). If you are admitted off the waitlist after 1/20, you will have until 1/29 to complete this assignment without penalty.
+
