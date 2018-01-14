@@ -506,7 +506,7 @@ Thurs 2/15
 </td>
 <td style="width: 55.4029%;">
 <p>
-<strong>Test \#1</strong>
+<strong>Test #1</strong>
 </p>
 <p>
 Normal distribution
@@ -676,7 +676,7 @@ Thurs 3/29
 </td>
 <td style="width: 55.4029%;">
 <p>
-<strong>Test \#2</strong>
+<strong>Test #2</strong>
 </p>
 <p>
 Hypothesis testing -- proportions
