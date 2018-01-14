@@ -94,11 +94,13 @@ If you submit more than one assignment, the last one will be counted.
 <p>
 Be sure that homework is clearly labeled and legible.
 </p>
+
+<strong>Academic Integrity</strong><br>
 <p>
 You are encouraged to discuss homework <em>strategies</em> with your classmates and work through examples, but you may not discuss particular homework problems, nor copy all or part of solutions from anywhere. In short, the homework you submit must be your own work.
 </p>
 <p>
-<strong>Academic Integrity: </strong>Plagiarism or any other breach of academic integrity will not be tolerated and will result in disciplinary action. For more information please refer to the <em>The Columbia University Undergraduate Guide to Academic Integrity</em>:
+Plagiarism or any other breach of academic integrity will not be tolerated and will result in disciplinary action. For more information please refer to the <em>The Columbia University Undergraduate Guide to Academic Integrity</em>:
 </p>
 <p>
 <http://www.college.columbia.edu/academics/academicintegrity>
