@@ -55,55 +55,10 @@ Grades will be determined as follows:
 </p>
 <table>
 <tbody>
-<tr>
-<td width="300">
-<p>
-Homework + class problem
-</p>
-</td>
-<td width="100">
-<p>
-20%
-</p>
-</td>
-</tr>
-<tr>
-<td width="300">
-<p>
-Test #1
-</p>
-</td>
-<td width="100">
-<p>
-20%
-</p>
-</td>
-</tr>
-<tr>
-<td width="300">
-<p>
-Test #2
-</p>
-</td>
-<td width="100">
-<p>
-20%
-</p>
-</td>
-</tr>
-<tr>
-<td width="300">
-<p>
-Final
-</p>
-</td>
-<td width="100">
-<p>
-40%
-</p>
-</td>
-</tr>
-</tbody>
+<tr><td>Homework + class problem</td><td>20%</td></tr>
+<tr><td>Test #1</td><td>20%</td></tr>
+<tr><td>Test #2</td><td>20%</td></tr>
+<tr><td>Final</td><td>40%</td></tr>
 </table>
 <p>
 <strong><u>Grading scale</u></strong>
@@ -111,135 +66,12 @@ Final
 <p>
 (Do not rely on any averages that appear in CourseWorks since they may not be accurate for various reasons.)
 </p>
-<table>
-<tbody>
-<tr>
-<td width="120">
-<p>
-98 or more
-</p>
-</td>
-<td width="120">
-<p>
-A+
-</p>
-</td>
-<td width="120">
-<p>
-77 - 79
-</p>
-</td>
-<td width="120">
-<p>
-C+
-</p>
-</td>
-</tr>
-<tr>
-<td width="120">
-<p>
-93 - 97
-</p>
-</td>
-<td width="120">
-<p>
-A
-</p>
-</td>
-<td width="120">
-<p>
-73 - 76
-</p>
-</td>
-<td width="120">
-<p>
-C
-</p>
-</td>
-</tr>
-<tr>
-<td width="120">
-<p>
-90 - 92
-</p>
-</td>
-<td width="120">
-<p>
-A-
-</p>
-</td>
-<td width="120">
-<p>
-70 - 72
-</p>
-</td>
-<td width="120">
-<p>
-C-
-</p>
-</td>
-</tr>
-<tr>
-<td width="120">
-<p>
-87 - 89
-</p>
-</td>
-<td width="120">
-<p>
-B+
-</p>
-</td>
-<td width="120">
-<p>
-60 - 69
-</p>
-</td>
-<td width="120">
-<p>
-D
-</p>
-</td>
-</tr>
-<tr>
-<td width="120">
-<p>
-83 - 86
-</p>
-</td>
-<td width="120">
-<p>
-B
-</p>
-</td>
-<td width="120">
-<p>
-59 and below
-</p>
-</td>
-<td width="120">
-<p>
-F
-</p>
-</td>
-</tr>
-<tr>
-<td width="120">
-<p>
-80 - 82
-</p>
-</td>
-<td width="120">
-<p>
-B-
-</p>
-</td>
-<td width="120">
-</td>
-<td width="120">
-</td>
-</tr>
-</tbody>
+<table width = "800">
+<tr><td>97% + </td><td>A+</td><td>  </td><td>80% to 83%</td><td>B-</td></tr>
+<tr><td>93% to 97%</td><td>A</td><td>  </td><td>75% to 80%</td><td>C+</td></tr>
+<tr><td>90% to 93%</td><td>A-</td><td>  </td><td>70% to 75%</td><td>C</td></tr>
+<tr><td>87% to 90%</td><td>B+</td><td>  </td><td>60% to 70%</td><td>C-</td></tr>
+<tr><td>83% to 86%</td><td>B</td><td>  </td><td>below 60%</td><td>F</td></tr>
 </table>
 <p>
 <strong><u>Class policies</u></strong>
@@ -249,9 +81,6 @@ B-
 </p>
 <p>
 Unless otherwise indicated, assignments must be submitted on CourseWorks as a <strong>single pdf file</strong> -- TurboScan or similar phone apps can be used for this purpose.
-</p>
-<p>
-Homework will be due according to the schedule below. If there are any changes they will be announced on CourseWorks.
 </p>
 <p>
 Homework must be submitted by 11:59pm on the due date for full credit. Late assignments will only be accepted for the <strong>first 24 hours after the assignment is due, and 4 points will be deducted. After this 24 hour period, CourseWorks will no longer accept homework submissions</strong>.
