@@ -73,6 +73,9 @@ Grades will be determined as follows:
 <tr><td>87% to 90%</td><td>B+</td><td>  </td><td>60% to 70%</td><td>C-</td></tr>
 <tr><td>83% to 86%</td><td>B</td><td>  </td><td>below 60%</td><td>F</td></tr>
 </table>
+
+Note: The tests and final exam are curved on an individual basis; there is no additional curve in the process of computing final averages. 
+
 <p>
 <strong><u>Class policies</u></strong>
 </p>
@@ -103,9 +106,7 @@ You are encouraged to discuss homework <em>strategies</em> with your classmates
 <p>
 <strong>Tests: </strong>Tests, including the final, are cumulative, with a greater emphasis on newer material. Allowable materials include pens, pencils, erasers, a hand-held calculator, and a single (two-sided) 8.5” x 11” sheet of original handwritten notes for the first two tests, and three sheets (each two-sided) for the final. <em>Make-up tests will only be administered in cases of documented emergencies.</em>
 </p>
-<p>
- 
-</p>
+
 <p>
 <strong><u>Getting help</u></strong>
 </p>
