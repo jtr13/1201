@@ -70,7 +70,7 @@ Homework + class problem
 <tr>
 <td width="86">
 <p>
-Test \#1
+Test #1
 </p>
 </td>
 <td width="198">
@@ -82,7 +82,7 @@ Test \#1
 <tr>
 <td width="86">
 <p>
-Test \#2
+Test #2
 </p>
 </td>
 <td width="198">
