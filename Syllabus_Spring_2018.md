@@ -809,4 +809,4 @@ Regression with transformed variables
 </table>
 <p>
 </p>
-[Tuesday Thursday Schedule](Tues%20Thurs%20Schedule.md)
+[Tuesday Thursday Schedule](Tues_Thurs_Schedule.md)
