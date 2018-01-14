@@ -46,7 +46,7 @@ Descriptive Statistics
 </td>
 <td style="width: 16%;">
 <p>
-1.1-1.4
+1.1 - 1.4
 </p>
 </td>
 </tr>
@@ -71,7 +71,7 @@ Probability
 </td>
 <td style="width: 16%;">
 <p>
-2.1-2.3, 2.5
+2.1 - 2.3, 2.5
 </p>
 </td>
 </tr>
@@ -96,7 +96,7 @@ Discrete random variables 
 </td>
 <td style="width: 16%;">
 <p>
-3.1-3.4
+3.1 - 3.4
 </p>
 </td>
 </tr>
@@ -124,10 +124,10 @@ Continuous random variables
 </td>
 <td style="width: 16%;">
 <p>
-3.5-3.6
+3.5 - 3.6
 </p>
 <p>
-4.1-4.2
+4.1 - 4.2
 </p>
 </td>
 </tr>
@@ -186,7 +186,7 @@ Sampling distributions
 4.4
 </p>
 <p>
-5.3-5.4
+5.3 - 5.4
 </p>
 </td>
 </tr>
@@ -217,7 +217,7 @@ Point estimation 
 5.5
 </p>
 <p>
-6.1-6.2
+6.1 - 6.2
 </p>
 </td>
 </tr>
@@ -245,7 +245,7 @@ Confidence intervals
 <p>
  
 </p>
-7.1-7.3
+7.1 - 7.3
 </td>
 </tr>
 <tr>
@@ -350,7 +350,7 @@ Hypothesis testing -- two samples
 </td>
 <td style="width: 16%;">
 <p>
-9.1-9.4
+9.1 - 9.4
 </p>
 </td>
 </tr>
@@ -440,10 +440,10 @@ Regression with transformed variables
 </td>
 <td style="width: 16%;">
 <p>
-12.1-12.2
+12.1 - 12.2
 </p>
 <p>
-13.1, 13.2
+13.1 - 13.2
 </p>
 </td>
 </tr>
