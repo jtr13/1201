@@ -53,51 +53,51 @@ Devore, Jay L. 2016. <em>Probability and Statistics for Engineering and the Scie
 <p>
 Grades will be determined as follows:
 </p>
-<table width="284">
+<table>
 <tbody>
 <tr>
-<td width="86">
+<td width="300">
 <p>
 Homework + class problem
 </p>
 </td>
-<td width="198">
+<td width="100">
 <p>
 20%
 </p>
 </td>
 </tr>
 <tr>
-<td width="86">
+<td width="300">
 <p>
 Test #1
 </p>
 </td>
-<td width="198">
+<td width="100">
 <p>
 20%
 </p>
 </td>
 </tr>
 <tr>
-<td width="86">
+<td width="300">
 <p>
 Test #2
 </p>
 </td>
-<td width="198">
+<td width="100">
 <p>
 20%
 </p>
 </td>
 </tr>
 <tr>
-<td width="86">
+<td width="300">
 <p>
 Final
 </p>
 </td>
-<td width="198">
+<td width="100">
 <p>
 40%
 </p>
@@ -352,3 +352,4 @@ Linear regression (12.1-12.2, 13.1)
 </ol>
 <p>
  
+<a href = "Tues_Thurs_Schedule.md">Tuesday Thursday Schedule</a>
