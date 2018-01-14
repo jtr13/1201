@@ -86,7 +86,7 @@ Note: The tests and final exam are curved on an individual basis; there is no ad
 Unless otherwise indicated, assignments must be submitted on CourseWorks as a <strong>single pdf file</strong> -- TurboScan or similar phone apps can be used for this purpose.
 </p>
 <p>
-Homework must be submitted by 11:59pm on the due date for full credit. Late assignments will only be accepted for the <strong>first 24 hours after the assignment is due, and 4 points will be deducted. After this 24 hour period, CourseWorks will no longer accept homework submissions</strong>.
+<strong>Homework must be submitted by 11:59pm on the due date for full credit. Late assignments will only be accepted for the first 24 hours after the assignment is due. You are entitled to one late assignment, submitted within 24 hours of the due date, without penalty. After that, 4 points will be deducted for late assignments. After the 24 hour period, CourseWorks will no longer accept homework submissions</strong>. No exceptions will be made unless I receive a note from an academic dean detailing unusual circumstances.
 </p>
 <p>
 If you submit more than one assignment, the last one will be counted.
