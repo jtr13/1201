@@ -8,10 +8,13 @@ STAT UN1201 Syllabus, Spring 2018
 <strong>Calculus-Based Introduction to Statistics, Spring 2018</strong>
 </p>
 <p>
-<strong>Statistics UN1201 section 003</strong>
+<strong>Statistics UN1201</strong>
 </p>
 <p>
-<strong>Mathematics 207, T/Th 8:40-9:55am</strong>
+<strong>Monday / Wednesday class: Hamilton 602, 8:40-9:55am</strong>
+</p>
+<p>
+<strong>Tuesday / Thursday class: Mathematics 207, 8:40-9:55am</strong>
 </p>
 <p>
 <strong>Instructor: Joyce Robbins</strong>
