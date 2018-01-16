@@ -9,3 +9,5 @@
 
 [Getting started with R](R/GettingStartedwithR.md)
 (Ungraded, recommended completion date: Tues 1/23)
+
+[Lecture Slides Tues 1/16/18](Lectures/Lecture20180116Tues.pdf)
