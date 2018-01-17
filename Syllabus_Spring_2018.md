@@ -119,15 +119,11 @@ Plagiarism or any other breach of academic integrity will not be tolerated and w
 There are numerous opportunities to get assistance with the class material:
 </p>
 <ol>
-<li>
-Ask questions during class.
-</li>
-<li>
-Ask questions after class (I will stay after every class if students have questions.)
-</li>
-<li>
-Attend a Statistics Help Room session where tutors answer questions for students in introductory level statistics classes. Hours and locations are posted here: <a href="http://stat.columbia.edu/help-room/">http://stat.columbia.edu/help-room/</a>
-</li>
+<li>Ask questions during class.</li>
+<li>Email me questions after class and I will answer during the next lecture.</li>
+<li>Ask questions after class (I will stay after every class if students have questions.)</li>
+<li>Attend a Statistics Help Room session where tutors answer questions for students in introductory level statistics classes. Hours and locations are posted here:<span>&nbsp;</span><a href="http://stat.columbia.edu/help-room/">http://stat.columbia.edu/help-room/</a></li>
+<li>Attend TA office hours: time and location TBD (check back here)</li>
 </ol>
 <p>
  
