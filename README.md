@@ -11,3 +11,5 @@
 (Ungraded, recommended completion date: Tues 1/23)
 
 [Lecture Slides Tues 1/16/18](Lectures/Lecture20180116Tues.pdf)
+
+[Lecture Slides Wed 1/17/18](Lectures/Lecture20180117Wed.pdf)
