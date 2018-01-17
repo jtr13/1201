@@ -79,7 +79,7 @@ Mon Wed Schedule
 </tr>
 <tr>
 <td style="width: 19.5971%;">
-<p>Wed&nbsp;2/21</p>
+<p>Wed&nbsp;2/21*</p>
 <p><span>Mon</span> 2/26</p>
 </td>
 <td style="width: 55.4029%;">
@@ -93,7 +93,7 @@ Mon Wed Schedule
 </tr>
 <tr>
 <td style="width: 19.5971%;">
-<p><span>Wed</span> 2/28</p>
+<p><span>Wed</span> 2/28*</p>
 <p><span>Mon</span> 3/5</p>
 </td>
 <td style="width: 55.4029%;">
@@ -107,7 +107,7 @@ Mon Wed Schedule
 </tr>
 <tr>
 <td style="width: 19.5971%;">
-<p><span>Wed</span> 3/7</p>
+<p><span>Wed</span> 3/7*</p>
 </td>
 <td style="width: 55.4029%;">Confidence intervals</td>
 <td style="width: 16%;">
@@ -130,7 +130,7 @@ Mon Wed Schedule
 <td style="width: 19.5971%;">
 <p><span>Mon 3/19</span></p>
 <p><span>Wed</span> 3/21</p>
-<p><span>Mon</span> 3/26</p>
+<p><span>Mon</span> 3/26*</p>
 </td>
 <td style="width: 55.4029%;">
 <p>Confidence intervals</p>
@@ -169,7 +169,7 @@ Mon Wed Schedule
 </tr>
 <tr>
 <td style="width: 19.5971%;">
-<p><span>Wed</span> 4/11</p>
+<p><span>Wed</span> 4/11*</p>
 <p><span>Mon</span> 4/16</p>
 </td>
 <td style="width: 55.4029%;">
@@ -197,7 +197,7 @@ Mon Wed Schedule
 </tr>
 <tr>
 <td style="width: 19.5971%;">
-<p><span>Wed</span> 4/25</p>
+<p><span>Wed</span> 4/25*</p>
 <p>Mon&nbsp;4/30</p>
 </td>
 <td style="width: 55.4029%;">
