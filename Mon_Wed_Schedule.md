@@ -28,7 +28,7 @@ Mon Wed Schedule
 </tr>
 <tr>
 <td style="width: 19.5971%;">
-<p>Wed&nbsp;1/24*</p>
+<p>Wed 1/24*</p>
 <p>Mon 1/29</p>
 </td>
 <td style="width: 55.4029%;">
