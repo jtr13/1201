@@ -7,11 +7,15 @@
 [Tues / Thurs class schedule](Tues_Thurs_Schedule.md)
 
 [Installing R](R/InstallingR.md) (Ungraded)
+
 Recommended completion date for Mon/Wed class: 1/21
+
 Recommended completion data for Tues/Thurs class: 1/18
 
 [Getting started with R](R/GettingStartedwithR.md)(Ungraded)
+
 Recommended completion date for Mon/Wed class: 1/21
+`
 Recommended completion data for Tues/Thurs class: 1/23
 
 [Lecture Slides Tues 1/16/18](Lectures/Lecture20180116Tues.pdf)
