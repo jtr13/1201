@@ -2,6 +2,8 @@
 
 [Syllabus (both sections)](Syllabus_Spring_2018.md)
 
+[Mon / Wed class schedule](Mon_Wed_Schedule.md)
+
 [Tues / Thurs class schedule](Tues_Thurs_Schedule.md)
 
 [Installing R](R/InstallingR.md)
