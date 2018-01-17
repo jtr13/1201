@@ -183,4 +183,6 @@ Linear regression (12.1-12.2, 13.1)
 </ol>
 <p>
  
+<a href = "Mon_Wed_Schedule.md">Monday Wednesday Schedule</a>
+
 <a href = "Tues_Thurs_Schedule.md">Tuesday Thursday Schedule</a>
