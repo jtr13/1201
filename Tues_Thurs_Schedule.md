@@ -424,7 +424,7 @@ Covariance, correlation
 Tues 4/24*
 </p>
 <p>
-Tues 4/26
+Thurs 4/26
 </p>
 </td>
 <td style="width: 55.4029%;">
