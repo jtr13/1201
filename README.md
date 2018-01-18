@@ -24,6 +24,11 @@ Recommended completion date for Mon/Wed class: 1/21
 
 Recommended completion date for Tues/Thurs class: 1/23
 
+### R resouces
+
+[Click here](R/Readme.md)
+
+
 ### Lecture Slides
 
 [Lecture Slides Tues 1/16/18](Lectures/Lecture20180116Tues.pdf)
