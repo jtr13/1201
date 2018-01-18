@@ -1,6 +1,6 @@
 ## Chapter 1
 
-[Stem and leaf plot](StemandLeaf.md)
+[Stem and leaf plot](StemandLeafPlot.md)
 
 [Frequency histogram](FrequencyHistogram.md)
 
