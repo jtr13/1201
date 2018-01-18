@@ -1,10 +1,10 @@
 ## Chapter 1
 
-[Stem and leaf plot](SteamandLeaf.md)
+[Stem and leaf plot](StemandLeaf.md)
 
 [Frequency histogram](FrequencyHistogram.md)
 
-[Density histogram](DensityHistogram)
+[Density histogram](DensityHistogram.md)
 
 [Boxplot](Boxplot.md)
 
