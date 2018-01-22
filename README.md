@@ -26,6 +26,13 @@ Recommended completion date for Tues/Thurs class: 2/23
 
 [Homework #1](Hmk1.md)
 
+Due date:
+
+Mon/Wed class: Wed, Jan. 31, at 11:59pm
+
+Tues/Thurs class Tues, Jan 30, at 11:59pm
+
+
 ### R Resources 
 
 [Click here](R/Readme.md)
