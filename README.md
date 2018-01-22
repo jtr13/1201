@@ -46,3 +46,5 @@ Tues/Thurs class Tues, Jan 30, at 11:59pm
 
 [Lecture Slides Thurs 1/18/18](Lectures/Lecture20180118Thurs.pdf)
 
+[Lecture Slides Mon 1/122/18](Lectures/Lecture20180122Mon.pdf)
+
