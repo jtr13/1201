@@ -22,7 +22,9 @@ Recommended completion date for Tues/Thurs class: 1/18
 
 Recommended completion date for Mon/Wed class: 1/21
 
-Recommended completion date for Tues/Thurs class: 1/23
+Recommended completion date for Tues/Thurs class: 2/23
+
+[Homework #1](Hmk1.md)
 
 ### R Resources 
 
