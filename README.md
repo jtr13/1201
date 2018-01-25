@@ -1,5 +1,9 @@
 ## Click on the links below to access class material during change of program period
 
+### R Resources
+
+[Click here](R/Readme.md)
+
 ### Syllabus
 
 [Syllabus (both sections)](Syllabus_Spring_2018.md)
@@ -32,12 +36,6 @@ Mon/Wed class: Wed, Jan. 31, at 11:59pm
 
 Tues/Thurs class Tues, Jan 30, at 11:59pm
 
-
-### R Resources 
-
-[Click here](R/Readme.md)
-
-
 ### Lecture Slides
 
 [Lecture Slides Tues 1/16/18](Lectures/Lecture20180116Tues.pdf)
@@ -46,5 +44,6 @@ Tues/Thurs class Tues, Jan 30, at 11:59pm
 
 [Lecture Slides Thurs 1/18/18](Lectures/Lecture20180118Thurs.pdf)
 
-[Lecture Slides Mon 1/122/18](Lectures/Lecture20180122Mon.pdf)
+[Lecture Slides Mon 1/22/18](Lectures/Lecture20180122Mon.pdf)
 
+[Lecture Slides Mon 1/23/18](Lectures/Lecture20180123Tues.pdf)
