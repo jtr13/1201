@@ -13,3 +13,13 @@ Note that each filename has two extensions: .R and .md; the .R file is better fo
 Commonly used parameters:
 
 `las = 1`:   all axis text horizontal
+
+## Chapter 3
+
+[Expected Value](Chapter3.md#expected-value)
+
+[Variance](Chapter3.md#variance)
+
+[Variance (alt. method)](Chapter3.md#variance-alternative-method)
+
+[Binomial Theorem](Chapter3.md#binominal-theorem)
