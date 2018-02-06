@@ -1,0 +1,54 @@
+---
+title: "Chapter 3"
+author: "Joyce Robbins"
+date: "2/6/2018"
+output: 
+  github_document:
+    toc: TRUE
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Expected value
+
+```{r}
+x <- 1:5
+x
+px <- c(.1, .15, .2, .25, .3)
+px
+x*px
+sum(x*px)    # E(X)
+```
+
+## Variance
+
+```{r}
+x - 3.5
+(x - 3.5)^2
+((x - 3.5)^2)*px
+sum(((x - 3.5)^2)*px)   # V(X)
+```
+
+## Variance (alternative method)
+```{r}
+x
+px
+x^2
+(x^2)*px
+sum((x^2)*px)  # E(X^2)
+14-3.5^2     # E(X^2) - [E(X)]^2
+```
+
+## Binominal Theorem
+```{r}
+choose(8, 3)    # "8 choose 3"
+56*.6^3*.4^5     # P(X = 3) given n = 8, p = .6
+```
+
+Direct method
+```{r}
+dbinom(3, 8, .6)     # P(X = 3) given n = 8, p = .6
+```
+
