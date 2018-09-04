@@ -1,11 +1,10 @@
 Installing R
 ================
 Joyce Robbins
-9/17/2017
 
 **Ungraded**
 
-**Complete by Thurs, 1/18**
+**Complete by Wed, Sept 12**
 
 You will need to install two applications: R and RStudio.
 

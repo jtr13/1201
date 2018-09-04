@@ -1,31 +1,19 @@
 ## Click on the links below to access class material during change of program period
 
-### R Resources
-
-[Click here](R/Readme.md)
-
 ### Syllabus
 
-[Syllabus (both sections)](Syllabus_Spring_2018.md)
+[Syllabus (both sections)](Syllabus.md)
+
 
 ### Assignments
 
 [Installing R](R/InstallingR.md) (Ungraded)
 
-Recommended completion date for Mon/Wed class: 1/21
-
-Recommended completion date for Tues/Thurs class: 1/18
-
 [Getting started with R](R/GettingStartedwithR.md) (Ungraded)
 
-Recommended completion date for Mon/Wed class: 1/21
 
-Recommended completion date for Tues/Thurs class: 2/23
 
-[Homework #1](Hmk1.md)
+### R Resources
 
-Due date:
+[Click here](R/Readme.md)
 
-Mon/Wed class: Wed, Jan. 31, at 11:59pm
-
-Tues/Thurs class Tues, Jan 30, at 11:59pm
