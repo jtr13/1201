@@ -51,6 +51,9 @@ Devore, Jay L. 2016. <em>Probability and Statistics for Engineering and the Scie
 <em>You need the 9th edition for the exercises; you can use earlier editions for the content.</em>
 </p>
 <p>
+<em>For the tests and final, you need a non-graphing calculator (one line display).</em>
+</p>
+<p>
 <strong><u>Grading procedures</u></strong>
 </p>
 <p>
@@ -80,10 +83,11 @@ Grades will be determined as follows:
 Note: The tests and final exam are curved on an individual basis, meaning one test may have a curve while another does not. The grades posted on CourseWorks are the grades AFTER the curve.  There is no additional curve in the process of computing final averages at the end of the semester. Raw scores are available on the paper tests which will be handed back in class. 
 
 <p>
-<strong><u>Class policies</u></strong>
+<strong><u>Class policies</u>
 </p>
-<p>
-<strong>Homework</strong>
+<p><em>Cell phones are NOT allowed in class.</em></p>
+<p>  
+Homework</strong>
 </p>
 <p>
 Unless otherwise indicated, assignments must be submitted on CourseWorks as a <strong>single pdf file</strong> -- TurboScan or similar phone apps can be used for this purpose.
@@ -109,7 +113,7 @@ Plagiarism or any other breach of academic integrity will not be tolerated and w
 <http://www.college.columbia.edu/academics/academicintegrity>
 </p>
 <p>
-<strong>Tests: </strong>Tests, including the final, are cumulative, with a greater emphasis on newer material. Allowable materials include pens, pencils, erasers, a hand-held calculator, and a single (two-sided) 8.5” x 11” sheet of original handwritten notes for the first two tests, and three sheets (each two-sided) for the final. <em>Make-up tests will only be administered in cases of documented emergencies.</em>
+<strong>Tests: </strong>Tests, including the final, are cumulative, with a greater emphasis on newer material. Allowable materials include pens, pencils, erasers, a hand-held NON-GRAPHING calculator (one line display), and a single (two-sided) 8.5” x 11” sheet of original handwritten notes for the first two tests, and three sheets (each two-sided) for the final. <em>Make-up tests will only be administered in cases of documented emergencies.</em>
 </p>
 
 <p>
