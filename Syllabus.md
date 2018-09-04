@@ -5,7 +5,7 @@ STAT UN1201 Syllabus
 <strong>Columbia University</strong>
 </p>
 <p>
-<strong>Calculus-Based Introduction to Statistics, Spring 2018</strong>
+<strong>Calculus-Based Introduction to Statistics</strong>
 </p>
 <p>
 <strong>Statistics UN1201</strong>
