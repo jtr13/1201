@@ -29,7 +29,7 @@ STAT UN1201 Syllabus
 <span style="text-decoration: underline;">Office hours:</span>
 </p>
 <p>
-Wed 12-2pm, location: 603 Watson Hall, 612 West 115th St.
+Wed 11-1pm, location: 603 Watson Hall, 612 West 115th St.
 </p>
 <p>
 <br>
