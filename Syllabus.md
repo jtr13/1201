@@ -1,4 +1,4 @@
-STAT UN1201 Syllabus, Spring 2018
+STAT UN1201 Syllabus
 ================
 
 <p>
@@ -11,7 +11,7 @@ STAT UN1201 Syllabus, Spring 2018
 <strong>Statistics UN1201</strong>
 </p>
 <p>
-<strong>Monday / Wednesday class: Hamilton 602, 8:40-9:55am</strong>
+<strong>Monday / Wednesday class: Hamilton 702, 8:40-9:55am</strong>
 </p>
 <p>
 <strong>Tuesday / Thursday class: Mathematics 207, 8:40-9:55am</strong>
@@ -183,6 +183,3 @@ Linear regression (12.1-12.2, 13.1)
 </ol>
 <p>
  
-<a href = "Mon_Wed_Schedule.md">Monday Wednesday Schedule</a>
-
-<a href = "Tues_Thurs_Schedule.md">Tuesday Thursday Schedule</a>
