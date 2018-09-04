@@ -5,14 +5,15 @@
 [Syllabus (both sections)](Syllabus.md)
 
 
-### R Resources
-
-[Click here](R/Readme.md)
-
-
 ### Assignments
 
 [Installing R](R/InstallingR.md) (Ungraded)
 
 [Getting started with R](R/GettingStartedwithR.md) (Ungraded)
+
+
+
+### R Resources
+
+[Click here](R/Readme.md)
 
