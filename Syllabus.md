@@ -77,7 +77,7 @@ Grades will be determined as follows:
 <tr><td>83% to 86%</td><td>B</td><td>  </td><td>below 60%</td><td>F</td></tr>
 </table>
 
-Note: The tests and final exam are curved on an individual basis; there is no additional curve in the process of computing final averages. 
+Note: The tests and final exam are curved on an individual basis, meaning one test may have a curve while another does not. The grades posted on CourseWorks are the grades AFTER the curve.  There is no additional curve in the process of computing final averages at the end of the semester. Raw scores are available on the paper tests which will be handed back in class. 
 
 <p>
 <strong><u>Class policies</u></strong>
@@ -89,7 +89,7 @@ Note: The tests and final exam are curved on an individual basis; there is no ad
 Unless otherwise indicated, assignments must be submitted on CourseWorks as a <strong>single pdf file</strong> -- TurboScan or similar phone apps can be used for this purpose.
 </p>
 <p>
-<strong>Homework must be submitted by 11:59pm on the due date for full credit. Late assignments will only be accepted for the first 24 hours after the assignment is due. You are entitled to one late assignment, submitted within 24 hours of the due date, without penalty. After that, 4 points will be deducted for late assignments. After the 24 hour period, CourseWorks will no longer accept homework submissions</strong>. No exceptions will be made unless I receive a note from an academic dean detailing unusual circumstances.
+<strong>Homework must be submitted by 11:59pm on the due date for full credit. Late assignments will only be accepted for the first 24 hours after the assignment is due. You are entitled to one late assignment, submitted within 24 hours of the due date, without penalty. After that, 4 points will be deducted for late assignments submitted within 24 hours of the due date. After the 24 hour period, CourseWorks will no longer accept homework submissions</strong>. No exceptions will be made unless I receive a note from an academic dean detailing unusual circumstances.
 </p>
 <p>
 If you submit more than one assignment, the last one will be counted.
@@ -122,7 +122,7 @@ There are numerous opportunities to get assistance with the class material:
 <li>Ask questions during class.</li>
 <li>Email me questions after class and I will answer during the next lecture.</li>
 <li>Ask questions after class (I will stay after every class if students have questions.)</li>
-<li>Attend a Statistics Help Room session where tutors answer questions for students in introductory level statistics classes. Hours and locations are posted here:<span>&nbsp;</span><a href="http://stat.columbia.edu/help-room/">http://stat.columbia.edu/help-room/</a></li>
+<li>Attend a Statistics Help Room session where tutors answer questions for students in introductory level statistics classes. I will announce when the Help Room opens for the semester; generally the 2nd or 3rd week of classes.  Hours and locations are posted here:<span>&nbsp;</span><a href="http://stat.columbia.edu/help-room/">http://stat.columbia.edu/help-room/</a></li> (Once the Help Room opens, the page will be updated to the current semester.)
 <li>Attend TA office hours: time and location TBD (check back here)</li>
 </ol>
 <p>
@@ -178,7 +178,7 @@ Chi squared test (14.3)
 Covariance, correlation (5.2, 12.5)
 </li>
 <li>
-Linear regression (12.1-12.2, 13.1)
+Linear regression (12.1-12.2, 13.1-13.2)
 </li>
 </ol>
 <p>
