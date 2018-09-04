@@ -11,7 +11,9 @@
 
 [Getting started with R](R/GettingStartedwithR.md) (Ungraded)
 
+### Lecture Slides
 
+[Chapter 1](Lectures/Chap1slides.pdf)
 
 ### R Resources
 
