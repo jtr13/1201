@@ -14,7 +14,7 @@ STAT UN1201 Syllabus
 <strong>Monday / Wednesday class: Hamilton 702, 8:40-9:55am</strong>
 </p>
 <p>
-<strong>Tuesday / Thursday class: Mathematics 207, 8:40-9:55am</strong>
+<strong>Tuesday / Thursday class: Mathematics 203, 8:40-9:55am</strong>
 </p>
 <p>
 <strong>Instructor: Joyce Robbins</strong>
