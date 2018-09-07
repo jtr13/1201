@@ -4,6 +4,9 @@
 
 [Syllabus (both sections)](Syllabus.md)
 
+### Homework
+[Assignment #1](Hmk1.pdf) due 9/17/18
+
 
 ### Assignments
 
