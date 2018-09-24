@@ -28,9 +28,9 @@ choose(5, 2)
 
 ## Permutations (2.3)
 
-There is no built-in function to calculate permutations.  You can multiply the number of combinations by *k!*:
+There is no built-in function to calculate permutations.  You can multiply the number of combinations by *k!*.
 
-# of permutations of size 2 that can be formed from 5 distinct items:
+Ex. Number of permutations of size 2 that can be formed from 5 distinct items:
 
 ```{r}
 choose(5,2)*factorial(2)

@@ -1,8 +1,6 @@
 -   [Factorial (2.3)](#factorial-23)
 -   [Combinations (2.3)](#combinations-23)
 -   [Permutations (2.3)](#permutations-23)
--   [of permutations of size 2 that can be formed from 5 distinct
-    items:](#of-permutations-of-size-2-that-can-be-formed-from-5-distinct-items)
 
 Factorial (2.3)
 ---------------
@@ -28,10 +26,10 @@ Permutations (2.3)
 ------------------
 
 There is no built-in function to calculate permutations. You can
-multiply the number of combinations by *k!*:
+multiply the number of combinations by *k!*.
 
-of permutations of size 2 that can be formed from 5 distinct items:
-===================================================================
+Ex. Number of permutations of size 2 that can be formed from 5 distinct
+items:
 
 ``` r
 choose(5,2)*factorial(2)
