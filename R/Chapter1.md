@@ -1,8 +1,8 @@
--   [Stem and leaf plot (1.2)](#stem-and-leaf-plot-1.2)
--   [Frequency histogram (1.2)](#frequency-histogram-1.2)
--   [Density histogram (1.2)](#density-histogram-1.2)
--   [Measures of location (1.3)](#measures-of-location-1.3)
--   [Measures of variability (1.4)](#measures-of-variability-1.4)
+-   [Stem and leaf plot (1.2)](#stem-and-leaf-plot-12)
+-   [Frequency histogram (1.2)](#frequency-histogram-12)
+-   [Density histogram (1.2)](#density-histogram-12)
+-   [Measures of location (1.3)](#measures-of-location-13)
+-   [Measures of variability (1.4)](#measures-of-variability-14)
 -   [Boxplots (1.4)](#boxplots-1.4)
 
 Stem and leaf plot (1.2)
