@@ -23,7 +23,10 @@ STAT UN1201 Syllabus
 <span style="text-decoration: underline;">Contact info:</span>
 </p>
 <p>
-<a href="mailto:jtr13@columbia.edu">jtr13@columbia.edu</a>     212-853-1391
+<strong>Please indicate your section (Mon/Wed or Tues/Thurs) somewhere in your email. </strong>
+</p>
+<p>
+<a href="mailto:jtr13@columbia.edu">jtr13@columbia.edu</a>     212-853-1391  
 </p>
 <p>
 <span style="text-decoration: underline;">Office hours:</span>
