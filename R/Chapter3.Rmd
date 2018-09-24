@@ -52,3 +52,25 @@ Direct method
 dbinom(3, 8, .6)     # P(X = 3) given n = 8, p = .6
 ```
 
+## Hypergeometric
+
+Note that the notation that R uses is different from the Devore textbook:
+
+|parameter|Devore|R|
+|---------|------|-|
+|total successes|M|m|
+|total failures|N-M|n|
+|sample size|n|k|
+|successes in sample|x|x|
+
+Example (p. 127)
+
+Devore: *h(x; n, M, N)*
+
+*P(X = 2) = h(2; 10, 5, 25)* -->
+
+```{r}
+dhyper(x = 2, m = 5, n = 20, k = 10)
+```
+
+

@@ -3,13 +3,7 @@ Chapter 3
 Joyce Robbins
 2/6/2018
 
--   [Expected value](#expected-value)
--   [Variance](#variance)
--   [Variance (alternative method)](#variance-alternative-method)
--   [Binominal Theorem](#binominal-theorem)
-
-Expected value
---------------
+## Expected value
 
 ``` r
 x <- 1:5
@@ -37,8 +31,7 @@ sum(x*px)    # E(X)
 
     ## [1] 3.5
 
-Variance
---------
+## Variance
 
 ``` r
 x - 3.5
@@ -64,8 +57,7 @@ sum(((x - 3.5)^2)*px)   # V(X)
 
     ## [1] 1.75
 
-Variance (alternative method)
------------------------------
+## Variance (alternative method)
 
 ``` r
 x
@@ -103,8 +95,7 @@ sum((x^2)*px)  # E(X^2)
 
     ## [1] 1.75
 
-Binominal Theorem
------------------
+## Binominal Theorem
 
 ``` r
 choose(8, 3)    # "8 choose 3"
@@ -125,3 +116,27 @@ dbinom(3, 8, .6)     # P(X = 3) given n = 8, p = .6
 ```
 
     ## [1] 0.123863
+
+## Hypergeometric
+
+Note that the notation that R uses is different from the Devore
+textbook:
+
+| parameter           | Devore | R |
+| ------------------- | ------ | - |
+| total successes     | M      | m |
+| total failures      | N-M    | n |
+| sample size         | n      | k |
+| successes in sample | x      | x |
+
+Example (p. 127)
+
+Devore: *h(x; n, M, N)*
+
+*P(X = 2) = h(2; 10, 5, 25)* –\>
+
+``` r
+dhyper(x = 2, m = 5, n = 20, k = 10)
+```
+
+    ## [1] 0.3853755
