@@ -1,10 +1,10 @@
--   [Expected value (3.3)](#expected-value-3.3)
--   [Variance (3.3)](#variance-3.3)
+-   [Expected value (3.3)](#expected-value-33)
+-   [Variance (3.3)](#variance-33)
 -   [Variance (alternative method)
-    (3.3)](#variance-alternative-method-3.3)
--   [Binominal Theorem (3.4)](#binominal-theorem-3.4)
--   [Hypergeometric (3.5)](#hypergeometric-3.5)
--   [Poisson (3.6)](#poisson-3.6)
+    (3.3)](#variance-alternative-method-33)
+-   [Binominal Theorem (3.4)](#binominal-theorem-34)
+-   [Hypergeometric (3.5)](#hypergeometric-35)
+-   [Poisson (3.6)](#poisson-36)
 
 Expected value (3.3)
 --------------------
