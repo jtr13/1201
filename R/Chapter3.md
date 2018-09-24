@@ -1,11 +1,13 @@
--   [Expected value](#expected-value)
--   [Variance](#variance)
--   [Variance (alternative method)](#variance-alternative-method)
--   [Binominal Theorem](#binominal-theorem)
--   [Hypergeometric](#hypergeometric)
+-   [Expected value (3.3)](#expected-value-3.3)
+-   [Variance (3.3)](#variance-3.3)
+-   [Variance (alternative method)
+    (3.3)](#variance-alternative-method-3.3)
+-   [Binominal Theorem (3.4)](#binominal-theorem-3.4)
+-   [Hypergeometric (3.5)](#hypergeometric-3.5)
+-   [Poisson (3.6)](#poisson-3.6)
 
-Expected value
---------------
+Expected value (3.3)
+--------------------
 
 ``` r
 x <- 1:5
@@ -33,8 +35,8 @@ sum(x*px)    # E(X)
 
     ## [1] 3.5
 
-Variance
---------
+Variance (3.3)
+--------------
 
 ``` r
 x - 3.5
@@ -60,8 +62,8 @@ sum(((x - 3.5)^2)*px)   # V(X)
 
     ## [1] 1.75
 
-Variance (alternative method)
------------------------------
+Variance (alternative method) (3.3)
+-----------------------------------
 
 ``` r
 x
@@ -99,8 +101,8 @@ sum((x^2)*px)  # E(X^2)
 
     ## [1] 1.75
 
-Binominal Theorem
------------------
+Binominal Theorem (3.4)
+-----------------------
 
 ``` r
 choose(8, 3)    # "8 choose 3"
@@ -122,8 +124,8 @@ dbinom(3, 8, .6)     # P(X = 3) given n = 8, p = .6
 
     ## [1] 0.123863
 
-Hypergeometric
---------------
+Hypergeometric (3.5)
+--------------------
 
 Note that the notation that R uses is different from the Devore
 textbook:
@@ -146,3 +148,24 @@ dhyper(x = 2, m = 5, n = 20, k = 10)
 ```
 
     ## [1] 0.3853755
+
+Poisson (3.6)
+-------------
+
+Example (p. 132)
+
+p(3;2) =
+
+``` r
+dpois(3,2)
+```
+
+    ## [1] 0.180447
+
+F(3;2) =
+
+``` r
+ppois(3, 2)
+```
+
+    ## [1] 0.8571235
