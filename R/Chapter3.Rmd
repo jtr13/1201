@@ -1,9 +1,10 @@
 ---
 title: "Chapter 3"
 author: "Joyce Robbins"
-date: "2/6/2018"
+date: "9/24/2018"
 output: 
-  github_document:
+  md_document:
+    variant: markdown_github 
     toc: TRUE
 ---
 
