@@ -1,4 +1,4 @@
-STAT UN1201 Syllabus
+STAT UN1201 Syllabus Fall 2018
 ================
 Columbia University  
 
@@ -9,23 +9,25 @@ Statistics UN1201
 Monday / Wednesday class: Hamilton 702, 8:40-9:55am
 
 Tuesday / Thursday class: Mathematics 203, 8:40-9:55am
-## Instructor
-Joyce Robbins
 
-### Contact info
+## Instructor
+
+Joyce Robbins: <a href="mailto:jtr13@columbia.edu">jtr13@columbia.edu</a>     212-853-1391  
 
 **Please indicate your section (Mon/Wed or Tues/Thurs) somewhere in your email.**
-<a href="mailto:jtr13@columbia.edu">jtr13@columbia.edu</a>     212-853-1391  
 
-### Office hours
-
-Wed 11-1pm, location: 603 Watson Hall, 612 West 115th St.
+Office hours: Wed 11-1pm, location: 603 Watson Hall, 612 West 115th St.
 
 
 ## Teaching Assistants
+
 Yu Tong: <a href="mailto:yt2594@columbia.edu">yt2594@columbia.edu</a>  (Mon/Wed TA)  
+
+Office hours: Fridays, 4pm-6pm, 6th floor lounge area of Watson Hall, 612 West 115th St.
   
 Jialin Ouyang: <a href="mailto:jo2559@columbia.edu">jo2559@columbia.edu</a>  (Tues/Thurs TA)
+
+Office hours: Wednesdays, 2pm-4pm, Watson 601, 612 West 115th St.
 
 
 ## Course description
