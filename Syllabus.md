@@ -104,7 +104,7 @@ There are numerous opportunities to get assistance with the class material:
 <li>Email me questions after class and I will answer during the next lecture.</li>
 <li>Ask questions after class (I will stay after every class if students have questions.)</li>
 <li>Attend a Statistics Help Room session where tutors answer questions for students in introductory level statistics classes. I will announce when the Help Room opens for the semester; generally the 2nd or 3rd week of classes.  Hours and locations are posted here:<span>&nbsp;</span><a href="http://stat.columbia.edu/help-room/">http://stat.columbia.edu/help-room/</a></li> (Once the Help Room opens, the page will be updated to the current semester.)
-<li>Attend TA office hours: time and location TBD (check back here)</li>
+<li>Attend TA office hours: see above for times and locations</li>
 </ol>
 
 ## Course Content
