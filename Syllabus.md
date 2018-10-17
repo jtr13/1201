@@ -23,11 +23,13 @@ Office hours: Wed 11-1pm, location: 603 Watson Hall, 612 West 115th St.
 
 Yu Tong: <a href="mailto:yt2594@columbia.edu">yt2594@columbia.edu</a>  (Mon/Wed TA)  
 
-Office hours: Fridays, 4pm-6pm, 6th floor lounge area of Watson Hall, 612 West 115th St.
+Office hours: Wednesdays, 2pm-4pm, Watson 601, 612 West 115th St.
   
 Jialin Ouyang: <a href="mailto:jo2559@columbia.edu">jo2559@columbia.edu</a>  (Tues/Thurs TA)
 
-Office hours: Wednesdays, 2pm-4pm, Watson 601, 612 West 115th St.
+Office hours: Fridays, 4pm-6pm, 6th floor lounge area of Watson Hall, 612 West 115th St.
+
+
 
 
 ## Course description
