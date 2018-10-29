@@ -57,6 +57,11 @@ Grades will be determined as follows:
 <tr><td>Final</td><td>40%</td></tr>
 </table>
 
+*For Test #1 and Test #2 dates, see CourseWorks Assignments.*
+
+*For the date of the Final, see https://ssol.columbia.edu/ -- click "Exam List" and then "Projected University Examination Schedule". (In most cases, final dates are set by the University not individual professors.)*
+
+
 Grading scale: 
 
 (Note: Do not rely on any averages that appear in CourseWorks since they may not be accurate for various reasons.)
