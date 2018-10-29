@@ -18,7 +18,5 @@ before_script:
   - chmod +x ./_deploy.sh
 
 script:
-# always build the book
-# only deploy if it is merged/pushed to master (don't deploy  a PR)
   -  ./_build.sh
-  - 'if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then ./_deploy.sh; else return 0; fi'
+  -  ./_deploy.sh
