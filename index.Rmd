@@ -15,7 +15,7 @@ description: "Supplemental resources for Stat1201"
 
 # Stats 1201
 
-Hello World
+Hello World, how are you?
 
 
 <!-- Contact -->
