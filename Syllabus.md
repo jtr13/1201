@@ -57,10 +57,6 @@ Grades will be determined as follows:
 <tr><td>Final</td><td>40%</td></tr>
 </table>
 
-*For Test #1 and Test #2 dates, see CourseWorks Assignments.*
-
-*For the date of the Final, see https://ssol.columbia.edu/ -- click "Exam List" and then "Projected University Examination Schedule". (In most cases, final dates are set by the University not individual professors.)*
-
 
 Grading scale: 
 
@@ -100,7 +96,16 @@ Plagiarism or any other breach of academic integrity will not be tolerated and w
 
 ## Tests
 
-Tests, including the final, are cumulative, with a greater emphasis on newer material. Allowable materials include pens, pencils, erasers, a hand-held NON-GRAPHING calculator (one line display), and a single (two-sided) 8.5” x 11” sheet of original handwritten notes for the first two tests, and three sheets (each two-sided) for the final. <em>Make-up tests will only be administered in cases of documented emergencies.</em>
+Allowable materials on tests include pens, pencils, erasers, a hand-held NON-GRAPHING calculator (one line display), and a single (two-sided, or two one-sided) 8.5” x 11” sheet of original handwritten notes for the first two tests, and three sheets (each two-sided, or six one-sided) for the final. Make-up tests will only be administered in cases of documented emergencies.
+
+The material covered on the tests is as follows:
+
+Test #1: all material up to the last 
+
+
+**For Test #1 and Test #2 dates, see CourseWorks Assignments.**
+
+**For the date of the Final, see https://ssol.columbia.edu/ -- click "Exam List" and then "Projected University Examination Schedule". (In most cases, final dates are set by the University not individual professors.)**
 
 ## Getting Help
 
