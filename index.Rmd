@@ -17,6 +17,7 @@ description: "Supplemental resources for Stat1201"
 
 Hello World, how are you?
 Go Travis go, you can do it!
+I know you can!
 
 
 <!-- Contact -->
