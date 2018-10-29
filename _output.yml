@@ -1,5 +1,4 @@
 bookdown::gitbook:
-  css: style.css
   split_by: chapter
   highlight: pygments
     
