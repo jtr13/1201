@@ -13,11 +13,9 @@ description: "Supplemental resources for Stat1201"
 
 ---
 
-# Stats 1201
+# Stats 1201 {-}
 
-Hello World, how are you?
-Go Travis go, you can do it!
-I know you can! Please....
+Resources for Stat 1201
 
 
 <!-- Contact -->
