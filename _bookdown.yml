@@ -4,7 +4,7 @@ repo: https://github.com/jtr13/1201
 output_dir: _book
 clean: [packages.bib, bookdown.bbl]
 new_session: yes
-edit: https://github.com/jtr13/1021/edit/master/%s
+edit: https://github.com/jtr13/1201/edit/master/%s
 
 # chapter ordering
 rmd_files: [
