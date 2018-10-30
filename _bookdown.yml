@@ -8,5 +8,6 @@ edit: https://github.com/jtr13/1021/edit/master/%s
 
 # chapter ordering
 rmd_files: [
-  "index.Rmd"
+  "index.Rmd",
+  "Chapter1.Rmd"
 ]
