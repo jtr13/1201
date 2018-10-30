@@ -1,3 +1,5 @@
+# Chapter 1
+
 ## Stem and leaf plot (1.2)
 
 ```{r}
@@ -41,11 +43,11 @@ mean(prices)
 
 median(prices)
 
-# quartiles
+## quartiles
 quantile(prices)
 
-# trimmed mean
-mean(prices, trim = .1) # 10% trimmed mean
+## trimmed mean
+mean(prices, trim = .1) ## 10% trimmed mean
 ```
 
 ## Measures of variability (1.4)
