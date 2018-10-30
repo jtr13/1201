@@ -1,4 +1,6 @@
-# Chapter 1
+# Descriptive Statistics {#chap1}
+
+Devore, Chapter 1
 
 ## Stem and leaf plot (1.2)
 

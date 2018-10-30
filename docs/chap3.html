@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
+<link rel="prev" href="chap2.html">
 
-<link rel="next" href="chap1.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -176,32 +176,107 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Stat1201</h1>
-<h4 class="author"><em>Joyce Robbins</em></h4>
-<h4 class="date"><em>2018-10-29</em></h4>
+<div id="chap3" class="section level1">
+<h1><span class="header-section-number">4</span> Discrete Distributions</h1>
+<p>Devore, Chapter 3</p>
+<div id="expected-value-3.3" class="section level2">
+<h2><span class="header-section-number">4.1</span> Expected value (3.3)</h2>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb33-1" data-line-number="1">x &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">:</span><span class="dv">5</span></a>
+<a class="sourceLine" id="cb33-2" data-line-number="2">x</a></code></pre></div>
+<pre><code>## [1] 1 2 3 4 5</code></pre>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb35-1" data-line-number="1">px &lt;-<span class="st"> </span><span class="kw">c</span>(.<span class="dv">1</span>, <span class="fl">.15</span>, <span class="fl">.2</span>, <span class="fl">.25</span>, <span class="fl">.3</span>)</a>
+<a class="sourceLine" id="cb35-2" data-line-number="2">px</a></code></pre></div>
+<pre><code>## [1] 0.10 0.15 0.20 0.25 0.30</code></pre>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb37-1" data-line-number="1">x<span class="op">*</span>px</a></code></pre></div>
+<pre><code>## [1] 0.1 0.3 0.6 1.0 1.5</code></pre>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb39-1" data-line-number="1"><span class="kw">sum</span>(x<span class="op">*</span>px)    <span class="co"># E(X)</span></a></code></pre></div>
+<pre><code>## [1] 3.5</code></pre>
 </div>
-<div id="stats-1201" class="section level1">
-<h1><span class="header-section-number">1</span> Stats 1201</h1>
-<p>Hello World, how are you?
-Go Travis go, you can do it!
-I know you can! Please….</p>
-<!-- Contact -->
-<div id="contact" class="section level2">
-<h2><span class="header-section-number">1.1</span> Contact</h2>
-<p>Joyce Robbins:
-<a href="http://stat.columbia.edu/department-directory/name/joyce-robbins/" target="_blank">Columbia Profile</a>
-/
-<a href="http://www.joyce-robbins.com/" target="_blank">Website</a>
-/
-<a href="https://twitter.com/jtrnyc" target="_blank">Twitter</a>
-/
-<a href="https://github.com/jtr13" target="_blank">GitHub</a></p>
-<!-- License -->
+<div id="variance-3.3" class="section level2">
+<h2><span class="header-section-number">4.2</span> Variance (3.3)</h2>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb41-1" data-line-number="1">x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span></a></code></pre></div>
+<pre><code>## [1] -2.5 -1.5 -0.5  0.5  1.5</code></pre>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb43-1" data-line-number="1">(x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span>)<span class="op">^</span><span class="dv">2</span></a></code></pre></div>
+<pre><code>## [1] 6.25 2.25 0.25 0.25 2.25</code></pre>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb45-1" data-line-number="1">((x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span>)<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px</a></code></pre></div>
+<pre><code>## [1] 0.6250 0.3375 0.0500 0.0625 0.6750</code></pre>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb47-1" data-line-number="1"><span class="kw">sum</span>(((x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span>)<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px)   <span class="co"># V(X)</span></a></code></pre></div>
+<pre><code>## [1] 1.75</code></pre>
 </div>
-<div id="license" class="section level2">
-<h2><span class="header-section-number">1.2</span> License</h2>
-<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+<div id="variance-alternative-method-3.3" class="section level2">
+<h2><span class="header-section-number">4.3</span> Variance (alternative method) (3.3)</h2>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb49-1" data-line-number="1">x</a></code></pre></div>
+<pre><code>## [1] 1 2 3 4 5</code></pre>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb51-1" data-line-number="1">px</a></code></pre></div>
+<pre><code>## [1] 0.10 0.15 0.20 0.25 0.30</code></pre>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb53-1" data-line-number="1">x<span class="op">^</span><span class="dv">2</span></a></code></pre></div>
+<pre><code>## [1]  1  4  9 16 25</code></pre>
+<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb55-1" data-line-number="1">(x<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px</a></code></pre></div>
+<pre><code>## [1] 0.1 0.6 1.8 4.0 7.5</code></pre>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb57-1" data-line-number="1"><span class="kw">sum</span>((x<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px)  <span class="co"># E(X^2)</span></a></code></pre></div>
+<pre><code>## [1] 14</code></pre>
+<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb59-1" data-line-number="1"><span class="dv">14</span><span class="fl">-3.5</span><span class="op">^</span><span class="dv">2</span>     <span class="co"># E(X^2) - [E(X)]^2</span></a></code></pre></div>
+<pre><code>## [1] 1.75</code></pre>
+</div>
+<div id="binominal-theorem-3.4" class="section level2">
+<h2><span class="header-section-number">4.4</span> Binominal Theorem (3.4)</h2>
+<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb61-1" data-line-number="1"><span class="kw">choose</span>(<span class="dv">8</span>, <span class="dv">3</span>)    <span class="co"># &quot;8 choose 3&quot;</span></a></code></pre></div>
+<pre><code>## [1] 56</code></pre>
+<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb63-1" data-line-number="1"><span class="dv">56</span><span class="op">*</span>.<span class="dv">6</span><span class="op">^</span><span class="dv">3</span><span class="op">*</span>.<span class="dv">4</span><span class="op">^</span><span class="dv">5</span>     <span class="co"># P(X = 3) given n = 8, p = .6</span></a></code></pre></div>
+<pre><code>## [1] 0.123863</code></pre>
+<p>Direct method</p>
+<div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb65-1" data-line-number="1"><span class="kw">dbinom</span>(<span class="dv">3</span>, <span class="dv">8</span>, <span class="fl">.6</span>)     <span class="co"># P(X = 3) given n = 8, p = .6</span></a></code></pre></div>
+<pre><code>## [1] 0.123863</code></pre>
+</div>
+<div id="hypergeometric-3.5" class="section level2">
+<h2><span class="header-section-number">4.5</span> Hypergeometric (3.5)</h2>
+<p>Note that the notation that R uses is different from the Devore textbook:</p>
+<table>
+<thead>
+<tr class="header">
+<th>parameter</th>
+<th>Devore</th>
+<th>R</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>total successes</td>
+<td>M</td>
+<td>m</td>
+</tr>
+<tr class="even">
+<td>total failures</td>
+<td>N-M</td>
+<td>n</td>
+</tr>
+<tr class="odd">
+<td>sample size</td>
+<td>n</td>
+<td>k</td>
+</tr>
+<tr class="even">
+<td>successes in sample</td>
+<td>x</td>
+<td>x</td>
+</tr>
+</tbody>
+</table>
+<p>Example (p. 127)</p>
+<p>Devore: <em>h(x; n, M, N)</em></p>
+<p><em>P(X = 2) = h(2; 10, 5, 25)</em> –&gt;</p>
+<div class="sourceCode" id="cb67"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb67-1" data-line-number="1"><span class="kw">dhyper</span>(<span class="dt">x =</span> <span class="dv">2</span>, <span class="dt">m =</span> <span class="dv">5</span>, <span class="dt">n =</span> <span class="dv">20</span>, <span class="dt">k =</span> <span class="dv">10</span>)</a></code></pre></div>
+<pre><code>## [1] 0.3853755</code></pre>
+</div>
+<div id="poisson-3.6" class="section level2">
+<h2><span class="header-section-number">4.6</span> Poisson (3.6)</h2>
+<p>Example (p. 132)</p>
+<p>p(3;2) =</p>
+<div class="sourceCode" id="cb69"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb69-1" data-line-number="1"><span class="kw">dpois</span>(<span class="dv">3</span>,<span class="dv">2</span>)</a></code></pre></div>
+<pre><code>## [1] 0.180447</code></pre>
+<p>F(3;2) =</p>
+<div class="sourceCode" id="cb71"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb71-1" data-line-number="1"><span class="kw">ppois</span>(<span class="dv">3</span>, <span class="dv">2</span>)</a></code></pre></div>
+<pre><code>## [1] 0.8571235</code></pre>
 
 </div>
 </div>
@@ -210,8 +285,8 @@ I know you can! Please….</p>
           </div>
         </div>
       </div>
+<a href="chap2.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="chap1.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -241,7 +316,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/jtr13/1201/edit/master/index.Rmd",
+"link": "https://github.com/jtr13/1201/edit/master/Chapter3.Rmd",
 "text": "Edit"
 },
 "download": null,
