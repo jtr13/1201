@@ -1,17 +1,3 @@
----
-title: "Chapter 1"
-author: "Joyce Robbins"
-date: "9/24/2018"
-output: 
-  md_document:
-    variant: markdown_github 
-    toc: TRUE
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ## Stem and leaf plot (1.2)
 
 ```{r}
