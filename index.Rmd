@@ -13,7 +13,7 @@ description: "Supplemental resources for Stat1201"
 
 ---
 
-# Stats 1201 {-}
+# Introduction {-}
 
 Resources for Stat 1201
 

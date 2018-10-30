@@ -1,7 +1,7 @@
 --- 
 title: "Stat1201"
 author: "Joyce Robbins"
-date: "2018-10-29"
+date: "2018-10-30"
 site: bookdown::bookdown_site
 documentclass: book
 #bibliography: [book.bib]
