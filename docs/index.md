@@ -1,7 +1,7 @@
 --- 
 title: "Stat1201"
 author: "Joyce Robbins"
-date: "2018-10-30"
+date: "2018-10-31"
 site: bookdown::bookdown_site
 documentclass: book
 #bibliography: [book.bib]
@@ -13,7 +13,7 @@ description: "Supplemental resources for Stat1201"
 
 ---
 
-# Stats 1201 {-}
+# Introduction {-}
 
 Resources for Stat 1201
 
