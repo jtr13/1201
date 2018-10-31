@@ -3,15 +3,4 @@ chapter_name: ""
 repo: https://github.com/jtr13/1201
 output_dir: docs
 clean: [packages.bib, bookdown.bbl]
-new_session: yes
 edit: https://github.com/jtr13/1201/edit/master/%s
-
-# chapter ordering
-rmd_files: [
-  "index.Rmd",
-  "Chapter1.Rmd",
-  "Chapter2.Rmd",
-  "Chapter3.Rmd",
-  "Chapter4.Rmd"
-
-]
