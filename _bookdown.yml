@@ -1,6 +1,5 @@
 book_filename: "STAT1201-resource"
-chapter_name: ""
-repo: https://github.com/jtr13/1201
+chapter_name: "Chapter"
+#repo: https://github.com/jtr13/1201
 output_dir: docs
-clean: [packages.bib, bookdown.bbl]
 edit: https://github.com/jtr13/1201/edit/master/%s
