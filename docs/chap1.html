@@ -156,6 +156,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.5" data-path="chap3.html"><a href="chap3.html#hypergeometric-3.5"><i class="fa fa-check"></i><b>3.5</b> Hypergeometric (3.5)</a></li>
 <li class="chapter" data-level="3.6" data-path="chap3.html"><a href="chap3.html#poisson-3.6"><i class="fa fa-check"></i><b>3.6</b> Poisson (3.6)</a></li>
 </ul></li>
+<li class="chapter" data-level="4" data-path="chap4.html"><a href="chap4.html"><i class="fa fa-check"></i><b>4</b> Continuous Distributions</a><ul>
+<li class="chapter" data-level="4.1" data-path="chap4.html"><a href="chap4.html#normal-distribution"><i class="fa fa-check"></i><b>4.1</b> Normal distribution</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -318,6 +321,19 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

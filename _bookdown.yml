@@ -11,6 +11,7 @@ rmd_files: [
   "index.Rmd",
   "Chapter1.Rmd",
   "Chapter2.Rmd",
-  "Chapter3.Rmd"
+  "Chapter3.Rmd",
+  "Chapter4.Rmd"
 
 ]

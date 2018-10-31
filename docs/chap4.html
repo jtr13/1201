@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
+<link rel="prev" href="chap3.html">
 
-<link rel="next" href="chap1.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -179,30 +179,33 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Stat1201</h1>
-<h4 class="author"><em>Joyce Robbins</em></h4>
-<h4 class="date"><em>2018-10-31</em></h4>
-</div>
-<div id="introduction" class="section level1 unnumbered">
-<h1>Introduction</h1>
-<p>Resources for Stat 1201</p>
-<!-- Contact -->
-<div id="contact" class="section level2">
-<h2><span class="header-section-number">0.1</span> Contact</h2>
-<p>Joyce Robbins:
-<a href="http://stat.columbia.edu/department-directory/name/joyce-robbins/" target="_blank">Columbia Profile</a>
-/
-<a href="http://www.joyce-robbins.com/" target="_blank">Website</a>
-/
-<a href="https://twitter.com/jtrnyc" target="_blank">Twitter</a>
-/
-<a href="https://github.com/jtr13" target="_blank">GitHub</a></p>
-<!-- License -->
-</div>
-<div id="license" class="section level2">
-<h2><span class="header-section-number">0.2</span> License</h2>
-<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+<div id="chap4" class="section level1">
+<h1><span class="header-section-number">4</span> Continuous Distributions</h1>
+<p>Devore, Chapter 4</p>
+<div id="normal-distribution" class="section level2">
+<h2><span class="header-section-number">4.1</span> Normal distribution</h2>
+<p><span class="math inline">\(P(Z \leq -1)\)</span></p>
+<p>Unless specified otherwise, <code>pnorm</code> uses a mean of 0 and standard deviation of 1 (standard normal).</p>
+<div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb73-1" data-line-number="1"><span class="kw">pnorm</span>(<span class="op">-</span><span class="dv">1</span>)</a></code></pre></div>
+<pre><code>## [1] 0.1586553</code></pre>
+<p><span class="math inline">\(P(X \leq 37)\)</span> given <span class="math inline">\(\mu = 40\)</span> and <span class="math inline">\(\sigma = 2\)</span></p>
+<div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb75-1" data-line-number="1"><span class="kw">pnorm</span>(<span class="dv">37</span>, <span class="dt">mean =</span> <span class="dv">40</span>, <span class="dt">sd =</span> <span class="dv">2</span>)</a></code></pre></div>
+<pre><code>## [1] 0.0668072</code></pre>
+<p>or</p>
+<div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb77-1" data-line-number="1"><span class="kw">pnorm</span>((<span class="dv">37-40</span>)<span class="op">/</span><span class="dv">2</span>)</a></code></pre></div>
+<pre><code>## [1] 0.0668072</code></pre>
+<p><span class="math inline">\(P(X &gt; 39)\)</span></p>
+<div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb79-1" data-line-number="1"><span class="dv">1</span> <span class="op">-</span><span class="st"> </span><span class="kw">pnorm</span>(<span class="dv">39</span>, <span class="dt">mean =</span> <span class="dv">40</span>, <span class="dt">sd =</span> <span class="dv">2</span>)</a></code></pre></div>
+<pre><code>## [1] 0.6914625</code></pre>
+<p>Find the 75th percentile for the standard normal distribution:</p>
+<div class="sourceCode" id="cb81"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb81-1" data-line-number="1"><span class="kw">qnorm</span>(.<span class="dv">75</span>)</a></code></pre></div>
+<pre><code>## [1] 0.6744898</code></pre>
+<p>Find the 75th percentile for a normally distribution population with mean 40 and standard deviation 2:</p>
+<div class="sourceCode" id="cb83"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb83-1" data-line-number="1"><span class="kw">qnorm</span>(.<span class="dv">75</span>, <span class="dt">mean =</span> <span class="dv">40</span>, <span class="dt">sd =</span> <span class="dv">2</span>)</a></code></pre></div>
+<pre><code>## [1] 41.34898</code></pre>
+<p>or</p>
+<div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb85-1" data-line-number="1"><span class="dv">40</span> <span class="op">+</span><span class="st"> </span><span class="kw">qnorm</span>(.<span class="dv">75</span>)<span class="op">*</span><span class="dv">2</span></a></code></pre></div>
+<pre><code>## [1] 41.34898</code></pre>
 
 </div>
 </div>
@@ -211,8 +214,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
+<a href="chap3.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="chap1.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -242,7 +245,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/jtr13/1201/edit/master/index.Rmd",
+"link": "https://github.com/jtr13/1201/edit/master/Chapter4.Rmd",
 "text": "Edit"
 },
 "download": null,
