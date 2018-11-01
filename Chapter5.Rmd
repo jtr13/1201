@@ -2,6 +2,8 @@
 
 Devore, Chapter 5
 
+Sections covered: 5.3, 5.4, 5.5
+
 ## The Distribution of a Linear Combination (5.5) {-}
 
 Skip (for now): formula (5.11) -- variance of a linear combination not assuming independence of $X_i$'s.
