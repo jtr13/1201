@@ -1,0 +1,18 @@
+# Tests of Hypotheses Based on a Single Sample {#chap8}
+
+Devore, Chapter 8
+
+Sections covered: 8.1, 8.2, 8.3
+
+## Hypotheses and Test Procedures (8.1) {-}
+
+Skip: Example 8.4 (hypothesis testing and type II error calculation for _small_ sample proportions)
+
+## _z_ Tests for Hypotheses about a Population Mean (8.2) {-}
+
+Skip: calculating Type II error and sample size needed for two sided tests (3rd and 5th formulas in the blue box on p. 331)
+
+## The One-Sample _t_ Test (8.3)
+
+Skip: $\beta$ and Sample Size Distribution (p. 338) to end of section
+

@@ -1,8 +1,8 @@
-# Chapter Title {#chap7}
+# Statistical Intervals Based on a Single Sample {#chap7}
 
 Devore, Chapter 7
 
-Sections covered: 7.1, 7.2
+Sections covered: 7.1, 7.2, 7.3
 
 ## Basic Properties of Confidence Intervals (7.1) {-}
 
@@ -10,6 +10,12 @@ Skip: "Deriving a Confidence Interval", pp. 282-284; "Bootstrap Confidence Inter
 
 ## Large-Sample Confidence Intervals for a Population Mean and Proportion (7.2) {-}
 
-Use:
-$\hat_p \pm z_{\alpha \ 2} \sqrt{\fraq{\hat_p \hat_q}{n}}}$
+You may use: $\hat{p} \pm z_{\alpha/2} \sqrt{\frac{\hat{p}\hat{q}}{n}}$, rather than the formula (7.10) in the blue box on p. 289 for large sample confidence intervals for proportions, skip p. 290
+
+You may use the method from class $n = \frac{4z^2\hat{p}\hat{q}}{w^2}$ for the minimum $n$ needed to ensure a particular confidence interval width for proportions, rather than formula (7.12) -- both appear on p. 291. As noted in Example 7.9 on p. 291, the easier formula gives a slightly different answer (385 instead of 381).
+
+## Intervals Based on a Normal Population Distribution (7.3) {-}
+
+Skip "A Prediction Interval for a Single Future Value" p. 299 to the end of the section
+
 
