@@ -1,8 +1,10 @@
-# Continuous Distributions {#chap4}
+# Continuous Random Variables and Probability Distributions {#chap4}
 
 Devore, Chapter 4
 
-## Normal distribution
+Sections covered: 4.1, 4.2, 4.3
+
+## R {-}
 
 $P(Z \leq -1)$
 
