@@ -1,0 +1,15 @@
+# Chapter Title {#chap7}
+
+Devore, Chapter 7
+
+Sections covered: 7.1, 7.2
+
+## Basic Properties of Confidence Intervals (7.1) {-}
+
+Skip: "Deriving a Confidence Interval", pp. 282-284; "Bootstrap Confidence Intervals", p. 284
+
+## Large-Sample Confidence Intervals for a Population Mean and Proportion (7.2) {-}
+
+Use:
+$\hat_p \pm z_{\alpha \ 2} \sqrt{\fraq{\hat_p \hat_q}{n}}}$
+

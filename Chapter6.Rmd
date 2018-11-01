@@ -1,0 +1,13 @@
+# Chapter Title {#chap6}
+
+Devore, Chapter 6
+
+Sections covered: 6.1
+
+## Some General Concepts of Point Estimation (6.1)
+
+Skip everything beginning with "Some Complications" on p. 257
+
+
+
+
