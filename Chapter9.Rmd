@@ -6,7 +6,7 @@ Sections covered: 9.1, 9.2, 9.3, 9.4
 
 ## 9.1 $z$ Tests and CI's for a Difference Between Two Population Means {-}
 
-(Case 1)
+(Cases 1 & 2)
 
 Skip: $\beta$ and the Choice of Sample Size (pp. 366-367)
 
@@ -53,6 +53,8 @@ diffmeans(2258, 2637, -200, 1519, 1138, 663, 413, "lowertail")
 ```
 
 ## 9.2 The Two-Sample $t$ Test and CI {-}
+
+(Case 3)
 
 Use: http://bit.ly/degreesoffreedom to calculate the degrees of freedom
 
