@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="chap3.html">
-<link rel="next" href="chap5.html">
+<link rel="prev" href="chap8.html">
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -205,34 +205,69 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="chap4" class="section level1">
-<h1><span class="header-section-number">Chapter 4</span> Continuous Random Variables and Probability Distributions</h1>
-<p>Devore, Chapter 4</p>
-<p>Sections covered: 4.1, 4.2, 4.3</p>
-<div id="r" class="section level2 unnumbered">
-<h2>R</h2>
-<p><span class="math inline">\(P(Z \leq -1)\)</span></p>
-<p>Unless specified otherwise, <code>pnorm</code> uses a mean of 0 and standard deviation of 1 (standard normal).</p>
-<div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb73-1" data-line-number="1"><span class="kw">pnorm</span>(<span class="op">-</span><span class="dv">1</span>)</a></code></pre></div>
-<pre><code>## [1] 0.1586553</code></pre>
-<p><span class="math inline">\(P(X \leq 37)\)</span> given <span class="math inline">\(\mu = 40\)</span> and <span class="math inline">\(\sigma = 2\)</span></p>
-<div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb75-1" data-line-number="1"><span class="kw">pnorm</span>(<span class="dv">37</span>, <span class="dt">mean =</span> <span class="dv">40</span>, <span class="dt">sd =</span> <span class="dv">2</span>)</a></code></pre></div>
-<pre><code>## [1] 0.0668072</code></pre>
-<p>or</p>
-<div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb77-1" data-line-number="1"><span class="kw">pnorm</span>((<span class="dv">37-40</span>)<span class="op">/</span><span class="dv">2</span>)</a></code></pre></div>
-<pre><code>## [1] 0.0668072</code></pre>
-<p><span class="math inline">\(P(X &gt; 39)\)</span></p>
-<div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb79-1" data-line-number="1"><span class="dv">1</span> <span class="op">-</span><span class="st"> </span><span class="kw">pnorm</span>(<span class="dv">39</span>, <span class="dt">mean =</span> <span class="dv">40</span>, <span class="dt">sd =</span> <span class="dv">2</span>)</a></code></pre></div>
-<pre><code>## [1] 0.6914625</code></pre>
-<p>Find the 75th percentile for the standard normal distribution:</p>
-<div class="sourceCode" id="cb81"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb81-1" data-line-number="1"><span class="kw">qnorm</span>(.<span class="dv">75</span>)</a></code></pre></div>
-<pre><code>## [1] 0.6744898</code></pre>
-<p>Find the 75th percentile for a normally distribution population with mean 40 and standard deviation 2:</p>
-<div class="sourceCode" id="cb83"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb83-1" data-line-number="1"><span class="kw">qnorm</span>(.<span class="dv">75</span>, <span class="dt">mean =</span> <span class="dv">40</span>, <span class="dt">sd =</span> <span class="dv">2</span>)</a></code></pre></div>
-<pre><code>## [1] 41.34898</code></pre>
-<p>or</p>
-<div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb85-1" data-line-number="1"><span class="dv">40</span> <span class="op">+</span><span class="st"> </span><span class="kw">qnorm</span>(.<span class="dv">75</span>)<span class="op">*</span><span class="dv">2</span></a></code></pre></div>
-<pre><code>## [1] 41.34898</code></pre>
+<div id="chap9" class="section level1">
+<h1><span class="header-section-number">Chapter 9</span> Tests of Hypotheses Based on a Single Sample</h1>
+<p>Devore, Chapter 9</p>
+<p>Sections covered: 9.1, 9.2, 9.3, 9.4</p>
+<div id="z-tests-and-cis-for-a-difference-between-two-population-means" class="section level2">
+<h2><span class="header-section-number">9.1</span> <span class="math inline">\(z\)</span> Tests and CI’s for a Difference Between Two Population Means</h2>
+<p>(Case 1)</p>
+<p>Skip: <span class="math inline">\(\beta\)</span> and the Choice of Sample Size (pp. 366-367)</p>
+<div id="r-1" class="section level3">
+<h3><span class="header-section-number">9.1.1</span> R</h3>
+<p>Since you aren’t given the original data, R isn’t very helpful here, but you can write a function that you could reuse, such as:</p>
+<div class="sourceCode" id="cb87"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb87-1" data-line-number="1"><span class="kw">options</span>(<span class="dt">scipen =</span> <span class="dv">999</span>) <span class="co"># get rid of scientific notation</span></a>
+<a class="sourceLine" id="cb87-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb87-3" data-line-number="3"><span class="co"># this function only has to be run once per session, and then you can reuse it.</span></a>
+<a class="sourceLine" id="cb87-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb87-5" data-line-number="5">diffmeans &lt;-<span class="st"> </span><span class="cf">function</span>(xbar, ybar, delta0,</a>
+<a class="sourceLine" id="cb87-6" data-line-number="6">                      sigma1, sigma2,</a>
+<a class="sourceLine" id="cb87-7" data-line-number="7">                      m, n, <span class="dt">type =</span> <span class="st">&quot;twosided&quot;</span>) {</a>
+<a class="sourceLine" id="cb87-8" data-line-number="8">  </a>
+<a class="sourceLine" id="cb87-9" data-line-number="9">Z &lt;-<span class="st"> </span>((xbar <span class="op">-</span><span class="st"> </span>ybar) <span class="op">-</span><span class="st"> </span>delta0)<span class="op">/</span><span class="kw">sqrt</span>(((sigma1<span class="op">^</span><span class="dv">2</span>)<span class="op">/</span>m) <span class="op">+</span><span class="st"> </span>((sigma2<span class="op">^</span><span class="dv">2</span>)<span class="op">/</span>n))</a>
+<a class="sourceLine" id="cb87-10" data-line-number="10"></a>
+<a class="sourceLine" id="cb87-11" data-line-number="11"></a>
+<a class="sourceLine" id="cb87-12" data-line-number="12"><span class="cf">if</span> (type <span class="op">==</span><span class="st"> &quot;twosided&quot;</span>) {</a>
+<a class="sourceLine" id="cb87-13" data-line-number="13">  pvalue &lt;-<span class="st"> </span><span class="kw">pnorm</span>(<span class="op">-</span><span class="kw">abs</span>(Z))<span class="op">*</span><span class="dv">2</span></a>
+<a class="sourceLine" id="cb87-14" data-line-number="14">} <span class="cf">else</span> <span class="cf">if</span> (type <span class="op">==</span><span class="st"> &quot;lowertail&quot;</span>) {</a>
+<a class="sourceLine" id="cb87-15" data-line-number="15">  pvalue &lt;-<span class="st"> </span><span class="kw">pnorm</span>(Z)</a>
+<a class="sourceLine" id="cb87-16" data-line-number="16">} <span class="cf">else</span> {</a>
+<a class="sourceLine" id="cb87-17" data-line-number="17">  pvalue &lt;-<span class="st"> </span><span class="dv">1</span> <span class="op">-</span><span class="st"> </span><span class="kw">pnorm</span>(Z)</a>
+<a class="sourceLine" id="cb87-18" data-line-number="18">}</a>
+<a class="sourceLine" id="cb87-19" data-line-number="19"></a>
+<a class="sourceLine" id="cb87-20" data-line-number="20"><span class="kw">print</span>(<span class="kw">c</span>(<span class="st">&quot;The p-value is&quot;</span>, <span class="kw">round</span>(pvalue, <span class="dv">4</span>)))</a>
+<a class="sourceLine" id="cb87-21" data-line-number="21"></a>
+<a class="sourceLine" id="cb87-22" data-line-number="22">}</a>
+<a class="sourceLine" id="cb87-23" data-line-number="23"></a>
+<a class="sourceLine" id="cb87-24" data-line-number="24"></a>
+<a class="sourceLine" id="cb87-25" data-line-number="25"><span class="co"># Example 9.1, p. 365</span></a>
+<a class="sourceLine" id="cb87-26" data-line-number="26"></a>
+<a class="sourceLine" id="cb87-27" data-line-number="27"><span class="kw">diffmeans</span>(<span class="dt">xbar  =</span> <span class="fl">29.8</span>, <span class="dt">ybar  =</span> <span class="fl">34.7</span>,</a>
+<a class="sourceLine" id="cb87-28" data-line-number="28">          <span class="dt">delta0 =</span> <span class="dv">0</span>, <span class="dt">sigma1 =</span> <span class="dv">4</span>, <span class="dt">sigma2 =</span> <span class="dv">5</span>,</a>
+<a class="sourceLine" id="cb87-29" data-line-number="29">          <span class="dt">m =</span> <span class="dv">20</span>, <span class="dt">n =</span> <span class="dv">25</span>, <span class="dt">type =</span> <span class="st">&quot;twosided&quot;</span>)</a></code></pre></div>
+<pre><code>## [1] &quot;The p-value is&quot; &quot;0.0003&quot;</code></pre>
+<div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb89-1" data-line-number="1"><span class="co"># Example 9.4, p. 368</span></a>
+<a class="sourceLine" id="cb89-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb89-3" data-line-number="3"><span class="co"># As long as you use the correct order of parameters, you don&#39;t have to write out the names:</span></a>
+<a class="sourceLine" id="cb89-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb89-5" data-line-number="5"><span class="kw">diffmeans</span>(<span class="dv">2258</span>, <span class="dv">2637</span>, <span class="dv">-200</span>, <span class="dv">1519</span>, <span class="dv">1138</span>, <span class="dv">663</span>, <span class="dv">413</span>, <span class="st">&quot;lowertail&quot;</span>)</a></code></pre></div>
+<pre><code>## [1] &quot;The p-value is&quot; &quot;0.0139&quot;</code></pre>
+</div>
+</div>
+<div id="the-two-sample-t-test-and-ci-9.2" class="section level2 unnumbered">
+<h2>The Two-Sample <span class="math inline">\(t\)</span> Test and CI (9.2)</h2>
+<p>Use: <a href="http://bit.ly/degreesoffreedom" class="uri">http://bit.ly/degreesoffreedom</a> to calculate the degrees of freedom</p>
+<p>Skip: Pooled <span class="math inline">\(t\)</span> Procedures (pp. 377-378)</p>
+<p>Skip: Type II Error Probabilities (pp. 378-379)</p>
+</div>
+<div id="analysis-of-paired-data-9.3" class="section level2 unnumbered">
+<h2>Analysis of Paired Data (9.3)</h2>
+<p>Skip: Paired Data and Two-Sample <span class="math inline">\(t\)</span> Procedures (pp. 386-387)</p>
+<p>Skip: Paired Versus Unpaired Experiments (pp. 387-388)</p>
+</div>
+<div id="inferences-concerning-a-difference-between-population-proportions" class="section level2">
+<h2><span class="header-section-number">9.2</span> Inferences Concerning a Difference Between Population Proportions</h2>
+<p>Skip: Type II Error Probabilities and Sample Sizes (pp. 394-395)</p>
 
 </div>
 </div>
@@ -241,8 +276,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="chap3.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="chap5.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="chap8.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -272,7 +307,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/jtr13/1201/edit/master/Chapter4.Rmd",
+"link": "https://github.com/jtr13/1201/edit/master/Chapter9.Rmd",
 "text": "Edit"
 },
 "download": null,

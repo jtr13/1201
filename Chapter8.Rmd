@@ -2,7 +2,7 @@
 
 Devore, Chapter 8
 
-Sections covered: 8.1, 8.2, 8.3
+Sections covered: 8.1, 8.2, 8.3, 8.4
 
 ## Hypotheses and Test Procedures (8.1) {-}
 
@@ -16,5 +16,9 @@ Skip: calculating Type II error and sample size needed for two sided tests (3rd 
 
 ## The One-Sample _t_ Test (8.3) {-}
 
-Skip: $\beta$ and Sample Size Distribution (p. 338) to end of section
+Skip: $\beta$ and Sample Size Determination (p. 338) to end of section
+
+## Tests Concerning a Population Proportion (8.4) {-}
+
+Skip: $\beta$ and Sample Size Determination (pp. 348-349)
 
