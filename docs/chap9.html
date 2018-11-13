@@ -177,13 +177,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="chap8.html#the-one-sample-t-test-8.3">The One-Sample <em>t</em> Test (8.3)</a></li>
 <li class="chapter" data-level="" data-path="chap8.html"><a href="chap8.html#tests-concerning-a-population-proportion-8.4"><i class="fa fa-check"></i>Tests Concerning a Population Proportion (8.4)</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="chap9.html"><a href="chap9.html"><i class="fa fa-check"></i><b>9</b> Tests of Hypotheses Based on a Single Sample</a><ul>
-<li class="chapter" data-level="9.1" data-path="chap9.html"><a href="chap9.html#z-tests-and-cis-for-a-difference-between-two-population-means"><i class="fa fa-check"></i><b>9.1</b> <span class="math inline">\(z\)</span> Tests and CI’s for a Difference Between Two Population Means</a><ul>
-<li class="chapter" data-level="9.1.1" data-path="chap9.html"><a href="chap9.html#r-1"><i class="fa fa-check"></i><b>9.1.1</b> R</a></li>
+<li class="chapter" data-level="9" data-path="chap9.html"><a href="chap9.html"><i class="fa fa-check"></i><b>9</b> Inferences Based on Two Samples</a><ul>
+<li><a href="chap9.html#z-tests-and-cis-for-a-difference-between-two-population-means">(9.1) <span class="math inline">\(z\)</span> Tests and CI’s for a Difference Between Two Population Means</a><ul>
+<li class="chapter" data-level="" data-path="chap9.html"><a href="chap9.html#r-1"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
-<li><a href="chap9.html#the-two-sample-t-test-and-ci-9.2">The Two-Sample <span class="math inline">\(t\)</span> Test and CI (9.2)</a></li>
-<li class="chapter" data-level="" data-path="chap9.html"><a href="chap9.html#analysis-of-paired-data-9.3"><i class="fa fa-check"></i>Analysis of Paired Data (9.3)</a></li>
-<li class="chapter" data-level="9.2" data-path="chap9.html"><a href="chap9.html#inferences-concerning-a-difference-between-population-proportions"><i class="fa fa-check"></i><b>9.2</b> Inferences Concerning a Difference Between Population Proportions</a></li>
+<li><a href="chap9.html#the-two-sample-t-test-and-ci">(9.2) The Two-Sample <span class="math inline">\(t\)</span> Test and CI</a></li>
+<li class="chapter" data-level="" data-path="chap9.html"><a href="chap9.html#analysis-of-paired-data"><i class="fa fa-check"></i>(9.3) Analysis of Paired Data</a></li>
+<li class="chapter" data-level="" data-path="chap9.html"><a href="chap9.html#inferences-concerning-a-difference-between-population-proportions"><i class="fa fa-check"></i>(9.4) Inferences Concerning a Difference Between Population Proportions</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -206,15 +206,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
             <section class="normal" id="section-">
 <div id="chap9" class="section level1">
-<h1><span class="header-section-number">Chapter 9</span> Tests of Hypotheses Based on a Single Sample</h1>
+<h1><span class="header-section-number">Chapter 9</span> Inferences Based on Two Samples</h1>
 <p>Devore, Chapter 9</p>
 <p>Sections covered: 9.1, 9.2, 9.3, 9.4</p>
-<div id="z-tests-and-cis-for-a-difference-between-two-population-means" class="section level2">
-<h2><span class="header-section-number">9.1</span> <span class="math inline">\(z\)</span> Tests and CI’s for a Difference Between Two Population Means</h2>
+<div id="z-tests-and-cis-for-a-difference-between-two-population-means" class="section level2 unnumbered">
+<h2>(9.1) <span class="math inline">\(z\)</span> Tests and CI’s for a Difference Between Two Population Means</h2>
 <p>(Case 1)</p>
 <p>Skip: <span class="math inline">\(\beta\)</span> and the Choice of Sample Size (pp. 366-367)</p>
-<div id="r-1" class="section level3">
-<h3><span class="header-section-number">9.1.1</span> R</h3>
+<div id="r-1" class="section level3 unnumbered">
+<h3>R</h3>
 <p>Since you aren’t given the original data, R isn’t very helpful here, but you can write a function that you could reuse, such as:</p>
 <div class="sourceCode" id="cb87"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb87-1" data-line-number="1"><span class="kw">options</span>(<span class="dt">scipen =</span> <span class="dv">999</span>) <span class="co"># get rid of scientific notation</span></a>
 <a class="sourceLine" id="cb87-2" data-line-number="2"></a>
@@ -254,19 +254,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>## [1] &quot;The p-value is&quot; &quot;0.0139&quot;</code></pre>
 </div>
 </div>
-<div id="the-two-sample-t-test-and-ci-9.2" class="section level2 unnumbered">
-<h2>The Two-Sample <span class="math inline">\(t\)</span> Test and CI (9.2)</h2>
+<div id="the-two-sample-t-test-and-ci" class="section level2 unnumbered">
+<h2>(9.2) The Two-Sample <span class="math inline">\(t\)</span> Test and CI</h2>
 <p>Use: <a href="http://bit.ly/degreesoffreedom" class="uri">http://bit.ly/degreesoffreedom</a> to calculate the degrees of freedom</p>
 <p>Skip: Pooled <span class="math inline">\(t\)</span> Procedures (pp. 377-378)</p>
 <p>Skip: Type II Error Probabilities (pp. 378-379)</p>
 </div>
-<div id="analysis-of-paired-data-9.3" class="section level2 unnumbered">
-<h2>Analysis of Paired Data (9.3)</h2>
+<div id="analysis-of-paired-data" class="section level2 unnumbered">
+<h2>(9.3) Analysis of Paired Data</h2>
 <p>Skip: Paired Data and Two-Sample <span class="math inline">\(t\)</span> Procedures (pp. 386-387)</p>
 <p>Skip: Paired Versus Unpaired Experiments (pp. 387-388)</p>
 </div>
-<div id="inferences-concerning-a-difference-between-population-proportions" class="section level2">
-<h2><span class="header-section-number">9.2</span> Inferences Concerning a Difference Between Population Proportions</h2>
+<div id="inferences-concerning-a-difference-between-population-proportions" class="section level2 unnumbered">
+<h2>(9.4) Inferences Concerning a Difference Between Population Proportions</h2>
 <p>Skip: Type II Error Probabilities and Sample Sizes (pp. 394-395)</p>
 
 </div>

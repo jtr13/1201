@@ -1,16 +1,16 @@
-# Tests of Hypotheses Based on a Single Sample {#chap9}
+# Inferences Based on Two Samples {#chap9}
 
 Devore, Chapter 9
 
 Sections covered: 9.1, 9.2, 9.3, 9.4
 
-## $z$ Tests and CI's for a Difference Between Two Population Means
+## (9.1) $z$ Tests and CI's for a Difference Between Two Population Means {-}
 
 (Case 1)
 
 Skip: $\beta$ and the Choice of Sample Size (pp. 366-367)
 
-### R
+### R {-}
 
 Since you aren't given the original data, R isn't very helpful here, but you can write a function that you could reuse, such as:
 
@@ -52,11 +52,7 @@ diffmeans(xbar  = 29.8, ybar  = 34.7,
 diffmeans(2258, 2637, -200, 1519, 1138, 663, 413, "lowertail")
 ```
 
-
-
-
-
-## The Two-Sample $t$ Test and CI (9.2) {-}
+## (9.2) The Two-Sample $t$ Test and CI {-}
 
 Use: http://bit.ly/degreesoffreedom to calculate the degrees of freedom
 
@@ -64,12 +60,12 @@ Skip: Pooled $t$ Procedures (pp. 377-378)
 
 Skip: Type II Error Probabilities (pp. 378-379)
 
-## Analysis of Paired Data (9.3) {-}
+## (9.3) Analysis of Paired Data {-}
 
 Skip: Paired Data and Two-Sample $t$ Procedures (pp. 386-387)
 
 Skip: Paired Versus Unpaired Experiments (pp. 387-388)
 
-## Inferences Concerning a Difference Between Population Proportions
+## (9.4) Inferences Concerning a Difference Between Population Proportions {-}
 
 Skip: Type II Error Probabilities and Sample Sizes (pp. 394-395)
