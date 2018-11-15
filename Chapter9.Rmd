@@ -71,3 +71,14 @@ Skip: Paired Versus Unpaired Experiments (pp. 387-388)
 ## 9.4 Inferences Concerning a Difference Between Population Proportions {-}
 
 Skip: Type II Error Probabilities and Sample Sizes (pp. 394-395)
+
+### R {-}
+
+A/B Testing question from class:
+
+```{r}
+clicks <- c(25, 20)
+people <- c(100, 100)
+prop.test(clicks, people, correct = FALSE)
+```
+

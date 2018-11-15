@@ -25,7 +25,7 @@
 <meta name="author" content="Joyce Robbins">
 
 
-<meta name="date" content="2018-11-13">
+<meta name="date" content="2018-11-14">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -183,7 +183,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li><a href="chap9.html#the-two-sample-t-test-and-ci">9.2 The Two-Sample <span class="math inline">\(t\)</span> Test and CI</a></li>
 <li class="chapter" data-level="" data-path="chap9.html"><a href="chap9.html#analysis-of-paired-data"><i class="fa fa-check"></i>9.3 Analysis of Paired Data</a></li>
-<li class="chapter" data-level="" data-path="chap9.html"><a href="chap9.html#inferences-concerning-a-difference-between-population-proportions"><i class="fa fa-check"></i>9.4 Inferences Concerning a Difference Between Population Proportions</a></li>
+<li class="chapter" data-level="" data-path="chap9.html"><a href="chap9.html#inferences-concerning-a-difference-between-population-proportions"><i class="fa fa-check"></i>9.4 Inferences Concerning a Difference Between Population Proportions</a><ul>
+<li class="chapter" data-level="" data-path="chap9.html"><a href="chap9.html#r-2"><i class="fa fa-check"></i>R</a></li>
+</ul></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -269,7 +271,26 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="inferences-concerning-a-difference-between-population-proportions" class="section level2 unnumbered">
 <h2>9.4 Inferences Concerning a Difference Between Population Proportions</h2>
 <p>Skip: Type II Error Probabilities and Sample Sizes (pp. 394-395)</p>
+<div id="r-2" class="section level3 unnumbered">
+<h3>R</h3>
+<p>A/B Testing question from class:</p>
+<div class="sourceCode" id="cb91"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb91-1" data-line-number="1">clicks &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">25</span>, <span class="dv">20</span>)</a>
+<a class="sourceLine" id="cb91-2" data-line-number="2">people &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">100</span>, <span class="dv">100</span>)</a>
+<a class="sourceLine" id="cb91-3" data-line-number="3"><span class="kw">prop.test</span>(clicks, people, <span class="dt">correct =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
+<pre><code>## 
+##  2-sample test for equality of proportions without continuity
+##  correction
+## 
+## data:  clicks out of people
+## X-squared = 0.71685, df = 1, p-value = 0.3972
+## alternative hypothesis: two.sided
+## 95 percent confidence interval:
+##  -0.06553817  0.16553817
+## sample estimates:
+## prop 1 prop 2 
+##   0.25   0.20</code></pre>
 
+</div>
 </div>
 </div>
             </section>
