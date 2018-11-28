@@ -1,0 +1,51 @@
+# Ch. 14 Chi Squared Test {-}
+
+Sections covered: 14.3
+
+## 14.3 Two-Way Contingency Tables {-}
+
+Skip: pp. 639-643, focus on "Testing for Independence (Lack of Association)"
+
+("estimated expected" in the textbook is the same as "expected" used in class)
+
+## Resources {-}
+
+Chi Square Table
+
+![](chisquare.png)
+
+
+[Chi Squared Test Calculator](http://bit.ly/chisquare1201)
+
+[Chi Squared Distribution Curves](https://saylordotorg.github.io/text_introductory-statistics/s15-01-chi-square-tests-for-independe.html)
+
+## R {-}
+
+The `chisq.test()` function requires that data be in matrix form:
+
+```{r}
+# p. 647, #28
+mat <- matrix(c(28, 17, 7, 31, 26, 10, 26, 19, 11), nrow = 3, byrow = TRUE)
+
+dimnames(mat) <- list(`Email_Provider` = c("gmail", "Yahoo", "Other"),
+                      `Cell_Phone_Provider` = c("ATT", "Verizon", "Other"))
+
+chisq.test(mat, correct = FALSE)
+
+```
+
+To see the expected values:
+
+```{r}
+results <- chisq.test(mat, correct = FALSE)
+round(results$expected, 2)
+```
+
+Mosaic plot
+
+
+```{r}
+mosaicplot(t(mat), color = c("aliceblue", "cornflowerblue", "navyblue"), main = "")
+```
+
+See [this tutorial](https://github.com/jtr13/codehelp/blob/master/R/mosaic.md) for more on mosaic plots.

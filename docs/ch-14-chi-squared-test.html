@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
+<link rel="prev" href="ch-5-joint-probability.html">
 
-<link rel="next" href="ch-1-descriptive-statistics.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -218,31 +218,48 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Stat1201</h1>
-<h4 class="author"><em>Joyce Robbins</em></h4>
-<h4 class="date"><em>2018-11-28</em></h4>
+<div id="ch.-14-chi-squared-test" class="section level1 unnumbered">
+<h1>Ch. 14 Chi Squared Test</h1>
+<p>Sections covered: 14.3</p>
+<div id="two-way-contingency-tables" class="section level2 unnumbered">
+<h2>14.3 Two-Way Contingency Tables</h2>
+<p>Skip: pp. 639-643, focus on “Testing for Independence (Lack of Association)”</p>
+<p>(“estimated expected” in the textbook is the same as “expected” used in class)</p>
 </div>
-<div id="introduction" class="section level1 unnumbered">
-<h1>Introduction</h1>
-<p>Resources for Stat 1201</p>
-<p>If you find online resources that are helpful to this class, please <a href="https://github.com/jtr13/1201/issues/new">create an issue</a> or send me an email and I’ll add them to this resource.</p>
-<!-- Contact -->
-<div id="contact" class="section level2">
-<h2><span class="header-section-number">0.1</span> Contact</h2>
-<p>Joyce Robbins:
-<a href="http://stat.columbia.edu/department-directory/name/joyce-robbins/" target="_blank">Columbia Profile</a>
-/
-<a href="http://www.joyce-robbins.com/" target="_blank">Website</a>
-/
-<a href="https://twitter.com/jtrnyc" target="_blank">Twitter</a>
-/
-<a href="https://github.com/jtr13" target="_blank">GitHub</a></p>
-<!-- License -->
+<div id="resources-1" class="section level2 unnumbered">
+<h2>Resources</h2>
+<p>Chi Square Table</p>
+<p><img src="chisquare.png" /></p>
+<p><a href="http://bit.ly/chisquare1201">Chi Squared Test Calculator</a></p>
+<p><a href="https://saylordotorg.github.io/text_introductory-statistics/s15-01-chi-square-tests-for-independe.html">Chi Squared Distribution Curves</a></p>
 </div>
-<div id="license" class="section level2">
-<h2><span class="header-section-number">0.2</span> License</h2>
-<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+<div id="r-3" class="section level2 unnumbered">
+<h2>R</h2>
+<p>The <code>chisq.test()</code> function requires that data be in matrix form:</p>
+<div class="sourceCode" id="cb93"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb93-1" data-line-number="1"><span class="co"># p. 647, #28</span></a>
+<a class="sourceLine" id="cb93-2" data-line-number="2">mat &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="kw">c</span>(<span class="dv">28</span>, <span class="dv">17</span>, <span class="dv">7</span>, <span class="dv">31</span>, <span class="dv">26</span>, <span class="dv">10</span>, <span class="dv">26</span>, <span class="dv">19</span>, <span class="dv">11</span>), <span class="dt">nrow =</span> <span class="dv">3</span>, <span class="dt">byrow =</span> <span class="ot">TRUE</span>)</a>
+<a class="sourceLine" id="cb93-3" data-line-number="3"></a>
+<a class="sourceLine" id="cb93-4" data-line-number="4"><span class="kw">dimnames</span>(mat) &lt;-<span class="st"> </span><span class="kw">list</span>(<span class="st">`</span><span class="dt">Email_Provider</span><span class="st">`</span> =<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;gmail&quot;</span>, <span class="st">&quot;Yahoo&quot;</span>, <span class="st">&quot;Other&quot;</span>),</a>
+<a class="sourceLine" id="cb93-5" data-line-number="5">                      <span class="st">`</span><span class="dt">Cell_Phone_Provider</span><span class="st">`</span> =<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;ATT&quot;</span>, <span class="st">&quot;Verizon&quot;</span>, <span class="st">&quot;Other&quot;</span>))</a>
+<a class="sourceLine" id="cb93-6" data-line-number="6"></a>
+<a class="sourceLine" id="cb93-7" data-line-number="7"><span class="kw">chisq.test</span>(mat, <span class="dt">correct =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
+<pre><code>## 
+##  Pearson&#39;s Chi-squared test
+## 
+## data:  mat
+## X-squared = 1.5074, df = 4, p-value = 0.8253</code></pre>
+<p>To see the expected values:</p>
+<div class="sourceCode" id="cb95"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb95-1" data-line-number="1">results &lt;-<span class="st"> </span><span class="kw">chisq.test</span>(mat, <span class="dt">correct =</span> <span class="ot">FALSE</span>)</a>
+<a class="sourceLine" id="cb95-2" data-line-number="2"><span class="kw">round</span>(results<span class="op">$</span>expected, <span class="dv">2</span>)</a></code></pre></div>
+<pre><code>##               Cell_Phone_Provider
+## Email_Provider   ATT Verizon Other
+##          gmail 25.26   18.42  8.32
+##          Yahoo 32.54   23.74 10.72
+##          Other 27.20   19.84  8.96</code></pre>
+<p>Mosaic plot</p>
+<div class="sourceCode" id="cb97"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb97-1" data-line-number="1"><span class="kw">mosaicplot</span>(<span class="kw">t</span>(mat), <span class="dt">color =</span> <span class="kw">c</span>(<span class="st">&quot;aliceblue&quot;</span>, <span class="st">&quot;cornflowerblue&quot;</span>, <span class="st">&quot;navyblue&quot;</span>), <span class="dt">main =</span> <span class="st">&quot;&quot;</span>)</a></code></pre></div>
+<p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-32-1.png" width="672" /></p>
+<p>See <a href="https://github.com/jtr13/codehelp/blob/master/R/mosaic.md">this tutorial</a> for more on mosaic plots.</p>
 
 </div>
 </div>
@@ -251,8 +268,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
+<a href="ch-5-joint-probability.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="ch-1-descriptive-statistics.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -282,7 +299,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/jtr13/1201/edit/master/index.Rmd",
+"link": "https://github.com/jtr13/1201/edit/master/SquareChi.Rmd",
 "text": "Edit"
 },
 "download": null,

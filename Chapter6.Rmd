@@ -1,10 +1,8 @@
-# Point Estimation {#chap6}
-
-Devore, Chapter 6
+# Ch. 6 Point Estimation {-}
 
 Sections covered: 6.1
 
-## Some General Concepts of Point Estimation (6.1) {-}
+## 6.1 Some General Concepts of Point Estimation {-}
 
 Skip everything beginning with "Some Complications" on p. 257
 

@@ -1,14 +1,12 @@
-# Joint Probability Distributions and Random Samples {#chap5}
-
-Devore, Chapter 5
+# Ch. 5 Random Samples {-}
 
 Sections covered: 5.3, 5.4, 5.5
 
-## The Distribution of the Sample Mean (5.4) {-}
+## 5.4 The Distribution of the Sample Mean {-}
 
 Central Limit Theorem visualization: http://mfviz.com/central-limit/
 
-## The Distribution of a Linear Combination (5.5) {-}
+## 5.5 The Distribution of a Linear Combination {-}
 
 Skip (for now): formula (5.11) -- variance of a linear combination not assuming independence of $X_i$'s.
 

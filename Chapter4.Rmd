@@ -1,6 +1,4 @@
-# Continuous Random Variables and Probability Distributions {#chap4}
-
-Devore, Chapter 4
+# Ch. 4 Continuous Random Variables and Probability Distributions {-}
 
 Sections covered: 4.1, 4.2, 4.3
 

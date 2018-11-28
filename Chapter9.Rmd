@@ -1,6 +1,4 @@
-# Inferences Based on Two Samples {#chap9}
-
-Devore, Chapter 9
+# Ch. 9 Inferences Based on Two Samples {-}
 
 Sections covered: 9.1, 9.2, 9.3, 9.4
 

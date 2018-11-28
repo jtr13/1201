@@ -3,10 +3,11 @@ title: "Stat1201"
 author: "Joyce Robbins"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-documentclass: book
-#bibliography: [book.bib]
-#biblio-style: apalike
-link-citations: yes
+# template: https://github.com/rstudio/bookdown/issues/502
+output:
+  bookdown::gitbook:
+    config:
+      number_sections: no
 github-repo: "jtr13/1201"
 url: 'https://jtr13.github.io/1201/'
 description: "Supplemental resources for Stat1201"
@@ -17,7 +18,7 @@ description: "Supplemental resources for Stat1201"
 
 Resources for Stat 1201
 
-If you find online resources that are helpful to this class, please create an issue (click the pen icon above and then the Issues tab) or send me an email and I'll add them to this resource. 
+If you find online resources that are helpful to this class, please [create an issue](https://github.com/jtr13/1201/issues/new) or send me an email and I'll add them to this resource. 
 
 
 <!-- Contact -->

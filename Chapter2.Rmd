@@ -1,14 +1,12 @@
-# Ch. 2 Probability {#chap2} {-}
+# Ch. 2 Probability {-}
 
-Devore, Chapter 2
-
-## Factorial (2.3)
+## 2.3 Factorial {-}
 
 ```{r}
 factorial(5)
 ```
 
-## Combinations (2.3)
+## 2.3 Combinations {-}
 
 "5 choose 2" = choose 2 items out of 5
 
@@ -16,7 +14,7 @@ factorial(5)
 choose(5, 2)
 ```
 
-## Permutations (2.3)
+## 2.3 Permutations {-}
 
 There is no built-in function to calculate permutations.  You can multiply the number of combinations by *k!*.
 

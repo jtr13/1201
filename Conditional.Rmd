@@ -1,0 +1,7 @@
+# Ch. 2 Conditional Probability {-}
+
+Section covered: 2.4 
+
+## Resources {-}
+
+[An Intuitive (and Short) Explanation of Bayes' Theorem](https://betterexplained.com/articles/an-intuitive-and-short-explanation-of-bayes-theorem/)

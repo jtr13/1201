@@ -1,8 +1,6 @@
-# Discrete Distributions {#chap3}
+# Ch. 3 Discrete Distributions {-}
 
-Devore, Chapter 3
-
-## Expected value (3.3)
+## 3.3 Expected value {-}
 
 ```{r}
 x <- 1:5
@@ -13,7 +11,7 @@ x*px
 sum(x*px)    # E(X)
 ```
 
-## Variance (3.3)
+## 3.3 Variance {-}
 
 ```{r}
 x - 3.5
@@ -22,7 +20,7 @@ x - 3.5
 sum(((x - 3.5)^2)*px)   # V(X)
 ```
 
-## Variance (alternative method) (3.3)
+## 3.3 Variance (alternative method) {-}
 ```{r}
 x
 px
@@ -32,7 +30,7 @@ sum((x^2)*px)  # E(X^2)
 14-3.5^2     # E(X^2) - [E(X)]^2
 ```
 
-## Binominal Theorem (3.4)
+## 3.4 Binominal Theorem {-}
 ```{r}
 choose(8, 3)    # "8 choose 3"
 56*.6^3*.4^5     # P(X = 3) given n = 8, p = .6
@@ -43,7 +41,7 @@ Direct method
 dbinom(3, 8, .6)     # P(X = 3) given n = 8, p = .6
 ```
 
-## Hypergeometric (3.5)
+## 3.5 Hypergeometric {-}
 
 Note that the notation that R uses is different from the Devore textbook:
 
@@ -64,7 +62,7 @@ Devore: *h(x; n, M, N)*
 dhyper(x = 2, m = 5, n = 20, k = 10)
 ```
 
-## Poisson (3.6)
+## 3.6 Poisson {-}
 
 Example (p. 132)
 

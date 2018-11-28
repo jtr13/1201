@@ -1,0 +1,8 @@
+# Ch. 5 Joint Probability {-}
+
+Sections covered: 5.1, 5.2
+
+## 5.1 Jointly Distributed Random Variables {-}
+
+Skip: "Two Continuous Random Variables" (pp. 201-204); Examples 5.7, 5.8 p. 205; "More Than Two Random Variables" pp. 205-208; "Conditional Distributions" p. 209
+
