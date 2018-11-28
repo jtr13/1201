@@ -1,4 +1,4 @@
-# Descriptive Statistics {#chap1}
+# Ch. 1 Descriptive Statistics {#chap1} {-}
 
 Devore, Chapter 1
 

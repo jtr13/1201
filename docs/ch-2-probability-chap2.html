@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="chap6.html">
-<link rel="next" href="chap8.html">
+<link rel="prev" href="ch-1-descriptive-statistics-chap1.html">
+<link rel="next" href="chap3.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -207,22 +207,31 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="chap7" class="section level1">
-<h1><span class="header-section-number">Chapter 5</span> Statistical Intervals Based on a Single Sample</h1>
-<p>Devore, Chapter 7</p>
-<p>Sections covered: 7.1, 7.2, 7.3</p>
-<div id="basic-properties-of-confidence-intervals-7.1" class="section level2 unnumbered">
-<h2>Basic Properties of Confidence Intervals (7.1)</h2>
-<p>Skip: “Deriving a Confidence Interval”, pp. 282-284; “Bootstrap Confidence Intervals”, p. 284</p>
+<div id="ch.-2-probability-chap2" class="section level1 unnumbered">
+<h1>Ch. 2 Probability {#chap2}</h1>
+<p>Devore, Chapter 2</p>
+<div id="factorial-2.3" class="section level2">
+<h2><span class="header-section-number">0.9</span> Factorial (2.3)</h2>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb25-1" data-line-number="1"><span class="kw">factorial</span>(<span class="dv">5</span>)</a></code></pre></div>
+<pre><code>## [1] 120</code></pre>
 </div>
-<div id="large-sample-confidence-intervals-for-a-population-mean-and-proportion-7.2" class="section level2 unnumbered">
-<h2>Large-Sample Confidence Intervals for a Population Mean and Proportion (7.2)</h2>
-<p>You may use: <span class="math inline">\(\hat{p} \pm z_{\alpha/2} \sqrt{\frac{\hat{p}\hat{q}}{n}}\)</span>, rather than the formula (7.10) in the blue box on p. 289 for large sample confidence intervals for proportions, skip p. 290</p>
-<p>You may use the method from class <span class="math inline">\(n = \frac{4z^2\hat{p}\hat{q}}{w^2}\)</span> for the minimum <span class="math inline">\(n\)</span> needed to ensure a particular confidence interval width for proportions, rather than formula (7.12) – both appear on p. 291. As noted in Example 7.9 on p. 291, the easier formula gives a slightly different answer (385 instead of 381).</p>
+<div id="combinations-2.3" class="section level2">
+<h2><span class="header-section-number">0.10</span> Combinations (2.3)</h2>
+<p>“5 choose 2” = choose 2 items out of 5</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb27-1" data-line-number="1"><span class="kw">choose</span>(<span class="dv">5</span>, <span class="dv">2</span>)</a></code></pre></div>
+<pre><code>## [1] 10</code></pre>
 </div>
-<div id="intervals-based-on-a-normal-population-distribution-7.3" class="section level2 unnumbered">
-<h2>Intervals Based on a Normal Population Distribution (7.3)</h2>
-<p>Skip “A Prediction Interval for a Single Future Value” p. 299 to the end of the section</p>
+<div id="permutations-2.3" class="section level2">
+<h2><span class="header-section-number">0.11</span> Permutations (2.3)</h2>
+<p>There is no built-in function to calculate permutations. You can multiply the number of combinations by <em>k!</em>.</p>
+<p>Ex. Number of permutations of size 2 that can be formed from 5 distinct items:</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb29-1" data-line-number="1"><span class="kw">choose</span>(<span class="dv">5</span>,<span class="dv">2</span>)<span class="op">*</span><span class="kw">factorial</span>(<span class="dv">2</span>)</a></code></pre></div>
+<pre><code>## [1] 20</code></pre>
+<p>You can create your own function to do this:</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb31-1" data-line-number="1">perm &lt;-<span class="st"> </span><span class="cf">function</span>(n, k) {<span class="kw">choose</span>(n,k)<span class="op">*</span><span class="kw">factorial</span>(k)}</a>
+<a class="sourceLine" id="cb31-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb31-3" data-line-number="3"><span class="kw">perm</span>(<span class="dv">5</span>,<span class="dv">2</span>)</a></code></pre></div>
+<pre><code>## [1] 20</code></pre>
 
 </div>
 </div>
@@ -231,8 +240,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="chap6.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="chap8.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="ch-1-descriptive-statistics-chap1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="chap3.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -262,7 +271,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/jtr13/1201/edit/master/Chapter7.Rmd",
+"link": "https://github.com/jtr13/1201/edit/master/Chapter2.Rmd",
 "text": "Edit"
 },
 "download": null,

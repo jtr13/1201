@@ -1,4 +1,4 @@
-# Probability {#chap2}
+# Ch. 2 Probability {#chap2} {-}
 
 Devore, Chapter 2
 
