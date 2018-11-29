@@ -9,3 +9,9 @@ Skip: "Two Continuous Random Variables" (pp. 201-204); Examples 5.7, 5.8 p. 205;
 ## 5.2 Expected Values, Covariance, and Correlation {-}
 
 Skip: all double integrals, "The Bivariate Normal Distribution" pp. 218-219
+
+## Resources {-}
+
+Correlation and Covariance Visualization
+
+http://shiny.albany.edu/stat/rectangles/
