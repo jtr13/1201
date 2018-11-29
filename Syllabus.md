@@ -27,7 +27,7 @@ Office hours: Wednesdays, 2pm-4pm, Watson 601, 612 West 115th St.
   
 Jialin Ouyang: <a href="mailto:jo2559@columbia.edu">jo2559@columbia.edu</a>  (Tues/Thurs TA)
 
-Office hours: Fridays, 4pm-6pm, 6th floor lounge area of Watson Hall, 612 West 115th St.
+Office hours: (NEW) Wednesdays, 4-6pm, 10th floor, School of Social Work building, 1255 Amsterdam (between 121/122)
 
 
 
