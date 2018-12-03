@@ -1,0 +1,84 @@
+# Ch. 12 Linear Regression {-}
+
+Sections covered: 12.1, 12.2, 12.5
+
+## 12.1 The Simple Linear Regression Model {-}
+
+## 12.2 Estimating Model Parameters {-}
+
+### R {-}
+
+Calculating slope and intercept for a sample of (x, y) pairs (p. 498 formulas)
+
+```{r}
+# Example 12.8, p. 503
+x <- c(12, 30, 36, 40, 45, 57, 62, 67, 71, 78, 93, 94, 100, 105)
+y <- c(3.3, 3.2, 3.4, 3, 2.8, 2.9, 2.7, 2.6, 2.5, 2.6, 2.2, 2, 2.3, 2.1)
+lm(y ~ x)  #lm = linear model
+```
+
+Predicted values:
+
+```{r}
+mod <- lm(y~x)
+round(mod$fitted.values, 2)
+```
+
+Residuals:
+
+```{r}
+round(mod$residuals, 2)
+```
+
+SSE, SSR
+
+```{r}
+anova(mod)  # anova = analysis of variance
+```
+
+
+SSE = `r anova(mod)[2,2]`
+
+SSR = `r anova(mod)[1,2]`
+
+SST = SSE + SSR = `r anova(mod)[2,2]` + 
+`r anova(mod)[1,2]` = `r round(anova(mod)[2,2] + anova(mod)[1,2], 4)`
+
+coefficient of determination $r^2$
+
+```{r}
+# Example 12.4, 12.9
+x <- c(132, 129, 120, 113.2, 105, 92, 84, 83.2, 88.4, 59, 80, 81.5, 71, 69.2)
+y <- c(46, 48, 51, 52.1, 54, 52, 59, 58.7, 61.6, 64, 61.4, 54.6, 58.8, 58)
+
+mod <- lm(y ~ x)
+
+SSE <- anova(mod)[2,2]
+SST <- anova(mod)[1,2] + anova(mod)[2,2]
+1 - (SSE/SST)
+```
+
+Or (simply):
+```{r}
+cor(x,y)^2
+```
+
+(See section 12.5)
+
+
+## 12.5 Correlation {-}
+
+Skip: "Inferences About the Population Correlation Coefficient" (p. 530) *to end of section*.
+
+### R {-}
+
+sample correlation coefficient $r$
+
+```{r}
+# Example 12.15, p. 528
+x <- c(2.4, 3.4, 4.6, 3.7, 2.2, 3.3, 4.0, 2.1)
+y <- c(1.33, 2.12, 1.80, 1.65, 2.00, 1.76, 2.11, 1.63)
+
+cor(x,y)
+```
+

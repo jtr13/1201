@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="ch-5-random-samples.html">
-<link rel="next" href="ch-7-statistical-intervals-based-on-a-single-sample.html">
+<link rel="prev" href="ch-14-chi-squared-test.html">
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -229,13 +229,84 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="ch.-6-point-estimation" class="section level1 unnumbered">
-<h1>Ch. 6 Point Estimation</h1>
-<p>Sections covered: 6.1</p>
-<div id="some-general-concepts-of-point-estimation" class="section level2 unnumbered">
-<h2>6.1 Some General Concepts of Point Estimation</h2>
-<p>Skip everything beginning with “Some Complications” on p. 257</p>
+<div id="ch.-12-linear-regression" class="section level1 unnumbered">
+<h1>Ch. 12 Linear Regression</h1>
+<p>Sections covered: 12.1, 12.2, 12.5</p>
+<div id="the-simple-linear-regression-model" class="section level2 unnumbered">
+<h2>12.1 The Simple Linear Regression Model</h2>
+</div>
+<div id="estimating-model-parameters" class="section level2 unnumbered">
+<h2>12.2 Estimating Model Parameters</h2>
+<div id="r-4" class="section level3 unnumbered">
+<h3>R</h3>
+<p>Calculating slope and intercept for a sample of (x, y) pairs (p. 498 formulas)</p>
+<div class="sourceCode" id="cb98"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb98-1" data-line-number="1"><span class="co"># Example 12.8, p. 503</span></a>
+<a class="sourceLine" id="cb98-2" data-line-number="2">x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">12</span>, <span class="dv">30</span>, <span class="dv">36</span>, <span class="dv">40</span>, <span class="dv">45</span>, <span class="dv">57</span>, <span class="dv">62</span>, <span class="dv">67</span>, <span class="dv">71</span>, <span class="dv">78</span>, <span class="dv">93</span>, <span class="dv">94</span>, <span class="dv">100</span>, <span class="dv">105</span>)</a>
+<a class="sourceLine" id="cb98-3" data-line-number="3">y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">3.3</span>, <span class="fl">3.2</span>, <span class="fl">3.4</span>, <span class="dv">3</span>, <span class="fl">2.8</span>, <span class="fl">2.9</span>, <span class="fl">2.7</span>, <span class="fl">2.6</span>, <span class="fl">2.5</span>, <span class="fl">2.6</span>, <span class="fl">2.2</span>, <span class="dv">2</span>, <span class="fl">2.3</span>, <span class="fl">2.1</span>)</a>
+<a class="sourceLine" id="cb98-4" data-line-number="4"><span class="kw">lm</span>(y <span class="op">~</span><span class="st"> </span>x)  <span class="co">#lm = linear model</span></a></code></pre></div>
+<pre><code>## 
+## Call:
+## lm(formula = y ~ x)
+## 
+## Coefficients:
+## (Intercept)            x  
+##     3.62091     -0.01471</code></pre>
+<p>Predicted values:</p>
+<div class="sourceCode" id="cb100"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb100-1" data-line-number="1">mod &lt;-<span class="st"> </span><span class="kw">lm</span>(y<span class="op">~</span>x)</a>
+<a class="sourceLine" id="cb100-2" data-line-number="2"><span class="kw">round</span>(mod<span class="op">$</span>fitted.values, <span class="dv">2</span>)</a></code></pre></div>
+<pre><code>##    1    2    3    4    5    6    7    8    9   10   11   12   13   14 
+## 3.44 3.18 3.09 3.03 2.96 2.78 2.71 2.64 2.58 2.47 2.25 2.24 2.15 2.08</code></pre>
+<p>Residuals:</p>
+<div class="sourceCode" id="cb102"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb102-1" data-line-number="1"><span class="kw">round</span>(mod<span class="op">$</span>residuals, <span class="dv">2</span>)</a></code></pre></div>
+<pre><code>##     1     2     3     4     5     6     7     8     9    10    11    12 
+## -0.14  0.02  0.31 -0.03 -0.16  0.12 -0.01 -0.04 -0.08  0.13 -0.05 -0.24 
+##    13    14 
+##  0.15  0.02</code></pre>
+<p>SSE, SSR</p>
+<div class="sourceCode" id="cb104"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb104-1" data-line-number="1"><span class="kw">anova</span>(mod)  <span class="co"># anova = analysis of variance</span></a></code></pre></div>
+<pre><code>## Analysis of Variance Table
+## 
+## Response: y
+##           Df  Sum Sq Mean Sq F value       Pr(&gt;F)    
+## x          1 2.29469 2.29469  104.92 0.0000002762 ***
+## Residuals 12 0.26246 0.02187                         
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
+<p>SSE = 0.2624565</p>
+<p>SSR = 2.2946864</p>
+<p>SST = SSE + SSR = 0.2624565 +
+2.2946864 = 2.5571</p>
+<p>coefficient of determination <span class="math inline">\(r^2\)</span></p>
+<div class="sourceCode" id="cb106"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb106-1" data-line-number="1"><span class="co"># Example 12.4, 12.9</span></a>
+<a class="sourceLine" id="cb106-2" data-line-number="2">x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">132</span>, <span class="dv">129</span>, <span class="dv">120</span>, <span class="fl">113.2</span>, <span class="dv">105</span>, <span class="dv">92</span>, <span class="dv">84</span>, <span class="fl">83.2</span>, <span class="fl">88.4</span>, <span class="dv">59</span>, <span class="dv">80</span>, <span class="fl">81.5</span>, <span class="dv">71</span>, <span class="fl">69.2</span>)</a>
+<a class="sourceLine" id="cb106-3" data-line-number="3">y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">46</span>, <span class="dv">48</span>, <span class="dv">51</span>, <span class="fl">52.1</span>, <span class="dv">54</span>, <span class="dv">52</span>, <span class="dv">59</span>, <span class="fl">58.7</span>, <span class="fl">61.6</span>, <span class="dv">64</span>, <span class="fl">61.4</span>, <span class="fl">54.6</span>, <span class="fl">58.8</span>, <span class="dv">58</span>)</a>
+<a class="sourceLine" id="cb106-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb106-5" data-line-number="5">mod &lt;-<span class="st"> </span><span class="kw">lm</span>(y <span class="op">~</span><span class="st"> </span>x)</a>
+<a class="sourceLine" id="cb106-6" data-line-number="6"></a>
+<a class="sourceLine" id="cb106-7" data-line-number="7">SSE &lt;-<span class="st"> </span><span class="kw">anova</span>(mod)[<span class="dv">2</span>,<span class="dv">2</span>]</a>
+<a class="sourceLine" id="cb106-8" data-line-number="8">SST &lt;-<span class="st"> </span><span class="kw">anova</span>(mod)[<span class="dv">1</span>,<span class="dv">2</span>] <span class="op">+</span><span class="st"> </span><span class="kw">anova</span>(mod)[<span class="dv">2</span>,<span class="dv">2</span>]</a>
+<a class="sourceLine" id="cb106-9" data-line-number="9"><span class="dv">1</span> <span class="op">-</span><span class="st"> </span>(SSE<span class="op">/</span>SST)</a></code></pre></div>
+<pre><code>## [1] 0.7907602</code></pre>
+<p>Or (simply):</p>
+<div class="sourceCode" id="cb108"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb108-1" data-line-number="1"><span class="kw">cor</span>(x,y)<span class="op">^</span><span class="dv">2</span></a></code></pre></div>
+<pre><code>## [1] 0.7907602</code></pre>
+<p>(See section 12.5)</p>
+</div>
+</div>
+<div id="correlation" class="section level2 unnumbered">
+<h2>12.5 Correlation</h2>
+<p>Skip: “Inferences About the Population Correlation Coefficient” (p. 530) <em>to end of section</em>.</p>
+<div id="r-5" class="section level3 unnumbered">
+<h3>R</h3>
+<p>sample correlation coefficient <span class="math inline">\(r\)</span></p>
+<div class="sourceCode" id="cb110"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb110-1" data-line-number="1"><span class="co"># Example 12.15, p. 528</span></a>
+<a class="sourceLine" id="cb110-2" data-line-number="2">x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">2.4</span>, <span class="fl">3.4</span>, <span class="fl">4.6</span>, <span class="fl">3.7</span>, <span class="fl">2.2</span>, <span class="fl">3.3</span>, <span class="fl">4.0</span>, <span class="fl">2.1</span>)</a>
+<a class="sourceLine" id="cb110-3" data-line-number="3">y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">1.33</span>, <span class="fl">2.12</span>, <span class="fl">1.80</span>, <span class="fl">1.65</span>, <span class="fl">2.00</span>, <span class="fl">1.76</span>, <span class="fl">2.11</span>, <span class="fl">1.63</span>)</a>
+<a class="sourceLine" id="cb110-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb110-5" data-line-number="5"><span class="kw">cor</span>(x,y)</a></code></pre></div>
+<pre><code>## [1] 0.3472602</code></pre>
 
+</div>
 </div>
 </div>
             </section>
@@ -243,8 +314,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="ch-5-random-samples.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="ch-7-statistical-intervals-based-on-a-single-sample.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="ch-14-chi-squared-test.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -274,7 +345,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/jtr13/1201/edit/master/Chapter6.Rmd",
+"link": "https://github.com/jtr13/1201/edit/master/ZChap12.Rmd",
 "text": "Edit"
 },
 "download": null,
