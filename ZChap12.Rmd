@@ -70,6 +70,13 @@ cor(x,y)^2
 
 Skip: "Inferences About the Population Correlation Coefficient" (p. 530) *to end of section*.
 
+### Resources {-}
+
+[Correlation coefficient vizualation](https://jtr13.github.io/D3/CorrelationCoefficient.html) (add and remove points)
+
+[Interpreting correlations: an interactive vizualization](https://rpsychologist.com/d3/correlation/) [contributed by Dario G.]
+
+
 ### R {-}
 
 sample correlation coefficient $r$
