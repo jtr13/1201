@@ -6,6 +6,10 @@ Sections covered: 12.1, 12.2, 12.5
 
 ## 12.2 Estimating Model Parameters {-}
 
+### Resources {-}
+
+Video: [Regression I: What is regression? | SSE, SSR, SST | R-squared | Errors (ε vs. e)](https://www.youtube.com/watch?v=aq8VU5KLmkY) [contributed by Lance J.]
+
 ### R {-}
 
 Calculating slope and intercept for a sample of (x, y) pairs (p. 498 formulas)
@@ -72,9 +76,9 @@ Skip: "Inferences About the Population Correlation Coefficient" (p. 530) *to end
 
 ### Resources {-}
 
-[Correlation coefficient vizualation](https://jtr13.github.io/D3/CorrelationCoefficient.html) (add and remove points)
+Interactive visualization: [Correlation Coefficient](https://jtr13.github.io/D3/CorrelationCoefficient.html) (add and remove points)
 
-[Interpreting correlations: an interactive vizualization](https://rpsychologist.com/d3/correlation/) [contributed by Dario G.]
+Interactive visualization: [Interpreting Correlations](https://rpsychologist.com/d3/correlation/) [contributed by Dario G.]
 
 
 ### R {-}
