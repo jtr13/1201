@@ -1,0 +1,15 @@
+# Ch. 13 Nonlinear and Multiple Regression {-}
+
+Sections covered: 13.1
+
+## 13.1 Assessing Model Adequacy {-}
+
+Skip: standardized residuals
+
+Residuals plots: know $e$ vs. $x$ only
+
+Difficulties and remedies: 1. - 4. -- know the difficulties, not the remedies
+
+Skip: weighted least squares (p. 547)
+
+
