@@ -40,9 +40,9 @@ This introductory course is designed for students who desire a strong grounding 
 
 ### Required text:
 
-Devore, Jay L. 2016. *Probability and Statistics for Engineering and the Sciences*. 9<sup>th</sup> edition. <ISBN:9781305251809>
+Devore, Jay L. 2016. Probability and Statistics for Engineering and the Sciences. 9<sup>th</sup> edition. <ISBN:9781305251809>
 
-*You need the 9th edition for the exercises; you can use earlier editions for the content.*
+You need the **9th edition** for the exercises; you can use earlier editions for the content.
 
 For the tests and final, you need a non-graphing calculator (one line display).
 
@@ -88,7 +88,7 @@ Be sure that homework is clearly labeled and legible.
 
 ## Academic Integrity
 
-You are encouraged to discuss homework *strategies* with your classmates and work through examples, but you may not discuss particular homework problems, nor copy all or part of solutions from anywhere. In short, the homework you submit must be your own work.
+You are encouraged to discuss homework strategies with your classmates and work through examples, but you may not discuss particular homework problems, nor copy all or part of solutions from anywhere. In short, the homework you submit must be your own work.
 
 Plagiarism or any other breach of academic integrity will not be tolerated and will result in disciplinary action. For more information please refer to the The Columbia University Undergraduate Guide to Academic Integrity:
 
