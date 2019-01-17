@@ -101,10 +101,9 @@ Allowable materials on tests include pens, pencils, erasers, a hand-held NON-GRA
 
 All tests are cumulative but weighted more toward new material.
 
+As soon as test dates are available, they will be posted as CourseWorks Assignments.
 
-**For Test #1 and Test #2 dates, see CourseWorks Assignments.**
-
-**For the date of the Final, see https://ssol.columbia.edu/ -- click "Exam List" and then "Projected University Examination Schedule". (In most cases, final dates are set by the University not individual professors.)**
+For the date of the Final, see https://ssol.columbia.edu/ -- click "Exam List" and then "Projected University Examination Schedule". (In most cases, final dates are set by the University not individual professors.)
 
 ## Getting Help
 
@@ -120,7 +119,9 @@ There are numerous opportunities to get assistance with the class material:
 
 ## Course Content
 
-The following topics will be covered in this order:
+The following topics will be covered in the order below.
+
+For more detailed information on material covered within each section, please consult https://jtr13.github.io/1201/
 
 <ol>
 <li>
