@@ -8,7 +8,7 @@ Statistics UN1201
 
 Monday / Wednesday class: Hamilton 602, 8:40-9:55am
 
-Tuesday / Thursday class: 517, 8:40-9:55am
+Tuesday / Thursday class: Hamilton 517, 8:40-9:55am
 
 ## Instructor
 
@@ -86,6 +86,12 @@ Homework must be submitted by 11:59pm on the due date for full credit. Late assi
 If you submit more than one assignment, the last one will be counted.
 
 Be sure that homework is clearly labeled and legible.
+
+Note that not all homework questions are graded so be sure to check all of your work against the posted solutions. (In short, a 20/20 doesn't necessarily mean that everything is right.)
+
+## R
+
+All of the coding related parts of the class are optional and will not appear on the tests. 
 
 ## Academic Integrity
 
