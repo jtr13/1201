@@ -4,9 +4,9 @@
 
 [Syllabus (both sections)](Syllabus.md)
 
-### Homework
-[Assignment #1](Hmk1.pdf) due 9/17/18
+### Supplemental web site
 
+[Stat 1201 Supplemental Materials](https://jtr13.github.io/1201/)
 
 ### Assignments
 
@@ -16,9 +16,9 @@
 
 ### Lecture Slides
 
-[Chapter 1](Lectures/Chap1slides.pdf)
+[Chapter 1](Chap1slides.pdf)
 
 ### R Resources
 
-[Click here](R/Readme.md)
+See: [Stat 1201 Supplemental Materials](https://jtr13.github.io/1201/)
 
