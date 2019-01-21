@@ -1,4 +1,4 @@
-STAT UN1201 Syllabus Fall 2018
+STAT UN1201 Syllabus Spring 2019
 ================
 Columbia University  
 
@@ -6,29 +6,24 @@ Calculus-Based Introduction to Statistics</strong>
 
 Statistics UN1201
 
-Monday / Wednesday class: Hamilton 702, 8:40-9:55am
+Monday / Wednesday class: Hamilton 602, 8:40-9:55am
 
-Tuesday / Thursday class: Mathematics 203, 8:40-9:55am
+Tuesday / Thursday class: 517, 8:40-9:55am
 
 ## Instructor
 
 Joyce Robbins: <a href="mailto:jtr13@columbia.edu">jtr13@columbia.edu</a>     212-853-1391  
 
-**Please indicate your section (Mon/Wed or Tues/Thurs) somewhere in your email.**
+**Please indicate your section (Mon/Wed or Tues/Thurs) somewhere in your email.** 
+
+*Kindly limit email communication to time-sensitive issues. Routine questions are best answered in person before, during and/or after class.*
 
 Office hours: Wed 11-1pm, location: 603 Watson Hall, 612 West 115th St.
 
 
 ## Teaching Assistants
 
-Yu Tong: <a href="mailto:yt2594@columbia.edu">yt2594@columbia.edu</a>  (Mon/Wed TA)  
-
-Office hours: Wednesdays, 2pm-4pm, Watson 601, 612 West 115th St.
-  
-Jialin Ouyang: <a href="mailto:jo2559@columbia.edu">jo2559@columbia.edu</a>  (Tues/Thurs TA)
-
-Office hours: (NEW) Wednesdays, 4-6pm, 10th floor, School of Social Work building, 1255 Amsterdam (between 121/122)
-
+TBA
 
 
 
@@ -40,11 +35,17 @@ This introductory course is designed for students who desire a strong grounding 
 
 ### Required text:
 
-Devore, Jay L. 2016. <em>Probability and Statistics for Engineering and the Sciences</em>. 9<sup>th</sup> edition. <ISBN:9781305251809>
+Devore, Jay L. 2016. Probability and Statistics for Engineering and the Sciences. 9<sup>th</sup> edition. <ISBN:9781305251809>
 
-*You need the 9th edition for the exercises; you can use earlier editions for the content.*
+You need the **9th edition** for the exercises; you can use earlier editions for the content.
 
-For the tests and final, you need a non-graphing calculator (one line display).
+### Recommended text:
+
+Gonick, Larry & Woollcott Smith. 2005. The Cartoon Guide to Statistics. <ISBN:9780062731029>
+
+### Other materials:
+
+For the tests and final, you need a **non-graphing** calculator (one line display). Statistical tables will be provided.
 
 ## Grading procedures
 
@@ -70,7 +71,7 @@ Grading scale:
 <tr><td>83% to 86%</td><td>B</td><td>  </td><td>below 60%</td><td>F</td></tr>
 </table>
 
-Note: The tests and final exam are curved on an individual basis, meaning one test may have a curve while another does not. The grades posted on CourseWorks are the grades AFTER the curve.  There is no additional curve in the process of computing final averages at the end of the semester. Raw scores are available on the paper tests which will be handed back in class. 
+Note: The tests and final exam are curved on an individual basis, meaning one test may have a curve while another does not. The grades posted on CourseWorks are the grades AFTER the curve.  There is no additional curve in the process of computing final averages at the end of the semester. Raw scores are available on the paper tests which will be handed back in class. If you are not in class when tests are handed back, you may pick up your exam the following class.
 
 ## Class policies
 
@@ -80,7 +81,7 @@ Note: The tests and final exam are curved on an individual basis, meaning one te
 
 Unless otherwise indicated, assignments must be submitted on CourseWorks as a <strong>single pdf file</strong> -- TurboScan or similar phone apps can be used for this purpose.
 
-Homework must be submitted by 11:59pm on the due date for full credit. Late assignments will only be accepted for the first 24 hours after the assignment is due. You are entitled to one late assignment, submitted within 24 hours of the due date, without penalty. After that, 4 points will be deducted for late assignments submitted within 24 hours of the due date. After the 24 hour period, CourseWorks will no longer accept homework submissions, and you will receive a zero for the assignment.</strong> No exceptions will be made unless I receive a note from an academic dean detailing unusual circumstances.
+Homework must be submitted by 11:59pm on the due date for full credit. Late assignments will only be accepted for the first 24 hours after the assignment is due. You are entitled to one "free" late assignment, submitted within 24 hours of the due date, without penalty. After that, 4 points will be deducted for late assignments submitted within 24 hours of the due date. After the 24 hour period, you will receive a zero for the assignment. No exceptions will be made unless I receive a note from an academic dean detailing unusual circumstances.
 
 If you submit more than one assignment, the last one will be counted.
 
@@ -88,9 +89,9 @@ Be sure that homework is clearly labeled and legible.
 
 ## Academic Integrity
 
-You are encouraged to discuss homework <em>strategies</em> with your classmates and work through examples, but you may not discuss particular homework problems, nor copy all or part of solutions from anywhere. In short, the homework you submit must be your own work.
+You are encouraged to discuss homework strategies with your classmates and work through examples, but you may not discuss particular homework problems, nor copy all or part of solutions from anywhere. In short, the homework you submit must be your own work.
 
-Plagiarism or any other breach of academic integrity will not be tolerated and will result in disciplinary action. For more information please refer to the <em>The Columbia University Undergraduate Guide to Academic Integrity</em>:
+Plagiarism or any other breach of academic integrity will not be tolerated and will result in disciplinary action. For more information please refer to the The Columbia University Undergraduate Guide to Academic Integrity:
 
 <http://www.college.columbia.edu/academics/academicintegrity>
 
@@ -98,14 +99,11 @@ Plagiarism or any other breach of academic integrity will not be tolerated and w
 
 Allowable materials on tests include pens, pencils, erasers, a hand-held NON-GRAPHING calculator (one line display), and a single (two-sided, or two one-sided) 8.5” x 11” sheet of original handwritten notes for the first two tests, and three sheets (each two-sided, or six one-sided) for the final. Make-up tests will only be administered in cases of documented emergencies.
 
-The material covered on the tests is as follows:
+All tests are cumulative but weighted more toward new material.
 
-Test #1: all material up to the last 
+As soon as test dates are available, they will be posted as CourseWorks Assignments.
 
-
-**For Test #1 and Test #2 dates, see CourseWorks Assignments.**
-
-**For the date of the Final, see https://ssol.columbia.edu/ -- click "Exam List" and then "Projected University Examination Schedule". (In most cases, final dates are set by the University not individual professors.)**
+For the date of the Final, see https://ssol.columbia.edu/ -- click "Exam List" and then "Projected University Examination Schedule". (In most cases, final dates are set by the University not individual professors.)
 
 ## Getting Help
 
@@ -121,7 +119,9 @@ There are numerous opportunities to get assistance with the class material:
 
 ## Course Content
 
-The following topics will be covered in this order:
+The following topics will be covered in the order below.
+
+For more detailed information on material covered within each section, please consult https://jtr13.github.io/1201/
 
 <ol>
 <li>
@@ -143,7 +143,7 @@ Normal and other continuous distributions (4.3-4.4)
 The sampling distribution of a mean (5.3-5.5)
 </li>
 <li>
-Point estimation (6.1-6.2)
+Point estimation (6.1)
 </li>
 <li>
 Confidence intervals (7.1-7.3)
