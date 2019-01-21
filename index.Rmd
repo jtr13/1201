@@ -1,5 +1,5 @@
 --- 
-title: "Stat1201"
+title: "Stat 1201 Supplemental Materials"
 author: "Joyce Robbins"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -16,24 +16,47 @@ description: "Supplemental resources for Stat1201"
 
 # Introduction {-}
 
-Resources for Stat 1201
+This site contains supplemental materials for Stat 1201, mainly: 1) clarifications on which sections we cover in the textbook (Devore, *Probability and Statistics for Engineering and the Sciences* **9th edition**), 2) R code, and 3) links to helpful resources online. It is not in any way a substitute for materials available in CourseWorks.
 
-If you find online resources that are helpful to this class, please [create an issue](https://github.com/jtr13/1201/issues/new) or send me an email and I'll add them to this resource. 
+If you find additional online resources that are helpful to this class, please [create an issue](https://github.com/jtr13/1201/issues/new) or send me an email and I'll add them to this resource. Let me know as well if you find any typos or other mistakes. 
 
+Note that while you're encouraged to look ahead, be sure to circle back to those sections when they're covered in class since content may be added or modified slightly.
+
+## Installing R {-}
+
+You will need to install two applications: R and RStudio:
+
+R -- the programming language itself -- is available here:
+
+https://cran.r-project.org
+
+<img src = "images/rlogo.jpeg" height = "80px"></img>
+
+RStudio -- an integrated development environment (IDE) which makes it much easier to use R. It is optional but highly recommended.
+
+https://www.rstudio.com/products/rstudio/download/#download
+
+<img src = "images/rstudiologo.png" height = "80px"></img>
+
+## Getting Started with R {-}
+
+Create an account on www.datacamp.com using your Columbia email address. (Otherwise I will not be able to give you access to premium DataCamp content later in the semester.)
+
+Click "Learn" and then "Introduction to R" and do the first two chapters of the course:
+
+* Intro to basics
+
+* Vectors
 
 <!-- Contact -->
-## Contact
+## Contact {-}
 
 Joyce Robbins: 
 [Columbia Profile](http://stat.columbia.edu/department-directory/name/joyce-robbins/){target="_blank"}
-/
-[Website](http://www.joyce-robbins.com/){target="_blank"}
-/
-[Twitter](https://twitter.com/jtrnyc){target="_blank"}
-/
+
 [GitHub](https://github.com/jtr13){target="_blank"}
 
 <!-- License -->
-## License
+## License {-}
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
