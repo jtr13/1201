@@ -30,13 +30,13 @@ R -- the programming language itself -- is available here:
 
 https://cran.r-project.org
 
-<img src = "images/rlogo.jpeg" height = "80px"></img>
+<img src = "images/rlogo.jpeg" height = "80px"/>
 
 RStudio -- an integrated development environment (IDE) which makes it much easier to use R. It is optional but highly recommended.
 
 https://www.rstudio.com/products/rstudio/download/#download
 
-<img src = "images/rstudiologo.png" height = "80px"></img>
+<img src = "images/rstudiologo.png" height = "80px"/>
 
 ## Getting Started with R {-}
 
