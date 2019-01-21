@@ -26,17 +26,17 @@ Note that while you're encouraged to look ahead, be sure to circle back to those
 
 You will need to install two applications: R and RStudio:
 
-R -- the programming language itself -- is available here:
+* R -- the programming language itself -- is available here:
 
 https://cran.r-project.org
 
-<img src = "images/rlogo.jpeg" height = "80px"/>
+![](images/rlogo.jpeg)
 
-RStudio -- an integrated development environment (IDE) which makes it much easier to use R. It is optional but highly recommended.
+* RStudio -- an integrated development environment (IDE) which makes it much easier to use R. It is optional but highly recommended. This is the app you will open to use R.
 
 https://www.rstudio.com/products/rstudio/download/#download
 
-<img src = "images/rstudiologo.png" height = "80px"/>
+![](images/rstudiologo.png)
 
 ## Getting Started with R {-}
 
