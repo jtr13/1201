@@ -35,13 +35,13 @@ This introductory course is designed for students who desire a strong grounding 
 
 ### Required text:
 
-Devore, Jay L. 2016. Probability and Statistics for Engineering and the Sciences. 9<sup>th</sup> edition. <ISBN:9781305251809>
+Devore, Jay L. 2016. *Probability and Statistics for Engineering and the Sciences.* 9<sup>th</sup> edition. <ISBN:9781305251809>
 
 You need the **9th edition** for the exercises; you can use earlier editions for the content.
 
 ### Recommended text:
 
-Gonick, Larry & Woollcott Smith. 2005. The Cartoon Guide to Statistics. <ISBN:9780062731029>
+Gonick, Larry & Woollcott Smith. 2005. *The Cartoon Guide to Statistics.* <ISBN:9780062731029>
 
 ### Other materials:
 
@@ -110,6 +110,22 @@ All tests are cumulative but weighted more toward new material.
 As soon as test dates are available, they will be posted as CourseWorks Assignments.
 
 For the date of the Final, see https://ssol.columbia.edu/ -- click "Exam List" and then "Projected University Examination Schedule". (In most cases, final dates are set by the University not individual professors.)
+
+### Accommodations for students registered with Disability Services
+
+In order to receive disability-related academic accommodations for this course, students must first be registered with their school Disability Services (DS) office. Detailed information is available online for both the [Columbia](https://health.columbia.edu/content/disability-services) and [Barnard](https://barnard.edu/disabilityservices/students/register) registration processes.
+
+Refer to the appropriate website for information regarding deadlines, disability documentation requirements, and [drop-in hours](http://health.columbia.edu/getting-care/drop-offices/disability-services-drop-hours) (Columbia) / [intake session](https://barnard.edu/disabilityservices/students/register) (Barnard).
+
+For this course, students registered with the Columbia office are not required to have testing forms or accommodation letters signed by faculty. However, students must do the following:
+
+* The Instructor section of the form has already been completed and does not need to be signed by the professor.
+
+* The student must complete the Student section of the form and submit the form to Disability Services.
+
+* Master forms are available in the Disability Services office or online: https://health.columbia.edu/services/testing-accommodations
+
+Students registered with the Barnard office should follow standard procedures, which require the professor's signature. The forms should be brought to class, not sent electronically.
 
 ## Getting Help
 
