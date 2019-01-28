@@ -20,6 +20,8 @@ Joyce Robbins: <a href="mailto:jtr13@columbia.edu">jtr13@columbia.edu</a>    �
 
 Office hours: Wed 11-1pm, location: 603 Watson Hall, 612 West 115th St.
 
+(This week only, office hours will be Wed Jan 30 10:30am - 11:30am and Thurs Jan 31 10:30am - 11:30am instead of the regularly scheduled time.)
+
 
 ## Teaching Assistants
 
@@ -88,6 +90,8 @@ If you submit more than one assignment, the last one will be counted.
 Be sure that homework is clearly labeled and legible.
 
 Note that not all homework questions are graded so be sure to check all of your work against the posted solutions. (In short, a 20/20 doesn't necessarily mean that everything is right.)
+
+**All problem sets count; in other words, no problem set grades are dropped.**
 
 ## R
 
