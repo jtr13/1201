@@ -10,9 +10,9 @@
 
 ### Assignments
 
-[Installing R](R/InstallingR.md) (Ungraded)
+[Installing R](https://jtr13.github.io/1201/index.html#installing-r) (Ungraded)
 
-[Getting started with R](R/GettingStartedwithR.md) (Ungraded)
+[Getting started with R](https://jtr13.github.io/1201/index.html#getting-started-with-r) (Ungraded)
 
 ### Lecture Slides
 
