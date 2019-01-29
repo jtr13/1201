@@ -14,7 +14,7 @@
 
 [Getting started with R](https://jtr13.github.io/1201/index.html#getting-started-with-r) (Ungraded)
 
-[Problem Set #1, due Feb 7](PSet1.md)
+[Problem Set #1, due Wed, Feb 6](PSet1.md)
 
 ### Lecture Slides
 
