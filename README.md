@@ -20,6 +20,8 @@
 
 [Chapter 1](Chap1slides.pdf)
 
+[Chapter 2](Chap2slides.pdf)
+
 ### R Resources
 
 See: [Stat 1201 Supplemental Materials](https://jtr13.github.io/1201/)
