@@ -40,7 +40,7 @@ Section 2.3 #34
 
 NT #2
 
-You play a game in which you pay $1 to play and then flip a coin. If it lands on heads, you win $1. If it lands on tails, you lose your $1. You start with $1, and play the game 5 times or until you run out of money, whichever comes first.
+You play a game in which you pay $1 to play and then flip a coin. If it lands on heads, you *get the $1 back that you paid* and win *an additional* $1. If it lands on tails, you lose your $1. You start with $1, and play the game 5 times or until you run out of money, whichever comes first.
 
 a) Guess what your probability is of having money left at the end. (All answers are correct.)
 
