@@ -40,6 +40,8 @@ https://www.rstudio.com/products/rstudio/download/#download
 
 ## Getting Started with R {-}
 
+### DataCamp
+
 Create an account on www.datacamp.com using your Columbia email address. (Otherwise I will not be able to give you access to premium DataCamp content later in the semester.)
 
 Click "Learn" and then "Introduction to R" and do the first two chapters of the course:
@@ -47,6 +49,35 @@ Click "Learn" and then "Introduction to R" and do the first two chapters of the 
 * Intro to basics
 
 * Vectors
+
+### Quick intro to RStudio {-}
+
+Working in the console pane
+
+![](images/R1.png)
+
+Assigning a variable
+
+![](images/R2.png)
+
+Drawing a stem and leaf plot
+
+![](images/R3.png)
+
+Saving your work
+
+![](images/R4.png)
+
+Converting your work to an .html file that can be submitted to CourseWorks
+
+![](images/R5.png)
+
+![](images/R6.png)
+
+![](images/R7.png)
+
+![](images/R8.png)
+
 
 <!-- Contact -->
 ## Contact {-}

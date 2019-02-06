@@ -5,19 +5,19 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Stat 1201 Supplemental Materials</title>
+  <title>Ch. 1 Descriptive Statistics | Stat 1201 Supplemental Materials</title>
   <meta name="description" content="Supplemental resources for Stat1201">
-  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="Stat 1201 Supplemental Materials" />
+  <meta property="og:title" content="Ch. 1 Descriptive Statistics | Stat 1201 Supplemental Materials" />
   <meta property="og:type" content="book" />
-  <meta property="og:url" content="<a href="https://jtr13.github.io/1201/" class="uri">https://jtr13.github.io/1201/</a>" />
+  <meta property="og:url" content="https://jtr13.github.io/1201/" />
   
   <meta property="og:description" content="Supplemental resources for Stat1201" />
   <meta name="github-repo" content="jtr13/1201" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Stat 1201 Supplemental Materials" />
+  <meta name="twitter:title" content="Ch. 1 Descriptive Statistics | Stat 1201 Supplemental Materials" />
   
   <meta name="twitter:description" content="Supplemental resources for Stat1201" />
   
@@ -25,7 +25,7 @@
 <meta name="author" content="Joyce Robbins">
 
 
-<meta name="date" content="2019-01-21">
+<meta name="date" content="2019-02-06">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -36,6 +36,7 @@
 <link rel="next" href="ch-2-probability.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
@@ -133,7 +134,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a><ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#installing-r"><i class="fa fa-check"></i>Installing R</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#getting-started-with-r"><i class="fa fa-check"></i>Getting Started with R</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#getting-started-with-r"><i class="fa fa-check"></i>Getting Started with R</a><ul>
+<li class="chapter" data-level="0.0.1" data-path="index.html"><a href="index.html#datacamp"><i class="fa fa-check"></i><b>0.0.1</b> DataCamp</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#quick-intro-to-rstudio"><i class="fa fa-check"></i>Quick intro to RStudio</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#contact"><i class="fa fa-check"></i>Contact</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#license"><i class="fa fa-check"></i>License</a></li>
 </ul></li>
@@ -257,10 +261,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="r" class="section level3 unnumbered">
 <h3>R</h3>
 <p>Stem-and-leaf display:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1">prices &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">379</span>, <span class="dv">425</span>, <span class="dv">450</span>, <span class="dv">450</span>, <span class="dv">499</span>, <span class="dv">529</span>, <span class="dv">535</span>, <span class="dv">535</span>, <span class="dv">545</span>, <span class="dv">599</span>, <span class="dv">665</span>,</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">            <span class="dv">675</span>, <span class="dv">699</span>, <span class="dv">699</span>, <span class="dv">725</span>, <span class="dv">725</span>, <span class="dv">745</span>, <span class="dv">799</span>)</a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="kw">stem</span>(prices)</a></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r">prices &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">379</span>, <span class="dv">425</span>, <span class="dv">450</span>, <span class="dv">450</span>, <span class="dv">499</span>, <span class="dv">529</span>, <span class="dv">535</span>, <span class="dv">535</span>, <span class="dv">545</span>, <span class="dv">599</span>, <span class="dv">665</span>,
+            <span class="dv">675</span>, <span class="dv">699</span>, <span class="dv">699</span>, <span class="dv">725</span>, <span class="dv">725</span>, <span class="dv">745</span>, <span class="dv">799</span>)
+
+<span class="kw">stem</span>(prices)</code></pre>
 <pre><code>## 
 ##   The decimal point is 2 digit(s) to the right of the |
 ## 
@@ -271,21 +275,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##   7 | 00335
 ##   8 | 0</code></pre>
 <p>Frequency histogram:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1">prices &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">379</span>, <span class="dv">425</span>, <span class="dv">450</span>, <span class="dv">450</span>, <span class="dv">499</span>, <span class="dv">529</span>, <span class="dv">535</span>, <span class="dv">535</span>, <span class="dv">545</span>, <span class="dv">599</span>, <span class="dv">665</span>,</a>
-<a class="sourceLine" id="cb3-2" data-line-number="2">            <span class="dv">675</span>, <span class="dv">699</span>, <span class="dv">699</span>, <span class="dv">725</span>, <span class="dv">725</span>, <span class="dv">745</span>, <span class="dv">799</span>)</a>
-<a class="sourceLine" id="cb3-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="kw">hist</span>(prices)</a></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r">prices &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">379</span>, <span class="dv">425</span>, <span class="dv">450</span>, <span class="dv">450</span>, <span class="dv">499</span>, <span class="dv">529</span>, <span class="dv">535</span>, <span class="dv">535</span>, <span class="dv">545</span>, <span class="dv">599</span>, <span class="dv">665</span>,
+            <span class="dv">675</span>, <span class="dv">699</span>, <span class="dv">699</span>, <span class="dv">725</span>, <span class="dv">725</span>, <span class="dv">745</span>, <span class="dv">799</span>)
+
+<span class="kw">hist</span>(prices)</code></pre>
 <p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">hist</span>(prices, <span class="dt">breaks =</span> <span class="kw">c</span>(<span class="dv">300</span>, <span class="dv">400</span>, <span class="dv">500</span>, <span class="dv">600</span>, <span class="dv">700</span>, <span class="dv">800</span>),</a>
-<a class="sourceLine" id="cb4-2" data-line-number="2">     <span class="dt">col =</span> <span class="st">&quot;lightblue&quot;</span>)</a></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">hist</span>(prices, <span class="dt">breaks =</span> <span class="kw">c</span>(<span class="dv">300</span>, <span class="dv">400</span>, <span class="dv">500</span>, <span class="dv">600</span>, <span class="dv">700</span>, <span class="dv">800</span>),
+     <span class="dt">col =</span> <span class="st">&quot;lightblue&quot;</span>)</code></pre>
 <p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-2-2.png" width="672" /></p>
 <p>Density histogram:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1">prices &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">379</span>, <span class="dv">425</span>, <span class="dv">450</span>, <span class="dv">450</span>, <span class="dv">499</span>, <span class="dv">529</span>, <span class="dv">535</span>, <span class="dv">535</span>, <span class="dv">545</span>, <span class="dv">599</span>, <span class="dv">665</span>,</a>
-<a class="sourceLine" id="cb5-2" data-line-number="2">            <span class="dv">675</span>, <span class="dv">699</span>, <span class="dv">699</span>, <span class="dv">725</span>, <span class="dv">725</span>, <span class="dv">745</span>, <span class="dv">799</span>)</a>
-<a class="sourceLine" id="cb5-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb5-4" data-line-number="4"><span class="kw">hist</span>(prices, <span class="dt">freq =</span> <span class="ot">FALSE</span>, </a>
-<a class="sourceLine" id="cb5-5" data-line-number="5">     <span class="dt">breaks =</span> <span class="kw">c</span>(<span class="dv">300</span>, <span class="dv">400</span>, <span class="dv">500</span>, <span class="dv">600</span>, <span class="dv">700</span>, <span class="dv">800</span>),</a>
-<a class="sourceLine" id="cb5-6" data-line-number="6">     <span class="dt">col =</span> <span class="st">&quot;lightblue&quot;</span>, <span class="dt">las =</span> <span class="dv">1</span>)</a></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r">prices &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">379</span>, <span class="dv">425</span>, <span class="dv">450</span>, <span class="dv">450</span>, <span class="dv">499</span>, <span class="dv">529</span>, <span class="dv">535</span>, <span class="dv">535</span>, <span class="dv">545</span>, <span class="dv">599</span>, <span class="dv">665</span>,
+            <span class="dv">675</span>, <span class="dv">699</span>, <span class="dv">699</span>, <span class="dv">725</span>, <span class="dv">725</span>, <span class="dv">745</span>, <span class="dv">799</span>)
+
+<span class="kw">hist</span>(prices, <span class="dt">freq =</span> <span class="ot">FALSE</span>, 
+     <span class="dt">breaks =</span> <span class="kw">c</span>(<span class="dv">300</span>, <span class="dv">400</span>, <span class="dv">500</span>, <span class="dv">600</span>, <span class="dv">700</span>, <span class="dv">800</span>),
+     <span class="dt">col =</span> <span class="st">&quot;lightblue&quot;</span>, <span class="dt">las =</span> <span class="dv">1</span>)</code></pre>
 <p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 </div>
 </div>
@@ -293,19 +297,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2>1.3 Measures of location</h2>
 <div id="r-1" class="section level3 unnumbered">
 <h3>R</h3>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1">prices &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">379</span>, <span class="dv">425</span>, <span class="dv">450</span>, <span class="dv">450</span>, <span class="dv">499</span>, <span class="dv">529</span>, <span class="dv">535</span>, <span class="dv">535</span>, <span class="dv">545</span>, <span class="dv">599</span>, <span class="dv">665</span>,</a>
-<a class="sourceLine" id="cb6-2" data-line-number="2">            <span class="dv">675</span>, <span class="dv">699</span>, <span class="dv">699</span>, <span class="dv">725</span>, <span class="dv">725</span>, <span class="dv">745</span>, <span class="dv">799</span>)</a>
-<a class="sourceLine" id="cb6-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb6-4" data-line-number="4"><span class="kw">mean</span>(prices)</a></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r">prices &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">379</span>, <span class="dv">425</span>, <span class="dv">450</span>, <span class="dv">450</span>, <span class="dv">499</span>, <span class="dv">529</span>, <span class="dv">535</span>, <span class="dv">535</span>, <span class="dv">545</span>, <span class="dv">599</span>, <span class="dv">665</span>,
+            <span class="dv">675</span>, <span class="dv">699</span>, <span class="dv">699</span>, <span class="dv">725</span>, <span class="dv">725</span>, <span class="dv">745</span>, <span class="dv">799</span>)
+
+<span class="kw">mean</span>(prices)</code></pre>
 <pre><code>## [1] 593.2222</code></pre>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1"><span class="kw">median</span>(prices)</a></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">median</span>(prices)</code></pre>
 <pre><code>## [1] 572</code></pre>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" data-line-number="1">## quartiles</a>
-<a class="sourceLine" id="cb10-2" data-line-number="2"><span class="kw">quantile</span>(prices)</a></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r">## quartiles
+<span class="kw">quantile</span>(prices)</code></pre>
 <pre><code>##    0%   25%   50%   75%  100% 
 ## 379.0 506.5 572.0 699.0 799.0</code></pre>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" data-line-number="1">## trimmed mean</a>
-<a class="sourceLine" id="cb12-2" data-line-number="2"><span class="kw">mean</span>(prices, <span class="dt">trim =</span> <span class="fl">.1</span>) ## 10% trimmed mean</a></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r">## trimmed mean
+<span class="kw">mean</span>(prices, <span class="dt">trim =</span> <span class="fl">.1</span>) ## 10% trimmed mean</code></pre>
 <pre><code>## [1] 593.75</code></pre>
 </div>
 </div>
@@ -316,35 +320,35 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="r-2" class="section level3 unnumbered">
 <h3>R</h3>
 <p>Sample variance:</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb14-1" data-line-number="1">prices &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">379</span>, <span class="dv">425</span>, <span class="dv">450</span>, <span class="dv">450</span>, <span class="dv">499</span>, <span class="dv">529</span>, <span class="dv">535</span>, <span class="dv">535</span>, <span class="dv">545</span>, <span class="dv">599</span>, <span class="dv">665</span>,</a>
-<a class="sourceLine" id="cb14-2" data-line-number="2">            <span class="dv">675</span>, <span class="dv">699</span>, <span class="dv">699</span>, <span class="dv">725</span>, <span class="dv">725</span>, <span class="dv">745</span>, <span class="dv">799</span>)</a>
-<a class="sourceLine" id="cb14-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb14-4" data-line-number="4"><span class="kw">var</span>(prices)</a></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r">prices &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">379</span>, <span class="dv">425</span>, <span class="dv">450</span>, <span class="dv">450</span>, <span class="dv">499</span>, <span class="dv">529</span>, <span class="dv">535</span>, <span class="dv">535</span>, <span class="dv">545</span>, <span class="dv">599</span>, <span class="dv">665</span>,
+            <span class="dv">675</span>, <span class="dv">699</span>, <span class="dv">699</span>, <span class="dv">725</span>, <span class="dv">725</span>, <span class="dv">745</span>, <span class="dv">799</span>)
+
+<span class="kw">var</span>(prices)</code></pre>
 <pre><code>## [1] 15981.48</code></pre>
 <p>Sample standard deviation:</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb16-1" data-line-number="1"><span class="kw">sqrt</span>(<span class="kw">var</span>(prices))</a></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sqrt</span>(<span class="kw">var</span>(prices))</code></pre>
 <pre><code>## [1] 126.4179</code></pre>
-<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb18-1" data-line-number="1"><span class="kw">sd</span>(prices)</a></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sd</span>(prices)</code></pre>
 <pre><code>## [1] 126.4179</code></pre>
 <p>Five number summary</p>
 <p>(min, lower-hinge, median, upper-hinge, max)</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb20-1" data-line-number="1"><span class="kw">fivenum</span>(prices)</a></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">fivenum</span>(prices)</code></pre>
 <pre><code>## [1] 379 499 572 699 799</code></pre>
 <p>Boxplots</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb22-1" data-line-number="1">prices &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">379</span>, <span class="dv">425</span>, <span class="dv">450</span>, <span class="dv">450</span>, <span class="dv">499</span>, <span class="dv">529</span>, <span class="dv">535</span>, <span class="dv">535</span>, <span class="dv">545</span>,</a>
-<a class="sourceLine" id="cb22-2" data-line-number="2">            <span class="dv">599</span>, <span class="dv">665</span>, <span class="dv">675</span>, <span class="dv">699</span>, <span class="dv">699</span>, <span class="dv">725</span>, <span class="dv">725</span>, <span class="dv">745</span>, <span class="dv">799</span>)</a>
-<a class="sourceLine" id="cb22-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb22-4" data-line-number="4"><span class="kw">boxplot</span>(prices)</a></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r">prices &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">379</span>, <span class="dv">425</span>, <span class="dv">450</span>, <span class="dv">450</span>, <span class="dv">499</span>, <span class="dv">529</span>, <span class="dv">535</span>, <span class="dv">535</span>, <span class="dv">545</span>,
+            <span class="dv">599</span>, <span class="dv">665</span>, <span class="dv">675</span>, <span class="dv">699</span>, <span class="dv">699</span>, <span class="dv">725</span>, <span class="dv">725</span>, <span class="dv">745</span>, <span class="dv">799</span>)
+
+<span class="kw">boxplot</span>(prices)</code></pre>
 <p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb23-1" data-line-number="1"><span class="kw">boxplot</span>(prices, <span class="dt">horizontal =</span> <span class="ot">TRUE</span>)</a></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">boxplot</span>(prices, <span class="dt">horizontal =</span> <span class="ot">TRUE</span>)</code></pre>
 <p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-8-2.png" width="672" /></p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb24-1" data-line-number="1">PTSD &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">25</span>, <span class="dv">28</span>, <span class="dv">31</span>, <span class="dv">35</span>, <span class="dv">37</span>, <span class="dv">38</span>, <span class="dv">38</span>, <span class="dv">39</span>, <span class="dv">39</span>, <span class="dv">42</span>, <span class="dv">46</span>)</a>
-<a class="sourceLine" id="cb24-2" data-line-number="2"></a>
-<a class="sourceLine" id="cb24-3" data-line-number="3">Healthy &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">23</span>, <span class="dv">39</span>, <span class="dv">40</span>, <span class="dv">41</span>, <span class="dv">43</span>, <span class="dv">47</span>, <span class="dv">51</span>, <span class="dv">58</span>, <span class="dv">63</span>, <span class="dv">66</span>, <span class="dv">67</span>, <span class="dv">69</span>, <span class="dv">72</span>)</a>
-<a class="sourceLine" id="cb24-4" data-line-number="4"></a>
-<a class="sourceLine" id="cb24-5" data-line-number="5">df &lt;-<span class="st"> </span><span class="kw">data.frame</span>(Healthy, PTSD)</a>
-<a class="sourceLine" id="cb24-6" data-line-number="6"></a>
-<a class="sourceLine" id="cb24-7" data-line-number="7"><span class="kw">boxplot</span>(df, <span class="dt">horizontal =</span> <span class="ot">TRUE</span>)</a></code></pre></div>
+<pre class="sourceCode r"><code class="sourceCode r">PTSD &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">25</span>, <span class="dv">28</span>, <span class="dv">31</span>, <span class="dv">35</span>, <span class="dv">37</span>, <span class="dv">38</span>, <span class="dv">38</span>, <span class="dv">39</span>, <span class="dv">39</span>, <span class="dv">42</span>, <span class="dv">46</span>)
+
+Healthy &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">23</span>, <span class="dv">39</span>, <span class="dv">40</span>, <span class="dv">41</span>, <span class="dv">43</span>, <span class="dv">47</span>, <span class="dv">51</span>, <span class="dv">58</span>, <span class="dv">63</span>, <span class="dv">66</span>, <span class="dv">67</span>, <span class="dv">69</span>, <span class="dv">72</span>)
+
+df &lt;-<span class="st"> </span><span class="kw">data.frame</span>(Healthy, PTSD)
+
+<span class="kw">boxplot</span>(df, <span class="dt">horizontal =</span> <span class="ot">TRUE</span>)</code></pre>
 <p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-8-3.png" width="672" /></p>
 
 </div>
@@ -376,7 +380,7 @@ gitbook.start({
 "google": false,
 "linkedin": false,
 "weibo": false,
-"instapper": false,
+"instapaper": false,
 "vk": false,
 "all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
 },
@@ -388,6 +392,10 @@ gitbook.start({
 "edit": {
 "link": "https://github.com/jtr13/1201/edit/master/Chapter1.Rmd",
 "text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
 },
 "download": null,
 "toc": {
@@ -404,7 +412,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:" && /^https?:/.test(src))
       src = src.replace(/^https?:/, '');
     script.src = src;

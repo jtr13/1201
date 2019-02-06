@@ -5,19 +5,19 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Stat 1201 Supplemental Materials</title>
+  <title>Ch. 8 Tests of Hypotheses Based on a Single Sample | Stat 1201 Supplemental Materials</title>
   <meta name="description" content="Supplemental resources for Stat1201">
-  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+  <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="Stat 1201 Supplemental Materials" />
+  <meta property="og:title" content="Ch. 8 Tests of Hypotheses Based on a Single Sample | Stat 1201 Supplemental Materials" />
   <meta property="og:type" content="book" />
-  <meta property="og:url" content="<a href="https://jtr13.github.io/1201/" class="uri">https://jtr13.github.io/1201/</a>" />
+  <meta property="og:url" content="https://jtr13.github.io/1201/" />
   
   <meta property="og:description" content="Supplemental resources for Stat1201" />
   <meta name="github-repo" content="jtr13/1201" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Stat 1201 Supplemental Materials" />
+  <meta name="twitter:title" content="Ch. 8 Tests of Hypotheses Based on a Single Sample | Stat 1201 Supplemental Materials" />
   
   <meta name="twitter:description" content="Supplemental resources for Stat1201" />
   
@@ -25,7 +25,7 @@
 <meta name="author" content="Joyce Robbins">
 
 
-<meta name="date" content="2019-01-21">
+<meta name="date" content="2019-02-06">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -36,6 +36,7 @@
 <link rel="next" href="ch-9-inferences-based-on-two-samples.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
@@ -133,7 +134,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a><ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#installing-r"><i class="fa fa-check"></i>Installing R</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#getting-started-with-r"><i class="fa fa-check"></i>Getting Started with R</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#getting-started-with-r"><i class="fa fa-check"></i>Getting Started with R</a><ul>
+<li class="chapter" data-level="0.0.1" data-path="index.html"><a href="index.html#datacamp"><i class="fa fa-check"></i><b>0.0.1</b> DataCamp</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#quick-intro-to-rstudio"><i class="fa fa-check"></i>Quick intro to RStudio</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#contact"><i class="fa fa-check"></i>Contact</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#license"><i class="fa fa-check"></i>License</a></li>
 </ul></li>
@@ -293,7 +297,7 @@ gitbook.start({
 "google": false,
 "linkedin": false,
 "weibo": false,
-"instapper": false,
+"instapaper": false,
 "vk": false,
 "all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
 },
@@ -305,6 +309,10 @@ gitbook.start({
 "edit": {
 "link": "https://github.com/jtr13/1201/edit/master/Chapter8.Rmd",
 "text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
 },
 "download": null,
 "toc": {
@@ -321,7 +329,7 @@ gitbook.start({
     var script = document.createElement("script");
     script.type = "text/javascript";
     var src = "true";
-    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
     if (location.protocol !== "file:" && /^https?:/.test(src))
       src = src.replace(/^https?:/, '');
     script.src = src;
