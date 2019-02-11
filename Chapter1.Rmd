@@ -19,6 +19,8 @@ prices <- c(379, 425, 450, 450, 499, 529, 535, 535, 545, 599, 665,
 stem(prices)
 ```
 
+Note that histograms are drawn with *unbinned* data.  R does the binning in the process of drawing the histogram.
+
 Frequency histogram:
 
 ```{r}

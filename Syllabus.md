@@ -20,9 +20,15 @@ Joyce Robbins: <a href="mailto:jtr13@columbia.edu">jtr13@columbia.edu</a>    �
 
 Office hours: Wed 11-1pm, location: 603 Watson Hall, 612 West 115th St.
 
-## Teaching Assistants
+## Teaching Assistant Office Hours
 
-TBA
+Mon/Wed class: Amanda
+
+Mondays, 2:30-4:30pm, 6th floor Watson Hall (either in conference room or lounge area w/ table and sofa), 615 W. 112th St.
+
+Tues/Thurs class: Morgane
+
+Fridays, 4-6pm, 10th floor lounge, School of Social Work building, 1255 Amsterdam Ave. (between 121sts and 122nd sts.)
 
 
 ## Course description

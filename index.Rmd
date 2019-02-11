@@ -78,7 +78,37 @@ Converting your work to an .html file that can be submitted to CourseWorks
 
 ![](images/R8.png)
 
+### Using R as a calculator {-}
 
+Basic operations:
+
+```{r}
+3 + 4
+3 - 4
+3 * 4
+3 / 4
+3^4
+```
+
+Working with vectors:
+
+```{r}
+x <- 1:5
+x
+sum(x)
+cumsum(x)
+px <- x*.05 + .05
+px
+```
+
+Expected value:
+```{r}
+x*px
+sum(x*px)
+```
+
+
+--- 
 <!-- Contact -->
 ## Contact {-}
 

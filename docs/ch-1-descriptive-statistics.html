@@ -25,7 +25,7 @@
 <meta name="author" content="Joyce Robbins">
 
 
-<meta name="date" content="2019-02-06">
+<meta name="date" content="2019-02-11">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -137,6 +137,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#getting-started-with-r"><i class="fa fa-check"></i>Getting Started with R</a><ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#datacamp"><i class="fa fa-check"></i>DataCamp</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#quick-intro-to-rstudio"><i class="fa fa-check"></i>Quick intro to RStudio</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#using-r-as-a-calculator"><i class="fa fa-check"></i>Using R as a calculator</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#contact"><i class="fa fa-check"></i>Contact</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#license"><i class="fa fa-check"></i>License</a></li>
@@ -274,15 +275,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##   6 | 078
 ##   7 | 00335
 ##   8 | 0</code></pre>
+<p>Note that histograms are drawn with <em>unbinned</em> data. R does the binning in the process of drawing the histogram.</p>
 <p>Frequency histogram:</p>
 <pre class="sourceCode r"><code class="sourceCode r">prices &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">379</span>, <span class="dv">425</span>, <span class="dv">450</span>, <span class="dv">450</span>, <span class="dv">499</span>, <span class="dv">529</span>, <span class="dv">535</span>, <span class="dv">535</span>, <span class="dv">545</span>, <span class="dv">599</span>, <span class="dv">665</span>,
             <span class="dv">675</span>, <span class="dv">699</span>, <span class="dv">699</span>, <span class="dv">725</span>, <span class="dv">725</span>, <span class="dv">745</span>, <span class="dv">799</span>)
 
 <span class="kw">hist</span>(prices)</code></pre>
-<p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">hist</span>(prices, <span class="dt">breaks =</span> <span class="kw">c</span>(<span class="dv">300</span>, <span class="dv">400</span>, <span class="dv">500</span>, <span class="dv">600</span>, <span class="dv">700</span>, <span class="dv">800</span>),
      <span class="dt">col =</span> <span class="st">&quot;lightblue&quot;</span>)</code></pre>
-<p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-2-2.png" width="672" /></p>
+<p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-5-2.png" width="672" /></p>
 <p>Density histogram:</p>
 <pre class="sourceCode r"><code class="sourceCode r">prices &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">379</span>, <span class="dv">425</span>, <span class="dv">450</span>, <span class="dv">450</span>, <span class="dv">499</span>, <span class="dv">529</span>, <span class="dv">535</span>, <span class="dv">535</span>, <span class="dv">545</span>, <span class="dv">599</span>, <span class="dv">665</span>,
             <span class="dv">675</span>, <span class="dv">699</span>, <span class="dv">699</span>, <span class="dv">725</span>, <span class="dv">725</span>, <span class="dv">745</span>, <span class="dv">799</span>)
@@ -290,7 +292,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span class="kw">hist</span>(prices, <span class="dt">freq =</span> <span class="ot">FALSE</span>, 
      <span class="dt">breaks =</span> <span class="kw">c</span>(<span class="dv">300</span>, <span class="dv">400</span>, <span class="dv">500</span>, <span class="dv">600</span>, <span class="dv">700</span>, <span class="dv">800</span>),
      <span class="dt">col =</span> <span class="st">&quot;lightblue&quot;</span>, <span class="dt">las =</span> <span class="dv">1</span>)</code></pre>
-<p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 </div>
 </div>
 <div id="measures-of-location" class="section level2 unnumbered">
@@ -339,9 +341,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <span class="dv">599</span>, <span class="dv">665</span>, <span class="dv">675</span>, <span class="dv">699</span>, <span class="dv">699</span>, <span class="dv">725</span>, <span class="dv">725</span>, <span class="dv">745</span>, <span class="dv">799</span>)
 
 <span class="kw">boxplot</span>(prices)</code></pre>
-<p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">boxplot</span>(prices, <span class="dt">horizontal =</span> <span class="ot">TRUE</span>)</code></pre>
-<p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-8-2.png" width="672" /></p>
+<p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-11-2.png" width="672" /></p>
 <pre class="sourceCode r"><code class="sourceCode r">PTSD &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">25</span>, <span class="dv">28</span>, <span class="dv">31</span>, <span class="dv">35</span>, <span class="dv">37</span>, <span class="dv">38</span>, <span class="dv">38</span>, <span class="dv">39</span>, <span class="dv">39</span>, <span class="dv">42</span>, <span class="dv">46</span>)
 
 Healthy &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">23</span>, <span class="dv">39</span>, <span class="dv">40</span>, <span class="dv">41</span>, <span class="dv">43</span>, <span class="dv">47</span>, <span class="dv">51</span>, <span class="dv">58</span>, <span class="dv">63</span>, <span class="dv">66</span>, <span class="dv">67</span>, <span class="dv">69</span>, <span class="dv">72</span>)
@@ -349,7 +351,7 @@ Healthy &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv"
 df &lt;-<span class="st"> </span><span class="kw">data.frame</span>(Healthy, PTSD)
 
 <span class="kw">boxplot</span>(df, <span class="dt">horizontal =</span> <span class="ot">TRUE</span>)</code></pre>
-<p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-8-3.png" width="672" /></p>
+<p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-11-3.png" width="672" /></p>
 
 </div>
 </div>
