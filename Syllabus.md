@@ -12,7 +12,7 @@ Tuesday / Thursday class: Hamilton 517, 8:40-9:55am
 
 ## Instructor
 
-Joyce Robbins: <a href="mailto:jtr13@columbia.edu">jtr13@columbia.edu</a>     212-853-1391  
+Joyce Robbins: <a href="mailto:jtr13@columbia.edu">jtr13@columbia.edu</a>  tel: 212-853-1391  
 
 **Please indicate your section (Mon/Wed or Tues/Thurs) somewhere in your email.** 
 
@@ -22,11 +22,11 @@ Office hours: Wed 11-1pm, location: 603 Watson Hall, 612 West 115th St.
 
 ## Teaching Assistant Office Hours
 
-Mon/Wed class: Amanda
+Mon/Wed section: Amanda (yl4062)
 
 Mondays, 2:30-4:30pm, 6th floor Watson Hall (either in conference room or lounge area w/ table and sofa), 615 W. 112th St.
 
-Tues/Thurs class: Morgane
+Tues/Thurs section: Morgane (ma3293)
 
 Fridays, 4-6pm, 10th floor lounge, School of Social Work building, 1255 Amsterdam Ave. (between 121sts and 122nd sts.)
 
