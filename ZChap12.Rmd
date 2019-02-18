@@ -8,6 +8,8 @@ Sections covered: 12.1, 12.2, 12.5
 
 ### Resources {-}
 
+Interactive Visualization: [Linear Regression](https://www.geogebra.org/m/xC6zq7Zv) Try fitting the least squares line to a set of random data and check your answer.
+
 Video: [Regression I: What is regression? | SSE, SSR, SST | R-squared | Errors (ε vs. e)](https://www.youtube.com/watch?v=aq8VU5KLmkY) [contributed by Lance J.]
 
 ### R {-}
