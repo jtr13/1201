@@ -156,12 +156,12 @@ For more detailed information on material covered within each section, please co
 <ol>
 <li>
 Descriptive Statistics (1.1-1.4)
-</li>
+</li>5
 <li>
 Probability (2.1-2.3, 2.5)
 </li>
 <li>
-Discrete random variables (3.1-3.6)
+Discrete random variables (3.1-3.5)
 </li>
 <li>
 Continuous random variables (4.1-4.2)
