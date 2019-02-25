@@ -22,6 +22,30 @@ If you find additional online resources that are helpful to this class, please [
 
 Note that while you're encouraged to look ahead, be sure to circle back to those sections when they're covered in class since content may be added or modified slightly.
 
+## General study tips {-}
+
+The [website for the book *Make It Stick*](https://www.retrievalpractice.org/make-it-stick) offers a summary of the experimentally tested study strategies. The tl;dr is:
+
+* working out problems is better than reviewing notes / textbook
+ 
+* doing mixed reviews is better than focusing on one type of problem at a time 
+
+* learning is hard work; if it seems too easy your study strategy might not be the most effective
+
+* making mistakes and learning from them is a useful strategy (don't wait until you've mastered all of the examples to try a problem)
+
+You've likely heard a lot of these ideas before, but it's worth really thinking about them and putting them into practice.
+
+My advice:
+
+* As you're reading the textbook or working on a problem set, keep a list of questions. Challenge yourself by thinking about how the problem would differ if you changed the setup.
+
+* Try creating your own questions and solving them. 
+
+* Try solving problems in multiple ways. 
+
+* Learn from a variety of sources: class, textbook, *Cartoon Guide*, etc. If you find differences, ask. 
+
 ## Installing R {-}
 
 You will need to install two applications: R and RStudio:

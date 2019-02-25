@@ -2,7 +2,52 @@
 
 Sections covered: 4.1, 4.2, 4.3
 
+## 4.1 Probability density functions {-}
+
 ## R {-}
+
+Simulating a uniform distribution
+
+Randomly choose one number from the distribution:
+
+$f(x) = .2$ for $0 \leq x \leq 5$, 0 otherwise.
+
+```{r}
+runif(n = 1, min = 0, max = 5)
+```
+
+Take the average of 1000 picks:
+
+```{r}
+x <- runif(n = 1000, min = 0, max = 5)
+mean(x)
+```
+
+Draw a histogram of the 1000 picks:
+```{r}
+hist(x, las = 1, col = "lightblue")
+```
+
+
+## 4.2 Cumulative Distribution Functions and Expected Values {-}
+
+Using R to help with calculations in Example 4.7, p. 149
+
+Define a function for the cdf (you have to do the integration yourself):
+
+```{r}
+F <- function(x) (x/8) + (3/16)*x^2
+```
+
+Find $F(1.5) - F(1)$
+
+```{r}
+F(1.5) - F(1)
+```
+
+## 4.3 The Normal Distribution {-}
+
+### R {-}
 
 $P(Z \leq -1)$
 
