@@ -270,11 +270,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Randomly choose one number from the distribution:</p>
 <p><span class="math inline">\(f(x) = .2\)</span> for <span class="math inline">\(0 \leq x \leq 5\)</span>, 0 otherwise.</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">runif</span>(<span class="dt">n =</span> <span class="dv">1</span>, <span class="dt">min =</span> <span class="dv">0</span>, <span class="dt">max =</span> <span class="dv">5</span>)</code></pre>
-<pre><code>## [1] 0.9302118</code></pre>
+<pre><code>## [1] 1.070273</code></pre>
 <p>Take the average of 1000 picks:</p>
 <pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">runif</span>(<span class="dt">n =</span> <span class="dv">1000</span>, <span class="dt">min =</span> <span class="dv">0</span>, <span class="dt">max =</span> <span class="dv">5</span>)
 <span class="kw">mean</span>(x)</code></pre>
-<pre><code>## [1] 2.515571</code></pre>
+<pre><code>## [1] 2.540774</code></pre>
 <p>Draw a histogram of the 1000 picks:</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">hist</span>(x, <span class="dt">las =</span> <span class="dv">1</span>, <span class="dt">col =</span> <span class="st">&quot;lightblue&quot;</span>)</code></pre>
 <p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
@@ -291,6 +291,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="the-normal-distribution" class="section level2 unnumbered">
 <h2>4.3 The Normal Distribution</h2>
 <p><a href="http://www.intmath.com/counting-probability/normal-distribution-graph-interactive.php">Interactive normal distribution</a> – change <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\sigma\)</span> and see what happens.</p>
+<p><a href="http://users.stat.ufl.edu/~athienit/Tables/Ztable.pdf">Normal table</a> – in pdf form for viewing online, downloading and/or printing</p>
+<p><a href="https://www2.ccrb.cuhk.edu.hk/stat/other/normal.htm">Online normal distribution lookup</a> – enter <span class="math inline">\(z\)</span> and it will calculate <span class="math inline">\(F(z) = P(Z \leq z)\)</span>.</p>
+<p>There are many online normal distribution calculators. Note that often you are given the choice of finding <span class="math inline">\(P(Z \leq z)\)</span>, <span class="math inline">\(P(Z \geq z)\)</span>, <span class="math inline">\(P(0 \leq Z \leq z)\)</span>, etc., so be careful. To be consistent with the normal tables in the textbook / class, choose <span class="math inline">\(P(Z \leq z)\)</span>.</p>
+<p>Due to rounding differences in <span class="math inline">\(z\)</span> and <span class="math inline">\(P(Z \leq z)\)</span>, solutions using technology will vary from those using a normal table. Both methods are fine.</p>
 <div id="r-6" class="section level3 unnumbered">
 <h3>R</h3>
 <p><span class="math inline">\(P(Z \leq -1)\)</span></p>
