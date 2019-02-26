@@ -47,6 +47,9 @@ F(1.5) - F(1)
 
 ## 4.3 The Normal Distribution {-}
 
+[Interactive normal distribution](http://www.intmath.com/counting-probability/normal-distribution-graph-interactive.php
+) -- change $\mu$ and $\sigma$ and see what happens.
+
 ### R {-}
 
 $P(Z \leq -1)$
