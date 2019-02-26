@@ -237,6 +237,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="" data-path="ch-13-nonlinear-and-multiple-regression.html"><a href="ch-13-nonlinear-and-multiple-regression.html"><i class="fa fa-check"></i>Ch. 13 Nonlinear and Multiple Regression</a><ul>
 <li class="chapter" data-level="" data-path="ch-13-nonlinear-and-multiple-regression.html"><a href="ch-13-nonlinear-and-multiple-regression.html#assessing-model-adequacy"><i class="fa fa-check"></i>13.1 Assessing Model Adequacy</a></li>
+<li class="chapter" data-level="" data-path="ch-13-nonlinear-and-multiple-regression.html"><a href="ch-13-nonlinear-and-multiple-regression.html#additional-resources"><i class="fa fa-check"></i>Additional Resources</a><ul>
+<li class="chapter" data-level="" data-path="ch-13-nonlinear-and-multiple-regression.html"><a href="ch-13-nonlinear-and-multiple-regression.html#general"><i class="fa fa-check"></i>General</a></li>
+</ul></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -270,11 +273,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Randomly choose one number from the distribution:</p>
 <p><span class="math inline">\(f(x) = .2\)</span> for <span class="math inline">\(0 \leq x \leq 5\)</span>, 0 otherwise.</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">runif</span>(<span class="dt">n =</span> <span class="dv">1</span>, <span class="dt">min =</span> <span class="dv">0</span>, <span class="dt">max =</span> <span class="dv">5</span>)</code></pre>
-<pre><code>## [1] 1.070273</code></pre>
+<pre><code>## [1] 0.636292</code></pre>
 <p>Take the average of 1000 picks:</p>
 <pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">runif</span>(<span class="dt">n =</span> <span class="dv">1000</span>, <span class="dt">min =</span> <span class="dv">0</span>, <span class="dt">max =</span> <span class="dv">5</span>)
 <span class="kw">mean</span>(x)</code></pre>
-<pre><code>## [1] 2.540774</code></pre>
+<pre><code>## [1] 2.593029</code></pre>
 <p>Draw a histogram of the 1000 picks:</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">hist</span>(x, <span class="dt">las =</span> <span class="dv">1</span>, <span class="dt">col =</span> <span class="st">&quot;lightblue&quot;</span>)</code></pre>
 <p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>

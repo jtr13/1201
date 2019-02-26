@@ -12,4 +12,9 @@ Difficulties and remedies: 1. - 4. -- know the difficulties, not the remedies
 
 Skip: weighted least squares (p. 547)
 
+## Additional Resources {-}
 
+
+### General {-}
+
+**General**
