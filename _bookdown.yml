@@ -2,3 +2,25 @@ book_filename: "STAT1201-resource"
 #repo: https://github.com/jtr13/1201
 output_dir: docs
 edit: https://github.com/jtr13/1201/edit/master/%s
+
+ chapter ordering
+rmd_files: [
+  # Notes on textbook
+  "index.Rmd",
+  "Chapter1.Rmd",
+  "Chapter2.Rmd",
+  "Chapter3.Rmd",
+  "Chapter4.Rmd",
+  "Chapter5.Rmd",
+  "Chapter6.Rmd",
+  "Chapter7.Rmd",
+  "Chapter8.Rmd",
+  "Chapter9.Rmd",
+  "Chapter2point4.Rmd",
+  "Chapter14.Rmd",
+  "Chapter12.Rmd",
+  "Chapter13.Rmd"]
+
+# Other stuff
+
+
