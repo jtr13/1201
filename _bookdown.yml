@@ -16,7 +16,8 @@ rmd_files: [
   "Chapter7.Rmd",
   "Chapter8.Rmd",
   "Chapter9.Rmd",
-  "Chapter2point4.Rmd",
+  "Chapter2b.Rmd",
+  "Chapter5b.Rmd",
   "Chapter14.Rmd",
   "Chapter12.Rmd",
   "Chapter13.Rmd"]
