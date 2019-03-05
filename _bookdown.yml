@@ -3,7 +3,7 @@ book_filename: "STAT1201-resource"
 output_dir: docs
 edit: https://github.com/jtr13/1201/edit/master/%s
 
- chapter ordering
+# chapter ordering
 rmd_files: [
   # Notes on textbook
   "index.Rmd",
