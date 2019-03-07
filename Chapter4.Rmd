@@ -100,4 +100,8 @@ or
 40 + qnorm(.75)*2
 ```
 
+## Extra Practice Chapters 1 - 4 {-}
 
+[Questions](https://github.com/jtr13/1201/blob/master/pdfs/ExtraPractice1-Questions.pdf){target="_blank"}
+
+[Solutions](https://github.com/jtr13/1201/blob/master/pdfs/ExtraPractice1-Solutions.pdf){target="_blank"}
