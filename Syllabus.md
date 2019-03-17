@@ -93,7 +93,9 @@ Be sure that homework is clearly labeled and legible.
 
 Note that not all homework questions are graded so be sure to check all of your work against the posted solutions. (In short, a 20/20 doesn't necessarily mean that everything is right.)
 
-**Problem set due dates for both classes are: Feb 6, Feb 13, Mar 4, Mar 13, Apr 3, Apr 22, May 1**
+**Tentative problem set due dates for both classes are: Feb 6, Feb 13, Mar 4, Mar 13, Apr 2, Apr 22, May 1**
+
+**Exact dates will be posted on CourseWorks.**
 
 **All problem sets count; in other words, no problem set grades are dropped.**
 
