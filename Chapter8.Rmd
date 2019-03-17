@@ -4,7 +4,9 @@ Sections covered: 8.1, 8.2, 8.3, 8.4
 
 ## 8.1 Hypotheses and Test Procedures {-}
 
-Skip: Example 8.4 (hypothesis testing and type II error calculation for _small_ sample proportions)
+Note: We will cover the beginning of the section and then return to errors in hypothesis testing (beginning on page 317) after Section 8.2.
+
+Skip: Examples 8.1 and 8.4 (hypothesis testing and type II error calculation for small sample proportions)
 
 xkcd cartoon: ["Significant"](https://xkcd.com/882/){target="_blank"} (Jelly Beans Cause Acne!)
 

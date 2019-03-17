@@ -25,7 +25,7 @@
 <meta name="author" content="Joyce Robbins">
 
 
-<meta name="date" content="2019-03-07">
+<meta name="date" content="2019-03-17">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -271,11 +271,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Randomly choose one number from the distribution:</p>
 <p><span class="math inline">\(f(x) = .2\)</span> for <span class="math inline">\(0 \leq x \leq 5\)</span>, 0 otherwise.</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">runif</span>(<span class="dt">n =</span> <span class="dv">1</span>, <span class="dt">min =</span> <span class="dv">0</span>, <span class="dt">max =</span> <span class="dv">5</span>)</code></pre>
-<pre><code>## [1] 4.094619</code></pre>
+<pre><code>## [1] 4.469153</code></pre>
 <p>Take the average of 1000 picks:</p>
 <pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">runif</span>(<span class="dt">n =</span> <span class="dv">1000</span>, <span class="dt">min =</span> <span class="dv">0</span>, <span class="dt">max =</span> <span class="dv">5</span>)
 <span class="kw">mean</span>(x)</code></pre>
-<pre><code>## [1] 2.44887</code></pre>
+<pre><code>## [1] 2.541965</code></pre>
 <p>Draw a histogram of the 1000 picks:</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">hist</span>(x, <span class="dt">las =</span> <span class="dv">1</span>, <span class="dt">col =</span> <span class="st">&quot;lightblue&quot;</span>)</code></pre>
 <p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
