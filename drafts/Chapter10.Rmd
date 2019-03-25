@@ -1,0 +1,126 @@
+---
+title: "Chapter 10 draft"
+author: "Joyce Robbins"
+date: "3/24/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE,
+                      message = FALSE)
+```
+
+# Ch. 10 {-}
+
+## 10.1 Single Factor ANOVA {-}
+
+```{r}
+# see page 415
+library(tidyverse)
+df <- read_csv("../data/tidytable10-1.csv")
+mod <- aov(value ~ key, df)
+summary(mod)
+```
+
+Exercise #9
+
+```{r}
+df <- read_delim("5.2 4.5 6.0 6.1 6.7 5.8\n6.5 8.0 6.1 7.5 5.9 5.6\n5.8 4.7 6.4 4.9 6.0 5.2\n8.3 6.1 7.8 7.0 5.5 7.2\n", col_names = F, delim = " ") %>%
+  mutate_all(as.numeric) %>% 
+  t() %>% 
+  as_tibble() %>% 
+  setNames(c("Wheat", "Barley", "Maize", "Oats"))
+
+tidydf <- df %>% gather(key = "cereal", value = "thiamin")
+
+a <- aov(thiamin ~ cereal, tidydf)
+summary(a)
+
+# What is the right way to do this?
+
+mean_df <- tidydf %>% group_by(cereal) %>% 
+  summarize(mean_thiamin = mean(thiamin)) %>% 
+  arrange(mean_thiamin) %>% 
+  mutate(cereal = fct_inorder(cereal))
+ 
+
+tidydf$cereal <- factor(tidydf$cereal,
+                    levels = levels(mean_df$cereal))
+
+ggplot(tidydf, aes(cereal, thiamin)) + 
+  geom_line(color = "grey50") +
+  geom_segment(data = mean_df,
+             aes(x = as.integer(cereal) - .1,
+                 xend = as.integer(cereal) + .1,
+                 y = mean_thiamin,
+                 yend = mean_thiamin),
+             color = "red",
+             size = 1.5) +
+  geom_point() +
+  coord_flip()
+
+```
+
+## 10.2 Multiple Comparisons in ANOVA {-}
+
+### Tukey’s Procedure (the T Method)
+
+Sequential differences:
+
+```{r}
+# Treatment df: I (# of treatments) -1
+# Error df: I * (J - 1)
+
+q <- qtukey(.95, nmeans = 4 - 1, df = 4 * (6 - 1))
+w <- q*sqrt(summary(a)[[1]][["Mean Sq"]][2]/6)
+diff(mean_df$mean_thiamin)
+```
+
+Pairs with significant differences:
+
+```{r}
+for (i in 1:4) {
+  for (j in 1:i) {
+    d <- mean_df$mean_thiamin[i] - mean_df$mean_thiamin[j]
+    if(d > w) {
+      print(paste(mean_df$cereal[i], mean_df$cereal[j], round(d, 3)))
+    }
+  }
+}
+```
+
+Or, the easier way:
+
+(see: https://www.r-bloggers.com/anova-and-tukeys-test-on-r/)
+
+```{r}
+TukeyHSD(a)
+plot(a)
+```
+
+t-test for Oats-Maize
+
+```{r}
+t.test(df$Oats, df$Maize)
+```
+
+
+pairwise t-tests
+
+```{r}
+for (i in seq_along(1:4)) {
+  for (j in 1:i) {
+      m <- t.test(pull(df[,i]), pull(df[,j]))
+      print(c(colnames(df)[i], colnames(df)[j],
+              round(m$p.value, 3)))
+    }
+  }
+```
+
+The easier way:
+
+```{r}
+pairwise.t.test(tidydf$thiamin, tidydf$cereal, 
+                p.adjust.method = "none", pool.sd = FALSE)
+```
+
