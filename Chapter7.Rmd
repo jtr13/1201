@@ -12,7 +12,9 @@ You may use: $\hat{p} \pm z_{\alpha/2} \sqrt{\frac{\hat{p}\hat{q}}{n}}$, rather 
 
 You may use the method from class $n = \frac{4z^2\hat{p}\hat{q}}{w^2}$ for the minimum $n$ needed to ensure a particular confidence interval width for proportions, rather than formula (7.12) -- both appear on p. 291. As noted in Example 7.9 on p. 291, the easier formula gives a slightly different answer (385 instead of 381).
 
-[Additional material on CI for proportions](https://github.com/jtr13/1201/blob/master/pdfs/LargeSampleCIforPopulationProportion.pdf){target="_blank"}
+[Additional textbook material on CI for proportions](https://github.com/jtr13/1201/blob/master/pdfs/LargeSampleCIforPopulationProportion.pdf){target="_blank"}
+
+["When You Hear the Margin of Error Is Plus or Minus 3 Percent, Think 7 Instead"](https://www.nytimes.com/2016/10/06/upshot/when-you-hear-the-margin-of-error-is-plus-or-minus-3-percent-think-7-instead.html){target="_blank"}, New York Times, Oct 5, 2016.
 
 ## 7.3 Intervals Based on a Normal Population Distribution {-}
 
