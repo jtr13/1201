@@ -153,7 +153,7 @@ There are numerous opportunities to get assistance with the class material:
 
 The following topics will be covered in the order below.
 
-For more detailed information on material covered within each section, please consult https://jtr13.github.io/1201/
+For more detailed information on material covered within each section, please consult stat.info
 
 <ol>
 <li>
