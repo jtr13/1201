@@ -153,7 +153,7 @@ There are numerous opportunities to get assistance with the class material:
 
 The following topics will be covered in the order below.
 
-For more detailed information on material covered within each section, please consult [stat.info](stat.info)
+For more detailed information on material covered within each section, please consult [1201.info](1201.info)
 
 <ol>
 <li>
