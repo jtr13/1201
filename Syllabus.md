@@ -113,7 +113,14 @@ Plagiarism or any other breach of academic integrity will not be tolerated and w
 
 ## Tests
 
-Allowable materials on tests include pens, pencils, erasers, a hand-held NON-GRAPHING calculator (no graphics display), and a single (two-sided, or two one-sided) 8.5” x 11” sheet of original handwritten notes for the first two tests, and three sheets (each two-sided, or six one-sided) for the final. Make-up tests will only be administered in cases of documented emergencies.
+(updated 4/3/19)
+Allowable materials on tests include pens, pencils, erasers, a hand-held NON-GRAPHING calculator (no graphics display), and handwritten notes. The number of double-sided sheets you can bring depends on the test:
+
+Test #1: one double-sided sheet
+Test #2: two double-sided sheets
+Final: three double-sided sheets
+
+Make-up tests will only be administered in cases of documented emergencies.
 
 All tests are cumulative but weighted more toward new material.
 
