@@ -4,8 +4,8 @@ Section covered: 2.4
 
 ## Resources {-}
 
-<iframe width="400" height = "225" src="https://www.youtube.com/embed/otdaJPVQIgg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="400" height = "225" src="https://www.youtube.com/embed/otdaJPVQIgg" target = "_blank" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-(Posted on Twitter as a [response](https://twitter.com/stat110/status/1118554150562869248) to Bill Gates' [provocative comment](https://twitter.com/BillGates/status/1118196606975787008) that he'd rather encounter a shark than a mosquito in the wild.)
+(Posted on Twitter as a [response](https://twitter.com/stat110/status/1118554150562869248){target="_blank"} to Bill Gates' [provocative comment](https://twitter.com/BillGates/status/1118196606975787008) that he'd rather encounter a shark than a mosquito in the wild.){target="_blank"}
 
 [An Intuitive (and Short) Explanation of Bayes' Theorem](https://betterexplained.com/articles/an-intuitive-and-short-explanation-of-bayes-theorem/)
