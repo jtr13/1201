@@ -4,11 +4,13 @@ Sections covered: 5.1, 5.2
 
 ## 5.1 Jointly Distributed Random Variables {-}
 
-Skip: "Two Continuous Random Variables" (pp. 201-204); Examples 5.7, 5.8 p. 205; "More Than Two Random Variables" pp. 205-208; "Conditional Distributions" p. 209
+Skip *everything but* "Two Discrete Random Variables" pp. 199-200
 
 ## 5.2 Expected Values, Covariance, and Correlation {-}
 
-Skip: all double integrals, "The Bivariate Normal Distribution" pp. 218-219
+Skip *everything but* "Covariance" pp. 214-215 and "Correlation" pp. 216-218
+
+(In both sections, skip double integrals)
 
 ## Resources {-}
 
