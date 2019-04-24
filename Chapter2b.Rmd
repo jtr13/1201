@@ -1,6 +1,8 @@
 # Ch. 2 Conditional Probability {-}
 
-Section covered: 2.4 
+Sections covered: 2.4, 2.5
+
+(Section 2.5 was covered earlier; now we're adding the definition of independence in terms of conditional probability on p. 85: "Two events A and B are independent if P(A|B) = P(A) and are dependent otherwise.")
 
 ## Resources {-}
 
