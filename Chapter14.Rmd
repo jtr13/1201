@@ -4,9 +4,18 @@ Sections covered: 14.3
 
 ## 14.3 Two-Way Contingency Tables {-}
 
-Skip: pp. 639-643, focus on "Testing for Independence (Lack of Association)"
+Skip: pp. 639-643, including "Testing for Homogeneity"
 
-("estimated expected" in the textbook is the same as "expected" used in class)
+Focus on "Testing for Independence (Lack of Association)"
+
+Notes on the chi square test formula on p. 644:
+
+* Write the null hypothesis as a sentence, not as in the book. (For example: "Class and Survival Status are independent.")
+
+* "estimated expected" in the textbook is the same as "expected" used in class
+
+* I and J refer to the number of rows and columns in the table
+
 
 ## Resources {-}
 
