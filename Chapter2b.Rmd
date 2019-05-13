@@ -6,6 +6,8 @@ Sections covered: 2.4, 2.5
 
 ## Resources {-}
 
+[Extra practice problems, Bayes Theorem](http://faculty.washington.edu/tamre/BayesTheorem.pdf){target="_blank"}
+
 <iframe width="400" height = "225" src="https://www.youtube.com/embed/otdaJPVQIgg" target = "_blank" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 (Posted on Twitter as a [response](https://twitter.com/stat110/status/1118554150562869248){target="_blank"} to Bill Gates' [provocative comment](https://twitter.com/BillGates/status/1118196606975787008){target="_blank"} that he'd rather encounter a shark than a mosquito in the wild.)
