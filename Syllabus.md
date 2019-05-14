@@ -105,7 +105,7 @@ All of the coding related parts of the class are optional and will not appear on
 
 ## Academic Integrity
 
-You are encouraged to discuss homework strategies with your classmates and work through examples, but you may not discuss particular homework problems, nor copy all or part of solutions from anywhere. In short, the homework you submit must be your own work.
+You are encouraged to discuss homework strategies with your classmates and work through examples, but you may not discuss particular homework problems, nor copy all or part of solutions from anywhere. In short, the homework you submit must be your own work.
 
 Plagiarism or any other breach of academic integrity will not be tolerated and will result in disciplinary action. For more information please refer to the The Columbia University Undergraduate Guide to Academic Integrity:
 
@@ -124,7 +124,7 @@ Final: three double-sided sheets
 
 Make-up tests will only be administered in cases of documented emergencies.
 
-All tests are cumulative but weighted more toward new material.
+All tests are cumulative but weighted more toward new material. 
 
 As soon as test dates are available, they will be posted as CourseWorks Assignments.
 

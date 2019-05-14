@@ -4,9 +4,7 @@ output_dir: docs
 edit: https://github.com/jtr13/1201/edit/master/%s
 
 # chapter ordering
-rmd_files: [
-  # Notes on textbook
-  "index.Rmd",
+rmd_files: ["index.Rmd",
   "Chapter1.Rmd",
   "Chapter2.Rmd",
   "Chapter3.Rmd",

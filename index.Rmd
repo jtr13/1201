@@ -3,7 +3,6 @@ title: "Stat 1201 Supplemental Materials"
 author: "Joyce Robbins"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-# template: https://github.com/rstudio/bookdown/issues/502
 output:
   bookdown::gitbook:
     config:
@@ -11,10 +10,11 @@ output:
 github-repo: "jtr13/1201"
 url: 'https://jtr13.github.io/1201/'
 description: "Supplemental resources for Stat1201"
-
 ---
 
+
 # Introduction {-}
+
 
 This site contains supplemental materials for Stat 1201, mainly: 1) clarifications on which sections we cover in the textbook (Devore, *Probability and Statistics for Engineering and the Sciences* **9th edition**), 2) R code, and 3) links to helpful resources online. It is not in any way a substitute for materials available in CourseWorks.
 
@@ -64,15 +64,8 @@ https://www.rstudio.com/products/rstudio/download/#download
 
 ## Getting Started with R {-}
 
-### DataCamp {-}
+To get oriented, read and try the examples in [Chapter 1 of Introduction to R](https://monashdatafluency.github.io/r-intro-2/starting-out-in-r.html){target="_blank"}
 
-Create an account on www.datacamp.com using your Columbia email address. (Otherwise I will not be able to give you access to premium DataCamp content later in the semester.)
-
-Click "Learn" and then "Introduction to R" and do the first two chapters of the course:
-
-* Intro to basics
-
-* Vectors
 
 ### Quick intro to RStudio {-}
 
@@ -132,7 +125,6 @@ sum(x*px)
 ```
 
 
---- 
 <!-- Contact -->
 ## Contact {-}
 
