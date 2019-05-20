@@ -6,7 +6,7 @@ Sections covered: all
 
 ## 1.2 Pictorial and Tabular Methods in Descriptive Statistics {-}
 
-Skip: "Dotplots" pp. 15-16
+Skip: "Dotplots Section" pp. 15-16
 
 ### R {-}
 
