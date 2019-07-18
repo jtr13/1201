@@ -24,7 +24,7 @@
 <meta name="author" content="Joyce Robbins" />
 
 
-<meta name="date" content="2019-05-14" />
+<meta name="date" content="2019-07-18" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -267,6 +267,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="z-tests-for-hypotheses-about-a-population-mean" class="section level2 unnumbered">
 <h2>8.2 <em>z</em> Tests for Hypotheses about a Population Mean</h2>
 <p>Skip: calculating Type II error and sample size needed for two sided tests (3rd and 5th formulas in the blue box on p. 331)</p>
+<p><strong>Example:</strong>
+We wish to test whether a scale needs to be recalibrated. If it’s working, a 10 pound weight should weigh 10 pounds. We decide to test it by weighing the same weight, which we know to be precisely 10 pounds, 25 times. We know the weights from this scale are normally distributed and independent, with a true standard deviation of <span class="math inline">\(\sigma\)</span> = 1. Our sample mean (x) is 9.85. Should we conclude that recalibration is necessary x (that is, the scale is off) or not necessary (the scale isn’t conclusively off)?</p>
+<p><span class="math inline">\(α = .01​\)</span></p>
+<p><span class="math inline">\(H_0: \mu = 10\)</span></p>
+<p><span class="math inline">\(H_A: \mu \neq 10\)</span></p>
+<p>Test statistic: <span class="math inline">\(z=\frac{\bar{X} - \mu_0}{\sigma/\sqrt{n}}\)</span></p>
+<pre class="sourceCode r"><code class="sourceCode r">z &lt;-<span class="st"> </span>(<span class="fl">9.85</span><span class="dv">-10</span>)<span class="op">/</span>(<span class="dv">1</span><span class="op">/</span><span class="kw">sqrt</span>(<span class="dv">25</span>))
+z</code></pre>
+<pre><code>## [1] -0.75</code></pre>
+<p>Determine the p-value:</p>
+<pre class="sourceCode r"><code class="sourceCode r">pval &lt;-<span class="st"> </span><span class="kw">pnorm</span>(z)<span class="op">*</span><span class="dv">2</span>
+pval</code></pre>
+<pre><code>## [1] 0.4532547</code></pre>
+<p>Since 0.453 &gt; .05, we do not reject the null hypothesis. In other words, even if the scale were perfectly calibrated (<span class="math inline">\(\mu = 10\)</span>) there is over a 45% probability that we would get a sample mean less than or equal to 9.85 (or equal to or greater than 10.15), that is, the same or further from the true mean than we found. Therefore, on the basis on these results, recaliberation is not necessary.</p>
 </div>
 <div id="the-one-sample-t-test" class="section level2 unnumbered">
 <h2>8.3 The One-Sample <em>t</em> Test</h2>
