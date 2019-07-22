@@ -100,6 +100,42 @@ or
 40 + qnorm(.75)*2
 ```
 
+## Practice Exercises {-}
+
+1. **(pdf, E and V)** $X$ is a continuous random variable with probability distrbution $f(x)=.06x + .05$ where $0\leq x \leq 5$. 
+
+   a. What is the probability that $2\leq x\leq 4$? 
+   b. What is the probability that $x = 4$?
+   c. What is the expected value of $X$?
+   d. What is the variance of X?
+   
+   
+[Ans]
+a. Integrate $f(x)=.06x + .05$, we get $F(x) = .03x^2+.05x$.
+```{r}
+F <- function(x) 0.03*x^2 + 0.05*x
+x <- runif(n = 1000, min = 0, max = 5)
+F(4) - F(2)
+```
+
+b. 0
+
+c. Integrate $x\cdot f(x) = x(.06x+.05)=.06x^2+.05x$, we get $H(x) = .02x^3+.025x^2$.
+```{r}
+H <- function(x) 0.02*x^3 + 0.025*x^2
+H(5)-H(0) 
+```
+
+d. $V(X) = E(X^2)-[E(X)]^2$.
+Integrate $x^2\cdot f(x) = x^2(.06x+.05)=.06x^3+.05x^2$, we get $G(x) = .015x^4+\frac{.05}3x^3$.
+```{r}
+E <- H(5)-H(0)
+G <- function(x) .015*(x^4)+(.05/3)*(x^3)
+G(5)-G(0)-E^2
+```
+
+
+
 ## Extra Practice Chapters 1 - 4 {-}
 
 [Questions](https://github.com/jtr13/1201/blob/master/pdfs/ExtraPractice1-Questions.pdf){target="_blank"}
