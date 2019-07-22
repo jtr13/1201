@@ -13,8 +13,17 @@ xkcd cartoon: ["Significant"](https://xkcd.com/882/){target="_blank"} (Jelly Bea
 ## 8.2 _z_ Tests for Hypotheses about a Population Mean {-}
 Skip: calculating Type II error and sample size needed for two sided tests (3rd and 5th formulas in the blue box on p. 331)
 
-**Example:**
-We wish to test whether a scale needs to be recalibrated. If it’s working, a 10 pound weight should weigh 10 pounds. We decide to test it by weighing the same weight, which we know to be precisely 10 pounds, 25 times. We know the weights from this scale are normally distributed and independent, with a true standard deviation of $\sigma$ = 1. Our sample mean (x) is 9.85. Should we conclude that recalibration is necessary x (that is, the scale is off) or not necessary (the scale isn’t conclusively off)? 
+## 8.3 The One-Sample _t_ Test {-}
+
+Skip: $\beta$ and Sample Size Determination (p. 338) to end of section
+
+## 8.4 Tests Concerning a Population Proportion {-}
+
+Skip: $\beta$ and Sample Size Determination (pp. 348-349)
+
+
+## Practice Exercises {-}
+1. **(One sample test, Values given)** We wish to test whether a scale needs to be recalibrated. If it’s working, a 10 pound weight should weigh 10 pounds. We decide to test it by weighing the same weight, which we know to be precisely 10 pounds, 25 times. We know the weights from this scale are normally distributed and independent, with a true standard deviation of $\sigma$ = 1. Our sample mean (x) is 9.85. Should we conclude that recalibration is necessary x (that is, the scale is off) or not necessary (the scale isn’t conclusively off)? 
 
 $α = .01​$
 
@@ -39,11 +48,4 @@ pval
 Since 0.453 > .05, we do not reject the null hypothesis. In other words, even if the scale were perfectly calibrated ($\mu = 10$) there is over a 45% probability that we would get a sample mean less than or equal to 9.85 (or equal to or greater than 10.15), that is, the same or further from the true mean than we found. Therefore, on the basis on these results, recaliberation is not necessary. 
 
 
-## 8.3 The One-Sample _t_ Test {-}
-
-Skip: $\beta$ and Sample Size Determination (p. 338) to end of section
-
-## 8.4 Tests Concerning a Population Proportion {-}
-
-Skip: $\beta$ and Sample Size Determination (pp. 348-349)
 
