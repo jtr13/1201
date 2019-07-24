@@ -58,3 +58,73 @@ mosaicplot(t(mat), color = c("aliceblue", "cornflowerblue", "navyblue"), main = 
 ```
 
 See [this tutorial](https://github.com/jtr13/codehelp/blob/master/R/mosaic.md) for more on mosaic plots.
+
+
+
+## Practice Exercises {-}
+
+1. **(Class example)** We took a survey involving 20 children and 80 adults. 1 of the children and 49 of the adults drink coffee, while the remainder do not. Does there appear to be a relationship between age (child vs. adult) and coffee drinking status (yes vs. no)?
+
+[Ans]
+```{r}
+x <- c(1, 49, 19, 31)
+dim(x) <- c(2, 2)
+x
+chisq.test(x, correct = FALSE)
+```
+
+
+------
+
+2. **(Hypothesis Testing) **  In an investigation of alcohol use among college students, each male student in a sample was categorized both according to age group and according to the numberof heavy drinking episodes during the previous 30 days.
+
+|              | 18-23 | 21-23 | $\geq$ 24 |
+| ------------ | ----- | ----- | -------- |
+| **None**     | 357   | 293   | 592      |
+| **1-2**      | 218   | 285   | 354      |
+| **3-4**      | 184   | 218   | 185      |
+| **$\geq$ 5** | 328   | 331   | 147      |
+
+Does there appear to be an association between extent of binge drinking and age group in the population from which the sample was selected? Carry out a test of hypotheses at significance level .01.
+(Testbook 14.25)
+
+[Ans]
+
+$α = .01$ 
+
+$H_0$: the extent of binge drinking and age group are independent
+
+$H_A$: the extent of binge drinking and age group are not independent.
+
+```{r}
+data <- c(357, 218, 184, 328, 293, 285, 218, 331, 592, 354, 185, 147)
+dim(data) <- c(4, 3)
+data
+# optional: give names to the rows and columns
+dimnames(data) <- list(`Episodes` = c("None", "1-2", "3-4", ">= 5"),`Age Group` = c("18-23", "21-23", ">=24"))
+
+data
+chisq.test(data, correct = FALSE)
+```
+
+
+Alternatively, we can use R as a calculator.
+```{r}
+total <- sum(data)
+prob <- data/total
+expected <- data # initialize matrix "expected" to be the same size as "data"
+
+for (i in 1:4){
+  for(j in 1:3){
+    expected[i,j] <- sum(prob[i,])*sum(prob[,j])*total
+  }
+}
+
+chisq <- sum((data-expected)^2/expected)
+chisq
+```
+$p-value < .01$
+
+Reject $H_0$. There is an association between extent of binge drinking and age group in the population from which the sample was selected.
+
+
