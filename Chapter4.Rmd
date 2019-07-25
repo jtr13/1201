@@ -111,7 +111,8 @@ or
    d. What is the variance of X?
    
 [Ans]
-a. Integrate $f(x)=.06x + .05$, we get $F(x) = .03x^2+.05x$.
+a. Integrating by hand: $f(x)=.06x + .05$, we get $F(x) = .03x^2+.05x$.
+
 ```{r}
 F <- function(x) 0.03*x^2 + 0.05*x
 x <- runif(n = 1000, min = 0, max = 5)
