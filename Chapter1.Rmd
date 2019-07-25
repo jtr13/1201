@@ -119,17 +119,17 @@ boxplot(df, horizontal = TRUE)
 
 ## Practice Exercises {-}
 
-1. Using the built-in dataset `ToothGrowth` in R, visualize thet data and comment on the effectiveness of different functions in the context.
+1. Using the built-in dataset `ToothGrowth` in R, visualize the data and comment on the effectiveness of different functions in the context.
 
 ```{r}
 # The first 5 rows of the data
 head(ToothGrowth, 5)
 
-# Summary of data
-summary(ToothGrowth)
+# Five number summary
+fivenum(ToothGrowth)
 
 # Boxplot 
-# '$' extract the column by name
+# '$' extracts the column by name
 boxplot(ToothGrowth$len) 
 
 # Stem-and-leaf Plot
@@ -143,14 +143,14 @@ h$counts <- cumsum(h$counts)
 plot(h)
 ```
 
-`head()`: directly see how the dataset looks; useful when the dataset is large and it difficult to display all rows and columns together.
+`head()`: directly see how the dataset looks; useful when the dataset is large and it's difficult to display all rows and columns together.
 
-`summary()`: gives a brief summary of the data with numbers. Note that `fivenum()` works in a similar way but it only takes in a vector/column.
+`fivenum()`: returns the minimum value, lower fourth, median, upper fourth, and maximum value
 
-`boxplot()`: visualizes the five points. It's clear that the data is not skewed.
+`boxplot()`: visualizes the five number summary plus outliers. (It's clear that the `ToothGrowth` data is not skewed.)
 
-`stem()`: compares the number of data points that fall in different bins. Here we can see that most values are between 20 and 29.
+`stem()`: compares the number of data points that fall in different bins. (Here we can see that most values are between 20 and 29.)
 
-`hist()`: frequency plot, similar to `stem` but simpler.
+`hist()`: draws a histogram -- values are grouped in bins
 
-`cumsum()`: no much useful information.
+`cumsum()`: takes a vector and returns the cumulative sums
