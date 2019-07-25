@@ -60,8 +60,9 @@ Skip: Pooled $t$ Procedures (pp. 377-378)
 
 Skip: Type II Error Probabilities (pp. 378-379)
 
-Given two random samples, use `t.test()` with different parameters to carry out a 
-For demonstration purposes, x and y here are samples of 10 numbers that follow the standard normal distribution.
+Given two random samples, use `t.test()` with different parameters to carry out a two-sample hypothesis test.
+
+For demonstration purposes, x and y here are samples of 10 numbers that drawn from the standard normal distribution.
 
 ```{r}
 set.seed(1)
