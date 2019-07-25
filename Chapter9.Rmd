@@ -60,11 +60,42 @@ Skip: Pooled $t$ Procedures (pp. 377-378)
 
 Skip: Type II Error Probabilities (pp. 378-379)
 
+Given two random samples, use `t.test()` with different parameters to carry out a two-sample hypothesis test.
+
+For demonstration purposes, x and y here are samples of 10 numbers that drawn from the standard normal distribution.
+
+```{r}
+set.seed(1)
+x <- rnorm(10)
+set.seed(2)
+y <- rnorm(10)
+t.test(x, y, var.equal = TRUE, alternative = "less") 
+```
+Thus, H_0 is rejected at alpha = .05.
+
+In `t.test()`, "less" indicates that H_A: delta < 0. Also try using `alternative = "two.sided"` or `alternative = "two.sided"` for a different alternative hypothesis.
+
+
 ## 9.3 Analysis of Paired Data {-}
 
 Skip: Paired Data and Two-Sample $t$ Procedures (pp. 386-387)
 
 Skip: Paired Versus Unpaired Experiments (pp. 387-388)
+
+Two ways of doing paired test:
+(Here we continue to use the `x` and `y` in section 9.2 above)
+**[Method 1]** Take x-y and do a one-sample test. 
+```{r}
+t.test(x-y, alternative = "less")
+```
+
+**[Method 2]** Give another parameter `paired = TRUE`. In R, the default parameter for `paired` in `t.test()` is `FALSE`; here we set it to `TRUE` and leave `x` and `y` as two separate inputs.
+```{r}
+t.test(x, y, alternative = "less", paired = TRUE)
+```
+
+It's clear that they give the same results.
+
 
 ## 9.4 Inferences Concerning a Difference Between Population Proportions {-}
 
@@ -79,4 +110,3 @@ clicks <- c(25, 20)
 people <- c(100, 100)
 prop.test(clicks, people, correct = FALSE)
 ```
-

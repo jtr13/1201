@@ -102,13 +102,13 @@ or
 
 ## Practice Exercises {-}
 
+
 1. **(pdf, E and V)** $X$ is a continuous random variable with probability distrbution $f(x)=.06x + .05$ where $0\leq x \leq 5$. 
 
    a. What is the probability that $2\leq x\leq 4$? 
    b. What is the probability that $x = 4$?
    c. What is the expected value of $X$?
    d. What is the variance of X?
-   
    
 [Ans]
 a. Integrate $f(x)=.06x + .05$, we get $F(x) = .03x^2+.05x$.
@@ -132,9 +132,41 @@ Integrate $x^2\cdot f(x) = x^2(.06x+.05)=.06x^3+.05x^2$, we get $G(x) = .015x^4+
 E <- H(5)-H(0)
 G <- function(x) .015*(x^4)+(.05/3)*(x^3)
 G(5)-G(0)-E^2
+
+------
+
+2. **(Standard Normal, `pnorm`)** A driver's reaction time for an in-traffic response to a brake signal can be modeled with a normal distribution having mean value 1.25 sec and standard deviation of .46 sec.  (Textbook 4.16)
+
+   a. What is the probability that reaction time is between 1.00 sec and 1.75 sec?
+
+   b. What is the probability that reaction time exceeds 2.00 sec?
+
+```{r}
+pnorm((1.75-1.25)/0.46) - pnorm((1-1.25)/0.46)
+1 - pnorm((2-1.25)/0.46)
+# alternatively
+pnorm(-(2-1.25)/0.46)
 ```
+------
 
+3. **(Nonstandard Normal, `qnorm`)** Data collected from an experiment with a specified initial crack
+   length propose a normal distribution with mean value 5.496 mm and standard deviation .067 mm. For this model, what value of final crack depth would be exceeded by only .5% of all cracks? (Textbook 4.18)
 
+```{r}
+qnorm(0.995, 5.496, .067)
+```
+------
+
+4. **(Binom Appproximation)** Suppose that 25% of all students at a large public university receive financial aid. Let $X$ be the number of students in a random sample of size 50 who receive financial
+   aid, sothat *p = .25*. What is the probability that at most 10 students receive aid? (Textbook 4.20)
+
+```{r}
+# binom distribution calculation
+pbinom(10, size = 50, prob = 0.25) 
+# normal approximation of binom
+pnorm((10 + .5 - 50*.25)/sqrt(50*.25*.75))
+
+```
 
 ## Extra Practice Chapters 1 - 4 {-}
 
