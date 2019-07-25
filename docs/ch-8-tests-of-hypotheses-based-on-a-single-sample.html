@@ -284,9 +284,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="practice-exercises-3" class="section level2 unnumbered">
 <h2>Practice Exercises</h2>
-<ol style="list-style-type: decimal">
-<li><strong>(One sample test, Values given)</strong> We wish to test whether a scale needs to be recalibrated. If it’s working, a 10 pound weight should weigh 10 pounds. We decide to test it by weighing the same weight, which we know to be precisely 10 pounds, 25 times. We know the weights from this scale are normally distributed and independent, with a true standard deviation of <span class="math inline">\(\sigma\)</span> = 1. Our sample mean (x) is 9.85. Should we conclude that recalibration is necessary x (that is, the scale is off) or not necessary (the scale isn’t conclusively off)?</li>
-</ol>
+<p><strong><span class="math inline">\(1.\)</span> (One sample test, Values given)</strong> We wish to test whether a scale needs to be recalibrated. If it’s working, a 10 pound weight should weigh 10 pounds. We decide to test it by weighing the same weight, which we know to be precisely 10 pounds, 25 times. We know the weights from this scale are normally distributed and independent, with a true standard deviation of <span class="math inline">\(\sigma\)</span> = 1. Our sample mean (x) is 9.85. Should we conclude that recalibration is necessary x (that is, the scale is off) or not necessary (the scale isn’t conclusively off)?</p>
 <p><span class="math inline">\(α = .01​\)</span></p>
 <p><span class="math inline">\(H_0: \mu = 10\)</span></p>
 <p><span class="math inline">\(H_A: \mu \neq 10\)</span></p>
@@ -299,9 +297,8 @@ z</code></pre>
 pval</code></pre>
 <pre><code>## [1] 0.4532547</code></pre>
 <p>Since 0.453 &gt; .05, we do not reject the null hypothesis. In other words, even if the scale were perfectly calibrated (<span class="math inline">\(\mu = 10\)</span>) there is over a 45% probability that we would get a sample mean less than or equal to 9.85 (or equal to or greater than 10.15), that is, the same or further from the true mean than we found. Therefore, on the basis on these results, recaliberation is not necessary.</p>
-<ol start="2" style="list-style-type: decimal">
-<li><strong>(One sample test, Raw values)</strong> We know that the mean sepal length of setosas (a species of irises) is 4.8 cm. A new study examines a sample of 50 flowers and shows that the sample mean is <code>mean(iris$Sepal.Length[1:50])</code> cm. Conduct a one-tailed hypothesis test at <span class="math inline">\(.05\)</span> significance level to show if there is sufficient evidence to reject the hypothesis that the mean of the new sample is equal to 4.8 cm.</li>
-</ol>
+<hr />
+<p><strong><span class="math inline">\(2.\)</span> (One sample test, Raw values)</strong> We know that the mean sepal length of setosas (a species of irises) is 4.8 cm. A new study examines a sample of 50 flowers and shows that the sample mean is 5.006 cm. Conduct a one-tailed hypothesis test at <span class="math inline">\(.05\)</span> significance level to show if there is sufficient evidence to reject the hypothesis that the mean of the new sample is equal to 4.8 cm.</p>
 <p><span class="math inline">\(α = .05\)</span></p>
 <p><span class="math inline">\(H_0: \mu = 4.8\)</span></p>
 <p><span class="math inline">\(H_A: \mu &gt; 4.8\)</span></p>
@@ -314,7 +311,7 @@ z</code></pre>
 <pre><code>## [1] 4.132433</code></pre>
 <pre class="sourceCode r"><code class="sourceCode r">pval &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">-</span><span class="st"> </span><span class="kw">pnorm</span>(z)
 pval</code></pre>
-<pre><code>## [1] 1.794718e-05</code></pre>
+<pre><code>## [1] 0.00001794718</code></pre>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="co"># simpler approach</span>
 <span class="co"># p-values might be a bit different due to approximation of t</span>
 <span class="kw">t.test</span>(setosa<span class="op">$</span>Sepal.Length, <span class="dt">alternative =</span> <span class="st">&quot;greater&quot;</span>, <span class="dt">mu =</span> <span class="fl">4.8</span>)</code></pre>
@@ -322,7 +319,7 @@ pval</code></pre>
 ##  One Sample t-test
 ## 
 ## data:  setosa$Sepal.Length
-## t = 4.1324, df = 49, p-value = 6.986e-05
+## t = 4.1324, df = 49, p-value = 0.00006986
 ## alternative hypothesis: true mean is greater than 4.8
 ## 95 percent confidence interval:
 ##  4.922425      Inf

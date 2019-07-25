@@ -23,7 +23,7 @@ Skip: $\beta$ and Sample Size Determination (pp. 348-349)
 
 
 ## Practice Exercises {-}
-1. **(One sample test, Values given)** We wish to test whether a scale needs to be recalibrated. If it’s working, a 10 pound weight should weigh 10 pounds. We decide to test it by weighing the same weight, which we know to be precisely 10 pounds, 25 times. We know the weights from this scale are normally distributed and independent, with a true standard deviation of $\sigma$ = 1. Our sample mean (x) is 9.85. Should we conclude that recalibration is necessary x (that is, the scale is off) or not necessary (the scale isn’t conclusively off)? 
+**$1.$ (One sample test, Values given)** We wish to test whether a scale needs to be recalibrated. If it’s working, a 10 pound weight should weigh 10 pounds. We decide to test it by weighing the same weight, which we know to be precisely 10 pounds, 25 times. We know the weights from this scale are normally distributed and independent, with a true standard deviation of $\sigma$ = 1. Our sample mean (x) is 9.85. Should we conclude that recalibration is necessary x (that is, the scale is off) or not necessary (the scale isn’t conclusively off)? 
 
 $α = .01​$
 
@@ -47,13 +47,9 @@ pval
 
 Since 0.453 > .05, we do not reject the null hypothesis. In other words, even if the scale were perfectly calibrated ($\mu = 10$) there is over a 45% probability that we would get a sample mean less than or equal to 9.85 (or equal to or greater than 10.15), that is, the same or further from the true mean than we found. Therefore, on the basis on these results, recaliberation is not necessary. 
 
+------
 
-
-
-
-
-
-2. **(One sample test, Raw values)** We know that the mean sepal length of setosas (a species of irises) is 4.8 cm. A new study examines a sample of 50 flowers and shows that the sample mean is `mean(iris$Sepal.Length[1:50])` cm. Conduct a one-tailed hypothesis test at $.05$ significance level to show if there is sufficient evidence to reject the hypothesis that the mean of the new sample is equal to 4.8 cm.
+**$2.$ (One sample test, Raw values)** We know that the mean sepal length of setosas (a species of irises) is 4.8 cm. A new study examines a sample of 50 flowers and shows that the sample mean is `r mean(iris$Sepal.Length[1:50])` cm. Conduct a one-tailed hypothesis test at $.05$ significance level to show if there is sufficient evidence to reject the hypothesis that the mean of the new sample is equal to 4.8 cm.
 
 $α = .05$
 
