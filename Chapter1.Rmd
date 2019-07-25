@@ -126,7 +126,7 @@ boxplot(df, horizontal = TRUE)
 head(ToothGrowth, 5)
 
 # Five number summary
-fivenum(ToothGrowth)
+fivenum(ToothGrowth$len)
 
 # Boxplot 
 # '$' extracts the column by name

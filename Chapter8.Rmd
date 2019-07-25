@@ -63,7 +63,10 @@ $H_A: \mu > 4.8$
 
 Use the following code to store the 50 values in the sample in a variable called `setosa`. (This works because `iris` is a built-in dataset in R.) 
 
-`setosa <- iris[iris$Species == "setosa",] `
+```{r}
+setosa <- iris[iris$Species == "setosa",]
+```
+
 
 [Ans]
 

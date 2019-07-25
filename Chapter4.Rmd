@@ -133,7 +133,7 @@ Integrate $x^2\cdot f(x) = x^2(.06x+.05)=.06x^3+.05x^2$, we get $G(x) = .015x^4+
 E <- H(5)-H(0)
 G <- function(x) .015*(x^4)+(.05/3)*(x^3)
 G(5)-G(0)-E^2
-
+```
 ------
 
 2. **(Standard Normal, `pnorm`)** A driver's reaction time for an in-traffic response to a brake signal can be modeled with a normal distribution having mean value 1.25 sec and standard deviation of .46 sec.  (Textbook 4.16)
