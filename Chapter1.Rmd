@@ -117,3 +117,40 @@ df <- data.frame(Healthy, PTSD)
 boxplot(df, horizontal = TRUE)
 ```
 
+## Practice Exercises {-}
+
+1. Using the built-in dataset `ToothGrowth` in R, visualize the data and comment on the effectiveness of different functions in the context.
+
+```{r}
+# The first 5 rows of the data
+head(ToothGrowth, 5)
+
+# Five number summary
+fivenum(ToothGrowth)
+
+# Boxplot 
+# '$' extracts the column by name
+boxplot(ToothGrowth$len) 
+
+# Stem-and-leaf Plot
+stem(ToothGrowth$len)
+
+# Histogram
+h <- hist(ToothGrowth$len)
+
+# Cumulative Histogram
+h$counts <- cumsum(h$counts)
+plot(h)
+```
+
+`head()`: directly see how the dataset looks; useful when the dataset is large and it's difficult to display all rows and columns together.
+
+`fivenum()`: returns the minimum value, lower fourth, median, upper fourth, and maximum value
+
+`boxplot()`: visualizes the five number summary plus outliers. (It's clear that the `ToothGrowth` data is not skewed.)
+
+`stem()`: compares the number of data points that fall in different bins. (Here we can see that most values are between 20 and 29.)
+
+`hist()`: draws a histogram -- values are grouped in bins
+
+`cumsum()`: takes a vector and returns the cumulative sums
