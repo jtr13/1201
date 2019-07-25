@@ -122,3 +122,103 @@ F(3;2) =
 ppois(3, 2)
 ```
 
+## Practice Exercises {-}
+1. **(Binomial)** Suppose the probability of a car accident involving a single vehicle is .7. If 15 accidents are randomly selected, what is the probability that between 2 and 4, inclusive, involve a single vehicle? (from slides)
+
+```{r}
+dbinom(2, 15, .7) + dbinom(3, 15, .7) + dbinom(4, 15, .7)
+```
+
+or
+
+```{r}
+pbinom(4, 15, .7) - pbinom(1, 15, .7)
+```
+
+-----
+
+2. **(Binomial)** A particular telephone number is used to receive both voice calls and fax messages. Suppose that 25% of the incoming calls involve fax messages, and consider a sample of 25 incoming calls. What is the probability that
+
+   a. At most 6 of the calls involve a fax message? 
+
+   b. Exactly 6 of the calls involve a fax message? 
+
+   c. At least 6 of the calls involve a fax message? 
+
+   d. What is the expected number of calls among the 25 that involve a fax message? 
+
+   e. What is the standard deviation of the number among the 25 calls that involve a fax message? 
+
+   f. What is the probability that the number of calls among the 25 that involve a fax transmission exceeds the expected number by more than 2 standard deviations? (Textbook 50-51)
+
+```{r}
+pbinom(6, 25, .25)
+dbinom(6, 25, .25)
+1 - pbinom(5, 25, .25)
+E <- 25*.25
+Var <- 25*.25*.75
+pbinom(floor(E+2*sqrt(Var)), 25, .25)
+```
+
+
+
+-----
+
+3. **(Hypergeometric)**  A geologist has collected 8 specimens of basaltic rock and 12 specimens of granite. The geologist instructs a laboratory assistant to randomly select 15 of the specimens for analysis. 
+
+   a. What is the probability that all specimens of one of the two types of rock are selected for analysis? 
+
+   b. What is the probability that the number of granite specimens selected for analysis is within 1 standard deviation of its mean value? (Textbook 71)
+
+```{r}
+dhyper(8, 8, 12, 15) + dhyper(3, 8, 12, 15)
+mean_g <- 15*12/20
+sd_g <- sqrt(20*(12/20)*(8/20))
+pbinom(mean_g + sd_g, 15, 12/20)-pbinom(mean_g - sd_g, 15, 12/20)
+```
+
+
+-----
+
+4. **(Negative Binomial)** The probability that a randomly selected box of a certain type of cereal has a particular prize is .2. Suppose you purchase box after box until you have obtained two of these prizes. 
+
+   a. What is the probability that you purchase $x$ boxes that do not have the desired prize? 
+
+   b. What is the probability that you purchase four boxes? 
+
+   c. What is the probability that you purchase at most four boxes? 
+
+   d. How many boxes without the desired prize do you expect to purchase? How many boxes do you expect to purchase? (Textbook 75, homework)
+
+Let x be the number of boxes without prizes to be purchased, $p = {x+2-1\choose1}(.2^2)(.8 ^x)$
+
+```{r}
+dnbinom(2, 2, .2)
+
+dnbinom(2, 2, .2) + dnbinom(1, 2, .2) + dnbinom(0, 2, .2)
+
+2*.8/.2
+# 8 boxes without desired prize, 10 boxes in total
+```
+
+
+
+-----
+
+5. **(Poisson)** Suppose that the number of drivers who travel between a particular origin and destination during a designated time period has a Poisson distribution with parameter $\mu = 20$. What is the probability that the number of drivers will 
+
+   a. Be at most 10? 
+
+   b. Be 10?
+
+   c. Be within 2 standard deviations of the mean value? 
+
+   (Textbook 81)
+
+```{r}
+ppois(10, 20) # a
+dpois(10, 20) # b1
+((exp(1)^-20)*(20^10))/factorial(10) # b2
+ppois(20 + 2*sqrt(20),20) - ppois(20 - 2*sqrt(20), 20) # c
+```
+
