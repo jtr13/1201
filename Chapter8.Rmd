@@ -47,3 +47,36 @@ Skip: $\beta$ and Sample Size Determination (p. 338) to end of section
 
 Skip: $\beta$ and Sample Size Determination (pp. 348-349)
 
+
+
+
+
+2. **(One sample test, Raw values)** We know that the mean sepal length of setosas (a species of irises) is 4.8 cm. A new study examines a sample of 50 flowers and shows that the sample mean is `mean(iris$Sepal.Length[1:50])` cm. Conduct a one-tailed hypothesis test at $.05$ significance level to show if there is sufficient evidence to reject the hypothesis that the mean of the new sample is equal to 4.8 cm.
+
+$α = .05$
+
+$H_0: \mu = 4.8$
+
+$H_A: \mu > 4.8$
+
+Use the following code to store the 50 values in the sample in a variable called `setosa`. (This works because `iris` is a built-in dataset in R.) 
+
+`setosa <- iris[iris$Species == "setosa",] `
+
+[Ans]
+
+Test statistic: $z=\frac{\bar{X} - \mu_0}{s/\sqrt{n}}$
+
+```{r}
+z <- (mean(setosa$Sepal.Length)-4.8)/sqrt(var(setosa$Sepal.Length)/50)
+z
+pval <- 1- pnorm(z)
+pval
+
+
+# simpler approach
+# p-values might be a bit different due to approximation of t
+t.test(setosa$Sepal.Length, alternative = "greater", mu = 4.8)
+```
+
+Since  6.986e-05 < 0.05 , we reject the null hypothesis. There is sufficient evidence that the true mean of setosa sepal length is greater than 4.8 cm.
