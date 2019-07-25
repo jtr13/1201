@@ -76,7 +76,7 @@ chisq.test(x, correct = FALSE)
 
 ------
 
-2. **(Hypothesis Testing) **  In an investigation of alcohol use among college students, each male student in a sample was categorized both according to age group and according to the numberof heavy drinking episodes during the previous 30 days.
+2. **(Hypothesis Testing) **  In an investigation of alcohol use among college students, each male student in a sample was categorized both according to age group and according to the number of heavy drinking episodes during the previous 30 days.
 
 |              | 18-23 | 21-23 | $\geq$ 24 |
 | ------------ | ----- | ----- | -------- |
