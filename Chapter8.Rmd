@@ -25,6 +25,8 @@ Skip: $\beta$ and Sample Size Determination (pp. 348-349)
 ## Practice Exercises {-}
 **$1.$ (One sample test, Values given)** We wish to test whether a scale needs to be recalibrated. If it’s working, a 10 pound weight should weigh 10 pounds. We decide to test it by weighing the same weight, which we know to be precisely 10 pounds, 25 times. We know the weights from this scale are normally distributed and independent, with a true standard deviation of $\sigma$ = 1. Our sample mean (x) is 9.85. Should we conclude that recalibration is necessary x (that is, the scale is off) or not necessary (the scale isn’t conclusively off)? 
 
+[Ans] <br/>
+
 $α = .01​$
 
 $H_0: \mu = 10$
@@ -51,20 +53,19 @@ Since 0.453 > .05, we do not reject the null hypothesis. In other words, even if
 
 **$2.$ (One sample test, Raw values)** We know that the mean sepal length of setosas (a species of irises) is 4.8 cm. A new study examines a sample of 50 flowers and shows that the sample mean is `r mean(iris$Sepal.Length[1:50])` cm. Conduct a one-tailed hypothesis test at $.05$ significance level to show if there is sufficient evidence to reject the hypothesis that the mean of the new sample is equal to 4.8 cm.
 
-$α = .05$
-
-$H_0: \mu = 4.8$
-
-$H_A: \mu > 4.8$
-
 Use the following code to store the 50 values in the sample in a variable called `setosa`. (This works because `iris` is a built-in dataset in R.) 
 
 ```{r}
 setosa <- iris[iris$Species == "setosa",]
 ```
 
+[Ans] <br/>
 
-[Ans]
+$α = .05$
+
+$H_0: \mu = 4.8$
+
+$H_A: \mu > 4.8$
 
 Test statistic: $z=\frac{\bar{X} - \mu_0}{s/\sqrt{n}}$
 
