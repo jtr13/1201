@@ -40,40 +40,42 @@ For tests you will not need to calculate these values. You can leave your answer
 
 $\Sigma_{x=0}^6 \left(\begin{array}{c}12\\ x\end{array}\right)(.3^x)(.7^{12-x})$
 
-### R {-}
 
-Probability mass function (pmf)
+
+* Probability mass function (pmf)
 
 $P(X = x)$
+[Method 1] Using the Formula
 
 ```{r}
 choose(8, 3)    # "8 choose 3"
 56*.6^3*.4^5     # P(X = 3) given n = 8, p = .6
 ```
 
-Direct method
+[Method 2] Using R function
 
 ```{r}
 dbinom(3, 8, .6)     # P(X = 3) given n = 8, p = .6
 ```
 
-Cumulative distribution function (cdf)
+* Cumulative distribution function (cdf)
 
 $P(X \leq x)$
 
 Find $P(2 \leq X \leq 4)$ given $p = .7, n = 15$
 
+[Method 1] Using cdf
 ```{r}
 pbinom(4, 15, .7) - pbinom(1, 15, .7)
 ```
 
-(Using the pmf instead:)
+[Method 2] Using pmf
 
 ```{r}
 dbinom(2, 15, .7) + dbinom(3, 15, .7) + dbinom(4, 15, .7)
 ```
 
-Graphing a binomial pmf:
+* Graphing a binomial pmf:
 
 ex. $p = .7, n = 10$
 
