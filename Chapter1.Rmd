@@ -117,6 +117,7 @@ boxplot(df, horizontal = TRUE)
 
 1. Using the built-in dataset `ToothGrowth` in R, visualize the data and comment on the effectiveness of different functions in the context.
 
+[Ans] <br/>
 ```{r}
 # The first 5 rows of the data
 head(ToothGrowth, 5)
