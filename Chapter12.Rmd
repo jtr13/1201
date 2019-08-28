@@ -51,7 +51,7 @@ SSR = `r anova(mod)[1,2]`
 SST = SSE + SSR = `r anova(mod)[2,2]` + 
 `r anova(mod)[1,2]` = `r round(anova(mod)[2,2] + anova(mod)[1,2], 4)`
 
-**coefficient of determination $r^2$**
+**Coefficient of determination $r^2$**
 
 ```{r}
 # Example 12.4, 12.9
@@ -86,7 +86,7 @@ Interactive visualization: [Interpreting Correlations](https://rpsychologist.com
 
 ### R {-}
 
-sample correlation coefficient $r$
+Sample correlation coefficient $r$
 
 ```{r}
 # Example 12.15, p. 528
@@ -98,7 +98,7 @@ cor(x,y)
 
 
 ## Practice Exercises {-}
-1. (Least squares line)** Researchers employed a least squares analysis in studying how $Y=$ porosity (%) is related to $X=$ unit weight (pcf) in concrete specimens. Consider the following representative data:
+1. **(Least squares line)** Researchers employed a least squares analysis in studying how $Y=$ porosity (%) is related to $X=$ unit weight (pcf) in concrete specimens. Consider the following representative data:
 
 
 ```{r}
