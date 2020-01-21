@@ -1,0 +1,123 @@
+# Introduction {-}
+
+This site contains supplemental materials for Stat 1201, mainly: 1) clarifications on which sections we cover in the textbook (Devore, *Probability and Statistics for Engineering and the Sciences* **9th edition**), 2) R code, and 3) links to helpful resources online. It is not in any way a substitute for materials available in CourseWorks.
+
+If you find additional online resources that are helpful to this class, please [create an issue](https://github.com/jtr13/1201/issues/new) or send me an email and I'll add them to this resource. Let me know as well if you find any typos or other mistakes. 
+
+Note that while you're encouraged to look ahead, be sure to circle back to those sections when they're covered in class since content may be added or modified slightly.
+
+## General study tips {-}
+
+The [website for the book *Make It Stick*](https://www.retrievalpractice.org/make-it-stick) offers a summary of the experimentally tested study strategies. The tl;dr is:
+
+* working out problems is better than reviewing notes / textbook
+ 
+* doing mixed reviews is better than focusing on one type of problem at a time 
+
+* learning is hard work; if it seems too easy your study strategy might not be the most effective
+
+* making mistakes and learning from them is a useful strategy (don't wait until you've mastered all of the examples to try a problem)
+
+You've likely heard a lot of these ideas before, but it's worth really thinking about them and putting them into practice.
+
+My advice:
+
+* As you're reading the textbook or working on a problem set, keep a list of questions. Challenge yourself by thinking about how the problem would differ if you changed the setup.
+
+* Try creating your own questions and solving them. 
+
+* Try solving problems in multiple ways. 
+
+* Learn from a variety of sources: class, textbook, *Cartoon Guide*, etc. If you find differences, ask. 
+
+## Installing R {-}
+
+You will need to install two applications: R and RStudio:
+
+* R -- the programming language itself -- is available here:
+
+https://cran.r-project.org
+
+![](images/rlogo.jpeg)
+
+* RStudio -- an integrated development environment (IDE) which makes it much easier to use R. It is optional but highly recommended. This is the app you will open to use R.
+
+https://www.rstudio.com/products/rstudio/download/#download
+
+![](images/rstudiologo.png)
+
+## Getting Started with R {-}
+
+To get oriented, read and try the examples in [Chapter 1 of Introduction to R](https://monashdatafluency.github.io/r-intro-2/starting-out-in-r.html){target="_blank"}
+
+
+### Quick intro to RStudio {-}
+
+Working in the console pane
+
+![](images/R1.png)
+
+Assigning a variable
+
+![](images/R2.png)
+
+Drawing a stem and leaf plot
+
+![](images/R3.png)
+
+Saving your work
+
+![](images/R4.png)
+
+Converting your work to an .html file that can be submitted to CourseWorks
+
+![](images/R5.png)
+
+![](images/R6.png)
+
+![](images/R7.png)
+
+![](images/R8.png)
+
+### Using R as a calculator {-}
+
+Basic operations:
+
+```{r}
+3 + 4
+3 - 4
+3 * 4
+3 / 4
+3^4
+```
+
+Working with vectors:
+
+```{r}
+x <- 1:5
+x
+sum(x)
+cumsum(x)
+px <- x*.05 + .05
+px
+```
+
+Expected value:
+```{r}
+x*px
+sum(x*px)
+```
+
+
+<!-- Contact -->
+## Contact {-}
+
+Joyce Robbins: 
+[Columbia Profile](http://stat.columbia.edu/department-directory/name/joyce-robbins/){target="_blank"}
+
+[GitHub](https://github.com/jtr13){target="_blank"}
+
+<!-- License -->
+## License {-}
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
