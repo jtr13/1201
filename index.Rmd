@@ -12,7 +12,11 @@ url: 'https://jtr13.github.io/1201/'
 description: "Supplemental resources for Stat1201"
 ---
 
+
+
 # Syllabus {-}
+
+[Chapter 1 lecture notes](Stat1201-Chap1.pdf){target="_blank"}
 
 Columbia University  
 
