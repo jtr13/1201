@@ -3,7 +3,7 @@ output_dir: docs
 edit: https://github.com/jtr13/1201/edit/master/%s
 view: https://github.com/jtr13/1201/blob/master/%s
 rmd_files: ["index.Rmd", # Introduction {-}
-  "Syllabus.Rmd", # Syllabus {-}
+  "Syllabus.Rmd", # STAT UN1201 Syllabus Spring 2020
   "Chapter1.Rmd", # Ch. 1 Descriptive Statistics {-} 
   "Chapter2.Rmd", # Ch. 2 Probability {-}
   "Chapter3.Rmd", # Ch. 3 Discrete Distributions {-}
