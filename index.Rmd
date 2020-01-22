@@ -14,9 +14,13 @@ description: "Supplemental resources for Stat1201"
 
 
 
-# Syllabus {-}
+# Course material {-}
 
-[Chapter 1 lecture notes](Stat1201-Chap1.pdf){target="_blank"}
+(These items will be moved to CourseWorks once the change of program period is over.)
+
+[Chapter 1 slides](Stat1201-Chap1.pdf){target="_blank"}
+
+## Syllabus {-}
 
 Columbia University  
 
