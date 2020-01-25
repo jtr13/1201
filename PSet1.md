@@ -28,7 +28,10 @@ Current listings of prices for one bedroom apartments in Morningside Heights in 
 350, 442, 466, 475, 498, 499, 529, 539, 545, 549, 580, 595, 600, 619, 625, 639, 750, 1150, 1160, 1170, 1185, 1190, 1200, 1210, 1220, 1230, 1260, 1265, 1265, 1280, 1280, 1290, 1295, 1295, 1305, 1310, 1310, 1325, 1325, 1340, 1340, 1355, 1375
 
 Source: www.cityrealty.com Jan 2020
+
 [Dataset with Addresses in csv format](Apts2020.csv)
+
+(To download the file, click "Raw" and then File, Save in your browser.)
 
 a) Draw a stem-and-leaf plot of the prices.
 

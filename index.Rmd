@@ -20,7 +20,7 @@ description: "Supplemental resources for Stat1201"
 
 [Chapter 1 slides](Stat1201-Chap1.pdf){target="_blank"}
 
-[Problem Set 1](PSet1.md)
+[Problem Set 1](https://github.com/jtr13/1201/blob/master/PSet1.md)
 
 ## Syllabus {-}
 
