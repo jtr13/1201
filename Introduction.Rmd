@@ -65,9 +65,17 @@ Drawing a stem and leaf plot
 
 ![](images/R3.png)
 
-Saving your work
+### Saving your work
+
+**Video**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XpUmvKdM1XI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+**Screenshots**
 
 ![](images/R4.png)
+
+
 
 Converting your work to an .html file that can be submitted to CourseWorks
 
