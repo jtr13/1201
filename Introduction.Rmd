@@ -65,7 +65,7 @@ Drawing a stem and leaf plot
 
 ![](images/R3.png)
 
-### Saving your work
+### Saving your work {-}
 
 **Video**
 
