@@ -65,7 +65,7 @@ Drawing a stem and leaf plot
 
 ![](images/R3.png)
 
-### Saving your work {-}
+### Saving your code as an .R file {-}
 
 **Video**
 
@@ -75,9 +75,18 @@ Drawing a stem and leaf plot
 
 ![](images/R4.png)
 
+### Save code and text as .Rmd, convert to .html {-}
+
+**Video**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/x0-kHWybiaQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-Converting your work to an .html file that can be submitted to CourseWorks
+
+
+### Convert .R file to .html {-}
+
+Converting your work to an .html file that can be submitted to CourseWorks (code only, no text)
 
 ![](images/R5.png)
 
