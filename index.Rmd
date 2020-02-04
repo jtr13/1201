@@ -140,9 +140,9 @@ Problem set due dates:
 
 **All problem sets count; in other words, no problem set grades are dropped.**
 
-## R  {-}
+## R {-}
 
-All of the coding related parts of the class are optional and will not appear on the tests. 
+Information on installing R and getting started is provided in the [next chapter](introduction.html#installing-r). Note that all of the coding related parts of the class are optional and will not appear on the tests. 
 
 ## Academic Integrity  {-}
 
@@ -154,15 +154,15 @@ Plagiarism or any other breach of academic integrity will not be tolerated and w
 
 ## Tests  {-}
 
-Test 1 
+**Test 1 dates**
   
-   Mon/Wed class: Feb 19
-   Tues/Thurs class: Feb 18
+   * Mon/Wed class: Feb 19
+   * Tues/Thurs class: Feb 18
    
-Test 2
+**Test 2 dates**
 
-   Mon/Wed class: Apr 8
-   Tues/Thurs class: Apr 7
+   * Mon/Wed class: Apr 8
+   * Tues/Thurs class: Apr 7
 
 Allowable materials on tests include pens, pencils, erasers, a hand-held NON-GRAPHING calculator (no graphics display), and handwritten notes. Photocopies of notes are NOT acceptable. 
 

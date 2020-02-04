@@ -24,7 +24,7 @@
 <meta name="author" content="Joyce Robbins" />
 
 
-<meta name="date" content="2020-01-30" />
+<meta name="date" content="2020-02-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -156,10 +156,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#general-study-tips"><i class="fa fa-check"></i>General study tips</a></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#installing-r"><i class="fa fa-check"></i>Installing R</a></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#getting-started-with-r"><i class="fa fa-check"></i>Getting Started with R</a><ul>
-<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#quick-intro-to-rstudio"><i class="fa fa-check"></i>Quick intro to RStudio</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#quick-intro-to-rstudio-console"><i class="fa fa-check"></i>Quick intro to RStudio Console</a></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#saving-your-code-as-an-.r-file"><i class="fa fa-check"></i>Saving your code as an .R file</a></li>
-<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#save-code-and-text-as-.rmd-convert-to-.html"><i class="fa fa-check"></i>Save code and text as .Rmd, convert to .html</a></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#convert-.r-file-to-.html"><i class="fa fa-check"></i>Convert .R file to .html</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#save-code-and-text-as-.rmd-convert-to-.html"><i class="fa fa-check"></i>Save code and text as .Rmd, convert to .html</a></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#using-r-as-a-calculator"><i class="fa fa-check"></i>Using R as a calculator</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#contact"><i class="fa fa-check"></i>Contact</a></li>
@@ -297,41 +297,41 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="r-8" class="section level3 unnumbered">
 <h3>R</h3>
 <p>Since you aren’t given the original data, R isn’t very helpful here, but you can write a function that you could reuse, such as:</p>
-<div class="sourceCode" id="cb191"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb191-1" data-line-number="1"><span class="kw">options</span>(<span class="dt">scipen =</span> <span class="dv">999</span>) <span class="co"># get rid of scientific notation</span></a>
-<a class="sourceLine" id="cb191-2" data-line-number="2"></a>
-<a class="sourceLine" id="cb191-3" data-line-number="3"><span class="co"># this function only has to be run once per session, and then you can reuse it.</span></a>
-<a class="sourceLine" id="cb191-4" data-line-number="4"></a>
-<a class="sourceLine" id="cb191-5" data-line-number="5">diffmeans &lt;-<span class="st"> </span><span class="cf">function</span>(xbar, ybar, delta0,</a>
-<a class="sourceLine" id="cb191-6" data-line-number="6">                      sigma1, sigma2,</a>
-<a class="sourceLine" id="cb191-7" data-line-number="7">                      m, n, <span class="dt">type =</span> <span class="st">&quot;twosided&quot;</span>) {</a>
-<a class="sourceLine" id="cb191-8" data-line-number="8">  </a>
-<a class="sourceLine" id="cb191-9" data-line-number="9">Z &lt;-<span class="st"> </span>((xbar <span class="op">-</span><span class="st"> </span>ybar) <span class="op">-</span><span class="st"> </span>delta0)<span class="op">/</span><span class="kw">sqrt</span>(((sigma1<span class="op">^</span><span class="dv">2</span>)<span class="op">/</span>m) <span class="op">+</span><span class="st"> </span>((sigma2<span class="op">^</span><span class="dv">2</span>)<span class="op">/</span>n))</a>
-<a class="sourceLine" id="cb191-10" data-line-number="10"></a>
-<a class="sourceLine" id="cb191-11" data-line-number="11"></a>
-<a class="sourceLine" id="cb191-12" data-line-number="12"><span class="cf">if</span> (type <span class="op">==</span><span class="st"> &quot;twosided&quot;</span>) {</a>
-<a class="sourceLine" id="cb191-13" data-line-number="13">  pvalue &lt;-<span class="st"> </span><span class="kw">pnorm</span>(<span class="op">-</span><span class="kw">abs</span>(Z))<span class="op">*</span><span class="dv">2</span></a>
-<a class="sourceLine" id="cb191-14" data-line-number="14">} <span class="cf">else</span> <span class="cf">if</span> (type <span class="op">==</span><span class="st"> &quot;lowertail&quot;</span>) {</a>
-<a class="sourceLine" id="cb191-15" data-line-number="15">  pvalue &lt;-<span class="st"> </span><span class="kw">pnorm</span>(Z)</a>
-<a class="sourceLine" id="cb191-16" data-line-number="16">} <span class="cf">else</span> {</a>
-<a class="sourceLine" id="cb191-17" data-line-number="17">  pvalue &lt;-<span class="st"> </span><span class="dv">1</span> <span class="op">-</span><span class="st"> </span><span class="kw">pnorm</span>(Z)</a>
-<a class="sourceLine" id="cb191-18" data-line-number="18">}</a>
-<a class="sourceLine" id="cb191-19" data-line-number="19"></a>
-<a class="sourceLine" id="cb191-20" data-line-number="20"><span class="kw">print</span>(<span class="kw">c</span>(<span class="st">&quot;The p-value is&quot;</span>, <span class="kw">round</span>(pvalue, <span class="dv">4</span>)))</a>
-<a class="sourceLine" id="cb191-21" data-line-number="21"></a>
-<a class="sourceLine" id="cb191-22" data-line-number="22">}</a>
-<a class="sourceLine" id="cb191-23" data-line-number="23"></a>
-<a class="sourceLine" id="cb191-24" data-line-number="24"></a>
-<a class="sourceLine" id="cb191-25" data-line-number="25"><span class="co"># Example 9.1, p. 365</span></a>
-<a class="sourceLine" id="cb191-26" data-line-number="26"></a>
-<a class="sourceLine" id="cb191-27" data-line-number="27"><span class="kw">diffmeans</span>(<span class="dt">xbar  =</span> <span class="fl">29.8</span>, <span class="dt">ybar  =</span> <span class="fl">34.7</span>,</a>
-<a class="sourceLine" id="cb191-28" data-line-number="28">          <span class="dt">delta0 =</span> <span class="dv">0</span>, <span class="dt">sigma1 =</span> <span class="dv">4</span>, <span class="dt">sigma2 =</span> <span class="dv">5</span>,</a>
-<a class="sourceLine" id="cb191-29" data-line-number="29">          <span class="dt">m =</span> <span class="dv">20</span>, <span class="dt">n =</span> <span class="dv">25</span>, <span class="dt">type =</span> <span class="st">&quot;twosided&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb200"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb200-1" data-line-number="1"><span class="kw">options</span>(<span class="dt">scipen =</span> <span class="dv">999</span>) <span class="co"># get rid of scientific notation</span></a>
+<a class="sourceLine" id="cb200-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb200-3" data-line-number="3"><span class="co"># this function only has to be run once per session, and then you can reuse it.</span></a>
+<a class="sourceLine" id="cb200-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb200-5" data-line-number="5">diffmeans &lt;-<span class="st"> </span><span class="cf">function</span>(xbar, ybar, delta0,</a>
+<a class="sourceLine" id="cb200-6" data-line-number="6">                      sigma1, sigma2,</a>
+<a class="sourceLine" id="cb200-7" data-line-number="7">                      m, n, <span class="dt">type =</span> <span class="st">&quot;twosided&quot;</span>) {</a>
+<a class="sourceLine" id="cb200-8" data-line-number="8">  </a>
+<a class="sourceLine" id="cb200-9" data-line-number="9">Z &lt;-<span class="st"> </span>((xbar <span class="op">-</span><span class="st"> </span>ybar) <span class="op">-</span><span class="st"> </span>delta0)<span class="op">/</span><span class="kw">sqrt</span>(((sigma1<span class="op">^</span><span class="dv">2</span>)<span class="op">/</span>m) <span class="op">+</span><span class="st"> </span>((sigma2<span class="op">^</span><span class="dv">2</span>)<span class="op">/</span>n))</a>
+<a class="sourceLine" id="cb200-10" data-line-number="10"></a>
+<a class="sourceLine" id="cb200-11" data-line-number="11"></a>
+<a class="sourceLine" id="cb200-12" data-line-number="12"><span class="cf">if</span> (type <span class="op">==</span><span class="st"> &quot;twosided&quot;</span>) {</a>
+<a class="sourceLine" id="cb200-13" data-line-number="13">  pvalue &lt;-<span class="st"> </span><span class="kw">pnorm</span>(<span class="op">-</span><span class="kw">abs</span>(Z))<span class="op">*</span><span class="dv">2</span></a>
+<a class="sourceLine" id="cb200-14" data-line-number="14">} <span class="cf">else</span> <span class="cf">if</span> (type <span class="op">==</span><span class="st"> &quot;lowertail&quot;</span>) {</a>
+<a class="sourceLine" id="cb200-15" data-line-number="15">  pvalue &lt;-<span class="st"> </span><span class="kw">pnorm</span>(Z)</a>
+<a class="sourceLine" id="cb200-16" data-line-number="16">} <span class="cf">else</span> {</a>
+<a class="sourceLine" id="cb200-17" data-line-number="17">  pvalue &lt;-<span class="st"> </span><span class="dv">1</span> <span class="op">-</span><span class="st"> </span><span class="kw">pnorm</span>(Z)</a>
+<a class="sourceLine" id="cb200-18" data-line-number="18">}</a>
+<a class="sourceLine" id="cb200-19" data-line-number="19"></a>
+<a class="sourceLine" id="cb200-20" data-line-number="20"><span class="kw">print</span>(<span class="kw">c</span>(<span class="st">&quot;The p-value is&quot;</span>, <span class="kw">round</span>(pvalue, <span class="dv">4</span>)))</a>
+<a class="sourceLine" id="cb200-21" data-line-number="21"></a>
+<a class="sourceLine" id="cb200-22" data-line-number="22">}</a>
+<a class="sourceLine" id="cb200-23" data-line-number="23"></a>
+<a class="sourceLine" id="cb200-24" data-line-number="24"></a>
+<a class="sourceLine" id="cb200-25" data-line-number="25"><span class="co"># Example 9.1, p. 365</span></a>
+<a class="sourceLine" id="cb200-26" data-line-number="26"></a>
+<a class="sourceLine" id="cb200-27" data-line-number="27"><span class="kw">diffmeans</span>(<span class="dt">xbar  =</span> <span class="fl">29.8</span>, <span class="dt">ybar  =</span> <span class="fl">34.7</span>,</a>
+<a class="sourceLine" id="cb200-28" data-line-number="28">          <span class="dt">delta0 =</span> <span class="dv">0</span>, <span class="dt">sigma1 =</span> <span class="dv">4</span>, <span class="dt">sigma2 =</span> <span class="dv">5</span>,</a>
+<a class="sourceLine" id="cb200-29" data-line-number="29">          <span class="dt">m =</span> <span class="dv">20</span>, <span class="dt">n =</span> <span class="dv">25</span>, <span class="dt">type =</span> <span class="st">&quot;twosided&quot;</span>)</a></code></pre></div>
 <pre><code>## [1] &quot;The p-value is&quot; &quot;0.0003&quot;</code></pre>
-<div class="sourceCode" id="cb193"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb193-1" data-line-number="1"><span class="co"># Example 9.4, p. 368</span></a>
-<a class="sourceLine" id="cb193-2" data-line-number="2"></a>
-<a class="sourceLine" id="cb193-3" data-line-number="3"><span class="co"># As long as you use the correct order of parameters, you don&#39;t have to write out the names:</span></a>
-<a class="sourceLine" id="cb193-4" data-line-number="4"></a>
-<a class="sourceLine" id="cb193-5" data-line-number="5"><span class="kw">diffmeans</span>(<span class="dv">2258</span>, <span class="dv">2637</span>, <span class="dv">-200</span>, <span class="dv">1519</span>, <span class="dv">1138</span>, <span class="dv">663</span>, <span class="dv">413</span>, <span class="st">&quot;lowertail&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb202"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb202-1" data-line-number="1"><span class="co"># Example 9.4, p. 368</span></a>
+<a class="sourceLine" id="cb202-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb202-3" data-line-number="3"><span class="co"># As long as you use the correct order of parameters, you don&#39;t have to write out the names:</span></a>
+<a class="sourceLine" id="cb202-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb202-5" data-line-number="5"><span class="kw">diffmeans</span>(<span class="dv">2258</span>, <span class="dv">2637</span>, <span class="dv">-200</span>, <span class="dv">1519</span>, <span class="dv">1138</span>, <span class="dv">663</span>, <span class="dv">413</span>, <span class="st">&quot;lowertail&quot;</span>)</a></code></pre></div>
 <pre><code>## [1] &quot;The p-value is&quot; &quot;0.0139&quot;</code></pre>
 </div>
 </div>
@@ -343,11 +343,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Skip: Type II Error Probabilities (pp. 378-379)</p>
 <p>Given two random samples, use <code>t.test()</code> with different parameters to carry out a two-sample hypothesis test.</p>
 <p>For demonstration purposes, x and y here are samples of 10 numbers that drawn from the standard normal distribution.</p>
-<div class="sourceCode" id="cb195"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb195-1" data-line-number="1"><span class="kw">set.seed</span>(<span class="dv">1</span>)</a>
-<a class="sourceLine" id="cb195-2" data-line-number="2">x &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>)</a>
-<a class="sourceLine" id="cb195-3" data-line-number="3"><span class="kw">set.seed</span>(<span class="dv">2</span>)</a>
-<a class="sourceLine" id="cb195-4" data-line-number="4">y &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>)</a>
-<a class="sourceLine" id="cb195-5" data-line-number="5"><span class="kw">t.test</span>(x, y, <span class="dt">var.equal =</span> <span class="ot">TRUE</span>, <span class="dt">alternative =</span> <span class="st">&quot;less&quot;</span>) </a></code></pre></div>
+<div class="sourceCode" id="cb204"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb204-1" data-line-number="1"><span class="kw">set.seed</span>(<span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb204-2" data-line-number="2">x &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>)</a>
+<a class="sourceLine" id="cb204-3" data-line-number="3"><span class="kw">set.seed</span>(<span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb204-4" data-line-number="4">y &lt;-<span class="st"> </span><span class="kw">rnorm</span>(<span class="dv">10</span>)</a>
+<a class="sourceLine" id="cb204-5" data-line-number="5"><span class="kw">t.test</span>(x, y, <span class="dt">var.equal =</span> <span class="ot">TRUE</span>, <span class="dt">alternative =</span> <span class="st">&quot;less&quot;</span>) </a></code></pre></div>
 <pre><code>## 
 ##  Two Sample t-test
 ## 
@@ -369,7 +369,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Two ways of doing paired test:
 (Here we continue to use the <code>x</code> and <code>y</code> in section 9.2 above)
 <strong>[Method 1]</strong> Take x-y and do a one-sample test.</p>
-<div class="sourceCode" id="cb197"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb197-1" data-line-number="1"><span class="kw">t.test</span>(x<span class="op">-</span>y, <span class="dt">alternative =</span> <span class="st">&quot;less&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb206"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb206-1" data-line-number="1"><span class="kw">t.test</span>(x<span class="op">-</span>y, <span class="dt">alternative =</span> <span class="st">&quot;less&quot;</span>)</a></code></pre></div>
 <pre><code>## 
 ##  One Sample t-test
 ## 
@@ -382,7 +382,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##   mean of x 
 ## -0.07894886</code></pre>
 <p><strong>[Method 2]</strong> Give another parameter <code>paired = TRUE</code>. In R, the default parameter for <code>paired</code> in <code>t.test()</code> is <code>FALSE</code>; here we set it to <code>TRUE</code> and leave <code>x</code> and <code>y</code> as two separate inputs.</p>
-<div class="sourceCode" id="cb199"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb199-1" data-line-number="1"><span class="kw">t.test</span>(x, y, <span class="dt">alternative =</span> <span class="st">&quot;less&quot;</span>, <span class="dt">paired =</span> <span class="ot">TRUE</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb208"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb208-1" data-line-number="1"><span class="kw">t.test</span>(x, y, <span class="dt">alternative =</span> <span class="st">&quot;less&quot;</span>, <span class="dt">paired =</span> <span class="ot">TRUE</span>)</a></code></pre></div>
 <pre><code>## 
 ##  Paired t-test
 ## 
@@ -402,9 +402,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="r-9" class="section level3 unnumbered">
 <h3>R</h3>
 <p>A/B Testing question from class:</p>
-<div class="sourceCode" id="cb201"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb201-1" data-line-number="1">clicks &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">25</span>, <span class="dv">20</span>)</a>
-<a class="sourceLine" id="cb201-2" data-line-number="2">people &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">100</span>, <span class="dv">100</span>)</a>
-<a class="sourceLine" id="cb201-3" data-line-number="3"><span class="kw">prop.test</span>(clicks, people, <span class="dt">correct =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb210"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb210-1" data-line-number="1">clicks &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">25</span>, <span class="dv">20</span>)</a>
+<a class="sourceLine" id="cb210-2" data-line-number="2">people &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">100</span>, <span class="dv">100</span>)</a>
+<a class="sourceLine" id="cb210-3" data-line-number="3"><span class="kw">prop.test</span>(clicks, people, <span class="dt">correct =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
 <pre><code>## 
 ##  2-sample test for equality of proportions without continuity
 ##  correction

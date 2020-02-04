@@ -24,7 +24,7 @@
 <meta name="author" content="Joyce Robbins" />
 
 
-<meta name="date" content="2020-01-30" />
+<meta name="date" content="2020-02-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -156,10 +156,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#general-study-tips"><i class="fa fa-check"></i>General study tips</a></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#installing-r"><i class="fa fa-check"></i>Installing R</a></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#getting-started-with-r"><i class="fa fa-check"></i>Getting Started with R</a><ul>
-<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#quick-intro-to-rstudio"><i class="fa fa-check"></i>Quick intro to RStudio</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#quick-intro-to-rstudio-console"><i class="fa fa-check"></i>Quick intro to RStudio Console</a></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#saving-your-code-as-an-.r-file"><i class="fa fa-check"></i>Saving your code as an .R file</a></li>
-<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#save-code-and-text-as-.rmd-convert-to-.html"><i class="fa fa-check"></i>Save code and text as .Rmd, convert to .html</a></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#convert-.r-file-to-.html"><i class="fa fa-check"></i>Convert .R file to .html</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#save-code-and-text-as-.rmd-convert-to-.html"><i class="fa fa-check"></i>Save code and text as .Rmd, convert to .html</a></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#using-r-as-a-calculator"><i class="fa fa-check"></i>Using R as a calculator</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#contact"><i class="fa fa-check"></i>Contact</a></li>
@@ -292,41 +292,41 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Sections covered: 3.1 - 3.5</p>
 <div id="expected-value" class="section level2 unnumbered">
 <h2>3.3 Expected value</h2>
-<div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb64-1" data-line-number="1">x &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">:</span><span class="dv">5</span></a>
-<a class="sourceLine" id="cb64-2" data-line-number="2">x</a></code></pre></div>
+<div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb73-1" data-line-number="1">x &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">:</span><span class="dv">5</span></a>
+<a class="sourceLine" id="cb73-2" data-line-number="2">x</a></code></pre></div>
 <pre><code>## [1] 1 2 3 4 5</code></pre>
-<div class="sourceCode" id="cb66"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb66-1" data-line-number="1">px &lt;-<span class="st"> </span><span class="kw">c</span>(.<span class="dv">1</span>, <span class="fl">.15</span>, <span class="fl">.2</span>, <span class="fl">.25</span>, <span class="fl">.3</span>)</a>
-<a class="sourceLine" id="cb66-2" data-line-number="2">px</a></code></pre></div>
+<div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb75-1" data-line-number="1">px &lt;-<span class="st"> </span><span class="kw">c</span>(.<span class="dv">1</span>, <span class="fl">.15</span>, <span class="fl">.2</span>, <span class="fl">.25</span>, <span class="fl">.3</span>)</a>
+<a class="sourceLine" id="cb75-2" data-line-number="2">px</a></code></pre></div>
 <pre><code>## [1] 0.10 0.15 0.20 0.25 0.30</code></pre>
-<div class="sourceCode" id="cb68"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb68-1" data-line-number="1">x<span class="op">*</span>px</a></code></pre></div>
+<div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb77-1" data-line-number="1">x<span class="op">*</span>px</a></code></pre></div>
 <pre><code>## [1] 0.1 0.3 0.6 1.0 1.5</code></pre>
-<div class="sourceCode" id="cb70"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb70-1" data-line-number="1"><span class="kw">sum</span>(x<span class="op">*</span>px)    <span class="co"># E(X)</span></a></code></pre></div>
+<div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb79-1" data-line-number="1"><span class="kw">sum</span>(x<span class="op">*</span>px)    <span class="co"># E(X)</span></a></code></pre></div>
 <pre><code>## [1] 3.5</code></pre>
 </div>
 <div id="variance" class="section level2 unnumbered">
 <h2>3.3 Variance</h2>
-<div class="sourceCode" id="cb72"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb72-1" data-line-number="1">x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span></a></code></pre></div>
+<div class="sourceCode" id="cb81"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb81-1" data-line-number="1">x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span></a></code></pre></div>
 <pre><code>## [1] -2.5 -1.5 -0.5  0.5  1.5</code></pre>
-<div class="sourceCode" id="cb74"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb74-1" data-line-number="1">(x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span>)<span class="op">^</span><span class="dv">2</span></a></code></pre></div>
+<div class="sourceCode" id="cb83"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb83-1" data-line-number="1">(x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span>)<span class="op">^</span><span class="dv">2</span></a></code></pre></div>
 <pre><code>## [1] 6.25 2.25 0.25 0.25 2.25</code></pre>
-<div class="sourceCode" id="cb76"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb76-1" data-line-number="1">((x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span>)<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px</a></code></pre></div>
+<div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb85-1" data-line-number="1">((x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span>)<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px</a></code></pre></div>
 <pre><code>## [1] 0.6250 0.3375 0.0500 0.0625 0.6750</code></pre>
-<div class="sourceCode" id="cb78"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb78-1" data-line-number="1"><span class="kw">sum</span>(((x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span>)<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px)   <span class="co"># V(X)</span></a></code></pre></div>
+<div class="sourceCode" id="cb87"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb87-1" data-line-number="1"><span class="kw">sum</span>(((x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span>)<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px)   <span class="co"># V(X)</span></a></code></pre></div>
 <pre><code>## [1] 1.75</code></pre>
 </div>
 <div id="variance-alternative-method" class="section level2 unnumbered">
 <h2>3.3 Variance (alternative method)</h2>
-<div class="sourceCode" id="cb80"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb80-1" data-line-number="1">x</a></code></pre></div>
+<div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb89-1" data-line-number="1">x</a></code></pre></div>
 <pre><code>## [1] 1 2 3 4 5</code></pre>
-<div class="sourceCode" id="cb82"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb82-1" data-line-number="1">px</a></code></pre></div>
+<div class="sourceCode" id="cb91"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb91-1" data-line-number="1">px</a></code></pre></div>
 <pre><code>## [1] 0.10 0.15 0.20 0.25 0.30</code></pre>
-<div class="sourceCode" id="cb84"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb84-1" data-line-number="1">x<span class="op">^</span><span class="dv">2</span></a></code></pre></div>
+<div class="sourceCode" id="cb93"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb93-1" data-line-number="1">x<span class="op">^</span><span class="dv">2</span></a></code></pre></div>
 <pre><code>## [1]  1  4  9 16 25</code></pre>
-<div class="sourceCode" id="cb86"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb86-1" data-line-number="1">(x<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px</a></code></pre></div>
+<div class="sourceCode" id="cb95"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb95-1" data-line-number="1">(x<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px</a></code></pre></div>
 <pre><code>## [1] 0.1 0.6 1.8 4.0 7.5</code></pre>
-<div class="sourceCode" id="cb88"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb88-1" data-line-number="1"><span class="kw">sum</span>((x<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px)  <span class="co"># E(X^2)</span></a></code></pre></div>
+<div class="sourceCode" id="cb97"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb97-1" data-line-number="1"><span class="kw">sum</span>((x<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px)  <span class="co"># E(X^2)</span></a></code></pre></div>
 <pre><code>## [1] 14</code></pre>
-<div class="sourceCode" id="cb90"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb90-1" data-line-number="1"><span class="dv">14</span><span class="fl">-3.5</span><span class="op">^</span><span class="dv">2</span>     <span class="co"># E(X^2) - [E(X)]^2</span></a></code></pre></div>
+<div class="sourceCode" id="cb99"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb99-1" data-line-number="1"><span class="dv">14</span><span class="fl">-3.5</span><span class="op">^</span><span class="dv">2</span>     <span class="co"># E(X^2) - [E(X)]^2</span></a></code></pre></div>
 <pre><code>## [1] 1.75</code></pre>
 </div>
 <div id="binominal-theorem" class="section level2 unnumbered">
@@ -338,27 +338,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3>R</h3>
 <p>Probability mass function (pmf)</p>
 <p><span class="math inline">\(P(X = x)\)</span></p>
-<div class="sourceCode" id="cb92"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb92-1" data-line-number="1"><span class="kw">choose</span>(<span class="dv">8</span>, <span class="dv">3</span>)    <span class="co"># &quot;8 choose 3&quot;</span></a></code></pre></div>
+<div class="sourceCode" id="cb101"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb101-1" data-line-number="1"><span class="kw">choose</span>(<span class="dv">8</span>, <span class="dv">3</span>)    <span class="co"># &quot;8 choose 3&quot;</span></a></code></pre></div>
 <pre><code>## [1] 56</code></pre>
-<div class="sourceCode" id="cb94"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb94-1" data-line-number="1"><span class="dv">56</span><span class="op">*</span>.<span class="dv">6</span><span class="op">^</span><span class="dv">3</span><span class="op">*</span>.<span class="dv">4</span><span class="op">^</span><span class="dv">5</span>     <span class="co"># P(X = 3) given n = 8, p = .6</span></a></code></pre></div>
+<div class="sourceCode" id="cb103"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb103-1" data-line-number="1"><span class="dv">56</span><span class="op">*</span>.<span class="dv">6</span><span class="op">^</span><span class="dv">3</span><span class="op">*</span>.<span class="dv">4</span><span class="op">^</span><span class="dv">5</span>     <span class="co"># P(X = 3) given n = 8, p = .6</span></a></code></pre></div>
 <pre><code>## [1] 0.123863</code></pre>
 <p>Direct method</p>
-<div class="sourceCode" id="cb96"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb96-1" data-line-number="1"><span class="kw">dbinom</span>(<span class="dv">3</span>, <span class="dv">8</span>, <span class="fl">.6</span>)     <span class="co"># P(X = 3) given n = 8, p = .6</span></a></code></pre></div>
+<div class="sourceCode" id="cb105"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb105-1" data-line-number="1"><span class="kw">dbinom</span>(<span class="dv">3</span>, <span class="dv">8</span>, <span class="fl">.6</span>)     <span class="co"># P(X = 3) given n = 8, p = .6</span></a></code></pre></div>
 <pre><code>## [1] 0.123863</code></pre>
 <p>Cumulative distribution function (cdf)</p>
 <p><span class="math inline">\(P(X \leq x)\)</span></p>
 <p>Find <span class="math inline">\(P(2 \leq X \leq 4)\)</span> given <span class="math inline">\(p = .7, n = 15\)</span></p>
-<div class="sourceCode" id="cb98"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb98-1" data-line-number="1"><span class="kw">pbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">-</span><span class="st"> </span><span class="kw">pbinom</span>(<span class="dv">1</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb107"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb107-1" data-line-number="1"><span class="kw">pbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">-</span><span class="st"> </span><span class="kw">pbinom</span>(<span class="dv">1</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</a></code></pre></div>
 <pre><code>## [1] 0.0006717175</code></pre>
 <p>(Using the pmf instead:)</p>
-<div class="sourceCode" id="cb100"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb100-1" data-line-number="1"><span class="kw">dbinom</span>(<span class="dv">2</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">3</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb109"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb109-1" data-line-number="1"><span class="kw">dbinom</span>(<span class="dv">2</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">3</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</a></code></pre></div>
 <pre><code>## [1] 0.0006717175</code></pre>
 <p>Graphing a binomial pmf:</p>
 <p>ex. <span class="math inline">\(p = .7, n = 10\)</span></p>
-<div class="sourceCode" id="cb102"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb102-1" data-line-number="1">px &lt;-<span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">0</span><span class="op">:</span><span class="dv">10</span>, <span class="dv">10</span>, <span class="fl">.7</span>)</a>
-<a class="sourceLine" id="cb102-2" data-line-number="2"><span class="co"># adding las = 1 turns the y-axis tick mark labels horizontal, which are easier to read</span></a>
-<a class="sourceLine" id="cb102-3" data-line-number="3"><span class="kw">barplot</span>(px, <span class="dt">names.arg =</span> <span class="dv">0</span><span class="op">:</span><span class="dv">10</span>, <span class="dt">las =</span> <span class="dv">1</span>, <span class="dt">col =</span> <span class="st">&quot;lightblue&quot;</span>)</a></code></pre></div>
-<p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-24-1.png" width="672" /></p>
+<div class="sourceCode" id="cb111"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb111-1" data-line-number="1">px &lt;-<span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">0</span><span class="op">:</span><span class="dv">10</span>, <span class="dv">10</span>, <span class="fl">.7</span>)</a>
+<a class="sourceLine" id="cb111-2" data-line-number="2"><span class="co"># adding las = 1 turns the y-axis tick mark labels horizontal, which are easier to read</span></a>
+<a class="sourceLine" id="cb111-3" data-line-number="3"><span class="kw">barplot</span>(px, <span class="dt">names.arg =</span> <span class="dv">0</span><span class="op">:</span><span class="dv">10</span>, <span class="dt">las =</span> <span class="dv">1</span>, <span class="dt">col =</span> <span class="st">&quot;lightblue&quot;</span>)</a></code></pre></div>
+<p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
 </div>
 </div>
 <div id="hypergeometric" class="section level2 unnumbered">
@@ -398,17 +398,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Example (p. 127)</p>
 <p>Devore: <em>h(x; n, M, N)</em></p>
 <p><em>P(X = 2) = h(2; 10, 5, 25)</em> –&gt;</p>
-<div class="sourceCode" id="cb103"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb103-1" data-line-number="1"><span class="kw">dhyper</span>(<span class="dt">x =</span> <span class="dv">2</span>, <span class="dt">m =</span> <span class="dv">5</span>, <span class="dt">n =</span> <span class="dv">20</span>, <span class="dt">k =</span> <span class="dv">10</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb112"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb112-1" data-line-number="1"><span class="kw">dhyper</span>(<span class="dt">x =</span> <span class="dv">2</span>, <span class="dt">m =</span> <span class="dv">5</span>, <span class="dt">n =</span> <span class="dv">20</span>, <span class="dt">k =</span> <span class="dv">10</span>)</a></code></pre></div>
 <pre><code>## [1] 0.3853755</code></pre>
 </div>
 <div id="poisson" class="section level2 unnumbered">
 <h2>3.6 Poisson</h2>
 <p>Example (p. 132)</p>
 <p>p(3;2) =</p>
-<div class="sourceCode" id="cb105"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb105-1" data-line-number="1"><span class="kw">dpois</span>(<span class="dv">3</span>,<span class="dv">2</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb114"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb114-1" data-line-number="1"><span class="kw">dpois</span>(<span class="dv">3</span>,<span class="dv">2</span>)</a></code></pre></div>
 <pre><code>## [1] 0.180447</code></pre>
 <p>F(3;2) =</p>
-<div class="sourceCode" id="cb107"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb107-1" data-line-number="1"><span class="kw">ppois</span>(<span class="dv">3</span>, <span class="dv">2</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb116"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb116-1" data-line-number="1"><span class="kw">ppois</span>(<span class="dv">3</span>, <span class="dv">2</span>)</a></code></pre></div>
 <pre><code>## [1] 0.8571235</code></pre>
 </div>
 <div id="practice-exercises-1" class="section level2 unnumbered">
@@ -416,10 +416,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ol style="list-style-type: decimal">
 <li><strong>(Binomial)</strong> Suppose the probability of a car accident involving a single vehicle is .7. If 15 accidents are randomly selected, what is the probability that between 2 and 4, inclusive, involve a single vehicle? (from slides)</li>
 </ol>
-<div class="sourceCode" id="cb109"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb109-1" data-line-number="1"><span class="kw">dbinom</span>(<span class="dv">2</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">3</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb118-1" data-line-number="1"><span class="kw">dbinom</span>(<span class="dv">2</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">3</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</a></code></pre></div>
 <pre><code>## [1] 0.0006717175</code></pre>
 <p>or</p>
-<div class="sourceCode" id="cb111"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb111-1" data-line-number="1"><span class="kw">pbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">-</span><span class="st"> </span><span class="kw">pbinom</span>(<span class="dv">1</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb120"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb120-1" data-line-number="1"><span class="kw">pbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">-</span><span class="st"> </span><span class="kw">pbinom</span>(<span class="dv">1</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</a></code></pre></div>
 <pre><code>## [1] 0.0006717175</code></pre>
 <hr />
 <ol start="2" style="list-style-type: decimal">
@@ -433,15 +433,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>What is the probability that the number of calls among the 25 that involve a fax transmission exceeds the expected number by more than 2 standard deviations? (Textbook 50-51)</p></li>
 </ol></li>
 </ol>
-<div class="sourceCode" id="cb113"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb113-1" data-line-number="1"><span class="kw">pbinom</span>(<span class="dv">6</span>, <span class="dv">25</span>, <span class="fl">.25</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb122"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb122-1" data-line-number="1"><span class="kw">pbinom</span>(<span class="dv">6</span>, <span class="dv">25</span>, <span class="fl">.25</span>)</a></code></pre></div>
 <pre><code>## [1] 0.5610981</code></pre>
-<div class="sourceCode" id="cb115"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb115-1" data-line-number="1"><span class="kw">dbinom</span>(<span class="dv">6</span>, <span class="dv">25</span>, <span class="fl">.25</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb124"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb124-1" data-line-number="1"><span class="kw">dbinom</span>(<span class="dv">6</span>, <span class="dv">25</span>, <span class="fl">.25</span>)</a></code></pre></div>
 <pre><code>## [1] 0.1828195</code></pre>
-<div class="sourceCode" id="cb117"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb117-1" data-line-number="1"><span class="dv">1</span> <span class="op">-</span><span class="st"> </span><span class="kw">pbinom</span>(<span class="dv">5</span>, <span class="dv">25</span>, <span class="fl">.25</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb126"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb126-1" data-line-number="1"><span class="dv">1</span> <span class="op">-</span><span class="st"> </span><span class="kw">pbinom</span>(<span class="dv">5</span>, <span class="dv">25</span>, <span class="fl">.25</span>)</a></code></pre></div>
 <pre><code>## [1] 0.6217215</code></pre>
-<div class="sourceCode" id="cb119"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb119-1" data-line-number="1">E &lt;-<span class="st"> </span><span class="dv">25</span><span class="op">*</span>.<span class="dv">25</span></a>
-<a class="sourceLine" id="cb119-2" data-line-number="2">Var &lt;-<span class="st"> </span><span class="dv">25</span><span class="op">*</span>.<span class="dv">25</span><span class="op">*</span>.<span class="dv">75</span></a>
-<a class="sourceLine" id="cb119-3" data-line-number="3"><span class="kw">pbinom</span>(<span class="kw">floor</span>(E<span class="op">+</span><span class="dv">2</span><span class="op">*</span><span class="kw">sqrt</span>(Var)), <span class="dv">25</span>, <span class="fl">.25</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb128"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb128-1" data-line-number="1">E &lt;-<span class="st"> </span><span class="dv">25</span><span class="op">*</span>.<span class="dv">25</span></a>
+<a class="sourceLine" id="cb128-2" data-line-number="2">Var &lt;-<span class="st"> </span><span class="dv">25</span><span class="op">*</span>.<span class="dv">25</span><span class="op">*</span>.<span class="dv">75</span></a>
+<a class="sourceLine" id="cb128-3" data-line-number="3"><span class="kw">pbinom</span>(<span class="kw">floor</span>(E<span class="op">+</span><span class="dv">2</span><span class="op">*</span><span class="kw">sqrt</span>(Var)), <span class="dv">25</span>, <span class="fl">.25</span>)</a></code></pre></div>
 <pre><code>## [1] 0.9703301</code></pre>
 <hr />
 <ol start="3" style="list-style-type: decimal">
@@ -451,11 +451,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>What is the probability that the number of granite specimens selected for analysis is within 1 standard deviation of its mean value? (Textbook 71)</p></li>
 </ol></li>
 </ol>
-<div class="sourceCode" id="cb121"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb121-1" data-line-number="1"><span class="kw">dhyper</span>(<span class="dv">8</span>, <span class="dv">8</span>, <span class="dv">12</span>, <span class="dv">15</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dhyper</span>(<span class="dv">3</span>, <span class="dv">8</span>, <span class="dv">12</span>, <span class="dv">15</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb130"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb130-1" data-line-number="1"><span class="kw">dhyper</span>(<span class="dv">8</span>, <span class="dv">8</span>, <span class="dv">12</span>, <span class="dv">15</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dhyper</span>(<span class="dv">3</span>, <span class="dv">8</span>, <span class="dv">12</span>, <span class="dv">15</span>)</a></code></pre></div>
 <pre><code>## [1] 0.05469556</code></pre>
-<div class="sourceCode" id="cb123"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb123-1" data-line-number="1">mean_g &lt;-<span class="st"> </span><span class="dv">15</span><span class="op">*</span><span class="dv">12</span><span class="op">/</span><span class="dv">20</span></a>
-<a class="sourceLine" id="cb123-2" data-line-number="2">sd_g &lt;-<span class="st"> </span><span class="kw">sqrt</span>(<span class="dv">20</span><span class="op">*</span>(<span class="dv">12</span><span class="op">/</span><span class="dv">20</span>)<span class="op">*</span>(<span class="dv">8</span><span class="op">/</span><span class="dv">20</span>))</a>
-<a class="sourceLine" id="cb123-3" data-line-number="3"><span class="kw">pbinom</span>(mean_g <span class="op">+</span><span class="st"> </span>sd_g, <span class="dv">15</span>, <span class="dv">12</span><span class="op">/</span><span class="dv">20</span>)<span class="op">-</span><span class="kw">pbinom</span>(mean_g <span class="op">-</span><span class="st"> </span>sd_g, <span class="dv">15</span>, <span class="dv">12</span><span class="op">/</span><span class="dv">20</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb132"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb132-1" data-line-number="1">mean_g &lt;-<span class="st"> </span><span class="dv">15</span><span class="op">*</span><span class="dv">12</span><span class="op">/</span><span class="dv">20</span></a>
+<a class="sourceLine" id="cb132-2" data-line-number="2">sd_g &lt;-<span class="st"> </span><span class="kw">sqrt</span>(<span class="dv">20</span><span class="op">*</span>(<span class="dv">12</span><span class="op">/</span><span class="dv">20</span>)<span class="op">*</span>(<span class="dv">8</span><span class="op">/</span><span class="dv">20</span>))</a>
+<a class="sourceLine" id="cb132-3" data-line-number="3"><span class="kw">pbinom</span>(mean_g <span class="op">+</span><span class="st"> </span>sd_g, <span class="dv">15</span>, <span class="dv">12</span><span class="op">/</span><span class="dv">20</span>)<span class="op">-</span><span class="kw">pbinom</span>(mean_g <span class="op">-</span><span class="st"> </span>sd_g, <span class="dv">15</span>, <span class="dv">12</span><span class="op">/</span><span class="dv">20</span>)</a></code></pre></div>
 <pre><code>## [1] 0.8144507</code></pre>
 <hr />
 <ol start="4" style="list-style-type: decimal">
@@ -468,13 +468,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol></li>
 </ol>
 <p>Let x be the number of boxes without prizes to be purchased, <span class="math inline">\(p = {x+2-1\choose1}(.2^2)(.8 ^x)\)</span></p>
-<div class="sourceCode" id="cb125"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb125-1" data-line-number="1"><span class="kw">dnbinom</span>(<span class="dv">2</span>, <span class="dv">2</span>, <span class="fl">.2</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb134"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb134-1" data-line-number="1"><span class="kw">dnbinom</span>(<span class="dv">2</span>, <span class="dv">2</span>, <span class="fl">.2</span>)</a></code></pre></div>
 <pre><code>## [1] 0.0768</code></pre>
-<div class="sourceCode" id="cb127"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb127-1" data-line-number="1"><span class="kw">dnbinom</span>(<span class="dv">2</span>, <span class="dv">2</span>, <span class="fl">.2</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dnbinom</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="fl">.2</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dnbinom</span>(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">.2</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb136"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb136-1" data-line-number="1"><span class="kw">dnbinom</span>(<span class="dv">2</span>, <span class="dv">2</span>, <span class="fl">.2</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dnbinom</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="fl">.2</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dnbinom</span>(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">.2</span>)</a></code></pre></div>
 <pre><code>## [1] 0.1808</code></pre>
-<div class="sourceCode" id="cb129"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb129-1" data-line-number="1"><span class="dv">2</span><span class="op">*</span>.<span class="dv">8</span><span class="op">/</span>.<span class="dv">2</span></a></code></pre></div>
+<div class="sourceCode" id="cb138"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb138-1" data-line-number="1"><span class="dv">2</span><span class="op">*</span>.<span class="dv">8</span><span class="op">/</span>.<span class="dv">2</span></a></code></pre></div>
 <pre><code>## [1] 8</code></pre>
-<div class="sourceCode" id="cb131"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb131-1" data-line-number="1"><span class="co"># 8 boxes without desired prize, 10 boxes in total</span></a></code></pre></div>
+<div class="sourceCode" id="cb140"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb140-1" data-line-number="1"><span class="co"># 8 boxes without desired prize, 10 boxes in total</span></a></code></pre></div>
 <hr />
 <ol start="5" style="list-style-type: decimal">
 <li><p><strong>(Poisson)</strong> Suppose that the number of drivers who travel between a particular origin and destination during a designated time period has a Poisson distribution with parameter <span class="math inline">\(\mu = 20\)</span>. What is the probability that the number of drivers will</p>
@@ -485,13 +485,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 <p>(Textbook 81)</p></li>
 </ol>
-<div class="sourceCode" id="cb132"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb132-1" data-line-number="1"><span class="kw">ppois</span>(<span class="dv">10</span>, <span class="dv">20</span>) <span class="co"># a</span></a></code></pre></div>
+<div class="sourceCode" id="cb141"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb141-1" data-line-number="1"><span class="kw">ppois</span>(<span class="dv">10</span>, <span class="dv">20</span>) <span class="co"># a</span></a></code></pre></div>
 <pre><code>## [1] 0.01081172</code></pre>
-<div class="sourceCode" id="cb134"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb134-1" data-line-number="1"><span class="kw">dpois</span>(<span class="dv">10</span>, <span class="dv">20</span>) <span class="co"># b1</span></a></code></pre></div>
+<div class="sourceCode" id="cb143"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb143-1" data-line-number="1"><span class="kw">dpois</span>(<span class="dv">10</span>, <span class="dv">20</span>) <span class="co"># b1</span></a></code></pre></div>
 <pre><code>## [1] 0.005816307</code></pre>
-<div class="sourceCode" id="cb136"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb136-1" data-line-number="1">((<span class="kw">exp</span>(<span class="dv">1</span>)<span class="op">^-</span><span class="dv">20</span>)<span class="op">*</span>(<span class="dv">20</span><span class="op">^</span><span class="dv">10</span>))<span class="op">/</span><span class="kw">factorial</span>(<span class="dv">10</span>) <span class="co"># b2</span></a></code></pre></div>
+<div class="sourceCode" id="cb145"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb145-1" data-line-number="1">((<span class="kw">exp</span>(<span class="dv">1</span>)<span class="op">^-</span><span class="dv">20</span>)<span class="op">*</span>(<span class="dv">20</span><span class="op">^</span><span class="dv">10</span>))<span class="op">/</span><span class="kw">factorial</span>(<span class="dv">10</span>) <span class="co"># b2</span></a></code></pre></div>
 <pre><code>## [1] 0.005816307</code></pre>
-<div class="sourceCode" id="cb138"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb138-1" data-line-number="1"><span class="kw">ppois</span>(<span class="dv">20</span> <span class="op">+</span><span class="st"> </span><span class="dv">2</span><span class="op">*</span><span class="kw">sqrt</span>(<span class="dv">20</span>),<span class="dv">20</span>) <span class="op">-</span><span class="st"> </span><span class="kw">ppois</span>(<span class="dv">20</span> <span class="op">-</span><span class="st"> </span><span class="dv">2</span><span class="op">*</span><span class="kw">sqrt</span>(<span class="dv">20</span>), <span class="dv">20</span>) <span class="co"># c</span></a></code></pre></div>
+<div class="sourceCode" id="cb147"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb147-1" data-line-number="1"><span class="kw">ppois</span>(<span class="dv">20</span> <span class="op">+</span><span class="st"> </span><span class="dv">2</span><span class="op">*</span><span class="kw">sqrt</span>(<span class="dv">20</span>),<span class="dv">20</span>) <span class="op">-</span><span class="st"> </span><span class="kw">ppois</span>(<span class="dv">20</span> <span class="op">-</span><span class="st"> </span><span class="dv">2</span><span class="op">*</span><span class="kw">sqrt</span>(<span class="dv">20</span>), <span class="dv">20</span>) <span class="co"># c</span></a></code></pre></div>
 <pre><code>## [1] 0.9442797</code></pre>
 
 </div>

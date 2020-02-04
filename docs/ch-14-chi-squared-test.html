@@ -24,7 +24,7 @@
 <meta name="author" content="Joyce Robbins" />
 
 
-<meta name="date" content="2020-01-30" />
+<meta name="date" content="2020-02-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -156,10 +156,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#general-study-tips"><i class="fa fa-check"></i>General study tips</a></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#installing-r"><i class="fa fa-check"></i>Installing R</a></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#getting-started-with-r"><i class="fa fa-check"></i>Getting Started with R</a><ul>
-<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#quick-intro-to-rstudio"><i class="fa fa-check"></i>Quick intro to RStudio</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#quick-intro-to-rstudio-console"><i class="fa fa-check"></i>Quick intro to RStudio Console</a></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#saving-your-code-as-an-.r-file"><i class="fa fa-check"></i>Saving your code as an .R file</a></li>
-<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#save-code-and-text-as-.rmd-convert-to-.html"><i class="fa fa-check"></i>Save code and text as .Rmd, convert to .html</a></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#convert-.r-file-to-.html"><i class="fa fa-check"></i>Convert .R file to .html</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#save-code-and-text-as-.rmd-convert-to-.html"><i class="fa fa-check"></i>Save code and text as .Rmd, convert to .html</a></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#using-r-as-a-calculator"><i class="fa fa-check"></i>Using R as a calculator</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#contact"><i class="fa fa-check"></i>Contact</a></li>
@@ -311,29 +311,29 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="r-10" class="section level2 unnumbered">
 <h2>R</h2>
 <p>The <code>chisq.test()</code> function requires that data be in matrix form:</p>
-<div class="sourceCode" id="cb203"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb203-1" data-line-number="1"><span class="co"># p. 647, #28</span></a>
-<a class="sourceLine" id="cb203-2" data-line-number="2">mat &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="kw">c</span>(<span class="dv">28</span>, <span class="dv">17</span>, <span class="dv">7</span>, <span class="dv">31</span>, <span class="dv">26</span>, <span class="dv">10</span>, <span class="dv">26</span>, <span class="dv">19</span>, <span class="dv">11</span>), <span class="dt">nrow =</span> <span class="dv">3</span>, <span class="dt">byrow =</span> <span class="ot">TRUE</span>)</a>
-<a class="sourceLine" id="cb203-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb203-4" data-line-number="4"><span class="kw">dimnames</span>(mat) &lt;-<span class="st"> </span><span class="kw">list</span>(<span class="st">`</span><span class="dt">Email_Provider</span><span class="st">`</span> =<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;gmail&quot;</span>, <span class="st">&quot;Yahoo&quot;</span>, <span class="st">&quot;Other&quot;</span>),</a>
-<a class="sourceLine" id="cb203-5" data-line-number="5">                      <span class="st">`</span><span class="dt">Cell_Phone_Provider</span><span class="st">`</span> =<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;ATT&quot;</span>, <span class="st">&quot;Verizon&quot;</span>, <span class="st">&quot;Other&quot;</span>))</a>
-<a class="sourceLine" id="cb203-6" data-line-number="6"></a>
-<a class="sourceLine" id="cb203-7" data-line-number="7"><span class="kw">chisq.test</span>(mat, <span class="dt">correct =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb212"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb212-1" data-line-number="1"><span class="co"># p. 647, #28</span></a>
+<a class="sourceLine" id="cb212-2" data-line-number="2">mat &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="kw">c</span>(<span class="dv">28</span>, <span class="dv">17</span>, <span class="dv">7</span>, <span class="dv">31</span>, <span class="dv">26</span>, <span class="dv">10</span>, <span class="dv">26</span>, <span class="dv">19</span>, <span class="dv">11</span>), <span class="dt">nrow =</span> <span class="dv">3</span>, <span class="dt">byrow =</span> <span class="ot">TRUE</span>)</a>
+<a class="sourceLine" id="cb212-3" data-line-number="3"></a>
+<a class="sourceLine" id="cb212-4" data-line-number="4"><span class="kw">dimnames</span>(mat) &lt;-<span class="st"> </span><span class="kw">list</span>(<span class="st">`</span><span class="dt">Email_Provider</span><span class="st">`</span> =<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;gmail&quot;</span>, <span class="st">&quot;Yahoo&quot;</span>, <span class="st">&quot;Other&quot;</span>),</a>
+<a class="sourceLine" id="cb212-5" data-line-number="5">                      <span class="st">`</span><span class="dt">Cell_Phone_Provider</span><span class="st">`</span> =<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;ATT&quot;</span>, <span class="st">&quot;Verizon&quot;</span>, <span class="st">&quot;Other&quot;</span>))</a>
+<a class="sourceLine" id="cb212-6" data-line-number="6"></a>
+<a class="sourceLine" id="cb212-7" data-line-number="7"><span class="kw">chisq.test</span>(mat, <span class="dt">correct =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
 <pre><code>## 
 ##  Pearson&#39;s Chi-squared test
 ## 
 ## data:  mat
 ## X-squared = 1.5074, df = 4, p-value = 0.8253</code></pre>
 <p>To see the expected values:</p>
-<div class="sourceCode" id="cb205"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb205-1" data-line-number="1">results &lt;-<span class="st"> </span><span class="kw">chisq.test</span>(mat, <span class="dt">correct =</span> <span class="ot">FALSE</span>)</a>
-<a class="sourceLine" id="cb205-2" data-line-number="2"><span class="kw">round</span>(results<span class="op">$</span>expected, <span class="dv">2</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb214"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb214-1" data-line-number="1">results &lt;-<span class="st"> </span><span class="kw">chisq.test</span>(mat, <span class="dt">correct =</span> <span class="ot">FALSE</span>)</a>
+<a class="sourceLine" id="cb214-2" data-line-number="2"><span class="kw">round</span>(results<span class="op">$</span>expected, <span class="dv">2</span>)</a></code></pre></div>
 <pre><code>##               Cell_Phone_Provider
 ## Email_Provider   ATT Verizon Other
 ##          gmail 25.26   18.42  8.32
 ##          Yahoo 32.54   23.74 10.72
 ##          Other 27.20   19.84  8.96</code></pre>
 <p>Mosaic plot</p>
-<div class="sourceCode" id="cb207"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb207-1" data-line-number="1"><span class="kw">mosaicplot</span>(<span class="kw">t</span>(mat), <span class="dt">color =</span> <span class="kw">c</span>(<span class="st">&quot;aliceblue&quot;</span>, <span class="st">&quot;cornflowerblue&quot;</span>, <span class="st">&quot;navyblue&quot;</span>), <span class="dt">main =</span> <span class="st">&quot;&quot;</span>)</a></code></pre></div>
-<p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-63-1.png" width="672" /></p>
+<div class="sourceCode" id="cb216"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb216-1" data-line-number="1"><span class="kw">mosaicplot</span>(<span class="kw">t</span>(mat), <span class="dt">color =</span> <span class="kw">c</span>(<span class="st">&quot;aliceblue&quot;</span>, <span class="st">&quot;cornflowerblue&quot;</span>, <span class="st">&quot;navyblue&quot;</span>), <span class="dt">main =</span> <span class="st">&quot;&quot;</span>)</a></code></pre></div>
+<p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-68-1.png" width="672" /></p>
 <p>See <a href="https://github.com/jtr13/codehelp/blob/master/R/mosaic.md">this tutorial</a> for more on mosaic plots.</p>
 </div>
 <div id="practice-exercises-4" class="section level2 unnumbered">
@@ -342,13 +342,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><strong>(Class example)</strong> We took a survey involving 20 children and 80 adults. 1 of the children and 49 of the adults drink coffee, while the remainder do not. Does there appear to be a relationship between age (child vs. adult) and coffee drinking status (yes vs. no)?</li>
 </ol>
 <p>[Ans]</p>
-<div class="sourceCode" id="cb208"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb208-1" data-line-number="1">x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">49</span>, <span class="dv">19</span>, <span class="dv">31</span>)</a>
-<a class="sourceLine" id="cb208-2" data-line-number="2"><span class="kw">dim</span>(x) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">2</span>, <span class="dv">2</span>)</a>
-<a class="sourceLine" id="cb208-3" data-line-number="3">x</a></code></pre></div>
+<div class="sourceCode" id="cb217"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb217-1" data-line-number="1">x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">49</span>, <span class="dv">19</span>, <span class="dv">31</span>)</a>
+<a class="sourceLine" id="cb217-2" data-line-number="2"><span class="kw">dim</span>(x) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">2</span>, <span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb217-3" data-line-number="3">x</a></code></pre></div>
 <pre><code>##      [,1] [,2]
 ## [1,]    1   19
 ## [2,]   49   31</code></pre>
-<div class="sourceCode" id="cb210"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb210-1" data-line-number="1"><span class="kw">chisq.test</span>(x, <span class="dt">correct =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb219"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb219-1" data-line-number="1"><span class="kw">chisq.test</span>(x, <span class="dt">correct =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
 <pre><code>## 
 ##  Pearson&#39;s Chi-squared test
 ## 
@@ -400,43 +400,43 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><span class="math inline">\(α = .01\)</span></p>
 <p><span class="math inline">\(H_0\)</span>: the extent of binge drinking and age group are independent</p>
 <p><span class="math inline">\(H_A\)</span>: the extent of binge drinking and age group are not independent.</p>
-<div class="sourceCode" id="cb212"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb212-1" data-line-number="1">data &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">357</span>, <span class="dv">218</span>, <span class="dv">184</span>, <span class="dv">328</span>, <span class="dv">293</span>, <span class="dv">285</span>, <span class="dv">218</span>, <span class="dv">331</span>, <span class="dv">592</span>, <span class="dv">354</span>, <span class="dv">185</span>, <span class="dv">147</span>)</a>
-<a class="sourceLine" id="cb212-2" data-line-number="2"><span class="kw">dim</span>(data) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">4</span>, <span class="dv">3</span>)</a>
-<a class="sourceLine" id="cb212-3" data-line-number="3">data</a></code></pre></div>
+<div class="sourceCode" id="cb221"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb221-1" data-line-number="1">data &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">357</span>, <span class="dv">218</span>, <span class="dv">184</span>, <span class="dv">328</span>, <span class="dv">293</span>, <span class="dv">285</span>, <span class="dv">218</span>, <span class="dv">331</span>, <span class="dv">592</span>, <span class="dv">354</span>, <span class="dv">185</span>, <span class="dv">147</span>)</a>
+<a class="sourceLine" id="cb221-2" data-line-number="2"><span class="kw">dim</span>(data) &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">4</span>, <span class="dv">3</span>)</a>
+<a class="sourceLine" id="cb221-3" data-line-number="3">data</a></code></pre></div>
 <pre><code>##      [,1] [,2] [,3]
 ## [1,]  357  293  592
 ## [2,]  218  285  354
 ## [3,]  184  218  185
 ## [4,]  328  331  147</code></pre>
-<div class="sourceCode" id="cb214"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb214-1" data-line-number="1"><span class="co"># optional: give names to the rows and columns</span></a>
-<a class="sourceLine" id="cb214-2" data-line-number="2"><span class="kw">dimnames</span>(data) &lt;-<span class="st"> </span><span class="kw">list</span>(<span class="st">`</span><span class="dt">Episodes</span><span class="st">`</span> =<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;None&quot;</span>, <span class="st">&quot;1-2&quot;</span>, <span class="st">&quot;3-4&quot;</span>, <span class="st">&quot;&gt;= 5&quot;</span>),<span class="st">`</span><span class="dt">Age Group</span><span class="st">`</span> =<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;18-23&quot;</span>, <span class="st">&quot;21-23&quot;</span>, <span class="st">&quot;&gt;=24&quot;</span>))</a>
-<a class="sourceLine" id="cb214-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb214-4" data-line-number="4">data</a></code></pre></div>
+<div class="sourceCode" id="cb223"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb223-1" data-line-number="1"><span class="co"># optional: give names to the rows and columns</span></a>
+<a class="sourceLine" id="cb223-2" data-line-number="2"><span class="kw">dimnames</span>(data) &lt;-<span class="st"> </span><span class="kw">list</span>(<span class="st">`</span><span class="dt">Episodes</span><span class="st">`</span> =<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;None&quot;</span>, <span class="st">&quot;1-2&quot;</span>, <span class="st">&quot;3-4&quot;</span>, <span class="st">&quot;&gt;= 5&quot;</span>),<span class="st">`</span><span class="dt">Age Group</span><span class="st">`</span> =<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;18-23&quot;</span>, <span class="st">&quot;21-23&quot;</span>, <span class="st">&quot;&gt;=24&quot;</span>))</a>
+<a class="sourceLine" id="cb223-3" data-line-number="3"></a>
+<a class="sourceLine" id="cb223-4" data-line-number="4">data</a></code></pre></div>
 <pre><code>##         Age Group
 ## Episodes 18-23 21-23 &gt;=24
 ##     None   357   293  592
 ##     1-2    218   285  354
 ##     3-4    184   218  185
 ##     &gt;= 5   328   331  147</code></pre>
-<div class="sourceCode" id="cb216"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb216-1" data-line-number="1"><span class="kw">chisq.test</span>(data, <span class="dt">correct =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb225"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb225-1" data-line-number="1"><span class="kw">chisq.test</span>(data, <span class="dt">correct =</span> <span class="ot">FALSE</span>)</a></code></pre></div>
 <pre><code>## 
 ##  Pearson&#39;s Chi-squared test
 ## 
 ## data:  data
 ## X-squared = 212.91, df = 6, p-value &lt; 0.00000000000000022</code></pre>
 <p>Alternatively, we can use R as a calculator.</p>
-<div class="sourceCode" id="cb218"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb218-1" data-line-number="1">total &lt;-<span class="st"> </span><span class="kw">sum</span>(data)</a>
-<a class="sourceLine" id="cb218-2" data-line-number="2">prob &lt;-<span class="st"> </span>data<span class="op">/</span>total</a>
-<a class="sourceLine" id="cb218-3" data-line-number="3">expected &lt;-<span class="st"> </span>data <span class="co"># initialize matrix &quot;expected&quot; to be the same size as &quot;data&quot;</span></a>
-<a class="sourceLine" id="cb218-4" data-line-number="4"></a>
-<a class="sourceLine" id="cb218-5" data-line-number="5"><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">4</span>){</a>
-<a class="sourceLine" id="cb218-6" data-line-number="6">  <span class="cf">for</span>(j <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">3</span>){</a>
-<a class="sourceLine" id="cb218-7" data-line-number="7">    expected[i,j] &lt;-<span class="st"> </span><span class="kw">sum</span>(prob[i,])<span class="op">*</span><span class="kw">sum</span>(prob[,j])<span class="op">*</span>total</a>
-<a class="sourceLine" id="cb218-8" data-line-number="8">  }</a>
-<a class="sourceLine" id="cb218-9" data-line-number="9">}</a>
-<a class="sourceLine" id="cb218-10" data-line-number="10"></a>
-<a class="sourceLine" id="cb218-11" data-line-number="11">chisq &lt;-<span class="st"> </span><span class="kw">sum</span>((data<span class="op">-</span>expected)<span class="op">^</span><span class="dv">2</span><span class="op">/</span>expected)</a>
-<a class="sourceLine" id="cb218-12" data-line-number="12">chisq</a></code></pre></div>
+<div class="sourceCode" id="cb227"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb227-1" data-line-number="1">total &lt;-<span class="st"> </span><span class="kw">sum</span>(data)</a>
+<a class="sourceLine" id="cb227-2" data-line-number="2">prob &lt;-<span class="st"> </span>data<span class="op">/</span>total</a>
+<a class="sourceLine" id="cb227-3" data-line-number="3">expected &lt;-<span class="st"> </span>data <span class="co"># initialize matrix &quot;expected&quot; to be the same size as &quot;data&quot;</span></a>
+<a class="sourceLine" id="cb227-4" data-line-number="4"></a>
+<a class="sourceLine" id="cb227-5" data-line-number="5"><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">4</span>){</a>
+<a class="sourceLine" id="cb227-6" data-line-number="6">  <span class="cf">for</span>(j <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">3</span>){</a>
+<a class="sourceLine" id="cb227-7" data-line-number="7">    expected[i,j] &lt;-<span class="st"> </span><span class="kw">sum</span>(prob[i,])<span class="op">*</span><span class="kw">sum</span>(prob[,j])<span class="op">*</span>total</a>
+<a class="sourceLine" id="cb227-8" data-line-number="8">  }</a>
+<a class="sourceLine" id="cb227-9" data-line-number="9">}</a>
+<a class="sourceLine" id="cb227-10" data-line-number="10"></a>
+<a class="sourceLine" id="cb227-11" data-line-number="11">chisq &lt;-<span class="st"> </span><span class="kw">sum</span>((data<span class="op">-</span>expected)<span class="op">^</span><span class="dv">2</span><span class="op">/</span>expected)</a>
+<a class="sourceLine" id="cb227-12" data-line-number="12">chisq</a></code></pre></div>
 <pre><code>## [1] 212.9072</code></pre>
 <p><span class="math inline">\(p-value &lt; .01\)</span></p>
 <p>Reject <span class="math inline">\(H_0\)</span>. There is an association between extent of binge drinking and age group in the population from which the sample was selected.</p>
