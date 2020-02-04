@@ -51,9 +51,9 @@ https://www.rstudio.com/products/rstudio/download/#download
 To get oriented, read and try the examples in [Chapter 1 of Introduction to R](https://monashdatafluency.github.io/r-intro-2/starting-out-in-r.html){target="_blank"}
 
 
-### Quick intro to RStudio {-}
+### Quick intro to RStudio Console {-}
 
-Working in the console pane
+Working in the console pane is similar to a using a calculator: each line of code is executed when you press enter. Note that your work is not saved with this approach.
 
 ![](images/R1.png)
 
@@ -71,22 +71,19 @@ Drawing a stem and leaf plot
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XpUmvKdM1XI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Screenshots**
+**Screenshot**
 
 ![](images/R4.png)
 
-### Save code and text as .Rmd, convert to .html {-}
-
-**Video**
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/x0-kHWybiaQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-
+Saving with this method saves only the code, not the output. Below are two methods for creating .html documents that contain both code and output:
 
 ### Convert .R file to .html {-}
 
-Converting your work to an .html file that can be submitted to CourseWorks (code only, no text)
+**Video**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RNd37Pd5ANU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+**Screenshots**
 
 ![](images/R5.png)
 
@@ -95,6 +92,18 @@ Converting your work to an .html file that can be submitted to CourseWorks (code
 ![](images/R7.png)
 
 ![](images/R8.png)
+
+
+### Save code and text as .Rmd, convert to .html {-}
+
+This format is called "Rmarkdown" since it combines R and markdown. Markdown is a simple format that is converted to .html
+
+For a short summary of markdown, click Help and then "Markdown Quick Reference" in RStudio. 
+
+**Video**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/x0-kHWybiaQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ### Using R as a calculator {-}
 
