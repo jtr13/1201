@@ -16,4 +16,4 @@ Skip *everything but* "Covariance" pp. 214-215 and "Correlation" pp. 216-218
 
 Correlation and Covariance Visualization
 
-http://shiny.albany.edu/stat/rectangles/
+https://shiny.rit.albany.edu/stat/rectangles/
