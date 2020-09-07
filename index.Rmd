@@ -32,9 +32,9 @@ Calculus-Based Introduction to Statistics
 
 Statistics UN1201, Spring 2020
 
-Monday / Wednesday class: Hamilton 702, 8:40-9:55am
+Tuesday / Thursday 11:40am - 12:55pm online only
 
-Tuesday / Thursday class: Hamilton 717, 8:40-9:55am
+Lectures are *synchronous*.
 
 ## Instructor {-}
 
@@ -44,27 +44,15 @@ Joyce Robbins: <a href="mailto:jtr13@columbia.edu">jtr13@columbia.edu</a>  tel: 
 
 Office hours: 
 
-Mondays, 1:10pm - 3:00pm, IAB 326  (inside Lehman Library)
+TBD
 
-## Teaching assistants {-}
+## Teaching assistant {-}
 
-Mon / Wed
+Haolin Zou, hz2574@columbia.edu
 
-Bridget Ratcliffe, blr2147@columbia.edu
+Office hours: 
 
-*Office hours*: Thursdays, 10-12pm, 10th floor lounge, School of Social Work (SSW), 1255 Amsterdam Ave, between 121st and 122nd Sts.
-
-Thurs 2/13: 11am-12pm only
-
-Mon 2/17: Review session, 1pm-2pm, 10th floor conference room, SSW
-
-**Tues / Thurs**
-
-Nabarun Deb, nd2560@columbia.edu
-
-*Office hours*: Wednesdays, 2-4pm, 10th floor lounge, School of Social Work (SSW), 1255 Amsterdam Ave, between 121st and 122nd Sts.
-
-Mon 2/17: Review session, 10am-12pm, 10th floor conference room, SSW
+TBD
 
 ## Course description  {-}
 
@@ -116,7 +104,7 @@ Note: The tests and final exam are curved on an individual basis, meaning one te
 
 ## Class policies  {-}
 
-**Cell phones are NOT allowed in class.**
+You are expected to attend Zoom lectures in real time. Recordings will be available primarily for students in different time zones or to make up an occasional missed lecture. During class, it is your choice whether to turn your video on or not; please however add a profile picture to your Zoom account to help us feel like a class with faces and not a list of names. You are strongly encouraged to turn your video on during small group breakout rooms. 
 
 ## Homework  {-}
 
@@ -132,7 +120,7 @@ Note that not all homework questions are graded so be sure to check all of your 
 
 Problem set due dates:
 
-1. Wed, Feb 5
+1. Tues, 
 2. Wed, Feb 12
 3. Mon, Mar 2
 4. Wed, Mar 11
