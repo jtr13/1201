@@ -124,18 +124,6 @@ Tentative problem set due dates.
 
 **All problem sets count; in other words, no problem set grades are dropped.**
 
-## R {-}
-
-Information on installing R and getting started is provided in the [next chapter](introduction.html#installing-r). Note that all of the coding related parts of the class are optional and will not appear on the tests. 
-
-## Academic Integrity  {-}
-
-You are encouraged to discuss homework strategies with your classmates and work through examples, but you may not discuss particular homework problems, nor copy all or part of solutions from anywhere. In short, the homework you submit must be your own work.
-
-Plagiarism or any other breach of academic integrity will not be tolerated and will result in disciplinary action. For more information please refer to the The Columbia University Undergraduate Guide to Academic Integrity:
-
-<http://www.college.columbia.edu/academics/academicintegrity>
-
 ## Tests  {-}
 
 More details will be provided later on the logistics of taking exams via Zoom.
@@ -161,6 +149,18 @@ Make-up tests will only be administered in cases of documented emergencies.
 All tests are cumulative but weighted more toward new material. 
 
 For the date of the Final, see https://ssol.columbia.edu/ -- click "Exam List" and then "Projected University Examination Schedule". (The date of the final is set by the University, not by me.)
+
+## R {-}
+
+Information on installing R and getting started is provided in the [next chapter](introduction.html#installing-r). Note that all of the coding related parts of the class are optional and will not appear on the tests. 
+
+## Academic Integrity  {-}
+
+You are encouraged to discuss homework strategies with your classmates and work through examples, but you may not discuss particular homework problems, nor copy all or part of solutions from anywhere. In short, the homework you submit must be your own work.
+
+Plagiarism or any other breach of academic integrity will not be tolerated and will result in disciplinary action. For more information please refer to the The Columbia University Undergraduate Guide to Academic Integrity:
+
+<http://www.college.columbia.edu/academics/academicintegrity>
 
 ### Accommodations for students registered with Disability Services  {-}
 
