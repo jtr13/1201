@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Ch. 8 Tests of Hypotheses Based on a Single Sample | Stat 1201 Supplemental Materials</title>
-  <meta name="description" content="Supplemental resources for Stat1201" />
-  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+  <title>Ch. 8 Tests of Hypotheses Based on a Single Sample | Stat 1201 Resources</title>
+  <meta name="description" content="Stat 1201" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Ch. 8 Tests of Hypotheses Based on a Single Sample | Stat 1201 Supplemental Materials" />
+  <meta property="og:title" content="Ch. 8 Tests of Hypotheses Based on a Single Sample | Stat 1201 Resources" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://jtr13.github.io/1201/" />
   
-  <meta property="og:description" content="Supplemental resources for Stat1201" />
+  <meta property="og:description" content="Stat 1201" />
   <meta name="github-repo" content="jtr13/1201" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Ch. 8 Tests of Hypotheses Based on a Single Sample | Stat 1201 Supplemental Materials" />
+  <meta name="twitter:title" content="Ch. 8 Tests of Hypotheses Based on a Single Sample | Stat 1201 Resources" />
   
-  <meta name="twitter:description" content="Supplemental resources for Stat1201" />
+  <meta name="twitter:description" content="Stat 1201" />
   
 
 <meta name="author" content="Joyce Robbins" />
 
 
-<meta name="date" content="2020-04-28" />
+<meta name="date" content="2020-09-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,6 +33,7 @@
   
 <link rel="prev" href="ch-7-statistical-intervals-based-on-a-single-sample.html"/>
 <link rel="next" href="ch-9-inferences-based-on-two-samples.html"/>
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -50,28 +51,30 @@
 
 
 
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -80,9 +83,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -128,34 +131,39 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="index.html"><b>STAT1201 Resources/</b></a></li>
+<li><a href="index.html"><b>1201.info</b></a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Course material</a><ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#syllabus"><i class="fa fa-check"></i>Syllabus</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Syllabus</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-material-and-assignments"><i class="fa fa-check"></i>Course material and assignments</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#zoom-info"><i class="fa fa-check"></i>Zoom info</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#instructor"><i class="fa fa-check"></i>Instructor</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#teaching-assistants"><i class="fa fa-check"></i>Teaching assistants</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#teaching-assistant"><i class="fa fa-check"></i>Teaching assistant</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-description"><i class="fa fa-check"></i>Course description</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#resources-and-readings"><i class="fa fa-check"></i>Resources and readings</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#resources-and-readings"><i class="fa fa-check"></i>Resources and readings</a>
+<ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#required-text"><i class="fa fa-check"></i>Required text</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#recommended-text"><i class="fa fa-check"></i>Recommended text</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#other-materials"><i class="fa fa-check"></i>Other materials</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#grading-procedures"><i class="fa fa-check"></i>Grading procedures</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#class-policies"><i class="fa fa-check"></i>Class policies</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#homework"><i class="fa fa-check"></i>Homework</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#problem-sets"><i class="fa fa-check"></i>Problem Sets</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#r"><i class="fa fa-check"></i>R</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#academic-integrity"><i class="fa fa-check"></i>Academic Integrity</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#tests"><i class="fa fa-check"></i>Tests</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#tests"><i class="fa fa-check"></i>Tests</a>
+<ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#accommodations-for-students-registered-with-disability-services"><i class="fa fa-check"></i>Accommodations for students registered with Disability Services</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#getting-help"><i class="fa fa-check"></i>Getting help</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-content"><i class="fa fa-check"></i>Course content</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a><ul>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a>
+<ul>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#general-study-tips"><i class="fa fa-check"></i>General study tips</a></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#installing-r"><i class="fa fa-check"></i>Installing R</a></li>
-<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#getting-started-with-r"><i class="fa fa-check"></i>Getting Started with R</a><ul>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#getting-started-with-r"><i class="fa fa-check"></i>Getting Started with R</a>
+<ul>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#quick-intro-to-rstudio-console"><i class="fa fa-check"></i>Quick intro to RStudio Console</a></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#saving-your-code-as-an-.r-file"><i class="fa fa-check"></i>Saving your code as an .R file</a></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#convert-.r-file-to-.html"><i class="fa fa-check"></i>Convert .R file to .html</a></li>
@@ -165,106 +173,131 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#contact"><i class="fa fa-check"></i>Contact</a></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#license"><i class="fa fa-check"></i>License</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html"><i class="fa fa-check"></i>Ch. 1 Descriptive Statistics</a><ul>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html"><i class="fa fa-check"></i>Ch. 1 Descriptive Statistics</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#populations-samples-and-processes"><i class="fa fa-check"></i>1.1 Populations, Samples, and Processes</a></li>
-<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#pictorial-and-tabular-methods-in-descriptive-statistics"><i class="fa fa-check"></i>1.2 Pictorial and Tabular Methods in Descriptive Statistics</a><ul>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#pictorial-and-tabular-methods-in-descriptive-statistics"><i class="fa fa-check"></i>1.2 Pictorial and Tabular Methods in Descriptive Statistics</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#r"><i class="fa fa-check"></i>R</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#measures-of-location"><i class="fa fa-check"></i>1.3 Measures of location</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#r-1"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#measures-of-location"><i class="fa fa-check"></i>1.3 Measures of location</a><ul>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#measures-of-variability"><i class="fa fa-check"></i>1.4 Measures of variability</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#r-2"><i class="fa fa-check"></i>R</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#measures-of-variability"><i class="fa fa-check"></i>1.4 Measures of variability</a><ul>
-<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#r-3"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#practice-exercises"><i class="fa fa-check"></i>Practice Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html"><i class="fa fa-check"></i>Ch. 2 Probability</a><ul>
-<li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html#sample-spaces-and-events"><i class="fa fa-check"></i>2.1 Sample Spaces and Events</a><ul>
+<li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html"><i class="fa fa-check"></i>Ch. 2 Probability</a>
+<ul>
+<li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html#sample-spaces-and-events"><i class="fa fa-check"></i>2.1 Sample Spaces and Events</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html#humor"><i class="fa fa-check"></i>Humor</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html#axioms-interpretations-and-properties-of-probability"><i class="fa fa-check"></i>2.2 Axioms, Interpretations, and Properties of Probability</a></li>
-<li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html#counting-techniques"><i class="fa fa-check"></i>2.3 Counting Techniques</a><ul>
-<li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html#r-4"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html#counting-techniques"><i class="fa fa-check"></i>2.3 Counting Techniques</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#r"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html#independence"><i class="fa fa-check"></i>2.5 Independence</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html"><i class="fa fa-check"></i>Ch. 3 Discrete Distributions</a><ul>
+<li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html"><i class="fa fa-check"></i>Ch. 3 Discrete Distributions</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#expected-value"><i class="fa fa-check"></i>3.3 Expected value</a></li>
 <li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#variance"><i class="fa fa-check"></i>3.3 Variance</a></li>
 <li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#variance-alternative-method"><i class="fa fa-check"></i>3.3 Variance (alternative method)</a></li>
-<li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#binominal-theorem"><i class="fa fa-check"></i>3.4 Binominal Theorem</a><ul>
-<li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#r-5"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#binominal-theorem"><i class="fa fa-check"></i>3.4 Binominal Theorem</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#r"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#hypergeometric"><i class="fa fa-check"></i>3.5 Hypergeometric</a></li>
 <li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#poisson"><i class="fa fa-check"></i>3.6 Poisson</a></li>
-<li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#practice-exercises-1"><i class="fa fa-check"></i>Practice Exercises</a></li>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#practice-exercises"><i class="fa fa-check"></i>Practice Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html"><i class="fa fa-check"></i>Ch. 4 Continuous Random Variables and Probability Distributions</a><ul>
+<li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html"><i class="fa fa-check"></i>Ch. 4 Continuous Random Variables and Probability Distributions</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#probability-density-functions"><i class="fa fa-check"></i>4.1 Probability density functions</a></li>
-<li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#r-6"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#r"><i class="fa fa-check"></i>R</a></li>
 <li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cumulative-distribution-functions-and-expected-values"><i class="fa fa-check"></i>4.2 Cumulative Distribution Functions and Expected Values</a></li>
-<li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#the-normal-distribution"><i class="fa fa-check"></i>4.3 The Normal Distribution</a><ul>
-<li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#r-7"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#the-normal-distribution"><i class="fa fa-check"></i>4.3 The Normal Distribution</a>
+<ul>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#r-1"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#practice-exercises-2"><i class="fa fa-check"></i>Practice Exercises</a></li>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#practice-exercises"><i class="fa fa-check"></i>Practice Exercises</a></li>
 <li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#extra-practice-chapters-1---4"><i class="fa fa-check"></i>Extra Practice Chapters 1 - 4</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-5-random-samples.html"><a href="ch-5-random-samples.html"><i class="fa fa-check"></i>Ch. 5 Random Samples</a><ul>
+<li class="chapter" data-level="" data-path="ch-5-random-samples.html"><a href="ch-5-random-samples.html"><i class="fa fa-check"></i>Ch. 5 Random Samples</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-5-random-samples.html"><a href="ch-5-random-samples.html#the-distribution-of-the-sample-mean"><i class="fa fa-check"></i>5.4 The Distribution of the Sample Mean</a></li>
 <li class="chapter" data-level="" data-path="ch-5-random-samples.html"><a href="ch-5-random-samples.html#the-distribution-of-a-linear-combination"><i class="fa fa-check"></i>5.5 The Distribution of a Linear Combination</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-6-point-estimation.html"><a href="ch-6-point-estimation.html"><i class="fa fa-check"></i>Ch. 6 Point Estimation</a><ul>
+<li class="chapter" data-level="" data-path="ch-6-point-estimation.html"><a href="ch-6-point-estimation.html"><i class="fa fa-check"></i>Ch. 6 Point Estimation</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-6-point-estimation.html"><a href="ch-6-point-estimation.html#some-general-concepts-of-point-estimation"><i class="fa fa-check"></i>6.1 Some General Concepts of Point Estimation</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-7-statistical-intervals-based-on-a-single-sample.html"><a href="ch-7-statistical-intervals-based-on-a-single-sample.html"><i class="fa fa-check"></i>Ch. 7 Statistical Intervals Based on a Single Sample</a><ul>
+<li class="chapter" data-level="" data-path="ch-7-statistical-intervals-based-on-a-single-sample.html"><a href="ch-7-statistical-intervals-based-on-a-single-sample.html"><i class="fa fa-check"></i>Ch. 7 Statistical Intervals Based on a Single Sample</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-7-statistical-intervals-based-on-a-single-sample.html"><a href="ch-7-statistical-intervals-based-on-a-single-sample.html#basic-properties-of-confidence-intervals"><i class="fa fa-check"></i>7.1 Basic Properties of Confidence Intervals</a></li>
 <li class="chapter" data-level="" data-path="ch-7-statistical-intervals-based-on-a-single-sample.html"><a href="ch-7-statistical-intervals-based-on-a-single-sample.html#large-sample-confidence-intervals-for-a-population-mean-and-proportion"><i class="fa fa-check"></i>7.2 Large-Sample Confidence Intervals for a Population Mean and Proportion</a></li>
 <li class="chapter" data-level="" data-path="ch-7-statistical-intervals-based-on-a-single-sample.html"><a href="ch-7-statistical-intervals-based-on-a-single-sample.html#intervals-based-on-a-normal-population-distribution"><i class="fa fa-check"></i>7.3 Intervals Based on a Normal Population Distribution</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-8-tests-of-hypotheses-based-on-a-single-sample.html"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html"><i class="fa fa-check"></i>Ch. 8 Tests of Hypotheses Based on a Single Sample</a><ul>
+<li class="chapter" data-level="" data-path="ch-8-tests-of-hypotheses-based-on-a-single-sample.html"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html"><i class="fa fa-check"></i>Ch. 8 Tests of Hypotheses Based on a Single Sample</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-8-tests-of-hypotheses-based-on-a-single-sample.html"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#hypotheses-and-test-procedures"><i class="fa fa-check"></i>8.1 Hypotheses and Test Procedures</a></li>
 <li><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#z-tests-for-hypotheses-about-a-population-mean">8.2 <em>z</em> Tests for Hypotheses about a Population Mean</a></li>
 <li><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#the-one-sample-t-test">8.3 The One-Sample <em>t</em> Test</a></li>
 <li class="chapter" data-level="" data-path="ch-8-tests-of-hypotheses-based-on-a-single-sample.html"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#tests-concerning-a-population-proportion"><i class="fa fa-check"></i>8.4 Tests Concerning a Population Proportion</a></li>
-<li class="chapter" data-level="" data-path="ch-8-tests-of-hypotheses-based-on-a-single-sample.html"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#practice-exercises-3"><i class="fa fa-check"></i>Practice Exercises</a></li>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#practice-exercises"><i class="fa fa-check"></i>Practice Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-9-inferences-based-on-two-samples.html"><a href="ch-9-inferences-based-on-two-samples.html"><i class="fa fa-check"></i>Ch. 9 Inferences Based on Two Samples</a><ul>
-<li><a href="ch-9-inferences-based-on-two-samples.html#z-tests-and-cis-for-a-difference-between-two-population-means">9.1 <span class="math inline">\(z\)</span> Tests and CI’s for a Difference Between Two Population Means</a><ul>
-<li class="chapter" data-level="" data-path="ch-9-inferences-based-on-two-samples.html"><a href="ch-9-inferences-based-on-two-samples.html#r-8"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="ch-9-inferences-based-on-two-samples.html"><a href="ch-9-inferences-based-on-two-samples.html"><i class="fa fa-check"></i>Ch. 9 Inferences Based on Two Samples</a>
+<ul>
+<li><a href="ch-9-inferences-based-on-two-samples.html#z-tests-and-cis-for-a-difference-between-two-population-means">9.1 <span class="math inline">\(z\)</span> Tests and CI’s for a Difference Between Two Population Means</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#r"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
 <li><a href="ch-9-inferences-based-on-two-samples.html#the-two-sample-t-test-and-ci">9.2 The Two-Sample <span class="math inline">\(t\)</span> Test and CI</a></li>
 <li class="chapter" data-level="" data-path="ch-9-inferences-based-on-two-samples.html"><a href="ch-9-inferences-based-on-two-samples.html#analysis-of-paired-data"><i class="fa fa-check"></i>9.3 Analysis of Paired Data</a></li>
-<li class="chapter" data-level="" data-path="ch-9-inferences-based-on-two-samples.html"><a href="ch-9-inferences-based-on-two-samples.html#inferences-concerning-a-difference-between-population-proportions"><i class="fa fa-check"></i>9.4 Inferences Concerning a Difference Between Population Proportions</a><ul>
-<li class="chapter" data-level="" data-path="ch-9-inferences-based-on-two-samples.html"><a href="ch-9-inferences-based-on-two-samples.html#r-9"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="ch-9-inferences-based-on-two-samples.html"><a href="ch-9-inferences-based-on-two-samples.html#inferences-concerning-a-difference-between-population-proportions"><i class="fa fa-check"></i>9.4 Inferences Concerning a Difference Between Population Proportions</a>
+<ul>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#r-1"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-2-conditional-probability.html"><a href="ch-2-conditional-probability.html"><i class="fa fa-check"></i>Ch. 2 Conditional Probability</a><ul>
+<li class="chapter" data-level="" data-path="ch-2-conditional-probability.html"><a href="ch-2-conditional-probability.html"><i class="fa fa-check"></i>Ch. 2 Conditional Probability</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-2-conditional-probability.html"><a href="ch-2-conditional-probability.html#resources"><i class="fa fa-check"></i>Resources</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-5-joint-probability.html"><a href="ch-5-joint-probability.html"><i class="fa fa-check"></i>Ch. 5 Joint Probability</a><ul>
+<li class="chapter" data-level="" data-path="ch-5-joint-probability.html"><a href="ch-5-joint-probability.html"><i class="fa fa-check"></i>Ch. 5 Joint Probability</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-5-joint-probability.html"><a href="ch-5-joint-probability.html#jointly-distributed-random-variables"><i class="fa fa-check"></i>5.1 Jointly Distributed Random Variables</a></li>
 <li class="chapter" data-level="" data-path="ch-5-joint-probability.html"><a href="ch-5-joint-probability.html#expected-values-covariance-and-correlation"><i class="fa fa-check"></i>5.2 Expected Values, Covariance, and Correlation</a></li>
-<li class="chapter" data-level="" data-path="ch-5-joint-probability.html"><a href="ch-5-joint-probability.html#resources-1"><i class="fa fa-check"></i>Resources</a></li>
+<li class="chapter" data-level="" data-path="ch-2-conditional-probability.html"><a href="ch-2-conditional-probability.html#resources"><i class="fa fa-check"></i>Resources</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-14-chi-squared-test.html"><a href="ch-14-chi-squared-test.html"><i class="fa fa-check"></i>Ch. 14 Chi Squared Test</a><ul>
+<li class="chapter" data-level="" data-path="ch-14-chi-squared-test.html"><a href="ch-14-chi-squared-test.html"><i class="fa fa-check"></i>Ch. 14 Chi Squared Test</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-14-chi-squared-test.html"><a href="ch-14-chi-squared-test.html#two-way-contingency-tables"><i class="fa fa-check"></i>14.3 Two-Way Contingency Tables</a></li>
-<li class="chapter" data-level="" data-path="ch-14-chi-squared-test.html"><a href="ch-14-chi-squared-test.html#resources-2"><i class="fa fa-check"></i>Resources</a></li>
-<li class="chapter" data-level="" data-path="ch-14-chi-squared-test.html"><a href="ch-14-chi-squared-test.html#r-10"><i class="fa fa-check"></i>R</a></li>
-<li class="chapter" data-level="" data-path="ch-14-chi-squared-test.html"><a href="ch-14-chi-squared-test.html#practice-exercises-4"><i class="fa fa-check"></i>Practice Exercises</a></li>
+<li class="chapter" data-level="" data-path="ch-2-conditional-probability.html"><a href="ch-2-conditional-probability.html#resources"><i class="fa fa-check"></i>Resources</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#r"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#practice-exercises"><i class="fa fa-check"></i>Practice Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html"><i class="fa fa-check"></i>Ch. 12 Linear Regression</a><ul>
+<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html"><i class="fa fa-check"></i>Ch. 12 Linear Regression</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#the-simple-linear-regression-model"><i class="fa fa-check"></i>12.1 The Simple Linear Regression Model</a></li>
-<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#estimating-model-parameters"><i class="fa fa-check"></i>12.2 Estimating Model Parameters</a><ul>
-<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#resources-3"><i class="fa fa-check"></i>Resources</a></li>
-<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#r-11"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#estimating-model-parameters"><i class="fa fa-check"></i>12.2 Estimating Model Parameters</a>
+<ul>
+<li class="chapter" data-level="" data-path="ch-2-conditional-probability.html"><a href="ch-2-conditional-probability.html#resources"><i class="fa fa-check"></i>Resources</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#r"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#correlation"><i class="fa fa-check"></i>12.5 Correlation</a><ul>
-<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#resources-4"><i class="fa fa-check"></i>Resources</a></li>
-<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#r-12"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#correlation"><i class="fa fa-check"></i>12.5 Correlation</a>
+<ul>
+<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#resources-1"><i class="fa fa-check"></i>Resources</a></li>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#r-1"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#practice-exercises-5"><i class="fa fa-check"></i>Practice Exercises</a></li>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#practice-exercises"><i class="fa fa-check"></i>Practice Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-13-nonlinear-and-multiple-regression.html"><a href="ch-13-nonlinear-and-multiple-regression.html"><i class="fa fa-check"></i>Ch. 13 Nonlinear and Multiple Regression</a><ul>
+<li class="chapter" data-level="" data-path="ch-13-nonlinear-and-multiple-regression.html"><a href="ch-13-nonlinear-and-multiple-regression.html"><i class="fa fa-check"></i>Ch. 13 Nonlinear and Multiple Regression</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-13-nonlinear-and-multiple-regression.html"><a href="ch-13-nonlinear-and-multiple-regression.html#assessing-model-adequacy"><i class="fa fa-check"></i>13.1 Assessing Model Adequacy</a></li>
 </ul></li>
 <li class="divider"></li>
@@ -279,7 +312,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Stat 1201 Supplemental Materials</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Stat 1201 Resources</a>
           </h1>
         </div>
 
@@ -287,40 +320,40 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="ch.-8-tests-of-hypotheses-based-on-a-single-sample" class="section level1 unnumbered">
+<div id="ch.-8-tests-of-hypotheses-based-on-a-single-sample" class="section level1 unnumbered" number="">
 <h1>Ch. 8 Tests of Hypotheses Based on a Single Sample</h1>
 <p>Sections covered: 8.1, 8.2, 8.3, 8.4</p>
-<div id="hypotheses-and-test-procedures" class="section level2 unnumbered">
+<div id="hypotheses-and-test-procedures" class="section level2 unnumbered" number="">
 <h2>8.1 Hypotheses and Test Procedures</h2>
 <p>Note: We will cover the beginning of the section and then return to errors in hypothesis testing (beginning on page 317) after Section 8.2.</p>
 <p>Skip: Examples 8.1 and 8.4 (hypothesis testing and type II error calculation for small sample proportions)</p>
 <p>xkcd cartoon: <a href="https://xkcd.com/882/" target="_blank">“Significant”</a> (Jelly Beans Cause Acne!)</p>
 </div>
-<div id="z-tests-for-hypotheses-about-a-population-mean" class="section level2 unnumbered">
+<div id="z-tests-for-hypotheses-about-a-population-mean" class="section level2 unnumbered" number="">
 <h2>8.2 <em>z</em> Tests for Hypotheses about a Population Mean</h2>
 <p>Skip: calculating Type II error and sample size needed for two sided tests (3rd and 5th formulas in the blue box on p. 331)</p>
 </div>
-<div id="the-one-sample-t-test" class="section level2 unnumbered">
+<div id="the-one-sample-t-test" class="section level2 unnumbered" number="">
 <h2>8.3 The One-Sample <em>t</em> Test</h2>
 <p>Skip: <span class="math inline">\(\beta\)</span> and Sample Size Determination (p. 338) to end of section</p>
 </div>
-<div id="tests-concerning-a-population-proportion" class="section level2 unnumbered">
+<div id="tests-concerning-a-population-proportion" class="section level2 unnumbered" number="">
 <h2>8.4 Tests Concerning a Population Proportion</h2>
 <p>Skip: <span class="math inline">\(\beta\)</span> and Sample Size Determination (pp. 348-349)</p>
 </div>
-<div id="practice-exercises-3" class="section level2 unnumbered">
+<div id="practice-exercises" class="section level2 unnumbered" number="">
 <h2>Practice Exercises</h2>
 <p><strong><span class="math inline">\(1.\)</span> (One sample test, Values given)</strong> We wish to test whether a scale needs to be recalibrated. If it’s working, a 10 pound weight should weigh 10 pounds. We decide to test it by weighing the same weight, which we know to be precisely 10 pounds, 25 times. We know the weights from this scale are normally distributed and independent, with a true standard deviation of <span class="math inline">\(\sigma\)</span> = 1. Our sample mean (x) is 9.85. Should we conclude that recalibration is necessary x (that is, the scale is off) or not necessary (the scale isn’t conclusively off)?</p>
 <p><span class="math inline">\(α = .01​\)</span></p>
 <p><span class="math inline">\(H_0: \mu = 10\)</span></p>
 <p><span class="math inline">\(H_A: \mu \neq 10\)</span></p>
 <p>Test statistic: <span class="math inline">\(z=\frac{\bar{X} - \mu_0}{\sigma/\sqrt{n}}\)</span></p>
-<div class="sourceCode" id="cb189"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb189-1" data-line-number="1">z &lt;-<span class="st"> </span>(<span class="fl">9.85</span><span class="dv">-10</span>)<span class="op">/</span>(<span class="dv">1</span><span class="op">/</span><span class="kw">sqrt</span>(<span class="dv">25</span>))</a>
-<a class="sourceLine" id="cb189-2" data-line-number="2">z</a></code></pre></div>
+<div class="sourceCode" id="cb189"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb189-1"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb189-1"></a>z &lt;-<span class="st"> </span>(<span class="fl">9.85</span><span class="dv">-10</span>)<span class="op">/</span>(<span class="dv">1</span><span class="op">/</span><span class="kw">sqrt</span>(<span class="dv">25</span>))</span>
+<span id="cb189-2"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb189-2"></a>z</span></code></pre></div>
 <pre><code>## [1] -0.75</code></pre>
 <p>Determine the p-value:</p>
-<div class="sourceCode" id="cb191"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb191-1" data-line-number="1">pval &lt;-<span class="st"> </span><span class="kw">pnorm</span>(z)<span class="op">*</span><span class="dv">2</span></a>
-<a class="sourceLine" id="cb191-2" data-line-number="2">pval</a></code></pre></div>
+<div class="sourceCode" id="cb191"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb191-1"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb191-1"></a>pval &lt;-<span class="st"> </span><span class="kw">pnorm</span>(z)<span class="op">*</span><span class="dv">2</span></span>
+<span id="cb191-2"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb191-2"></a>pval</span></code></pre></div>
 <pre><code>## [1] 0.4532547</code></pre>
 <p>Since 0.453 &gt; .05, we do not reject the null hypothesis. In other words, even if the scale were perfectly calibrated (<span class="math inline">\(\mu = 10\)</span>) there is over a 45% probability that we would get a sample mean less than or equal to 9.85 (or equal to or greater than 10.15), that is, the same or further from the true mean than we found. Therefore, on the basis on these results, recaliberation is not necessary.</p>
 <hr />
@@ -329,23 +362,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><span class="math inline">\(H_0: \mu = 4.8\)</span></p>
 <p><span class="math inline">\(H_A: \mu &gt; 4.8\)</span></p>
 <p>Use the following code to store the 50 values in the sample in a variable called <code>setosa</code>. (This works because <code>iris</code> is a built-in dataset in R.)</p>
-<div class="sourceCode" id="cb193"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb193-1" data-line-number="1">setosa &lt;-<span class="st"> </span>iris[iris<span class="op">$</span>Species <span class="op">==</span><span class="st"> &quot;setosa&quot;</span>,]</a></code></pre></div>
+<div class="sourceCode" id="cb193"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb193-1"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb193-1"></a>setosa &lt;-<span class="st"> </span>iris[iris<span class="op">$</span>Species <span class="op">==</span><span class="st"> &quot;setosa&quot;</span>,]</span></code></pre></div>
 <p>[Ans]</p>
 <p>Test statistic: <span class="math inline">\(z=\frac{\bar{X} - \mu_0}{s/\sqrt{n}}\)</span></p>
-<div class="sourceCode" id="cb194"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb194-1" data-line-number="1">z &lt;-<span class="st"> </span>(<span class="kw">mean</span>(setosa<span class="op">$</span>Sepal.Length)<span class="op">-</span><span class="fl">4.8</span>)<span class="op">/</span><span class="kw">sqrt</span>(<span class="kw">var</span>(setosa<span class="op">$</span>Sepal.Length)<span class="op">/</span><span class="dv">50</span>)</a>
-<a class="sourceLine" id="cb194-2" data-line-number="2">z</a></code></pre></div>
+<div class="sourceCode" id="cb194"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb194-1"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb194-1"></a>z &lt;-<span class="st"> </span>(<span class="kw">mean</span>(setosa<span class="op">$</span>Sepal.Length)<span class="op">-</span><span class="fl">4.8</span>)<span class="op">/</span><span class="kw">sqrt</span>(<span class="kw">var</span>(setosa<span class="op">$</span>Sepal.Length)<span class="op">/</span><span class="dv">50</span>)</span>
+<span id="cb194-2"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb194-2"></a>z</span></code></pre></div>
 <pre><code>## [1] 4.132433</code></pre>
-<div class="sourceCode" id="cb196"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb196-1" data-line-number="1">pval &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">-</span><span class="st"> </span><span class="kw">pnorm</span>(z)</a>
-<a class="sourceLine" id="cb196-2" data-line-number="2">pval</a></code></pre></div>
-<pre><code>## [1] 1.794718e-05</code></pre>
-<div class="sourceCode" id="cb198"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb198-1" data-line-number="1"><span class="co"># simpler approach</span></a>
-<a class="sourceLine" id="cb198-2" data-line-number="2"><span class="co"># p-values might be a bit different due to approximation of t</span></a>
-<a class="sourceLine" id="cb198-3" data-line-number="3"><span class="kw">t.test</span>(setosa<span class="op">$</span>Sepal.Length, <span class="dt">alternative =</span> <span class="st">&quot;greater&quot;</span>, <span class="dt">mu =</span> <span class="fl">4.8</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb196"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb196-1"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb196-1"></a>pval &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">-</span><span class="st"> </span><span class="kw">pnorm</span>(z)</span>
+<span id="cb196-2"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb196-2"></a>pval</span></code></pre></div>
+<pre><code>## [1] 0.00001794718</code></pre>
+<div class="sourceCode" id="cb198"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb198-1"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb198-1"></a><span class="co"># simpler approach</span></span>
+<span id="cb198-2"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb198-2"></a><span class="co"># p-values might be a bit different due to approximation of t</span></span>
+<span id="cb198-3"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb198-3"></a><span class="kw">t.test</span>(setosa<span class="op">$</span>Sepal.Length, <span class="dt">alternative =</span> <span class="st">&quot;greater&quot;</span>, <span class="dt">mu =</span> <span class="fl">4.8</span>)</span></code></pre></div>
 <pre><code>## 
-##  One Sample t-test
+## 	One Sample t-test
 ## 
 ## data:  setosa$Sepal.Length
-## t = 4.1324, df = 49, p-value = 6.986e-05
+## t = 4.1324, df = 49, p-value = 0.00006986
 ## alternative hypothesis: true mean is greater than 4.8
 ## 95 percent confidence interval:
 ##  4.922425      Inf

@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Ch. 3 Discrete Distributions | Stat 1201 Supplemental Materials</title>
-  <meta name="description" content="Supplemental resources for Stat1201" />
-  <meta name="generator" content="bookdown 0.16 and GitBook 2.6.7" />
+  <title>Ch. 3 Discrete Distributions | Stat 1201 Resources</title>
+  <meta name="description" content="Stat 1201" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Ch. 3 Discrete Distributions | Stat 1201 Supplemental Materials" />
+  <meta property="og:title" content="Ch. 3 Discrete Distributions | Stat 1201 Resources" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://jtr13.github.io/1201/" />
   
-  <meta property="og:description" content="Supplemental resources for Stat1201" />
+  <meta property="og:description" content="Stat 1201" />
   <meta name="github-repo" content="jtr13/1201" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Ch. 3 Discrete Distributions | Stat 1201 Supplemental Materials" />
+  <meta name="twitter:title" content="Ch. 3 Discrete Distributions | Stat 1201 Resources" />
   
-  <meta name="twitter:description" content="Supplemental resources for Stat1201" />
+  <meta name="twitter:description" content="Stat 1201" />
   
 
 <meta name="author" content="Joyce Robbins" />
 
 
-<meta name="date" content="2020-04-28" />
+<meta name="date" content="2020-09-07" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,6 +33,7 @@
   
 <link rel="prev" href="ch-2-probability.html"/>
 <link rel="next" href="ch-4-continuous-random-variables-and-probability-distributions.html"/>
+<script src="libs/header-attrs-2.3/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -50,28 +51,30 @@
 
 
 
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -80,9 +83,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -128,34 +131,39 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="index.html"><b>STAT1201 Resources/</b></a></li>
+<li><a href="index.html"><b>1201.info</b></a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Course material</a><ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#syllabus"><i class="fa fa-check"></i>Syllabus</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Syllabus</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-material-and-assignments"><i class="fa fa-check"></i>Course material and assignments</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#zoom-info"><i class="fa fa-check"></i>Zoom info</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#instructor"><i class="fa fa-check"></i>Instructor</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#teaching-assistants"><i class="fa fa-check"></i>Teaching assistants</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#teaching-assistant"><i class="fa fa-check"></i>Teaching assistant</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-description"><i class="fa fa-check"></i>Course description</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#resources-and-readings"><i class="fa fa-check"></i>Resources and readings</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#resources-and-readings"><i class="fa fa-check"></i>Resources and readings</a>
+<ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#required-text"><i class="fa fa-check"></i>Required text</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#recommended-text"><i class="fa fa-check"></i>Recommended text</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#other-materials"><i class="fa fa-check"></i>Other materials</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#grading-procedures"><i class="fa fa-check"></i>Grading procedures</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#class-policies"><i class="fa fa-check"></i>Class policies</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#homework"><i class="fa fa-check"></i>Homework</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#problem-sets"><i class="fa fa-check"></i>Problem Sets</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#r"><i class="fa fa-check"></i>R</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#academic-integrity"><i class="fa fa-check"></i>Academic Integrity</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#tests"><i class="fa fa-check"></i>Tests</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#tests"><i class="fa fa-check"></i>Tests</a>
+<ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#accommodations-for-students-registered-with-disability-services"><i class="fa fa-check"></i>Accommodations for students registered with Disability Services</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#getting-help"><i class="fa fa-check"></i>Getting help</a></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-content"><i class="fa fa-check"></i>Course content</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a><ul>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a>
+<ul>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#general-study-tips"><i class="fa fa-check"></i>General study tips</a></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#installing-r"><i class="fa fa-check"></i>Installing R</a></li>
-<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#getting-started-with-r"><i class="fa fa-check"></i>Getting Started with R</a><ul>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#getting-started-with-r"><i class="fa fa-check"></i>Getting Started with R</a>
+<ul>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#quick-intro-to-rstudio-console"><i class="fa fa-check"></i>Quick intro to RStudio Console</a></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#saving-your-code-as-an-.r-file"><i class="fa fa-check"></i>Saving your code as an .R file</a></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#convert-.r-file-to-.html"><i class="fa fa-check"></i>Convert .R file to .html</a></li>
@@ -165,106 +173,131 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#contact"><i class="fa fa-check"></i>Contact</a></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#license"><i class="fa fa-check"></i>License</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html"><i class="fa fa-check"></i>Ch. 1 Descriptive Statistics</a><ul>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html"><i class="fa fa-check"></i>Ch. 1 Descriptive Statistics</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#populations-samples-and-processes"><i class="fa fa-check"></i>1.1 Populations, Samples, and Processes</a></li>
-<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#pictorial-and-tabular-methods-in-descriptive-statistics"><i class="fa fa-check"></i>1.2 Pictorial and Tabular Methods in Descriptive Statistics</a><ul>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#pictorial-and-tabular-methods-in-descriptive-statistics"><i class="fa fa-check"></i>1.2 Pictorial and Tabular Methods in Descriptive Statistics</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#r"><i class="fa fa-check"></i>R</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#measures-of-location"><i class="fa fa-check"></i>1.3 Measures of location</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#r-1"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#measures-of-location"><i class="fa fa-check"></i>1.3 Measures of location</a><ul>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#measures-of-variability"><i class="fa fa-check"></i>1.4 Measures of variability</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#r-2"><i class="fa fa-check"></i>R</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#measures-of-variability"><i class="fa fa-check"></i>1.4 Measures of variability</a><ul>
-<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#r-3"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#practice-exercises"><i class="fa fa-check"></i>Practice Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html"><i class="fa fa-check"></i>Ch. 2 Probability</a><ul>
-<li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html#sample-spaces-and-events"><i class="fa fa-check"></i>2.1 Sample Spaces and Events</a><ul>
+<li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html"><i class="fa fa-check"></i>Ch. 2 Probability</a>
+<ul>
+<li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html#sample-spaces-and-events"><i class="fa fa-check"></i>2.1 Sample Spaces and Events</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html#humor"><i class="fa fa-check"></i>Humor</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html#axioms-interpretations-and-properties-of-probability"><i class="fa fa-check"></i>2.2 Axioms, Interpretations, and Properties of Probability</a></li>
-<li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html#counting-techniques"><i class="fa fa-check"></i>2.3 Counting Techniques</a><ul>
-<li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html#r-4"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html#counting-techniques"><i class="fa fa-check"></i>2.3 Counting Techniques</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#r"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html#independence"><i class="fa fa-check"></i>2.5 Independence</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html"><i class="fa fa-check"></i>Ch. 3 Discrete Distributions</a><ul>
+<li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html"><i class="fa fa-check"></i>Ch. 3 Discrete Distributions</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#expected-value"><i class="fa fa-check"></i>3.3 Expected value</a></li>
 <li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#variance"><i class="fa fa-check"></i>3.3 Variance</a></li>
 <li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#variance-alternative-method"><i class="fa fa-check"></i>3.3 Variance (alternative method)</a></li>
-<li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#binominal-theorem"><i class="fa fa-check"></i>3.4 Binominal Theorem</a><ul>
-<li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#r-5"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#binominal-theorem"><i class="fa fa-check"></i>3.4 Binominal Theorem</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#r"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#hypergeometric"><i class="fa fa-check"></i>3.5 Hypergeometric</a></li>
 <li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#poisson"><i class="fa fa-check"></i>3.6 Poisson</a></li>
-<li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#practice-exercises-1"><i class="fa fa-check"></i>Practice Exercises</a></li>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#practice-exercises"><i class="fa fa-check"></i>Practice Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html"><i class="fa fa-check"></i>Ch. 4 Continuous Random Variables and Probability Distributions</a><ul>
+<li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html"><i class="fa fa-check"></i>Ch. 4 Continuous Random Variables and Probability Distributions</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#probability-density-functions"><i class="fa fa-check"></i>4.1 Probability density functions</a></li>
-<li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#r-6"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#r"><i class="fa fa-check"></i>R</a></li>
 <li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cumulative-distribution-functions-and-expected-values"><i class="fa fa-check"></i>4.2 Cumulative Distribution Functions and Expected Values</a></li>
-<li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#the-normal-distribution"><i class="fa fa-check"></i>4.3 The Normal Distribution</a><ul>
-<li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#r-7"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#the-normal-distribution"><i class="fa fa-check"></i>4.3 The Normal Distribution</a>
+<ul>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#r-1"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#practice-exercises-2"><i class="fa fa-check"></i>Practice Exercises</a></li>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#practice-exercises"><i class="fa fa-check"></i>Practice Exercises</a></li>
 <li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#extra-practice-chapters-1---4"><i class="fa fa-check"></i>Extra Practice Chapters 1 - 4</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-5-random-samples.html"><a href="ch-5-random-samples.html"><i class="fa fa-check"></i>Ch. 5 Random Samples</a><ul>
+<li class="chapter" data-level="" data-path="ch-5-random-samples.html"><a href="ch-5-random-samples.html"><i class="fa fa-check"></i>Ch. 5 Random Samples</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-5-random-samples.html"><a href="ch-5-random-samples.html#the-distribution-of-the-sample-mean"><i class="fa fa-check"></i>5.4 The Distribution of the Sample Mean</a></li>
 <li class="chapter" data-level="" data-path="ch-5-random-samples.html"><a href="ch-5-random-samples.html#the-distribution-of-a-linear-combination"><i class="fa fa-check"></i>5.5 The Distribution of a Linear Combination</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-6-point-estimation.html"><a href="ch-6-point-estimation.html"><i class="fa fa-check"></i>Ch. 6 Point Estimation</a><ul>
+<li class="chapter" data-level="" data-path="ch-6-point-estimation.html"><a href="ch-6-point-estimation.html"><i class="fa fa-check"></i>Ch. 6 Point Estimation</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-6-point-estimation.html"><a href="ch-6-point-estimation.html#some-general-concepts-of-point-estimation"><i class="fa fa-check"></i>6.1 Some General Concepts of Point Estimation</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-7-statistical-intervals-based-on-a-single-sample.html"><a href="ch-7-statistical-intervals-based-on-a-single-sample.html"><i class="fa fa-check"></i>Ch. 7 Statistical Intervals Based on a Single Sample</a><ul>
+<li class="chapter" data-level="" data-path="ch-7-statistical-intervals-based-on-a-single-sample.html"><a href="ch-7-statistical-intervals-based-on-a-single-sample.html"><i class="fa fa-check"></i>Ch. 7 Statistical Intervals Based on a Single Sample</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-7-statistical-intervals-based-on-a-single-sample.html"><a href="ch-7-statistical-intervals-based-on-a-single-sample.html#basic-properties-of-confidence-intervals"><i class="fa fa-check"></i>7.1 Basic Properties of Confidence Intervals</a></li>
 <li class="chapter" data-level="" data-path="ch-7-statistical-intervals-based-on-a-single-sample.html"><a href="ch-7-statistical-intervals-based-on-a-single-sample.html#large-sample-confidence-intervals-for-a-population-mean-and-proportion"><i class="fa fa-check"></i>7.2 Large-Sample Confidence Intervals for a Population Mean and Proportion</a></li>
 <li class="chapter" data-level="" data-path="ch-7-statistical-intervals-based-on-a-single-sample.html"><a href="ch-7-statistical-intervals-based-on-a-single-sample.html#intervals-based-on-a-normal-population-distribution"><i class="fa fa-check"></i>7.3 Intervals Based on a Normal Population Distribution</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-8-tests-of-hypotheses-based-on-a-single-sample.html"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html"><i class="fa fa-check"></i>Ch. 8 Tests of Hypotheses Based on a Single Sample</a><ul>
+<li class="chapter" data-level="" data-path="ch-8-tests-of-hypotheses-based-on-a-single-sample.html"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html"><i class="fa fa-check"></i>Ch. 8 Tests of Hypotheses Based on a Single Sample</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-8-tests-of-hypotheses-based-on-a-single-sample.html"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#hypotheses-and-test-procedures"><i class="fa fa-check"></i>8.1 Hypotheses and Test Procedures</a></li>
 <li><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#z-tests-for-hypotheses-about-a-population-mean">8.2 <em>z</em> Tests for Hypotheses about a Population Mean</a></li>
 <li><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#the-one-sample-t-test">8.3 The One-Sample <em>t</em> Test</a></li>
 <li class="chapter" data-level="" data-path="ch-8-tests-of-hypotheses-based-on-a-single-sample.html"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#tests-concerning-a-population-proportion"><i class="fa fa-check"></i>8.4 Tests Concerning a Population Proportion</a></li>
-<li class="chapter" data-level="" data-path="ch-8-tests-of-hypotheses-based-on-a-single-sample.html"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#practice-exercises-3"><i class="fa fa-check"></i>Practice Exercises</a></li>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#practice-exercises"><i class="fa fa-check"></i>Practice Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-9-inferences-based-on-two-samples.html"><a href="ch-9-inferences-based-on-two-samples.html"><i class="fa fa-check"></i>Ch. 9 Inferences Based on Two Samples</a><ul>
-<li><a href="ch-9-inferences-based-on-two-samples.html#z-tests-and-cis-for-a-difference-between-two-population-means">9.1 <span class="math inline">\(z\)</span> Tests and CI’s for a Difference Between Two Population Means</a><ul>
-<li class="chapter" data-level="" data-path="ch-9-inferences-based-on-two-samples.html"><a href="ch-9-inferences-based-on-two-samples.html#r-8"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="ch-9-inferences-based-on-two-samples.html"><a href="ch-9-inferences-based-on-two-samples.html"><i class="fa fa-check"></i>Ch. 9 Inferences Based on Two Samples</a>
+<ul>
+<li><a href="ch-9-inferences-based-on-two-samples.html#z-tests-and-cis-for-a-difference-between-two-population-means">9.1 <span class="math inline">\(z\)</span> Tests and CI’s for a Difference Between Two Population Means</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#r"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
 <li><a href="ch-9-inferences-based-on-two-samples.html#the-two-sample-t-test-and-ci">9.2 The Two-Sample <span class="math inline">\(t\)</span> Test and CI</a></li>
 <li class="chapter" data-level="" data-path="ch-9-inferences-based-on-two-samples.html"><a href="ch-9-inferences-based-on-two-samples.html#analysis-of-paired-data"><i class="fa fa-check"></i>9.3 Analysis of Paired Data</a></li>
-<li class="chapter" data-level="" data-path="ch-9-inferences-based-on-two-samples.html"><a href="ch-9-inferences-based-on-two-samples.html#inferences-concerning-a-difference-between-population-proportions"><i class="fa fa-check"></i>9.4 Inferences Concerning a Difference Between Population Proportions</a><ul>
-<li class="chapter" data-level="" data-path="ch-9-inferences-based-on-two-samples.html"><a href="ch-9-inferences-based-on-two-samples.html#r-9"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="ch-9-inferences-based-on-two-samples.html"><a href="ch-9-inferences-based-on-two-samples.html#inferences-concerning-a-difference-between-population-proportions"><i class="fa fa-check"></i>9.4 Inferences Concerning a Difference Between Population Proportions</a>
+<ul>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#r-1"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-2-conditional-probability.html"><a href="ch-2-conditional-probability.html"><i class="fa fa-check"></i>Ch. 2 Conditional Probability</a><ul>
+<li class="chapter" data-level="" data-path="ch-2-conditional-probability.html"><a href="ch-2-conditional-probability.html"><i class="fa fa-check"></i>Ch. 2 Conditional Probability</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-2-conditional-probability.html"><a href="ch-2-conditional-probability.html#resources"><i class="fa fa-check"></i>Resources</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-5-joint-probability.html"><a href="ch-5-joint-probability.html"><i class="fa fa-check"></i>Ch. 5 Joint Probability</a><ul>
+<li class="chapter" data-level="" data-path="ch-5-joint-probability.html"><a href="ch-5-joint-probability.html"><i class="fa fa-check"></i>Ch. 5 Joint Probability</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-5-joint-probability.html"><a href="ch-5-joint-probability.html#jointly-distributed-random-variables"><i class="fa fa-check"></i>5.1 Jointly Distributed Random Variables</a></li>
 <li class="chapter" data-level="" data-path="ch-5-joint-probability.html"><a href="ch-5-joint-probability.html#expected-values-covariance-and-correlation"><i class="fa fa-check"></i>5.2 Expected Values, Covariance, and Correlation</a></li>
-<li class="chapter" data-level="" data-path="ch-5-joint-probability.html"><a href="ch-5-joint-probability.html#resources-1"><i class="fa fa-check"></i>Resources</a></li>
+<li class="chapter" data-level="" data-path="ch-2-conditional-probability.html"><a href="ch-2-conditional-probability.html#resources"><i class="fa fa-check"></i>Resources</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-14-chi-squared-test.html"><a href="ch-14-chi-squared-test.html"><i class="fa fa-check"></i>Ch. 14 Chi Squared Test</a><ul>
+<li class="chapter" data-level="" data-path="ch-14-chi-squared-test.html"><a href="ch-14-chi-squared-test.html"><i class="fa fa-check"></i>Ch. 14 Chi Squared Test</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-14-chi-squared-test.html"><a href="ch-14-chi-squared-test.html#two-way-contingency-tables"><i class="fa fa-check"></i>14.3 Two-Way Contingency Tables</a></li>
-<li class="chapter" data-level="" data-path="ch-14-chi-squared-test.html"><a href="ch-14-chi-squared-test.html#resources-2"><i class="fa fa-check"></i>Resources</a></li>
-<li class="chapter" data-level="" data-path="ch-14-chi-squared-test.html"><a href="ch-14-chi-squared-test.html#r-10"><i class="fa fa-check"></i>R</a></li>
-<li class="chapter" data-level="" data-path="ch-14-chi-squared-test.html"><a href="ch-14-chi-squared-test.html#practice-exercises-4"><i class="fa fa-check"></i>Practice Exercises</a></li>
+<li class="chapter" data-level="" data-path="ch-2-conditional-probability.html"><a href="ch-2-conditional-probability.html#resources"><i class="fa fa-check"></i>Resources</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#r"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#practice-exercises"><i class="fa fa-check"></i>Practice Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html"><i class="fa fa-check"></i>Ch. 12 Linear Regression</a><ul>
+<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html"><i class="fa fa-check"></i>Ch. 12 Linear Regression</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#the-simple-linear-regression-model"><i class="fa fa-check"></i>12.1 The Simple Linear Regression Model</a></li>
-<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#estimating-model-parameters"><i class="fa fa-check"></i>12.2 Estimating Model Parameters</a><ul>
-<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#resources-3"><i class="fa fa-check"></i>Resources</a></li>
-<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#r-11"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#estimating-model-parameters"><i class="fa fa-check"></i>12.2 Estimating Model Parameters</a>
+<ul>
+<li class="chapter" data-level="" data-path="ch-2-conditional-probability.html"><a href="ch-2-conditional-probability.html#resources"><i class="fa fa-check"></i>Resources</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#r"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#correlation"><i class="fa fa-check"></i>12.5 Correlation</a><ul>
-<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#resources-4"><i class="fa fa-check"></i>Resources</a></li>
-<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#r-12"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#correlation"><i class="fa fa-check"></i>12.5 Correlation</a>
+<ul>
+<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#resources-1"><i class="fa fa-check"></i>Resources</a></li>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#r-1"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#practice-exercises-5"><i class="fa fa-check"></i>Practice Exercises</a></li>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#practice-exercises"><i class="fa fa-check"></i>Practice Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-13-nonlinear-and-multiple-regression.html"><a href="ch-13-nonlinear-and-multiple-regression.html"><i class="fa fa-check"></i>Ch. 13 Nonlinear and Multiple Regression</a><ul>
+<li class="chapter" data-level="" data-path="ch-13-nonlinear-and-multiple-regression.html"><a href="ch-13-nonlinear-and-multiple-regression.html"><i class="fa fa-check"></i>Ch. 13 Nonlinear and Multiple Regression</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-13-nonlinear-and-multiple-regression.html"><a href="ch-13-nonlinear-and-multiple-regression.html#assessing-model-adequacy"><i class="fa fa-check"></i>13.1 Assessing Model Adequacy</a></li>
 </ul></li>
 <li class="divider"></li>
@@ -279,7 +312,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Stat 1201 Supplemental Materials</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Stat 1201 Resources</a>
           </h1>
         </div>
 
@@ -287,81 +320,81 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="ch.-3-discrete-distributions" class="section level1 unnumbered">
+<div id="ch.-3-discrete-distributions" class="section level1 unnumbered" number="">
 <h1>Ch. 3 Discrete Distributions</h1>
 <p>Sections covered: 3.1 - 3.5</p>
-<div id="expected-value" class="section level2 unnumbered">
+<div id="expected-value" class="section level2 unnumbered" number="">
 <h2>3.3 Expected value</h2>
-<div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb73-1" data-line-number="1">x &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">:</span><span class="dv">5</span></a>
-<a class="sourceLine" id="cb73-2" data-line-number="2">x</a></code></pre></div>
+<div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb73-1"><a href="ch-3-discrete-distributions.html#cb73-1"></a>x &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">:</span><span class="dv">5</span></span>
+<span id="cb73-2"><a href="ch-3-discrete-distributions.html#cb73-2"></a>x</span></code></pre></div>
 <pre><code>## [1] 1 2 3 4 5</code></pre>
-<div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb75-1" data-line-number="1">px &lt;-<span class="st"> </span><span class="kw">c</span>(.<span class="dv">1</span>, <span class="fl">.15</span>, <span class="fl">.2</span>, <span class="fl">.25</span>, <span class="fl">.3</span>)</a>
-<a class="sourceLine" id="cb75-2" data-line-number="2">px</a></code></pre></div>
+<div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb75-1"><a href="ch-3-discrete-distributions.html#cb75-1"></a>px &lt;-<span class="st"> </span><span class="kw">c</span>(.<span class="dv">1</span>, <span class="fl">.15</span>, <span class="fl">.2</span>, <span class="fl">.25</span>, <span class="fl">.3</span>)</span>
+<span id="cb75-2"><a href="ch-3-discrete-distributions.html#cb75-2"></a>px</span></code></pre></div>
 <pre><code>## [1] 0.10 0.15 0.20 0.25 0.30</code></pre>
-<div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb77-1" data-line-number="1">x<span class="op">*</span>px</a></code></pre></div>
+<div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb77-1"><a href="ch-3-discrete-distributions.html#cb77-1"></a>x<span class="op">*</span>px</span></code></pre></div>
 <pre><code>## [1] 0.1 0.3 0.6 1.0 1.5</code></pre>
-<div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb79-1" data-line-number="1"><span class="kw">sum</span>(x<span class="op">*</span>px)    <span class="co"># E(X)</span></a></code></pre></div>
+<div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb79-1"><a href="ch-3-discrete-distributions.html#cb79-1"></a><span class="kw">sum</span>(x<span class="op">*</span>px)    <span class="co"># E(X)</span></span></code></pre></div>
 <pre><code>## [1] 3.5</code></pre>
 </div>
-<div id="variance" class="section level2 unnumbered">
+<div id="variance" class="section level2 unnumbered" number="">
 <h2>3.3 Variance</h2>
-<div class="sourceCode" id="cb81"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb81-1" data-line-number="1">x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span></a></code></pre></div>
+<div class="sourceCode" id="cb81"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb81-1"><a href="ch-3-discrete-distributions.html#cb81-1"></a>x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span></span></code></pre></div>
 <pre><code>## [1] -2.5 -1.5 -0.5  0.5  1.5</code></pre>
-<div class="sourceCode" id="cb83"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb83-1" data-line-number="1">(x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span>)<span class="op">^</span><span class="dv">2</span></a></code></pre></div>
+<div class="sourceCode" id="cb83"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb83-1"><a href="ch-3-discrete-distributions.html#cb83-1"></a>(x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span>)<span class="op">^</span><span class="dv">2</span></span></code></pre></div>
 <pre><code>## [1] 6.25 2.25 0.25 0.25 2.25</code></pre>
-<div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb85-1" data-line-number="1">((x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span>)<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px</a></code></pre></div>
+<div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb85-1"><a href="ch-3-discrete-distributions.html#cb85-1"></a>((x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span>)<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px</span></code></pre></div>
 <pre><code>## [1] 0.6250 0.3375 0.0500 0.0625 0.6750</code></pre>
-<div class="sourceCode" id="cb87"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb87-1" data-line-number="1"><span class="kw">sum</span>(((x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span>)<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px)   <span class="co"># V(X)</span></a></code></pre></div>
+<div class="sourceCode" id="cb87"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb87-1"><a href="ch-3-discrete-distributions.html#cb87-1"></a><span class="kw">sum</span>(((x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span>)<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px)   <span class="co"># V(X)</span></span></code></pre></div>
 <pre><code>## [1] 1.75</code></pre>
 </div>
-<div id="variance-alternative-method" class="section level2 unnumbered">
+<div id="variance-alternative-method" class="section level2 unnumbered" number="">
 <h2>3.3 Variance (alternative method)</h2>
-<div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb89-1" data-line-number="1">x</a></code></pre></div>
+<div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb89-1"><a href="ch-3-discrete-distributions.html#cb89-1"></a>x</span></code></pre></div>
 <pre><code>## [1] 1 2 3 4 5</code></pre>
-<div class="sourceCode" id="cb91"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb91-1" data-line-number="1">px</a></code></pre></div>
+<div class="sourceCode" id="cb91"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb91-1"><a href="ch-3-discrete-distributions.html#cb91-1"></a>px</span></code></pre></div>
 <pre><code>## [1] 0.10 0.15 0.20 0.25 0.30</code></pre>
-<div class="sourceCode" id="cb93"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb93-1" data-line-number="1">x<span class="op">^</span><span class="dv">2</span></a></code></pre></div>
+<div class="sourceCode" id="cb93"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb93-1"><a href="ch-3-discrete-distributions.html#cb93-1"></a>x<span class="op">^</span><span class="dv">2</span></span></code></pre></div>
 <pre><code>## [1]  1  4  9 16 25</code></pre>
-<div class="sourceCode" id="cb95"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb95-1" data-line-number="1">(x<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px</a></code></pre></div>
+<div class="sourceCode" id="cb95"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb95-1"><a href="ch-3-discrete-distributions.html#cb95-1"></a>(x<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px</span></code></pre></div>
 <pre><code>## [1] 0.1 0.6 1.8 4.0 7.5</code></pre>
-<div class="sourceCode" id="cb97"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb97-1" data-line-number="1"><span class="kw">sum</span>((x<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px)  <span class="co"># E(X^2)</span></a></code></pre></div>
+<div class="sourceCode" id="cb97"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb97-1"><a href="ch-3-discrete-distributions.html#cb97-1"></a><span class="kw">sum</span>((x<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px)  <span class="co"># E(X^2)</span></span></code></pre></div>
 <pre><code>## [1] 14</code></pre>
-<div class="sourceCode" id="cb99"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb99-1" data-line-number="1"><span class="dv">14</span><span class="fl">-3.5</span><span class="op">^</span><span class="dv">2</span>     <span class="co"># E(X^2) - [E(X)]^2</span></a></code></pre></div>
+<div class="sourceCode" id="cb99"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb99-1"><a href="ch-3-discrete-distributions.html#cb99-1"></a><span class="dv">14</span><span class="fl">-3.5</span><span class="op">^</span><span class="dv">2</span>     <span class="co"># E(X^2) - [E(X)]^2</span></span></code></pre></div>
 <pre><code>## [1] 1.75</code></pre>
 </div>
-<div id="binominal-theorem" class="section level2 unnumbered">
+<div id="binominal-theorem" class="section level2 unnumbered" number="">
 <h2>3.4 Binominal Theorem</h2>
 <p>p. 121 Using binomial tables for the cumulative distribution function (cdf) is optional; you may use R (see below) or <a href="http://www.stattrek.com">www.stattrek.com</a> instead.</p>
 <p>For tests you will not need to calculate these values. You can leave your answers as summations, for example:</p>
 <p><span class="math inline">\(\Sigma_{x=0}^6 \left(\begin{array}{c}12\\ x\end{array}\right)(.3^x)(.7^{12-x})\)</span></p>
-<div id="r-5" class="section level3 unnumbered">
+<div id="r" class="section level3 unnumbered" number="">
 <h3>R</h3>
 <p>Probability mass function (pmf)</p>
 <p><span class="math inline">\(P(X = x)\)</span></p>
-<div class="sourceCode" id="cb101"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb101-1" data-line-number="1"><span class="kw">choose</span>(<span class="dv">8</span>, <span class="dv">3</span>)    <span class="co"># &quot;8 choose 3&quot;</span></a></code></pre></div>
+<div class="sourceCode" id="cb101"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb101-1"><a href="ch-3-discrete-distributions.html#cb101-1"></a><span class="kw">choose</span>(<span class="dv">8</span>, <span class="dv">3</span>)    <span class="co"># &quot;8 choose 3&quot;</span></span></code></pre></div>
 <pre><code>## [1] 56</code></pre>
-<div class="sourceCode" id="cb103"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb103-1" data-line-number="1"><span class="dv">56</span><span class="op">*</span>.<span class="dv">6</span><span class="op">^</span><span class="dv">3</span><span class="op">*</span>.<span class="dv">4</span><span class="op">^</span><span class="dv">5</span>     <span class="co"># P(X = 3) given n = 8, p = .6</span></a></code></pre></div>
+<div class="sourceCode" id="cb103"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb103-1"><a href="ch-3-discrete-distributions.html#cb103-1"></a><span class="dv">56</span><span class="op">*</span>.<span class="dv">6</span><span class="op">^</span><span class="dv">3</span><span class="op">*</span>.<span class="dv">4</span><span class="op">^</span><span class="dv">5</span>     <span class="co"># P(X = 3) given n = 8, p = .6</span></span></code></pre></div>
 <pre><code>## [1] 0.123863</code></pre>
 <p>Direct method</p>
-<div class="sourceCode" id="cb105"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb105-1" data-line-number="1"><span class="kw">dbinom</span>(<span class="dv">3</span>, <span class="dv">8</span>, <span class="fl">.6</span>)     <span class="co"># P(X = 3) given n = 8, p = .6</span></a></code></pre></div>
+<div class="sourceCode" id="cb105"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb105-1"><a href="ch-3-discrete-distributions.html#cb105-1"></a><span class="kw">dbinom</span>(<span class="dv">3</span>, <span class="dv">8</span>, <span class="fl">.6</span>)     <span class="co"># P(X = 3) given n = 8, p = .6</span></span></code></pre></div>
 <pre><code>## [1] 0.123863</code></pre>
 <p>Cumulative distribution function (cdf)</p>
 <p><span class="math inline">\(P(X \leq x)\)</span></p>
 <p>Find <span class="math inline">\(P(2 \leq X \leq 4)\)</span> given <span class="math inline">\(p = .7, n = 15\)</span></p>
-<div class="sourceCode" id="cb107"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb107-1" data-line-number="1"><span class="kw">pbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">-</span><span class="st"> </span><span class="kw">pbinom</span>(<span class="dv">1</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb107"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb107-1"><a href="ch-3-discrete-distributions.html#cb107-1"></a><span class="kw">pbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">-</span><span class="st"> </span><span class="kw">pbinom</span>(<span class="dv">1</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</span></code></pre></div>
 <pre><code>## [1] 0.0006717175</code></pre>
 <p>(Using the pmf instead:)</p>
-<div class="sourceCode" id="cb109"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb109-1" data-line-number="1"><span class="kw">dbinom</span>(<span class="dv">2</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">3</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb109"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb109-1"><a href="ch-3-discrete-distributions.html#cb109-1"></a><span class="kw">dbinom</span>(<span class="dv">2</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">3</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</span></code></pre></div>
 <pre><code>## [1] 0.0006717175</code></pre>
 <p>Graphing a binomial pmf:</p>
 <p>ex. <span class="math inline">\(p = .7, n = 10\)</span></p>
-<div class="sourceCode" id="cb111"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb111-1" data-line-number="1">px &lt;-<span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">0</span><span class="op">:</span><span class="dv">10</span>, <span class="dv">10</span>, <span class="fl">.7</span>)</a>
-<a class="sourceLine" id="cb111-2" data-line-number="2"><span class="co"># adding las = 1 turns the y-axis tick mark labels horizontal, which are easier to read</span></a>
-<a class="sourceLine" id="cb111-3" data-line-number="3"><span class="kw">barplot</span>(px, <span class="dt">names.arg =</span> <span class="dv">0</span><span class="op">:</span><span class="dv">10</span>, <span class="dt">las =</span> <span class="dv">1</span>, <span class="dt">col =</span> <span class="st">&quot;lightblue&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb111"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb111-1"><a href="ch-3-discrete-distributions.html#cb111-1"></a>px &lt;-<span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">0</span><span class="op">:</span><span class="dv">10</span>, <span class="dv">10</span>, <span class="fl">.7</span>)</span>
+<span id="cb111-2"><a href="ch-3-discrete-distributions.html#cb111-2"></a><span class="co"># adding las = 1 turns the y-axis tick mark labels horizontal, which are easier to read</span></span>
+<span id="cb111-3"><a href="ch-3-discrete-distributions.html#cb111-3"></a><span class="kw">barplot</span>(px, <span class="dt">names.arg =</span> <span class="dv">0</span><span class="op">:</span><span class="dv">10</span>, <span class="dt">las =</span> <span class="dv">1</span>, <span class="dt">col =</span> <span class="st">&quot;lightblue&quot;</span>)</span></code></pre></div>
 <p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
 </div>
 </div>
-<div id="hypergeometric" class="section level2 unnumbered">
+<div id="hypergeometric" class="section level2 unnumbered" number="">
 <h2>3.5 Hypergeometric</h2>
 <p>Note that the notation that R uses is different from the Devore textbook:</p>
 <table>
@@ -398,28 +431,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Example (p. 127)</p>
 <p>Devore: <em>h(x; n, M, N)</em></p>
 <p><em>P(X = 2) = h(2; 10, 5, 25)</em> –&gt;</p>
-<div class="sourceCode" id="cb112"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb112-1" data-line-number="1"><span class="kw">dhyper</span>(<span class="dt">x =</span> <span class="dv">2</span>, <span class="dt">m =</span> <span class="dv">5</span>, <span class="dt">n =</span> <span class="dv">20</span>, <span class="dt">k =</span> <span class="dv">10</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb112"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb112-1"><a href="ch-3-discrete-distributions.html#cb112-1"></a><span class="kw">dhyper</span>(<span class="dt">x =</span> <span class="dv">2</span>, <span class="dt">m =</span> <span class="dv">5</span>, <span class="dt">n =</span> <span class="dv">20</span>, <span class="dt">k =</span> <span class="dv">10</span>)</span></code></pre></div>
 <pre><code>## [1] 0.3853755</code></pre>
 </div>
-<div id="poisson" class="section level2 unnumbered">
+<div id="poisson" class="section level2 unnumbered" number="">
 <h2>3.6 Poisson</h2>
 <p>Example (p. 132)</p>
 <p>p(3;2) =</p>
-<div class="sourceCode" id="cb114"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb114-1" data-line-number="1"><span class="kw">dpois</span>(<span class="dv">3</span>,<span class="dv">2</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb114"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb114-1"><a href="ch-3-discrete-distributions.html#cb114-1"></a><span class="kw">dpois</span>(<span class="dv">3</span>,<span class="dv">2</span>)</span></code></pre></div>
 <pre><code>## [1] 0.180447</code></pre>
 <p>F(3;2) =</p>
-<div class="sourceCode" id="cb116"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb116-1" data-line-number="1"><span class="kw">ppois</span>(<span class="dv">3</span>, <span class="dv">2</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb116"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb116-1"><a href="ch-3-discrete-distributions.html#cb116-1"></a><span class="kw">ppois</span>(<span class="dv">3</span>, <span class="dv">2</span>)</span></code></pre></div>
 <pre><code>## [1] 0.8571235</code></pre>
 </div>
-<div id="practice-exercises-1" class="section level2 unnumbered">
+<div id="practice-exercises" class="section level2 unnumbered" number="">
 <h2>Practice Exercises</h2>
 <ol style="list-style-type: decimal">
 <li><strong>(Binomial)</strong> Suppose the probability of a car accident involving a single vehicle is .7. If 15 accidents are randomly selected, what is the probability that between 2 and 4, inclusive, involve a single vehicle? (from slides)</li>
 </ol>
-<div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb118-1" data-line-number="1"><span class="kw">dbinom</span>(<span class="dv">2</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">3</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb118-1"><a href="ch-3-discrete-distributions.html#cb118-1"></a><span class="kw">dbinom</span>(<span class="dv">2</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">3</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</span></code></pre></div>
 <pre><code>## [1] 0.0006717175</code></pre>
 <p>or</p>
-<div class="sourceCode" id="cb120"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb120-1" data-line-number="1"><span class="kw">pbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">-</span><span class="st"> </span><span class="kw">pbinom</span>(<span class="dv">1</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb120"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb120-1"><a href="ch-3-discrete-distributions.html#cb120-1"></a><span class="kw">pbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">-</span><span class="st"> </span><span class="kw">pbinom</span>(<span class="dv">1</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</span></code></pre></div>
 <pre><code>## [1] 0.0006717175</code></pre>
 <hr />
 <ol start="2" style="list-style-type: decimal">
@@ -433,15 +466,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>What is the probability that the number of calls among the 25 that involve a fax transmission exceeds the expected number by more than 2 standard deviations? (Textbook 50-51)</p></li>
 </ol></li>
 </ol>
-<div class="sourceCode" id="cb122"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb122-1" data-line-number="1"><span class="kw">pbinom</span>(<span class="dv">6</span>, <span class="dv">25</span>, <span class="fl">.25</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb122"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb122-1"><a href="ch-3-discrete-distributions.html#cb122-1"></a><span class="kw">pbinom</span>(<span class="dv">6</span>, <span class="dv">25</span>, <span class="fl">.25</span>)</span></code></pre></div>
 <pre><code>## [1] 0.5610981</code></pre>
-<div class="sourceCode" id="cb124"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb124-1" data-line-number="1"><span class="kw">dbinom</span>(<span class="dv">6</span>, <span class="dv">25</span>, <span class="fl">.25</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb124"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb124-1"><a href="ch-3-discrete-distributions.html#cb124-1"></a><span class="kw">dbinom</span>(<span class="dv">6</span>, <span class="dv">25</span>, <span class="fl">.25</span>)</span></code></pre></div>
 <pre><code>## [1] 0.1828195</code></pre>
-<div class="sourceCode" id="cb126"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb126-1" data-line-number="1"><span class="dv">1</span> <span class="op">-</span><span class="st"> </span><span class="kw">pbinom</span>(<span class="dv">5</span>, <span class="dv">25</span>, <span class="fl">.25</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb126"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb126-1"><a href="ch-3-discrete-distributions.html#cb126-1"></a><span class="dv">1</span> <span class="op">-</span><span class="st"> </span><span class="kw">pbinom</span>(<span class="dv">5</span>, <span class="dv">25</span>, <span class="fl">.25</span>)</span></code></pre></div>
 <pre><code>## [1] 0.6217215</code></pre>
-<div class="sourceCode" id="cb128"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb128-1" data-line-number="1">E &lt;-<span class="st"> </span><span class="dv">25</span><span class="op">*</span>.<span class="dv">25</span></a>
-<a class="sourceLine" id="cb128-2" data-line-number="2">Var &lt;-<span class="st"> </span><span class="dv">25</span><span class="op">*</span>.<span class="dv">25</span><span class="op">*</span>.<span class="dv">75</span></a>
-<a class="sourceLine" id="cb128-3" data-line-number="3"><span class="kw">pbinom</span>(<span class="kw">floor</span>(E<span class="op">+</span><span class="dv">2</span><span class="op">*</span><span class="kw">sqrt</span>(Var)), <span class="dv">25</span>, <span class="fl">.25</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb128"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb128-1"><a href="ch-3-discrete-distributions.html#cb128-1"></a>E &lt;-<span class="st"> </span><span class="dv">25</span><span class="op">*</span>.<span class="dv">25</span></span>
+<span id="cb128-2"><a href="ch-3-discrete-distributions.html#cb128-2"></a>Var &lt;-<span class="st"> </span><span class="dv">25</span><span class="op">*</span>.<span class="dv">25</span><span class="op">*</span>.<span class="dv">75</span></span>
+<span id="cb128-3"><a href="ch-3-discrete-distributions.html#cb128-3"></a><span class="kw">pbinom</span>(<span class="kw">floor</span>(E<span class="op">+</span><span class="dv">2</span><span class="op">*</span><span class="kw">sqrt</span>(Var)), <span class="dv">25</span>, <span class="fl">.25</span>)</span></code></pre></div>
 <pre><code>## [1] 0.9703301</code></pre>
 <hr />
 <ol start="3" style="list-style-type: decimal">
@@ -451,11 +484,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>What is the probability that the number of granite specimens selected for analysis is within 1 standard deviation of its mean value? (Textbook 71)</p></li>
 </ol></li>
 </ol>
-<div class="sourceCode" id="cb130"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb130-1" data-line-number="1"><span class="kw">dhyper</span>(<span class="dv">8</span>, <span class="dv">8</span>, <span class="dv">12</span>, <span class="dv">15</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dhyper</span>(<span class="dv">3</span>, <span class="dv">8</span>, <span class="dv">12</span>, <span class="dv">15</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb130"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb130-1"><a href="ch-3-discrete-distributions.html#cb130-1"></a><span class="kw">dhyper</span>(<span class="dv">8</span>, <span class="dv">8</span>, <span class="dv">12</span>, <span class="dv">15</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dhyper</span>(<span class="dv">3</span>, <span class="dv">8</span>, <span class="dv">12</span>, <span class="dv">15</span>)</span></code></pre></div>
 <pre><code>## [1] 0.05469556</code></pre>
-<div class="sourceCode" id="cb132"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb132-1" data-line-number="1">mean_g &lt;-<span class="st"> </span><span class="dv">15</span><span class="op">*</span><span class="dv">12</span><span class="op">/</span><span class="dv">20</span></a>
-<a class="sourceLine" id="cb132-2" data-line-number="2">sd_g &lt;-<span class="st"> </span><span class="kw">sqrt</span>(<span class="dv">20</span><span class="op">*</span>(<span class="dv">12</span><span class="op">/</span><span class="dv">20</span>)<span class="op">*</span>(<span class="dv">8</span><span class="op">/</span><span class="dv">20</span>))</a>
-<a class="sourceLine" id="cb132-3" data-line-number="3"><span class="kw">pbinom</span>(mean_g <span class="op">+</span><span class="st"> </span>sd_g, <span class="dv">15</span>, <span class="dv">12</span><span class="op">/</span><span class="dv">20</span>)<span class="op">-</span><span class="kw">pbinom</span>(mean_g <span class="op">-</span><span class="st"> </span>sd_g, <span class="dv">15</span>, <span class="dv">12</span><span class="op">/</span><span class="dv">20</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb132"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb132-1"><a href="ch-3-discrete-distributions.html#cb132-1"></a>mean_g &lt;-<span class="st"> </span><span class="dv">15</span><span class="op">*</span><span class="dv">12</span><span class="op">/</span><span class="dv">20</span></span>
+<span id="cb132-2"><a href="ch-3-discrete-distributions.html#cb132-2"></a>sd_g &lt;-<span class="st"> </span><span class="kw">sqrt</span>(<span class="dv">20</span><span class="op">*</span>(<span class="dv">12</span><span class="op">/</span><span class="dv">20</span>)<span class="op">*</span>(<span class="dv">8</span><span class="op">/</span><span class="dv">20</span>))</span>
+<span id="cb132-3"><a href="ch-3-discrete-distributions.html#cb132-3"></a><span class="kw">pbinom</span>(mean_g <span class="op">+</span><span class="st"> </span>sd_g, <span class="dv">15</span>, <span class="dv">12</span><span class="op">/</span><span class="dv">20</span>)<span class="op">-</span><span class="kw">pbinom</span>(mean_g <span class="op">-</span><span class="st"> </span>sd_g, <span class="dv">15</span>, <span class="dv">12</span><span class="op">/</span><span class="dv">20</span>)</span></code></pre></div>
 <pre><code>## [1] 0.8144507</code></pre>
 <hr />
 <ol start="4" style="list-style-type: decimal">
@@ -468,13 +501,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol></li>
 </ol>
 <p>Let x be the number of boxes without prizes to be purchased, <span class="math inline">\(p = {x+2-1\choose1}(.2^2)(.8 ^x)\)</span></p>
-<div class="sourceCode" id="cb134"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb134-1" data-line-number="1"><span class="kw">dnbinom</span>(<span class="dv">2</span>, <span class="dv">2</span>, <span class="fl">.2</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb134"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb134-1"><a href="ch-3-discrete-distributions.html#cb134-1"></a><span class="kw">dnbinom</span>(<span class="dv">2</span>, <span class="dv">2</span>, <span class="fl">.2</span>)</span></code></pre></div>
 <pre><code>## [1] 0.0768</code></pre>
-<div class="sourceCode" id="cb136"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb136-1" data-line-number="1"><span class="kw">dnbinom</span>(<span class="dv">2</span>, <span class="dv">2</span>, <span class="fl">.2</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dnbinom</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="fl">.2</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dnbinom</span>(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">.2</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb136"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb136-1"><a href="ch-3-discrete-distributions.html#cb136-1"></a><span class="kw">dnbinom</span>(<span class="dv">2</span>, <span class="dv">2</span>, <span class="fl">.2</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dnbinom</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="fl">.2</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dnbinom</span>(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">.2</span>)</span></code></pre></div>
 <pre><code>## [1] 0.1808</code></pre>
-<div class="sourceCode" id="cb138"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb138-1" data-line-number="1"><span class="dv">2</span><span class="op">*</span>.<span class="dv">8</span><span class="op">/</span>.<span class="dv">2</span></a></code></pre></div>
+<div class="sourceCode" id="cb138"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb138-1"><a href="ch-3-discrete-distributions.html#cb138-1"></a><span class="dv">2</span><span class="op">*</span>.<span class="dv">8</span><span class="op">/</span>.<span class="dv">2</span></span></code></pre></div>
 <pre><code>## [1] 8</code></pre>
-<div class="sourceCode" id="cb140"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb140-1" data-line-number="1"><span class="co"># 8 boxes without desired prize, 10 boxes in total</span></a></code></pre></div>
+<div class="sourceCode" id="cb140"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb140-1"><a href="ch-3-discrete-distributions.html#cb140-1"></a><span class="co"># 8 boxes without desired prize, 10 boxes in total</span></span></code></pre></div>
 <hr />
 <ol start="5" style="list-style-type: decimal">
 <li><p><strong>(Poisson)</strong> Suppose that the number of drivers who travel between a particular origin and destination during a designated time period has a Poisson distribution with parameter <span class="math inline">\(\mu = 20\)</span>. What is the probability that the number of drivers will</p>
@@ -485,13 +518,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 <p>(Textbook 81)</p></li>
 </ol>
-<div class="sourceCode" id="cb141"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb141-1" data-line-number="1"><span class="kw">ppois</span>(<span class="dv">10</span>, <span class="dv">20</span>) <span class="co"># a</span></a></code></pre></div>
+<div class="sourceCode" id="cb141"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb141-1"><a href="ch-3-discrete-distributions.html#cb141-1"></a><span class="kw">ppois</span>(<span class="dv">10</span>, <span class="dv">20</span>) <span class="co"># a</span></span></code></pre></div>
 <pre><code>## [1] 0.01081172</code></pre>
-<div class="sourceCode" id="cb143"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb143-1" data-line-number="1"><span class="kw">dpois</span>(<span class="dv">10</span>, <span class="dv">20</span>) <span class="co"># b1</span></a></code></pre></div>
+<div class="sourceCode" id="cb143"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb143-1"><a href="ch-3-discrete-distributions.html#cb143-1"></a><span class="kw">dpois</span>(<span class="dv">10</span>, <span class="dv">20</span>) <span class="co"># b1</span></span></code></pre></div>
 <pre><code>## [1] 0.005816307</code></pre>
-<div class="sourceCode" id="cb145"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb145-1" data-line-number="1">((<span class="kw">exp</span>(<span class="dv">1</span>)<span class="op">^-</span><span class="dv">20</span>)<span class="op">*</span>(<span class="dv">20</span><span class="op">^</span><span class="dv">10</span>))<span class="op">/</span><span class="kw">factorial</span>(<span class="dv">10</span>) <span class="co"># b2</span></a></code></pre></div>
+<div class="sourceCode" id="cb145"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb145-1"><a href="ch-3-discrete-distributions.html#cb145-1"></a>((<span class="kw">exp</span>(<span class="dv">1</span>)<span class="op">^-</span><span class="dv">20</span>)<span class="op">*</span>(<span class="dv">20</span><span class="op">^</span><span class="dv">10</span>))<span class="op">/</span><span class="kw">factorial</span>(<span class="dv">10</span>) <span class="co"># b2</span></span></code></pre></div>
 <pre><code>## [1] 0.005816307</code></pre>
-<div class="sourceCode" id="cb147"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb147-1" data-line-number="1"><span class="kw">ppois</span>(<span class="dv">20</span> <span class="op">+</span><span class="st"> </span><span class="dv">2</span><span class="op">*</span><span class="kw">sqrt</span>(<span class="dv">20</span>),<span class="dv">20</span>) <span class="op">-</span><span class="st"> </span><span class="kw">ppois</span>(<span class="dv">20</span> <span class="op">-</span><span class="st"> </span><span class="dv">2</span><span class="op">*</span><span class="kw">sqrt</span>(<span class="dv">20</span>), <span class="dv">20</span>) <span class="co"># c</span></a></code></pre></div>
+<div class="sourceCode" id="cb147"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb147-1"><a href="ch-3-discrete-distributions.html#cb147-1"></a><span class="kw">ppois</span>(<span class="dv">20</span> <span class="op">+</span><span class="st"> </span><span class="dv">2</span><span class="op">*</span><span class="kw">sqrt</span>(<span class="dv">20</span>),<span class="dv">20</span>) <span class="op">-</span><span class="st"> </span><span class="kw">ppois</span>(<span class="dv">20</span> <span class="op">-</span><span class="st"> </span><span class="dv">2</span><span class="op">*</span><span class="kw">sqrt</span>(<span class="dv">20</span>), <span class="dv">20</span>) <span class="co"># c</span></span></code></pre></div>
 <pre><code>## [1] 0.9442797</code></pre>
 
 </div>
