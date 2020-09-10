@@ -24,7 +24,11 @@ Tuesday / Thursday 11:40am - 12:55pm online only
 
 ## Course material and assignments {-}
 
-(These items will be moved to CourseWorks once the change of program period is over.)
+(These items will only be available in the [Files](https://courseworks2.columbia.edu/courses/107925/files) section of CourseWorks once the change of program period is over.)
+
+[Chapter 1 lecture slides](Stat1201-Chap1-annotated.pdf)
+
+[Chapter 1 in-class exercises](Chap1_inclass_exercises.pdf)
 
 ## Zoom info  {-}
 
@@ -44,7 +48,11 @@ Haolin Zou, hz2574@columbia.edu
 
 Office hours: 
 
-TBD
+Tuesdays 9pm - 10pm
+
+Fridays 9am - 10am
+
+**See [Haolin's Office Hours Signup](https://courseworks2.columbia.edu/courses/107925/pages/haolins-office-hours-signup) in CourseWorks for Zoom link and to sign up.**
 
 ## Course description  {-}
 
@@ -152,7 +160,7 @@ For the date of the Final, see https://ssol.columbia.edu/ -- click "Exam List" a
 
 ## R {-}
 
-Information on installing R and getting started is provided in the [next chapter](introduction.html#installing-r). Note that all of the coding related parts of the class are optional and will not appear on the tests. 
+You will need to know how to read the R *output* shown in lecture slides. Learning to code in R yourself is entirely optional and will not appear in assignments or tests. Information on installing R and getting started is provided in the [next chapter](introduction.html#installing-r).
 
 ## Academic Integrity  {-}
 
