@@ -30,6 +30,8 @@ Tuesday / Thursday 11:40am - 12:55pm online only
 
 [Chapter 1 in-class exercises](Chap1_inclass_exercises.pdf)
 
+[Problem Set 1](PSet1.md)
+
 ## Zoom info  {-}
 
 You are expected to attend Zoom lectures in real time. Recordings will be available primarily for students in different time zones or to make up an occasional missed lecture. During class, it is your choice whether to turn your video on or not; please however add a profile picture to your Zoom account to help us feel like a class with faces and not a list of names. You are strongly encouraged to turn your video on during small group breakout rooms, and you will need to turn your video on during exams (more details will be provided later on the specifics of how this will work.) 

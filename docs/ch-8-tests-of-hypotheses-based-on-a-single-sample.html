@@ -24,7 +24,7 @@
 <meta name="author" content="Joyce Robbins" />
 
 
-<meta name="date" content="2020-09-10" />
+<meta name="date" content="2020-09-11" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -370,7 +370,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>## [1] 4.132433</code></pre>
 <div class="sourceCode" id="cb196"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb196-1"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb196-1"></a>pval &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">-</span><span class="st"> </span><span class="kw">pnorm</span>(z)</span>
 <span id="cb196-2"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb196-2"></a>pval</span></code></pre></div>
-<pre><code>## [1] 0.00001794718</code></pre>
+<pre><code>## [1] 1.794718e-05</code></pre>
 <div class="sourceCode" id="cb198"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb198-1"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb198-1"></a><span class="co"># simpler approach</span></span>
 <span id="cb198-2"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb198-2"></a><span class="co"># p-values might be a bit different due to approximation of t</span></span>
 <span id="cb198-3"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb198-3"></a><span class="kw">t.test</span>(setosa<span class="op">$</span>Sepal.Length, <span class="dt">alternative =</span> <span class="st">&quot;greater&quot;</span>, <span class="dt">mu =</span> <span class="fl">4.8</span>)</span></code></pre></div>
@@ -378,7 +378,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 	One Sample t-test
 ## 
 ## data:  setosa$Sepal.Length
-## t = 4.1324, df = 49, p-value = 0.00006986
+## t = 4.1324, df = 49, p-value = 6.986e-05
 ## alternative hypothesis: true mean is greater than 4.8
 ## 95 percent confidence interval:
 ##  4.922425      Inf
