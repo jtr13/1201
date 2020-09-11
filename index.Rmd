@@ -30,7 +30,7 @@ Tuesday / Thursday 11:40am - 12:55pm online only
 
 [Chapter 1 in-class exercises](Chap1_inclass_exercises.pdf)
 
-[Problem Set 1](PSet1.md)
+[Problem Set 1](PSet1.pdf)
 
 ## Zoom info  {-}
 

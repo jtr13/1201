@@ -354,10 +354,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## 3.44 3.18 3.09 3.03 2.96 2.78 2.71 2.64 2.58 2.47 2.25 2.24 2.15 2.08</code></pre>
 <p><strong>Residuals:</strong></p>
 <div class="sourceCode" id="cb233"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb233-1"><a href="ch-12-linear-regression.html#cb233-1"></a><span class="kw">round</span>(mod<span class="op">$</span>residuals, <span class="dv">2</span>)</span></code></pre></div>
-<pre><code>##     1     2     3     4     5     6     7     8     9    10    11    12 
-## -0.14  0.02  0.31 -0.03 -0.16  0.12 -0.01 -0.04 -0.08  0.13 -0.05 -0.24 
-##    13    14 
-##  0.15  0.02</code></pre>
+<pre><code>##     1     2     3     4     5     6     7     8     9    10    11    12    13 
+## -0.14  0.02  0.31 -0.03 -0.16  0.12 -0.01 -0.04 -0.08  0.13 -0.05 -0.24  0.15 
+##    14 
+##  0.02</code></pre>
 <p><strong>SSE, SSR</strong></p>
 <div class="sourceCode" id="cb235"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb235-1"><a href="ch-12-linear-regression.html#cb235-1"></a><span class="kw">anova</span>(mod)  <span class="co"># anova = analysis of variance</span></span></code></pre></div>
 <pre><code>## Analysis of Variance Table
@@ -434,10 +434,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 <div class="sourceCode" id="cb246"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb246-1"><a href="ch-12-linear-regression.html#cb246-1"></a>mod &lt;-<span class="st"> </span><span class="kw">lm</span>(y<span class="op">~</span>x)</span>
 <span id="cb246-2"><a href="ch-12-linear-regression.html#cb246-2"></a><span class="kw">round</span>(mod<span class="op">$</span>residuals, <span class="dv">2</span>)</span></code></pre></div>
-<pre><code>##     1     2     3     4     5     6     7     8     9    10    11    12 
-## -0.54  0.46  1.01 -0.52 -0.75 -0.60  0.33  0.93 -0.39  1.68 -0.13  0.75 
-##    13    14    15 
-## -1.78 -0.90  0.46</code></pre>
+<pre><code>##     1     2     3     4     5     6     7     8     9    10    11    12    13 
+## -0.54  0.46  1.01 -0.52 -0.75 -0.60  0.33  0.93 -0.39  1.68 -0.13  0.75 -1.78 
+##    14    15 
+## -0.90  0.46</code></pre>
 <p>Or alternatively, use R as a calculator</p>
 <div class="sourceCode" id="cb248"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb248-1"><a href="ch-12-linear-regression.html#cb248-1"></a>pred &lt;-<span class="st"> </span><span class="fl">118.9099</span> <span class="op">-</span><span class="st"> </span><span class="fl">0.9047</span><span class="op">*</span>x</span>
 <span id="cb248-2"><a href="ch-12-linear-regression.html#cb248-2"></a>res &lt;-<span class="st"> </span>y <span class="op">-</span><span class="st"> </span>pred</span>
