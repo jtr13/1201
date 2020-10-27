@@ -32,6 +32,8 @@ My advice:
 
 ## Installing R {-}
 
+
+
 You will need to install two applications: R and RStudio:
 
 * R -- the programming language itself -- is available here:
@@ -48,8 +50,13 @@ https://www.rstudio.com/products/rstudio/download/#download
 
 ## Getting Started with R {-}
 
-To get oriented, read and try the examples in [Chapter 1 of Introduction to R](https://monashdatafluency.github.io/r-intro-2/starting-out-in-r.html){target="_blank"}
 
+
+Video: <iframe width="560" height="315" src="https://www.youtube.com/embed/tQvtYdLvSSg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+To get oriented, read and try the examples in [Chapter 1 of Introduction to R](https://monashdatafluency.github.io/r-intro-2/starting-out-in-r.html){target="_blank"}
 
 ### Quick intro to RStudio Console {-}
 
