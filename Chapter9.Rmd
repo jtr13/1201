@@ -54,7 +54,7 @@ diffmeans(2258, 2637, -200, 1519, 1138, 663, 413, "lowertail")
 
 (Case 3)
 
-Use: http://bit.ly/degreesoffreedom to calculate the degrees of freedom
+Use: https://www.statology.org/welchs-t-test-calculator/ (choose "Enter raw data" or "Enter summary data" as appropriate) to calculate the degrees of freedom.
 
 Skip: Pooled $t$ Procedures (pp. 377-378)
 
