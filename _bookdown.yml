@@ -4,7 +4,7 @@ edit: https://github.com/jtr13/1201/edit/master/%s
 view: https://github.com/jtr13/1201/blob/master/%s
 rmd_files: ["index.Rmd", # Syllabus {-}
   "Introduction.Rmd", # Introduction {-}
-  "Chapter1.Rmd", # Ch. 1 Descriptive Statistics {-} 
+  "Chapter1.Rmd", # Ch. 1 Descriptive Statistics {-}
   "Chapter2.Rmd", # Ch. 2 Probability {-}
   "Chapter3.Rmd", # Ch. 3 Discrete Distributions {-}
   "Chapter4.Rmd", # Ch. 4 Continuous Random Variables and Probability Distributions {-}
@@ -15,8 +15,8 @@ rmd_files: ["index.Rmd", # Syllabus {-}
   "Chapter9.Rmd", # Ch. 9 Inferences Based on Two Samples {-}
   "Chapter2b.Rmd", # Ch. 2 Conditional Probability {-}
   "Chapter5b.Rmd", # Ch. 5 Joint Probability {-}
-  "Chapter14.Rmd", # Ch. 14 Chi Squared Test {-}
-  "Chapter12.Rmd", # Ch. 12 Linear Regression {-}
-  "Chapter13.Rmd"] # Ch. 13 Nonlinear and Multiple Regression {-}
+#  "Chapter14.Rmd", # Ch. 14 Chi Squared Test {-}
+  "Chapter12.Rmd"] # Ch. 12 Linear Regression {-}
+#  "Chapter13.Rmd"] # Ch. 13 Nonlinear and Multiple Regression {-}
 
-# Comments added by jtr::add_title_comments() 
+# Comments added by jtr::add_title_comments()

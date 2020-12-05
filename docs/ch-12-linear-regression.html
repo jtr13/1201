@@ -24,15 +24,15 @@
 <meta name="author" content="Joyce Robbins" />
 
 
-<meta name="date" content="2020-12-03" />
+<meta name="date" content="2020-12-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="ch-14-chi-squared-test.html"/>
-<link rel="next" href="ch-13-nonlinear-and-multiple-regression.html"/>
+<link rel="prev" href="ch-5-joint-probability.html"/>
+
 <script src="libs/header-attrs-2.5/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -276,31 +276,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="ch-5-joint-probability.html"><a href="ch-5-joint-probability.html#expected-values-covariance-and-correlation"><i class="fa fa-check"></i>5.2 Expected Values, Covariance, and Correlation</a></li>
 <li class="chapter" data-level="" data-path="ch-5-joint-probability.html"><a href="ch-5-joint-probability.html#resources-1"><i class="fa fa-check"></i>Resources</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-14-chi-squared-test.html"><a href="ch-14-chi-squared-test.html"><i class="fa fa-check"></i>Ch. 14 Chi Squared Test</a>
-<ul>
-<li class="chapter" data-level="" data-path="ch-14-chi-squared-test.html"><a href="ch-14-chi-squared-test.html#two-way-contingency-tables"><i class="fa fa-check"></i>14.3 Two-Way Contingency Tables</a></li>
-<li class="chapter" data-level="" data-path="ch-14-chi-squared-test.html"><a href="ch-14-chi-squared-test.html#resources-2"><i class="fa fa-check"></i>Resources</a></li>
-<li class="chapter" data-level="" data-path="ch-14-chi-squared-test.html"><a href="ch-14-chi-squared-test.html#r-10"><i class="fa fa-check"></i>R</a></li>
-<li class="chapter" data-level="" data-path="ch-14-chi-squared-test.html"><a href="ch-14-chi-squared-test.html#practice-exercises-4"><i class="fa fa-check"></i>Practice Exercises</a></li>
-</ul></li>
 <li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html"><i class="fa fa-check"></i>Ch. 12 Linear Regression</a>
 <ul>
 <li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#the-simple-linear-regression-model"><i class="fa fa-check"></i>12.1 The Simple Linear Regression Model</a></li>
 <li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#estimating-model-parameters"><i class="fa fa-check"></i>12.2 Estimating Model Parameters</a>
 <ul>
-<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#resources-3"><i class="fa fa-check"></i>Resources</a></li>
-<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#r-11"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#resources-2"><i class="fa fa-check"></i>Resources</a></li>
+<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#r-10"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#correlation"><i class="fa fa-check"></i>12.5 Correlation</a>
 <ul>
-<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#resources-4"><i class="fa fa-check"></i>Resources</a></li>
-<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#r-12"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#resources-3"><i class="fa fa-check"></i>Resources</a></li>
+<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#r-11"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#practice-exercises-5"><i class="fa fa-check"></i>Practice Exercises</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ch-13-nonlinear-and-multiple-regression.html"><a href="ch-13-nonlinear-and-multiple-regression.html"><i class="fa fa-check"></i>Ch. 13 Nonlinear and Multiple Regression</a>
-<ul>
-<li class="chapter" data-level="" data-path="ch-13-nonlinear-and-multiple-regression.html"><a href="ch-13-nonlinear-and-multiple-regression.html#assessing-model-adequacy"><i class="fa fa-check"></i>13.1 Assessing Model Adequacy</a></li>
+<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#practice-exercises-4"><i class="fa fa-check"></i>Practice Exercises</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -330,18 +319,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="estimating-model-parameters" class="section level2 unnumbered" number="">
 <h2>12.2 Estimating Model Parameters</h2>
-<div id="resources-3" class="section level3 unnumbered" number="">
+<div id="resources-2" class="section level3 unnumbered" number="">
 <h3>Resources</h3>
 <p>Interactive Visualization: <a href="https://jtr13.github.io/D3/BestFittingLine.html">Linear Regression</a> Try fitting the least squares line to a set of random data and check your answer (<a href="https://www.geogebra.org/m/xC6zq7Zv">and another one</a>).</p>
 <p>Video: <a href="https://www.youtube.com/watch?v=aq8VU5KLmkY">Regression I: What is regression? | SSE, SSR, SST | R-squared | Errors (ε vs. e)</a> [contributed by Lance J.]</p>
 </div>
-<div id="r-11" class="section level3 unnumbered" number="">
+<div id="r-10" class="section level3 unnumbered" number="">
 <h3>R</h3>
 <p>Calculating slope and intercept for a sample of (x, y) pairs (p. 498 formulas)</p>
-<div class="sourceCode" id="cb229"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb229-1"><a href="ch-12-linear-regression.html#cb229-1"></a><span class="co"># Example 12.8, p. 503</span></span>
-<span id="cb229-2"><a href="ch-12-linear-regression.html#cb229-2"></a>x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">12</span>, <span class="dv">30</span>, <span class="dv">36</span>, <span class="dv">40</span>, <span class="dv">45</span>, <span class="dv">57</span>, <span class="dv">62</span>, <span class="dv">67</span>, <span class="dv">71</span>, <span class="dv">78</span>, <span class="dv">93</span>, <span class="dv">94</span>, <span class="dv">100</span>, <span class="dv">105</span>)</span>
-<span id="cb229-3"><a href="ch-12-linear-regression.html#cb229-3"></a>y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">3.3</span>, <span class="fl">3.2</span>, <span class="fl">3.4</span>, <span class="dv">3</span>, <span class="fl">2.8</span>, <span class="fl">2.9</span>, <span class="fl">2.7</span>, <span class="fl">2.6</span>, <span class="fl">2.5</span>, <span class="fl">2.6</span>, <span class="fl">2.2</span>, <span class="dv">2</span>, <span class="fl">2.3</span>, <span class="fl">2.1</span>)</span>
-<span id="cb229-4"><a href="ch-12-linear-regression.html#cb229-4"></a><span class="kw">lm</span>(y <span class="op">~</span><span class="st"> </span>x)  <span class="co">#lm = linear model</span></span></code></pre></div>
+<div class="sourceCode" id="cb212"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb212-1"><a href="ch-12-linear-regression.html#cb212-1"></a><span class="co"># Example 12.8, p. 503</span></span>
+<span id="cb212-2"><a href="ch-12-linear-regression.html#cb212-2"></a>x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">12</span>, <span class="dv">30</span>, <span class="dv">36</span>, <span class="dv">40</span>, <span class="dv">45</span>, <span class="dv">57</span>, <span class="dv">62</span>, <span class="dv">67</span>, <span class="dv">71</span>, <span class="dv">78</span>, <span class="dv">93</span>, <span class="dv">94</span>, <span class="dv">100</span>, <span class="dv">105</span>)</span>
+<span id="cb212-3"><a href="ch-12-linear-regression.html#cb212-3"></a>y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">3.3</span>, <span class="fl">3.2</span>, <span class="fl">3.4</span>, <span class="dv">3</span>, <span class="fl">2.8</span>, <span class="fl">2.9</span>, <span class="fl">2.7</span>, <span class="fl">2.6</span>, <span class="fl">2.5</span>, <span class="fl">2.6</span>, <span class="fl">2.2</span>, <span class="dv">2</span>, <span class="fl">2.3</span>, <span class="fl">2.1</span>)</span>
+<span id="cb212-4"><a href="ch-12-linear-regression.html#cb212-4"></a><span class="kw">lm</span>(y <span class="op">~</span><span class="st"> </span>x)  <span class="co">#lm = linear model</span></span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## lm(formula = y ~ x)
@@ -350,18 +339,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## (Intercept)            x  
 ##     3.62091     -0.01471</code></pre>
 <p><strong>Predicted values:</strong></p>
-<div class="sourceCode" id="cb231"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb231-1"><a href="ch-12-linear-regression.html#cb231-1"></a>mod &lt;-<span class="st"> </span><span class="kw">lm</span>(y<span class="op">~</span>x)</span>
-<span id="cb231-2"><a href="ch-12-linear-regression.html#cb231-2"></a><span class="kw">round</span>(mod<span class="op">$</span>fitted.values, <span class="dv">2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb214"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb214-1"><a href="ch-12-linear-regression.html#cb214-1"></a>mod &lt;-<span class="st"> </span><span class="kw">lm</span>(y<span class="op">~</span>x)</span>
+<span id="cb214-2"><a href="ch-12-linear-regression.html#cb214-2"></a><span class="kw">round</span>(mod<span class="op">$</span>fitted.values, <span class="dv">2</span>)</span></code></pre></div>
 <pre><code>##    1    2    3    4    5    6    7    8    9   10   11   12   13   14 
 ## 3.44 3.18 3.09 3.03 2.96 2.78 2.71 2.64 2.58 2.47 2.25 2.24 2.15 2.08</code></pre>
 <p><strong>Residuals:</strong></p>
-<div class="sourceCode" id="cb233"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb233-1"><a href="ch-12-linear-regression.html#cb233-1"></a><span class="kw">round</span>(mod<span class="op">$</span>residuals, <span class="dv">2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb216"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb216-1"><a href="ch-12-linear-regression.html#cb216-1"></a><span class="kw">round</span>(mod<span class="op">$</span>residuals, <span class="dv">2</span>)</span></code></pre></div>
 <pre><code>##     1     2     3     4     5     6     7     8     9    10    11    12    13 
 ## -0.14  0.02  0.31 -0.03 -0.16  0.12 -0.01 -0.04 -0.08  0.13 -0.05 -0.24  0.15 
 ##    14 
 ##  0.02</code></pre>
 <p><strong>SSE, SSR</strong></p>
-<div class="sourceCode" id="cb235"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb235-1"><a href="ch-12-linear-regression.html#cb235-1"></a><span class="kw">anova</span>(mod)  <span class="co"># anova = analysis of variance</span></span></code></pre></div>
+<div class="sourceCode" id="cb218"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb218-1"><a href="ch-12-linear-regression.html#cb218-1"></a><span class="kw">anova</span>(mod)  <span class="co"># anova = analysis of variance</span></span></code></pre></div>
 <pre><code>## Analysis of Variance Table
 ## 
 ## Response: y
@@ -376,18 +365,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>SST = SSE + SSR = 0.2624565 +
 2.2946864 = 2.5571</p>
 <p><strong>coefficient of determination <span class="math inline">\(r^2\)</span></strong></p>
-<div class="sourceCode" id="cb237"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb237-1"><a href="ch-12-linear-regression.html#cb237-1"></a><span class="co"># Example 12.4, 12.9</span></span>
-<span id="cb237-2"><a href="ch-12-linear-regression.html#cb237-2"></a>x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">132</span>, <span class="dv">129</span>, <span class="dv">120</span>, <span class="fl">113.2</span>, <span class="dv">105</span>, <span class="dv">92</span>, <span class="dv">84</span>, <span class="fl">83.2</span>, <span class="fl">88.4</span>, <span class="dv">59</span>, <span class="dv">80</span>, <span class="fl">81.5</span>, <span class="dv">71</span>, <span class="fl">69.2</span>)</span>
-<span id="cb237-3"><a href="ch-12-linear-regression.html#cb237-3"></a>y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">46</span>, <span class="dv">48</span>, <span class="dv">51</span>, <span class="fl">52.1</span>, <span class="dv">54</span>, <span class="dv">52</span>, <span class="dv">59</span>, <span class="fl">58.7</span>, <span class="fl">61.6</span>, <span class="dv">64</span>, <span class="fl">61.4</span>, <span class="fl">54.6</span>, <span class="fl">58.8</span>, <span class="dv">58</span>)</span>
-<span id="cb237-4"><a href="ch-12-linear-regression.html#cb237-4"></a></span>
-<span id="cb237-5"><a href="ch-12-linear-regression.html#cb237-5"></a>mod &lt;-<span class="st"> </span><span class="kw">lm</span>(y <span class="op">~</span><span class="st"> </span>x)</span>
-<span id="cb237-6"><a href="ch-12-linear-regression.html#cb237-6"></a></span>
-<span id="cb237-7"><a href="ch-12-linear-regression.html#cb237-7"></a>SSE &lt;-<span class="st"> </span><span class="kw">anova</span>(mod)<span class="op">$</span><span class="st">`</span><span class="dt">Sum Sq</span><span class="st">`</span>[<span class="dv">1</span>]</span>
-<span id="cb237-8"><a href="ch-12-linear-regression.html#cb237-8"></a>SST &lt;-<span class="st"> </span><span class="kw">anova</span>(mod)<span class="op">$</span><span class="st">`</span><span class="dt">Sum Sq</span><span class="st">`</span>[<span class="dv">1</span>] <span class="op">+</span><span class="st"> </span><span class="kw">anova</span>(mod)<span class="op">$</span><span class="st">`</span><span class="dt">Sum Sq</span><span class="st">`</span>[<span class="dv">2</span>]</span>
-<span id="cb237-9"><a href="ch-12-linear-regression.html#cb237-9"></a><span class="dv">1</span> <span class="op">-</span><span class="st"> </span>(SSE<span class="op">/</span>SST)</span></code></pre></div>
+<div class="sourceCode" id="cb220"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb220-1"><a href="ch-12-linear-regression.html#cb220-1"></a><span class="co"># Example 12.4, 12.9</span></span>
+<span id="cb220-2"><a href="ch-12-linear-regression.html#cb220-2"></a>x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">132</span>, <span class="dv">129</span>, <span class="dv">120</span>, <span class="fl">113.2</span>, <span class="dv">105</span>, <span class="dv">92</span>, <span class="dv">84</span>, <span class="fl">83.2</span>, <span class="fl">88.4</span>, <span class="dv">59</span>, <span class="dv">80</span>, <span class="fl">81.5</span>, <span class="dv">71</span>, <span class="fl">69.2</span>)</span>
+<span id="cb220-3"><a href="ch-12-linear-regression.html#cb220-3"></a>y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">46</span>, <span class="dv">48</span>, <span class="dv">51</span>, <span class="fl">52.1</span>, <span class="dv">54</span>, <span class="dv">52</span>, <span class="dv">59</span>, <span class="fl">58.7</span>, <span class="fl">61.6</span>, <span class="dv">64</span>, <span class="fl">61.4</span>, <span class="fl">54.6</span>, <span class="fl">58.8</span>, <span class="dv">58</span>)</span>
+<span id="cb220-4"><a href="ch-12-linear-regression.html#cb220-4"></a></span>
+<span id="cb220-5"><a href="ch-12-linear-regression.html#cb220-5"></a>mod &lt;-<span class="st"> </span><span class="kw">lm</span>(y <span class="op">~</span><span class="st"> </span>x)</span>
+<span id="cb220-6"><a href="ch-12-linear-regression.html#cb220-6"></a></span>
+<span id="cb220-7"><a href="ch-12-linear-regression.html#cb220-7"></a>SSE &lt;-<span class="st"> </span><span class="kw">anova</span>(mod)<span class="op">$</span><span class="st">`</span><span class="dt">Sum Sq</span><span class="st">`</span>[<span class="dv">1</span>]</span>
+<span id="cb220-8"><a href="ch-12-linear-regression.html#cb220-8"></a>SST &lt;-<span class="st"> </span><span class="kw">anova</span>(mod)<span class="op">$</span><span class="st">`</span><span class="dt">Sum Sq</span><span class="st">`</span>[<span class="dv">1</span>] <span class="op">+</span><span class="st"> </span><span class="kw">anova</span>(mod)<span class="op">$</span><span class="st">`</span><span class="dt">Sum Sq</span><span class="st">`</span>[<span class="dv">2</span>]</span>
+<span id="cb220-9"><a href="ch-12-linear-regression.html#cb220-9"></a><span class="dv">1</span> <span class="op">-</span><span class="st"> </span>(SSE<span class="op">/</span>SST)</span></code></pre></div>
 <pre><code>## [1] 0.2092398</code></pre>
 <p>Or (simply):</p>
-<div class="sourceCode" id="cb239"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb239-1"><a href="ch-12-linear-regression.html#cb239-1"></a><span class="kw">cor</span>(x,y)<span class="op">^</span><span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb222"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb222-1"><a href="ch-12-linear-regression.html#cb222-1"></a><span class="kw">cor</span>(x,y)<span class="op">^</span><span class="dv">2</span></span></code></pre></div>
 <pre><code>## [1] 0.7907602</code></pre>
 <p>(See section 12.5)</p>
 </div>
@@ -395,34 +384,34 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="correlation" class="section level2 unnumbered" number="">
 <h2>12.5 Correlation</h2>
 <p>Skip: “Inferences About the Population Correlation Coefficient” (p. 530) <em>to end of section</em>.</p>
-<div id="resources-4" class="section level3 unnumbered" number="">
+<div id="resources-3" class="section level3 unnumbered" number="">
 <h3>Resources</h3>
 <p>Interactive visualization: <a href="https://jtr13.github.io/D3/CorrelationCoefficient.html">Correlation Coefficient</a> (add and remove points)</p>
 <p>Interactive visualization: <a href="https://rpsychologist.com/d3/correlation/">Interpreting Correlations</a> [contributed by Dario G.]</p>
 </div>
-<div id="r-12" class="section level3 unnumbered" number="">
+<div id="r-11" class="section level3 unnumbered" number="">
 <h3>R</h3>
 <p>sample correlation coefficient <span class="math inline">\(r\)</span></p>
-<div class="sourceCode" id="cb241"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb241-1"><a href="ch-12-linear-regression.html#cb241-1"></a><span class="co"># Example 12.15, p. 528</span></span>
-<span id="cb241-2"><a href="ch-12-linear-regression.html#cb241-2"></a>x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">2.4</span>, <span class="fl">3.4</span>, <span class="fl">4.6</span>, <span class="fl">3.7</span>, <span class="fl">2.2</span>, <span class="fl">3.3</span>, <span class="fl">4.0</span>, <span class="fl">2.1</span>)</span>
-<span id="cb241-3"><a href="ch-12-linear-regression.html#cb241-3"></a>y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">1.33</span>, <span class="fl">2.12</span>, <span class="fl">1.80</span>, <span class="fl">1.65</span>, <span class="fl">2.00</span>, <span class="fl">1.76</span>, <span class="fl">2.11</span>, <span class="fl">1.63</span>)</span>
-<span id="cb241-4"><a href="ch-12-linear-regression.html#cb241-4"></a></span>
-<span id="cb241-5"><a href="ch-12-linear-regression.html#cb241-5"></a><span class="kw">cor</span>(x,y)</span></code></pre></div>
+<div class="sourceCode" id="cb224"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb224-1"><a href="ch-12-linear-regression.html#cb224-1"></a><span class="co"># Example 12.15, p. 528</span></span>
+<span id="cb224-2"><a href="ch-12-linear-regression.html#cb224-2"></a>x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">2.4</span>, <span class="fl">3.4</span>, <span class="fl">4.6</span>, <span class="fl">3.7</span>, <span class="fl">2.2</span>, <span class="fl">3.3</span>, <span class="fl">4.0</span>, <span class="fl">2.1</span>)</span>
+<span id="cb224-3"><a href="ch-12-linear-regression.html#cb224-3"></a>y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">1.33</span>, <span class="fl">2.12</span>, <span class="fl">1.80</span>, <span class="fl">1.65</span>, <span class="fl">2.00</span>, <span class="fl">1.76</span>, <span class="fl">2.11</span>, <span class="fl">1.63</span>)</span>
+<span id="cb224-4"><a href="ch-12-linear-regression.html#cb224-4"></a></span>
+<span id="cb224-5"><a href="ch-12-linear-regression.html#cb224-5"></a><span class="kw">cor</span>(x,y)</span></code></pre></div>
 <pre><code>## [1] 0.3472602</code></pre>
 </div>
 </div>
-<div id="practice-exercises-5" class="section level2 unnumbered" number="">
+<div id="practice-exercises-4" class="section level2 unnumbered" number="">
 <h2>Practice Exercises</h2>
 <ol style="list-style-type: decimal">
 <li>(Least squares line)** Researchers employed a least squares analysis in studying how <span class="math inline">\(Y=\)</span> porosity (%) is related to <span class="math inline">\(X=\)</span> unit weight (pcf) in concrete specimens. Consider the following representative data:</li>
 </ol>
-<div class="sourceCode" id="cb243"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb243-1"><a href="ch-12-linear-regression.html#cb243-1"></a>x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">99.0</span>, <span class="fl">101.1</span>, <span class="fl">102.7</span>, <span class="fl">103.0</span>, <span class="fl">105.4</span>, <span class="fl">107.0</span>, <span class="fl">108.7</span>, <span class="fl">110.8</span>, <span class="fl">112.1</span>, <span class="fl">112.4</span>, <span class="fl">113.6</span>, <span class="fl">113.8</span>, <span class="fl">115.1</span>, <span class="fl">115.4</span>, <span class="fl">120.0</span>)</span>
-<span id="cb243-2"><a href="ch-12-linear-regression.html#cb243-2"></a>y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">28.8</span>, <span class="fl">27.9</span>, <span class="fl">27.0</span>, <span class="fl">25.2</span>, <span class="fl">22.8</span>, <span class="fl">21.5</span>, <span class="fl">20.9</span>, <span class="fl">19.6</span>, <span class="fl">17.1</span>, <span class="fl">18.9</span>, <span class="fl">16.0</span>, <span class="fl">16.7</span>, <span class="fl">13.0</span>, <span class="fl">13.6</span>, <span class="fl">10.8</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb226"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb226-1"><a href="ch-12-linear-regression.html#cb226-1"></a>x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">99.0</span>, <span class="fl">101.1</span>, <span class="fl">102.7</span>, <span class="fl">103.0</span>, <span class="fl">105.4</span>, <span class="fl">107.0</span>, <span class="fl">108.7</span>, <span class="fl">110.8</span>, <span class="fl">112.1</span>, <span class="fl">112.4</span>, <span class="fl">113.6</span>, <span class="fl">113.8</span>, <span class="fl">115.1</span>, <span class="fl">115.4</span>, <span class="fl">120.0</span>)</span>
+<span id="cb226-2"><a href="ch-12-linear-regression.html#cb226-2"></a>y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">28.8</span>, <span class="fl">27.9</span>, <span class="fl">27.0</span>, <span class="fl">25.2</span>, <span class="fl">22.8</span>, <span class="fl">21.5</span>, <span class="fl">20.9</span>, <span class="fl">19.6</span>, <span class="fl">17.1</span>, <span class="fl">18.9</span>, <span class="fl">16.0</span>, <span class="fl">16.7</span>, <span class="fl">13.0</span>, <span class="fl">13.6</span>, <span class="fl">10.8</span>)</span></code></pre></div>
 <p>(Textbook 12.17)</p>
 <ol style="list-style-type: lower-alpha">
 <li>Obtain the equation of the estimated regression line.</li>
 </ol>
-<div class="sourceCode" id="cb244"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb244-1"><a href="ch-12-linear-regression.html#cb244-1"></a><span class="kw">lm</span>(y<span class="op">~</span>x)</span></code></pre></div>
+<div class="sourceCode" id="cb227"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb227-1"><a href="ch-12-linear-regression.html#cb227-1"></a><span class="kw">lm</span>(y<span class="op">~</span>x)</span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## lm(formula = y ~ x)
@@ -434,34 +423,34 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ol start="2" style="list-style-type: lower-alpha">
 <li>Calculate the residuals corresponding to the first two observations.</li>
 </ol>
-<div class="sourceCode" id="cb246"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb246-1"><a href="ch-12-linear-regression.html#cb246-1"></a>mod &lt;-<span class="st"> </span><span class="kw">lm</span>(y<span class="op">~</span>x)</span>
-<span id="cb246-2"><a href="ch-12-linear-regression.html#cb246-2"></a><span class="kw">round</span>(mod<span class="op">$</span>residuals, <span class="dv">2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb229"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb229-1"><a href="ch-12-linear-regression.html#cb229-1"></a>mod &lt;-<span class="st"> </span><span class="kw">lm</span>(y<span class="op">~</span>x)</span>
+<span id="cb229-2"><a href="ch-12-linear-regression.html#cb229-2"></a><span class="kw">round</span>(mod<span class="op">$</span>residuals, <span class="dv">2</span>)</span></code></pre></div>
 <pre><code>##     1     2     3     4     5     6     7     8     9    10    11    12    13 
 ## -0.54  0.46  1.01 -0.52 -0.75 -0.60  0.33  0.93 -0.39  1.68 -0.13  0.75 -1.78 
 ##    14    15 
 ## -0.90  0.46</code></pre>
 <p>Or alternatively, use R as a calculator</p>
-<div class="sourceCode" id="cb248"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb248-1"><a href="ch-12-linear-regression.html#cb248-1"></a>pred &lt;-<span class="st"> </span><span class="fl">118.9099</span> <span class="op">-</span><span class="st"> </span><span class="fl">0.9047</span><span class="op">*</span>x</span>
-<span id="cb248-2"><a href="ch-12-linear-regression.html#cb248-2"></a>res &lt;-<span class="st"> </span>y <span class="op">-</span><span class="st"> </span>pred</span>
-<span id="cb248-3"><a href="ch-12-linear-regression.html#cb248-3"></a>res[<span class="dv">1</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb231"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb231-1"><a href="ch-12-linear-regression.html#cb231-1"></a>pred &lt;-<span class="st"> </span><span class="fl">118.9099</span> <span class="op">-</span><span class="st"> </span><span class="fl">0.9047</span><span class="op">*</span>x</span>
+<span id="cb231-2"><a href="ch-12-linear-regression.html#cb231-2"></a>res &lt;-<span class="st"> </span>y <span class="op">-</span><span class="st"> </span>pred</span>
+<span id="cb231-3"><a href="ch-12-linear-regression.html#cb231-3"></a>res[<span class="dv">1</span>]</span></code></pre></div>
 <pre><code>## [1] -0.5446</code></pre>
-<div class="sourceCode" id="cb250"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb250-1"><a href="ch-12-linear-regression.html#cb250-1"></a>res[<span class="dv">2</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb233"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb233-1"><a href="ch-12-linear-regression.html#cb233-1"></a>res[<span class="dv">2</span>]</span></code></pre></div>
 <pre><code>## [1] 0.45527</code></pre>
 <ol start="3" style="list-style-type: lower-alpha">
 <li>Calculate a point estimate of <span class="math inline">\(\sigma\)</span>.</li>
 </ol>
-<div class="sourceCode" id="cb252"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb252-1"><a href="ch-12-linear-regression.html#cb252-1"></a>sig2 &lt;-<span class="st"> </span><span class="kw">sum</span>((res)<span class="op">^</span><span class="dv">2</span>)<span class="op">/</span>(<span class="kw">length</span>(x)<span class="op">-</span><span class="dv">2</span>)</span>
-<span id="cb252-2"><a href="ch-12-linear-regression.html#cb252-2"></a><span class="kw">sqrt</span>(sig2)</span></code></pre></div>
+<div class="sourceCode" id="cb235"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb235-1"><a href="ch-12-linear-regression.html#cb235-1"></a>sig2 &lt;-<span class="st"> </span><span class="kw">sum</span>((res)<span class="op">^</span><span class="dv">2</span>)<span class="op">/</span>(<span class="kw">length</span>(x)<span class="op">-</span><span class="dv">2</span>)</span>
+<span id="cb235-2"><a href="ch-12-linear-regression.html#cb235-2"></a><span class="kw">sqrt</span>(sig2)</span></code></pre></div>
 <pre><code>## [1] 0.938042</code></pre>
 <ol start="4" style="list-style-type: lower-alpha">
 <li>What proportion of observed variation in porosity can be attributed to the approximate linear relationship between unit weight and porosity?</li>
 </ol>
-<div class="sourceCode" id="cb254"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb254-1"><a href="ch-12-linear-regression.html#cb254-1"></a><span class="kw">cor</span>(x, y)<span class="op">^</span><span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb237"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb237-1"><a href="ch-12-linear-regression.html#cb237-1"></a><span class="kw">cor</span>(x, y)<span class="op">^</span><span class="dv">2</span></span></code></pre></div>
 <pre><code>## [1] 0.9738874</code></pre>
 <ol start="5" style="list-style-type: lower-alpha">
 <li>Calculate the SSE and SST.</li>
 </ol>
-<div class="sourceCode" id="cb256"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb256-1"><a href="ch-12-linear-regression.html#cb256-1"></a><span class="kw">anova</span>(mod) <span class="co"># analsis of variance</span></span></code></pre></div>
+<div class="sourceCode" id="cb239"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb239-1"><a href="ch-12-linear-regression.html#cb239-1"></a><span class="kw">anova</span>(mod) <span class="co"># analsis of variance</span></span></code></pre></div>
 <pre><code>## Analysis of Variance Table
 ## 
 ## Response: y
@@ -470,15 +459,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## Residuals 13  11.44    0.88                             
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
-<div class="sourceCode" id="cb258"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb258-1"><a href="ch-12-linear-regression.html#cb258-1"></a>SSE &lt;-<span class="st"> </span><span class="kw">anova</span>(mod)<span class="op">$</span><span class="st">`</span><span class="dt">Sum Sq</span><span class="st">`</span>[<span class="dv">1</span>]</span>
-<span id="cb258-2"><a href="ch-12-linear-regression.html#cb258-2"></a>SST &lt;-<span class="st"> </span><span class="kw">anova</span>(mod)<span class="op">$</span><span class="st">`</span><span class="dt">Sum Sq</span><span class="st">`</span>[<span class="dv">1</span>] <span class="op">+</span><span class="st"> </span><span class="kw">anova</span>(mod)<span class="op">$</span><span class="st">`</span><span class="dt">Sum Sq</span><span class="st">`</span>[<span class="dv">2</span>]</span>
-<span id="cb258-3"><a href="ch-12-linear-regression.html#cb258-3"></a><span class="kw">c</span>(SSE, SST)</span></code></pre></div>
+<div class="sourceCode" id="cb241"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb241-1"><a href="ch-12-linear-regression.html#cb241-1"></a>SSE &lt;-<span class="st"> </span><span class="kw">anova</span>(mod)<span class="op">$</span><span class="st">`</span><span class="dt">Sum Sq</span><span class="st">`</span>[<span class="dv">1</span>]</span>
+<span id="cb241-2"><a href="ch-12-linear-regression.html#cb241-2"></a>SST &lt;-<span class="st"> </span><span class="kw">anova</span>(mod)<span class="op">$</span><span class="st">`</span><span class="dt">Sum Sq</span><span class="st">`</span>[<span class="dv">1</span>] <span class="op">+</span><span class="st"> </span><span class="kw">anova</span>(mod)<span class="op">$</span><span class="st">`</span><span class="dt">Sum Sq</span><span class="st">`</span>[<span class="dv">2</span>]</span>
+<span id="cb241-3"><a href="ch-12-linear-regression.html#cb241-3"></a><span class="kw">c</span>(SSE, SST)</span></code></pre></div>
 <pre><code>## [1] 426.6185 438.0573</code></pre>
 <p>Or alternatively, use R as a calculator. Notice that the same results are produced.</p>
-<div class="sourceCode" id="cb260"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb260-1"><a href="ch-12-linear-regression.html#cb260-1"></a>SSE1 &lt;-<span class="st"> </span><span class="kw">sum</span>((mod<span class="op">$</span>residual)<span class="op">^</span><span class="dv">2</span>)</span>
-<span id="cb260-2"><a href="ch-12-linear-regression.html#cb260-2"></a>SST1 &lt;-<span class="st"> </span><span class="kw">sum</span>((y<span class="op">-</span><span class="kw">mean</span>(y))<span class="op">^</span><span class="dv">2</span>)</span>
-<span id="cb260-3"><a href="ch-12-linear-regression.html#cb260-3"></a>SSR1 &lt;-<span class="st"> </span><span class="kw">sum</span>((mod<span class="op">$</span>fitted.values <span class="op">-</span><span class="st"> </span><span class="kw">mean</span>(y))<span class="op">^</span><span class="dv">2</span>)</span>
-<span id="cb260-4"><a href="ch-12-linear-regression.html#cb260-4"></a><span class="kw">c</span>(SSE1, SST1, SSE1<span class="op">+</span>SSR1)</span></code></pre></div>
+<div class="sourceCode" id="cb243"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb243-1"><a href="ch-12-linear-regression.html#cb243-1"></a>SSE1 &lt;-<span class="st"> </span><span class="kw">sum</span>((mod<span class="op">$</span>residual)<span class="op">^</span><span class="dv">2</span>)</span>
+<span id="cb243-2"><a href="ch-12-linear-regression.html#cb243-2"></a>SST1 &lt;-<span class="st"> </span><span class="kw">sum</span>((y<span class="op">-</span><span class="kw">mean</span>(y))<span class="op">^</span><span class="dv">2</span>)</span>
+<span id="cb243-3"><a href="ch-12-linear-regression.html#cb243-3"></a>SSR1 &lt;-<span class="st"> </span><span class="kw">sum</span>((mod<span class="op">$</span>fitted.values <span class="op">-</span><span class="st"> </span><span class="kw">mean</span>(y))<span class="op">^</span><span class="dv">2</span>)</span>
+<span id="cb243-4"><a href="ch-12-linear-regression.html#cb243-4"></a><span class="kw">c</span>(SSE1, SST1, SSE1<span class="op">+</span>SSR1)</span></code></pre></div>
 <pre><code>## [1]  11.43883 438.05733 438.05733</code></pre>
 
 </div>
@@ -488,8 +477,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="ch-14-chi-squared-test.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="ch-13-nonlinear-and-multiple-regression.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="ch-5-joint-probability.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
