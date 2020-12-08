@@ -1,5 +1,4 @@
 book_filename: "STAT1201-resource"
-output_dir: docs
 edit: https://github.com/jtr13/1201/edit/master/%s
 view: https://github.com/jtr13/1201/blob/master/%s
 rmd_files: ["index.Rmd", # Syllabus {-}
