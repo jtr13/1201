@@ -1,3 +1,17 @@
+--- 
+title: "Stat 1201 Resources"
+author: "Joyce Robbins"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output:
+  bookdown::gitbook:
+    config:
+      number_sections: no
+github-repo: "jtr13/1201"
+url: 'https://jtr13.github.io/1201/'
+description: "Stat 1201"
+---
+
 # Introduction {-}
 
 This site contains supplemental materials for Stat 1201, mainly: 1) clarifications on which sections we cover in the textbook (Devore, *Probability and Statistics for Engineering and the Sciences* **9th edition**), 2) R code, and 3) links to helpful resources online. It is not in any way a substitute for materials available in CourseWorks.
