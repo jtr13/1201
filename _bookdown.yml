@@ -2,7 +2,7 @@ book_filename: "STAT1201-resource"
 edit: https://github.com/jtr13/1201/edit/master/%s
 view: https://github.com/jtr13/1201/blob/master/%s
 rmd_files: ["index.Rmd", # Introduction {-}
-#  "Introduction.Rmd", # Introduction {-}
+#  "Syllabus.Rmd", # Syllabus {-}
   "Chapter1.Rmd", # Ch. 1 Descriptive Statistics {-}
   "Chapter2.Rmd", # Ch. 2 Probability {-}
   "Chapter3.Rmd", # Ch. 3 Discrete Distributions {-}
