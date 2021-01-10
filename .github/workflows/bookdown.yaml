@@ -75,5 +75,5 @@ jobs:
        env:
          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
        with:
-         email: arnaud@ligny.org
+         email: ${{ secrets.EMAIL }}  
          build_dir: _book/
