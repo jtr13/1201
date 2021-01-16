@@ -118,15 +118,16 @@ sum(x*px)
 Read and try the examples in [Chapter 1 of Introduction to R](https://monashdatafluency.github.io/r-intro-2/starting-out-in-r.html){target="_blank"}
 
 
-## Saving your work {-}
-
-### Saving code as an .R file {-}
+## Creating Graphs, Saving your work {-}
 
 **Video**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XpUmvKdM1XI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=TbQiuKuNdg8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-**Screenshot**
+
+### Saving code as an .R file  {-}
+
+(Also covered in video above)
 
 ![](images/R4.png)
 
@@ -134,11 +135,7 @@ Saving with this method saves only the code, not the output. Below are two metho
 
 ### Convert .R file to .html {-}
 
-**Video**
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RNd37Pd5ANU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-**Screenshots**
+(Also covered in video above)
 
 ![](images/R5.png)
 
@@ -147,17 +144,6 @@ Saving with this method saves only the code, not the output. Below are two metho
 ![](images/R7.png)
 
 ![](images/R8.png)
-
-
-### Save code and text as .Rmd, convert to .html {-}
-
-This format is called "Rmarkdown" since it combines R and markdown. Markdown is a simple format that is converted to .html
-
-For a short summary of markdown, click Help and then "Markdown Quick Reference" in RStudio. 
-
-**Video**
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/x0-kHWybiaQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 <!-- Contact -->
