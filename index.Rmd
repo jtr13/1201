@@ -62,17 +62,16 @@ https://www.rstudio.com/products/rstudio/download/#download
 
 ![](images/rstudiologo.png)
 
-## Getting Started with R {-}
+## Getting Started with R: Working in the Console {-}
+
+The first step in getting started is getting comfortable working in the RStudio console. It works like a calculator in the sense that your work is not saved. Do the following:
+
+### Watch the video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tQvtYdLvSSg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-
-Video: <iframe width="560" height="315" src="https://www.youtube.com/embed/tQvtYdLvSSg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-
-To get oriented, read and try the examples in [Chapter 1 of Introduction to R](https://monashdatafluency.github.io/r-intro-2/starting-out-in-r.html){target="_blank"}
-
-### Quick intro to RStudio Console {-}
+### Quick review of material covered in the video, plus additional examples
 
 Working in the console pane is similar to a using a calculator: each line of code is executed when you press enter. Note that your work is not saved with this approach.
 
@@ -114,8 +113,14 @@ x*px
 sum(x*px)
 ```
 
+### More examples
 
-### Saving your code as an .R file {-}
+Read and try the examples in [Chapter 1 of Introduction to R](https://monashdatafluency.github.io/r-intro-2/starting-out-in-r.html){target="_blank"}
+
+
+## Saving your work
+
+### Saving code as an .R file {-}
 
 **Video**
 
