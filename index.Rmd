@@ -56,7 +56,7 @@ https://cran.r-project.org
 
 ![](images/rlogo.jpeg)
 
-* RStudio -- an integrated development environment (IDE) which makes it much easier to use R. It is optional but highly recommended. This is the app you will open to use R.
+* RStudio -- an integrated development environment (IDE) which makes it much easier to use R. It is optional but highly recommended. This is the app you will open to use R. Choose the free version of RStudio Desktop:
 
 https://www.rstudio.com/products/rstudio/download/#download
 
