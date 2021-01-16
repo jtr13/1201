@@ -122,8 +122,7 @@ Read and try the examples in [Chapter 1 of Introduction to R](https://monashdata
 
 **Video**
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=TbQiuKuNdg8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TbQiuKuNdg8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Saving code as an .R file  {-}
 
