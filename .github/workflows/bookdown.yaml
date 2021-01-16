@@ -77,3 +77,5 @@ jobs:
        with:
          email: ${{ secrets.EMAIL }}  
          build_dir: _book/
+         cname: 1201.info  # optional
+         jekyll: no        # optional
