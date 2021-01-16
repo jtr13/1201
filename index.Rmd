@@ -86,6 +86,35 @@ Drawing a stem and leaf plot
 
 ![](images/R3.png)
 
+
+Basic operations:
+
+```{r}
+3 + 4
+3 - 4
+3 * 4
+3 / 4
+3^4
+```
+
+Working with vectors:
+
+```{r}
+x <- 1:5
+x
+sum(x)
+cumsum(x)
+px <- x*.05 + .05
+px
+```
+
+Expected value:
+```{r}
+x*px
+sum(x*px)
+```
+
+
 ### Saving your code as an .R file {-}
 
 **Video**
@@ -124,36 +153,6 @@ For a short summary of markdown, click Help and then "Markdown Quick Reference" 
 **Video**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/x0-kHWybiaQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-### Using R as a calculator {-}
-
-Basic operations:
-
-```{r}
-3 + 4
-3 - 4
-3 * 4
-3 / 4
-3^4
-```
-
-Working with vectors:
-
-```{r}
-x <- 1:5
-x
-sum(x)
-cumsum(x)
-px <- x*.05 + .05
-px
-```
-
-Expected value:
-```{r}
-x*px
-sum(x*px)
-```
 
 
 <!-- Contact -->
