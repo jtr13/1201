@@ -24,7 +24,7 @@
 <meta name="author" content="Joyce Robbins" />
 
 
-<meta name="date" content="2021-02-14" />
+<meta name="date" content="2021-03-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -275,10 +275,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="r" class="section level3 unnumbered">
 <h3>R</h3>
 <p>Stem-and-leaf display:</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="ch-1-descriptive-statistics.html#cb23-1"></a>prices &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">379</span>, <span class="dv">425</span>, <span class="dv">450</span>, <span class="dv">450</span>, <span class="dv">499</span>, <span class="dv">529</span>, <span class="dv">535</span>, <span class="dv">535</span>, <span class="dv">545</span>, <span class="dv">599</span>, <span class="dv">665</span>,</span>
-<span id="cb23-2"><a href="ch-1-descriptive-statistics.html#cb23-2"></a>            <span class="dv">675</span>, <span class="dv">699</span>, <span class="dv">699</span>, <span class="dv">725</span>, <span class="dv">725</span>, <span class="dv">745</span>, <span class="dv">799</span>)</span>
-<span id="cb23-3"><a href="ch-1-descriptive-statistics.html#cb23-3"></a></span>
-<span id="cb23-4"><a href="ch-1-descriptive-statistics.html#cb23-4"></a><span class="kw">stem</span>(prices)</span></code></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="ch-1-descriptive-statistics.html#cb25-1"></a>prices &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">379</span>, <span class="dv">425</span>, <span class="dv">450</span>, <span class="dv">450</span>, <span class="dv">499</span>, <span class="dv">529</span>, <span class="dv">535</span>, <span class="dv">535</span>, <span class="dv">545</span>, <span class="dv">599</span>, <span class="dv">665</span>,</span>
+<span id="cb25-2"><a href="ch-1-descriptive-statistics.html#cb25-2"></a>            <span class="dv">675</span>, <span class="dv">699</span>, <span class="dv">699</span>, <span class="dv">725</span>, <span class="dv">725</span>, <span class="dv">745</span>, <span class="dv">799</span>)</span>
+<span id="cb25-3"><a href="ch-1-descriptive-statistics.html#cb25-3"></a></span>
+<span id="cb25-4"><a href="ch-1-descriptive-statistics.html#cb25-4"></a><span class="kw">stem</span>(prices)</span></code></pre></div>
 <pre><code>## 
 ##   The decimal point is 2 digit(s) to the right of the |
 ## 
@@ -290,28 +290,28 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##   8 | 0</code></pre>
 <p>Note that histograms are drawn with <em>unbinned</em> data. R does the binning in the process of drawing the histogram.</p>
 <p>Frequency histogram:</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="ch-1-descriptive-statistics.html#cb25-1"></a>prices &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">379</span>, <span class="dv">425</span>, <span class="dv">450</span>, <span class="dv">450</span>, <span class="dv">499</span>, <span class="dv">529</span>, <span class="dv">535</span>, <span class="dv">535</span>, <span class="dv">545</span>, <span class="dv">599</span>, <span class="dv">665</span>,</span>
-<span id="cb25-2"><a href="ch-1-descriptive-statistics.html#cb25-2"></a>            <span class="dv">675</span>, <span class="dv">699</span>, <span class="dv">699</span>, <span class="dv">725</span>, <span class="dv">725</span>, <span class="dv">745</span>, <span class="dv">799</span>)</span>
-<span id="cb25-3"><a href="ch-1-descriptive-statistics.html#cb25-3"></a></span>
-<span id="cb25-4"><a href="ch-1-descriptive-statistics.html#cb25-4"></a><span class="kw">hist</span>(prices)</span></code></pre></div>
-<p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
-<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="ch-1-descriptive-statistics.html#cb26-1"></a><span class="kw">hist</span>(prices, <span class="dt">breaks =</span> <span class="kw">c</span>(<span class="dv">300</span>, <span class="dv">400</span>, <span class="dv">500</span>, <span class="dv">600</span>, <span class="dv">700</span>, <span class="dv">800</span>),</span>
-<span id="cb26-2"><a href="ch-1-descriptive-statistics.html#cb26-2"></a>     <span class="dt">col =</span> <span class="st">&quot;lightblue&quot;</span>)</span></code></pre></div>
-<p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-5-2.png" width="672" /></p>
-<p>Density histogram:</p>
 <div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="ch-1-descriptive-statistics.html#cb27-1"></a>prices &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">379</span>, <span class="dv">425</span>, <span class="dv">450</span>, <span class="dv">450</span>, <span class="dv">499</span>, <span class="dv">529</span>, <span class="dv">535</span>, <span class="dv">535</span>, <span class="dv">545</span>, <span class="dv">599</span>, <span class="dv">665</span>,</span>
 <span id="cb27-2"><a href="ch-1-descriptive-statistics.html#cb27-2"></a>            <span class="dv">675</span>, <span class="dv">699</span>, <span class="dv">699</span>, <span class="dv">725</span>, <span class="dv">725</span>, <span class="dv">745</span>, <span class="dv">799</span>)</span>
 <span id="cb27-3"><a href="ch-1-descriptive-statistics.html#cb27-3"></a></span>
-<span id="cb27-4"><a href="ch-1-descriptive-statistics.html#cb27-4"></a><span class="kw">hist</span>(prices, <span class="dt">freq =</span> <span class="ot">FALSE</span>, </span>
-<span id="cb27-5"><a href="ch-1-descriptive-statistics.html#cb27-5"></a>     <span class="dt">breaks =</span> <span class="kw">c</span>(<span class="dv">300</span>, <span class="dv">400</span>, <span class="dv">500</span>, <span class="dv">600</span>, <span class="dv">700</span>, <span class="dv">800</span>),</span>
-<span id="cb27-6"><a href="ch-1-descriptive-statistics.html#cb27-6"></a>     <span class="dt">col =</span> <span class="st">&quot;lightblue&quot;</span>, <span class="dt">las =</span> <span class="dv">1</span>)</span></code></pre></div>
+<span id="cb27-4"><a href="ch-1-descriptive-statistics.html#cb27-4"></a><span class="kw">hist</span>(prices)</span></code></pre></div>
+<p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="ch-1-descriptive-statistics.html#cb28-1"></a><span class="kw">hist</span>(prices, <span class="dt">breaks =</span> <span class="kw">c</span>(<span class="dv">300</span>, <span class="dv">400</span>, <span class="dv">500</span>, <span class="dv">600</span>, <span class="dv">700</span>, <span class="dv">800</span>),</span>
+<span id="cb28-2"><a href="ch-1-descriptive-statistics.html#cb28-2"></a>     <span class="dt">col =</span> <span class="st">&quot;lightblue&quot;</span>)</span></code></pre></div>
+<p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-5-2.png" width="672" /></p>
+<p>Density histogram:</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="ch-1-descriptive-statistics.html#cb29-1"></a>prices &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">379</span>, <span class="dv">425</span>, <span class="dv">450</span>, <span class="dv">450</span>, <span class="dv">499</span>, <span class="dv">529</span>, <span class="dv">535</span>, <span class="dv">535</span>, <span class="dv">545</span>, <span class="dv">599</span>, <span class="dv">665</span>,</span>
+<span id="cb29-2"><a href="ch-1-descriptive-statistics.html#cb29-2"></a>            <span class="dv">675</span>, <span class="dv">699</span>, <span class="dv">699</span>, <span class="dv">725</span>, <span class="dv">725</span>, <span class="dv">745</span>, <span class="dv">799</span>)</span>
+<span id="cb29-3"><a href="ch-1-descriptive-statistics.html#cb29-3"></a></span>
+<span id="cb29-4"><a href="ch-1-descriptive-statistics.html#cb29-4"></a><span class="kw">hist</span>(prices, <span class="dt">freq =</span> <span class="ot">FALSE</span>, </span>
+<span id="cb29-5"><a href="ch-1-descriptive-statistics.html#cb29-5"></a>     <span class="dt">breaks =</span> <span class="kw">c</span>(<span class="dv">300</span>, <span class="dv">400</span>, <span class="dv">500</span>, <span class="dv">600</span>, <span class="dv">700</span>, <span class="dv">800</span>),</span>
+<span id="cb29-6"><a href="ch-1-descriptive-statistics.html#cb29-6"></a>     <span class="dt">col =</span> <span class="st">&quot;lightblue&quot;</span>, <span class="dt">las =</span> <span class="dv">1</span>)</span></code></pre></div>
 <p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 <p>Cumulative frequency histogram</p>
 <p>For this type of histogram, we need access to the bin counts, in order to calculate the cumulative frequencies. The <code>hist()</code> function returns these values, if assigned to a variable:</p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="ch-1-descriptive-statistics.html#cb28-1"></a>x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">5</span>, <span class="dv">5</span>, <span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">7</span>, <span class="dv">8</span>)</span>
-<span id="cb28-2"><a href="ch-1-descriptive-statistics.html#cb28-2"></a>myhistdata &lt;-<span class="st"> </span><span class="kw">hist</span>(x)</span></code></pre></div>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="ch-1-descriptive-statistics.html#cb30-1"></a>x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">1</span>, <span class="dv">5</span>, <span class="dv">5</span>, <span class="dv">5</span>, <span class="dv">7</span>, <span class="dv">7</span>, <span class="dv">8</span>)</span>
+<span id="cb30-2"><a href="ch-1-descriptive-statistics.html#cb30-2"></a>myhistdata &lt;-<span class="st"> </span><span class="kw">hist</span>(x)</span></code></pre></div>
 <p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="ch-1-descriptive-statistics.html#cb29-1"></a>myhistdata</span></code></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="ch-1-descriptive-statistics.html#cb31-1"></a>myhistdata</span></code></pre></div>
 <pre><code>## $breaks
 ## [1] 1 2 3 4 5 6 7 8
 ## 
@@ -333,22 +333,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## attr(,&quot;class&quot;)
 ## [1] &quot;histogram&quot;</code></pre>
 <p>The particular information we want is <code>$counts</code>:</p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="ch-1-descriptive-statistics.html#cb31-1"></a>myhistdata<span class="op">$</span>counts</span></code></pre></div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="ch-1-descriptive-statistics.html#cb33-1"></a>myhistdata<span class="op">$</span>counts</span></code></pre></div>
 <pre><code>## [1] 5 0 0 3 0 2 1</code></pre>
 <p>The cumulative frequencies are:</p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="ch-1-descriptive-statistics.html#cb33-1"></a><span class="kw">cumsum</span>(myhistdata<span class="op">$</span>counts)</span></code></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="ch-1-descriptive-statistics.html#cb35-1"></a><span class="kw">cumsum</span>(myhistdata<span class="op">$</span>counts)</span></code></pre></div>
 <pre><code>## [1]  5  5  5  8  8 10 11</code></pre>
 <p>To plot them, we need to use a bar chart, not a histogram, since we already have the y-axis values:</p>
-<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="ch-1-descriptive-statistics.html#cb35-1"></a><span class="kw">barplot</span>(<span class="kw">cumsum</span>(myhistdata<span class="op">$</span>counts))</span></code></pre></div>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="ch-1-descriptive-statistics.html#cb37-1"></a><span class="kw">barplot</span>(<span class="kw">cumsum</span>(myhistdata<span class="op">$</span>counts))</span></code></pre></div>
 <p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
 <p>Cleaned up:</p>
-<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb36-1"><a href="ch-1-descriptive-statistics.html#cb36-1"></a><span class="kw">barplot</span>(<span class="kw">cumsum</span>(myhistdata<span class="op">$</span>counts),</span>
-<span id="cb36-2"><a href="ch-1-descriptive-statistics.html#cb36-2"></a>        <span class="dt">col =</span> <span class="st">&quot;lightblue&quot;</span>, </span>
-<span id="cb36-3"><a href="ch-1-descriptive-statistics.html#cb36-3"></a>        <span class="dt">space =</span> <span class="dv">0</span>,  <span class="co"># remove gaps between bars</span></span>
-<span id="cb36-4"><a href="ch-1-descriptive-statistics.html#cb36-4"></a>        <span class="dt">las =</span> <span class="dv">1</span>, <span class="co"># make all tick mark labels horizontal</span></span>
-<span id="cb36-5"><a href="ch-1-descriptive-statistics.html#cb36-5"></a>        <span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">12</span>), <span class="co"># make the y-axis longer</span></span>
-<span id="cb36-6"><a href="ch-1-descriptive-statistics.html#cb36-6"></a>        <span class="dt">names.arg =</span> myhistdata<span class="op">$</span>mids</span>
-<span id="cb36-7"><a href="ch-1-descriptive-statistics.html#cb36-7"></a>        )</span></code></pre></div>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="ch-1-descriptive-statistics.html#cb38-1"></a><span class="kw">barplot</span>(<span class="kw">cumsum</span>(myhistdata<span class="op">$</span>counts),</span>
+<span id="cb38-2"><a href="ch-1-descriptive-statistics.html#cb38-2"></a>        <span class="dt">col =</span> <span class="st">&quot;lightblue&quot;</span>, </span>
+<span id="cb38-3"><a href="ch-1-descriptive-statistics.html#cb38-3"></a>        <span class="dt">space =</span> <span class="dv">0</span>,  <span class="co"># remove gaps between bars</span></span>
+<span id="cb38-4"><a href="ch-1-descriptive-statistics.html#cb38-4"></a>        <span class="dt">las =</span> <span class="dv">1</span>, <span class="co"># make all tick mark labels horizontal</span></span>
+<span id="cb38-5"><a href="ch-1-descriptive-statistics.html#cb38-5"></a>        <span class="dt">ylim =</span> <span class="kw">c</span>(<span class="dv">0</span>, <span class="dv">12</span>), <span class="co"># make the y-axis longer</span></span>
+<span id="cb38-6"><a href="ch-1-descriptive-statistics.html#cb38-6"></a>        <span class="dt">names.arg =</span> myhistdata<span class="op">$</span>mids</span>
+<span id="cb38-7"><a href="ch-1-descriptive-statistics.html#cb38-7"></a>        )</span></code></pre></div>
 <p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
 </div>
 </div>
@@ -358,19 +358,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Skip: “Categorical Data and Sample Proportions,” p. 34 (We’ll return to this topic later.)</p>
 <div id="r-1" class="section level3 unnumbered">
 <h3>R</h3>
-<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="ch-1-descriptive-statistics.html#cb37-1"></a>prices &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">379</span>, <span class="dv">425</span>, <span class="dv">450</span>, <span class="dv">450</span>, <span class="dv">499</span>, <span class="dv">529</span>, <span class="dv">535</span>, <span class="dv">535</span>, <span class="dv">545</span>, <span class="dv">599</span>, <span class="dv">665</span>,</span>
-<span id="cb37-2"><a href="ch-1-descriptive-statistics.html#cb37-2"></a>            <span class="dv">675</span>, <span class="dv">699</span>, <span class="dv">699</span>, <span class="dv">725</span>, <span class="dv">725</span>, <span class="dv">745</span>, <span class="dv">799</span>)</span>
-<span id="cb37-3"><a href="ch-1-descriptive-statistics.html#cb37-3"></a></span>
-<span id="cb37-4"><a href="ch-1-descriptive-statistics.html#cb37-4"></a><span class="kw">mean</span>(prices)</span></code></pre></div>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="ch-1-descriptive-statistics.html#cb39-1"></a>prices &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">379</span>, <span class="dv">425</span>, <span class="dv">450</span>, <span class="dv">450</span>, <span class="dv">499</span>, <span class="dv">529</span>, <span class="dv">535</span>, <span class="dv">535</span>, <span class="dv">545</span>, <span class="dv">599</span>, <span class="dv">665</span>,</span>
+<span id="cb39-2"><a href="ch-1-descriptive-statistics.html#cb39-2"></a>            <span class="dv">675</span>, <span class="dv">699</span>, <span class="dv">699</span>, <span class="dv">725</span>, <span class="dv">725</span>, <span class="dv">745</span>, <span class="dv">799</span>)</span>
+<span id="cb39-3"><a href="ch-1-descriptive-statistics.html#cb39-3"></a></span>
+<span id="cb39-4"><a href="ch-1-descriptive-statistics.html#cb39-4"></a><span class="kw">mean</span>(prices)</span></code></pre></div>
 <pre><code>## [1] 593.2222</code></pre>
-<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="ch-1-descriptive-statistics.html#cb39-1"></a><span class="kw">median</span>(prices)</span></code></pre></div>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="ch-1-descriptive-statistics.html#cb41-1"></a><span class="kw">median</span>(prices)</span></code></pre></div>
 <pre><code>## [1] 572</code></pre>
-<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="ch-1-descriptive-statistics.html#cb41-1"></a><span class="co">## quartiles</span></span>
-<span id="cb41-2"><a href="ch-1-descriptive-statistics.html#cb41-2"></a><span class="kw">quantile</span>(prices)</span></code></pre></div>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="ch-1-descriptive-statistics.html#cb43-1"></a><span class="co">## quartiles</span></span>
+<span id="cb43-2"><a href="ch-1-descriptive-statistics.html#cb43-2"></a><span class="kw">quantile</span>(prices)</span></code></pre></div>
 <pre><code>##    0%   25%   50%   75%  100% 
 ## 379.0 506.5 572.0 699.0 799.0</code></pre>
-<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="ch-1-descriptive-statistics.html#cb43-1"></a><span class="co">## trimmed mean</span></span>
-<span id="cb43-2"><a href="ch-1-descriptive-statistics.html#cb43-2"></a><span class="kw">mean</span>(prices, <span class="dt">trim =</span> <span class="fl">.1</span>) <span class="co">## 10% trimmed mean</span></span></code></pre></div>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="ch-1-descriptive-statistics.html#cb45-1"></a><span class="co">## trimmed mean</span></span>
+<span id="cb45-2"><a href="ch-1-descriptive-statistics.html#cb45-2"></a><span class="kw">mean</span>(prices, <span class="dt">trim =</span> <span class="fl">.1</span>) <span class="co">## 10% trimmed mean</span></span></code></pre></div>
 <pre><code>## [1] 593.75</code></pre>
 </div>
 </div>
@@ -381,35 +381,35 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="r-2" class="section level3 unnumbered">
 <h3>R</h3>
 <p>Sample variance:</p>
-<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="ch-1-descriptive-statistics.html#cb45-1"></a>prices &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">379</span>, <span class="dv">425</span>, <span class="dv">450</span>, <span class="dv">450</span>, <span class="dv">499</span>, <span class="dv">529</span>, <span class="dv">535</span>, <span class="dv">535</span>, <span class="dv">545</span>, <span class="dv">599</span>, <span class="dv">665</span>,</span>
-<span id="cb45-2"><a href="ch-1-descriptive-statistics.html#cb45-2"></a>            <span class="dv">675</span>, <span class="dv">699</span>, <span class="dv">699</span>, <span class="dv">725</span>, <span class="dv">725</span>, <span class="dv">745</span>, <span class="dv">799</span>)</span>
-<span id="cb45-3"><a href="ch-1-descriptive-statistics.html#cb45-3"></a></span>
-<span id="cb45-4"><a href="ch-1-descriptive-statistics.html#cb45-4"></a><span class="kw">var</span>(prices)</span></code></pre></div>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="ch-1-descriptive-statistics.html#cb47-1"></a>prices &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">379</span>, <span class="dv">425</span>, <span class="dv">450</span>, <span class="dv">450</span>, <span class="dv">499</span>, <span class="dv">529</span>, <span class="dv">535</span>, <span class="dv">535</span>, <span class="dv">545</span>, <span class="dv">599</span>, <span class="dv">665</span>,</span>
+<span id="cb47-2"><a href="ch-1-descriptive-statistics.html#cb47-2"></a>            <span class="dv">675</span>, <span class="dv">699</span>, <span class="dv">699</span>, <span class="dv">725</span>, <span class="dv">725</span>, <span class="dv">745</span>, <span class="dv">799</span>)</span>
+<span id="cb47-3"><a href="ch-1-descriptive-statistics.html#cb47-3"></a></span>
+<span id="cb47-4"><a href="ch-1-descriptive-statistics.html#cb47-4"></a><span class="kw">var</span>(prices)</span></code></pre></div>
 <pre><code>## [1] 15981.48</code></pre>
 <p>Sample standard deviation:</p>
-<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="ch-1-descriptive-statistics.html#cb47-1"></a><span class="kw">sqrt</span>(<span class="kw">var</span>(prices))</span></code></pre></div>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="ch-1-descriptive-statistics.html#cb49-1"></a><span class="kw">sqrt</span>(<span class="kw">var</span>(prices))</span></code></pre></div>
 <pre><code>## [1] 126.4179</code></pre>
-<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="ch-1-descriptive-statistics.html#cb49-1"></a><span class="kw">sd</span>(prices)</span></code></pre></div>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="ch-1-descriptive-statistics.html#cb51-1"></a><span class="kw">sd</span>(prices)</span></code></pre></div>
 <pre><code>## [1] 126.4179</code></pre>
 <p>Five number summary</p>
 <p>(min, lower-hinge, median, upper-hinge, max)</p>
-<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="ch-1-descriptive-statistics.html#cb51-1"></a><span class="kw">fivenum</span>(prices)</span></code></pre></div>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="ch-1-descriptive-statistics.html#cb53-1"></a><span class="kw">fivenum</span>(prices)</span></code></pre></div>
 <pre><code>## [1] 379 499 572 699 799</code></pre>
 <p>Boxplots</p>
-<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="ch-1-descriptive-statistics.html#cb53-1"></a>prices &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">379</span>, <span class="dv">425</span>, <span class="dv">450</span>, <span class="dv">450</span>, <span class="dv">499</span>, <span class="dv">529</span>, <span class="dv">535</span>, <span class="dv">535</span>, <span class="dv">545</span>,</span>
-<span id="cb53-2"><a href="ch-1-descriptive-statistics.html#cb53-2"></a>            <span class="dv">599</span>, <span class="dv">665</span>, <span class="dv">675</span>, <span class="dv">699</span>, <span class="dv">699</span>, <span class="dv">725</span>, <span class="dv">725</span>, <span class="dv">745</span>, <span class="dv">799</span>)</span>
-<span id="cb53-3"><a href="ch-1-descriptive-statistics.html#cb53-3"></a></span>
-<span id="cb53-4"><a href="ch-1-descriptive-statistics.html#cb53-4"></a><span class="kw">boxplot</span>(prices)</span></code></pre></div>
+<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="ch-1-descriptive-statistics.html#cb55-1"></a>prices &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">379</span>, <span class="dv">425</span>, <span class="dv">450</span>, <span class="dv">450</span>, <span class="dv">499</span>, <span class="dv">529</span>, <span class="dv">535</span>, <span class="dv">535</span>, <span class="dv">545</span>,</span>
+<span id="cb55-2"><a href="ch-1-descriptive-statistics.html#cb55-2"></a>            <span class="dv">599</span>, <span class="dv">665</span>, <span class="dv">675</span>, <span class="dv">699</span>, <span class="dv">699</span>, <span class="dv">725</span>, <span class="dv">725</span>, <span class="dv">745</span>, <span class="dv">799</span>)</span>
+<span id="cb55-3"><a href="ch-1-descriptive-statistics.html#cb55-3"></a></span>
+<span id="cb55-4"><a href="ch-1-descriptive-statistics.html#cb55-4"></a><span class="kw">boxplot</span>(prices)</span></code></pre></div>
 <p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
-<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="ch-1-descriptive-statistics.html#cb54-1"></a><span class="kw">boxplot</span>(prices, <span class="dt">horizontal =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="ch-1-descriptive-statistics.html#cb56-1"></a><span class="kw">boxplot</span>(prices, <span class="dt">horizontal =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
 <p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-16-2.png" width="672" /></p>
-<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="ch-1-descriptive-statistics.html#cb55-1"></a>PTSD &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">25</span>, <span class="dv">28</span>, <span class="dv">31</span>, <span class="dv">35</span>, <span class="dv">37</span>, <span class="dv">38</span>, <span class="dv">38</span>, <span class="dv">39</span>, <span class="dv">39</span>, <span class="dv">42</span>, <span class="dv">46</span>)</span>
-<span id="cb55-2"><a href="ch-1-descriptive-statistics.html#cb55-2"></a></span>
-<span id="cb55-3"><a href="ch-1-descriptive-statistics.html#cb55-3"></a>Healthy &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">23</span>, <span class="dv">39</span>, <span class="dv">40</span>, <span class="dv">41</span>, <span class="dv">43</span>, <span class="dv">47</span>, <span class="dv">51</span>, <span class="dv">58</span>, <span class="dv">63</span>, <span class="dv">66</span>, <span class="dv">67</span>, <span class="dv">69</span>, <span class="dv">72</span>)</span>
-<span id="cb55-4"><a href="ch-1-descriptive-statistics.html#cb55-4"></a></span>
-<span id="cb55-5"><a href="ch-1-descriptive-statistics.html#cb55-5"></a>df &lt;-<span class="st"> </span><span class="kw">data.frame</span>(Healthy, PTSD)</span>
-<span id="cb55-6"><a href="ch-1-descriptive-statistics.html#cb55-6"></a></span>
-<span id="cb55-7"><a href="ch-1-descriptive-statistics.html#cb55-7"></a><span class="kw">boxplot</span>(df, <span class="dt">horizontal =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="ch-1-descriptive-statistics.html#cb57-1"></a>PTSD &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">25</span>, <span class="dv">28</span>, <span class="dv">31</span>, <span class="dv">35</span>, <span class="dv">37</span>, <span class="dv">38</span>, <span class="dv">38</span>, <span class="dv">39</span>, <span class="dv">39</span>, <span class="dv">42</span>, <span class="dv">46</span>)</span>
+<span id="cb57-2"><a href="ch-1-descriptive-statistics.html#cb57-2"></a></span>
+<span id="cb57-3"><a href="ch-1-descriptive-statistics.html#cb57-3"></a>Healthy &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">23</span>, <span class="dv">39</span>, <span class="dv">40</span>, <span class="dv">41</span>, <span class="dv">43</span>, <span class="dv">47</span>, <span class="dv">51</span>, <span class="dv">58</span>, <span class="dv">63</span>, <span class="dv">66</span>, <span class="dv">67</span>, <span class="dv">69</span>, <span class="dv">72</span>)</span>
+<span id="cb57-4"><a href="ch-1-descriptive-statistics.html#cb57-4"></a></span>
+<span id="cb57-5"><a href="ch-1-descriptive-statistics.html#cb57-5"></a>df &lt;-<span class="st"> </span><span class="kw">data.frame</span>(Healthy, PTSD)</span>
+<span id="cb57-6"><a href="ch-1-descriptive-statistics.html#cb57-6"></a></span>
+<span id="cb57-7"><a href="ch-1-descriptive-statistics.html#cb57-7"></a><span class="kw">boxplot</span>(df, <span class="dt">horizontal =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
 <p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-16-3.png" width="672" /></p>
 </div>
 </div>
@@ -418,23 +418,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ol style="list-style-type: decimal">
 <li>Using the built-in dataset <code>ToothGrowth</code> in R, visualize the data and comment on the effectiveness of different functions in the context.</li>
 </ol>
-<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="ch-1-descriptive-statistics.html#cb56-1"></a><span class="co"># The first 5 rows of the data</span></span>
-<span id="cb56-2"><a href="ch-1-descriptive-statistics.html#cb56-2"></a><span class="kw">head</span>(ToothGrowth, <span class="dv">5</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="ch-1-descriptive-statistics.html#cb58-1"></a><span class="co"># The first 5 rows of the data</span></span>
+<span id="cb58-2"><a href="ch-1-descriptive-statistics.html#cb58-2"></a><span class="kw">head</span>(ToothGrowth, <span class="dv">5</span>)</span></code></pre></div>
 <pre><code>##    len supp dose
 ## 1  4.2   VC  0.5
 ## 2 11.5   VC  0.5
 ## 3  7.3   VC  0.5
 ## 4  5.8   VC  0.5
 ## 5  6.4   VC  0.5</code></pre>
-<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="ch-1-descriptive-statistics.html#cb58-1"></a><span class="co"># Five number summary</span></span>
-<span id="cb58-2"><a href="ch-1-descriptive-statistics.html#cb58-2"></a><span class="kw">fivenum</span>(ToothGrowth<span class="op">$</span>len)</span></code></pre></div>
+<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="ch-1-descriptive-statistics.html#cb60-1"></a><span class="co"># Five number summary</span></span>
+<span id="cb60-2"><a href="ch-1-descriptive-statistics.html#cb60-2"></a><span class="kw">fivenum</span>(ToothGrowth<span class="op">$</span>len)</span></code></pre></div>
 <pre><code>## [1]  4.20 12.55 19.25 25.35 33.90</code></pre>
-<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="ch-1-descriptive-statistics.html#cb60-1"></a><span class="co"># Boxplot </span></span>
-<span id="cb60-2"><a href="ch-1-descriptive-statistics.html#cb60-2"></a><span class="co"># &#39;$&#39; extracts the column by name</span></span>
-<span id="cb60-3"><a href="ch-1-descriptive-statistics.html#cb60-3"></a><span class="kw">boxplot</span>(ToothGrowth<span class="op">$</span>len) </span></code></pre></div>
+<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="ch-1-descriptive-statistics.html#cb62-1"></a><span class="co"># Boxplot </span></span>
+<span id="cb62-2"><a href="ch-1-descriptive-statistics.html#cb62-2"></a><span class="co"># &#39;$&#39; extracts the column by name</span></span>
+<span id="cb62-3"><a href="ch-1-descriptive-statistics.html#cb62-3"></a><span class="kw">boxplot</span>(ToothGrowth<span class="op">$</span>len) </span></code></pre></div>
 <p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
-<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="ch-1-descriptive-statistics.html#cb61-1"></a><span class="co"># Stem-and-leaf Plot</span></span>
-<span id="cb61-2"><a href="ch-1-descriptive-statistics.html#cb61-2"></a><span class="kw">stem</span>(ToothGrowth<span class="op">$</span>len)</span></code></pre></div>
+<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="ch-1-descriptive-statistics.html#cb63-1"></a><span class="co"># Stem-and-leaf Plot</span></span>
+<span id="cb63-2"><a href="ch-1-descriptive-statistics.html#cb63-2"></a><span class="kw">stem</span>(ToothGrowth<span class="op">$</span>len)</span></code></pre></div>
 <pre><code>## 
 ##   The decimal point is 1 digit(s) to the right of the |
 ## 
@@ -445,12 +445,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ##   2 | 001222333344
 ##   2 | 55566666667779
 ##   3 | 0134</code></pre>
-<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb63-1"><a href="ch-1-descriptive-statistics.html#cb63-1"></a><span class="co"># Histogram</span></span>
-<span id="cb63-2"><a href="ch-1-descriptive-statistics.html#cb63-2"></a>h &lt;-<span class="st"> </span><span class="kw">hist</span>(ToothGrowth<span class="op">$</span>len)</span></code></pre></div>
+<div class="sourceCode" id="cb65"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb65-1"><a href="ch-1-descriptive-statistics.html#cb65-1"></a><span class="co"># Histogram</span></span>
+<span id="cb65-2"><a href="ch-1-descriptive-statistics.html#cb65-2"></a>h &lt;-<span class="st"> </span><span class="kw">hist</span>(ToothGrowth<span class="op">$</span>len)</span></code></pre></div>
 <p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-17-2.png" width="672" /></p>
-<div class="sourceCode" id="cb64"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb64-1"><a href="ch-1-descriptive-statistics.html#cb64-1"></a><span class="co"># Cumulative Histogram</span></span>
-<span id="cb64-2"><a href="ch-1-descriptive-statistics.html#cb64-2"></a>h<span class="op">$</span>counts &lt;-<span class="st"> </span><span class="kw">cumsum</span>(h<span class="op">$</span>counts)</span>
-<span id="cb64-3"><a href="ch-1-descriptive-statistics.html#cb64-3"></a><span class="kw">plot</span>(h)</span></code></pre></div>
+<div class="sourceCode" id="cb66"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb66-1"><a href="ch-1-descriptive-statistics.html#cb66-1"></a><span class="co"># Cumulative Histogram</span></span>
+<span id="cb66-2"><a href="ch-1-descriptive-statistics.html#cb66-2"></a>h<span class="op">$</span>counts &lt;-<span class="st"> </span><span class="kw">cumsum</span>(h<span class="op">$</span>counts)</span>
+<span id="cb66-3"><a href="ch-1-descriptive-statistics.html#cb66-3"></a><span class="kw">plot</span>(h)</span></code></pre></div>
 <p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-17-3.png" width="672" /></p>
 <p><code>head()</code>: directly see how the dataset looks; useful when the dataset is large and it’s difficult to display all rows and columns together.</p>
 <p><code>fivenum()</code>: returns the minimum value, lower fourth, median, upper fourth, and maximum value</p>

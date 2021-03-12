@@ -24,7 +24,7 @@
 <meta name="author" content="Joyce Robbins" />
 
 
-<meta name="date" content="2021-02-14" />
+<meta name="date" content="2021-03-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -273,23 +273,23 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Simulating a uniform distribution</p>
 <p>Randomly choose one number from the distribution:</p>
 <p><span class="math inline">\(f(x) = .2\)</span> for <span class="math inline">\(0 \leq x \leq 5\)</span>, 0 otherwise.</p>
-<div class="sourceCode" id="cb149"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb149-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb149-1"></a><span class="kw">runif</span>(<span class="dt">n =</span> <span class="dv">1</span>, <span class="dt">min =</span> <span class="dv">0</span>, <span class="dt">max =</span> <span class="dv">5</span>)</span></code></pre></div>
-<pre><code>## [1] 3.947363</code></pre>
+<div class="sourceCode" id="cb151"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb151-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb151-1"></a><span class="kw">runif</span>(<span class="dt">n =</span> <span class="dv">1</span>, <span class="dt">min =</span> <span class="dv">0</span>, <span class="dt">max =</span> <span class="dv">5</span>)</span></code></pre></div>
+<pre><code>## [1] 2.227676</code></pre>
 <p>Take the average of 1000 picks:</p>
-<div class="sourceCode" id="cb151"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb151-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb151-1"></a>x &lt;-<span class="st"> </span><span class="kw">runif</span>(<span class="dt">n =</span> <span class="dv">1000</span>, <span class="dt">min =</span> <span class="dv">0</span>, <span class="dt">max =</span> <span class="dv">5</span>)</span>
-<span id="cb151-2"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb151-2"></a><span class="kw">mean</span>(x)</span></code></pre></div>
-<pre><code>## [1] 2.454794</code></pre>
+<div class="sourceCode" id="cb153"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb153-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb153-1"></a>x &lt;-<span class="st"> </span><span class="kw">runif</span>(<span class="dt">n =</span> <span class="dv">1000</span>, <span class="dt">min =</span> <span class="dv">0</span>, <span class="dt">max =</span> <span class="dv">5</span>)</span>
+<span id="cb153-2"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb153-2"></a><span class="kw">mean</span>(x)</span></code></pre></div>
+<pre><code>## [1] 2.478448</code></pre>
 <p>Draw a histogram of the 1000 picks:</p>
-<div class="sourceCode" id="cb153"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb153-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb153-1"></a><span class="kw">hist</span>(x, <span class="dt">las =</span> <span class="dv">1</span>, <span class="dt">col =</span> <span class="st">&quot;lightblue&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb155"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb155-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb155-1"></a><span class="kw">hist</span>(x, <span class="dt">las =</span> <span class="dv">1</span>, <span class="dt">col =</span> <span class="st">&quot;lightblue&quot;</span>)</span></code></pre></div>
 <p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-41-1.png" width="672" /></p>
 </div>
 <div id="cumulative-distribution-functions-and-expected-values" class="section level2 unnumbered">
 <h2>4.2 Cumulative Distribution Functions and Expected Values</h2>
 <p>Using R to help with calculations in Example 4.7, p. 149</p>
 <p>Define a function for the cdf (you have to do the integration yourself):</p>
-<div class="sourceCode" id="cb154"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb154-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb154-1"></a>F &lt;-<span class="st"> </span><span class="cf">function</span>(x) (x<span class="op">/</span><span class="dv">8</span>) <span class="op">+</span><span class="st"> </span>(<span class="dv">3</span><span class="op">/</span><span class="dv">16</span>)<span class="op">*</span>x<span class="op">^</span><span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb156"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb156-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb156-1"></a>F &lt;-<span class="st"> </span><span class="cf">function</span>(x) (x<span class="op">/</span><span class="dv">8</span>) <span class="op">+</span><span class="st"> </span>(<span class="dv">3</span><span class="op">/</span><span class="dv">16</span>)<span class="op">*</span>x<span class="op">^</span><span class="dv">2</span></span></code></pre></div>
 <p>Find <span class="math inline">\(F(1.5) - F(1)\)</span></p>
-<div class="sourceCode" id="cb155"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb155-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb155-1"></a><span class="kw">F</span>(<span class="fl">1.5</span>) <span class="op">-</span><span class="st"> </span><span class="kw">F</span>(<span class="dv">1</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb157"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb157-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb157-1"></a><span class="kw">F</span>(<span class="fl">1.5</span>) <span class="op">-</span><span class="st"> </span><span class="kw">F</span>(<span class="dv">1</span>)</span></code></pre></div>
 <pre><code>## [1] 0.296875</code></pre>
 </div>
 <div id="the-normal-distribution" class="section level2 unnumbered">
@@ -303,25 +303,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3>R</h3>
 <p><span class="math inline">\(P(Z \leq -1)\)</span></p>
 <p>Unless specified otherwise, <code>pnorm</code> uses a mean of 0 and standard deviation of 1 (standard normal).</p>
-<div class="sourceCode" id="cb157"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb157-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb157-1"></a><span class="kw">pnorm</span>(<span class="op">-</span><span class="dv">1</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb159"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb159-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb159-1"></a><span class="kw">pnorm</span>(<span class="op">-</span><span class="dv">1</span>)</span></code></pre></div>
 <pre><code>## [1] 0.1586553</code></pre>
 <p><span class="math inline">\(P(X \leq 37)\)</span> given <span class="math inline">\(\mu = 40\)</span> and <span class="math inline">\(\sigma = 2\)</span></p>
-<div class="sourceCode" id="cb159"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb159-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb159-1"></a><span class="kw">pnorm</span>(<span class="dv">37</span>, <span class="dt">mean =</span> <span class="dv">40</span>, <span class="dt">sd =</span> <span class="dv">2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb161"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb161-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb161-1"></a><span class="kw">pnorm</span>(<span class="dv">37</span>, <span class="dt">mean =</span> <span class="dv">40</span>, <span class="dt">sd =</span> <span class="dv">2</span>)</span></code></pre></div>
 <pre><code>## [1] 0.0668072</code></pre>
 <p>or</p>
-<div class="sourceCode" id="cb161"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb161-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb161-1"></a><span class="kw">pnorm</span>((<span class="dv">37-40</span>)<span class="op">/</span><span class="dv">2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb163"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb163-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb163-1"></a><span class="kw">pnorm</span>((<span class="dv">37-40</span>)<span class="op">/</span><span class="dv">2</span>)</span></code></pre></div>
 <pre><code>## [1] 0.0668072</code></pre>
 <p><span class="math inline">\(P(X &gt; 39)\)</span></p>
-<div class="sourceCode" id="cb163"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb163-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb163-1"></a><span class="dv">1</span> <span class="op">-</span><span class="st"> </span><span class="kw">pnorm</span>(<span class="dv">39</span>, <span class="dt">mean =</span> <span class="dv">40</span>, <span class="dt">sd =</span> <span class="dv">2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb165"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb165-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb165-1"></a><span class="dv">1</span> <span class="op">-</span><span class="st"> </span><span class="kw">pnorm</span>(<span class="dv">39</span>, <span class="dt">mean =</span> <span class="dv">40</span>, <span class="dt">sd =</span> <span class="dv">2</span>)</span></code></pre></div>
 <pre><code>## [1] 0.6914625</code></pre>
 <p>Find the 75th percentile for the standard normal distribution:</p>
-<div class="sourceCode" id="cb165"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb165-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb165-1"></a><span class="kw">qnorm</span>(.<span class="dv">75</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb167"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb167-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb167-1"></a><span class="kw">qnorm</span>(.<span class="dv">75</span>)</span></code></pre></div>
 <pre><code>## [1] 0.6744898</code></pre>
 <p>Find the 75th percentile for a normally distribution population with mean 40 and standard deviation 2:</p>
-<div class="sourceCode" id="cb167"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb167-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb167-1"></a><span class="kw">qnorm</span>(.<span class="dv">75</span>, <span class="dt">mean =</span> <span class="dv">40</span>, <span class="dt">sd =</span> <span class="dv">2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb169"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb169-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb169-1"></a><span class="kw">qnorm</span>(.<span class="dv">75</span>, <span class="dt">mean =</span> <span class="dv">40</span>, <span class="dt">sd =</span> <span class="dv">2</span>)</span></code></pre></div>
 <pre><code>## [1] 41.34898</code></pre>
 <p>or</p>
-<div class="sourceCode" id="cb169"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb169-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb169-1"></a><span class="dv">40</span> <span class="op">+</span><span class="st"> </span><span class="kw">qnorm</span>(.<span class="dv">75</span>)<span class="op">*</span><span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb171"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb171-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb171-1"></a><span class="dv">40</span> <span class="op">+</span><span class="st"> </span><span class="kw">qnorm</span>(.<span class="dv">75</span>)<span class="op">*</span><span class="dv">2</span></span></code></pre></div>
 <pre><code>## [1] 41.34898</code></pre>
 </div>
 </div>
@@ -338,24 +338,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 <p>[Ans]
 a. Integrating by hand: <span class="math inline">\(f(x)=.06x + .05\)</span>, we get <span class="math inline">\(F(x) = .03x^2+.05x\)</span>.</p>
-<div class="sourceCode" id="cb171"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb171-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb171-1"></a>F &lt;-<span class="st"> </span><span class="cf">function</span>(x) <span class="fl">0.03</span><span class="op">*</span>x<span class="op">^</span><span class="dv">2</span> <span class="op">+</span><span class="st"> </span><span class="fl">0.05</span><span class="op">*</span>x</span>
-<span id="cb171-2"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb171-2"></a>x &lt;-<span class="st"> </span><span class="kw">runif</span>(<span class="dt">n =</span> <span class="dv">1000</span>, <span class="dt">min =</span> <span class="dv">0</span>, <span class="dt">max =</span> <span class="dv">5</span>)</span>
-<span id="cb171-3"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb171-3"></a><span class="kw">F</span>(<span class="dv">4</span>) <span class="op">-</span><span class="st"> </span><span class="kw">F</span>(<span class="dv">2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb173"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb173-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb173-1"></a>F &lt;-<span class="st"> </span><span class="cf">function</span>(x) <span class="fl">0.03</span><span class="op">*</span>x<span class="op">^</span><span class="dv">2</span> <span class="op">+</span><span class="st"> </span><span class="fl">0.05</span><span class="op">*</span>x</span>
+<span id="cb173-2"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb173-2"></a>x &lt;-<span class="st"> </span><span class="kw">runif</span>(<span class="dt">n =</span> <span class="dv">1000</span>, <span class="dt">min =</span> <span class="dv">0</span>, <span class="dt">max =</span> <span class="dv">5</span>)</span>
+<span id="cb173-3"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb173-3"></a><span class="kw">F</span>(<span class="dv">4</span>) <span class="op">-</span><span class="st"> </span><span class="kw">F</span>(<span class="dv">2</span>)</span></code></pre></div>
 <pre><code>## [1] 0.46</code></pre>
 <ol start="2" style="list-style-type: lower-alpha">
 <li><p>0</p></li>
 <li><p>Integrate <span class="math inline">\(x\cdot f(x) = x(.06x+.05)=.06x^2+.05x\)</span>, we get <span class="math inline">\(H(x) = .02x^3+.025x^2\)</span>.</p></li>
 </ol>
-<div class="sourceCode" id="cb173"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb173-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb173-1"></a>H &lt;-<span class="st"> </span><span class="cf">function</span>(x) <span class="fl">0.02</span><span class="op">*</span>x<span class="op">^</span><span class="dv">3</span> <span class="op">+</span><span class="st"> </span><span class="fl">0.025</span><span class="op">*</span>x<span class="op">^</span><span class="dv">2</span></span>
-<span id="cb173-2"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb173-2"></a><span class="kw">H</span>(<span class="dv">5</span>)<span class="op">-</span><span class="kw">H</span>(<span class="dv">0</span>) </span></code></pre></div>
+<div class="sourceCode" id="cb175"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb175-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb175-1"></a>H &lt;-<span class="st"> </span><span class="cf">function</span>(x) <span class="fl">0.02</span><span class="op">*</span>x<span class="op">^</span><span class="dv">3</span> <span class="op">+</span><span class="st"> </span><span class="fl">0.025</span><span class="op">*</span>x<span class="op">^</span><span class="dv">2</span></span>
+<span id="cb175-2"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb175-2"></a><span class="kw">H</span>(<span class="dv">5</span>)<span class="op">-</span><span class="kw">H</span>(<span class="dv">0</span>) </span></code></pre></div>
 <pre><code>## [1] 3.125</code></pre>
 <ol start="4" style="list-style-type: lower-alpha">
 <li><span class="math inline">\(V(X) = E(X^2)-[E(X)]^2\)</span>.
 Integrate <span class="math inline">\(x^2\cdot f(x) = x^2(.06x+.05)=.06x^3+.05x^2\)</span>, we get <span class="math inline">\(G(x) = .015x^4+\frac{.05}3x^3\)</span>.</li>
 </ol>
-<div class="sourceCode" id="cb175"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb175-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb175-1"></a>E &lt;-<span class="st"> </span><span class="kw">H</span>(<span class="dv">5</span>)<span class="op">-</span><span class="kw">H</span>(<span class="dv">0</span>)</span>
-<span id="cb175-2"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb175-2"></a>G &lt;-<span class="st"> </span><span class="cf">function</span>(x) <span class="fl">.015</span><span class="op">*</span>(x<span class="op">^</span><span class="dv">4</span>)<span class="op">+</span>(.<span class="dv">05</span><span class="op">/</span><span class="dv">3</span>)<span class="op">*</span>(x<span class="op">^</span><span class="dv">3</span>)</span>
-<span id="cb175-3"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb175-3"></a><span class="kw">G</span>(<span class="dv">5</span>)<span class="op">-</span><span class="kw">G</span>(<span class="dv">0</span>)<span class="op">-</span>E<span class="op">^</span><span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb177"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb177-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb177-1"></a>E &lt;-<span class="st"> </span><span class="kw">H</span>(<span class="dv">5</span>)<span class="op">-</span><span class="kw">H</span>(<span class="dv">0</span>)</span>
+<span id="cb177-2"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb177-2"></a>G &lt;-<span class="st"> </span><span class="cf">function</span>(x) <span class="fl">.015</span><span class="op">*</span>(x<span class="op">^</span><span class="dv">4</span>)<span class="op">+</span>(.<span class="dv">05</span><span class="op">/</span><span class="dv">3</span>)<span class="op">*</span>(x<span class="op">^</span><span class="dv">3</span>)</span>
+<span id="cb177-3"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb177-3"></a><span class="kw">G</span>(<span class="dv">5</span>)<span class="op">-</span><span class="kw">G</span>(<span class="dv">0</span>)<span class="op">-</span>E<span class="op">^</span><span class="dv">2</span></span></code></pre></div>
 <pre><code>## [1] 1.692708</code></pre>
 <hr />
 <ol start="2" style="list-style-type: decimal">
@@ -365,30 +365,30 @@ Integrate <span class="math inline">\(x^2\cdot f(x) = x^2(.06x+.05)=.06x^3+.05x^
 <li><p>What is the probability that reaction time exceeds 2.00 sec?</p></li>
 </ol></li>
 </ol>
-<div class="sourceCode" id="cb177"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb177-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb177-1"></a><span class="kw">pnorm</span>((<span class="fl">1.75-1.25</span>)<span class="op">/</span><span class="fl">0.46</span>) <span class="op">-</span><span class="st"> </span><span class="kw">pnorm</span>((<span class="dv">1</span><span class="fl">-1.25</span>)<span class="op">/</span><span class="fl">0.46</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb179"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb179-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb179-1"></a><span class="kw">pnorm</span>((<span class="fl">1.75-1.25</span>)<span class="op">/</span><span class="fl">0.46</span>) <span class="op">-</span><span class="st"> </span><span class="kw">pnorm</span>((<span class="dv">1</span><span class="fl">-1.25</span>)<span class="op">/</span><span class="fl">0.46</span>)</span></code></pre></div>
 <pre><code>## [1] 0.5680717</code></pre>
-<div class="sourceCode" id="cb179"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb179-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb179-1"></a><span class="dv">1</span> <span class="op">-</span><span class="st"> </span><span class="kw">pnorm</span>((<span class="dv">2</span><span class="fl">-1.25</span>)<span class="op">/</span><span class="fl">0.46</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb181"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb181-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb181-1"></a><span class="dv">1</span> <span class="op">-</span><span class="st"> </span><span class="kw">pnorm</span>((<span class="dv">2</span><span class="fl">-1.25</span>)<span class="op">/</span><span class="fl">0.46</span>)</span></code></pre></div>
 <pre><code>## [1] 0.05150482</code></pre>
-<div class="sourceCode" id="cb181"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb181-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb181-1"></a><span class="co"># alternatively</span></span>
-<span id="cb181-2"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb181-2"></a><span class="kw">pnorm</span>(<span class="op">-</span>(<span class="dv">2</span><span class="fl">-1.25</span>)<span class="op">/</span><span class="fl">0.46</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb183"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb183-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb183-1"></a><span class="co"># alternatively</span></span>
+<span id="cb183-2"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb183-2"></a><span class="kw">pnorm</span>(<span class="op">-</span>(<span class="dv">2</span><span class="fl">-1.25</span>)<span class="op">/</span><span class="fl">0.46</span>)</span></code></pre></div>
 <pre><code>## [1] 0.05150482</code></pre>
 <hr />
 <ol start="3" style="list-style-type: decimal">
 <li><strong>(Nonstandard Normal, <code>qnorm</code>)</strong> Data collected from an experiment with a specified initial crack
 length propose a normal distribution with mean value 5.496 mm and standard deviation .067 mm. For this model, what value of final crack depth would be exceeded by only .5% of all cracks? (Textbook 4.18)</li>
 </ol>
-<div class="sourceCode" id="cb183"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb183-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb183-1"></a><span class="kw">qnorm</span>(<span class="fl">0.995</span>, <span class="fl">5.496</span>, <span class="fl">.067</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb185"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb185-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb185-1"></a><span class="kw">qnorm</span>(<span class="fl">0.995</span>, <span class="fl">5.496</span>, <span class="fl">.067</span>)</span></code></pre></div>
 <pre><code>## [1] 5.668581</code></pre>
 <hr />
 <ol start="4" style="list-style-type: decimal">
 <li><strong>(Binom Appproximation)</strong> Suppose that 25% of all students at a large public university receive financial aid. Let <span class="math inline">\(X\)</span> be the number of students in a random sample of size 50 who receive financial
 aid, sothat <em>p = .25</em>. What is the probability that at most 10 students receive aid? (Textbook 4.20)</li>
 </ol>
-<div class="sourceCode" id="cb185"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb185-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb185-1"></a><span class="co"># binom distribution calculation</span></span>
-<span id="cb185-2"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb185-2"></a><span class="kw">pbinom</span>(<span class="dv">10</span>, <span class="dt">size =</span> <span class="dv">50</span>, <span class="dt">prob =</span> <span class="fl">0.25</span>) </span></code></pre></div>
+<div class="sourceCode" id="cb187"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb187-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb187-1"></a><span class="co"># binom distribution calculation</span></span>
+<span id="cb187-2"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb187-2"></a><span class="kw">pbinom</span>(<span class="dv">10</span>, <span class="dt">size =</span> <span class="dv">50</span>, <span class="dt">prob =</span> <span class="fl">0.25</span>) </span></code></pre></div>
 <pre><code>## [1] 0.2622023</code></pre>
-<div class="sourceCode" id="cb187"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb187-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb187-1"></a><span class="co"># normal approximation of binom</span></span>
-<span id="cb187-2"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb187-2"></a><span class="kw">pnorm</span>((<span class="dv">10</span> <span class="op">+</span><span class="st"> </span><span class="fl">.5</span> <span class="op">-</span><span class="st"> </span><span class="dv">50</span><span class="op">*</span>.<span class="dv">25</span>)<span class="op">/</span><span class="kw">sqrt</span>(<span class="dv">50</span><span class="op">*</span>.<span class="dv">25</span><span class="op">*</span>.<span class="dv">75</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb189"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb189-1"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb189-1"></a><span class="co"># normal approximation of binom</span></span>
+<span id="cb189-2"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cb189-2"></a><span class="kw">pnorm</span>((<span class="dv">10</span> <span class="op">+</span><span class="st"> </span><span class="fl">.5</span> <span class="op">-</span><span class="st"> </span><span class="dv">50</span><span class="op">*</span>.<span class="dv">25</span>)<span class="op">/</span><span class="kw">sqrt</span>(<span class="dv">50</span><span class="op">*</span>.<span class="dv">25</span><span class="op">*</span>.<span class="dv">75</span>))</span></code></pre></div>
 <pre><code>## [1] 0.2568146</code></pre>
 </div>
 <div id="extra-practice-chapters-1---4" class="section level2 unnumbered">

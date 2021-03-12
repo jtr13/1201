@@ -24,7 +24,7 @@
 <meta name="author" content="Joyce Robbins" />
 
 
-<meta name="date" content="2021-02-14" />
+<meta name="date" content="2021-03-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -290,12 +290,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><span class="math inline">\(H_0: \mu = 10\)</span></p>
 <p><span class="math inline">\(H_A: \mu \neq 10\)</span></p>
 <p>Test statistic: <span class="math inline">\(z=\frac{\bar{X} - \mu_0}{\sigma/\sqrt{n}}\)</span></p>
-<div class="sourceCode" id="cb189"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb189-1"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb189-1"></a>z &lt;-<span class="st"> </span>(<span class="fl">9.85</span><span class="dv">-10</span>)<span class="op">/</span>(<span class="dv">1</span><span class="op">/</span><span class="kw">sqrt</span>(<span class="dv">25</span>))</span>
-<span id="cb189-2"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb189-2"></a>z</span></code></pre></div>
+<div class="sourceCode" id="cb191"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb191-1"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb191-1"></a>z &lt;-<span class="st"> </span>(<span class="fl">9.85</span><span class="dv">-10</span>)<span class="op">/</span>(<span class="dv">1</span><span class="op">/</span><span class="kw">sqrt</span>(<span class="dv">25</span>))</span>
+<span id="cb191-2"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb191-2"></a>z</span></code></pre></div>
 <pre><code>## [1] -0.75</code></pre>
 <p>Determine the p-value:</p>
-<div class="sourceCode" id="cb191"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb191-1"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb191-1"></a>pval &lt;-<span class="st"> </span><span class="kw">pnorm</span>(z)<span class="op">*</span><span class="dv">2</span></span>
-<span id="cb191-2"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb191-2"></a>pval</span></code></pre></div>
+<div class="sourceCode" id="cb193"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb193-1"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb193-1"></a>pval &lt;-<span class="st"> </span><span class="kw">pnorm</span>(z)<span class="op">*</span><span class="dv">2</span></span>
+<span id="cb193-2"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb193-2"></a>pval</span></code></pre></div>
 <pre><code>## [1] 0.4532547</code></pre>
 <p>Since 0.453 &gt; .05, we do not reject the null hypothesis. In other words, even if the scale were perfectly calibrated (<span class="math inline">\(\mu = 10\)</span>) there is over a 45% probability that we would get a sample mean less than or equal to 9.85 (or equal to or greater than 10.15), that is, the same or further from the true mean than we found. Therefore, on the basis on these results, recaliberation is not necessary.</p>
 <hr />
@@ -304,18 +304,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><span class="math inline">\(H_0: \mu = 4.8\)</span></p>
 <p><span class="math inline">\(H_A: \mu &gt; 4.8\)</span></p>
 <p>Use the following code to store the 50 values in the sample in a variable called <code>setosa</code>. (This works because <code>iris</code> is a built-in dataset in R.)</p>
-<div class="sourceCode" id="cb193"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb193-1"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb193-1"></a>setosa &lt;-<span class="st"> </span>iris[iris<span class="op">$</span>Species <span class="op">==</span><span class="st"> &quot;setosa&quot;</span>,]</span></code></pre></div>
+<div class="sourceCode" id="cb195"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb195-1"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb195-1"></a>setosa &lt;-<span class="st"> </span>iris[iris<span class="op">$</span>Species <span class="op">==</span><span class="st"> &quot;setosa&quot;</span>,]</span></code></pre></div>
 <p>[Ans]</p>
 <p>Test statistic: <span class="math inline">\(z=\frac{\bar{X} - \mu_0}{s/\sqrt{n}}\)</span></p>
-<div class="sourceCode" id="cb194"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb194-1"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb194-1"></a>z &lt;-<span class="st"> </span>(<span class="kw">mean</span>(setosa<span class="op">$</span>Sepal.Length)<span class="op">-</span><span class="fl">4.8</span>)<span class="op">/</span><span class="kw">sqrt</span>(<span class="kw">var</span>(setosa<span class="op">$</span>Sepal.Length)<span class="op">/</span><span class="dv">50</span>)</span>
-<span id="cb194-2"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb194-2"></a>z</span></code></pre></div>
+<div class="sourceCode" id="cb196"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb196-1"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb196-1"></a>z &lt;-<span class="st"> </span>(<span class="kw">mean</span>(setosa<span class="op">$</span>Sepal.Length)<span class="op">-</span><span class="fl">4.8</span>)<span class="op">/</span><span class="kw">sqrt</span>(<span class="kw">var</span>(setosa<span class="op">$</span>Sepal.Length)<span class="op">/</span><span class="dv">50</span>)</span>
+<span id="cb196-2"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb196-2"></a>z</span></code></pre></div>
 <pre><code>## [1] 4.132433</code></pre>
-<div class="sourceCode" id="cb196"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb196-1"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb196-1"></a>pval &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">-</span><span class="st"> </span><span class="kw">pnorm</span>(z)</span>
-<span id="cb196-2"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb196-2"></a>pval</span></code></pre></div>
+<div class="sourceCode" id="cb198"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb198-1"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb198-1"></a>pval &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">-</span><span class="st"> </span><span class="kw">pnorm</span>(z)</span>
+<span id="cb198-2"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb198-2"></a>pval</span></code></pre></div>
 <pre><code>## [1] 1.794718e-05</code></pre>
-<div class="sourceCode" id="cb198"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb198-1"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb198-1"></a><span class="co"># simpler approach</span></span>
-<span id="cb198-2"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb198-2"></a><span class="co"># p-values might be a bit different due to approximation of t</span></span>
-<span id="cb198-3"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb198-3"></a><span class="kw">t.test</span>(setosa<span class="op">$</span>Sepal.Length, <span class="dt">alternative =</span> <span class="st">&quot;greater&quot;</span>, <span class="dt">mu =</span> <span class="fl">4.8</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb200"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb200-1"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb200-1"></a><span class="co"># simpler approach</span></span>
+<span id="cb200-2"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb200-2"></a><span class="co"># p-values might be a bit different due to approximation of t</span></span>
+<span id="cb200-3"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#cb200-3"></a><span class="kw">t.test</span>(setosa<span class="op">$</span>Sepal.Length, <span class="dt">alternative =</span> <span class="st">&quot;greater&quot;</span>, <span class="dt">mu =</span> <span class="fl">4.8</span>)</span></code></pre></div>
 <pre><code>## 
 ##  One Sample t-test
 ## 

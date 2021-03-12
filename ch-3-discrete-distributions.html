@@ -24,7 +24,7 @@
 <meta name="author" content="Joyce Robbins" />
 
 
-<meta name="date" content="2021-02-14" />
+<meta name="date" content="2021-03-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -268,41 +268,41 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Skip: 3.6 “The Poisson Distribution as a Limit” (pp. 132-33) and “The Poisson Process” (pp. 134-135)</p>
 <div id="expected-value" class="section level2 unnumbered">
 <h2>3.3 Expected value</h2>
-<div class="sourceCode" id="cb73"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb73-1"><a href="ch-3-discrete-distributions.html#cb73-1"></a>x &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">:</span><span class="dv">5</span></span>
-<span id="cb73-2"><a href="ch-3-discrete-distributions.html#cb73-2"></a>x</span></code></pre></div>
+<div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb75-1"><a href="ch-3-discrete-distributions.html#cb75-1"></a>x &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">:</span><span class="dv">5</span></span>
+<span id="cb75-2"><a href="ch-3-discrete-distributions.html#cb75-2"></a>x</span></code></pre></div>
 <pre><code>## [1] 1 2 3 4 5</code></pre>
-<div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb75-1"><a href="ch-3-discrete-distributions.html#cb75-1"></a>px &lt;-<span class="st"> </span><span class="kw">c</span>(.<span class="dv">1</span>, <span class="fl">.15</span>, <span class="fl">.2</span>, <span class="fl">.25</span>, <span class="fl">.3</span>)</span>
-<span id="cb75-2"><a href="ch-3-discrete-distributions.html#cb75-2"></a>px</span></code></pre></div>
+<div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb77-1"><a href="ch-3-discrete-distributions.html#cb77-1"></a>px &lt;-<span class="st"> </span><span class="kw">c</span>(.<span class="dv">1</span>, <span class="fl">.15</span>, <span class="fl">.2</span>, <span class="fl">.25</span>, <span class="fl">.3</span>)</span>
+<span id="cb77-2"><a href="ch-3-discrete-distributions.html#cb77-2"></a>px</span></code></pre></div>
 <pre><code>## [1] 0.10 0.15 0.20 0.25 0.30</code></pre>
-<div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb77-1"><a href="ch-3-discrete-distributions.html#cb77-1"></a>x<span class="op">*</span>px</span></code></pre></div>
+<div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb79-1"><a href="ch-3-discrete-distributions.html#cb79-1"></a>x<span class="op">*</span>px</span></code></pre></div>
 <pre><code>## [1] 0.1 0.3 0.6 1.0 1.5</code></pre>
-<div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb79-1"><a href="ch-3-discrete-distributions.html#cb79-1"></a><span class="kw">sum</span>(x<span class="op">*</span>px)    <span class="co"># E(X)</span></span></code></pre></div>
+<div class="sourceCode" id="cb81"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb81-1"><a href="ch-3-discrete-distributions.html#cb81-1"></a><span class="kw">sum</span>(x<span class="op">*</span>px)    <span class="co"># E(X)</span></span></code></pre></div>
 <pre><code>## [1] 3.5</code></pre>
 </div>
 <div id="variance" class="section level2 unnumbered">
 <h2>3.3 Variance</h2>
-<div class="sourceCode" id="cb81"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb81-1"><a href="ch-3-discrete-distributions.html#cb81-1"></a>x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span></span></code></pre></div>
+<div class="sourceCode" id="cb83"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb83-1"><a href="ch-3-discrete-distributions.html#cb83-1"></a>x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span></span></code></pre></div>
 <pre><code>## [1] -2.5 -1.5 -0.5  0.5  1.5</code></pre>
-<div class="sourceCode" id="cb83"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb83-1"><a href="ch-3-discrete-distributions.html#cb83-1"></a>(x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span>)<span class="op">^</span><span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb85-1"><a href="ch-3-discrete-distributions.html#cb85-1"></a>(x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span>)<span class="op">^</span><span class="dv">2</span></span></code></pre></div>
 <pre><code>## [1] 6.25 2.25 0.25 0.25 2.25</code></pre>
-<div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb85-1"><a href="ch-3-discrete-distributions.html#cb85-1"></a>((x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span>)<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px</span></code></pre></div>
+<div class="sourceCode" id="cb87"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb87-1"><a href="ch-3-discrete-distributions.html#cb87-1"></a>((x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span>)<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px</span></code></pre></div>
 <pre><code>## [1] 0.6250 0.3375 0.0500 0.0625 0.6750</code></pre>
-<div class="sourceCode" id="cb87"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb87-1"><a href="ch-3-discrete-distributions.html#cb87-1"></a><span class="kw">sum</span>(((x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span>)<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px)   <span class="co"># V(X)</span></span></code></pre></div>
+<div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb89-1"><a href="ch-3-discrete-distributions.html#cb89-1"></a><span class="kw">sum</span>(((x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span>)<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px)   <span class="co"># V(X)</span></span></code></pre></div>
 <pre><code>## [1] 1.75</code></pre>
 </div>
 <div id="variance-alternative-method" class="section level2 unnumbered">
 <h2>3.3 Variance (alternative method)</h2>
-<div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb89-1"><a href="ch-3-discrete-distributions.html#cb89-1"></a>x</span></code></pre></div>
+<div class="sourceCode" id="cb91"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb91-1"><a href="ch-3-discrete-distributions.html#cb91-1"></a>x</span></code></pre></div>
 <pre><code>## [1] 1 2 3 4 5</code></pre>
-<div class="sourceCode" id="cb91"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb91-1"><a href="ch-3-discrete-distributions.html#cb91-1"></a>px</span></code></pre></div>
+<div class="sourceCode" id="cb93"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb93-1"><a href="ch-3-discrete-distributions.html#cb93-1"></a>px</span></code></pre></div>
 <pre><code>## [1] 0.10 0.15 0.20 0.25 0.30</code></pre>
-<div class="sourceCode" id="cb93"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb93-1"><a href="ch-3-discrete-distributions.html#cb93-1"></a>x<span class="op">^</span><span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb95"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb95-1"><a href="ch-3-discrete-distributions.html#cb95-1"></a>x<span class="op">^</span><span class="dv">2</span></span></code></pre></div>
 <pre><code>## [1]  1  4  9 16 25</code></pre>
-<div class="sourceCode" id="cb95"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb95-1"><a href="ch-3-discrete-distributions.html#cb95-1"></a>(x<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px</span></code></pre></div>
+<div class="sourceCode" id="cb97"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb97-1"><a href="ch-3-discrete-distributions.html#cb97-1"></a>(x<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px</span></code></pre></div>
 <pre><code>## [1] 0.1 0.6 1.8 4.0 7.5</code></pre>
-<div class="sourceCode" id="cb97"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb97-1"><a href="ch-3-discrete-distributions.html#cb97-1"></a><span class="kw">sum</span>((x<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px)  <span class="co"># E(X^2)</span></span></code></pre></div>
+<div class="sourceCode" id="cb99"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb99-1"><a href="ch-3-discrete-distributions.html#cb99-1"></a><span class="kw">sum</span>((x<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px)  <span class="co"># E(X^2)</span></span></code></pre></div>
 <pre><code>## [1] 14</code></pre>
-<div class="sourceCode" id="cb99"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb99-1"><a href="ch-3-discrete-distributions.html#cb99-1"></a><span class="dv">14</span><span class="fl">-3.5</span><span class="op">^</span><span class="dv">2</span>     <span class="co"># E(X^2) - [E(X)]^2</span></span></code></pre></div>
+<div class="sourceCode" id="cb101"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb101-1"><a href="ch-3-discrete-distributions.html#cb101-1"></a><span class="dv">14</span><span class="fl">-3.5</span><span class="op">^</span><span class="dv">2</span>     <span class="co"># E(X^2) - [E(X)]^2</span></span></code></pre></div>
 <pre><code>## [1] 1.75</code></pre>
 </div>
 <div id="binominal-theorem" class="section level2 unnumbered">
@@ -314,26 +314,26 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3>R</h3>
 <p>Probability mass function (pmf)</p>
 <p><span class="math inline">\(P(X = x)\)</span></p>
-<div class="sourceCode" id="cb101"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb101-1"><a href="ch-3-discrete-distributions.html#cb101-1"></a><span class="kw">choose</span>(<span class="dv">8</span>, <span class="dv">3</span>)    <span class="co"># &quot;8 choose 3&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb103"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb103-1"><a href="ch-3-discrete-distributions.html#cb103-1"></a><span class="kw">choose</span>(<span class="dv">8</span>, <span class="dv">3</span>)    <span class="co"># &quot;8 choose 3&quot;</span></span></code></pre></div>
 <pre><code>## [1] 56</code></pre>
-<div class="sourceCode" id="cb103"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb103-1"><a href="ch-3-discrete-distributions.html#cb103-1"></a><span class="dv">56</span><span class="op">*</span>.<span class="dv">6</span><span class="op">^</span><span class="dv">3</span><span class="op">*</span>.<span class="dv">4</span><span class="op">^</span><span class="dv">5</span>     <span class="co"># P(X = 3) given n = 8, p = .6</span></span></code></pre></div>
+<div class="sourceCode" id="cb105"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb105-1"><a href="ch-3-discrete-distributions.html#cb105-1"></a><span class="dv">56</span><span class="op">*</span>.<span class="dv">6</span><span class="op">^</span><span class="dv">3</span><span class="op">*</span>.<span class="dv">4</span><span class="op">^</span><span class="dv">5</span>     <span class="co"># P(X = 3) given n = 8, p = .6</span></span></code></pre></div>
 <pre><code>## [1] 0.123863</code></pre>
 <p>Direct method</p>
-<div class="sourceCode" id="cb105"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb105-1"><a href="ch-3-discrete-distributions.html#cb105-1"></a><span class="kw">dbinom</span>(<span class="dv">3</span>, <span class="dv">8</span>, <span class="fl">.6</span>)     <span class="co"># P(X = 3) given n = 8, p = .6</span></span></code></pre></div>
+<div class="sourceCode" id="cb107"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb107-1"><a href="ch-3-discrete-distributions.html#cb107-1"></a><span class="kw">dbinom</span>(<span class="dv">3</span>, <span class="dv">8</span>, <span class="fl">.6</span>)     <span class="co"># P(X = 3) given n = 8, p = .6</span></span></code></pre></div>
 <pre><code>## [1] 0.123863</code></pre>
 <p>Cumulative distribution function (cdf)</p>
 <p><span class="math inline">\(P(X \leq x)\)</span></p>
 <p>Find <span class="math inline">\(P(2 \leq X \leq 4)\)</span> given <span class="math inline">\(p = .7, n = 15\)</span></p>
-<div class="sourceCode" id="cb107"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb107-1"><a href="ch-3-discrete-distributions.html#cb107-1"></a><span class="kw">pbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">-</span><span class="st"> </span><span class="kw">pbinom</span>(<span class="dv">1</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb109"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb109-1"><a href="ch-3-discrete-distributions.html#cb109-1"></a><span class="kw">pbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">-</span><span class="st"> </span><span class="kw">pbinom</span>(<span class="dv">1</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</span></code></pre></div>
 <pre><code>## [1] 0.0006717175</code></pre>
 <p>(Using the pmf instead:)</p>
-<div class="sourceCode" id="cb109"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb109-1"><a href="ch-3-discrete-distributions.html#cb109-1"></a><span class="kw">dbinom</span>(<span class="dv">2</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">3</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb111"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb111-1"><a href="ch-3-discrete-distributions.html#cb111-1"></a><span class="kw">dbinom</span>(<span class="dv">2</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">3</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</span></code></pre></div>
 <pre><code>## [1] 0.0006717175</code></pre>
 <p>Graphing a binomial pmf:</p>
 <p>ex. <span class="math inline">\(p = .7, n = 10\)</span></p>
-<div class="sourceCode" id="cb111"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb111-1"><a href="ch-3-discrete-distributions.html#cb111-1"></a>px &lt;-<span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">0</span><span class="op">:</span><span class="dv">10</span>, <span class="dv">10</span>, <span class="fl">.7</span>)</span>
-<span id="cb111-2"><a href="ch-3-discrete-distributions.html#cb111-2"></a><span class="co"># adding las = 1 turns the y-axis tick mark labels horizontal, which are easier to read</span></span>
-<span id="cb111-3"><a href="ch-3-discrete-distributions.html#cb111-3"></a><span class="kw">barplot</span>(px, <span class="dt">names.arg =</span> <span class="dv">0</span><span class="op">:</span><span class="dv">10</span>, <span class="dt">las =</span> <span class="dv">1</span>, <span class="dt">col =</span> <span class="st">&quot;lightblue&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb113"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb113-1"><a href="ch-3-discrete-distributions.html#cb113-1"></a>px &lt;-<span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">0</span><span class="op">:</span><span class="dv">10</span>, <span class="dv">10</span>, <span class="fl">.7</span>)</span>
+<span id="cb113-2"><a href="ch-3-discrete-distributions.html#cb113-2"></a><span class="co"># adding las = 1 turns the y-axis tick mark labels horizontal, which are easier to read</span></span>
+<span id="cb113-3"><a href="ch-3-discrete-distributions.html#cb113-3"></a><span class="kw">barplot</span>(px, <span class="dt">names.arg =</span> <span class="dv">0</span><span class="op">:</span><span class="dv">10</span>, <span class="dt">las =</span> <span class="dv">1</span>, <span class="dt">col =</span> <span class="st">&quot;lightblue&quot;</span>)</span></code></pre></div>
 <p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
 </div>
 </div>
@@ -374,17 +374,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Example (p. 127)</p>
 <p>Devore: <em>h(x; n, M, N)</em></p>
 <p><em>P(X = 2) = h(2; 10, 5, 25)</em> –&gt;</p>
-<div class="sourceCode" id="cb112"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb112-1"><a href="ch-3-discrete-distributions.html#cb112-1"></a><span class="kw">dhyper</span>(<span class="dt">x =</span> <span class="dv">2</span>, <span class="dt">m =</span> <span class="dv">5</span>, <span class="dt">n =</span> <span class="dv">20</span>, <span class="dt">k =</span> <span class="dv">10</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb114"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb114-1"><a href="ch-3-discrete-distributions.html#cb114-1"></a><span class="kw">dhyper</span>(<span class="dt">x =</span> <span class="dv">2</span>, <span class="dt">m =</span> <span class="dv">5</span>, <span class="dt">n =</span> <span class="dv">20</span>, <span class="dt">k =</span> <span class="dv">10</span>)</span></code></pre></div>
 <pre><code>## [1] 0.3853755</code></pre>
 </div>
 <div id="poisson" class="section level2 unnumbered">
 <h2>3.6 Poisson</h2>
 <p>Example (p. 132)</p>
 <p>p(3;2) =</p>
-<div class="sourceCode" id="cb114"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb114-1"><a href="ch-3-discrete-distributions.html#cb114-1"></a><span class="kw">dpois</span>(<span class="dv">3</span>,<span class="dv">2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb116"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb116-1"><a href="ch-3-discrete-distributions.html#cb116-1"></a><span class="kw">dpois</span>(<span class="dv">3</span>,<span class="dv">2</span>)</span></code></pre></div>
 <pre><code>## [1] 0.180447</code></pre>
 <p>F(3;2) =</p>
-<div class="sourceCode" id="cb116"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb116-1"><a href="ch-3-discrete-distributions.html#cb116-1"></a><span class="kw">ppois</span>(<span class="dv">3</span>, <span class="dv">2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb118-1"><a href="ch-3-discrete-distributions.html#cb118-1"></a><span class="kw">ppois</span>(<span class="dv">3</span>, <span class="dv">2</span>)</span></code></pre></div>
 <pre><code>## [1] 0.8571235</code></pre>
 </div>
 <div id="practice-exercises-1" class="section level2 unnumbered">
@@ -392,10 +392,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ol style="list-style-type: decimal">
 <li><strong>(Binomial)</strong> Suppose the probability of a car accident involving a single vehicle is .7. If 15 accidents are randomly selected, what is the probability that between 2 and 4, inclusive, involve a single vehicle? (from slides)</li>
 </ol>
-<div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb118-1"><a href="ch-3-discrete-distributions.html#cb118-1"></a><span class="kw">dbinom</span>(<span class="dv">2</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">3</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb120"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb120-1"><a href="ch-3-discrete-distributions.html#cb120-1"></a><span class="kw">dbinom</span>(<span class="dv">2</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">3</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</span></code></pre></div>
 <pre><code>## [1] 0.0006717175</code></pre>
 <p>or</p>
-<div class="sourceCode" id="cb120"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb120-1"><a href="ch-3-discrete-distributions.html#cb120-1"></a><span class="kw">pbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">-</span><span class="st"> </span><span class="kw">pbinom</span>(<span class="dv">1</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb122"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb122-1"><a href="ch-3-discrete-distributions.html#cb122-1"></a><span class="kw">pbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">-</span><span class="st"> </span><span class="kw">pbinom</span>(<span class="dv">1</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</span></code></pre></div>
 <pre><code>## [1] 0.0006717175</code></pre>
 <hr />
 <ol start="2" style="list-style-type: decimal">
@@ -409,15 +409,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>What is the probability that the number of calls among the 25 that involve a fax transmission exceeds the expected number by more than 2 standard deviations? (Textbook 50-51)</p></li>
 </ol></li>
 </ol>
-<div class="sourceCode" id="cb122"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb122-1"><a href="ch-3-discrete-distributions.html#cb122-1"></a><span class="kw">pbinom</span>(<span class="dv">6</span>, <span class="dv">25</span>, <span class="fl">.25</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb124"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb124-1"><a href="ch-3-discrete-distributions.html#cb124-1"></a><span class="kw">pbinom</span>(<span class="dv">6</span>, <span class="dv">25</span>, <span class="fl">.25</span>)</span></code></pre></div>
 <pre><code>## [1] 0.5610981</code></pre>
-<div class="sourceCode" id="cb124"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb124-1"><a href="ch-3-discrete-distributions.html#cb124-1"></a><span class="kw">dbinom</span>(<span class="dv">6</span>, <span class="dv">25</span>, <span class="fl">.25</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb126"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb126-1"><a href="ch-3-discrete-distributions.html#cb126-1"></a><span class="kw">dbinom</span>(<span class="dv">6</span>, <span class="dv">25</span>, <span class="fl">.25</span>)</span></code></pre></div>
 <pre><code>## [1] 0.1828195</code></pre>
-<div class="sourceCode" id="cb126"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb126-1"><a href="ch-3-discrete-distributions.html#cb126-1"></a><span class="dv">1</span> <span class="op">-</span><span class="st"> </span><span class="kw">pbinom</span>(<span class="dv">5</span>, <span class="dv">25</span>, <span class="fl">.25</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb128"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb128-1"><a href="ch-3-discrete-distributions.html#cb128-1"></a><span class="dv">1</span> <span class="op">-</span><span class="st"> </span><span class="kw">pbinom</span>(<span class="dv">5</span>, <span class="dv">25</span>, <span class="fl">.25</span>)</span></code></pre></div>
 <pre><code>## [1] 0.6217215</code></pre>
-<div class="sourceCode" id="cb128"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb128-1"><a href="ch-3-discrete-distributions.html#cb128-1"></a>E &lt;-<span class="st"> </span><span class="dv">25</span><span class="op">*</span>.<span class="dv">25</span></span>
-<span id="cb128-2"><a href="ch-3-discrete-distributions.html#cb128-2"></a>Var &lt;-<span class="st"> </span><span class="dv">25</span><span class="op">*</span>.<span class="dv">25</span><span class="op">*</span>.<span class="dv">75</span></span>
-<span id="cb128-3"><a href="ch-3-discrete-distributions.html#cb128-3"></a><span class="kw">pbinom</span>(<span class="kw">floor</span>(E<span class="op">+</span><span class="dv">2</span><span class="op">*</span><span class="kw">sqrt</span>(Var)), <span class="dv">25</span>, <span class="fl">.25</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb130"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb130-1"><a href="ch-3-discrete-distributions.html#cb130-1"></a>E &lt;-<span class="st"> </span><span class="dv">25</span><span class="op">*</span>.<span class="dv">25</span></span>
+<span id="cb130-2"><a href="ch-3-discrete-distributions.html#cb130-2"></a>Var &lt;-<span class="st"> </span><span class="dv">25</span><span class="op">*</span>.<span class="dv">25</span><span class="op">*</span>.<span class="dv">75</span></span>
+<span id="cb130-3"><a href="ch-3-discrete-distributions.html#cb130-3"></a><span class="kw">pbinom</span>(<span class="kw">floor</span>(E<span class="op">+</span><span class="dv">2</span><span class="op">*</span><span class="kw">sqrt</span>(Var)), <span class="dv">25</span>, <span class="fl">.25</span>)</span></code></pre></div>
 <pre><code>## [1] 0.9703301</code></pre>
 <hr />
 <ol start="3" style="list-style-type: decimal">
@@ -427,11 +427,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>What is the probability that the number of granite specimens selected for analysis is within 1 standard deviation of its mean value? (Textbook 71)</p></li>
 </ol></li>
 </ol>
-<div class="sourceCode" id="cb130"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb130-1"><a href="ch-3-discrete-distributions.html#cb130-1"></a><span class="kw">dhyper</span>(<span class="dv">8</span>, <span class="dv">8</span>, <span class="dv">12</span>, <span class="dv">15</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dhyper</span>(<span class="dv">3</span>, <span class="dv">8</span>, <span class="dv">12</span>, <span class="dv">15</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb132"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb132-1"><a href="ch-3-discrete-distributions.html#cb132-1"></a><span class="kw">dhyper</span>(<span class="dv">8</span>, <span class="dv">8</span>, <span class="dv">12</span>, <span class="dv">15</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dhyper</span>(<span class="dv">3</span>, <span class="dv">8</span>, <span class="dv">12</span>, <span class="dv">15</span>)</span></code></pre></div>
 <pre><code>## [1] 0.05469556</code></pre>
-<div class="sourceCode" id="cb132"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb132-1"><a href="ch-3-discrete-distributions.html#cb132-1"></a>mean_g &lt;-<span class="st"> </span><span class="dv">15</span><span class="op">*</span><span class="dv">12</span><span class="op">/</span><span class="dv">20</span></span>
-<span id="cb132-2"><a href="ch-3-discrete-distributions.html#cb132-2"></a>sd_g &lt;-<span class="st"> </span><span class="kw">sqrt</span>(<span class="dv">20</span><span class="op">*</span>(<span class="dv">12</span><span class="op">/</span><span class="dv">20</span>)<span class="op">*</span>(<span class="dv">8</span><span class="op">/</span><span class="dv">20</span>))</span>
-<span id="cb132-3"><a href="ch-3-discrete-distributions.html#cb132-3"></a><span class="kw">pbinom</span>(mean_g <span class="op">+</span><span class="st"> </span>sd_g, <span class="dv">15</span>, <span class="dv">12</span><span class="op">/</span><span class="dv">20</span>)<span class="op">-</span><span class="kw">pbinom</span>(mean_g <span class="op">-</span><span class="st"> </span>sd_g, <span class="dv">15</span>, <span class="dv">12</span><span class="op">/</span><span class="dv">20</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb134"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb134-1"><a href="ch-3-discrete-distributions.html#cb134-1"></a>mean_g &lt;-<span class="st"> </span><span class="dv">15</span><span class="op">*</span><span class="dv">12</span><span class="op">/</span><span class="dv">20</span></span>
+<span id="cb134-2"><a href="ch-3-discrete-distributions.html#cb134-2"></a>sd_g &lt;-<span class="st"> </span><span class="kw">sqrt</span>(<span class="dv">20</span><span class="op">*</span>(<span class="dv">12</span><span class="op">/</span><span class="dv">20</span>)<span class="op">*</span>(<span class="dv">8</span><span class="op">/</span><span class="dv">20</span>))</span>
+<span id="cb134-3"><a href="ch-3-discrete-distributions.html#cb134-3"></a><span class="kw">pbinom</span>(mean_g <span class="op">+</span><span class="st"> </span>sd_g, <span class="dv">15</span>, <span class="dv">12</span><span class="op">/</span><span class="dv">20</span>)<span class="op">-</span><span class="kw">pbinom</span>(mean_g <span class="op">-</span><span class="st"> </span>sd_g, <span class="dv">15</span>, <span class="dv">12</span><span class="op">/</span><span class="dv">20</span>)</span></code></pre></div>
 <pre><code>## [1] 0.8144507</code></pre>
 <hr />
 <ol start="4" style="list-style-type: decimal">
@@ -444,13 +444,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol></li>
 </ol>
 <p>Let x be the number of boxes without prizes to be purchased, <span class="math inline">\(p = {x+2-1\choose1}(.2^2)(.8 ^x)\)</span></p>
-<div class="sourceCode" id="cb134"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb134-1"><a href="ch-3-discrete-distributions.html#cb134-1"></a><span class="kw">dnbinom</span>(<span class="dv">2</span>, <span class="dv">2</span>, <span class="fl">.2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb136"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb136-1"><a href="ch-3-discrete-distributions.html#cb136-1"></a><span class="kw">dnbinom</span>(<span class="dv">2</span>, <span class="dv">2</span>, <span class="fl">.2</span>)</span></code></pre></div>
 <pre><code>## [1] 0.0768</code></pre>
-<div class="sourceCode" id="cb136"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb136-1"><a href="ch-3-discrete-distributions.html#cb136-1"></a><span class="kw">dnbinom</span>(<span class="dv">2</span>, <span class="dv">2</span>, <span class="fl">.2</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dnbinom</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="fl">.2</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dnbinom</span>(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">.2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb138"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb138-1"><a href="ch-3-discrete-distributions.html#cb138-1"></a><span class="kw">dnbinom</span>(<span class="dv">2</span>, <span class="dv">2</span>, <span class="fl">.2</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dnbinom</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="fl">.2</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dnbinom</span>(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">.2</span>)</span></code></pre></div>
 <pre><code>## [1] 0.1808</code></pre>
-<div class="sourceCode" id="cb138"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb138-1"><a href="ch-3-discrete-distributions.html#cb138-1"></a><span class="dv">2</span><span class="op">*</span>.<span class="dv">8</span><span class="op">/</span>.<span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb140"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb140-1"><a href="ch-3-discrete-distributions.html#cb140-1"></a><span class="dv">2</span><span class="op">*</span>.<span class="dv">8</span><span class="op">/</span>.<span class="dv">2</span></span></code></pre></div>
 <pre><code>## [1] 8</code></pre>
-<div class="sourceCode" id="cb140"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb140-1"><a href="ch-3-discrete-distributions.html#cb140-1"></a><span class="co"># 8 boxes without desired prize, 10 boxes in total</span></span></code></pre></div>
+<div class="sourceCode" id="cb142"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb142-1"><a href="ch-3-discrete-distributions.html#cb142-1"></a><span class="co"># 8 boxes without desired prize, 10 boxes in total</span></span></code></pre></div>
 <hr />
 <ol start="5" style="list-style-type: decimal">
 <li><p><strong>(Poisson)</strong> Suppose that the number of drivers who travel between a particular origin and destination during a designated time period has a Poisson distribution with parameter <span class="math inline">\(\mu = 20\)</span>. What is the probability that the number of drivers will</p>
@@ -461,13 +461,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 <p>(Textbook 81)</p></li>
 </ol>
-<div class="sourceCode" id="cb141"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb141-1"><a href="ch-3-discrete-distributions.html#cb141-1"></a><span class="kw">ppois</span>(<span class="dv">10</span>, <span class="dv">20</span>) <span class="co"># a</span></span></code></pre></div>
+<div class="sourceCode" id="cb143"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb143-1"><a href="ch-3-discrete-distributions.html#cb143-1"></a><span class="kw">ppois</span>(<span class="dv">10</span>, <span class="dv">20</span>) <span class="co"># a</span></span></code></pre></div>
 <pre><code>## [1] 0.01081172</code></pre>
-<div class="sourceCode" id="cb143"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb143-1"><a href="ch-3-discrete-distributions.html#cb143-1"></a><span class="kw">dpois</span>(<span class="dv">10</span>, <span class="dv">20</span>) <span class="co"># b1</span></span></code></pre></div>
+<div class="sourceCode" id="cb145"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb145-1"><a href="ch-3-discrete-distributions.html#cb145-1"></a><span class="kw">dpois</span>(<span class="dv">10</span>, <span class="dv">20</span>) <span class="co"># b1</span></span></code></pre></div>
 <pre><code>## [1] 0.005816307</code></pre>
-<div class="sourceCode" id="cb145"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb145-1"><a href="ch-3-discrete-distributions.html#cb145-1"></a>((<span class="kw">exp</span>(<span class="dv">1</span>)<span class="op">^-</span><span class="dv">20</span>)<span class="op">*</span>(<span class="dv">20</span><span class="op">^</span><span class="dv">10</span>))<span class="op">/</span><span class="kw">factorial</span>(<span class="dv">10</span>) <span class="co"># b2</span></span></code></pre></div>
+<div class="sourceCode" id="cb147"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb147-1"><a href="ch-3-discrete-distributions.html#cb147-1"></a>((<span class="kw">exp</span>(<span class="dv">1</span>)<span class="op">^-</span><span class="dv">20</span>)<span class="op">*</span>(<span class="dv">20</span><span class="op">^</span><span class="dv">10</span>))<span class="op">/</span><span class="kw">factorial</span>(<span class="dv">10</span>) <span class="co"># b2</span></span></code></pre></div>
 <pre><code>## [1] 0.005816307</code></pre>
-<div class="sourceCode" id="cb147"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb147-1"><a href="ch-3-discrete-distributions.html#cb147-1"></a><span class="kw">ppois</span>(<span class="dv">20</span> <span class="op">+</span><span class="st"> </span><span class="dv">2</span><span class="op">*</span><span class="kw">sqrt</span>(<span class="dv">20</span>),<span class="dv">20</span>) <span class="op">-</span><span class="st"> </span><span class="kw">ppois</span>(<span class="dv">20</span> <span class="op">-</span><span class="st"> </span><span class="dv">2</span><span class="op">*</span><span class="kw">sqrt</span>(<span class="dv">20</span>), <span class="dv">20</span>) <span class="co"># c</span></span></code></pre></div>
+<div class="sourceCode" id="cb149"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb149-1"><a href="ch-3-discrete-distributions.html#cb149-1"></a><span class="kw">ppois</span>(<span class="dv">20</span> <span class="op">+</span><span class="st"> </span><span class="dv">2</span><span class="op">*</span><span class="kw">sqrt</span>(<span class="dv">20</span>),<span class="dv">20</span>) <span class="op">-</span><span class="st"> </span><span class="kw">ppois</span>(<span class="dv">20</span> <span class="op">-</span><span class="st"> </span><span class="dv">2</span><span class="op">*</span><span class="kw">sqrt</span>(<span class="dv">20</span>), <span class="dv">20</span>) <span class="co"># c</span></span></code></pre></div>
 <pre><code>## [1] 0.9442797</code></pre>
 
 </div>
