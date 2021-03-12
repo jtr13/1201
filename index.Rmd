@@ -94,6 +94,7 @@ Basic operations:
 3 * 4
 3 / 4
 3^4
+sqrt(3)
 ```
 
 Working with vectors:
