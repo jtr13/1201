@@ -41,7 +41,12 @@ jobs:
           path: ${{ env.R_LIBS_USER }}
           key: ${{ runner.os }}-${{ steps.install-r.outputs.installed-r-version }}-2-${{ hashFiles('.github/r-depends.rds') }}
           restore-keys: ${{ runner.os }}-${{ steps.install-r.outputs.installed-r-version }}-2-
-
+          
+      - name: Install system dependencies
+        run: |
+          sudo apt update
+          sudo apt-get install -y r-cran-rjava
+            
       - name: Install dependencies
         run: |
           pak::local_install_dev_deps()
