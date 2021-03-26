@@ -45,8 +45,7 @@ jobs:
       - name: Install system dependencies
         run: |
           sudo apt update
-          sudo apt-get install -y default-jre
-          sudo apt-get install -y default-jdk
+          sudo apt-get install openjdk-8-jdk
             
       - name: Install dependencies
         run: |
