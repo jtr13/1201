@@ -47,7 +47,6 @@ jobs:
           sudo apt update
           sudo apt-get install -y default-jre
           sudo apt-get install -y default-jdk
-          sudo apt-get install -y r-cran-rjava
             
       - name: Install dependencies
         run: |
