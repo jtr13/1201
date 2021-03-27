@@ -1,38 +1,39 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Ch. 12 Linear Regression | Stat 1201 Supplemental Materials</title>
-  <meta name="description" content="Supplemental resources for Stat1201" />
-  <meta name="generator" content="bookdown 0.10.2 and GitBook 2.6.7" />
+  <title>Ch. 12 Linear Regression | Stat 1201 Resources</title>
+  <meta name="description" content="Stat 1201" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Ch. 12 Linear Regression | Stat 1201 Supplemental Materials" />
+  <meta property="og:title" content="Ch. 12 Linear Regression | Stat 1201 Resources" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://jtr13.github.io/1201/" />
   
-  <meta property="og:description" content="Supplemental resources for Stat1201" />
+  <meta property="og:description" content="Stat 1201" />
   <meta name="github-repo" content="jtr13/1201" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Ch. 12 Linear Regression | Stat 1201 Supplemental Materials" />
+  <meta name="twitter:title" content="Ch. 12 Linear Regression | Stat 1201 Resources" />
   
-  <meta name="twitter:description" content="Supplemental resources for Stat1201" />
+  <meta name="twitter:description" content="Stat 1201" />
   
 
 <meta name="author" content="Joyce Robbins" />
 
 
-<meta name="date" content="2019-07-25" />
+<meta name="date" content="2020-12-05" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="ch-14-chi-squared-test.html">
-<link rel="next" href="ch-13-nonlinear-and-multiple-regression.html">
+<link rel="prev" href="ch-5-joint-probability.html"/>
+
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -40,6 +41,7 @@
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
 
 
 
@@ -47,29 +49,34 @@
 
 
 
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -78,9 +85,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -126,120 +133,163 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="index.html"><b>STAT1201 Resources/</b></a></li>
+<li><a href="index.html"><b>1201.info</b></a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a><ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#general-study-tips"><i class="fa fa-check"></i>General study tips</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#installing-r"><i class="fa fa-check"></i>Installing R</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#getting-started-with-r"><i class="fa fa-check"></i>Getting Started with R</a><ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#quick-intro-to-rstudio"><i class="fa fa-check"></i>Quick intro to RStudio</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#using-r-as-a-calculator"><i class="fa fa-check"></i>Using R as a calculator</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Syllabus</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-material-and-assignments"><i class="fa fa-check"></i>Course material and assignments</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#zoom-info"><i class="fa fa-check"></i>Zoom info</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#instructor"><i class="fa fa-check"></i>Instructor</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#teaching-assistant"><i class="fa fa-check"></i>Teaching assistant</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-description"><i class="fa fa-check"></i>Course description</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#resources-and-readings"><i class="fa fa-check"></i>Resources and readings</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#required-text"><i class="fa fa-check"></i>Required text</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#recommended-text"><i class="fa fa-check"></i>Recommended text</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#other-materials"><i class="fa fa-check"></i>Other materials</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#contact"><i class="fa fa-check"></i>Contact</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#license"><i class="fa fa-check"></i>License</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#grading-procedures"><i class="fa fa-check"></i>Grading procedures</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#problem-sets"><i class="fa fa-check"></i>Problem Sets</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#tests"><i class="fa fa-check"></i>Tests</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#r"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#academic-integrity"><i class="fa fa-check"></i>Academic Integrity</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#accommodations-for-students-registered-with-disability-services"><i class="fa fa-check"></i>Accommodations for students registered with Disability Services</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html"><i class="fa fa-check"></i>Ch. 1 Descriptive Statistics</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#getting-help"><i class="fa fa-check"></i>Getting help</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#course-content"><i class="fa fa-check"></i>Course content</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a>
+<ul>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#general-study-tips"><i class="fa fa-check"></i>General study tips</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#installing-r"><i class="fa fa-check"></i>Installing R</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#getting-started-with-r"><i class="fa fa-check"></i>Getting Started with R</a>
+<ul>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#quick-intro-to-rstudio-console"><i class="fa fa-check"></i>Quick intro to RStudio Console</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#saving-your-code-as-an-.r-file"><i class="fa fa-check"></i>Saving your code as an .R file</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#convert-.r-file-to-.html"><i class="fa fa-check"></i>Convert .R file to .html</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#save-code-and-text-as-.rmd-convert-to-.html"><i class="fa fa-check"></i>Save code and text as .Rmd, convert to .html</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#using-r-as-a-calculator"><i class="fa fa-check"></i>Using R as a calculator</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#contact"><i class="fa fa-check"></i>Contact</a></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html#license"><i class="fa fa-check"></i>License</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html"><i class="fa fa-check"></i>Ch. 1 Descriptive Statistics</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#populations-samples-and-processes"><i class="fa fa-check"></i>1.1 Populations, Samples, and Processes</a></li>
-<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#pictorial-and-tabular-methods-in-descriptive-statistics"><i class="fa fa-check"></i>1.2 Pictorial and Tabular Methods in Descriptive Statistics</a><ul>
-<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#r"><i class="fa fa-check"></i>R</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#measures-of-location"><i class="fa fa-check"></i>1.3 Measures of location</a><ul>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#pictorial-and-tabular-methods-in-descriptive-statistics"><i class="fa fa-check"></i>1.2 Pictorial and Tabular Methods in Descriptive Statistics</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#r-1"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#measures-of-variability"><i class="fa fa-check"></i>1.4 Measures of variability</a><ul>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#measures-of-location"><i class="fa fa-check"></i>1.3 Measures of location</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#r-2"><i class="fa fa-check"></i>R</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#measures-of-variability"><i class="fa fa-check"></i>1.4 Measures of variability</a>
+<ul>
+<li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#r-3"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="ch-1-descriptive-statistics.html"><a href="ch-1-descriptive-statistics.html#practice-exercises"><i class="fa fa-check"></i>Practice Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html"><i class="fa fa-check"></i>Ch. 2 Probability</a><ul>
-<li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html#sample-spaces-and-events"><i class="fa fa-check"></i>2.1 Sample Spaces and Events</a><ul>
+<li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html"><i class="fa fa-check"></i>Ch. 2 Probability</a>
+<ul>
+<li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html#sample-spaces-and-events"><i class="fa fa-check"></i>2.1 Sample Spaces and Events</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html#humor"><i class="fa fa-check"></i>Humor</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html#axioms-interpretations-and-properties-of-probability"><i class="fa fa-check"></i>2.2 Axioms, Interpretations, and Properties of Probability</a></li>
-<li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html#counting-techniques"><i class="fa fa-check"></i>2.3 Counting Techniques</a><ul>
-<li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html#r-3"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html#counting-techniques"><i class="fa fa-check"></i>2.3 Counting Techniques</a>
+<ul>
+<li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html#r-4"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="ch-2-probability.html"><a href="ch-2-probability.html#independence"><i class="fa fa-check"></i>2.5 Independence</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html"><i class="fa fa-check"></i>Ch. 3 Discrete Distributions</a><ul>
+<li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html"><i class="fa fa-check"></i>Ch. 3 Discrete Distributions</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#expected-value"><i class="fa fa-check"></i>3.3 Expected value</a></li>
 <li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#variance"><i class="fa fa-check"></i>3.3 Variance</a></li>
 <li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#variance-alternative-method"><i class="fa fa-check"></i>3.3 Variance (alternative method)</a></li>
-<li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#binominal-theorem"><i class="fa fa-check"></i>3.4 Binominal Theorem</a><ul>
-<li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#r-4"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#binominal-theorem"><i class="fa fa-check"></i>3.4 Binominal Theorem</a>
+<ul>
+<li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#r-5"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#hypergeometric"><i class="fa fa-check"></i>3.5 Hypergeometric</a></li>
 <li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#poisson"><i class="fa fa-check"></i>3.6 Poisson</a></li>
 <li class="chapter" data-level="" data-path="ch-3-discrete-distributions.html"><a href="ch-3-discrete-distributions.html#practice-exercises-1"><i class="fa fa-check"></i>Practice Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html"><i class="fa fa-check"></i>Ch. 4 Continuous Random Variables and Probability Distributions</a><ul>
+<li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html"><i class="fa fa-check"></i>Ch. 4 Continuous Random Variables and Probability Distributions</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#probability-density-functions"><i class="fa fa-check"></i>4.1 Probability density functions</a></li>
-<li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#r-5"><i class="fa fa-check"></i>R</a></li>
-<li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cumulative-distribution-functions-and-expected-values"><i class="fa fa-check"></i>4.2 Cumulative Distribution Functions and Expected Values</a></li>
-<li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#the-normal-distribution"><i class="fa fa-check"></i>4.3 The Normal Distribution</a><ul>
 <li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#r-6"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#cumulative-distribution-functions-and-expected-values"><i class="fa fa-check"></i>4.2 Cumulative Distribution Functions and Expected Values</a></li>
+<li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#the-normal-distribution"><i class="fa fa-check"></i>4.3 The Normal Distribution</a>
+<ul>
+<li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#r-7"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#practice-exercises-2"><i class="fa fa-check"></i>Practice Exercises</a></li>
 <li class="chapter" data-level="" data-path="ch-4-continuous-random-variables-and-probability-distributions.html"><a href="ch-4-continuous-random-variables-and-probability-distributions.html#extra-practice-chapters-1---4"><i class="fa fa-check"></i>Extra Practice Chapters 1 - 4</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-5-random-samples.html"><a href="ch-5-random-samples.html"><i class="fa fa-check"></i>Ch. 5 Random Samples</a><ul>
+<li class="chapter" data-level="" data-path="ch-5-random-samples.html"><a href="ch-5-random-samples.html"><i class="fa fa-check"></i>Ch. 5 Random Samples</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-5-random-samples.html"><a href="ch-5-random-samples.html#the-distribution-of-the-sample-mean"><i class="fa fa-check"></i>5.4 The Distribution of the Sample Mean</a></li>
 <li class="chapter" data-level="" data-path="ch-5-random-samples.html"><a href="ch-5-random-samples.html#the-distribution-of-a-linear-combination"><i class="fa fa-check"></i>5.5 The Distribution of a Linear Combination</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-6-point-estimation.html"><a href="ch-6-point-estimation.html"><i class="fa fa-check"></i>Ch. 6 Point Estimation</a><ul>
+<li class="chapter" data-level="" data-path="ch-6-point-estimation.html"><a href="ch-6-point-estimation.html"><i class="fa fa-check"></i>Ch. 6 Point Estimation</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-6-point-estimation.html"><a href="ch-6-point-estimation.html#some-general-concepts-of-point-estimation"><i class="fa fa-check"></i>6.1 Some General Concepts of Point Estimation</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-7-statistical-intervals-based-on-a-single-sample.html"><a href="ch-7-statistical-intervals-based-on-a-single-sample.html"><i class="fa fa-check"></i>Ch. 7 Statistical Intervals Based on a Single Sample</a><ul>
+<li class="chapter" data-level="" data-path="ch-7-statistical-intervals-based-on-a-single-sample.html"><a href="ch-7-statistical-intervals-based-on-a-single-sample.html"><i class="fa fa-check"></i>Ch. 7 Statistical Intervals Based on a Single Sample</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-7-statistical-intervals-based-on-a-single-sample.html"><a href="ch-7-statistical-intervals-based-on-a-single-sample.html#basic-properties-of-confidence-intervals"><i class="fa fa-check"></i>7.1 Basic Properties of Confidence Intervals</a></li>
 <li class="chapter" data-level="" data-path="ch-7-statistical-intervals-based-on-a-single-sample.html"><a href="ch-7-statistical-intervals-based-on-a-single-sample.html#large-sample-confidence-intervals-for-a-population-mean-and-proportion"><i class="fa fa-check"></i>7.2 Large-Sample Confidence Intervals for a Population Mean and Proportion</a></li>
 <li class="chapter" data-level="" data-path="ch-7-statistical-intervals-based-on-a-single-sample.html"><a href="ch-7-statistical-intervals-based-on-a-single-sample.html#intervals-based-on-a-normal-population-distribution"><i class="fa fa-check"></i>7.3 Intervals Based on a Normal Population Distribution</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-8-tests-of-hypotheses-based-on-a-single-sample.html"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html"><i class="fa fa-check"></i>Ch. 8 Tests of Hypotheses Based on a Single Sample</a><ul>
+<li class="chapter" data-level="" data-path="ch-8-tests-of-hypotheses-based-on-a-single-sample.html"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html"><i class="fa fa-check"></i>Ch. 8 Tests of Hypotheses Based on a Single Sample</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-8-tests-of-hypotheses-based-on-a-single-sample.html"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#hypotheses-and-test-procedures"><i class="fa fa-check"></i>8.1 Hypotheses and Test Procedures</a></li>
 <li><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#z-tests-for-hypotheses-about-a-population-mean">8.2 <em>z</em> Tests for Hypotheses about a Population Mean</a></li>
 <li><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#the-one-sample-t-test">8.3 The One-Sample <em>t</em> Test</a></li>
 <li class="chapter" data-level="" data-path="ch-8-tests-of-hypotheses-based-on-a-single-sample.html"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#tests-concerning-a-population-proportion"><i class="fa fa-check"></i>8.4 Tests Concerning a Population Proportion</a></li>
 <li class="chapter" data-level="" data-path="ch-8-tests-of-hypotheses-based-on-a-single-sample.html"><a href="ch-8-tests-of-hypotheses-based-on-a-single-sample.html#practice-exercises-3"><i class="fa fa-check"></i>Practice Exercises</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-9-inferences-based-on-two-samples.html"><a href="ch-9-inferences-based-on-two-samples.html"><i class="fa fa-check"></i>Ch. 9 Inferences Based on Two Samples</a><ul>
-<li><a href="ch-9-inferences-based-on-two-samples.html#z-tests-and-cis-for-a-difference-between-two-population-means">9.1 <span class="math inline">\(z\)</span> Tests and CI’s for a Difference Between Two Population Means</a><ul>
-<li class="chapter" data-level="" data-path="ch-9-inferences-based-on-two-samples.html"><a href="ch-9-inferences-based-on-two-samples.html#r-7"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="ch-9-inferences-based-on-two-samples.html"><a href="ch-9-inferences-based-on-two-samples.html"><i class="fa fa-check"></i>Ch. 9 Inferences Based on Two Samples</a>
+<ul>
+<li><a href="ch-9-inferences-based-on-two-samples.html#z-tests-and-cis-for-a-difference-between-two-population-means">9.1 <span class="math inline">\(z\)</span> Tests and CI’s for a Difference Between Two Population Means</a>
+<ul>
+<li class="chapter" data-level="" data-path="ch-9-inferences-based-on-two-samples.html"><a href="ch-9-inferences-based-on-two-samples.html#r-8"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
 <li><a href="ch-9-inferences-based-on-two-samples.html#the-two-sample-t-test-and-ci">9.2 The Two-Sample <span class="math inline">\(t\)</span> Test and CI</a></li>
 <li class="chapter" data-level="" data-path="ch-9-inferences-based-on-two-samples.html"><a href="ch-9-inferences-based-on-two-samples.html#analysis-of-paired-data"><i class="fa fa-check"></i>9.3 Analysis of Paired Data</a></li>
-<li class="chapter" data-level="" data-path="ch-9-inferences-based-on-two-samples.html"><a href="ch-9-inferences-based-on-two-samples.html#inferences-concerning-a-difference-between-population-proportions"><i class="fa fa-check"></i>9.4 Inferences Concerning a Difference Between Population Proportions</a><ul>
-<li class="chapter" data-level="" data-path="ch-9-inferences-based-on-two-samples.html"><a href="ch-9-inferences-based-on-two-samples.html#r-8"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="ch-9-inferences-based-on-two-samples.html"><a href="ch-9-inferences-based-on-two-samples.html#inferences-concerning-a-difference-between-population-proportions"><i class="fa fa-check"></i>9.4 Inferences Concerning a Difference Between Population Proportions</a>
+<ul>
+<li class="chapter" data-level="" data-path="ch-9-inferences-based-on-two-samples.html"><a href="ch-9-inferences-based-on-two-samples.html#r-9"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-2-conditional-probability.html"><a href="ch-2-conditional-probability.html"><i class="fa fa-check"></i>Ch. 2 Conditional Probability</a><ul>
+<li class="chapter" data-level="" data-path="ch-2-conditional-probability.html"><a href="ch-2-conditional-probability.html"><i class="fa fa-check"></i>Ch. 2 Conditional Probability</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-2-conditional-probability.html"><a href="ch-2-conditional-probability.html#resources"><i class="fa fa-check"></i>Resources</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-5-joint-probability.html"><a href="ch-5-joint-probability.html"><i class="fa fa-check"></i>Ch. 5 Joint Probability</a><ul>
+<li class="chapter" data-level="" data-path="ch-5-joint-probability.html"><a href="ch-5-joint-probability.html"><i class="fa fa-check"></i>Ch. 5 Joint Probability</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-5-joint-probability.html"><a href="ch-5-joint-probability.html#jointly-distributed-random-variables"><i class="fa fa-check"></i>5.1 Jointly Distributed Random Variables</a></li>
 <li class="chapter" data-level="" data-path="ch-5-joint-probability.html"><a href="ch-5-joint-probability.html#expected-values-covariance-and-correlation"><i class="fa fa-check"></i>5.2 Expected Values, Covariance, and Correlation</a></li>
 <li class="chapter" data-level="" data-path="ch-5-joint-probability.html"><a href="ch-5-joint-probability.html#resources-1"><i class="fa fa-check"></i>Resources</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-14-chi-squared-test.html"><a href="ch-14-chi-squared-test.html"><i class="fa fa-check"></i>Ch. 14 Chi Squared Test</a><ul>
-<li class="chapter" data-level="" data-path="ch-14-chi-squared-test.html"><a href="ch-14-chi-squared-test.html#two-way-contingency-tables"><i class="fa fa-check"></i>14.3 Two-Way Contingency Tables</a></li>
-<li class="chapter" data-level="" data-path="ch-14-chi-squared-test.html"><a href="ch-14-chi-squared-test.html#resources-2"><i class="fa fa-check"></i>Resources</a></li>
-<li class="chapter" data-level="" data-path="ch-14-chi-squared-test.html"><a href="ch-14-chi-squared-test.html#r-9"><i class="fa fa-check"></i>R</a></li>
-<li class="chapter" data-level="" data-path="ch-14-chi-squared-test.html"><a href="ch-14-chi-squared-test.html#practice-exercises-4"><i class="fa fa-check"></i>Practice Exercises</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html"><i class="fa fa-check"></i>Ch. 12 Linear Regression</a><ul>
+<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html"><i class="fa fa-check"></i>Ch. 12 Linear Regression</a>
+<ul>
 <li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#the-simple-linear-regression-model"><i class="fa fa-check"></i>12.1 The Simple Linear Regression Model</a></li>
-<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#estimating-model-parameters"><i class="fa fa-check"></i>12.2 Estimating Model Parameters</a><ul>
-<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#resources-3"><i class="fa fa-check"></i>Resources</a></li>
+<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#estimating-model-parameters"><i class="fa fa-check"></i>12.2 Estimating Model Parameters</a>
+<ul>
+<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#resources-2"><i class="fa fa-check"></i>Resources</a></li>
 <li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#r-10"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#correlation"><i class="fa fa-check"></i>12.5 Correlation</a><ul>
-<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#resources-4"><i class="fa fa-check"></i>Resources</a></li>
+<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#correlation"><i class="fa fa-check"></i>12.5 Correlation</a>
+<ul>
+<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#resources-3"><i class="fa fa-check"></i>Resources</a></li>
 <li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#r-11"><i class="fa fa-check"></i>R</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#practice-exercises-5"><i class="fa fa-check"></i>Practice Exercises</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ch-13-nonlinear-and-multiple-regression.html"><a href="ch-13-nonlinear-and-multiple-regression.html"><i class="fa fa-check"></i>Ch. 13 Nonlinear and Multiple Regression</a><ul>
-<li class="chapter" data-level="" data-path="ch-13-nonlinear-and-multiple-regression.html"><a href="ch-13-nonlinear-and-multiple-regression.html#assessing-model-adequacy"><i class="fa fa-check"></i>13.1 Assessing Model Adequacy</a></li>
+<li class="chapter" data-level="" data-path="ch-12-linear-regression.html"><a href="ch-12-linear-regression.html#practice-exercises-4"><i class="fa fa-check"></i>Practice Exercises</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -253,7 +303,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Stat 1201 Supplemental Materials</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Stat 1201 Resources</a>
           </h1>
         </div>
 
@@ -261,26 +311,26 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="ch.-12-linear-regression" class="section level1 unnumbered">
+<div id="ch.-12-linear-regression" class="section level1 unnumbered" number="">
 <h1>Ch. 12 Linear Regression</h1>
 <p>Sections covered: 12.1, 12.2, 12.5</p>
-<div id="the-simple-linear-regression-model" class="section level2 unnumbered">
+<div id="the-simple-linear-regression-model" class="section level2 unnumbered" number="">
 <h2>12.1 The Simple Linear Regression Model</h2>
 </div>
-<div id="estimating-model-parameters" class="section level2 unnumbered">
+<div id="estimating-model-parameters" class="section level2 unnumbered" number="">
 <h2>12.2 Estimating Model Parameters</h2>
-<div id="resources-3" class="section level3 unnumbered">
+<div id="resources-2" class="section level3 unnumbered" number="">
 <h3>Resources</h3>
 <p>Interactive Visualization: <a href="https://jtr13.github.io/D3/BestFittingLine.html">Linear Regression</a> Try fitting the least squares line to a set of random data and check your answer (<a href="https://www.geogebra.org/m/xC6zq7Zv">and another one</a>).</p>
 <p>Video: <a href="https://www.youtube.com/watch?v=aq8VU5KLmkY">Regression I: What is regression? | SSE, SSR, SST | R-squared | Errors (ε vs. e)</a> [contributed by Lance J.]</p>
 </div>
-<div id="r-10" class="section level3 unnumbered">
+<div id="r-10" class="section level3 unnumbered" number="">
 <h3>R</h3>
 <p>Calculating slope and intercept for a sample of (x, y) pairs (p. 498 formulas)</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Example 12.8, p. 503</span>
-x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">12</span>, <span class="dv">30</span>, <span class="dv">36</span>, <span class="dv">40</span>, <span class="dv">45</span>, <span class="dv">57</span>, <span class="dv">62</span>, <span class="dv">67</span>, <span class="dv">71</span>, <span class="dv">78</span>, <span class="dv">93</span>, <span class="dv">94</span>, <span class="dv">100</span>, <span class="dv">105</span>)
-y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">3.3</span>, <span class="fl">3.2</span>, <span class="fl">3.4</span>, <span class="dv">3</span>, <span class="fl">2.8</span>, <span class="fl">2.9</span>, <span class="fl">2.7</span>, <span class="fl">2.6</span>, <span class="fl">2.5</span>, <span class="fl">2.6</span>, <span class="fl">2.2</span>, <span class="dv">2</span>, <span class="fl">2.3</span>, <span class="fl">2.1</span>)
-<span class="kw">lm</span>(y <span class="op">~</span><span class="st"> </span>x)  <span class="co">#lm = linear model</span></code></pre>
+<div class="sourceCode" id="cb212"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb212-1"><a href="ch-12-linear-regression.html#cb212-1"></a><span class="co"># Example 12.8, p. 503</span></span>
+<span id="cb212-2"><a href="ch-12-linear-regression.html#cb212-2"></a>x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">12</span>, <span class="dv">30</span>, <span class="dv">36</span>, <span class="dv">40</span>, <span class="dv">45</span>, <span class="dv">57</span>, <span class="dv">62</span>, <span class="dv">67</span>, <span class="dv">71</span>, <span class="dv">78</span>, <span class="dv">93</span>, <span class="dv">94</span>, <span class="dv">100</span>, <span class="dv">105</span>)</span>
+<span id="cb212-3"><a href="ch-12-linear-regression.html#cb212-3"></a>y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">3.3</span>, <span class="fl">3.2</span>, <span class="fl">3.4</span>, <span class="dv">3</span>, <span class="fl">2.8</span>, <span class="fl">2.9</span>, <span class="fl">2.7</span>, <span class="fl">2.6</span>, <span class="fl">2.5</span>, <span class="fl">2.6</span>, <span class="fl">2.2</span>, <span class="dv">2</span>, <span class="fl">2.3</span>, <span class="fl">2.1</span>)</span>
+<span id="cb212-4"><a href="ch-12-linear-regression.html#cb212-4"></a><span class="kw">lm</span>(y <span class="op">~</span><span class="st"> </span>x)  <span class="co">#lm = linear model</span></span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## lm(formula = y ~ x)
@@ -289,18 +339,18 @@ y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">3.3</
 ## (Intercept)            x  
 ##     3.62091     -0.01471</code></pre>
 <p><strong>Predicted values:</strong></p>
-<pre class="sourceCode r"><code class="sourceCode r">mod &lt;-<span class="st"> </span><span class="kw">lm</span>(y<span class="op">~</span>x)
-<span class="kw">round</span>(mod<span class="op">$</span>fitted.values, <span class="dv">2</span>)</code></pre>
+<div class="sourceCode" id="cb214"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb214-1"><a href="ch-12-linear-regression.html#cb214-1"></a>mod &lt;-<span class="st"> </span><span class="kw">lm</span>(y<span class="op">~</span>x)</span>
+<span id="cb214-2"><a href="ch-12-linear-regression.html#cb214-2"></a><span class="kw">round</span>(mod<span class="op">$</span>fitted.values, <span class="dv">2</span>)</span></code></pre></div>
 <pre><code>##    1    2    3    4    5    6    7    8    9   10   11   12   13   14 
 ## 3.44 3.18 3.09 3.03 2.96 2.78 2.71 2.64 2.58 2.47 2.25 2.24 2.15 2.08</code></pre>
 <p><strong>Residuals:</strong></p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">round</span>(mod<span class="op">$</span>residuals, <span class="dv">2</span>)</code></pre>
-<pre><code>##     1     2     3     4     5     6     7     8     9    10    11    12 
-## -0.14  0.02  0.31 -0.03 -0.16  0.12 -0.01 -0.04 -0.08  0.13 -0.05 -0.24 
-##    13    14 
-##  0.15  0.02</code></pre>
+<div class="sourceCode" id="cb216"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb216-1"><a href="ch-12-linear-regression.html#cb216-1"></a><span class="kw">round</span>(mod<span class="op">$</span>residuals, <span class="dv">2</span>)</span></code></pre></div>
+<pre><code>##     1     2     3     4     5     6     7     8     9    10    11    12    13 
+## -0.14  0.02  0.31 -0.03 -0.16  0.12 -0.01 -0.04 -0.08  0.13 -0.05 -0.24  0.15 
+##    14 
+##  0.02</code></pre>
 <p><strong>SSE, SSR</strong></p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">anova</span>(mod)  <span class="co"># anova = analysis of variance</span></code></pre>
+<div class="sourceCode" id="cb218"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb218-1"><a href="ch-12-linear-regression.html#cb218-1"></a><span class="kw">anova</span>(mod)  <span class="co"># anova = analysis of variance</span></span></code></pre></div>
 <pre><code>## Analysis of Variance Table
 ## 
 ## Response: y
@@ -315,53 +365,53 @@ y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">3.3</
 <p>SST = SSE + SSR = 0.2624565 +
 2.2946864 = 2.5571</p>
 <p><strong>coefficient of determination <span class="math inline">\(r^2\)</span></strong></p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Example 12.4, 12.9</span>
-x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">132</span>, <span class="dv">129</span>, <span class="dv">120</span>, <span class="fl">113.2</span>, <span class="dv">105</span>, <span class="dv">92</span>, <span class="dv">84</span>, <span class="fl">83.2</span>, <span class="fl">88.4</span>, <span class="dv">59</span>, <span class="dv">80</span>, <span class="fl">81.5</span>, <span class="dv">71</span>, <span class="fl">69.2</span>)
-y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">46</span>, <span class="dv">48</span>, <span class="dv">51</span>, <span class="fl">52.1</span>, <span class="dv">54</span>, <span class="dv">52</span>, <span class="dv">59</span>, <span class="fl">58.7</span>, <span class="fl">61.6</span>, <span class="dv">64</span>, <span class="fl">61.4</span>, <span class="fl">54.6</span>, <span class="fl">58.8</span>, <span class="dv">58</span>)
-
-mod &lt;-<span class="st"> </span><span class="kw">lm</span>(y <span class="op">~</span><span class="st"> </span>x)
-
-SSE &lt;-<span class="st"> </span><span class="kw">anova</span>(mod)<span class="op">$</span><span class="st">`</span><span class="dt">Sum Sq</span><span class="st">`</span>[<span class="dv">1</span>]
-SST &lt;-<span class="st"> </span><span class="kw">anova</span>(mod)<span class="op">$</span><span class="st">`</span><span class="dt">Sum Sq</span><span class="st">`</span>[<span class="dv">1</span>] <span class="op">+</span><span class="st"> </span><span class="kw">anova</span>(mod)<span class="op">$</span><span class="st">`</span><span class="dt">Sum Sq</span><span class="st">`</span>[<span class="dv">2</span>]
-<span class="dv">1</span> <span class="op">-</span><span class="st"> </span>(SSE<span class="op">/</span>SST)</code></pre>
+<div class="sourceCode" id="cb220"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb220-1"><a href="ch-12-linear-regression.html#cb220-1"></a><span class="co"># Example 12.4, 12.9</span></span>
+<span id="cb220-2"><a href="ch-12-linear-regression.html#cb220-2"></a>x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">132</span>, <span class="dv">129</span>, <span class="dv">120</span>, <span class="fl">113.2</span>, <span class="dv">105</span>, <span class="dv">92</span>, <span class="dv">84</span>, <span class="fl">83.2</span>, <span class="fl">88.4</span>, <span class="dv">59</span>, <span class="dv">80</span>, <span class="fl">81.5</span>, <span class="dv">71</span>, <span class="fl">69.2</span>)</span>
+<span id="cb220-3"><a href="ch-12-linear-regression.html#cb220-3"></a>y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">46</span>, <span class="dv">48</span>, <span class="dv">51</span>, <span class="fl">52.1</span>, <span class="dv">54</span>, <span class="dv">52</span>, <span class="dv">59</span>, <span class="fl">58.7</span>, <span class="fl">61.6</span>, <span class="dv">64</span>, <span class="fl">61.4</span>, <span class="fl">54.6</span>, <span class="fl">58.8</span>, <span class="dv">58</span>)</span>
+<span id="cb220-4"><a href="ch-12-linear-regression.html#cb220-4"></a></span>
+<span id="cb220-5"><a href="ch-12-linear-regression.html#cb220-5"></a>mod &lt;-<span class="st"> </span><span class="kw">lm</span>(y <span class="op">~</span><span class="st"> </span>x)</span>
+<span id="cb220-6"><a href="ch-12-linear-regression.html#cb220-6"></a></span>
+<span id="cb220-7"><a href="ch-12-linear-regression.html#cb220-7"></a>SSE &lt;-<span class="st"> </span><span class="kw">anova</span>(mod)<span class="op">$</span><span class="st">`</span><span class="dt">Sum Sq</span><span class="st">`</span>[<span class="dv">1</span>]</span>
+<span id="cb220-8"><a href="ch-12-linear-regression.html#cb220-8"></a>SST &lt;-<span class="st"> </span><span class="kw">anova</span>(mod)<span class="op">$</span><span class="st">`</span><span class="dt">Sum Sq</span><span class="st">`</span>[<span class="dv">1</span>] <span class="op">+</span><span class="st"> </span><span class="kw">anova</span>(mod)<span class="op">$</span><span class="st">`</span><span class="dt">Sum Sq</span><span class="st">`</span>[<span class="dv">2</span>]</span>
+<span id="cb220-9"><a href="ch-12-linear-regression.html#cb220-9"></a><span class="dv">1</span> <span class="op">-</span><span class="st"> </span>(SSE<span class="op">/</span>SST)</span></code></pre></div>
 <pre><code>## [1] 0.2092398</code></pre>
 <p>Or (simply):</p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cor</span>(x,y)<span class="op">^</span><span class="dv">2</span></code></pre>
+<div class="sourceCode" id="cb222"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb222-1"><a href="ch-12-linear-regression.html#cb222-1"></a><span class="kw">cor</span>(x,y)<span class="op">^</span><span class="dv">2</span></span></code></pre></div>
 <pre><code>## [1] 0.7907602</code></pre>
 <p>(See section 12.5)</p>
 </div>
 </div>
-<div id="correlation" class="section level2 unnumbered">
+<div id="correlation" class="section level2 unnumbered" number="">
 <h2>12.5 Correlation</h2>
 <p>Skip: “Inferences About the Population Correlation Coefficient” (p. 530) <em>to end of section</em>.</p>
-<div id="resources-4" class="section level3 unnumbered">
+<div id="resources-3" class="section level3 unnumbered" number="">
 <h3>Resources</h3>
 <p>Interactive visualization: <a href="https://jtr13.github.io/D3/CorrelationCoefficient.html">Correlation Coefficient</a> (add and remove points)</p>
 <p>Interactive visualization: <a href="https://rpsychologist.com/d3/correlation/">Interpreting Correlations</a> [contributed by Dario G.]</p>
 </div>
-<div id="r-11" class="section level3 unnumbered">
+<div id="r-11" class="section level3 unnumbered" number="">
 <h3>R</h3>
 <p>sample correlation coefficient <span class="math inline">\(r\)</span></p>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Example 12.15, p. 528</span>
-x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">2.4</span>, <span class="fl">3.4</span>, <span class="fl">4.6</span>, <span class="fl">3.7</span>, <span class="fl">2.2</span>, <span class="fl">3.3</span>, <span class="fl">4.0</span>, <span class="fl">2.1</span>)
-y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">1.33</span>, <span class="fl">2.12</span>, <span class="fl">1.80</span>, <span class="fl">1.65</span>, <span class="fl">2.00</span>, <span class="fl">1.76</span>, <span class="fl">2.11</span>, <span class="fl">1.63</span>)
-
-<span class="kw">cor</span>(x,y)</code></pre>
+<div class="sourceCode" id="cb224"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb224-1"><a href="ch-12-linear-regression.html#cb224-1"></a><span class="co"># Example 12.15, p. 528</span></span>
+<span id="cb224-2"><a href="ch-12-linear-regression.html#cb224-2"></a>x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">2.4</span>, <span class="fl">3.4</span>, <span class="fl">4.6</span>, <span class="fl">3.7</span>, <span class="fl">2.2</span>, <span class="fl">3.3</span>, <span class="fl">4.0</span>, <span class="fl">2.1</span>)</span>
+<span id="cb224-3"><a href="ch-12-linear-regression.html#cb224-3"></a>y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">1.33</span>, <span class="fl">2.12</span>, <span class="fl">1.80</span>, <span class="fl">1.65</span>, <span class="fl">2.00</span>, <span class="fl">1.76</span>, <span class="fl">2.11</span>, <span class="fl">1.63</span>)</span>
+<span id="cb224-4"><a href="ch-12-linear-regression.html#cb224-4"></a></span>
+<span id="cb224-5"><a href="ch-12-linear-regression.html#cb224-5"></a><span class="kw">cor</span>(x,y)</span></code></pre></div>
 <pre><code>## [1] 0.3472602</code></pre>
 </div>
 </div>
-<div id="practice-exercises-5" class="section level2 unnumbered">
+<div id="practice-exercises-4" class="section level2 unnumbered" number="">
 <h2>Practice Exercises</h2>
 <ol style="list-style-type: decimal">
 <li>(Least squares line)** Researchers employed a least squares analysis in studying how <span class="math inline">\(Y=\)</span> porosity (%) is related to <span class="math inline">\(X=\)</span> unit weight (pcf) in concrete specimens. Consider the following representative data:</li>
 </ol>
-<pre class="sourceCode r"><code class="sourceCode r">x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">99.0</span>, <span class="fl">101.1</span>, <span class="fl">102.7</span>, <span class="fl">103.0</span>, <span class="fl">105.4</span>, <span class="fl">107.0</span>, <span class="fl">108.7</span>, <span class="fl">110.8</span>, <span class="fl">112.1</span>, <span class="fl">112.4</span>, <span class="fl">113.6</span>, <span class="fl">113.8</span>, <span class="fl">115.1</span>, <span class="fl">115.4</span>, <span class="fl">120.0</span>)
-y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">28.8</span>, <span class="fl">27.9</span>, <span class="fl">27.0</span>, <span class="fl">25.2</span>, <span class="fl">22.8</span>, <span class="fl">21.5</span>, <span class="fl">20.9</span>, <span class="fl">19.6</span>, <span class="fl">17.1</span>, <span class="fl">18.9</span>, <span class="fl">16.0</span>, <span class="fl">16.7</span>, <span class="fl">13.0</span>, <span class="fl">13.6</span>, <span class="fl">10.8</span>)</code></pre>
+<div class="sourceCode" id="cb226"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb226-1"><a href="ch-12-linear-regression.html#cb226-1"></a>x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">99.0</span>, <span class="fl">101.1</span>, <span class="fl">102.7</span>, <span class="fl">103.0</span>, <span class="fl">105.4</span>, <span class="fl">107.0</span>, <span class="fl">108.7</span>, <span class="fl">110.8</span>, <span class="fl">112.1</span>, <span class="fl">112.4</span>, <span class="fl">113.6</span>, <span class="fl">113.8</span>, <span class="fl">115.1</span>, <span class="fl">115.4</span>, <span class="fl">120.0</span>)</span>
+<span id="cb226-2"><a href="ch-12-linear-regression.html#cb226-2"></a>y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">28.8</span>, <span class="fl">27.9</span>, <span class="fl">27.0</span>, <span class="fl">25.2</span>, <span class="fl">22.8</span>, <span class="fl">21.5</span>, <span class="fl">20.9</span>, <span class="fl">19.6</span>, <span class="fl">17.1</span>, <span class="fl">18.9</span>, <span class="fl">16.0</span>, <span class="fl">16.7</span>, <span class="fl">13.0</span>, <span class="fl">13.6</span>, <span class="fl">10.8</span>)</span></code></pre></div>
 <p>(Textbook 12.17)</p>
 <ol style="list-style-type: lower-alpha">
 <li>Obtain the equation of the estimated regression line.</li>
 </ol>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">lm</span>(y<span class="op">~</span>x)</code></pre>
+<div class="sourceCode" id="cb227"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb227-1"><a href="ch-12-linear-regression.html#cb227-1"></a><span class="kw">lm</span>(y<span class="op">~</span>x)</span></code></pre></div>
 <pre><code>## 
 ## Call:
 ## lm(formula = y ~ x)
@@ -373,34 +423,34 @@ y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">28.8<
 <ol start="2" style="list-style-type: lower-alpha">
 <li>Calculate the residuals corresponding to the first two observations.</li>
 </ol>
-<pre class="sourceCode r"><code class="sourceCode r">mod &lt;-<span class="st"> </span><span class="kw">lm</span>(y<span class="op">~</span>x)
-<span class="kw">round</span>(mod<span class="op">$</span>residuals, <span class="dv">2</span>)</code></pre>
-<pre><code>##     1     2     3     4     5     6     7     8     9    10    11    12 
-## -0.54  0.46  1.01 -0.52 -0.75 -0.60  0.33  0.93 -0.39  1.68 -0.13  0.75 
-##    13    14    15 
-## -1.78 -0.90  0.46</code></pre>
+<div class="sourceCode" id="cb229"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb229-1"><a href="ch-12-linear-regression.html#cb229-1"></a>mod &lt;-<span class="st"> </span><span class="kw">lm</span>(y<span class="op">~</span>x)</span>
+<span id="cb229-2"><a href="ch-12-linear-regression.html#cb229-2"></a><span class="kw">round</span>(mod<span class="op">$</span>residuals, <span class="dv">2</span>)</span></code></pre></div>
+<pre><code>##     1     2     3     4     5     6     7     8     9    10    11    12    13 
+## -0.54  0.46  1.01 -0.52 -0.75 -0.60  0.33  0.93 -0.39  1.68 -0.13  0.75 -1.78 
+##    14    15 
+## -0.90  0.46</code></pre>
 <p>Or alternatively, use R as a calculator</p>
-<pre class="sourceCode r"><code class="sourceCode r">pred &lt;-<span class="st"> </span><span class="fl">118.9099</span> <span class="op">-</span><span class="st"> </span><span class="fl">0.9047</span><span class="op">*</span>x
-res &lt;-<span class="st"> </span>y <span class="op">-</span><span class="st"> </span>pred
-res[<span class="dv">1</span>]</code></pre>
+<div class="sourceCode" id="cb231"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb231-1"><a href="ch-12-linear-regression.html#cb231-1"></a>pred &lt;-<span class="st"> </span><span class="fl">118.9099</span> <span class="op">-</span><span class="st"> </span><span class="fl">0.9047</span><span class="op">*</span>x</span>
+<span id="cb231-2"><a href="ch-12-linear-regression.html#cb231-2"></a>res &lt;-<span class="st"> </span>y <span class="op">-</span><span class="st"> </span>pred</span>
+<span id="cb231-3"><a href="ch-12-linear-regression.html#cb231-3"></a>res[<span class="dv">1</span>]</span></code></pre></div>
 <pre><code>## [1] -0.5446</code></pre>
-<pre class="sourceCode r"><code class="sourceCode r">res[<span class="dv">2</span>]</code></pre>
+<div class="sourceCode" id="cb233"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb233-1"><a href="ch-12-linear-regression.html#cb233-1"></a>res[<span class="dv">2</span>]</span></code></pre></div>
 <pre><code>## [1] 0.45527</code></pre>
 <ol start="3" style="list-style-type: lower-alpha">
 <li>Calculate a point estimate of <span class="math inline">\(\sigma\)</span>.</li>
 </ol>
-<pre class="sourceCode r"><code class="sourceCode r">sig2 &lt;-<span class="st"> </span><span class="kw">sum</span>((res)<span class="op">^</span><span class="dv">2</span>)<span class="op">/</span>(<span class="kw">length</span>(x)<span class="op">-</span><span class="dv">2</span>)
-<span class="kw">sqrt</span>(sig2)</code></pre>
+<div class="sourceCode" id="cb235"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb235-1"><a href="ch-12-linear-regression.html#cb235-1"></a>sig2 &lt;-<span class="st"> </span><span class="kw">sum</span>((res)<span class="op">^</span><span class="dv">2</span>)<span class="op">/</span>(<span class="kw">length</span>(x)<span class="op">-</span><span class="dv">2</span>)</span>
+<span id="cb235-2"><a href="ch-12-linear-regression.html#cb235-2"></a><span class="kw">sqrt</span>(sig2)</span></code></pre></div>
 <pre><code>## [1] 0.938042</code></pre>
 <ol start="4" style="list-style-type: lower-alpha">
 <li>What proportion of observed variation in porosity can be attributed to the approximate linear relationship between unit weight and porosity?</li>
 </ol>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">cor</span>(x, y)<span class="op">^</span><span class="dv">2</span></code></pre>
+<div class="sourceCode" id="cb237"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb237-1"><a href="ch-12-linear-regression.html#cb237-1"></a><span class="kw">cor</span>(x, y)<span class="op">^</span><span class="dv">2</span></span></code></pre></div>
 <pre><code>## [1] 0.9738874</code></pre>
 <ol start="5" style="list-style-type: lower-alpha">
 <li>Calculate the SSE and SST.</li>
 </ol>
-<pre class="sourceCode r"><code class="sourceCode r"><span class="kw">anova</span>(mod) <span class="co"># analsis of variance</span></code></pre>
+<div class="sourceCode" id="cb239"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb239-1"><a href="ch-12-linear-regression.html#cb239-1"></a><span class="kw">anova</span>(mod) <span class="co"># analsis of variance</span></span></code></pre></div>
 <pre><code>## Analysis of Variance Table
 ## 
 ## Response: y
@@ -409,15 +459,15 @@ res[<span class="dv">1</span>]</code></pre>
 ## Residuals 13  11.44    0.88                             
 ## ---
 ## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
-<pre class="sourceCode r"><code class="sourceCode r">SSE &lt;-<span class="st"> </span><span class="kw">anova</span>(mod)<span class="op">$</span><span class="st">`</span><span class="dt">Sum Sq</span><span class="st">`</span>[<span class="dv">1</span>]
-SST &lt;-<span class="st"> </span><span class="kw">anova</span>(mod)<span class="op">$</span><span class="st">`</span><span class="dt">Sum Sq</span><span class="st">`</span>[<span class="dv">1</span>] <span class="op">+</span><span class="st"> </span><span class="kw">anova</span>(mod)<span class="op">$</span><span class="st">`</span><span class="dt">Sum Sq</span><span class="st">`</span>[<span class="dv">2</span>]
-<span class="kw">c</span>(SSE, SST)</code></pre>
+<div class="sourceCode" id="cb241"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb241-1"><a href="ch-12-linear-regression.html#cb241-1"></a>SSE &lt;-<span class="st"> </span><span class="kw">anova</span>(mod)<span class="op">$</span><span class="st">`</span><span class="dt">Sum Sq</span><span class="st">`</span>[<span class="dv">1</span>]</span>
+<span id="cb241-2"><a href="ch-12-linear-regression.html#cb241-2"></a>SST &lt;-<span class="st"> </span><span class="kw">anova</span>(mod)<span class="op">$</span><span class="st">`</span><span class="dt">Sum Sq</span><span class="st">`</span>[<span class="dv">1</span>] <span class="op">+</span><span class="st"> </span><span class="kw">anova</span>(mod)<span class="op">$</span><span class="st">`</span><span class="dt">Sum Sq</span><span class="st">`</span>[<span class="dv">2</span>]</span>
+<span id="cb241-3"><a href="ch-12-linear-regression.html#cb241-3"></a><span class="kw">c</span>(SSE, SST)</span></code></pre></div>
 <pre><code>## [1] 426.6185 438.0573</code></pre>
 <p>Or alternatively, use R as a calculator. Notice that the same results are produced.</p>
-<pre class="sourceCode r"><code class="sourceCode r">SSE1 &lt;-<span class="st"> </span><span class="kw">sum</span>((mod<span class="op">$</span>residual)<span class="op">^</span><span class="dv">2</span>)
-SST1 &lt;-<span class="st"> </span><span class="kw">sum</span>((y<span class="op">-</span><span class="kw">mean</span>(y))<span class="op">^</span><span class="dv">2</span>)
-SSR1 &lt;-<span class="st"> </span><span class="kw">sum</span>((mod<span class="op">$</span>fitted.values <span class="op">-</span><span class="st"> </span><span class="kw">mean</span>(y))<span class="op">^</span><span class="dv">2</span>)
-<span class="kw">c</span>(SSE1, SST1, SSE1<span class="op">+</span>SSR1)</code></pre>
+<div class="sourceCode" id="cb243"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb243-1"><a href="ch-12-linear-regression.html#cb243-1"></a>SSE1 &lt;-<span class="st"> </span><span class="kw">sum</span>((mod<span class="op">$</span>residual)<span class="op">^</span><span class="dv">2</span>)</span>
+<span id="cb243-2"><a href="ch-12-linear-regression.html#cb243-2"></a>SST1 &lt;-<span class="st"> </span><span class="kw">sum</span>((y<span class="op">-</span><span class="kw">mean</span>(y))<span class="op">^</span><span class="dv">2</span>)</span>
+<span id="cb243-3"><a href="ch-12-linear-regression.html#cb243-3"></a>SSR1 &lt;-<span class="st"> </span><span class="kw">sum</span>((mod<span class="op">$</span>fitted.values <span class="op">-</span><span class="st"> </span><span class="kw">mean</span>(y))<span class="op">^</span><span class="dv">2</span>)</span>
+<span id="cb243-4"><a href="ch-12-linear-regression.html#cb243-4"></a><span class="kw">c</span>(SSE1, SST1, SSE1<span class="op">+</span>SSR1)</span></code></pre></div>
 <pre><code>## [1]  11.43883 438.05733 438.05733</code></pre>
 
 </div>
@@ -427,17 +477,19 @@ SSR1 &lt;-<span class="st"> </span><span class="kw">sum</span>((mod<span class="
           </div>
         </div>
       </div>
-<a href="ch-14-chi-squared-test.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="ch-13-nonlinear-and-multiple-regression.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="ch-5-joint-probability.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -445,12 +497,11 @@ gitbook.start({
 "github": false,
 "facebook": false,
 "twitter": false,
-"google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
 "theme": "white",
@@ -463,6 +514,10 @@ gitbook.start({
 },
 "history": {
 "link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/jtr13/1201/blob/master/Chapter12.Rmd",
 "text": null
 },
 "download": null,
@@ -481,8 +536,9 @@ gitbook.start({
     script.type = "text/javascript";
     var src = "true";
     if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(src))
-      src = src.replace(/^https?:/, '');
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();

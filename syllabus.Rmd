@@ -1,0 +1,257 @@
+--- 
+title: "Stat 1201 Resources"
+author: "Joyce Robbins"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output:
+  bookdown::gitbook:
+    config:
+      number_sections: no
+github-repo: "jtr13/1201"
+url: 'https://jtr13.github.io/1201/'
+description: "Stat 1201"
+---
+
+# Syllabus {-}
+
+Columbia University  
+
+Calculus-Based Introduction to Statistics
+
+Statistics UN1201, Fall 2020
+
+Tuesday / Thursday 11:40am - 12:55pm online only
+
+## Course material and assignments {-}
+
+(These items will only be available in the [Files](https://courseworks2.columbia.edu/courses/107925/files) section of CourseWorks once the change of program period is over.)
+
+[Chapter 1 lecture slides](Stat1201-Chap1-annotated.pdf)
+
+[Chapter 1 in-class exercises](Chap1_inclass_exercises.pdf)
+
+[Problem Set 1](PSet1.pdf)
+
+## Zoom info  {-}
+
+You are expected to attend Zoom lectures in real time. Recordings will be available primarily for students in different time zones or to make up an occasional missed lecture. During class, it is your choice whether to turn your video on or not; please however add a profile picture to your Zoom account to help us feel like a class with faces and not a list of names. You are strongly encouraged to turn your video on during small group breakout rooms, and you will need to turn your video on during exams (more details will be provided later on the specifics of how this will work.) 
+
+## Instructor {-}
+
+Joyce Robbins: <a href="mailto:jtr13@columbia.edu">jtr13@columbia.edu</a>  tel: 212-853-1391  
+
+Office hours: 
+
+Tuesdays 2-3pm, Wednesdays 10:30-11am
+
+**See [Prof. Robbins's Office Hours Signup](https://courseworks2.columbia.edu/courses/107925/pages/prof-robbinss-office-hour-signup-tues-2-3pm-wed-10-30-11am) in CourseWorks for Zoom link and to sign up.**
+
+## Teaching assistant {-}
+
+Haolin Zou, hz2574@columbia.edu
+
+Office hours: 
+
+Tuesdays 9pm - 10pm
+
+Fridays 9am - 10am
+
+**See [Haolin's Office Hours Signup](https://courseworks2.columbia.edu/courses/107925/pages/haolins-office-hours-signup) in CourseWorks for Zoom link and to sign up.**
+
+## Course description  {-}
+
+This introductory course is designed for students who desire a strong grounding in statistical concepts, and has a greater degree of mathematical rigor than STAT UN1101. Topics include: graphical and numerical summaries of data; the normal distribution, probability, random variables, and sampling distributions; estimation and hypothesis testing for means and proportions; comparing two populations; two-way contingency tables; introduction to linear regression. This course serves as the pre-requisite for ECON UN3412.
+
+## Resources and readings  {-}
+
+### Required text  {-}
+
+Devore, Jay L. 2016. *Probability and Statistics for Engineering and the Sciences.* 9<sup>th</sup> edition. <ISBN:9781305251809>
+
+You need the **9th edition** for the exercises; you can use earlier editions for the content.
+
+### Recommended text  {-}
+
+Gonick, Larry & Woollcott Smith. 2005. *The Cartoon Guide to Statistics.* <ISBN:9780062731029>
+
+Any edition is fine. 
+
+### Other materials  {-}
+
+For the tests and final, you need a **non-graphing** calculator (one line display). Statistical tables will be provided. You will also need a phone scanning app (such as CamScanner Free) or access to a scanner to create PDFs to turn in problem sets on CourseWorks.
+
+## Grading procedures  {-}
+
+Grades will be determined as follows:
+
+<table>
+<tr><td>Homework + class problem</td><td>20%</td></tr>
+<tr><td>Test #1</td><td>20%</td></tr>
+<tr><td>Test #2</td><td>20%</td></tr>
+<tr><td>Final</td><td>40%</td></tr>
+</table>
+
+
+Grading scale: 
+
+(Note: Do not rely on any averages that appear in CourseWorks since they may not be accurate for various reasons.)
+</p>
+<table width = "800">
+<tr><td>97% + </td><td>A+</td><td>  </td><td>80% to 83%</td><td>B-</td></tr>
+<tr><td>93% to 97%</td><td>A</td><td>  </td><td>75% to 80%</td><td>C+</td></tr>
+<tr><td>90% to 93%</td><td>A-</td><td>  </td><td>70% to 75%</td><td>C</td></tr>
+<tr><td>87% to 90%</td><td>B+</td><td>  </td><td>60% to 70%</td><td>C-</td></tr>
+<tr><td>83% to 86%</td><td>B</td><td>  </td><td>below 60%</td><td>F</td></tr>
+</table>
+
+Note: The tests and final exam are curved on an individual basis, meaning one test may have a curve while another does not. The grades posted on CourseWorks are the grades AFTER the curve.  There is no additional curve in the process of computing final averages at the end of the semester. Raw scores are available on the paper tests which will be handed back in class. If you are not in class when tests are handed back, you may pick up your exam the following class.
+
+## Problem Sets  {-}
+
+Unless otherwise indicated, assignments must be submitted on CourseWorks as a ***single pdf file** (not as an image file or file.) Assuming you don't have access to a scanner, use a phone app such as CamScanner Free for this purpose. (If you have another app that works well please let me know!)
+
+Homework must be submitted by 11:59pm on the due date for full credit. Late assignments will only be accepted for the first 24 hours after the assignment is due. You are entitled to one "free" late assignment, submitted within 24 hours of the due date, without penalty. After that, 4 points will be deducted for late assignments submitted within 24 hours of the due date. After the 24 hour period, you will receive a zero for the assignment. No exceptions will be made unless I receive a note from an academic dean detailing unusual circumstances.
+
+If you submit more than one assignment, the last one will be counted.
+
+Be sure that homework is clearly labeled and legible.
+
+Note that not all homework questions are graded so be sure to check all of your work against the posted solutions. (In short, a 20/20 doesn't necessarily mean that everything is right.)
+
+Tentative problem set due dates.
+
+1. Tues, Sept 15
+(if you are admitted into the class after Friday, Sept 11, you can take until Mon, Sep 21 to submit this assignment)
+2. Thurs, Sept 24
+3. Tues, Oct 6
+4. Tues, Oct 20
+5. (Thurs, Oct 29) MOVED to Mon, Nov 9
+6. (Thurs, Nov 12) CANCELLED
+7. Tues, Dec 1
+8. (Thurs, Dec 10) MOVED to Mon, Dec 14
+
+**If there are any changes, they will be announced on CourseWorks.**
+
+(If there are discrepancies between what is listed here and on CourseWorks, CourseWorks takes precedence.)
+
+**All problem sets count; in other words, no problem set grades are dropped.**
+
+## Tests  {-}
+
+More details will be provided later on the logistics of taking exams via Zoom.
+
+**Test 1: Thurs, Oct 8**
+   
+**Test 2: Tues, Nov 17**
+
+Allowable materials on tests include pens, pencils, erasers, a hand-held NON-GRAPHING calculator (no graphics display), and handwritten notes. Photocopies of notes are NOT acceptable.
+
+The number of double-sided sheets you can bring depends on the test:
+
+Test #1: one double-sided sheet
+
+Test #2: two double-sided sheets
+
+Final: three double-sided sheets
+
+Save your notes so that you can reuse them (if you wish) on subsequent tests. 
+
+Make-up tests will only be administered in cases of documented emergencies.
+
+All tests are cumulative but weighted more toward new material. 
+
+For the date of the Final, see https://ssol.columbia.edu/ -- click "Exam List" and then "Projected University Examination Schedule". (The date of the final is set by the University, not by me.)
+
+## R {-}
+
+You will need to know how to read the R *output* shown in lecture slides. Learning to code in R yourself is entirely optional and will not appear in assignments or tests. Information on installing R and getting started is provided in the [next chapter](introduction.html#installing-r).
+
+## Academic Integrity  {-}
+
+You are encouraged to discuss homework strategies with your classmates and work through examples, but you may not discuss particular homework problems, nor copy all or part of solutions from anywhere. In short, the homework you submit must be your own work.
+
+Plagiarism or any other breach of academic integrity will not be tolerated and will result in disciplinary action. For more information please refer to the The Columbia University Undergraduate Guide to Academic Integrity:
+
+<http://www.college.columbia.edu/academics/academicintegrity>
+
+### Accommodations for students registered with Disability Services  {-}
+
+In order to receive disability-related academic accommodations for this course, students must first be registered with their school Disability Services (DS) office. Detailed information is available online for both the [Columbia](https://health.columbia.edu/content/disability-services) and [Barnard](https://barnard.edu/disabilityservices/students/register) registration processes.
+
+Refer to the appropriate website for information regarding deadlines, disability documentation requirements, and [drop-in hours](http://health.columbia.edu/getting-care/drop-offices/disability-services-drop-hours) (Columbia) / [intake session](https://barnard.edu/disabilityservices/students/register) (Barnard).
+
+**For this course, students registered with the Columbia office are not required to have testing forms or accommodation letters signed by faculty. However, students must do the following:**
+
+* The Instructor section of the form has already been completed and does not need to be signed by the professor.
+
+* The student must complete the Student section of the form and submit the form to Disability Services.
+
+* Master forms are available in the Disability Services office or online: https://health.columbia.edu/services/testing-accommodations
+
+Students registered with the Barnard office should follow standard procedures, which require the professor's signature. The forms should be brought to class, not sent electronically.
+
+## Getting help  {-}
+
+There are numerous opportunities to get assistance with the class material:
+
+<ol>
+<li>Ask questions during class.</li>
+<li>Email me questions after class and I will answer during the next lecture.</li>
+<li>Ask questions after class (I will stay after every class if students have questions.)</li>
+<li>Attend a Statistics Help Room session where tutors answer questions for students in introductory level statistics classes. I will announce when the Help Room opens for the semester; generally the 2nd or 3rd week of classes.  Hours and locations are posted here:<span>&nbsp;</span><a href="http://stat.columbia.edu/help-room/">http://stat.columbia.edu/help-room/</a></li> (Once the Help Room opens, the page will be updated to the current semester.)
+<li>Attend TA office hours: see above for times and locations</li>
+</ol>
+
+## Course content  {-}
+
+The following topics will be covered in the order below.
+
+For more detailed information on material covered within each section, please consult [1201.info](http://1201.info)
+
+<ol>
+<li>
+Descriptive Statistics (1.1-1.4)
+</li>
+<li>
+Probability (2.1-2.3, 2.5)
+</li>
+<li>
+Discrete random variables (3.1-3.5)
+</li>
+<li>
+Continuous random variables (4.1-4.2)
+</li>
+<li>
+Normal and other continuous distributions (4.3-4.4)
+</li>
+<li>
+The sampling distribution of a mean (5.3-5.5)
+</li>
+<li>
+Point estimation (6.1)
+</li>
+<li>
+Confidence intervals (7.1-7.3)
+</li>
+<li>
+Hypothesis testing -- one sample (8.1-8.5)
+</li>
+<li>
+Hypothesis testing -- two samples (9.1-9.4)
+</li>
+<li>
+Conditional probability (2.4)
+</li>
+<li>
+Joint probability (5.1)
+</li>
+<li>
+Chi squared test (14.3)
+</li>
+<li>
+Covariance, correlation (5.2, 12.5)
+</li>
+<li>
+Linear regression (12.1-12.2, 13.1-13.2)
+</li>
+</ol>
