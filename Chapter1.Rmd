@@ -10,9 +10,7 @@ Skip: Example 1.7, p. 15 (double-digit leaves)
 
 Skip: "Dotplots," pp. 15-16
 
-### R {-}
-
-Stem-and-leaf display:
+* Stem-and-leaf display:
 
 ```{r}
 prices <- c(379, 425, 450, 450, 499, 529, 535, 535, 545, 599, 665,
@@ -23,7 +21,7 @@ stem(prices)
 
 Note that histograms are drawn with *unbinned* data.  R does the binning in the process of drawing the histogram.
 
-Frequency histogram:
+* Frequency histogram:
 
 ```{r}
 prices <- c(379, 425, 450, 450, 499, 529, 535, 535, 545, 599, 665,
@@ -35,7 +33,7 @@ hist(prices, breaks = c(300, 400, 500, 600, 700, 800),
      col = "lightblue")
 ```
 
-Density histogram:  
+* Density histogram:  
 
 ```{r}
 prices <- c(379, 425, 450, 450, 499, 529, 535, 535, 545, 599, 665,
@@ -95,8 +93,6 @@ Skip: Example 1.16, p. 33 (trimmed mean)
 
 Skip: "Categorical Data and Sample Proportions," p. 34 (We'll return to this topic later.)
 
-### R {-}
-
 ```{r}
 prices <- c(379, 425, 450, 450, 499, 529, 535, 535, 545, 599, 665,
             675, 699, 699, 725, 725, 745, 799)
@@ -118,9 +114,7 @@ Skip: extreme outliers (p. 42)
 
 We will define outliers for boxplots to be observations that are more than 1.5 times the fourth spread from the closest fourth. They may be indicated with either a solid or open circle (in contrast to the book which uses one for mild outliers and the other for extreme outliers.)
 
-### R {-}
-
-Sample variance:
+* Sample variance:
 
 ```{r}
 prices <- c(379, 425, 450, 450, 499, 529, 535, 535, 545, 599, 665,
@@ -129,7 +123,7 @@ prices <- c(379, 425, 450, 450, 499, 529, 535, 535, 545, 599, 665,
 var(prices)
 ```
 
-Sample standard deviation:
+* Sample standard deviation:
 
 ```{r}
 sqrt(var(prices))
@@ -138,7 +132,7 @@ sd(prices)
 ```
 
 
-Five number summary 
+* Five number summary 
 
 (min, lower-hinge, median, upper-hinge, max)
 
@@ -146,7 +140,7 @@ Five number summary
 fivenum(prices)
 ```
 
-Boxplots  
+* Boxplots  
 
 ```{r}
 prices <- c(379, 425, 450, 450, 499, 529, 535, 535, 545,
@@ -169,6 +163,7 @@ boxplot(df, horizontal = TRUE)
 
 1. Using the built-in dataset `ToothGrowth` in R, visualize the data and comment on the effectiveness of different functions in the context.
 
+[Ans] <br/>
 ```{r}
 # The first 5 rows of the data
 head(ToothGrowth, 5)
