@@ -24,7 +24,7 @@
 <meta name="author" content="Joyce Robbins" />
 
 
-<meta name="date" content="2021-03-27" />
+<meta name="date" content="2021-04-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -269,6 +269,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2>5.2 Expected Values, Covariance, and Correlation</h2>
 <p>Skip <em>everything but</em> “Covariance” pp. 214-215 and “Correlation” pp. 216-218</p>
 <p>(In both sections, skip double integrals)</p>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<div id="corr" style="width: 600px">
+<h3 id="interactive" class="unnumbered"><em>Interactive</em></h3>
+<p><strong>Click anywhere on the graph to add points. The correlation coefficient will be calculated.</strong></p>
+<p>
+The correlation coefficient (r) is a measure of the linear relationship
+between two variables x and y. To get a sense of the connection between the
+appearance of points – (x,y) pairs – in a scatterplot and the value of r,
+click anywhere on the graph to add points. To remove points, click the Remove
+points button and then mouseover points.
+</p>
+<table>
+<td>
+<p>
+<input type="radio" name="typeofaction" value="add" checked="true"> Add points
+<input type="radio" name="typeofaction" value="remove"> Remove points
+</p>
+</td>
+<td>
+<p id="r">
+Two points are needed to calculate r.
+</p>
+</td>
+</table>
+</div>
+<script src="scripts/corrcoef.js"></script>
 </div>
 <div id="resources-1" class="section level2 unnumbered">
 <h2>Resources</h2>
