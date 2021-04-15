@@ -12,6 +12,34 @@ Skip *everything but* "Covariance" pp. 214-215 and "Correlation" pp. 216-218
 
 (In both sections, skip double integrals)
 
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+<div id="corr" style="width: 600px">
+	
+### *Interactive* {-}
+	  
+**Click anywhere on the graph to add points. The correlation coefficient will be calculated.**	  
+	  
+<p>The correlation coefficient (r) is a measure of the linear relationship
+	  between two variables x and y. To get a sense of the connection between the
+	  appearance of points -- (x,y) pairs --  in a scatterplot and the value of r,
+	  click anywhere on the graph to add points. To remove points, click the Remove 
+	  points button and then mouseover points.</p>
+
+<table>	
+<td>
+<p>
+<input type="radio" name="typeofaction" value="add" checked="true">&nbsp;Add points
+<input type="radio" name="typeofaction" value="remove">&nbsp;Remove points
+</p>
+</td><td>
+		
+<p id="r">Two points are needed to calculate r.</p>
+</td></table>
+</div>
+
+<script src="scripts/corrcoef.js"></script>
+
 ## Resources {-}
 
 Correlation and Covariance Visualization

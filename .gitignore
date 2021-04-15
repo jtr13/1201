@@ -4,3 +4,6 @@
 .Ruserdata
 _bookdown_files/
 Untitled.*
+_book/
+.DS_Store
+*/.DS_Store
