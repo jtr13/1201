@@ -271,11 +271,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Randomly choose one number from the distribution:</p>
 <p><span class="math inline">\(f(x) = .2\)</span> for <span class="math inline">\(0 \leq x \leq 5\)</span>, 0 otherwise.</p>
 <div class="sourceCode" id="cb151"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb151-1"><a href="ch.-4-continuous-random-variables-and-probability-distributions.html#cb151-1"></a><span class="kw">runif</span>(<span class="dt">n =</span> <span class="dv">1</span>, <span class="dt">min =</span> <span class="dv">0</span>, <span class="dt">max =</span> <span class="dv">5</span>)</span></code></pre></div>
-<pre><code>## [1] 4.143416</code></pre>
+<pre><code>## [1] 2.10225</code></pre>
 <p>Take the average of 1000 picks:</p>
 <div class="sourceCode" id="cb153"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb153-1"><a href="ch.-4-continuous-random-variables-and-probability-distributions.html#cb153-1"></a>x &lt;-<span class="st"> </span><span class="kw">runif</span>(<span class="dt">n =</span> <span class="dv">1000</span>, <span class="dt">min =</span> <span class="dv">0</span>, <span class="dt">max =</span> <span class="dv">5</span>)</span>
 <span id="cb153-2"><a href="ch.-4-continuous-random-variables-and-probability-distributions.html#cb153-2"></a><span class="kw">mean</span>(x)</span></code></pre></div>
-<pre><code>## [1] 2.500257</code></pre>
+<pre><code>## [1] 2.524821</code></pre>
 <p>Draw a histogram of the 1000 picks:</p>
 <div class="sourceCode" id="cb155"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb155-1"><a href="ch.-4-continuous-random-variables-and-probability-distributions.html#cb155-1"></a><span class="kw">hist</span>(x, <span class="dt">las =</span> <span class="dv">1</span>, <span class="dt">col =</span> <span class="st">&quot;lightblue&quot;</span>)</span></code></pre></div>
 <p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-41-1.png" width="672" /></p>
