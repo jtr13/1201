@@ -1,350 +1,176 @@
 <!DOCTYPE html>
-<html lang="" xml:lang="">
+<html lang="en">
 <head>
-
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Ch. 3 Discrete Distributions | Stat 1201 Resources</title>
-  <meta name="description" content="Stat 1201" />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
-
-  <meta property="og:title" content="Ch. 3 Discrete Distributions | Stat 1201 Resources" />
-  <meta property="og:type" content="book" />
-  <meta property="og:url" content="https://jtr13.github.io/1201/" />
-  
-  <meta property="og:description" content="Stat 1201" />
-  <meta name="github-repo" content="jtr13/1201" />
-
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Ch. 3 Discrete Distributions | Stat 1201 Resources" />
-  
-  <meta name="twitter:description" content="Stat 1201" />
-  
-
-<meta name="author" content="Joyce Robbins" />
-
-
-<meta name="date" content="2021-10-28" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  
-  
-<link rel="prev" href="ch.-2-probability.html"/>
-<link rel="next" href="ch.-4-continuous-random-variables-and-probability-distributions.html"/>
-<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
-<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
-
-
-
-
-
-
-
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
-
-
-<style type="text/css">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-</style>
-
-
-<link rel="stylesheet" href="style.css" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Ch. 3 Discrete Distributions | Stat 1201 Resources</title>
+<meta name="author" content="Joyce Robbins">
+<meta name="description" content="Sections covered: 3.1 - 3.6 Skip: 3.6 “The Poisson Distribution as a Limit” (pp. 132-33) and “The Poisson Process” (pp. 134-135) 3.3 Expected value x &lt;- 1:5 x ## [1] 1 2 3 4 5 px &lt;- c(.1, .15, .2,...">
+<meta name="generator" content="bookdown 0.24 with bs4_book()">
+<meta property="og:title" content="Ch. 3 Discrete Distributions | Stat 1201 Resources">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://jtr13.github.io/1201/ch.-3-discrete-distributions.html">
+<meta property="og:description" content="Sections covered: 3.1 - 3.6 Skip: 3.6 “The Poisson Distribution as a Limit” (pp. 132-33) and “The Poisson Process” (pp. 134-135) 3.3 Expected value x &lt;- 1:5 x ## [1] 1 2 3 4 5 px &lt;- c(.1, .15, .2,...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ch. 3 Discrete Distributions | Stat 1201 Resources">
+<meta name="twitter:description" content="Sections covered: 3.1 - 3.6 Skip: 3.6 “The Poisson Distribution as a Limit” (pp. 132-33) and “The Poisson Process” (pp. 134-135) 3.3 Expected value x &lt;- 1:5 x ## [1] 1 2 3 4 5 px &lt;- c(.1, .15, .2,...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><link rel="stylesheet" href="style.css">
 </head>
+<body data-spy="scroll" data-target="#toc">
 
-<body>
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
 
-
-
-  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
-
-    <div class="book-summary">
-      <nav role="navigation">
-
-<ul class="summary">
-<li><a href="index.html"><b>1201.info</b></a></li>
-
-<li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a><ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#general-study-tips"><i class="fa fa-check"></i>General study tips</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#installing-r"><i class="fa fa-check"></i>Installing R</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#getting-started-with-r-working-in-the-console"><i class="fa fa-check"></i>Getting Started with R: Working in the Console</a><ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#watch-the-video"><i class="fa fa-check"></i>Watch the video</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#quick-review-of-material-covered-in-the-video-plus-additional-examples"><i class="fa fa-check"></i>Quick review of material covered in the video, plus additional examples</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#more-examples"><i class="fa fa-check"></i>More examples</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#creating-graphs-saving-your-work"><i class="fa fa-check"></i>Creating Graphs, Saving your work</a><ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#saving-code-as-an-.r-file"><i class="fa fa-check"></i>Saving code as an .R file</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#convert-.r-file-to-.html"><i class="fa fa-check"></i>Convert .R file to .html</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#contact"><i class="fa fa-check"></i>Contact</a></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#license"><i class="fa fa-check"></i>License</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ch.-1-descriptive-statistics.html"><a href="ch.-1-descriptive-statistics.html"><i class="fa fa-check"></i>Ch. 1 Descriptive Statistics</a><ul>
-<li class="chapter" data-level="" data-path="ch.-1-descriptive-statistics.html"><a href="ch.-1-descriptive-statistics.html#populations-samples-and-processes"><i class="fa fa-check"></i>1.1 Populations, Samples, and Processes</a></li>
-<li class="chapter" data-level="" data-path="ch.-1-descriptive-statistics.html"><a href="ch.-1-descriptive-statistics.html#pictorial-and-tabular-methods-in-descriptive-statistics"><i class="fa fa-check"></i>1.2 Pictorial and Tabular Methods in Descriptive Statistics</a></li>
-<li class="chapter" data-level="" data-path="ch.-1-descriptive-statistics.html"><a href="ch.-1-descriptive-statistics.html#measures-of-location"><i class="fa fa-check"></i>1.3 Measures of location</a></li>
-<li class="chapter" data-level="" data-path="ch.-1-descriptive-statistics.html"><a href="ch.-1-descriptive-statistics.html#measures-of-variability"><i class="fa fa-check"></i>1.4 Measures of variability</a></li>
-<li class="chapter" data-level="" data-path="ch.-1-descriptive-statistics.html"><a href="ch.-1-descriptive-statistics.html#practice-exercises"><i class="fa fa-check"></i>Practice Exercises</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ch.-2-probability.html"><a href="ch.-2-probability.html"><i class="fa fa-check"></i>Ch. 2 Probability</a><ul>
-<li class="chapter" data-level="" data-path="ch.-2-probability.html"><a href="ch.-2-probability.html#sample-spaces-and-events"><i class="fa fa-check"></i>2.1 Sample Spaces and Events</a><ul>
-<li class="chapter" data-level="" data-path="ch.-2-probability.html"><a href="ch.-2-probability.html#humor"><i class="fa fa-check"></i>Humor</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ch.-2-probability.html"><a href="ch.-2-probability.html#axioms-interpretations-and-properties-of-probability"><i class="fa fa-check"></i>2.2 Axioms, Interpretations, and Properties of Probability</a></li>
-<li class="chapter" data-level="" data-path="ch.-2-probability.html"><a href="ch.-2-probability.html#counting-techniques"><i class="fa fa-check"></i>2.3 Counting Techniques</a><ul>
-<li class="chapter" data-level="" data-path="ch.-2-probability.html"><a href="ch.-2-probability.html#r"><i class="fa fa-check"></i>R</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ch.-2-probability.html"><a href="ch.-2-probability.html#independence"><i class="fa fa-check"></i>2.5 Independence</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ch.-3-discrete-distributions.html"><a href="ch.-3-discrete-distributions.html"><i class="fa fa-check"></i>Ch. 3 Discrete Distributions</a><ul>
-<li class="chapter" data-level="" data-path="ch.-3-discrete-distributions.html"><a href="ch.-3-discrete-distributions.html#expected-value"><i class="fa fa-check"></i>3.3 Expected value</a></li>
-<li class="chapter" data-level="" data-path="ch.-3-discrete-distributions.html"><a href="ch.-3-discrete-distributions.html#variance"><i class="fa fa-check"></i>3.3 Variance</a></li>
-<li class="chapter" data-level="" data-path="ch.-3-discrete-distributions.html"><a href="ch.-3-discrete-distributions.html#variance-alternative-method"><i class="fa fa-check"></i>3.3 Variance (alternative method)</a></li>
-<li class="chapter" data-level="" data-path="ch.-3-discrete-distributions.html"><a href="ch.-3-discrete-distributions.html#binominal-theorem"><i class="fa fa-check"></i>3.4 Binominal Theorem</a><ul>
-<li class="chapter" data-level="" data-path="ch.-3-discrete-distributions.html"><a href="ch.-3-discrete-distributions.html#r-1"><i class="fa fa-check"></i>R</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ch.-3-discrete-distributions.html"><a href="ch.-3-discrete-distributions.html#hypergeometric"><i class="fa fa-check"></i>3.5 Hypergeometric</a></li>
-<li class="chapter" data-level="" data-path="ch.-3-discrete-distributions.html"><a href="ch.-3-discrete-distributions.html#poisson"><i class="fa fa-check"></i>3.6 Poisson</a></li>
-<li class="chapter" data-level="" data-path="ch.-3-discrete-distributions.html"><a href="ch.-3-discrete-distributions.html#practice-exercises-1"><i class="fa fa-check"></i>Practice Exercises</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ch.-4-continuous-random-variables-and-probability-distributions.html"><a href="ch.-4-continuous-random-variables-and-probability-distributions.html"><i class="fa fa-check"></i>Ch. 4 Continuous Random Variables and Probability Distributions</a><ul>
-<li class="chapter" data-level="" data-path="ch.-4-continuous-random-variables-and-probability-distributions.html"><a href="ch.-4-continuous-random-variables-and-probability-distributions.html#probability-density-functions"><i class="fa fa-check"></i>4.1 Probability density functions</a></li>
-<li class="chapter" data-level="" data-path="ch.-4-continuous-random-variables-and-probability-distributions.html"><a href="ch.-4-continuous-random-variables-and-probability-distributions.html#r-2"><i class="fa fa-check"></i>R</a></li>
-<li class="chapter" data-level="" data-path="ch.-4-continuous-random-variables-and-probability-distributions.html"><a href="ch.-4-continuous-random-variables-and-probability-distributions.html#cumulative-distribution-functions-and-expected-values"><i class="fa fa-check"></i>4.2 Cumulative Distribution Functions and Expected Values</a></li>
-<li class="chapter" data-level="" data-path="ch.-4-continuous-random-variables-and-probability-distributions.html"><a href="ch.-4-continuous-random-variables-and-probability-distributions.html#the-normal-distribution"><i class="fa fa-check"></i>4.3 The Normal Distribution</a><ul>
-<li class="chapter" data-level="" data-path="ch.-4-continuous-random-variables-and-probability-distributions.html"><a href="ch.-4-continuous-random-variables-and-probability-distributions.html#r-3"><i class="fa fa-check"></i>R</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ch.-4-continuous-random-variables-and-probability-distributions.html"><a href="ch.-4-continuous-random-variables-and-probability-distributions.html#practice-exercises-2"><i class="fa fa-check"></i>Practice Exercises</a></li>
-<li class="chapter" data-level="" data-path="ch.-4-continuous-random-variables-and-probability-distributions.html"><a href="ch.-4-continuous-random-variables-and-probability-distributions.html#extra-practice-chapters-1---4"><i class="fa fa-check"></i>Extra Practice Chapters 1 - 4</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ch.-5-random-samples.html"><a href="ch.-5-random-samples.html"><i class="fa fa-check"></i>Ch. 5 Random Samples</a><ul>
-<li class="chapter" data-level="" data-path="ch.-5-random-samples.html"><a href="ch.-5-random-samples.html#the-distribution-of-the-sample-mean"><i class="fa fa-check"></i>5.4 The Distribution of the Sample Mean</a></li>
-<li class="chapter" data-level="" data-path="ch.-5-random-samples.html"><a href="ch.-5-random-samples.html#the-distribution-of-a-linear-combination"><i class="fa fa-check"></i>5.5 The Distribution of a Linear Combination</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ch.-6-point-estimation.html"><a href="ch.-6-point-estimation.html"><i class="fa fa-check"></i>Ch. 6 Point Estimation</a><ul>
-<li class="chapter" data-level="" data-path="ch.-6-point-estimation.html"><a href="ch.-6-point-estimation.html#some-general-concepts-of-point-estimation"><i class="fa fa-check"></i>6.1 Some General Concepts of Point Estimation</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ch.-7-statistical-intervals-based-on-a-single-sample.html"><a href="ch.-7-statistical-intervals-based-on-a-single-sample.html"><i class="fa fa-check"></i>Ch. 7 Statistical Intervals Based on a Single Sample</a><ul>
-<li class="chapter" data-level="" data-path="ch.-7-statistical-intervals-based-on-a-single-sample.html"><a href="ch.-7-statistical-intervals-based-on-a-single-sample.html#basic-properties-of-confidence-intervals"><i class="fa fa-check"></i>7.1 Basic Properties of Confidence Intervals</a></li>
-<li class="chapter" data-level="" data-path="ch.-7-statistical-intervals-based-on-a-single-sample.html"><a href="ch.-7-statistical-intervals-based-on-a-single-sample.html#large-sample-confidence-intervals-for-a-population-mean-and-proportion"><i class="fa fa-check"></i>7.2 Large-Sample Confidence Intervals for a Population Mean and Proportion</a></li>
-<li class="chapter" data-level="" data-path="ch.-7-statistical-intervals-based-on-a-single-sample.html"><a href="ch.-7-statistical-intervals-based-on-a-single-sample.html#intervals-based-on-a-normal-population-distribution"><i class="fa fa-check"></i>7.3 Intervals Based on a Normal Population Distribution</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ch.-8-tests-of-hypotheses-based-on-a-single-sample.html"><a href="ch.-8-tests-of-hypotheses-based-on-a-single-sample.html"><i class="fa fa-check"></i>Ch. 8 Tests of Hypotheses Based on a Single Sample</a><ul>
-<li class="chapter" data-level="" data-path="ch.-8-tests-of-hypotheses-based-on-a-single-sample.html"><a href="ch.-8-tests-of-hypotheses-based-on-a-single-sample.html#hypotheses-and-test-procedures"><i class="fa fa-check"></i>8.1 Hypotheses and Test Procedures</a></li>
-<li><a href="ch.-8-tests-of-hypotheses-based-on-a-single-sample.html#z-tests-for-hypotheses-about-a-population-mean">8.2 <em>z</em> Tests for Hypotheses about a Population Mean</a></li>
-<li><a href="ch.-8-tests-of-hypotheses-based-on-a-single-sample.html#the-one-sample-t-test">8.3 The One-Sample <em>t</em> Test</a></li>
-<li class="chapter" data-level="" data-path="ch.-8-tests-of-hypotheses-based-on-a-single-sample.html"><a href="ch.-8-tests-of-hypotheses-based-on-a-single-sample.html#tests-concerning-a-population-proportion"><i class="fa fa-check"></i>8.4 Tests Concerning a Population Proportion</a></li>
-<li class="chapter" data-level="" data-path="ch.-8-tests-of-hypotheses-based-on-a-single-sample.html"><a href="ch.-8-tests-of-hypotheses-based-on-a-single-sample.html#practice-exercises-3"><i class="fa fa-check"></i>Practice Exercises</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ch.-9-inferences-based-on-two-samples.html"><a href="ch.-9-inferences-based-on-two-samples.html"><i class="fa fa-check"></i>Ch. 9 Inferences Based on Two Samples</a><ul>
-<li><a href="ch.-9-inferences-based-on-two-samples.html#z-tests-and-cis-for-a-difference-between-two-population-means">9.1 <span class="math inline">\(z\)</span> Tests and CI’s for a Difference Between Two Population Means</a><ul>
-<li class="chapter" data-level="" data-path="ch.-9-inferences-based-on-two-samples.html"><a href="ch.-9-inferences-based-on-two-samples.html#r-4"><i class="fa fa-check"></i>R</a></li>
-</ul></li>
-<li><a href="ch.-9-inferences-based-on-two-samples.html#the-two-sample-t-test-and-ci">9.2 The Two-Sample <span class="math inline">\(t\)</span> Test and CI</a></li>
-<li class="chapter" data-level="" data-path="ch.-9-inferences-based-on-two-samples.html"><a href="ch.-9-inferences-based-on-two-samples.html#analysis-of-paired-data"><i class="fa fa-check"></i>9.3 Analysis of Paired Data</a></li>
-<li class="chapter" data-level="" data-path="ch.-9-inferences-based-on-two-samples.html"><a href="ch.-9-inferences-based-on-two-samples.html#inferences-concerning-a-difference-between-population-proportions"><i class="fa fa-check"></i>9.4 Inferences Concerning a Difference Between Population Proportions</a><ul>
-<li class="chapter" data-level="" data-path="ch.-9-inferences-based-on-two-samples.html"><a href="ch.-9-inferences-based-on-two-samples.html#r-5"><i class="fa fa-check"></i>R</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ch.-2-conditional-probability.html"><a href="ch.-2-conditional-probability.html"><i class="fa fa-check"></i>Ch. 2 Conditional Probability</a><ul>
-<li class="chapter" data-level="" data-path="ch.-2-conditional-probability.html"><a href="ch.-2-conditional-probability.html#resources"><i class="fa fa-check"></i>Resources</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ch.-5-joint-probability.html"><a href="ch.-5-joint-probability.html"><i class="fa fa-check"></i>Ch. 5 Joint Probability</a><ul>
-<li class="chapter" data-level="" data-path="ch.-5-joint-probability.html"><a href="ch.-5-joint-probability.html#jointly-distributed-random-variables"><i class="fa fa-check"></i>5.1 Jointly Distributed Random Variables</a></li>
-<li class="chapter" data-level="" data-path="ch.-5-joint-probability.html"><a href="ch.-5-joint-probability.html#expected-values-covariance-and-correlation"><i class="fa fa-check"></i>5.2 Expected Values, Covariance, and Correlation</a></li>
-<li class="chapter" data-level="" data-path="ch.-5-joint-probability.html"><a href="ch.-5-joint-probability.html#resources-1"><i class="fa fa-check"></i>Resources</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ch.-12-linear-regression.html"><a href="ch.-12-linear-regression.html"><i class="fa fa-check"></i>Ch. 12 Linear Regression</a><ul>
-<li class="chapter" data-level="" data-path="ch.-12-linear-regression.html"><a href="ch.-12-linear-regression.html#the-simple-linear-regression-model"><i class="fa fa-check"></i>12.1 The Simple Linear Regression Model</a></li>
-<li class="chapter" data-level="" data-path="ch.-12-linear-regression.html"><a href="ch.-12-linear-regression.html#estimating-model-parameters"><i class="fa fa-check"></i>12.2 Estimating Model Parameters</a><ul>
-<li class="chapter" data-level="" data-path="ch.-12-linear-regression.html"><a href="ch.-12-linear-regression.html#resources-2"><i class="fa fa-check"></i>Resources</a></li>
-<li class="chapter" data-level="" data-path="ch.-12-linear-regression.html"><a href="ch.-12-linear-regression.html#r-6"><i class="fa fa-check"></i>R</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ch.-12-linear-regression.html"><a href="ch.-12-linear-regression.html#correlation"><i class="fa fa-check"></i>12.5 Correlation</a><ul>
-<li class="chapter" data-level="" data-path="ch.-12-linear-regression.html"><a href="ch.-12-linear-regression.html#resources-3"><i class="fa fa-check"></i>Resources</a></li>
-<li class="chapter" data-level="" data-path="ch.-12-linear-regression.html"><a href="ch.-12-linear-regression.html#r-7"><i class="fa fa-check"></i>R</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ch.-12-linear-regression.html"><a href="ch.-12-linear-regression.html#practice-exercises-4"><i class="fa fa-check"></i>Practice Exercises</a></li>
-</ul></li>
-<li class="divider"></li>
-<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-
-</ul>
-
-      </nav>
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Stat 1201 Resources</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
     </div>
 
-    <div class="book-body">
-      <div class="body-inner">
-        <div class="book-header" role="navigation">
-          <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Stat 1201 Resources</a>
-          </h1>
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">1201.info</a></li>
+<li><a class="" href="ch.-1-descriptive-statistics.html">Ch. 1 Descriptive Statistics</a></li>
+<li><a class="" href="ch.-2-probability.html">Ch. 2 Probability</a></li>
+<li><a class="active" href="ch.-3-discrete-distributions.html">Ch. 3 Discrete Distributions</a></li>
+<li><a class="" href="ch.-4-continuous-random-variables-and-probability-distributions.html">Ch. 4 Continuous Random Variables and Probability Distributions</a></li>
+<li><a class="" href="ch.-5-random-samples.html">Ch. 5 Random Samples</a></li>
+<li><a class="" href="ch.-6-point-estimation.html">Ch. 6 Point Estimation</a></li>
+<li><a class="" href="ch.-7-statistical-intervals-based-on-a-single-sample.html">Ch. 7 Statistical Intervals Based on a Single Sample</a></li>
+<li><a class="" href="ch.-8-tests-of-hypotheses-based-on-a-single-sample.html">Ch. 8 Tests of Hypotheses Based on a Single Sample</a></li>
+<li><a class="" href="ch.-9-inferences-based-on-two-samples.html">Ch. 9 Inferences Based on Two Samples</a></li>
+<li><a class="" href="ch.-2-conditional-probability.html">Ch. 2 Conditional Probability</a></li>
+<li><a class="" href="ch.-5-joint-probability.html">Ch. 5 Joint Probability</a></li>
+<li><a class="" href="ch.-12-linear-regression.html">Ch. 12 Linear Regression</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/jtr13/1201">View book source <i class="fab fa-github"></i></a></p>
         </div>
-
-        <div class="page-wrapper" tabindex="-1" role="main">
-          <div class="page-inner">
-
-            <section class="normal" id="section-">
-<div id="ch.-3-discrete-distributions" class="section level1 unnumbered">
-<h1>Ch. 3 Discrete Distributions</h1>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="ch.-3-discrete-distributions" class="section level1 unnumbered">
+<h1>Ch. 3 Discrete Distributions<a class="anchor" aria-label="anchor" href="#ch.-3-discrete-distributions"><i class="fas fa-link"></i></a>
+</h1>
 <p>Sections covered: 3.1 - 3.6</p>
 <p>Skip: 3.6 “The Poisson Distribution as a Limit” (pp. 132-33) and “The Poisson Process” (pp. 134-135)</p>
 <div id="expected-value" class="section level2 unnumbered">
-<h2>3.3 Expected value</h2>
-<div class="sourceCode" id="cb75"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb75-1"><a href="ch.-3-discrete-distributions.html#cb75-1"></a>x &lt;-<span class="st"> </span><span class="dv">1</span><span class="op">:</span><span class="dv">5</span></span>
-<span id="cb75-2"><a href="ch.-3-discrete-distributions.html#cb75-2"></a>x</span></code></pre></div>
+<h2>3.3 Expected value<a class="anchor" aria-label="anchor" href="#expected-value"><i class="fas fa-link"></i></a>
+</h2>
+<div class="sourceCode" id="cb75"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fl">1</span><span class="op">:</span><span class="fl">5</span>
+<span class="va">x</span></code></pre></div>
 <pre><code>## [1] 1 2 3 4 5</code></pre>
-<div class="sourceCode" id="cb77"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb77-1"><a href="ch.-3-discrete-distributions.html#cb77-1"></a>px &lt;-<span class="st"> </span><span class="kw">c</span>(.<span class="dv">1</span>, <span class="fl">.15</span>, <span class="fl">.2</span>, <span class="fl">.25</span>, <span class="fl">.3</span>)</span>
-<span id="cb77-2"><a href="ch.-3-discrete-distributions.html#cb77-2"></a>px</span></code></pre></div>
+<div class="sourceCode" id="cb77"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">px</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">.1</span>, <span class="fl">.15</span>, <span class="fl">.2</span>, <span class="fl">.25</span>, <span class="fl">.3</span><span class="op">)</span>
+<span class="va">px</span></code></pre></div>
 <pre><code>## [1] 0.10 0.15 0.20 0.25 0.30</code></pre>
-<div class="sourceCode" id="cb79"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb79-1"><a href="ch.-3-discrete-distributions.html#cb79-1"></a>x<span class="op">*</span>px</span></code></pre></div>
+<div class="sourceCode" id="cb79"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">x</span><span class="op">*</span><span class="va">px</span></code></pre></div>
 <pre><code>## [1] 0.1 0.3 0.6 1.0 1.5</code></pre>
-<div class="sourceCode" id="cb81"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb81-1"><a href="ch.-3-discrete-distributions.html#cb81-1"></a><span class="kw">sum</span>(x<span class="op">*</span>px)    <span class="co"># E(X)</span></span></code></pre></div>
+<div class="sourceCode" id="cb81"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">x</span><span class="op">*</span><span class="va">px</span><span class="op">)</span>    <span class="co"># E(X)</span></code></pre></div>
 <pre><code>## [1] 3.5</code></pre>
 </div>
 <div id="variance" class="section level2 unnumbered">
-<h2>3.3 Variance</h2>
-<div class="sourceCode" id="cb83"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb83-1"><a href="ch.-3-discrete-distributions.html#cb83-1"></a>x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span></span></code></pre></div>
+<h2>3.3 Variance<a class="anchor" aria-label="anchor" href="#variance"><i class="fas fa-link"></i></a>
+</h2>
+<div class="sourceCode" id="cb83"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">x</span> <span class="op">-</span> <span class="fl">3.5</span></code></pre></div>
 <pre><code>## [1] -2.5 -1.5 -0.5  0.5  1.5</code></pre>
-<div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb85-1"><a href="ch.-3-discrete-distributions.html#cb85-1"></a>(x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span>)<span class="op">^</span><span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb85"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="op">(</span><span class="va">x</span> <span class="op">-</span> <span class="fl">3.5</span><span class="op">)</span><span class="op">^</span><span class="fl">2</span></code></pre></div>
 <pre><code>## [1] 6.25 2.25 0.25 0.25 2.25</code></pre>
-<div class="sourceCode" id="cb87"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb87-1"><a href="ch.-3-discrete-distributions.html#cb87-1"></a>((x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span>)<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px</span></code></pre></div>
+<div class="sourceCode" id="cb87"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="op">(</span><span class="op">(</span><span class="va">x</span> <span class="op">-</span> <span class="fl">3.5</span><span class="op">)</span><span class="op">^</span><span class="fl">2</span><span class="op">)</span><span class="op">*</span><span class="va">px</span></code></pre></div>
 <pre><code>## [1] 0.6250 0.3375 0.0500 0.0625 0.6750</code></pre>
-<div class="sourceCode" id="cb89"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb89-1"><a href="ch.-3-discrete-distributions.html#cb89-1"></a><span class="kw">sum</span>(((x <span class="op">-</span><span class="st"> </span><span class="fl">3.5</span>)<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px)   <span class="co"># V(X)</span></span></code></pre></div>
+<div class="sourceCode" id="cb89"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="op">(</span><span class="op">(</span><span class="va">x</span> <span class="op">-</span> <span class="fl">3.5</span><span class="op">)</span><span class="op">^</span><span class="fl">2</span><span class="op">)</span><span class="op">*</span><span class="va">px</span><span class="op">)</span>   <span class="co"># V(X)</span></code></pre></div>
 <pre><code>## [1] 1.75</code></pre>
 </div>
 <div id="variance-alternative-method" class="section level2 unnumbered">
-<h2>3.3 Variance (alternative method)</h2>
-<div class="sourceCode" id="cb91"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb91-1"><a href="ch.-3-discrete-distributions.html#cb91-1"></a>x</span></code></pre></div>
+<h2>3.3 Variance (alternative method)<a class="anchor" aria-label="anchor" href="#variance-alternative-method"><i class="fas fa-link"></i></a>
+</h2>
+<div class="sourceCode" id="cb91"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">x</span></code></pre></div>
 <pre><code>## [1] 1 2 3 4 5</code></pre>
-<div class="sourceCode" id="cb93"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb93-1"><a href="ch.-3-discrete-distributions.html#cb93-1"></a>px</span></code></pre></div>
+<div class="sourceCode" id="cb93"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">px</span></code></pre></div>
 <pre><code>## [1] 0.10 0.15 0.20 0.25 0.30</code></pre>
-<div class="sourceCode" id="cb95"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb95-1"><a href="ch.-3-discrete-distributions.html#cb95-1"></a>x<span class="op">^</span><span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb95"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">x</span><span class="op">^</span><span class="fl">2</span></code></pre></div>
 <pre><code>## [1]  1  4  9 16 25</code></pre>
-<div class="sourceCode" id="cb97"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb97-1"><a href="ch.-3-discrete-distributions.html#cb97-1"></a>(x<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px</span></code></pre></div>
+<div class="sourceCode" id="cb97"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="op">(</span><span class="va">x</span><span class="op">^</span><span class="fl">2</span><span class="op">)</span><span class="op">*</span><span class="va">px</span></code></pre></div>
 <pre><code>## [1] 0.1 0.6 1.8 4.0 7.5</code></pre>
-<div class="sourceCode" id="cb99"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb99-1"><a href="ch.-3-discrete-distributions.html#cb99-1"></a><span class="kw">sum</span>((x<span class="op">^</span><span class="dv">2</span>)<span class="op">*</span>px)  <span class="co"># E(X^2)</span></span></code></pre></div>
+<div class="sourceCode" id="cb99"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="op">(</span><span class="va">x</span><span class="op">^</span><span class="fl">2</span><span class="op">)</span><span class="op">*</span><span class="va">px</span><span class="op">)</span>  <span class="co"># E(X^2)</span></code></pre></div>
 <pre><code>## [1] 14</code></pre>
-<div class="sourceCode" id="cb101"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb101-1"><a href="ch.-3-discrete-distributions.html#cb101-1"></a><span class="dv">14</span><span class="fl">-3.5</span><span class="op">^</span><span class="dv">2</span>     <span class="co"># E(X^2) - [E(X)]^2</span></span></code></pre></div>
+<div class="sourceCode" id="cb101"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fl">14</span><span class="op">-</span><span class="fl">3.5</span><span class="op">^</span><span class="fl">2</span>     <span class="co"># E(X^2) - [E(X)]^2</span></code></pre></div>
 <pre><code>## [1] 1.75</code></pre>
 </div>
 <div id="binominal-theorem" class="section level2 unnumbered">
-<h2>3.4 Binominal Theorem</h2>
+<h2>3.4 Binominal Theorem<a class="anchor" aria-label="anchor" href="#binominal-theorem"><i class="fas fa-link"></i></a>
+</h2>
 <p>p. 121 Using binomial tables for the cumulative distribution function (cdf) is optional; you may use R (see below) or <a href="http://www.stattrek.com">www.stattrek.com</a> instead.</p>
 <p>For tests you will not need to calculate these values. You can leave your answers as summations, for example:</p>
 <p><span class="math inline">\(\Sigma_{x=0}^6 \left(\begin{array}{c}12\\ x\end{array}\right)(.3^x)(.7^{12-x})\)</span></p>
 <div id="r-1" class="section level3 unnumbered">
-<h3>R</h3>
+<h3>R<a class="anchor" aria-label="anchor" href="#r-1"><i class="fas fa-link"></i></a>
+</h3>
 <p>Probability mass function (pmf)</p>
 <p><span class="math inline">\(P(X = x)\)</span></p>
-<div class="sourceCode" id="cb103"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb103-1"><a href="ch.-3-discrete-distributions.html#cb103-1"></a><span class="kw">choose</span>(<span class="dv">8</span>, <span class="dv">3</span>)    <span class="co"># &quot;8 choose 3&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb103"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/Special.html">choose</a></span><span class="op">(</span><span class="fl">8</span>, <span class="fl">3</span><span class="op">)</span>    <span class="co"># "8 choose 3"</span></code></pre></div>
 <pre><code>## [1] 56</code></pre>
-<div class="sourceCode" id="cb105"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb105-1"><a href="ch.-3-discrete-distributions.html#cb105-1"></a><span class="dv">56</span><span class="op">*</span>.<span class="dv">6</span><span class="op">^</span><span class="dv">3</span><span class="op">*</span>.<span class="dv">4</span><span class="op">^</span><span class="dv">5</span>     <span class="co"># P(X = 3) given n = 8, p = .6</span></span></code></pre></div>
+<div class="sourceCode" id="cb105"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fl">56</span><span class="op">*</span><span class="fl">.6</span><span class="op">^</span><span class="fl">3</span><span class="op">*</span><span class="fl">.4</span><span class="op">^</span><span class="fl">5</span>     <span class="co"># P(X = 3) given n = 8, p = .6</span></code></pre></div>
 <pre><code>## [1] 0.123863</code></pre>
 <p>Direct method</p>
-<div class="sourceCode" id="cb107"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb107-1"><a href="ch.-3-discrete-distributions.html#cb107-1"></a><span class="kw">dbinom</span>(<span class="dv">3</span>, <span class="dv">8</span>, <span class="fl">.6</span>)     <span class="co"># P(X = 3) given n = 8, p = .6</span></span></code></pre></div>
+<div class="sourceCode" id="cb107"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">dbinom</a></span><span class="op">(</span><span class="fl">3</span>, <span class="fl">8</span>, <span class="fl">.6</span><span class="op">)</span>     <span class="co"># P(X = 3) given n = 8, p = .6</span></code></pre></div>
 <pre><code>## [1] 0.123863</code></pre>
 <p>Cumulative distribution function (cdf)</p>
 <p><span class="math inline">\(P(X \leq x)\)</span></p>
 <p>Find <span class="math inline">\(P(2 \leq X \leq 4)\)</span> given <span class="math inline">\(p = .7, n = 15\)</span></p>
-<div class="sourceCode" id="cb109"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb109-1"><a href="ch.-3-discrete-distributions.html#cb109-1"></a><span class="kw">pbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">-</span><span class="st"> </span><span class="kw">pbinom</span>(<span class="dv">1</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb109"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">pbinom</a></span><span class="op">(</span><span class="fl">4</span>, <span class="fl">15</span>, <span class="fl">.7</span><span class="op">)</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">pbinom</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">15</span>, <span class="fl">.7</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 0.0006717175</code></pre>
 <p>(Using the pmf instead:)</p>
-<div class="sourceCode" id="cb111"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb111-1"><a href="ch.-3-discrete-distributions.html#cb111-1"></a><span class="kw">dbinom</span>(<span class="dv">2</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">3</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb111"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">dbinom</a></span><span class="op">(</span><span class="fl">2</span>, <span class="fl">15</span>, <span class="fl">.7</span><span class="op">)</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">dbinom</a></span><span class="op">(</span><span class="fl">3</span>, <span class="fl">15</span>, <span class="fl">.7</span><span class="op">)</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">dbinom</a></span><span class="op">(</span><span class="fl">4</span>, <span class="fl">15</span>, <span class="fl">.7</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 0.0006717175</code></pre>
 <p>Graphing a binomial pmf:</p>
 <p>ex. <span class="math inline">\(p = .7, n = 10\)</span></p>
-<div class="sourceCode" id="cb113"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb113-1"><a href="ch.-3-discrete-distributions.html#cb113-1"></a>px &lt;-<span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">0</span><span class="op">:</span><span class="dv">10</span>, <span class="dv">10</span>, <span class="fl">.7</span>)</span>
-<span id="cb113-2"><a href="ch.-3-discrete-distributions.html#cb113-2"></a><span class="co"># adding las = 1 turns the y-axis tick mark labels horizontal, which are easier to read</span></span>
-<span id="cb113-3"><a href="ch.-3-discrete-distributions.html#cb113-3"></a><span class="kw">barplot</span>(px, <span class="dt">names.arg =</span> <span class="dv">0</span><span class="op">:</span><span class="dv">10</span>, <span class="dt">las =</span> <span class="dv">1</span>, <span class="dt">col =</span> <span class="st">&quot;lightblue&quot;</span>)</span></code></pre></div>
-<p><img src="STAT1201-resource_files/figure-html/unnamed-chunk-29-1.png" width="672" /></p>
+<div class="sourceCode" id="cb113"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">px</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">dbinom</a></span><span class="op">(</span><span class="fl">0</span><span class="op">:</span><span class="fl">10</span>, <span class="fl">10</span>, <span class="fl">.7</span><span class="op">)</span>
+<span class="co"># adding las = 1 turns the y-axis tick mark labels horizontal, which are easier to read</span>
+<span class="fu"><a href="https://rdrr.io/r/graphics/barplot.html">barplot</a></span><span class="op">(</span><span class="va">px</span>, names.arg <span class="op">=</span> <span class="fl">0</span><span class="op">:</span><span class="fl">10</span>, las <span class="op">=</span> <span class="fl">1</span>, col <span class="op">=</span> <span class="st">"lightblue"</span><span class="op">)</span></code></pre></div>
+<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-29-1.png" width="672"></div>
 </div>
 </div>
 <div id="hypergeometric" class="section level2 unnumbered">
-<h2>3.5 Hypergeometric</h2>
+<h2>3.5 Hypergeometric<a class="anchor" aria-label="anchor" href="#hypergeometric"><i class="fas fa-link"></i></a>
+</h2>
 <p>Note that the notation that R uses is different from the Devore textbook:</p>
-<table>
-<thead>
-<tr class="header">
+<div class="inline-table"><table class="table table-sm">
+<thead><tr class="header">
 <th>parameter</th>
 <th>Devore</th>
 <th>R</th>
-</tr>
-</thead>
+</tr></thead>
 <tbody>
 <tr class="odd">
 <td>total successes</td>
@@ -367,36 +193,45 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td>x</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>Example (p. 127)</p>
 <p>Devore: <em>h(x; n, M, N)</em></p>
 <p><em>P(X = 2) = h(2; 10, 5, 25)</em> –&gt;</p>
-<div class="sourceCode" id="cb114"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb114-1"><a href="ch.-3-discrete-distributions.html#cb114-1"></a><span class="kw">dhyper</span>(<span class="dt">x =</span> <span class="dv">2</span>, <span class="dt">m =</span> <span class="dv">5</span>, <span class="dt">n =</span> <span class="dv">20</span>, <span class="dt">k =</span> <span class="dv">10</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb114"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/Hypergeometric.html">dhyper</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fl">2</span>, m <span class="op">=</span> <span class="fl">5</span>, n <span class="op">=</span> <span class="fl">20</span>, k <span class="op">=</span> <span class="fl">10</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 0.3853755</code></pre>
 </div>
 <div id="poisson" class="section level2 unnumbered">
-<h2>3.6 Poisson</h2>
+<h2>3.6 Poisson<a class="anchor" aria-label="anchor" href="#poisson"><i class="fas fa-link"></i></a>
+</h2>
 <p>Example (p. 132)</p>
 <p>p(3;2) =</p>
-<div class="sourceCode" id="cb116"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb116-1"><a href="ch.-3-discrete-distributions.html#cb116-1"></a><span class="kw">dpois</span>(<span class="dv">3</span>,<span class="dv">2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb116"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">dpois</a></span><span class="op">(</span><span class="fl">3</span>,<span class="fl">2</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 0.180447</code></pre>
 <p>F(3;2) =</p>
-<div class="sourceCode" id="cb118"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb118-1"><a href="ch.-3-discrete-distributions.html#cb118-1"></a><span class="kw">ppois</span>(<span class="dv">3</span>, <span class="dv">2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb118"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">ppois</a></span><span class="op">(</span><span class="fl">3</span>, <span class="fl">2</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 0.8571235</code></pre>
 </div>
 <div id="practice-exercises-1" class="section level2 unnumbered">
-<h2>Practice Exercises</h2>
+<h2>Practice Exercises<a class="anchor" aria-label="anchor" href="#practice-exercises-1"><i class="fas fa-link"></i></a>
+</h2>
 <ol style="list-style-type: decimal">
-<li><strong>(Binomial)</strong> Suppose the probability of a car accident involving a single vehicle is .7. If 15 accidents are randomly selected, what is the probability that between 2 and 4, inclusive, involve a single vehicle? (from slides)</li>
+<li>
+<strong>(Binomial)</strong> Suppose the probability of a car accident involving a single vehicle is .7. If 15 accidents are randomly selected, what is the probability that between 2 and 4, inclusive, involve a single vehicle? (from slides)</li>
 </ol>
-<div class="sourceCode" id="cb120"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb120-1"><a href="ch.-3-discrete-distributions.html#cb120-1"></a><span class="kw">dbinom</span>(<span class="dv">2</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">3</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb120"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">dbinom</a></span><span class="op">(</span><span class="fl">2</span>, <span class="fl">15</span>, <span class="fl">.7</span><span class="op">)</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">dbinom</a></span><span class="op">(</span><span class="fl">3</span>, <span class="fl">15</span>, <span class="fl">.7</span><span class="op">)</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">dbinom</a></span><span class="op">(</span><span class="fl">4</span>, <span class="fl">15</span>, <span class="fl">.7</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 0.0006717175</code></pre>
 <p>or</p>
-<div class="sourceCode" id="cb122"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb122-1"><a href="ch.-3-discrete-distributions.html#cb122-1"></a><span class="kw">pbinom</span>(<span class="dv">4</span>, <span class="dv">15</span>, <span class="fl">.7</span>) <span class="op">-</span><span class="st"> </span><span class="kw">pbinom</span>(<span class="dv">1</span>, <span class="dv">15</span>, <span class="fl">.7</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb122"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">pbinom</a></span><span class="op">(</span><span class="fl">4</span>, <span class="fl">15</span>, <span class="fl">.7</span><span class="op">)</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">pbinom</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">15</span>, <span class="fl">.7</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 0.0006717175</code></pre>
-<hr />
+<hr>
 <ol start="2" style="list-style-type: decimal">
-<li><p><strong>(Binomial)</strong> A particular telephone number is used to receive both voice calls and fax messages. Suppose that 25% of the incoming calls involve fax messages, and consider a sample of 25 incoming calls. What is the probability that</p>
+<li>
+<p><strong>(Binomial)</strong> A particular telephone number is used to receive both voice calls and fax messages. Suppose that 25% of the incoming calls involve fax messages, and consider a sample of 25 incoming calls. What is the probability that</p>
 <ol style="list-style-type: lower-alpha">
 <li><p>At most 6 of the calls involve a fax message?</p></li>
 <li><p>Exactly 6 of the calls involve a fax message?</p></li>
@@ -404,134 +239,134 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><p>What is the expected number of calls among the 25 that involve a fax message?</p></li>
 <li><p>What is the standard deviation of the number among the 25 calls that involve a fax message?</p></li>
 <li><p>What is the probability that the number of calls among the 25 that involve a fax transmission exceeds the expected number by more than 2 standard deviations? (Textbook 50-51)</p></li>
-</ol></li>
 </ol>
-<div class="sourceCode" id="cb124"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb124-1"><a href="ch.-3-discrete-distributions.html#cb124-1"></a><span class="kw">pbinom</span>(<span class="dv">6</span>, <span class="dv">25</span>, <span class="fl">.25</span>)</span></code></pre></div>
+</li>
+</ol>
+<div class="sourceCode" id="cb124"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">pbinom</a></span><span class="op">(</span><span class="fl">6</span>, <span class="fl">25</span>, <span class="fl">.25</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 0.5610981</code></pre>
-<div class="sourceCode" id="cb126"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb126-1"><a href="ch.-3-discrete-distributions.html#cb126-1"></a><span class="kw">dbinom</span>(<span class="dv">6</span>, <span class="dv">25</span>, <span class="fl">.25</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb126"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">dbinom</a></span><span class="op">(</span><span class="fl">6</span>, <span class="fl">25</span>, <span class="fl">.25</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 0.1828195</code></pre>
-<div class="sourceCode" id="cb128"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb128-1"><a href="ch.-3-discrete-distributions.html#cb128-1"></a><span class="dv">1</span> <span class="op">-</span><span class="st"> </span><span class="kw">pbinom</span>(<span class="dv">5</span>, <span class="dv">25</span>, <span class="fl">.25</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb128"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fl">1</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">pbinom</a></span><span class="op">(</span><span class="fl">5</span>, <span class="fl">25</span>, <span class="fl">.25</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 0.6217215</code></pre>
-<div class="sourceCode" id="cb130"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb130-1"><a href="ch.-3-discrete-distributions.html#cb130-1"></a>E &lt;-<span class="st"> </span><span class="dv">25</span><span class="op">*</span>.<span class="dv">25</span></span>
-<span id="cb130-2"><a href="ch.-3-discrete-distributions.html#cb130-2"></a>Var &lt;-<span class="st"> </span><span class="dv">25</span><span class="op">*</span>.<span class="dv">25</span><span class="op">*</span>.<span class="dv">75</span></span>
-<span id="cb130-3"><a href="ch.-3-discrete-distributions.html#cb130-3"></a><span class="kw">pbinom</span>(<span class="kw">floor</span>(E<span class="op">+</span><span class="dv">2</span><span class="op">*</span><span class="kw">sqrt</span>(Var)), <span class="dv">25</span>, <span class="fl">.25</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb130"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">E</span> <span class="op">&lt;-</span> <span class="fl">25</span><span class="op">*</span><span class="fl">.25</span>
+<span class="va">Var</span> <span class="op">&lt;-</span> <span class="fl">25</span><span class="op">*</span><span class="fl">.25</span><span class="op">*</span><span class="fl">.75</span>
+<span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">pbinom</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Round.html">floor</a></span><span class="op">(</span><span class="va">E</span><span class="op">+</span><span class="fl">2</span><span class="op">*</span><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">sqrt</a></span><span class="op">(</span><span class="va">Var</span><span class="op">)</span><span class="op">)</span>, <span class="fl">25</span>, <span class="fl">.25</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 0.9703301</code></pre>
-<hr />
+<hr>
 <ol start="3" style="list-style-type: decimal">
-<li><p><strong>(Hypergeometric)</strong> A geologist has collected 8 specimens of basaltic rock and 12 specimens of granite. The geologist instructs a laboratory assistant to randomly select 15 of the specimens for analysis.</p>
+<li>
+<p><strong>(Hypergeometric)</strong> A geologist has collected 8 specimens of basaltic rock and 12 specimens of granite. The geologist instructs a laboratory assistant to randomly select 15 of the specimens for analysis.</p>
 <ol style="list-style-type: lower-alpha">
 <li><p>What is the probability that all specimens of one of the two types of rock are selected for analysis?</p></li>
 <li><p>What is the probability that the number of granite specimens selected for analysis is within 1 standard deviation of its mean value? (Textbook 71)</p></li>
-</ol></li>
 </ol>
-<div class="sourceCode" id="cb132"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb132-1"><a href="ch.-3-discrete-distributions.html#cb132-1"></a><span class="kw">dhyper</span>(<span class="dv">8</span>, <span class="dv">8</span>, <span class="dv">12</span>, <span class="dv">15</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dhyper</span>(<span class="dv">3</span>, <span class="dv">8</span>, <span class="dv">12</span>, <span class="dv">15</span>)</span></code></pre></div>
+</li>
+</ol>
+<div class="sourceCode" id="cb132"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/Hypergeometric.html">dhyper</a></span><span class="op">(</span><span class="fl">8</span>, <span class="fl">8</span>, <span class="fl">12</span>, <span class="fl">15</span><span class="op">)</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/r/stats/Hypergeometric.html">dhyper</a></span><span class="op">(</span><span class="fl">3</span>, <span class="fl">8</span>, <span class="fl">12</span>, <span class="fl">15</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 0.05469556</code></pre>
-<div class="sourceCode" id="cb134"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb134-1"><a href="ch.-3-discrete-distributions.html#cb134-1"></a>mean_g &lt;-<span class="st"> </span><span class="dv">15</span><span class="op">*</span><span class="dv">12</span><span class="op">/</span><span class="dv">20</span></span>
-<span id="cb134-2"><a href="ch.-3-discrete-distributions.html#cb134-2"></a>sd_g &lt;-<span class="st"> </span><span class="kw">sqrt</span>(<span class="dv">20</span><span class="op">*</span>(<span class="dv">12</span><span class="op">/</span><span class="dv">20</span>)<span class="op">*</span>(<span class="dv">8</span><span class="op">/</span><span class="dv">20</span>))</span>
-<span id="cb134-3"><a href="ch.-3-discrete-distributions.html#cb134-3"></a><span class="kw">pbinom</span>(mean_g <span class="op">+</span><span class="st"> </span>sd_g, <span class="dv">15</span>, <span class="dv">12</span><span class="op">/</span><span class="dv">20</span>)<span class="op">-</span><span class="kw">pbinom</span>(mean_g <span class="op">-</span><span class="st"> </span>sd_g, <span class="dv">15</span>, <span class="dv">12</span><span class="op">/</span><span class="dv">20</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb134"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">mean_g</span> <span class="op">&lt;-</span> <span class="fl">15</span><span class="op">*</span><span class="fl">12</span><span class="op">/</span><span class="fl">20</span>
+<span class="va">sd_g</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">sqrt</a></span><span class="op">(</span><span class="fl">20</span><span class="op">*</span><span class="op">(</span><span class="fl">12</span><span class="op">/</span><span class="fl">20</span><span class="op">)</span><span class="op">*</span><span class="op">(</span><span class="fl">8</span><span class="op">/</span><span class="fl">20</span><span class="op">)</span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">pbinom</a></span><span class="op">(</span><span class="va">mean_g</span> <span class="op">+</span> <span class="va">sd_g</span>, <span class="fl">15</span>, <span class="fl">12</span><span class="op">/</span><span class="fl">20</span><span class="op">)</span><span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">pbinom</a></span><span class="op">(</span><span class="va">mean_g</span> <span class="op">-</span> <span class="va">sd_g</span>, <span class="fl">15</span>, <span class="fl">12</span><span class="op">/</span><span class="fl">20</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 0.8144507</code></pre>
-<hr />
+<hr>
 <ol start="4" style="list-style-type: decimal">
-<li><p><strong>(Negative Binomial)</strong> The probability that a randomly selected box of a certain type of cereal has a particular prize is .2. Suppose you purchase box after box until you have obtained two of these prizes.</p>
+<li>
+<p><strong>(Negative Binomial)</strong> The probability that a randomly selected box of a certain type of cereal has a particular prize is .2. Suppose you purchase box after box until you have obtained two of these prizes.</p>
 <ol style="list-style-type: lower-alpha">
 <li><p>What is the probability that you purchase <span class="math inline">\(x\)</span> boxes that do not have the desired prize?</p></li>
 <li><p>What is the probability that you purchase four boxes?</p></li>
 <li><p>What is the probability that you purchase at most four boxes?</p></li>
 <li><p>How many boxes without the desired prize do you expect to purchase? How many boxes do you expect to purchase? (Textbook 75, homework)</p></li>
-</ol></li>
+</ol>
+</li>
 </ol>
 <p>Let x be the number of boxes without prizes to be purchased, <span class="math inline">\(p = {x+2-1\choose1}(.2^2)(.8 ^x)\)</span></p>
-<div class="sourceCode" id="cb136"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb136-1"><a href="ch.-3-discrete-distributions.html#cb136-1"></a><span class="kw">dnbinom</span>(<span class="dv">2</span>, <span class="dv">2</span>, <span class="fl">.2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb136"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/NegBinomial.html">dnbinom</a></span><span class="op">(</span><span class="fl">2</span>, <span class="fl">2</span>, <span class="fl">.2</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 0.0768</code></pre>
-<div class="sourceCode" id="cb138"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb138-1"><a href="ch.-3-discrete-distributions.html#cb138-1"></a><span class="kw">dnbinom</span>(<span class="dv">2</span>, <span class="dv">2</span>, <span class="fl">.2</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dnbinom</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="fl">.2</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dnbinom</span>(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">.2</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb138"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/NegBinomial.html">dnbinom</a></span><span class="op">(</span><span class="fl">2</span>, <span class="fl">2</span>, <span class="fl">.2</span><span class="op">)</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/r/stats/NegBinomial.html">dnbinom</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">.2</span><span class="op">)</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/r/stats/NegBinomial.html">dnbinom</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">2</span>, <span class="fl">.2</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 0.1808</code></pre>
-<div class="sourceCode" id="cb140"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb140-1"><a href="ch.-3-discrete-distributions.html#cb140-1"></a><span class="dv">2</span><span class="op">*</span>.<span class="dv">8</span><span class="op">/</span>.<span class="dv">2</span></span></code></pre></div>
+<div class="sourceCode" id="cb140"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fl">2</span><span class="op">*</span><span class="fl">.8</span><span class="op">/</span><span class="fl">.2</span></code></pre></div>
 <pre><code>## [1] 8</code></pre>
-<div class="sourceCode" id="cb142"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb142-1"><a href="ch.-3-discrete-distributions.html#cb142-1"></a><span class="co"># 8 boxes without desired prize, 10 boxes in total</span></span></code></pre></div>
-<hr />
+<div class="sourceCode" id="cb142"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># 8 boxes without desired prize, 10 boxes in total</span></code></pre></div>
+<hr>
 <ol start="5" style="list-style-type: decimal">
-<li><p><strong>(Poisson)</strong> Suppose that the number of drivers who travel between a particular origin and destination during a designated time period has a Poisson distribution with parameter <span class="math inline">\(\mu = 20\)</span>. What is the probability that the number of drivers will</p>
+<li>
+<p><strong>(Poisson)</strong> Suppose that the number of drivers who travel between a particular origin and destination during a designated time period has a Poisson distribution with parameter <span class="math inline">\(\mu = 20\)</span>. What is the probability that the number of drivers will</p>
 <ol style="list-style-type: lower-alpha">
 <li><p>Be at most 10?</p></li>
 <li><p>Be 10?</p></li>
 <li><p>Be within 2 standard deviations of the mean value?</p></li>
 </ol>
-<p>(Textbook 81)</p></li>
+<p>(Textbook 81)</p>
+</li>
 </ol>
-<div class="sourceCode" id="cb143"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb143-1"><a href="ch.-3-discrete-distributions.html#cb143-1"></a><span class="kw">ppois</span>(<span class="dv">10</span>, <span class="dv">20</span>) <span class="co"># a</span></span></code></pre></div>
+<div class="sourceCode" id="cb143"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">ppois</a></span><span class="op">(</span><span class="fl">10</span>, <span class="fl">20</span><span class="op">)</span> <span class="co"># a</span></code></pre></div>
 <pre><code>## [1] 0.01081172</code></pre>
-<div class="sourceCode" id="cb145"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb145-1"><a href="ch.-3-discrete-distributions.html#cb145-1"></a><span class="kw">dpois</span>(<span class="dv">10</span>, <span class="dv">20</span>) <span class="co"># b1</span></span></code></pre></div>
+<div class="sourceCode" id="cb145"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">dpois</a></span><span class="op">(</span><span class="fl">10</span>, <span class="fl">20</span><span class="op">)</span> <span class="co"># b1</span></code></pre></div>
 <pre><code>## [1] 0.005816307</code></pre>
-<div class="sourceCode" id="cb147"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb147-1"><a href="ch.-3-discrete-distributions.html#cb147-1"></a>((<span class="kw">exp</span>(<span class="dv">1</span>)<span class="op">^-</span><span class="dv">20</span>)<span class="op">*</span>(<span class="dv">20</span><span class="op">^</span><span class="dv">10</span>))<span class="op">/</span><span class="kw">factorial</span>(<span class="dv">10</span>) <span class="co"># b2</span></span></code></pre></div>
+<div class="sourceCode" id="cb147"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="op">(</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html">exp</a></span><span class="op">(</span><span class="fl">1</span><span class="op">)</span><span class="op">^</span><span class="op">-</span><span class="fl">20</span><span class="op">)</span><span class="op">*</span><span class="op">(</span><span class="fl">20</span><span class="op">^</span><span class="fl">10</span><span class="op">)</span><span class="op">)</span><span class="op">/</span><span class="fu"><a href="https://rdrr.io/r/base/Special.html">factorial</a></span><span class="op">(</span><span class="fl">10</span><span class="op">)</span> <span class="co"># b2</span></code></pre></div>
 <pre><code>## [1] 0.005816307</code></pre>
-<div class="sourceCode" id="cb149"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb149-1"><a href="ch.-3-discrete-distributions.html#cb149-1"></a><span class="kw">ppois</span>(<span class="dv">20</span> <span class="op">+</span><span class="st"> </span><span class="dv">2</span><span class="op">*</span><span class="kw">sqrt</span>(<span class="dv">20</span>),<span class="dv">20</span>) <span class="op">-</span><span class="st"> </span><span class="kw">ppois</span>(<span class="dv">20</span> <span class="op">-</span><span class="st"> </span><span class="dv">2</span><span class="op">*</span><span class="kw">sqrt</span>(<span class="dv">20</span>), <span class="dv">20</span>) <span class="co"># c</span></span></code></pre></div>
+<div class="sourceCode" id="cb149"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">ppois</a></span><span class="op">(</span><span class="fl">20</span> <span class="op">+</span> <span class="fl">2</span><span class="op">*</span><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">sqrt</a></span><span class="op">(</span><span class="fl">20</span><span class="op">)</span>,<span class="fl">20</span><span class="op">)</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Poisson.html">ppois</a></span><span class="op">(</span><span class="fl">20</span> <span class="op">-</span> <span class="fl">2</span><span class="op">*</span><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">sqrt</a></span><span class="op">(</span><span class="fl">20</span><span class="op">)</span>, <span class="fl">20</span><span class="op">)</span> <span class="co"># c</span></code></pre></div>
 <pre><code>## [1] 0.9442797</code></pre>
 
 </div>
 </div>
-            </section>
+  <div class="chapter-nav">
+<div class="prev"><a href="ch.-2-probability.html">Ch. 2 Probability</a></div>
+<div class="next"><a href="ch.-4-continuous-random-variables-and-probability-distributions.html">Ch. 4 Continuous Random Variables and Probability Distributions</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#ch.-3-discrete-distributions">Ch. 3 Discrete Distributions</a></li>
+<li><a class="nav-link" href="#expected-value">3.3 Expected value</a></li>
+<li><a class="nav-link" href="#variance">3.3 Variance</a></li>
+<li><a class="nav-link" href="#variance-alternative-method">3.3 Variance (alternative method)</a></li>
+<li>
+<a class="nav-link" href="#binominal-theorem">3.4 Binominal Theorem</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#r-1">R</a></li></ul>
+</li>
+<li><a class="nav-link" href="#hypergeometric">3.5 Hypergeometric</a></li>
+<li><a class="nav-link" href="#poisson">3.6 Poisson</a></li>
+<li><a class="nav-link" href="#practice-exercises-1">Practice Exercises</a></li>
+</ul>
 
-          </div>
-        </div>
-      </div>
-<a href="ch.-2-probability.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="ch.-4-continuous-random-variables-and-probability-distributions.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
-    </div>
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/jtr13/1201/blob/master/Chapter3.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/jtr13/1201/edit/master/Chapter3.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Stat 1201 Resources</strong>" was written by Joyce Robbins. It was last built on 2021-10-29.</p>
   </div>
-<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
-<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
-<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
-<script>
-gitbook.require(["gitbook"], function(gitbook) {
-gitbook.start({
-"sharing": {
-"github": false,
-"facebook": false,
-"twitter": false,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": "https://github.com/jtr13/1201/edit/master/Chapter3.Rmd",
-"text": "Edit"
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": "https://github.com/jtr13/1201/blob/master/Chapter3.Rmd",
-"text": null
-},
-"download": null,
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "section"
-},
-"number_sections": false
-});
-});
-</script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
@@ -543,7 +378,22 @@ gitbook.start({
     script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
 </script>
 </body>
-
 </html>
