@@ -9,7 +9,7 @@ bookdown::bs4_book:
       before: |
         <li><a href="index.html"><b>1201.info</b></a></li>
       after: |
-        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with boo-down</a></li>
     sharing:
       facebook: false
       twitter: false
