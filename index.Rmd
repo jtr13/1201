@@ -142,7 +142,7 @@ Saving with this method saves only the code, not the output. Below are two metho
 
 [![](images/R8.png){width="100%" height="100%"}]()
 
-### Reading files
+### Reading files  {-}
 
 First, find out your working directory with:
 
@@ -152,7 +152,7 @@ getwd()
 
 `[1] "/Users/joycerobbins/1201"`
 
-Next, move the file that you wish to read into that directory.
+Next, move the file that you wish to read into that directory. *One of the most common problems in reading in files is not having the file in the right place.*
 
 `.rda` files
 
