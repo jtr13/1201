@@ -40,11 +40,9 @@ My advice:
 
 * Try solving problems in multiple ways. 
 
-* Learn from a variety of sources: class, textbook, *Cartoon Guide*, etc. If you find differences, ask. 
-
+* Learn from a variety of sources: class, textbook, *Cartoon Guide*, etc. If you find differences, ask.
+ 
 ## Installing R {-}
-
-
 
 You will need to install two applications: R and RStudio:
 
@@ -73,20 +71,21 @@ The first step in getting started is getting comfortable working in the RStudio 
 
 Working in the console pane is similar to a using a calculator: each line of code is executed when you press enter. Note that your work is not saved with this approach.
 
-![](images/R1.png)
+
+
+[![](images/R1.png){width="100%" height="100%"}]()
+
 
 Assigning a variable
 
-![](images/R2.png)
+[![](images/R2.png){width="100%" height="100%"}]()
 
 Drawing a stem and leaf plot
 
-![](images/R3.png)
+[![](images/R3.png){width="100%" height="100%"}]()
 
 
-Basic operations:
-
-```{r}
+Basic operations:```{r}
 3 + 4
 3 - 4
 3 * 4
@@ -127,7 +126,7 @@ Read and try the examples in [Chapter 1 of Introduction to R](https://monashdata
 
 (Also covered in video above)
 
-![](images/R4.png)
+[![](images/R4.png){width="100%" height="100%"}]()
 
 Saving with this method saves only the code, not the output. Below are two methods for creating .html documents that contain both code and output:
 
@@ -135,13 +134,69 @@ Saving with this method saves only the code, not the output. Below are two metho
 
 (Also covered in video above)
 
-![](images/R5.png)
+[![](images/R5.png){width="100%" height="100%"}]()
 
-![](images/R6.png)
+[![](images/R6.png){width="100%" height="100%"}]()
 
-![](images/R7.png)
+[![](images/R7.png){width="100%" height="100%"}]()
 
-![](images/R8.png)
+[![](images/R8.png){width="100%" height="100%"}]()
+
+### Reading files
+
+First, find out your working directory with:
+
+```{r, eval=FALSE}
+getwd()
+```
+
+`[1] "/Users/joycerobbins/1201"`
+
+Next, move the file that you wish to read into that directory.
+
+`.rda` files
+
+```{r, eval=FALSE}
+load("ex01-14.rda")
+```
+
+```{r, echo=FALSE}
+rm(x, px)
+load("data/ex01-14.rda")
+```
+
+`load()` adds R objects directly into your working environment:
+
+```{r}
+rate
+mean(rate)
+```
+
+If you don't know the name of the R object, you can use `ls()` to see all objects, or click on the "Environment" pane on the top right of your screen.
+
+```{r}
+ls()
+```
+
+
+To read a `.csv` file, use:
+
+```{r}
+mydata <- read.csv("data/ex01-14.csv")
+```
+
+Note that `mydata` is a data frame:
+
+```{r}
+head(mydata)
+```
+
+To convert it to a vector use:
+
+```{r}
+rate <- mydata$Rate
+rate
+```
 
 
 <!-- Contact -->
