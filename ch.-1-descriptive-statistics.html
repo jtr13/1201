@@ -76,7 +76,7 @@
 <ul>
 <li>Stem-and-leaf display:</li>
 </ul>
-<div class="sourceCode" id="cb25"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb26"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">prices</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">379</span>, <span class="fl">425</span>, <span class="fl">450</span>, <span class="fl">450</span>, <span class="fl">499</span>, <span class="fl">529</span>, <span class="fl">535</span>, <span class="fl">535</span>, <span class="fl">545</span>, <span class="fl">599</span>, <span class="fl">665</span>,
             <span class="fl">675</span>, <span class="fl">699</span>, <span class="fl">699</span>, <span class="fl">725</span>, <span class="fl">725</span>, <span class="fl">745</span>, <span class="fl">799</span><span class="op">)</span>
 
@@ -94,34 +94,34 @@
 <ul>
 <li>Frequency histogram:</li>
 </ul>
-<div class="sourceCode" id="cb27"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb28"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">prices</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">379</span>, <span class="fl">425</span>, <span class="fl">450</span>, <span class="fl">450</span>, <span class="fl">499</span>, <span class="fl">529</span>, <span class="fl">535</span>, <span class="fl">535</span>, <span class="fl">545</span>, <span class="fl">599</span>, <span class="fl">665</span>,
             <span class="fl">675</span>, <span class="fl">699</span>, <span class="fl">699</span>, <span class="fl">725</span>, <span class="fl">725</span>, <span class="fl">745</span>, <span class="fl">799</span><span class="op">)</span>
 
 <span class="fu"><a href="https://rdrr.io/r/graphics/hist.html">hist</a></span><span class="op">(</span><span class="va">prices</span><span class="op">)</span></code></pre></div>
-<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-5-1.png" width="672"></div>
-<div class="sourceCode" id="cb28"><pre class="downlit sourceCode r">
+<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-12-1.png" width="672"></div>
+<div class="sourceCode" id="cb29"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/graphics/hist.html">hist</a></span><span class="op">(</span><span class="va">prices</span>, breaks <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">300</span>, <span class="fl">400</span>, <span class="fl">500</span>, <span class="fl">600</span>, <span class="fl">700</span>, <span class="fl">800</span><span class="op">)</span>,
      col <span class="op">=</span> <span class="st">"lightblue"</span><span class="op">)</span></code></pre></div>
-<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-5-2.png" width="672"></div>
+<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-12-2.png" width="672"></div>
 <ul>
 <li>Density histogram:</li>
 </ul>
-<div class="sourceCode" id="cb29"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb30"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">prices</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">379</span>, <span class="fl">425</span>, <span class="fl">450</span>, <span class="fl">450</span>, <span class="fl">499</span>, <span class="fl">529</span>, <span class="fl">535</span>, <span class="fl">535</span>, <span class="fl">545</span>, <span class="fl">599</span>, <span class="fl">665</span>,
             <span class="fl">675</span>, <span class="fl">699</span>, <span class="fl">699</span>, <span class="fl">725</span>, <span class="fl">725</span>, <span class="fl">745</span>, <span class="fl">799</span><span class="op">)</span>
 
 <span class="fu"><a href="https://rdrr.io/r/graphics/hist.html">hist</a></span><span class="op">(</span><span class="va">prices</span>, freq <span class="op">=</span> <span class="cn">FALSE</span>, 
      breaks <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">300</span>, <span class="fl">400</span>, <span class="fl">500</span>, <span class="fl">600</span>, <span class="fl">700</span>, <span class="fl">800</span><span class="op">)</span>,
      col <span class="op">=</span> <span class="st">"lightblue"</span>, las <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></code></pre></div>
-<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-6-1.png" width="672"></div>
+<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-13-1.png" width="672"></div>
 <p>Cumulative frequency histogram</p>
 <p>For this type of histogram, we need access to the bin counts, in order to calculate the cumulative frequencies. The <code><a href="https://rdrr.io/r/graphics/hist.html">hist()</a></code> function returns these values, if assigned to a variable:</p>
-<div class="sourceCode" id="cb30"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb31"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">1</span>, <span class="fl">1</span>, <span class="fl">1</span>, <span class="fl">1</span>, <span class="fl">5</span>, <span class="fl">5</span>, <span class="fl">5</span>, <span class="fl">7</span>, <span class="fl">7</span>, <span class="fl">8</span><span class="op">)</span>
 <span class="va">myhistdata</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/graphics/hist.html">hist</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span></code></pre></div>
-<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-7-1.png" width="672"></div>
-<div class="sourceCode" id="cb31"><pre class="downlit sourceCode r">
+<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-14-1.png" width="672"></div>
+<div class="sourceCode" id="cb32"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">myhistdata</span></code></pre></div>
 <pre><code>## $breaks
 ## [1] 1 2 3 4 5 6 7 8
@@ -144,19 +144,19 @@
 ## attr(,"class")
 ## [1] "histogram"</code></pre>
 <p>The particular information we want is <code>$counts</code>:</p>
-<div class="sourceCode" id="cb33"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb34"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">myhistdata</span><span class="op">$</span><span class="va">counts</span></code></pre></div>
 <pre><code>## [1] 5 0 0 3 0 2 1</code></pre>
 <p>The cumulative frequencies are:</p>
-<div class="sourceCode" id="cb35"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb36"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/cumsum.html">cumsum</a></span><span class="op">(</span><span class="va">myhistdata</span><span class="op">$</span><span class="va">counts</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1]  5  5  5  8  8 10 11</code></pre>
 <p>To plot them, we need to use a bar chart, not a histogram, since we already have the y-axis values:</p>
-<div class="sourceCode" id="cb37"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/graphics/barplot.html">barplot</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/cumsum.html">cumsum</a></span><span class="op">(</span><span class="va">myhistdata</span><span class="op">$</span><span class="va">counts</span><span class="op">)</span><span class="op">)</span></code></pre></div>
-<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-10-1.png" width="672"></div>
-<p>Cleaned up:</p>
 <div class="sourceCode" id="cb38"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/graphics/barplot.html">barplot</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/cumsum.html">cumsum</a></span><span class="op">(</span><span class="va">myhistdata</span><span class="op">$</span><span class="va">counts</span><span class="op">)</span><span class="op">)</span></code></pre></div>
+<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-17-1.png" width="672"></div>
+<p>Cleaned up:</p>
+<div class="sourceCode" id="cb39"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/graphics/barplot.html">barplot</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/cumsum.html">cumsum</a></span><span class="op">(</span><span class="va">myhistdata</span><span class="op">$</span><span class="va">counts</span><span class="op">)</span>,
         col <span class="op">=</span> <span class="st">"lightblue"</span>, 
         space <span class="op">=</span> <span class="fl">0</span>,  <span class="co"># remove gaps between bars</span>
@@ -164,28 +164,28 @@
         ylim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">12</span><span class="op">)</span>, <span class="co"># make the y-axis longer</span>
         names.arg <span class="op">=</span> <span class="va">myhistdata</span><span class="op">$</span><span class="va">mids</span>
         <span class="op">)</span></code></pre></div>
-<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-11-1.png" width="672"></div>
+<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-18-1.png" width="672"></div>
 </div>
 <div id="measures-of-location" class="section level2 unnumbered">
 <h2>1.3 Measures of location<a class="anchor" aria-label="anchor" href="#measures-of-location"><i class="fas fa-link"></i></a>
 </h2>
 <p>Skip: Example 1.16, p. 33 (trimmed mean)</p>
 <p>Skip: “Categorical Data and Sample Proportions,” p. 34 (We’ll return to this topic later.)</p>
-<div class="sourceCode" id="cb39"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb40"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">prices</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">379</span>, <span class="fl">425</span>, <span class="fl">450</span>, <span class="fl">450</span>, <span class="fl">499</span>, <span class="fl">529</span>, <span class="fl">535</span>, <span class="fl">535</span>, <span class="fl">545</span>, <span class="fl">599</span>, <span class="fl">665</span>,
             <span class="fl">675</span>, <span class="fl">699</span>, <span class="fl">699</span>, <span class="fl">725</span>, <span class="fl">725</span>, <span class="fl">745</span>, <span class="fl">799</span><span class="op">)</span>
 
 <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">prices</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 593.2222</code></pre>
-<div class="sourceCode" id="cb41"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb42"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/median.html">median</a></span><span class="op">(</span><span class="va">prices</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 572</code></pre>
-<div class="sourceCode" id="cb43"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb44"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co">## quartiles</span>
 <span class="fu"><a href="https://rdrr.io/r/stats/quantile.html">quantile</a></span><span class="op">(</span><span class="va">prices</span><span class="op">)</span></code></pre></div>
 <pre><code>##    0%   25%   50%   75%  100% 
 ## 379.0 506.5 572.0 699.0 799.0</code></pre>
-<div class="sourceCode" id="cb45"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb46"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co">## trimmed mean</span>
 <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">prices</span>, trim <span class="op">=</span> <span class="fl">.1</span><span class="op">)</span> <span class="co">## 10% trimmed mean</span></code></pre></div>
 <pre><code>## [1] 593.75</code></pre>
@@ -198,7 +198,7 @@
 <ul>
 <li>Sample variance:</li>
 </ul>
-<div class="sourceCode" id="cb47"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb48"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">prices</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">379</span>, <span class="fl">425</span>, <span class="fl">450</span>, <span class="fl">450</span>, <span class="fl">499</span>, <span class="fl">529</span>, <span class="fl">535</span>, <span class="fl">535</span>, <span class="fl">545</span>, <span class="fl">599</span>, <span class="fl">665</span>,
             <span class="fl">675</span>, <span class="fl">699</span>, <span class="fl">699</span>, <span class="fl">725</span>, <span class="fl">725</span>, <span class="fl">745</span>, <span class="fl">799</span><span class="op">)</span>
 
@@ -207,32 +207,32 @@
 <ul>
 <li>Sample standard deviation:</li>
 </ul>
-<div class="sourceCode" id="cb49"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb50"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">sqrt</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/cor.html">var</a></span><span class="op">(</span><span class="va">prices</span><span class="op">)</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 126.4179</code></pre>
-<div class="sourceCode" id="cb51"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb52"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/sd.html">sd</a></span><span class="op">(</span><span class="va">prices</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 126.4179</code></pre>
 <ul>
 <li>Five number summary</li>
 </ul>
 <p>(min, lower-hinge, median, upper-hinge, max)</p>
-<div class="sourceCode" id="cb53"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb54"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/fivenum.html">fivenum</a></span><span class="op">(</span><span class="va">prices</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 379 499 572 699 799</code></pre>
 <ul>
 <li>Boxplots</li>
 </ul>
-<div class="sourceCode" id="cb55"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb56"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">prices</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">379</span>, <span class="fl">425</span>, <span class="fl">450</span>, <span class="fl">450</span>, <span class="fl">499</span>, <span class="fl">529</span>, <span class="fl">535</span>, <span class="fl">535</span>, <span class="fl">545</span>,
             <span class="fl">599</span>, <span class="fl">665</span>, <span class="fl">675</span>, <span class="fl">699</span>, <span class="fl">699</span>, <span class="fl">725</span>, <span class="fl">725</span>, <span class="fl">745</span>, <span class="fl">799</span><span class="op">)</span>
 
 <span class="fu"><a href="https://rdrr.io/r/graphics/boxplot.html">boxplot</a></span><span class="op">(</span><span class="va">prices</span><span class="op">)</span></code></pre></div>
-<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-16-1.png" width="672"></div>
-<div class="sourceCode" id="cb56"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/graphics/boxplot.html">boxplot</a></span><span class="op">(</span><span class="va">prices</span>, horizontal <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></code></pre></div>
-<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-16-2.png" width="672"></div>
+<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-23-1.png" width="672"></div>
 <div class="sourceCode" id="cb57"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/graphics/boxplot.html">boxplot</a></span><span class="op">(</span><span class="va">prices</span>, horizontal <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></code></pre></div>
+<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-23-2.png" width="672"></div>
+<div class="sourceCode" id="cb58"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">PTSD</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">10</span>, <span class="fl">20</span>, <span class="fl">25</span>, <span class="fl">28</span>, <span class="fl">31</span>, <span class="fl">35</span>, <span class="fl">37</span>, <span class="fl">38</span>, <span class="fl">38</span>, <span class="fl">39</span>, <span class="fl">39</span>, <span class="fl">42</span>, <span class="fl">46</span><span class="op">)</span>
 
 <span class="va">Healthy</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">23</span>, <span class="fl">39</span>, <span class="fl">40</span>, <span class="fl">41</span>, <span class="fl">43</span>, <span class="fl">47</span>, <span class="fl">51</span>, <span class="fl">58</span>, <span class="fl">63</span>, <span class="fl">66</span>, <span class="fl">67</span>, <span class="fl">69</span>, <span class="fl">72</span><span class="op">)</span>
@@ -240,7 +240,7 @@
 <span class="va">df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span><span class="va">Healthy</span>, <span class="va">PTSD</span><span class="op">)</span>
 
 <span class="fu"><a href="https://rdrr.io/r/graphics/boxplot.html">boxplot</a></span><span class="op">(</span><span class="va">df</span>, horizontal <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></code></pre></div>
-<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-16-3.png" width="672"></div>
+<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-23-3.png" width="672"></div>
 </div>
 <div id="practice-exercises" class="section level2 unnumbered">
 <h2>Practice Exercises<a class="anchor" aria-label="anchor" href="#practice-exercises"><i class="fas fa-link"></i></a>
@@ -249,7 +249,7 @@
 <li>Using the built-in dataset <code>ToothGrowth</code> in R, visualize the data and comment on the effectiveness of different functions in the context.</li>
 </ol>
 <p>[Ans] <br></p>
-<div class="sourceCode" id="cb58"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb59"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># The first 5 rows of the data</span>
 <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">ToothGrowth</span>, <span class="fl">5</span><span class="op">)</span></code></pre></div>
 <pre><code>##    len supp dose
@@ -258,16 +258,16 @@
 ## 3  7.3   VC  0.5
 ## 4  5.8   VC  0.5
 ## 5  6.4   VC  0.5</code></pre>
-<div class="sourceCode" id="cb60"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb61"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Five number summary</span>
 <span class="fu"><a href="https://rdrr.io/r/stats/fivenum.html">fivenum</a></span><span class="op">(</span><span class="va">ToothGrowth</span><span class="op">$</span><span class="va">len</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1]  4.20 12.55 19.25 25.35 33.90</code></pre>
-<div class="sourceCode" id="cb62"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb63"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Boxplot </span>
 <span class="co"># '$' extracts the column by name</span>
 <span class="fu"><a href="https://rdrr.io/r/graphics/boxplot.html">boxplot</a></span><span class="op">(</span><span class="va">ToothGrowth</span><span class="op">$</span><span class="va">len</span><span class="op">)</span> </code></pre></div>
-<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-17-1.png" width="672"></div>
-<div class="sourceCode" id="cb63"><pre class="downlit sourceCode r">
+<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-24-1.png" width="672"></div>
+<div class="sourceCode" id="cb64"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Stem-and-leaf Plot</span>
 <span class="fu"><a href="https://rdrr.io/r/graphics/stem.html">stem</a></span><span class="op">(</span><span class="va">ToothGrowth</span><span class="op">$</span><span class="va">len</span><span class="op">)</span></code></pre></div>
 <pre><code>## 
@@ -280,15 +280,15 @@
 ##   2 | 001222333344
 ##   2 | 55566666667779
 ##   3 | 0134</code></pre>
-<div class="sourceCode" id="cb65"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb66"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Histogram</span>
 <span class="va">h</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/graphics/hist.html">hist</a></span><span class="op">(</span><span class="va">ToothGrowth</span><span class="op">$</span><span class="va">len</span><span class="op">)</span></code></pre></div>
-<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-17-2.png" width="672"></div>
-<div class="sourceCode" id="cb66"><pre class="downlit sourceCode r">
+<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-24-2.png" width="672"></div>
+<div class="sourceCode" id="cb67"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Cumulative Histogram</span>
 <span class="va">h</span><span class="op">$</span><span class="va">counts</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/cumsum.html">cumsum</a></span><span class="op">(</span><span class="va">h</span><span class="op">$</span><span class="va">counts</span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">h</span><span class="op">)</span></code></pre></div>
-<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-17-3.png" width="672"></div>
+<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-24-3.png" width="672"></div>
 <p><code><a href="https://rdrr.io/r/utils/head.html">head()</a></code>: directly see how the dataset looks; useful when the dataset is large and it’s difficult to display all rows and columns together.</p>
 <p><code><a href="https://rdrr.io/r/stats/fivenum.html">fivenum()</a></code>: returns the minimum value, lower fourth, median, upper fourth, and maximum value</p>
 <p><code><a href="https://rdrr.io/r/graphics/boxplot.html">boxplot()</a></code>: visualizes the five number summary plus outliers. (It’s clear that the <code>ToothGrowth</code> data is not skewed.)</p>
@@ -327,7 +327,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Stat 1201 Resources</strong>" was written by Joyce Robbins. It was last built on 2021-11-02.</p>
+    <p>"<strong>Stat 1201 Resources</strong>" was written by Joyce Robbins. It was last built on 2022-01-26.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

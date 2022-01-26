@@ -73,7 +73,7 @@
 <h3>R<a class="anchor" aria-label="anchor" href="#r-4"><i class="fas fa-link"></i></a>
 </h3>
 <p>Since you aren’t given the original data, R isn’t very helpful here, but you can write a function that you could reuse, such as:</p>
-<div class="sourceCode" id="cb202"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb203"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/options.html">options</a></span><span class="op">(</span>scipen <span class="op">=</span> <span class="fl">999</span><span class="op">)</span> <span class="co"># get rid of scientific notation</span>
 
 <span class="co"># this function only has to be run once per session, and then you can reuse it.</span>
@@ -104,7 +104,7 @@
           delta0 <span class="op">=</span> <span class="fl">0</span>, sigma1 <span class="op">=</span> <span class="fl">4</span>, sigma2 <span class="op">=</span> <span class="fl">5</span>,
           m <span class="op">=</span> <span class="fl">20</span>, n <span class="op">=</span> <span class="fl">25</span>, type <span class="op">=</span> <span class="st">"twosided"</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] "The p-value is" "0.0003"</code></pre>
-<div class="sourceCode" id="cb204"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb205"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Example 9.4, p. 368</span>
 
 <span class="co"># As long as you use the correct order of parameters, you don't have to write out the names:</span>
@@ -122,7 +122,7 @@
 <p>Skip: Type II Error Probabilities (pp. 378-379)</p>
 <p>Given two random samples, use <code><a href="https://rdrr.io/r/stats/t.test.html">t.test()</a></code> with different parameters to carry out a two-sample hypothesis test.</p>
 <p>For demonstration purposes, x and y here are samples of 10 numbers that drawn from the standard normal distribution.</p>
-<div class="sourceCode" id="cb206"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb207"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span><span class="op">(</span><span class="fl">1</span><span class="op">)</span>
 <span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">rnorm</a></span><span class="op">(</span><span class="fl">10</span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/r/base/Random.html">set.seed</a></span><span class="op">(</span><span class="fl">2</span><span class="op">)</span>
@@ -150,7 +150,7 @@
 <p>Two ways of doing paired test:
 (Here we continue to use the <code>x</code> and <code>y</code> in section 9.2 above)
 <strong>[Method 1]</strong> Take x-y and do a one-sample test.</p>
-<div class="sourceCode" id="cb208"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb209"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/t.test.html">t.test</a></span><span class="op">(</span><span class="va">x</span><span class="op">-</span><span class="va">y</span>, alternative <span class="op">=</span> <span class="st">"less"</span><span class="op">)</span></code></pre></div>
 <pre><code>## 
 ##  One Sample t-test
@@ -164,7 +164,7 @@
 ##   mean of x 
 ## -0.07894886</code></pre>
 <p><strong>[Method 2]</strong> Give another parameter <code>paired = TRUE</code>. In R, the default parameter for <code>paired</code> in <code><a href="https://rdrr.io/r/stats/t.test.html">t.test()</a></code> is <code>FALSE</code>; here we set it to <code>TRUE</code> and leave <code>x</code> and <code>y</code> as two separate inputs.</p>
-<div class="sourceCode" id="cb210"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb211"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/t.test.html">t.test</a></span><span class="op">(</span><span class="va">x</span>, <span class="va">y</span>, alternative <span class="op">=</span> <span class="st">"less"</span>, paired <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></code></pre></div>
 <pre><code>## 
 ##  Paired t-test
@@ -187,7 +187,7 @@
 <h3>R<a class="anchor" aria-label="anchor" href="#r-5"><i class="fas fa-link"></i></a>
 </h3>
 <p>A/B Testing question from class:</p>
-<div class="sourceCode" id="cb212"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb213"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">clicks</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">25</span>, <span class="fl">20</span><span class="op">)</span>
 <span class="va">people</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">100</span>, <span class="fl">100</span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/r/stats/prop.test.html">prop.test</a></span><span class="op">(</span><span class="va">clicks</span>, <span class="va">people</span>, correct <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></code></pre></div>
@@ -239,7 +239,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Stat 1201 Resources</strong>" was written by Joyce Robbins. It was last built on 2021-11-02.</p>
+    <p>"<strong>Stat 1201 Resources</strong>" was written by Joyce Robbins. It was last built on 2022-01-26.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

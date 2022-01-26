@@ -74,28 +74,28 @@
 <p>Simulating a uniform distribution</p>
 <p>Randomly choose one number from the distribution:</p>
 <p><span class="math inline">\(f(x) = .2\)</span> for <span class="math inline">\(0 \leq x \leq 5\)</span>, 0 otherwise.</p>
-<div class="sourceCode" id="cb151"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb152"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/Uniform.html">runif</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">1</span>, min <span class="op">=</span> <span class="fl">0</span>, max <span class="op">=</span> <span class="fl">5</span><span class="op">)</span></code></pre></div>
-<pre><code>## [1] 2.286024</code></pre>
+<pre><code>## [1] 3.156383</code></pre>
 <p>Take the average of 1000 picks:</p>
-<div class="sourceCode" id="cb153"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb154"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Uniform.html">runif</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">1000</span>, min <span class="op">=</span> <span class="fl">0</span>, max <span class="op">=</span> <span class="fl">5</span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span></code></pre></div>
-<pre><code>## [1] 2.469152</code></pre>
+<pre><code>## [1] 2.495715</code></pre>
 <p>Draw a histogram of the 1000 picks:</p>
-<div class="sourceCode" id="cb155"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb156"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/graphics/hist.html">hist</a></span><span class="op">(</span><span class="va">x</span>, las <span class="op">=</span> <span class="fl">1</span>, col <span class="op">=</span> <span class="st">"lightblue"</span><span class="op">)</span></code></pre></div>
-<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-41-1.png" width="672"></div>
+<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-48-1.png" width="672"></div>
 </div>
 <div id="cumulative-distribution-functions-and-expected-values" class="section level2 unnumbered">
 <h2>4.2 Cumulative Distribution Functions and Expected Values<a class="anchor" aria-label="anchor" href="#cumulative-distribution-functions-and-expected-values"><i class="fas fa-link"></i></a>
 </h2>
 <p>Using R to help with calculations in Example 4.7, p. 149</p>
 <p>Define a function for the cdf (you have to do the integration yourself):</p>
-<div class="sourceCode" id="cb156"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb157"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="cn">F</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">(</span><span class="va">x</span><span class="op">/</span><span class="fl">8</span><span class="op">)</span> <span class="op">+</span> <span class="op">(</span><span class="fl">3</span><span class="op">/</span><span class="fl">16</span><span class="op">)</span><span class="op">*</span><span class="va">x</span><span class="op">^</span><span class="fl">2</span></code></pre></div>
 <p>Find <span class="math inline">\(F(1.5) - F(1)\)</span></p>
-<div class="sourceCode" id="cb157"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb158"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/logical.html">F</a></span><span class="op">(</span><span class="fl">1.5</span><span class="op">)</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/base/logical.html">F</a></span><span class="op">(</span><span class="fl">1</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 0.296875</code></pre>
 </div>
@@ -112,31 +112,31 @@
 </h3>
 <p><span class="math inline">\(P(Z \leq -1)\)</span></p>
 <p>Unless specified otherwise, <code>pnorm</code> uses a mean of 0 and standard deviation of 1 (standard normal).</p>
-<div class="sourceCode" id="cb159"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb160"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">pnorm</a></span><span class="op">(</span><span class="op">-</span><span class="fl">1</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 0.1586553</code></pre>
 <p><span class="math inline">\(P(X \leq 37)\)</span> given <span class="math inline">\(\mu = 40\)</span> and <span class="math inline">\(\sigma = 2\)</span></p>
-<div class="sourceCode" id="cb161"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb162"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">pnorm</a></span><span class="op">(</span><span class="fl">37</span>, mean <span class="op">=</span> <span class="fl">40</span>, sd <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 0.0668072</code></pre>
 <p>or</p>
-<div class="sourceCode" id="cb163"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb164"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">pnorm</a></span><span class="op">(</span><span class="op">(</span><span class="fl">37</span><span class="op">-</span><span class="fl">40</span><span class="op">)</span><span class="op">/</span><span class="fl">2</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 0.0668072</code></pre>
 <p><span class="math inline">\(P(X &gt; 39)\)</span></p>
-<div class="sourceCode" id="cb165"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb166"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fl">1</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">pnorm</a></span><span class="op">(</span><span class="fl">39</span>, mean <span class="op">=</span> <span class="fl">40</span>, sd <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 0.6914625</code></pre>
 <p>Find the 75th percentile for the standard normal distribution:</p>
-<div class="sourceCode" id="cb167"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb168"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">qnorm</a></span><span class="op">(</span><span class="fl">.75</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 0.6744898</code></pre>
 <p>Find the 75th percentile for a normally distribution population with mean 40 and standard deviation 2:</p>
-<div class="sourceCode" id="cb169"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb170"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">qnorm</a></span><span class="op">(</span><span class="fl">.75</span>, mean <span class="op">=</span> <span class="fl">40</span>, sd <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 41.34898</code></pre>
 <p>or</p>
-<div class="sourceCode" id="cb171"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb172"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fl">40</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">qnorm</a></span><span class="op">(</span><span class="fl">.75</span><span class="op">)</span><span class="op">*</span><span class="fl">2</span></code></pre></div>
 <pre><code>## [1] 41.34898</code></pre>
 </div>
@@ -157,7 +157,7 @@
 </ol>
 <p>[Ans]
 a. Integrating by hand: <span class="math inline">\(f(x)=.06x + .05\)</span>, we get <span class="math inline">\(F(x) = .03x^2+.05x\)</span>.</p>
-<div class="sourceCode" id="cb173"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb174"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="cn">F</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="fl">0.03</span><span class="op">*</span><span class="va">x</span><span class="op">^</span><span class="fl">2</span> <span class="op">+</span> <span class="fl">0.05</span><span class="op">*</span><span class="va">x</span>
 <span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Uniform.html">runif</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">1000</span>, min <span class="op">=</span> <span class="fl">0</span>, max <span class="op">=</span> <span class="fl">5</span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/r/base/logical.html">F</a></span><span class="op">(</span><span class="fl">4</span><span class="op">)</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/base/logical.html">F</a></span><span class="op">(</span><span class="fl">2</span><span class="op">)</span></code></pre></div>
@@ -166,7 +166,7 @@ a. Integrating by hand: <span class="math inline">\(f(x)=.06x + .05\)</span>, we
 <li><p>0</p></li>
 <li><p>Integrate <span class="math inline">\(x\cdot f(x) = x(.06x+.05)=.06x^2+.05x\)</span>, we get <span class="math inline">\(H(x) = .02x^3+.025x^2\)</span>.</p></li>
 </ol>
-<div class="sourceCode" id="cb175"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb176"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">H</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="fl">0.02</span><span class="op">*</span><span class="va">x</span><span class="op">^</span><span class="fl">3</span> <span class="op">+</span> <span class="fl">0.025</span><span class="op">*</span><span class="va">x</span><span class="op">^</span><span class="fl">2</span>
 <span class="fu">H</span><span class="op">(</span><span class="fl">5</span><span class="op">)</span><span class="op">-</span><span class="fu">H</span><span class="op">(</span><span class="fl">0</span><span class="op">)</span> </code></pre></div>
 <pre><code>## [1] 3.125</code></pre>
@@ -175,7 +175,7 @@ a. Integrating by hand: <span class="math inline">\(f(x)=.06x + .05\)</span>, we
 <span class="math inline">\(V(X) = E(X^2)-[E(X)]^2\)</span>.
 Integrate <span class="math inline">\(x^2\cdot f(x) = x^2(.06x+.05)=.06x^3+.05x^2\)</span>, we get <span class="math inline">\(G(x) = .015x^4+\frac{.05}3x^3\)</span>.</li>
 </ol>
-<div class="sourceCode" id="cb177"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb178"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">E</span> <span class="op">&lt;-</span> <span class="fu">H</span><span class="op">(</span><span class="fl">5</span><span class="op">)</span><span class="op">-</span><span class="fu">H</span><span class="op">(</span><span class="fl">0</span><span class="op">)</span>
 <span class="va">G</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="fl">.015</span><span class="op">*</span><span class="op">(</span><span class="va">x</span><span class="op">^</span><span class="fl">4</span><span class="op">)</span><span class="op">+</span><span class="op">(</span><span class="fl">.05</span><span class="op">/</span><span class="fl">3</span><span class="op">)</span><span class="op">*</span><span class="op">(</span><span class="va">x</span><span class="op">^</span><span class="fl">3</span><span class="op">)</span>
 <span class="fu">G</span><span class="op">(</span><span class="fl">5</span><span class="op">)</span><span class="op">-</span><span class="fu">G</span><span class="op">(</span><span class="fl">0</span><span class="op">)</span><span class="op">-</span><span class="va">E</span><span class="op">^</span><span class="fl">2</span></code></pre></div>
@@ -190,13 +190,13 @@ Integrate <span class="math inline">\(x^2\cdot f(x) = x^2(.06x+.05)=.06x^3+.05x^
 </ol>
 </li>
 </ol>
-<div class="sourceCode" id="cb179"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb180"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">pnorm</a></span><span class="op">(</span><span class="op">(</span><span class="fl">1.75</span><span class="op">-</span><span class="fl">1.25</span><span class="op">)</span><span class="op">/</span><span class="fl">0.46</span><span class="op">)</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">pnorm</a></span><span class="op">(</span><span class="op">(</span><span class="fl">1</span><span class="op">-</span><span class="fl">1.25</span><span class="op">)</span><span class="op">/</span><span class="fl">0.46</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 0.5680717</code></pre>
-<div class="sourceCode" id="cb181"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb182"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fl">1</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">pnorm</a></span><span class="op">(</span><span class="op">(</span><span class="fl">2</span><span class="op">-</span><span class="fl">1.25</span><span class="op">)</span><span class="op">/</span><span class="fl">0.46</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 0.05150482</code></pre>
-<div class="sourceCode" id="cb183"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb184"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># alternatively</span>
 <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">pnorm</a></span><span class="op">(</span><span class="op">-</span><span class="op">(</span><span class="fl">2</span><span class="op">-</span><span class="fl">1.25</span><span class="op">)</span><span class="op">/</span><span class="fl">0.46</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 0.05150482</code></pre>
@@ -206,7 +206,7 @@ Integrate <span class="math inline">\(x^2\cdot f(x) = x^2(.06x+.05)=.06x^3+.05x^
 <strong>(Nonstandard Normal, <code>qnorm</code>)</strong> Data collected from an experiment with a specified initial crack
 length propose a normal distribution with mean value 5.496 mm and standard deviation .067 mm. For this model, what value of final crack depth would be exceeded by only .5% of all cracks? (Textbook 4.18)</li>
 </ol>
-<div class="sourceCode" id="cb185"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb186"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">qnorm</a></span><span class="op">(</span><span class="fl">0.995</span>, <span class="fl">5.496</span>, <span class="fl">.067</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 5.668581</code></pre>
 <hr>
@@ -215,11 +215,11 @@ length propose a normal distribution with mean value 5.496 mm and standard devia
 <strong>(Binom Appproximation)</strong> Suppose that 25% of all students at a large public university receive financial aid. Let <span class="math inline">\(X\)</span> be the number of students in a random sample of size 50 who receive financial
 aid, sothat <em>p = .25</em>. What is the probability that at most 10 students receive aid? (Textbook 4.20)</li>
 </ol>
-<div class="sourceCode" id="cb187"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb188"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># binom distribution calculation</span>
 <span class="fu"><a href="https://rdrr.io/r/stats/Binomial.html">pbinom</a></span><span class="op">(</span><span class="fl">10</span>, size <span class="op">=</span> <span class="fl">50</span>, prob <span class="op">=</span> <span class="fl">0.25</span><span class="op">)</span> </code></pre></div>
 <pre><code>## [1] 0.2622023</code></pre>
-<div class="sourceCode" id="cb189"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb190"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># normal approximation of binom</span>
 <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">pnorm</a></span><span class="op">(</span><span class="op">(</span><span class="fl">10</span> <span class="op">+</span> <span class="fl">.5</span> <span class="op">-</span> <span class="fl">50</span><span class="op">*</span><span class="fl">.25</span><span class="op">)</span><span class="op">/</span><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">sqrt</a></span><span class="op">(</span><span class="fl">50</span><span class="op">*</span><span class="fl">.25</span><span class="op">*</span><span class="fl">.75</span><span class="op">)</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 0.2568146</code></pre>
@@ -264,7 +264,7 @@ aid, sothat <em>p = .25</em>. What is the probability that at most 10 students r
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Stat 1201 Resources</strong>" was written by Joyce Robbins. It was last built on 2021-11-02.</p>
+    <p>"<strong>Stat 1201 Resources</strong>" was written by Joyce Robbins. It was last built on 2022-01-26.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

@@ -115,50 +115,32 @@
 <h3>Quick review of material covered in the video, plus additional examples<a class="anchor" aria-label="anchor" href="#quick-review-of-material-covered-in-the-video-plus-additional-examples"><i class="fas fa-link"></i></a>
 </h3>
 <p>Working in the console pane is similar to a using a calculator: each line of code is executed when you press enter. Note that your work is not saved with this approach.</p>
-<div class="inline-figure"><img src="images/R1.png"></div>
+<p><a href=""><img src="images/R1.png" style="width:100.0%;height:100.0%"></a></p>
 <p>Assigning a variable</p>
-<div class="inline-figure"><img src="images/R2.png"></div>
+<p><a href=""><img src="images/R2.png" style="width:100.0%;height:100.0%"></a></p>
 <p>Drawing a stem and leaf plot</p>
-<div class="inline-figure"><img src="images/R3.png"></div>
-<p>Basic operations:</p>
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fl">3</span> <span class="op">+</span> <span class="fl">4</span></code></pre></div>
-<pre><code>## [1] 7</code></pre>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fl">3</span> <span class="op">-</span> <span class="fl">4</span></code></pre></div>
-<pre><code>## [1] -1</code></pre>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fl">3</span> <span class="op">*</span> <span class="fl">4</span></code></pre></div>
-<pre><code>## [1] 12</code></pre>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fl">3</span> <span class="op">/</span> <span class="fl">4</span></code></pre></div>
-<pre><code>## [1] 0.75</code></pre>
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fl">3</span><span class="op">^</span><span class="fl">4</span></code></pre></div>
-<pre><code>## [1] 81</code></pre>
-<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">sqrt</a></span><span class="op">(</span><span class="fl">3</span><span class="op">)</span></code></pre></div>
-<pre><code>## [1] 1.732051</code></pre>
+<p><a href=""><img src="images/R3.png" style="width:100.0%;height:100.0%"></a></p>
+<p>Basic operations:<code>{r} 3 + 4 3 - 4 3 * 4 3 / 4 3^4 sqrt(3)</code></p>
 <p>Working with vectors:</p>
-<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fl">1</span><span class="op">:</span><span class="fl">5</span>
 <span class="va">x</span></code></pre></div>
 <pre><code>## [1] 1 2 3 4 5</code></pre>
-<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 15</code></pre>
-<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/cumsum.html">cumsum</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1]  1  3  6 10 15</code></pre>
-<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">px</span> <span class="op">&lt;-</span> <span class="va">x</span><span class="op">*</span><span class="fl">.05</span> <span class="op">+</span> <span class="fl">.05</span>
 <span class="va">px</span></code></pre></div>
 <pre><code>## [1] 0.10 0.15 0.20 0.25 0.30</code></pre>
 <p>Expected value:</p>
-<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">x</span><span class="op">*</span><span class="va">px</span></code></pre></div>
 <pre><code>## [1] 0.1 0.3 0.6 1.0 1.5</code></pre>
-<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">x</span><span class="op">*</span><span class="va">px</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 3.5</code></pre>
 </div>
@@ -178,17 +160,75 @@
 <h3>Saving code as an .R file<a class="anchor" aria-label="anchor" href="#saving-code-as-an-.r-file"><i class="fas fa-link"></i></a>
 </h3>
 <p>(Also covered in video above)</p>
-<div class="inline-figure"><img src="images/R4.png"></div>
+<p><a href=""><img src="images/R4.png" style="width:100.0%;height:100.0%"></a></p>
 <p>Saving with this method saves only the code, not the output. Below are two methods for creating .html documents that contain both code and output:</p>
 </div>
 <div id="convert-.r-file-to-.html" class="section level3 unnumbered">
 <h3>Convert .R file to .html<a class="anchor" aria-label="anchor" href="#convert-.r-file-to-.html"><i class="fas fa-link"></i></a>
 </h3>
 <p>(Also covered in video above)</p>
-<div class="inline-figure"><img src="images/R5.png"></div>
-<div class="inline-figure"><img src="images/R6.png"></div>
-<div class="inline-figure"><img src="images/R7.png"></div>
-<div class="inline-figure"><img src="images/R8.png"></div>
+<p><a href=""><img src="images/R5.png" style="width:100.0%;height:100.0%"></a></p>
+<p><a href=""><img src="images/R6.png" style="width:100.0%;height:100.0%"></a></p>
+<p><a href=""><img src="images/R7.png" style="width:100.0%;height:100.0%"></a></p>
+<p><a href=""><img src="images/R8.png" style="width:100.0%;height:100.0%"></a></p>
+</div>
+<div id="reading-files" class="section level3">
+<h3>
+<span class="header-section-number">0.0.1</span> Reading files<a class="anchor" aria-label="anchor" href="#reading-files"><i class="fas fa-link"></i></a>
+</h3>
+<p>First, find out your working directory with:</p>
+<div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/getwd.html">getwd</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<p><code>[1] "/Users/joycerobbins/1201"</code></p>
+<p>Next, move the file that you wish to read into that directory.</p>
+<p><code>.rda</code> files</p>
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/load.html">load</a></span><span class="op">(</span><span class="st">"ex01-14.rda"</span><span class="op">)</span></code></pre></div>
+<p><code><a href="https://rdrr.io/r/base/load.html">load()</a></code> adds R objects directly into your working environment:</p>
+<div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">rate</span></code></pre></div>
+<pre><code>##   [1]  4.6 12.3  7.1  7.0  4.0  9.2  6.7  6.9 11.5  5.1 11.2 10.5 14.3  8.0  8.8
+##  [16]  6.4  5.1  5.6  9.6  7.5  7.5  6.2  5.8  2.3  3.4 10.4  9.8  6.6  3.7  6.4
+##  [31]  8.3  6.5  7.6  9.3  9.2  7.3  5.0  6.3 13.8  6.2  5.4  4.8  7.5  6.0  6.9
+##  [46] 10.8  7.5  6.6  5.0  3.3  7.6  3.9 11.9  2.2 15.0  7.2  6.1 15.3 18.9  7.2
+##  [61]  5.4  5.5  4.3  9.0 12.7 11.3  7.4  5.0  3.5  8.2  8.4  7.3 10.3 11.9  6.0
+##  [76]  5.6  9.5  9.3 10.4  9.7  5.1  6.7 10.2  6.2  8.4  7.0  4.8  5.6 10.5 14.6
+##  [91] 10.8 15.5  7.5  6.4  3.4  5.5  6.6  5.9 15.0  9.6  7.8  7.0  6.9  4.1  3.6
+## [106] 11.9  3.7  5.7  6.8 11.3  9.3  9.6 10.4  9.3  6.9  9.8  9.1 10.6  4.5  6.2
+## [121]  8.3  3.2  4.9  5.0  6.0  8.2  6.3  3.8  6.0</code></pre>
+<div class="sourceCode" id="cb17"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">rate</span><span class="op">)</span></code></pre></div>
+<pre><code>## [1] 7.707752</code></pre>
+<p>If you don’t know the name of the R object, you can use <code><a href="https://rdrr.io/r/base/ls.html">ls()</a></code> to see all objects, or click on the “Environment” pane on the top right of your screen.</p>
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/ls.html">ls</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<pre><code>## [1] "rate"</code></pre>
+<p>To read a <code>.csv</code> file, use:</p>
+<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">mydata</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/utils/read.table.html">read.csv</a></span><span class="op">(</span><span class="st">"data/ex01-14.csv"</span><span class="op">)</span></code></pre></div>
+<p>Note that <code>mydata</code> is a data frame:</p>
+<div class="sourceCode" id="cb22"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="va">mydata</span><span class="op">)</span></code></pre></div>
+<pre><code>##   Rate
+## 1  4.6
+## 2 12.3
+## 3  7.1
+## 4  7.0
+## 5  4.0
+## 6  9.2</code></pre>
+<p>To convert it to a vector use:</p>
+<div class="sourceCode" id="cb24"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">rate</span> <span class="op">&lt;-</span> <span class="va">mydata</span><span class="op">$</span><span class="va">Rate</span>
+<span class="va">rate</span></code></pre></div>
+<pre><code>##   [1]  4.6 12.3  7.1  7.0  4.0  9.2  6.7  6.9 11.5  5.1 11.2 10.5 14.3  8.0  8.8
+##  [16]  6.4  5.1  5.6  9.6  7.5  7.5  6.2  5.8  2.3  3.4 10.4  9.8  6.6  3.7  6.4
+##  [31]  8.3  6.5  7.6  9.3  9.2  7.3  5.0  6.3 13.8  6.2  5.4  4.8  7.5  6.0  6.9
+##  [46] 10.8  7.5  6.6  5.0  3.3  7.6  3.9 11.9  2.2 15.0  7.2  6.1 15.3 18.9  7.2
+##  [61]  5.4  5.5  4.3  9.0 12.7 11.3  7.4  5.0  3.5  8.2  8.4  7.3 10.3 11.9  6.0
+##  [76]  5.6  9.5  9.3 10.4  9.7  5.1  6.7 10.2  6.2  8.4  7.0  4.8  5.6 10.5 14.6
+##  [91] 10.8 15.5  7.5  6.4  3.4  5.5  6.6  5.9 15.0  9.6  7.8  7.0  6.9  4.1  3.6
+## [106] 11.9  3.7  5.7  6.8 11.3  9.3  9.6 10.4  9.3  6.9  9.8  9.1 10.6  4.5  6.2
+## [121]  8.3  3.2  4.9  5.0  6.0  8.2  6.3  3.8  6.0</code></pre>
 <!-- Contact -->
 </div>
 </div>
@@ -227,6 +267,7 @@
 <a class="nav-link" href="#creating-graphs-saving-your-work">Creating Graphs, Saving your work</a><ul class="nav navbar-nav">
 <li><a class="nav-link" href="#saving-code-as-an-.r-file">Saving code as an .R file</a></li>
 <li><a class="nav-link" href="#convert-.r-file-to-.html">Convert .R file to .html</a></li>
+<li><a class="nav-link" href="#reading-files"><span class="header-section-number">0.0.1</span> Reading files</a></li>
 </ul>
 </li>
 <li><a class="nav-link" href="#contact">Contact</a></li>
@@ -248,7 +289,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Stat 1201 Resources</strong>" was written by Joyce Robbins. It was last built on 2021-11-02.</p>
+    <p>"<strong>Stat 1201 Resources</strong>" was written by Joyce Robbins. It was last built on 2022-01-26.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
