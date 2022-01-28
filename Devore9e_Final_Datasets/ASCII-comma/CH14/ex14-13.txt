@@ -1,0 +1,4 @@
+'Ovaries Developed','Observed Count'
+0,1212
+1,118
+2,58

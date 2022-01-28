@@ -1,0 +1,9 @@
+'removal_rate'	'Medium'	'Current'
+0.2433	'Oil'	10
+0.383	'Oil'	15
+0.5625	'Oil'	20
+0.7258	'Oil'	25
+0.159	'Water'	10
+0.2649	'Water'	15
+0.3609	'Water'	20
+0.4773	'Water'	25

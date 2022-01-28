@@ -1,0 +1,6 @@
+'Number Defective'	'Frequency'
+0	26
+1	51
+2	47
+3	16
+4	10

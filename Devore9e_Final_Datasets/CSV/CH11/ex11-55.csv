@@ -1,0 +1,17 @@
+Test Run,Iron Extraction
+(1),7
+a,11
+b,7
+ab,12
+c,21
+ac,41
+bc,27
+abc,48
+d,28
+ad,51
+bd,33
+abd,57
+cd,70
+acd,95
+bcd,77
+abcd,99

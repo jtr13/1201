@@ -1,0 +1,5 @@
+'Frequency'	'Census'	'Ethnicity'
+57	0.177	'AfroAm'
+11	0.032	'Asian'
+330	0.734	'Caucasian'
+6	0.057	'Hispanic'

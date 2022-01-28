@@ -1,0 +1,5 @@
+'Male Children'	'Frequency'
+0	14
+1	66
+2	64
+3	16

@@ -1,0 +1,46 @@
+'Fabric','smoothness','Method'
+'Broadcloth',2.2,1
+'Broadcloth',1.5,2
+'Broadcloth',2.7,3
+'Broadcloth',1.5,4
+'Broadcloth',1.9,5
+'Corduroy',3.6,1
+'Corduroy',1.3,2
+'Corduroy',2.8,3
+'Corduroy',1.7,4
+'Corduroy',1.8,5
+'Crepe',3.3,1
+'Crepe',2.5,2
+'Crepe',2.8,3
+'Crepe',2.5,4
+'Crepe',1.9,5
+'Denim',2.6,1
+'Denim',1.4,2
+'Denim',2.4,3
+'Denim',1.3,4
+'Denim',1.6,5
+'Double knit',3.6,1
+'Double knit',2,2
+'Double knit',3.6,3
+'Double knit',2.4,4
+'Double knit',2.3,5
+'Sheeting',3.5,1
+'Sheeting',2.1,2
+'Sheeting',2.8,3
+'Sheeting',2.1,4
+'Sheeting',2.2,5
+'Terry',3.8,1
+'Terry',1.3,2
+'Terry',2.8,3
+'Terry',2,4
+'Terry',1.6,5
+'Twill',4.2,1
+'Twill',3.4,2
+'Twill',3.8,3
+'Twill',3.1,4
+'Twill',3.1,5
+'Twill mix',3.4,1
+'Twill mix',2.4,2
+'Twill mix',2.9,3
+'Twill mix',1.6,4
+'Twill mix',1.7,5

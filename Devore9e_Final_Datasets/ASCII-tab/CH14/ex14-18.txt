@@ -1,0 +1,6 @@
+'Rate (per day)'	'Frequency'
+'Below .100'	12
+'.100-below .150'	20
+'.150-below .200'	23
+'.200-below .250'	15
+'.250 or more'	13

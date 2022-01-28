@@ -1,0 +1,7 @@
+'#chickens'	'Type'	'Salmonella'
+27	1	'#Positive'
+32	2	'#Positive'
+45	3	'#Positive'
+60	1	'Sample_size'
+60	2	'Sample_size'
+120	3	'Sample_size'
