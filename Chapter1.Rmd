@@ -27,7 +27,7 @@ Skip: "Dotplots," pp. 15-16
 
 
 * Stem-and-leaf display:
-**Ex:** The following are the prices (in $) in a jewelry store:
+**Ex:** The following are the listing prices (in thousands of $) of one-bedroom apartments in Morningside Heights in 2016:
 379, 425, 450, 450, 499, 529, 535, 535, 545, 599, 665, 675, 699, 699, 725, 725, 745, 799
 Draw a stem an leaf plot of this data:
 
