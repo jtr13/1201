@@ -3,6 +3,18 @@
 Sections covered: all
 
 ## 1.1 Populations, Samples, and Processes {-}
+To generate a random sample of data, we use the function "sample ()". 
+**Ex:** If we want to generate a sample of 6 numbers from the integers from 1 to 20,
+```{r}
+sample(x = 1:20, size  = 6)`
+```
+
+Note: this syntax assumes that there is no replacement (it won't pick one number twice).
+If you want to sample with replacement to avoid this use the following:
+
+```{r}
+sample (x = 1:20, size=8, replace=TRUE)
+```
 
 ## 1.2 Pictorial and Tabular Methods in Descriptive Statistics {-}
 
@@ -10,30 +22,50 @@ Skip: Example 1.7, p. 15 (double-digit leaves)
 
 Skip: "Dotplots," pp. 15-16
 
-* Stem-and-leaf display:
 
+* Stem-and-leaf display:
+**Ex:** The following are the prices (in $) in a jewelry store:
+379, 425, 450, 450, 499, 529, 535, 535, 545, 599, 665, 675, 699, 699, 725, 725, 745, 799
+Draw a stem an leaf plot of this data:
+
+1. Create a new variable (we'll cal it "prices"). _Note: we always use the syntax <- c() to generate new variables._
 ```{r}
 prices <- c(379, 425, 450, 450, 499, 529, 535, 535, 545, 599, 665,
             675, 699, 699, 725, 725, 745, 799)
+```
 
+2. Draw a stem and leaf plot
+```{r}
+prices <- c(379, 425, 450, 450, 499, 529, 535, 535, 545, 599, 665,
+            675, 699, 699, 725, 725, 745, 799)
 stem(prices)
 ```
 
 Note that histograms are drawn with *unbinned* data.  R does the binning in the process of drawing the histogram.
 
+
 * Frequency histogram:
+If you want to create a **frequency histogram** of this data you use the following:
 
 ```{r}
 prices <- c(379, 425, 450, 450, 499, 529, 535, 535, 545, 599, 665,
             675, 699, 699, 725, 725, 745, 799)
 
 hist(prices)
+```
+_Note: histograms are drawn with unbinned data. R does the binning in the process of drawing the histogram. This means that the program chooses the size of the bins for you_
 
+
+To add specific bin sizes and colors to your histogram, you can use the following syntax:
+```{r}
+prices <- c(379, 425, 450, 450, 499, 529, 535, 535, 545, 599, 665,
+            675, 699, 699, 725, 725, 745, 799)
 hist(prices, breaks = c(300, 400, 500, 600, 700, 800),
      col = "lightblue")
 ```
 
-* Density histogram:  
+* Density histogram: 
+We use an almost identical syntax to generate density histograms, but add a condition (freq=FALSE):
 
 ```{r}
 prices <- c(379, 425, 450, 450, 499, 529, 535, 535, 545, 599, 665,
@@ -93,6 +125,8 @@ Skip: Example 1.16, p. 33 (trimmed mean)
 
 Skip: "Categorical Data and Sample Proportions," p. 34 (We'll return to this topic later.)
 
+Consider the same dataset (prices). To find the mean, median, quartiles, and trimmed mean, we use the following syntax:
+
 ```{r}
 prices <- c(379, 425, 450, 450, 499, 529, 535, 535, 545, 599, 665,
             675, 699, 699, 725, 725, 745, 799)
@@ -140,6 +174,8 @@ sd(prices)
 fivenum(prices)
 ```
 
+If you want to generate a horizontal boxplot, use the following 
+
 * Boxplots  
 
 ```{r}
@@ -149,7 +185,16 @@ prices <- c(379, 425, 450, 450, 499, 529, 535, 535, 545,
 boxplot(prices)
 
 boxplot(prices, horizontal = TRUE)
+```
 
+(_Note: you can also add a color as done below_):
+```{r}
+boxplot(prices, horizontal = TRUE, col='pink'
+```
+
+
+Now, to create a comparative boxplot of two datasets, we will create a "dataframe" (2d array with two dataset values). Then, we will create a boxplot from this "joined" dataset.
+```{r}
 PTSD <- c(10, 20, 25, 28, 31, 35, 37, 38, 38, 39, 39, 42, 46)
 
 Healthy <- c(23, 39, 40, 41, 43, 47, 51, 58, 63, 66, 67, 69, 72)
@@ -185,7 +230,7 @@ h <- hist(ToothGrowth$len)
 h$counts <- cumsum(h$counts)
 plot(h)
 ```
-
+### Syntax explanation
 `head()`: directly see how the dataset looks; useful when the dataset is large and it's difficult to display all rows and columns together.
 
 `fivenum()`: returns the minimum value, lower fourth, median, upper fourth, and maximum value
