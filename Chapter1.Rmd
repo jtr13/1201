@@ -3,17 +3,20 @@
 Sections covered: all
 
 ## 1.1 Populations, Samples, and Processes {-}
-To generate a random sample of data, we use the function "sample ()". 
-**Ex:** If we want to generate a sample of 6 numbers from the integers from 1 to 20,
+
+To generate a random sample of data, we use the function `sample()`. 
+
+**Ex:** To generate a sample of 6 numbers from the integers between 1 and 20:
+
 ```{r}
-sample(x = 1:20, size  = 6)`
+sample(x = 1:20, size  = 6)
 ```
 
-Note: this syntax assumes that there is no replacement (it won't pick one number twice).
-If you want to sample with replacement to avoid this use the following:
+Note: this syntax assumes that there is no replacement (it won't pick the same number twice).
+If you want to sample *with* replacement use the following:
 
 ```{r}
-sample (x = 1:20, size=8, replace=TRUE)
+sample(x = 1:20, size = 8, replace = TRUE)
 ```
 
 ## 1.2 Pictorial and Tabular Methods in Descriptive Statistics {-}
