@@ -22,6 +22,43 @@ Use the $t$ distributions.
 
 Skip "A Prediction Interval for a Single Future Value" p. 299 to the end of the section
 
-This is a test.
+Student's $t$ distribution in R:
+
+The function "dt" will give you the value of the pdf of the $t$ distribution given a certain random variable "X" and degrees of freedom "df". 
+
+Example: Find the value of the $t$ distribution pdf at x = 0 with 20 degrees of freedom:
+```{r}
+dt(x = 0, df = 20)
+```
+
+However, this command will not be as useful as "pt":
+The function "pt" will give you the value of the cdf of the $t$ distribution given a certain random variable "X" and degrees of freedom "df". 
+
+Example: Find the area to the left of a t-statistic with value of -0.825 and 14 degrees of freedom.
+```{r}
+pt(-0.825, 14)
+```
+
+Now, if you want to compute the area to the right of a given value X (we'll use the previous example), you can substract the previous command from 1, or add the argument lower.tail = FALSE:
+
+## Method 1
+```{r}
+1 - pt(-0.825, 14)
+```
+
+## Method 2
+```{r}
+pt(-0.825, 14, lower.tail = FALSE)
+```
+
+You might also want to compute the inverse of the cdf of the $t$ distribution. In other words, finding out what the t-score is of the kth quantile of the  $t$ distribution. To do this, you use the "qt" command. The critical values found by this command will match the critical values you see in your t-distribution table.
+
+Example: Find the t-score of the 95th quantile of the $t$ distribution with df = 20
+```{r}
+qt(.95, df = 20)
+```
+
+
+
 
 
