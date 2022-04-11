@@ -192,7 +192,7 @@ boxplot(prices, horizontal = TRUE)
 
 (_Note: you can also add a color as done below_):
 ```{r}
-boxplot(prices, horizontal = TRUE, col='pink'
+boxplot(prices, horizontal = TRUE, col='pink')
 ```
 
 
