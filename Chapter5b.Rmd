@@ -10,7 +10,9 @@ Skip *everything but* "Two Discrete Random Variables" pp. 199-200
 
 Skip *everything but* "Covariance" pp. 214-215 and "Correlation" pp. 216-218
 
-(In both sections, skip double integrals)
+In both sections, skip double integrals. Focus on the concepts of covariance and correlation. The only formula you need to know is:
+
+$\rho_{X, Y} = \frac{Cov(X, Y)}{\sigma_X \cdot \sigma_Y}$
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
 
