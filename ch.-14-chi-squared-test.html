@@ -217,23 +217,8 @@
 ## 
 ## data:  data
 ## X-squared = 212.91, df = 6, p-value &lt; 0.00000000000000022</code></pre>
-<p>Alternatively, we can use R as a calculator.</p>
-<div class="sourceCode" id="cb236"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">total</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
-<span class="va">prob</span> <span class="op">&lt;-</span> <span class="va">data</span><span class="op">/</span><span class="va">total</span>
-<span class="va">expected</span> <span class="op">&lt;-</span> <span class="va">data</span> <span class="co"># initialize matrix "expected" to be the same size as "data"</span>
-
-<span class="kw">for</span> <span class="op">(</span><span class="va">i</span> <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fl">4</span><span class="op">)</span><span class="op">{</span>
-  <span class="kw">for</span><span class="op">(</span><span class="va">j</span> <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fl">3</span><span class="op">)</span><span class="op">{</span>
-    <span class="va">expected</span><span class="op">[</span><span class="va">i</span>,<span class="va">j</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">prob</span><span class="op">[</span><span class="va">i</span>,<span class="op">]</span><span class="op">)</span><span class="op">*</span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">prob</span><span class="op">[</span>,<span class="va">j</span><span class="op">]</span><span class="op">)</span><span class="op">*</span><span class="va">total</span>
-  <span class="op">}</span>
-<span class="op">}</span>
-
-<span class="va">chisq</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="op">(</span><span class="va">data</span><span class="op">-</span><span class="va">expected</span><span class="op">)</span><span class="op">^</span><span class="fl">2</span><span class="op">/</span><span class="va">expected</span><span class="op">)</span>
-<span class="va">chisq</span></code></pre></div>
-<pre><code>## [1] 212.9072</code></pre>
 <p><span class="math inline">\(p-value &lt; .01\)</span></p>
-<p>Reject <span class="math inline">\(H_0\)</span>. There is an association between extent of binge drinking and age group in the population from which the sample was selected.</p>
+<p>Reject <span class="math inline">\(H_0\)</span>. There appears to be an association between extent of binge drinking and age group in the population from which the sample was selected.</p>
 
 </div>
 </div>
