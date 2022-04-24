@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Ch. 14 Chi Squared Test | Stat 1201 Resources</title>
+<meta name="author" content="Joyce Robbins">
+<meta name="description" content="Sections covered: 14.3 14.3 Two-Way Contingency Tables Skip: pp. 639-643, including “Testing for Homogeneity” Focus on “Testing for Independence (Lack of Association)” Notes on the chi square test...">
+<meta name="generator" content="bookdown 0.26 with bs4_book()">
+<meta property="og:title" content="Ch. 14 Chi Squared Test | Stat 1201 Resources">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://jtr13.github.io/1201/ch.-14-chi-squared-test.html">
+<meta property="og:description" content="Sections covered: 14.3 14.3 Two-Way Contingency Tables Skip: pp. 639-643, including “Testing for Homogeneity” Focus on “Testing for Independence (Lack of Association)” Notes on the chi square test...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Ch. 14 Chi Squared Test | Stat 1201 Resources">
+<meta name="twitter:description" content="Sections covered: 14.3 14.3 Two-Way Contingency Tables Skip: pp. 639-643, including “Testing for Homogeneity” Focus on “Testing for Independence (Lack of Association)” Notes on the chi square test...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.3.1/transition.js"></script><script src="libs/bs3compat-0.3.1/tabs.js"></script><script src="libs/bs3compat-0.3.1/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Stat 1201 Resources</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">1201.info</a></li>
+<li><a class="" href="ch.-1-descriptive-statistics.html">Ch. 1 Descriptive Statistics</a></li>
+<li><a class="" href="ch.-2-probability.html">Ch. 2 Probability</a></li>
+<li><a class="" href="ch.-3-discrete-distributions.html">Ch. 3 Discrete Distributions</a></li>
+<li><a class="" href="ch.-4-continuous-random-variables-and-probability-distributions.html">Ch. 4 Continuous Random Variables and Probability Distributions</a></li>
+<li><a class="" href="ch.-5-random-samples.html">Ch. 5 Random Samples</a></li>
+<li><a class="" href="ch.-6-point-estimation.html">Ch. 6 Point Estimation</a></li>
+<li><a class="" href="ch.-7-statistical-intervals-based-on-a-single-sample.html">Ch. 7 Statistical Intervals Based on a Single Sample</a></li>
+<li><a class="" href="ch.-8-tests-of-hypotheses-based-on-a-single-sample.html">Ch. 8 Tests of Hypotheses Based on a Single Sample</a></li>
+<li><a class="" href="ch.-9-inferences-based-on-two-samples.html">Ch. 9 Inferences Based on Two Samples</a></li>
+<li><a class="" href="ch.-2-conditional-probability.html">Ch. 2 Conditional Probability</a></li>
+<li><a class="" href="ch.-5-joint-probability.html">Ch. 5 Joint Probability</a></li>
+<li><a class="active" href="ch.-14-chi-squared-test.html">Ch. 14 Chi Squared Test</a></li>
+<li><a class="" href="ch.-12-linear-regression.html">Ch. 12 Linear Regression</a></li>
+<li><a class="" href="ch.-13-nonlinear-and-multiple-regression.html">Ch. 13 Nonlinear and Multiple Regression</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/jtr13/1201">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="ch.-14-chi-squared-test" class="section level1 unnumbered">
+<h1>Ch. 14 Chi Squared Test<a class="anchor" aria-label="anchor" href="#ch.-14-chi-squared-test"><i class="fas fa-link"></i></a>
+</h1>
+<p>Sections covered: 14.3</p>
+<div id="two-way-contingency-tables" class="section level2 unnumbered">
+<h2>14.3 Two-Way Contingency Tables<a class="anchor" aria-label="anchor" href="#two-way-contingency-tables"><i class="fas fa-link"></i></a>
+</h2>
+<p>Skip: pp. 639-643, including “Testing for Homogeneity”</p>
+<p>Focus on “Testing for Independence (Lack of Association)”</p>
+<p>Notes on the chi square test formula on p. 644:</p>
+<ul>
+<li><p>Write the null hypothesis as a sentence, not as in the book. (For example: “Class and Survival Status are independent.”)</p></li>
+<li><p>“estimated expected” in the textbook is the same as “expected” used in class</p></li>
+<li><p>I and J refer to the number of rows and columns in the table</p></li>
+</ul>
+</div>
+<div id="resources-2" class="section level2 unnumbered">
+<h2>Resources<a class="anchor" aria-label="anchor" href="#resources-2"><i class="fas fa-link"></i></a>
+</h2>
+<p>Chi Square Table</p>
+<div class="inline-figure"><img src="chisquare.png"></div>
+<p><a href="http://bit.ly/chisquare1201">Chi Squared Test Calculator</a></p>
+<p><a href="https://saylordotorg.github.io/text_introductory-statistics/s15-01-chi-square-tests-for-independe.html">Chi Squared Distribution Curves</a></p>
+</div>
+<div id="r-6" class="section level2 unnumbered">
+<h2>R<a class="anchor" aria-label="anchor" href="#r-6"><i class="fas fa-link"></i></a>
+</h2>
+<p>The <code><a href="https://rdrr.io/r/stats/chisq.test.html">chisq.test()</a></code> function requires that data be in matrix form:</p>
+<div class="sourceCode" id="cb221"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># p. 647, #28</span>
+<span class="va">mat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/matrix.html">matrix</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">28</span>, <span class="fl">17</span>, <span class="fl">7</span>, <span class="fl">31</span>, <span class="fl">26</span>, <span class="fl">10</span>, <span class="fl">26</span>, <span class="fl">19</span>, <span class="fl">11</span><span class="op">)</span>, nrow <span class="op">=</span> <span class="fl">3</span>, byrow <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>
+
+<span class="fu"><a href="https://rdrr.io/r/base/dimnames.html">dimnames</a></span><span class="op">(</span><span class="va">mat</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span>`Email_Provider` <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"gmail"</span>, <span class="st">"Yahoo"</span>, <span class="st">"Other"</span><span class="op">)</span>,
+                      `Cell_Phone_Provider` <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"ATT"</span>, <span class="st">"Verizon"</span>, <span class="st">"Other"</span><span class="op">)</span><span class="op">)</span>
+
+<span class="fu"><a href="https://rdrr.io/r/stats/chisq.test.html">chisq.test</a></span><span class="op">(</span><span class="va">mat</span>, correct <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></code></pre></div>
+<pre><code>## 
+##  Pearson's Chi-squared test
+## 
+## data:  mat
+## X-squared = 1.5074, df = 4, p-value = 0.8253</code></pre>
+<p>To see the expected values:</p>
+<div class="sourceCode" id="cb223"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">results</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/chisq.test.html">chisq.test</a></span><span class="op">(</span><span class="va">mat</span>, correct <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/r/base/Round.html">round</a></span><span class="op">(</span><span class="va">results</span><span class="op">$</span><span class="va">expected</span>, <span class="fl">2</span><span class="op">)</span></code></pre></div>
+<pre><code>##               Cell_Phone_Provider
+## Email_Provider   ATT Verizon Other
+##          gmail 25.26   18.42  8.32
+##          Yahoo 32.54   23.74 10.72
+##          Other 27.20   19.84  8.96</code></pre>
+<p>Mosaic plot</p>
+<div class="sourceCode" id="cb225"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/graphics/mosaicplot.html">mosaicplot</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/t.html">t</a></span><span class="op">(</span><span class="va">mat</span><span class="op">)</span>, color <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"aliceblue"</span>, <span class="st">"cornflowerblue"</span>, <span class="st">"navyblue"</span><span class="op">)</span>, main <span class="op">=</span> <span class="st">""</span><span class="op">)</span></code></pre></div>
+<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-81-1.png" width="672"></div>
+<p>See <a href="https://github.com/jtr13/codehelp/blob/master/R/mosaic.md">this tutorial</a> for more on mosaic plots.</p>
+</div>
+<div id="practice-exercises-4" class="section level2 unnumbered">
+<h2>Practice Exercises<a class="anchor" aria-label="anchor" href="#practice-exercises-4"><i class="fas fa-link"></i></a>
+</h2>
+<ol style="list-style-type: decimal">
+<li>
+<strong>(Class example)</strong> We took a survey involving 20 children and 80 adults. 1 of the children and 49 of the adults drink coffee, while the remainder do not. Does there appear to be a relationship between age (child vs. adult) and coffee drinking status (yes vs. no)?</li>
+</ol>
+<p>[Ans]</p>
+<div class="sourceCode" id="cb226"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">49</span>, <span class="fl">19</span>, <span class="fl">31</span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/r/base/dim.html">dim</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">2</span>, <span class="fl">2</span><span class="op">)</span>
+<span class="va">x</span></code></pre></div>
+<pre><code>##      [,1] [,2]
+## [1,]    1   19
+## [2,]   49   31</code></pre>
+<div class="sourceCode" id="cb228"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/chisq.test.html">chisq.test</a></span><span class="op">(</span><span class="va">x</span>, correct <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></code></pre></div>
+<pre><code>## 
+##  Pearson's Chi-squared test
+## 
+## data:  x
+## X-squared = 20.25, df = 1, p-value = 0.000006795</code></pre>
+<hr>
+<ol start="2" style="list-style-type: decimal">
+<li>
+<strong>(Hypothesis Testing) </strong> In an investigation of alcohol use among college students, each male student in a sample was categorized both according to age group and according to the number of heavy drinking episodes during the previous 30 days.</li>
+</ol>
+<div class="inline-table"><table class="table table-sm">
+<thead><tr class="header">
+<th></th>
+<th>18-23</th>
+<th>21-23</th>
+<th>
+<span class="math inline">\(\geq\)</span> 24</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td><strong>None</strong></td>
+<td>357</td>
+<td>293</td>
+<td>592</td>
+</tr>
+<tr class="even">
+<td><strong>1-2</strong></td>
+<td>218</td>
+<td>285</td>
+<td>354</td>
+</tr>
+<tr class="odd">
+<td><strong>3-4</strong></td>
+<td>184</td>
+<td>218</td>
+<td>185</td>
+</tr>
+<tr class="even">
+<td><strong><span class="math inline">\(\geq\)</span> 5</strong></td>
+<td>328</td>
+<td>331</td>
+<td>147</td>
+</tr>
+</tbody>
+</table></div>
+<p>Does there appear to be an association between extent of binge drinking and age group in the population from which the sample was selected? Carry out a test of hypotheses at significance level .01.
+(Testbook 14.25)</p>
+<p>[Ans]</p>
+<p><span class="math inline">\(α = .01\)</span></p>
+<p><span class="math inline">\(H_0\)</span>: the extent of binge drinking and age group are independent</p>
+<p><span class="math inline">\(H_A\)</span>: the extent of binge drinking and age group are not independent.</p>
+<div class="sourceCode" id="cb230"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">data</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">357</span>, <span class="fl">218</span>, <span class="fl">184</span>, <span class="fl">328</span>, <span class="fl">293</span>, <span class="fl">285</span>, <span class="fl">218</span>, <span class="fl">331</span>, <span class="fl">592</span>, <span class="fl">354</span>, <span class="fl">185</span>, <span class="fl">147</span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/r/base/dim.html">dim</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">4</span>, <span class="fl">3</span><span class="op">)</span>
+<span class="va">data</span></code></pre></div>
+<pre><code>##      [,1] [,2] [,3]
+## [1,]  357  293  592
+## [2,]  218  285  354
+## [3,]  184  218  185
+## [4,]  328  331  147</code></pre>
+<div class="sourceCode" id="cb232"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># optional: give names to the rows and columns</span>
+<span class="fu"><a href="https://rdrr.io/r/base/dimnames.html">dimnames</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span>`Episodes` <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"None"</span>, <span class="st">"1-2"</span>, <span class="st">"3-4"</span>, <span class="st">"&gt;= 5"</span><span class="op">)</span>,`Age Group` <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"18-23"</span>, <span class="st">"21-23"</span>, <span class="st">"&gt;=24"</span><span class="op">)</span><span class="op">)</span>
+
+<span class="va">data</span></code></pre></div>
+<pre><code>##         Age Group
+## Episodes 18-23 21-23 &gt;=24
+##     None   357   293  592
+##     1-2    218   285  354
+##     3-4    184   218  185
+##     &gt;= 5   328   331  147</code></pre>
+<div class="sourceCode" id="cb234"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/stats/chisq.test.html">chisq.test</a></span><span class="op">(</span><span class="va">data</span>, correct <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></code></pre></div>
+<pre><code>## 
+##  Pearson's Chi-squared test
+## 
+## data:  data
+## X-squared = 212.91, df = 6, p-value &lt; 0.00000000000000022</code></pre>
+<p>Alternatively, we can use R as a calculator.</p>
+<div class="sourceCode" id="cb236"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">total</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">data</span><span class="op">)</span>
+<span class="va">prob</span> <span class="op">&lt;-</span> <span class="va">data</span><span class="op">/</span><span class="va">total</span>
+<span class="va">expected</span> <span class="op">&lt;-</span> <span class="va">data</span> <span class="co"># initialize matrix "expected" to be the same size as "data"</span>
+
+<span class="kw">for</span> <span class="op">(</span><span class="va">i</span> <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fl">4</span><span class="op">)</span><span class="op">{</span>
+  <span class="kw">for</span><span class="op">(</span><span class="va">j</span> <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fl">3</span><span class="op">)</span><span class="op">{</span>
+    <span class="va">expected</span><span class="op">[</span><span class="va">i</span>,<span class="va">j</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">prob</span><span class="op">[</span><span class="va">i</span>,<span class="op">]</span><span class="op">)</span><span class="op">*</span><span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">prob</span><span class="op">[</span>,<span class="va">j</span><span class="op">]</span><span class="op">)</span><span class="op">*</span><span class="va">total</span>
+  <span class="op">}</span>
+<span class="op">}</span>
+
+<span class="va">chisq</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="op">(</span><span class="va">data</span><span class="op">-</span><span class="va">expected</span><span class="op">)</span><span class="op">^</span><span class="fl">2</span><span class="op">/</span><span class="va">expected</span><span class="op">)</span>
+<span class="va">chisq</span></code></pre></div>
+<pre><code>## [1] 212.9072</code></pre>
+<p><span class="math inline">\(p-value &lt; .01\)</span></p>
+<p>Reject <span class="math inline">\(H_0\)</span>. There is an association between extent of binge drinking and age group in the population from which the sample was selected.</p>
+
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="ch.-5-joint-probability.html">Ch. 5 Joint Probability</a></div>
+<div class="next"><a href="ch.-12-linear-regression.html">Ch. 12 Linear Regression</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#ch.-14-chi-squared-test">Ch. 14 Chi Squared Test</a></li>
+<li><a class="nav-link" href="#two-way-contingency-tables">14.3 Two-Way Contingency Tables</a></li>
+<li><a class="nav-link" href="#resources-2">Resources</a></li>
+<li><a class="nav-link" href="#r-6">R</a></li>
+<li><a class="nav-link" href="#practice-exercises-4">Practice Exercises</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/jtr13/1201/blob/master/Chapter14.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/jtr13/1201/edit/master/Chapter14.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Stat 1201 Resources</strong>" was written by Joyce Robbins. It was last built on 2022-04-24.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
+</body>
+</html>

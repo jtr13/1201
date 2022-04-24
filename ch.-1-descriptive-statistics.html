@@ -56,7 +56,9 @@
 <li><a class="" href="ch.-9-inferences-based-on-two-samples.html">Ch. 9 Inferences Based on Two Samples</a></li>
 <li><a class="" href="ch.-2-conditional-probability.html">Ch. 2 Conditional Probability</a></li>
 <li><a class="" href="ch.-5-joint-probability.html">Ch. 5 Joint Probability</a></li>
+<li><a class="" href="ch.-14-chi-squared-test.html">Ch. 14 Chi Squared Test</a></li>
 <li><a class="" href="ch.-12-linear-regression.html">Ch. 12 Linear Regression</a></li>
+<li><a class="" href="ch.-13-nonlinear-and-multiple-regression.html">Ch. 13 Nonlinear and Multiple Regression</a></li>
 </ul>
 
         <div class="book-extra">
@@ -75,12 +77,12 @@
 <p><strong>Ex:</strong> To generate a sample of 6 numbers from the integers between 1 and 20:</p>
 <div class="sourceCode" id="cb26"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">20</span>, size  <span class="op">=</span> <span class="fl">6</span><span class="op">)</span></code></pre></div>
-<pre><code>## [1]  5  6 20 12 17 11</code></pre>
+<pre><code>## [1]  3  2  4 11  6 12</code></pre>
 <p>Note: this syntax assumes that there is no replacement (it won’t pick the same number twice).
 If you want to sample <em>with</em> replacement use the following:</p>
 <div class="sourceCode" id="cb28"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span>x <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">20</span>, size <span class="op">=</span> <span class="fl">8</span>, replace <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></code></pre></div>
-<pre><code>## [1]  9 14  5 16 14 15  9 11</code></pre>
+<pre><code>## [1]  8 11  5 15 20  4  3  8</code></pre>
 </div>
 <div id="pictorial-and-tabular-methods-in-descriptive-statistics" class="section level2 unnumbered">
 <h2>1.2 Pictorial and Tabular Methods in Descriptive Statistics<a class="anchor" aria-label="anchor" href="#pictorial-and-tabular-methods-in-descriptive-statistics"><i class="fas fa-link"></i></a>
@@ -366,7 +368,7 @@ We use an almost identical syntax to generate density histograms, but add a cond
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Stat 1201 Resources</strong>" was written by Joyce Robbins. It was last built on 2022-04-23.</p>
+    <p>"<strong>Stat 1201 Resources</strong>" was written by Joyce Robbins. It was last built on 2022-04-24.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
