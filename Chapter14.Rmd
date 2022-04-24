@@ -108,8 +108,9 @@ chisq.test(data, correct = FALSE)
 ```
 
 
-Alternatively, we can use R as a calculator.
-```{r}
+
+```{r, eval=FALSE, echo=FALSE}
+# Alternatively, we can use R as a calculator.
 total <- sum(data)
 prob <- data/total
 expected <- data # initialize matrix "expected" to be the same size as "data"
@@ -125,6 +126,6 @@ chisq
 ```
 $p-value < .01$
 
-Reject $H_0$. There is an association between extent of binge drinking and age group in the population from which the sample was selected.
+Reject $H_0$. There appears to be an association between extent of binge drinking and age group in the population from which the sample was selected.
 
 
