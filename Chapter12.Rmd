@@ -6,6 +6,8 @@ Sections covered: 12.1, 12.2, 12.5
 
 ## 12.2 Estimating Model Parameters {-}
 
+Skip the 2nd and 3rd formulas on p. 502 (estimate of $\sigma^2$ and computational formula for SSE at the bottom of the page).
+
 ### Resources {-}
 
 Interactive Visualization: [Linear Regression](https://jtr13.github.io/D3/BestFittingLine.html) Try fitting the least squares line to a set of random data and check your answer ([and another one](https://www.geogebra.org/m/xC6zq7Zv)).
