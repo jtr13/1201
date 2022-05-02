@@ -21,7 +21,7 @@ Notes on the chi square test formula on p. 644:
 
 Chi Square Table
 
-![](chisquare.png)
+![](chisquare.png){width=85%}
 
 
 [Chi Squared Test Calculator](http://bit.ly/chisquare1201)
