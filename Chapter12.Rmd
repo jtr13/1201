@@ -62,9 +62,9 @@ y <- c(46, 48, 51, 52.1, 54, 52, 59, 58.7, 61.6, 64, 61.4, 54.6, 58.8, 58)
 
 mod <- lm(y ~ x)
 
-SSE <- anova(mod)$`Sum Sq`[1]
+SSR <- anova(mod)$`Sum Sq`[1]
 SST <- anova(mod)$`Sum Sq`[1] + anova(mod)$`Sum Sq`[2]
-1 - (SSE/SST)
+SSR/SST
 ```
 
 Or (simply):
