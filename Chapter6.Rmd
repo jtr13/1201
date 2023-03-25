@@ -6,7 +6,7 @@ Sections covered: 6.1, 6.2 (MLE only)
 
 Skip everything beginning with "Some Complications" on p. 257
 
-## 6.2 Methods of Point Estimation
+## 6.2 Methods of Point Estimation {-}
 
 Skip "The Method of Moments" pp. 264-266
 
