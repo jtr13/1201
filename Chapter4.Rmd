@@ -1,6 +1,6 @@
 # Ch. 4 Continuous Random Variables and Probability Distributions {-}
 
-Sections covered: 4.1, 4.2, 4.3
+Sections covered: 4.1, 4.2, 4.3, 4.4 (exponential only)
 
 ## 4.1 Probability density functions {-}
 
