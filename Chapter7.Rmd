@@ -20,8 +20,5 @@ You may use the method from class $n = \frac{4z^2\hat{p}\hat{q}}{w^2}$ for the m
 
 Use the $t$ distributions.
 
-Skip "A Prediction Interval for a Single Future Value" p. 299 to the end of the section
-
-This is a test.
-
+Skip "A Prediction Interval for a Single Future Value" p. 299 to the end of the section.
 
