@@ -1,6 +1,6 @@
 book_filename: "STAT1201-resource"
-edit: https://github.com/jtr13/1201/edit/master/%s
-view: https://github.com/jtr13/1201/blob/master/%s
+edit: https://github.com/jtr13/1201/edit/main/%s
+view: https://github.com/jtr13/1201/blob/main/%s
 rmd_files: ["index.Rmd", # Introduction {-}
 #  "Syllabus.Rmd", # Syllabus {-}
   "Chapter1.Rmd", # Ch. 1 Descriptive Statistics {-}
