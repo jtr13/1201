@@ -1,6 +1,6 @@
 # Ch. 8 Tests of Hypotheses Based on a Single Sample {-}
 
-Sections covered: 8.1, 8.2, 8.3, 8.4
+Sections covered: 8.1, 8.2, 8.3, 8.4, 8.5
 
 ## 8.1 Hypotheses and Test Procedures {-}
 
@@ -23,6 +23,9 @@ Skip: $\beta$ and Sample Size Determination (p. 338) to end of section
 
 Skip: $\beta$ and Sample Size Determination (pp. 348-349)
 
+## 8.5 Further Aspects of Hypothesis Testing {-}
+
+Skip: The Likelihood Ratio Principle (pp. 355-356)
 
 ## Practice Exercises {-}
 **$1.$ (One sample test, Values given)** We wish to test whether a scale needs to be recalibrated. If it’s working, a 10 pound weight should weigh 10 pounds. We decide to test it by weighing the same weight, which we know to be precisely 10 pounds, 25 times. We know the weights from this scale are normally distributed and independent, with a true standard deviation of $\sigma$ = 1. Our sample mean (x) is 9.85. Should we conclude that recalibration is necessary x (that is, the scale is off) or not necessary (the scale isn’t conclusively off)? 
