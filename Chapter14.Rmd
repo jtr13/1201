@@ -19,14 +19,16 @@ Notes on the chi square test formula on p. 644:
 
 ## Resources {-}
 
+["Math is Fun" Chi Square Calculator](https://www.mathsisfun.com/data/chi-square-calculator.html)
+
+["Social Science Statistics" Chi Square Calculator](http://bit.ly/chisquare1201](https://www.socscistatistics.com/tests/chisquare2/default2.aspx)
+
+[Chi Squared Distribution Curves](https://saylordotorg.github.io/text_introductory-statistics/s15-01-chi-square-tests-for-independe.html)
+
 Chi Square Table
 
 ![](chisquare.png){width=85%}
 
-
-[Chi Squared Test Calculator](http://bit.ly/chisquare1201)
-
-[Chi Squared Distribution Curves](https://saylordotorg.github.io/text_introductory-statistics/s15-01-chi-square-tests-for-independe.html)
 
 ## R {-}
 
