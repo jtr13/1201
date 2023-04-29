@@ -8,7 +8,7 @@ Sections covered: 12.1, 12.2, 12.5
 
 Formulas to know from p. 498: 
 
-$b_1 = \dfrac{\sum(x_i -\overline{x})(y_i - \overline{y})}{\sum(x_i - \overline{x})^2} = \frac{S_xy}{S_xx}$ and $b_0 = \overline{y} - b_1 \overline{x}$
+$b_1 = \dfrac{\sum(x_i -\overline{x})(y_i - \overline{y})}{\sum(x_i - \overline{x})^2} = \frac{S_{xy}}{S_{xx}}$ and $b_0 = \overline{y} - b_1 \overline{x}$
 
 Formula to know from p. 502:
 
