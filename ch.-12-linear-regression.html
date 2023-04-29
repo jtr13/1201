@@ -6,15 +6,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Ch. 12 Linear Regression | Stat 1201 Resources</title>
 <meta name="author" content="Joyce Robbins">
-<meta name="description" content="Sections covered: 12.1, 12.2, 12.5 12.1 The Simple Linear Regression Model  12.2 Estimating Model Parameters Skip the 2nd and 3rd formulas on p. 502 (estimate of \(\sigma^2\) and computational...">
+<meta name="description" content="Sections covered: 12.1, 12.2, 12.5 12.1 The Simple Linear Regression Model  12.2 Estimating Model Parameters Formulas to know from p. 498: \(b_1 = \dfrac{\sum(x_i -\overline{x})(y_i -...">
 <meta name="generator" content="bookdown 0.33 with bs4_book()">
 <meta property="og:title" content="Ch. 12 Linear Regression | Stat 1201 Resources">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://jtr13.github.io/1201/ch.-12-linear-regression.html">
-<meta property="og:description" content="Sections covered: 12.1, 12.2, 12.5 12.1 The Simple Linear Regression Model  12.2 Estimating Model Parameters Skip the 2nd and 3rd formulas on p. 502 (estimate of \(\sigma^2\) and computational...">
+<meta property="og:description" content="Sections covered: 12.1, 12.2, 12.5 12.1 The Simple Linear Regression Model  12.2 Estimating Model Parameters Formulas to know from p. 498: \(b_1 = \dfrac{\sum(x_i -\overline{x})(y_i -...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ch. 12 Linear Regression | Stat 1201 Resources">
-<meta name="twitter:description" content="Sections covered: 12.1, 12.2, 12.5 12.1 The Simple Linear Regression Model  12.2 Estimating Model Parameters Skip the 2nd and 3rd formulas on p. 502 (estimate of \(\sigma^2\) and computational...">
+<meta name="twitter:description" content="Sections covered: 12.1, 12.2, 12.5 12.1 The Simple Linear Regression Model  12.2 Estimating Model Parameters Formulas to know from p. 498: \(b_1 = \dfrac{\sum(x_i -\overline{x})(y_i -...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.2/transition.js"></script><script src="libs/bs3compat-0.4.2/tabs.js"></script><script src="libs/bs3compat-0.4.2/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -76,7 +76,14 @@
 <div id="estimating-model-parameters" class="section level2 unnumbered">
 <h2>12.2 Estimating Model Parameters<a class="anchor" aria-label="anchor" href="#estimating-model-parameters"><i class="fas fa-link"></i></a>
 </h2>
-<p>Skip the 2nd and 3rd formulas on p. 502 (estimate of <span class="math inline">\(\sigma^2\)</span> and computational formula for SSE at the bottom of the page).</p>
+<p>Formulas to know from p. 498:</p>
+<p><span class="math inline">\(b_1 = \dfrac{\sum(x_i -\overline{x})(y_i - \overline{y})}{\sum(x_i - \overline{x})^2}\)</span> and <span class="math inline">\(b_0 = \overline{y} - b_1 \overline{x}\)</span></p>
+<p>Formula to know from p. 502:</p>
+<p><span class="math inline">\(SSE = \sum(y_i - \hat{y_i})^2\)</span></p>
+<p>Formulas to know from p. 504:</p>
+<p><span class="math inline">\(SST = \sum(y_i - \overline{y})^2\)</span> and <span class="math inline">\(r^2 = 1 - \frac{SSE}{SST}\)</span></p>
+<p>Formulas to know from p. 505:</p>
+<p><span class="math inline">\(SSR = \sum(\hat{y_i} - \overline{y})^2\)</span> and <span class="math inline">\(SSE + SSR = SST\)</span></p>
 <div id="resources-3" class="section level3 unnumbered">
 <h3>Resources<a class="anchor" aria-label="anchor" href="#resources-3"><i class="fas fa-link"></i></a>
 </h3>
@@ -292,7 +299,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Stat 1201 Resources</strong>" was written by Joyce Robbins. It was last built on 2023-04-16.</p>
+    <p>"<strong>Stat 1201 Resources</strong>" was written by Joyce Robbins. It was last built on 2023-04-29.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
