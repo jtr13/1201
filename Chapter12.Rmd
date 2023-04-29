@@ -6,7 +6,23 @@ Sections covered: 12.1, 12.2, 12.5
 
 ## 12.2 Estimating Model Parameters {-}
 
-Skip the 2nd and 3rd formulas on p. 502 (estimate of $\sigma^2$ and computational formula for SSE at the bottom of the page).
+Formulas to know from p. 498: 
+
+$b_1 = \dfrac{\sum(x_i -\overline{x})(y_i - \overline{y})}{\sum(x_i - \overline{x})^2}$ and $b_0 = \overline{y} - b_1 \overline{x}$
+
+Formula to know from p. 502:
+
+$SSE = \sum(y_i - \hat{y_i})^2$
+
+Formulas to know from p. 504:
+
+$SST = \sum(y_i - \overline{y})^2$ and $r^2 = 1 - \frac{SSE}{SST}$
+
+Formulas to know from p. 505:
+
+$SSR = \sum(\hat{y_i} - \overline{y})^2$ and $SSE + SSR = SST$
+
+
 
 ### Resources {-}
 
