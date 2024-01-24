@@ -41,6 +41,10 @@ My advice:
 * Try solving problems in multiple ways. 
 
 * Learn from a variety of sources: class, textbook, *Cartoon Guide*, etc. If you find differences, ask.
+
+## Using R without installing it {-}
+
+[https://rdrr.io/snippets/](https://rdrr.io/snippets/){target="_blank"}
  
 ## Installing R {-}
 
@@ -100,15 +104,11 @@ Working with vectors:
 x <- 1:5
 x
 sum(x)
-cumsum(x)
-px <- x*.05 + .05
-px
-```
 
-Expected value:
-```{r}
-x*px
-sum(x*px)
+y <- c(3, 9, 11, 15, 21)
+mean(y)
+median(y)
+sd(y) 
 ```
 
 ### More examples {-}
