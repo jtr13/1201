@@ -45,6 +45,7 @@
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
         <ul class="book-toc list-unstyled">
 <li><a class="" href="index.html">1201.info</a></li>
+<li><a class="" href="getting-started-with-r.html">Getting Started with R</a></li>
 <li><a class="" href="ch.-1-descriptive-statistics.html">Ch. 1 Descriptive Statistics</a></li>
 <li><a class="active" href="ch.-2-probability.html">Ch. 2 Probability</a></li>
 <li><a class="" href="ch.-3-discrete-distributions.html">Ch. 3 Discrete Distributions</a></li>
@@ -91,22 +92,22 @@
 <h3>R<a class="anchor" aria-label="anchor" href="#r"><i class="fas fa-link"></i></a>
 </h3>
 <p><strong>Factorial</strong></p>
-<div class="sourceCode" id="cb73"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb77"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Special.html">factorial</a></span><span class="op">(</span><span class="fl">5</span><span class="op">)</span></span></code></pre></div>
 <pre><code>## [1] 120</code></pre>
 <p><strong>Combinations</strong></p>
 <p>“5 choose 2” = choose 2 items out of 5</p>
-<div class="sourceCode" id="cb75"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb79"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Special.html">choose</a></span><span class="op">(</span><span class="fl">5</span>, <span class="fl">2</span><span class="op">)</span></span></code></pre></div>
 <pre><code>## [1] 10</code></pre>
 <p><strong>Permutations</strong></p>
 <p>There is no built-in function to calculate permutations. You can multiply the number of combinations by <em>k!</em>.</p>
 <p>Ex. Number of permutations of size 2 that can be formed from 5 distinct items:</p>
-<div class="sourceCode" id="cb77"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb81"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Special.html">choose</a></span><span class="op">(</span><span class="fl">5</span>,<span class="fl">2</span><span class="op">)</span><span class="op">*</span><span class="fu"><a href="https://rdrr.io/r/base/Special.html">factorial</a></span><span class="op">(</span><span class="fl">2</span><span class="op">)</span></span></code></pre></div>
 <pre><code>## [1] 20</code></pre>
 <p>You can create your own function to do this:</p>
-<div class="sourceCode" id="cb79"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb83"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">perm</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">n</span>, <span class="va">k</span><span class="op">)</span> <span class="op">{</span><span class="fu"><a href="https://rdrr.io/r/base/Special.html">choose</a></span><span class="op">(</span><span class="va">n</span>,<span class="va">k</span><span class="op">)</span><span class="op">*</span><span class="fu"><a href="https://rdrr.io/r/base/Special.html">factorial</a></span><span class="op">(</span><span class="va">k</span><span class="op">)</span><span class="op">}</span></span>
 <span></span>
 <span><span class="fu">perm</span><span class="op">(</span><span class="fl">5</span>,<span class="fl">2</span><span class="op">)</span></span></code></pre></div>
