@@ -14,7 +14,7 @@ The bare minimum:
 You can create vectors of numbers using this format:
 
 ```{r}
-x <- c(10, 12, 15, 20, 21, 22, 35, 45, 50)
+x <- c(10, 12, 15, 20, 21, 22, 35, 45, 50)      # click to copy --> 
 ```
 
 Then you can use R functions to find numerical and graphical summaries of the vectors (collections of numbers):
