@@ -1,23 +1,11 @@
 # Ch. 1 Descriptive Statistics {-} 
 
-Sections covered: all
 
-## 1.1 Populations, Samples, and Processes {-}
-
-To generate a random sample of data, we use the function `sample()`. 
-
-**Ex:** To generate a sample of 6 numbers from the integers between 1 and 20:
-
-```{r}
-sample(x = 1:20, size  = 6)
+```{r, echo = FALSE}
+knitr::opts_chunk$set(out.width = '65%', fig.align = 'center')
 ```
 
-Note: this syntax assumes that there is no replacement (it won't pick the same number twice).
-If you want to sample *with* replacement use the following:
-
-```{r}
-sample(x = 1:20, size = 8, replace = TRUE)
-```
+Sections covered: all (skim 1.1)
 
 ## 1.2 Pictorial and Tabular Methods in Descriptive Statistics {-}
 
@@ -26,28 +14,38 @@ Skip: Example 1.7, p. 15 (double-digit leaves)
 Skip: "Dotplots," pp. 15-16
 
 
-* Stem-and-leaf display:
+### Stem-and-leaf plots {-}
+
 **Ex:** The following are the listing prices (in thousands of $) of one-bedroom apartments in Morningside Heights in 2016:
 379, 425, 450, 450, 499, 529, 535, 535, 545, 599, 665, 675, 699, 699, 725, 725, 745, 799
+
 Draw a stem an leaf plot of this data:
 
-1. Create a new variable (we'll cal it "prices"). _Note: we always use the syntax <- c() to generate new variables._
+1. Create a new variable (we'll call it "prices"). *Note: we use the syntax <- c() to generate new vectors.*
+
 ```{r}
 prices <- c(379, 425, 450, 450, 499, 529, 535, 535, 545, 599, 665,
             675, 699, 699, 725, 725, 745, 799)
 ```
 
 2. Draw a stem and leaf plot
+
 ```{r}
 prices <- c(379, 425, 450, 450, 499, 529, 535, 535, 545, 599, 665,
             675, 699, 699, 725, 725, 745, 799)
 stem(prices)
 ```
 
-Note that histograms are drawn with *unbinned* data.  R does the binning in the process of drawing the histogram.
+The `scale` parameter will change the number of rows by the factor specified:
+
+```{r}
+stem(prices, scale = 2)
+stem(prices, scale = .5)
+```
 
 
-* Frequency histogram:
+### Frequency histogram  {-}
+
 If you want to create a **frequency histogram** of this data you use the following:
 
 ```{r}
@@ -56,10 +54,12 @@ prices <- c(379, 425, 450, 450, 499, 529, 535, 535, 545, 599, 665,
 
 hist(prices)
 ```
-_Note: histograms are drawn with unbinned data. R does the binning in the process of drawing the histogram. This means that the program chooses the size of the bins for you_
+
+*Note: histograms are drawn with unbinned data. R does the binning in the process of drawing the histogram. This means that the program chooses the size of the bins for you.*
 
 
 To add specific bin sizes and colors to your histogram, you can use the following syntax:
+
 ```{r}
 prices <- c(379, 425, 450, 450, 499, 529, 535, 535, 545, 599, 665,
             675, 699, 699, 725, 725, 745, 799)
@@ -67,8 +67,9 @@ hist(prices, breaks = c(300, 400, 500, 600, 700, 800),
      col = "lightblue")
 ```
 
-* Density histogram: 
-We use an almost identical syntax to generate density histograms, but add a condition (freq=FALSE):
+### Density histogram  {-}
+
+We use an almost identical syntax to generate density histograms, but add the parameter `freq=FALSE` -- that is, not a frequency histogram.
 
 ```{r}
 prices <- c(379, 425, 450, 450, 499, 529, 535, 535, 545, 599, 665,
@@ -80,46 +81,7 @@ hist(prices, freq = FALSE,
 
 ```
 
-Cumulative frequency histogram
-
-For this type of histogram, we need access to the bin counts, in order to calculate the cumulative frequencies. The `hist()` function returns these values, if assigned to a variable:
-
-```{r}
-x <- c(1, 1, 1, 1, 1, 5, 5, 5, 7, 7, 8)
-myhistdata <- hist(x)
-myhistdata
-```
-
-The particular information we want is `$counts`:
-
-```{r}
-myhistdata$counts
-```
-
-The cumulative frequencies are:
-
-```{r}
-cumsum(myhistdata$counts)
-```
-
-To plot them, we need to use a bar chart, not a histogram, since we already have the y-axis values:
-
-```{r}
-barplot(cumsum(myhistdata$counts))
-```
-
-Cleaned up:
-
-```{r}
-barplot(cumsum(myhistdata$counts),
-        col = "lightblue", 
-        space = 0,  # remove gaps between bars
-        las = 1, # make all tick mark labels horizontal
-        ylim = c(0, 12), # make the y-axis longer
-        names.arg = myhistdata$mids
-        )
-```
-
+(`las = 1` makes all the labels horizontal.)
 
 
 ## 1.3 Measures of location {-}
@@ -142,7 +104,7 @@ median(prices)
 quantile(prices)
 
 ## trimmed mean
-mean(prices, trim = .1) ## 10% trimmed mean
+mean(prices, trim = .1) ## 10% trimmed off each end
 ```
 
 ## 1.4 Measures of variability {-}
@@ -150,6 +112,8 @@ mean(prices, trim = .1) ## 10% trimmed mean
 Skip: extreme outliers (p. 42) 
 
 We will define outliers for boxplots to be observations that are more than 1.5 times the fourth spread from the closest fourth. They may be indicated with either a solid or open circle (in contrast to the book which uses one for mild outliers and the other for extreme outliers.)
+
+### Numerical summaries  {-}
 
 * Sample variance:
 
@@ -168,7 +132,6 @@ sqrt(var(prices))
 sd(prices)
 ```
 
-
 * Five number summary 
 
 (min, lower-hinge, median, upper-hinge, max)
@@ -179,7 +142,7 @@ fivenum(prices)
 
 If you want to generate a horizontal boxplot, use the following 
 
-* Boxplots  
+### Boxplots {-}
 
 ```{r}
 prices <- c(379, 425, 450, 450, 499, 529, 535, 535, 545,
@@ -190,21 +153,17 @@ boxplot(prices)
 boxplot(prices, horizontal = TRUE)
 ```
 
-(_Note: you can also add a color as done below_):
-```{r}
-boxplot(prices, horizontal = TRUE, col='pink')
-```
+* Comparitive boxplots
+
+A simple means to create multiple boxplots is to list the vectors that you wish to display. Note that to label the boxplots, use `names = `.
 
 
-Now, to create a comparative boxplot of two datasets, we will create a "dataframe" (2d array with two dataset values). Then, we will create a boxplot from this "joined" dataset.
 ```{r}
 PTSD <- c(10, 20, 25, 28, 31, 35, 37, 38, 38, 39, 39, 42, 46)
 
 Healthy <- c(23, 39, 40, 41, 43, 47, 51, 58, 63, 66, 67, 69, 72)
 
-df <- data.frame(Healthy, PTSD)
-
-boxplot(df, horizontal = TRUE)
+boxplot(PTSD, Healthy, names = c("PTSD", "Healthy"), horizontal = TRUE)
 ```
 
 ## Practice Exercises {-}
@@ -233,7 +192,9 @@ h <- hist(ToothGrowth$len)
 h$counts <- cumsum(h$counts)
 plot(h)
 ```
-### Syntax explanation
+
+### Summary of R functions {-}
+
 `head()`: directly see how the dataset looks; useful when the dataset is large and it's difficult to display all rows and columns together.
 
 `fivenum()`: returns the minimum value, lower fourth, median, upper fourth, and maximum value
