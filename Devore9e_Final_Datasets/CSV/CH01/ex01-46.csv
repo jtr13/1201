@@ -25,9 +25,6 @@ temps,type
 1.52,Control
 0.53,Control
 1.90,Control
-2.86,Control
-2.31,Control
-1.91,Control
 2.57,Warmer
 2.60,Warmer
 1.93,Warmer
@@ -39,3 +36,6 @@ temps,type
 2.74,Warmer
 2.53,Warmer
 2.13,Warmer
+2.86,Warmer
+2.31,Warmer
+1.91,Warmer
