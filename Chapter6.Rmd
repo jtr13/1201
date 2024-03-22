@@ -1,17 +1,19 @@
 # Ch. 6 Point Estimation {-}
 
-Sections covered: 6.1, 6.2 (MLE only)
+Sections covered: 6.1
 
 ## 6.1 Some General Concepts of Point Estimation {-}
 
 Skip everything beginning with "Some Complications" on p. 257
 
+
+```{r, eval = FALSE, echo = FALSE}
 ## 6.2 Methods of Point Estimation {-}
 
 Skip "The Method of Moments" pp. 264-266
 
 Skip from the beginning of Example 6.17 on p. 268 to the end of the section.
-
+```
 
 
 
