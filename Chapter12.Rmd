@@ -97,7 +97,7 @@ Skip: "Inferences About the Population Correlation Coefficient" (p. 530) *to end
 
 ### Resources {-}
 
-Interactive visualization: [Correlation Coefficient](https://jtr13.github.io/D3/CorrelationCoefficient.html) (add and remove points)
+Interactive visualization: [Correlation Coefficient](https://1201.info/ch.-5-joint-probability.html#interactive) (add and remove points)
 
 Interactive visualization: [Interpreting Correlations](https://rpsychologist.com/d3/correlation/) [contributed by Dario G.]
 
