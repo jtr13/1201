@@ -7,7 +7,7 @@
 <title>Ch. 4 Continuous Random Variables and Probability Distributions | Stat 1201 Resources</title>
 <meta name="author" content="Joyce Robbins">
 <meta name="description" content="Sections covered: 4.1, 4.2, 4.3, 4.4 (exponential only) 4.1 Probability density functions  R Simulating a uniform distribution Randomly choose one number from the distribution: \(f(x) = .2\) for...">
-<meta name="generator" content="bookdown 0.39 with bs4_book()">
+<meta name="generator" content="bookdown 0.42 with bs4_book()">
 <meta property="og:title" content="Ch. 4 Continuous Random Variables and Probability Distributions | Stat 1201 Resources">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://jtr13.github.io/1201/ch.-4-continuous-random-variables-and-probability-distributions.html">
@@ -17,8 +17,8 @@
 <meta name="twitter:description" content="Sections covered: 4.1, 4.2, 4.3, 4.4 (exponential only) 4.1 Probability density functions  R Simulating a uniform distribution Randomly choose one number from the distribution: \(f(x) = .2\) for...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.7.0/transition.js"></script><script src="libs/bs3compat-0.7.0/tabs.js"></script><script src="libs/bs3compat-0.7.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
-<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   </style>
@@ -64,15 +64,15 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="ch.-4-continuous-random-variables-and-probability-distributions" class="section level1 unnumbered" number="">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="ch.-4-continuous-random-variables-and-probability-distributions" class="section level1 unnumbered">
 <h1>Ch. 4 Continuous Random Variables and Probability Distributions<a class="anchor" aria-label="anchor" href="#ch.-4-continuous-random-variables-and-probability-distributions"><i class="fas fa-link"></i></a>
 </h1>
 <p>Sections covered: 4.1, 4.2, 4.3, 4.4 (exponential only)</p>
-<div id="probability-density-functions" class="section level2 unnumbered" number="">
+<div id="probability-density-functions" class="section level2 unnumbered">
 <h2>4.1 Probability density functions<a class="anchor" aria-label="anchor" href="#probability-density-functions"><i class="fas fa-link"></i></a>
 </h2>
 </div>
-<div id="r-2" class="section level2 unnumbered" number="">
+<div id="r-2" class="section level2 unnumbered">
 <h2>R<a class="anchor" aria-label="anchor" href="#r-2"><i class="fas fa-link"></i></a>
 </h2>
 <p>Simulating a uniform distribution</p>
@@ -80,18 +80,18 @@
 <p><span class="math inline">\(f(x) = .2\)</span> for <span class="math inline">\(0 \leq x \leq 5\)</span>, 0 otherwise.</p>
 <div class="sourceCode" id="cb161"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/Uniform.html">runif</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">1</span>, min <span class="op">=</span> <span class="fl">0</span>, max <span class="op">=</span> <span class="fl">5</span><span class="op">)</span></span></code></pre></div>
-<pre><code>## [1] 1.201369</code></pre>
+<pre><code>## [1] 0.267783</code></pre>
 <p>Take the average of 1000 picks:</p>
 <div class="sourceCode" id="cb163"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Uniform.html">runif</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">1000</span>, min <span class="op">=</span> <span class="fl">0</span>, max <span class="op">=</span> <span class="fl">5</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></code></pre></div>
-<pre><code>## [1] 2.475984</code></pre>
+<pre><code>## [1] 2.453614</code></pre>
 <p>Draw a histogram of the 1000 picks:</p>
 <div class="sourceCode" id="cb165"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/graphics/hist.html">hist</a></span><span class="op">(</span><span class="va">x</span>, las <span class="op">=</span> <span class="fl">1</span>, col <span class="op">=</span> <span class="st">"lightblue"</span><span class="op">)</span></span></code></pre></div>
 <div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-47-1.png" width="65%" style="display: block; margin: auto;"></div>
 </div>
-<div id="cumulative-distribution-functions-and-expected-values" class="section level2 unnumbered" number="">
+<div id="cumulative-distribution-functions-and-expected-values" class="section level2 unnumbered">
 <h2>4.2 Cumulative Distribution Functions and Expected Values<a class="anchor" aria-label="anchor" href="#cumulative-distribution-functions-and-expected-values"><i class="fas fa-link"></i></a>
 </h2>
 <p>Using R to help with calculations in Example 4.7, p. 149</p>
@@ -103,7 +103,7 @@
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/logical.html">F</a></span><span class="op">(</span><span class="fl">1.5</span><span class="op">)</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/base/logical.html">F</a></span><span class="op">(</span><span class="fl">1</span><span class="op">)</span></span></code></pre></div>
 <pre><code>## [1] 0.296875</code></pre>
 </div>
-<div id="the-normal-distribution" class="section level2 unnumbered" number="">
+<div id="the-normal-distribution" class="section level2 unnumbered">
 <h2>4.3 The Normal Distribution<a class="anchor" aria-label="anchor" href="#the-normal-distribution"><i class="fas fa-link"></i></a>
 </h2>
 <p><a href="http://www.intmath.com/counting-probability/normal-distribution-graph-interactive.php">Interactive normal distribution</a> – change <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\sigma\)</span> and see what happens.</p>
@@ -111,7 +111,7 @@
 <p><a href="https://www2.ccrb.cuhk.edu.hk/stat/other/normal.htm">Online normal distribution lookup</a> – enter <span class="math inline">\(z\)</span> and it will calculate <span class="math inline">\(F(z) = P(Z \leq z)\)</span>.</p>
 <p>There are many online normal distribution calculators. Note that often you are given the choice of finding <span class="math inline">\(P(Z \leq z)\)</span>, <span class="math inline">\(P(Z \geq z)\)</span>, <span class="math inline">\(P(0 \leq Z \leq z)\)</span>, etc., so be careful. To be consistent with the normal tables in the textbook / class, choose <span class="math inline">\(P(Z \leq z)\)</span>.</p>
 <p>Due to rounding differences in <span class="math inline">\(z\)</span> and <span class="math inline">\(P(Z \leq z)\)</span>, solutions using technology will vary from those using a normal table. Both methods are fine.</p>
-<div id="r-3" class="section level3 unnumbered" number="">
+<div id="r-3" class="section level3 unnumbered">
 <h3>R<a class="anchor" aria-label="anchor" href="#r-3"><i class="fas fa-link"></i></a>
 </h3>
 <p><span class="math inline">\(P(Z \leq -1)\)</span></p>
@@ -145,7 +145,7 @@
 <pre><code>## [1] 41.34898</code></pre>
 </div>
 </div>
-<div id="practice-exercises-2" class="section level2 unnumbered" number="">
+<div id="practice-exercises-2" class="section level2 unnumbered">
 <h2>Practice Exercises<a class="anchor" aria-label="anchor" href="#practice-exercises-2"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
@@ -228,7 +228,7 @@ aid, sothat <em>p = .25</em>. What is the probability that at most 10 students r
 <span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html">pnorm</a></span><span class="op">(</span><span class="op">(</span><span class="fl">10</span> <span class="op">+</span> <span class="fl">.5</span> <span class="op">-</span> <span class="fl">50</span><span class="op">*</span><span class="fl">.25</span><span class="op">)</span><span class="op">/</span><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html">sqrt</a></span><span class="op">(</span><span class="fl">50</span><span class="op">*</span><span class="fl">.25</span><span class="op">*</span><span class="fl">.75</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <pre><code>## [1] 0.2568146</code></pre>
 </div>
-<div id="extra-practice-chapters-1---4" class="section level2 unnumbered" number="">
+<div id="extra-practice-chapters-1---4" class="section level2 unnumbered">
 <h2>Extra Practice Chapters 1 - 4<a class="anchor" aria-label="anchor" href="#extra-practice-chapters-1---4"><i class="fas fa-link"></i></a>
 </h2>
 <p><a href="https://github.com/jtr13/1201/blob/master/pdfs/ExtraPractice1-Questions.pdf" target="_blank">Questions</a></p>
@@ -268,7 +268,7 @@ aid, sothat <em>p = .25</em>. What is the probability that at most 10 students r
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Stat 1201 Resources</strong>" was written by Joyce Robbins. It was last built on 2024-04-27.</p>
+    <p>"<strong>Stat 1201 Resources</strong>" was written by Joyce Robbins. It was last built on 2025-02-14.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
