@@ -16,18 +16,48 @@ $f(x) = .2$ for $0 \leq x \leq 5$, 0 otherwise.
 runif(n = 1, min = 0, max = 5)
 ```
 
-Take the average of 1000 picks:
+To take 1000 picks (to give you an estimate of the mean) from a distribution with the previous pdf:
 
 ```{r}
 x <- runif(n = 1000, min = 0, max = 5)
 mean(x)
 ```
 
-Draw a histogram of the 1000 picks:
+To draw a histogram of the 1000 picks:
 ```{r}
 hist(x, las = 1, col = "lightblue")
 ```
+_Note: this histogram won't show a perfect uniform distribution because it would need more picks (infinity) to perfectly resemble a histogram._
 
+If you wanted to calculate the uniform probability density function in an interval (1 to 3 in this example) for a sample of values (numbers from 0 to 4 in this example) you can use the following:
+```{r}
+x <- 0:4 
+dunif(x, min = 1, max = 3)
+```
+_Note: as seen in the output, for those numbers that aren't in the interval (0 and 4), the resulting probabilities were 0. For the rest, they were 0.5 _
+
+**Cumulative uniform function:**
+In R, you can calculate the uniform cumulative distribution function:
+
+Example:
+ X is the time (in minutes) that a person has to wait in order to take a flight and it is uniformly distributed in the interval (0,60). Find the probability of waiting less than 15 minutes for a flight:
+```{r}
+punif(15, min = 0, max = 60)
+```
+
+**Finding the quantile in a uniform distributions**
+You can calculate the corresponding quantile for any probability for a uniform distribution.
+
+Example:
+Consider the previous uniform distribution of the flight waiting times. In case you want to calculate the 20% quantile for this distribution (20% of the waiting times will be below this value) you can type:
+```{r}
+qunif(0.2, min = 0, max = 60)
+```
+
+To find the median (50% quantile) using this function you can type:
+```{r}
+qunif(0.5, min = 0, max = 60)
+```
 
 ## 4.2 Cumulative Distribution Functions and Expected Values {-}
 
