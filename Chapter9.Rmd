@@ -8,7 +8,6 @@ Sections covered: 9.1, 9.2, 9.3, 9.4
 
 Skip: $\beta$ and the Choice of Sample Size (pp. 366-367)
 
-### R {-}
 
 Since you aren't given the original data, R isn't very helpful here, but you can write a function that you could reuse, such as:
 
@@ -100,8 +99,6 @@ It's clear that they give the same results.
 ## 9.4 Inferences Concerning a Difference Between Population Proportions {-}
 
 Skip: Type II Error Probabilities and Sample Sizes (pp. 394-395)
-
-### R {-}
 
 A/B Testing question from class:
 
