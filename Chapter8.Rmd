@@ -13,6 +13,9 @@ xkcd cartoon: ["Significant"](https://xkcd.com/882/){target="_blank"} (Jelly Bea
 ## 8.2 _z_ Tests for Hypotheses about a Population Mean {-}
 Skip: calculating Type II error and sample size needed for two sided tests (3rd and 5th formulas in the blue box on p. 331)
 
+Interactive resource: 
+[Visualize Type I/II errors: One-sample Test of Means (Z test)](https://shiny.rit.albany.edu/stat/betaprob/)
+
 ## 8.3 The One-Sample _t_ Test {-}
 
 Skip: $\beta$ and Sample Size Determination (p. 338) to end of section
