@@ -83,12 +83,12 @@
 <p><span class="math inline">\(f(x) = .2\)</span> for <span class="math inline">\(0 \leq x \leq 5\)</span>, 0 otherwise.</p>
 <div class="sourceCode" id="cb161"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/Uniform.html">runif</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">1</span>, min <span class="op">=</span> <span class="fl">0</span>, max <span class="op">=</span> <span class="fl">5</span><span class="op">)</span></span></code></pre></div>
-<pre><code>## [1] 1.784796</code></pre>
+<pre><code>## [1] 2.118525</code></pre>
 <p>Take the average of 1000 picks:</p>
 <div class="sourceCode" id="cb163"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/Uniform.html">runif</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">1000</span>, min <span class="op">=</span> <span class="fl">0</span>, max <span class="op">=</span> <span class="fl">5</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></code></pre></div>
-<pre><code>## [1] 2.566932</code></pre>
+<pre><code>## [1] 2.550261</code></pre>
 <p>Draw a histogram of the 1000 picks:</p>
 <div class="sourceCode" id="cb165"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/graphics/hist.html">hist</a></span><span class="op">(</span><span class="va">x</span>, las <span class="op">=</span> <span class="fl">1</span>, col <span class="op">=</span> <span class="st">"lightblue"</span><span class="op">)</span></span></code></pre></div>
