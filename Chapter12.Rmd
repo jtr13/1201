@@ -29,77 +29,100 @@ $SSR = \sum(\hat{y_i} - \overline{y})^2$ and $SSE + SSR = SST$
 Interactive Visualization: [Linear Regression](https://jtr13.github.io/D3/BestFittingLine.html) Try fitting the least squares line to a set of random data and check your answer ([and another one](https://www.geogebra.org/m/xC6zq7Zv)).
 
 
-Video: [Regression I: What is regression? | SSE, SSR, SST | R-squared | Errors (ε vs. e)](https://www.youtube.com/watch?v=aq8VU5KLmkY) [contributed by Lance J.]
+Video: [Regression I: What is regression? | SSE, SSR, SST | R-squared | Errors (ε vs. e)](https://www.youtube.com/watch?v=aq8VU5KLmkY)
 
-### R {-}
 
-Calculating slope and intercept for a sample of (x, y) pairs (p. 498 formulas)
+### Textbook p. 507 #17 {-}
 
-```{r}
-# Example 12.8, p. 503
-x <- c(12, 30, 36, 40, 45, 57, 62, 67, 71, 78, 93, 94, 100, 105)
-y <- c(3.3, 3.2, 3.4, 3, 2.8, 2.9, 2.7, 2.6, 2.5, 2.6, 2.2, 2, 2.3, 2.1)
-lm(y ~ x)  #lm = linear model
-```
+Researchers fitted a simple linear regression model to explain how $Y=$ porosity (%) is related to $X=$ unit weight (pcf) in concrete specimens. Consider the following representative data:
 
-**Predicted values:**
 
 ```{r}
-mod <- lm(y~x)
-round(mod$fitted.values, 2)
+x <- c(99.0, 101.1, 102.7, 103.0, 105.4, 107.0, 108.7, 110.8, 112.1, 112.4, 113.6, 113.8, 115.1, 115.4, 120.0)
+y <- c(28.8, 27.9, 27.0, 25.2, 22.8, 21.5, 20.9, 19.6, 17.1, 18.9, 16.0, 16.7, 13.0, 13.6, 10.8)
 ```
 
-**Residuals:**
+Using R to find:
+
+*Model coefficients*, $b_0$ and $b_1$:
+
+```{r}
+mod <- lm(y ~ x)
+mod$coefficients
+```
+
+($b_0$ is listed under `(Intercept)` and $b_1$ is listed under `x`.)
+
+*Residuals*
+
+```{r}
+mod$residuals
+```
+
+rounded:
 
 ```{r}
 round(mod$residuals, 2)
 ```
 
-**SSE, SSR**
+*SSR, SSE, SST*
+
+SSR (regression sum of squares):
 
 ```{r}
-anova(mod)  # anova = analysis of variance
+SSR <- sum((mod$fitted.values - mean(y))^2)
+SSR
 ```
-The first row under "Sum Sq" is the SSR, and the second row under "Sum Sq" is the SSE:
 
-SSE = `r anova(mod)[2,2]`
 
-SSR = `r anova(mod)[1,2]`
-
-SST = SSE + SSR = `r anova(mod)[2,2]` + 
-`r anova(mod)[1,2]` = `r round(anova(mod)[2,2] + anova(mod)[1,2], 4)`
-
-**Coefficient of determination $r^2$**
+SSE (error sum of squares):
 
 ```{r}
-# Example 12.4, 12.9
-x <- c(132, 129, 120, 113.2, 105, 92, 84, 83.2, 88.4, 59, 80, 81.5, 71, 69.2)
-y <- c(46, 48, 51, 52.1, 54, 52, 59, 58.7, 61.6, 64, 61.4, 54.6, 58.8, 58)
+SSE <- sum(mod$residuals^2)
+SSE
+```
 
-mod <- lm(y ~ x)
+SST (total sum of squares):
 
-SSR <- anova(mod)$`Sum Sq`[1]
-SST <- anova(mod)$`Sum Sq`[1] + anova(mod)$`Sum Sq`[2]
+```{r}
+SST <- sum((y - mean(y))^2)
+SST
+```
+
+(Check that SSR + SSE = SST)
+
+```{r}
+SSR + SSE  
+```
+
+
+d. What proportion of observed variation in porosity can be attributed to the approximate linear relationship between unit weight and porosity? 
+
+Method #1: SSR/SST
+
+```{r}
 SSR/SST
 ```
 
-Or (simply):
+Method #2: $r^2$
+
 ```{r}
-cor(x,y)^2
+cor(x, y)^2
 ```
 
-(See section 12.5)
+
+
 
 
 ## 12.5 Correlation {-}
 
-Skip: "Inferences About the Population Correlation Coefficient" (p. 530) *to end of section*.
+Skip: p. 530 "Inferences About the Population Correlation Coefficient" to the end of the section. 
 
 ### Resources {-}
 
 Interactive visualization: [Correlation Coefficient](https://1201.info/ch.-5-joint-probability.html#interactive) (add and remove points)
 
-Interactive visualization: [Interpreting Correlations](https://rpsychologist.com/d3/correlation/) [contributed by Dario G.]
+Interactive visualization: [Interpreting Correlations](https://rpsychologist.com/d3/correlation/) 
 
 
 ### R {-}
@@ -115,67 +138,5 @@ cor(x,y)
 ```
 
 
-## Practice Exercises {-}
-1. **(Least squares line)** Researchers employed a least squares analysis in studying how $Y=$ porosity (%) is related to $X=$ unit weight (pcf) in concrete specimens. Consider the following representative data:
-
-
-```{r}
-x <- c(99.0, 101.1, 102.7, 103.0, 105.4, 107.0, 108.7, 110.8, 112.1, 112.4, 113.6, 113.8, 115.1, 115.4, 120.0)
-y <- c(28.8, 27.9, 27.0, 25.2, 22.8, 21.5, 20.9, 19.6, 17.1, 18.9, 16.0, 16.7, 13.0, 13.6, 10.8)
-```
-(Textbook 12.17)
-
-a. Obtain the equation of the estimated regression line. 
-
-```{r}
-lm(y~x)
-```
-$y = 118.91 - 0.9047x$  
-
-b. Calculate the residuals corresponding to the first two observations.
-
-
-```{r}
-mod <- lm(y~x)
-round(mod$residuals, 2)
-```
-
-Or alternatively, use R as a calculator
-```{r}
-pred <- 118.9099 - 0.9047*x
-res <- y - pred
-res[1]
-res[2]
-```
-
-c. Calculate a point estimate of $\sigma$.
-
-```{r}
-sig2 <- sum((res)^2)/(length(x)-2)
-sqrt(sig2)
-```
-
-d. What proportion of observed variation in porosity can be attributed to the approximate linear relationship between unit weight and porosity? 
-
-```{r}
-cor(x, y)^2
-```
-
-e. Calculate the SSE and SST.
-
-```{r}
-anova(mod) # analsis of variance
-SSE <- anova(mod)$`Sum Sq`[1]
-SST <- anova(mod)$`Sum Sq`[1] + anova(mod)$`Sum Sq`[2]
-c(SSE, SST)
-```
-
-Or alternatively, use R as a calculator. Notice that the same results are produced.
-```{r}
-SSE1 <- sum((mod$residual)^2)
-SST1 <- sum((y-mean(y))^2)
-SSR1 <- sum((mod$fitted.values - mean(y))^2)
-c(SSE1, SST1, SSE1+SSR1)
-```
 
 
