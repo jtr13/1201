@@ -1,105 +1,19 @@
 # Ch. 9 Inferences Based on Two Samples {-}
 
-Sections covered: 9.1, 9.2, 9.3, 9.4
+Sections covered: 9.1, 9.4
 
 ## 9.1 $z$ Tests and CI's for a Difference Between Two Population Means {-}
 
 (Cases 1 & 2)
 
-Skip: $\beta$ and the Choice of Sample Size (pp. 366-367)
+Skip: p. 365 ("Using a Comparison...") to the end of the section
 
-### R {-}
-
-Since you aren't given the original data, R isn't very helpful here, but you can write a function that you could reuse, such as:
-
-```{r}
-options(scipen = 999) # get rid of scientific notation
-
-# this function only has to be run once per session, and then you can reuse it.
-
-diffmeans <- function(xbar, ybar, delta0,
-                      sigma1, sigma2,
-                      m, n, type = "twosided") {
-  
-Z <- ((xbar - ybar) - delta0)/sqrt(((sigma1^2)/m) + ((sigma2^2)/n))
-
-
-if (type == "twosided") {
-  pvalue <- pnorm(-abs(Z))*2
-} else if (type == "lowertail") {
-  pvalue <- pnorm(Z)
-} else {
-  pvalue <- 1 - pnorm(Z)
-}
-
-print(c("The p-value is", round(pvalue, 4)))
-
-}
-
-
-# Example 9.1, p. 365
-
-diffmeans(xbar  = 29.8, ybar  = 34.7,
-          delta0 = 0, sigma1 = 4, sigma2 = 5,
-          m = 20, n = 25, type = "twosided")
-
-# Example 9.4, p. 368
-
-# As long as you use the correct order of parameters, you don't have to write out the names:
-
-diffmeans(2258, 2637, -200, 1519, 1138, 663, 413, "lowertail")
-```
-
-## 9.2 The Two-Sample $t$ Test and CI {-}
-
-(Case 3)
-
-Use: https://www.statology.org/welchs-t-test-calculator/ (choose "Enter raw data" or "Enter summary data" as appropriate) to calculate the degrees of freedom.
-
-Skip: Pooled $t$ Procedures (pp. 377-378)
-
-Skip: Type II Error Probabilities (pp. 378-379)
-
-Given two random samples, use `t.test()` with different parameters to carry out a two-sample hypothesis test.
-
-For demonstration purposes, x and y here are samples of 10 numbers that drawn from the standard normal distribution.
-
-```{r}
-set.seed(1)
-x <- rnorm(10)
-set.seed(2)
-y <- rnorm(10)
-t.test(x, y, var.equal = TRUE, alternative = "less") 
-```
-Thus, H_0 is rejected at alpha = .05.
-
-In `t.test()`, "less" indicates that H_A: delta < 0. Also try using `alternative = "two.sided"` or `alternative = "two.sided"` for a different alternative hypothesis.
-
-
-## 9.3 Analysis of Paired Data {-}
-
-Skip: Paired Data and Two-Sample $t$ Procedures (pp. 386-387)
-
-Skip: Paired Versus Unpaired Experiments (pp. 387-388)
-
-Two ways of doing paired test:
-(Here we continue to use the `x` and `y` in section 9.2 above)
-**[Method 1]** Take x-y and do a one-sample test. 
-```{r}
-t.test(x-y, alternative = "less")
-```
-
-**[Method 2]** Give another parameter `paired = TRUE`. In R, the default parameter for `paired` in `t.test()` is `FALSE`; here we set it to `TRUE` and leave `x` and `y` as two separate inputs.
-```{r}
-t.test(x, y, alternative = "less", paired = TRUE)
-```
-
-It's clear that they give the same results.
+We will only consider tests in which $\delta_0 = 0$.
 
 
 ## 9.4 Inferences Concerning a Difference Between Population Proportions {-}
 
-Skip: Type II Error Probabilities and Sample Sizes (pp. 394-395)
+Skip: p. 394 ("Type II Error Probabilities...") to the end of the section
 
 ### R {-}
 
