@@ -4,17 +4,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Ch. 2 Probability | Stat 1201 Resources</title>
+<title>Ch. 9 Inferences Based on Two Samples | Stat 1201 Resources</title>
 <meta name="author" content="Joyce Robbins">
-<meta name="description" content="Sections covered: 2.1, 2.2, 2.3, 2.5 (2.4 will be covered later in the semester) 2.1 Sample Spaces and Events  Humor  Source: https://twitter.com/bcrypt/status/1074415553266122752/photo/1  2.2...">
+<meta name="description" content="Sections covered: 9.1, 9.4 9.1 \(z\) Tests and CI’s for a Difference Between Two Population Means (Cases 1 &amp; 2) Skip: p. 365 (“Using a Comparison…”) to the end of the section We will only consider...">
 <meta name="generator" content="bookdown 0.43 with bs4_book()">
-<meta property="og:title" content="Ch. 2 Probability | Stat 1201 Resources">
+<meta property="og:title" content="Ch. 9 Inferences Based on Two Samples | Stat 1201 Resources">
 <meta property="og:type" content="book">
-<meta property="og:url" content="https://jtr13.github.io/1201/ch.-2-probability.html">
-<meta property="og:description" content="Sections covered: 2.1, 2.2, 2.3, 2.5 (2.4 will be covered later in the semester) 2.1 Sample Spaces and Events  Humor  Source: https://twitter.com/bcrypt/status/1074415553266122752/photo/1  2.2...">
+<meta property="og:url" content="https://jtr13.github.io/1201/ch.-9-inferences-based-on-two-samples.html">
+<meta property="og:description" content="Sections covered: 9.1, 9.4 9.1 \(z\) Tests and CI’s for a Difference Between Two Population Means (Cases 1 &amp; 2) Skip: p. 365 (“Using a Comparison…”) to the end of the section We will only consider...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ch. 2 Probability | Stat 1201 Resources">
-<meta name="twitter:description" content="Sections covered: 2.1, 2.2, 2.3, 2.5 (2.4 will be covered later in the semester) 2.1 Sample Spaces and Events  Humor  Source: https://twitter.com/bcrypt/status/1074415553266122752/photo/1  2.2...">
+<meta name="twitter:title" content="Ch. 9 Inferences Based on Two Samples | Stat 1201 Resources">
+<meta name="twitter:description" content="Sections covered: 9.1, 9.4 9.1 \(z\) Tests and CI’s for a Difference Between Two Population Means (Cases 1 &amp; 2) Skip: p. 365 (“Using a Comparison…”) to the end of the section We will only consider...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -47,14 +47,14 @@
 <li><a class="" href="index.html">1201.info</a></li>
 <li><a class="" href="getting-started-with-r.html">Getting Started with R</a></li>
 <li><a class="" href="ch.-1-descriptive-statistics.html">Ch. 1 Descriptive Statistics</a></li>
-<li><a class="active" href="ch.-2-probability.html">Ch. 2 Probability</a></li>
+<li><a class="" href="ch.-2-probability.html">Ch. 2 Probability</a></li>
 <li><a class="" href="ch.-3-discrete-distributions.html">Ch. 3 Discrete Distributions</a></li>
 <li><a class="" href="ch.-4-continuous-random-variables-and-probability-distributions.html">Ch. 4 Continuous Random Variables and Probability Distributions</a></li>
 <li><a class="" href="ch.-5-random-samples.html">Ch. 5 Random Samples</a></li>
 <li><a class="" href="ch.-6-point-estimation.html">Ch. 6 Point Estimation</a></li>
 <li><a class="" href="ch.-7-statistical-intervals-based-on-a-single-sample.html">Ch. 7 Statistical Intervals Based on a Single Sample</a></li>
 <li><a class="" href="ch.-8-tests-of-hypotheses-based-on-a-single-sample.html">Ch. 8 Tests of Hypotheses Based on a Single Sample</a></li>
-<li><a class="" href="ch.-9-inferences-based-on-two-samples.html">Ch. 9 Inferences Based on Two Samples</a></li>
+<li><a class="active" href="ch.-9-inferences-based-on-two-samples.html">Ch. 9 Inferences Based on Two Samples</a></li>
 <li><a class="" href="ch.-2-conditional-probability.html">Ch. 2 Conditional Probability</a></li>
 <li><a class="" href="ch.-5-joint-probability.html">Ch. 5 Joint Probability</a></li>
 <li><a class="" href="ch.-14-chi-squared-test.html">Ch. 14 Chi Squared Test</a></li>
@@ -67,82 +67,61 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="ch.-2-probability" class="section level1 unnumbered">
-<h1>Ch. 2 Probability<a class="anchor" aria-label="anchor" href="#ch.-2-probability"><i class="fas fa-link"></i></a>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="ch.-9-inferences-based-on-two-samples" class="section level1 unnumbered">
+<h1>Ch. 9 Inferences Based on Two Samples<a class="anchor" aria-label="anchor" href="#ch.-9-inferences-based-on-two-samples"><i class="fas fa-link"></i></a>
 </h1>
-<p>Sections covered: 2.1, 2.2, 2.3, 2.5</p>
-<p>(2.4 will be covered later in the semester)</p>
-<div id="sample-spaces-and-events" class="section level2 unnumbered">
-<h2>2.1 Sample Spaces and Events<a class="anchor" aria-label="anchor" href="#sample-spaces-and-events"><i class="fas fa-link"></i></a>
+<p>Sections covered: 9.1, 9.4</p>
+<div id="z-tests-and-cis-for-a-difference-between-two-population-means" class="section level2 unnumbered">
+<h2>9.1 <span class="math inline">\(z\)</span> Tests and CI’s for a Difference Between Two Population Means<a class="anchor" aria-label="anchor" href="#z-tests-and-cis-for-a-difference-between-two-population-means"><i class="fas fa-link"></i></a>
 </h2>
-<div id="humor" class="section level3 unnumbered">
-<h3>Humor<a class="anchor" aria-label="anchor" href="#humor"><i class="fas fa-link"></i></a>
+<p>(Cases 1 &amp; 2)</p>
+<p>Skip: p. 365 (“Using a Comparison…”) to the end of the section</p>
+<p>We will only consider tests in which <span class="math inline">\(\delta_0 = 0\)</span>.</p>
+</div>
+<div id="inferences-concerning-a-difference-between-population-proportions" class="section level2 unnumbered">
+<h2>9.4 Inferences Concerning a Difference Between Population Proportions<a class="anchor" aria-label="anchor" href="#inferences-concerning-a-difference-between-population-proportions"><i class="fas fa-link"></i></a>
+</h2>
+<p>Skip: p. 394 (“Type II Error Probabilities…”) to the end of the section</p>
+<div id="r-4" class="section level3 unnumbered">
+<h3>R<a class="anchor" aria-label="anchor" href="#r-4"><i class="fas fa-link"></i></a>
 </h3>
-<div class="inline-figure"><img src="images/bankrobbers.jpg"></div>
-<p>Source: <a href="https://twitter.com/bcrypt/status/1074415553266122752/photo/1" class="uri">https://twitter.com/bcrypt/status/1074415553266122752/photo/1</a></p>
-</div>
-</div>
-<div id="axioms-interpretations-and-properties-of-probability" class="section level2 unnumbered">
-<h2>2.2 Axioms, Interpretations, and Properties of Probability<a class="anchor" aria-label="anchor" href="#axioms-interpretations-and-properties-of-probability"><i class="fas fa-link"></i></a>
-</h2>
-</div>
-<div id="counting-techniques" class="section level2 unnumbered">
-<h2>2.3 Counting Techniques<a class="anchor" aria-label="anchor" href="#counting-techniques"><i class="fas fa-link"></i></a>
-</h2>
-<div id="r" class="section level3 unnumbered">
-<h3>R<a class="anchor" aria-label="anchor" href="#r"><i class="fas fa-link"></i></a>
-</h3>
-<p><strong>Factorial</strong></p>
-<div class="sourceCode" id="cb77"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Special.html">factorial</a></span><span class="op">(</span><span class="fl">5</span><span class="op">)</span></span></code></pre></div>
-<pre><code>## [1] 120</code></pre>
-<p><strong>Combinations</strong></p>
-<p>“5 choose 2” = choose 2 items out of 5</p>
-<div class="sourceCode" id="cb79"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Special.html">choose</a></span><span class="op">(</span><span class="fl">5</span>, <span class="fl">2</span><span class="op">)</span></span></code></pre></div>
-<pre><code>## [1] 10</code></pre>
-<p><strong>Permutations</strong></p>
-<p>There is no built-in function to calculate permutations. You can multiply the number of combinations by <em>k!</em>.</p>
-<p>Ex. Number of permutations of size 2 that can be formed from 5 distinct items:</p>
-<div class="sourceCode" id="cb81"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Special.html">choose</a></span><span class="op">(</span><span class="fl">5</span>,<span class="fl">2</span><span class="op">)</span><span class="op">*</span><span class="fu"><a href="https://rdrr.io/r/base/Special.html">factorial</a></span><span class="op">(</span><span class="fl">2</span><span class="op">)</span></span></code></pre></div>
-<pre><code>## [1] 20</code></pre>
-<p>You can create your own function to do this:</p>
-<div class="sourceCode" id="cb83"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">perm</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">n</span>, <span class="va">k</span><span class="op">)</span> <span class="op">{</span><span class="fu"><a href="https://rdrr.io/r/base/Special.html">choose</a></span><span class="op">(</span><span class="va">n</span>,<span class="va">k</span><span class="op">)</span><span class="op">*</span><span class="fu"><a href="https://rdrr.io/r/base/Special.html">factorial</a></span><span class="op">(</span><span class="va">k</span><span class="op">)</span><span class="op">}</span></span>
-<span></span>
-<span><span class="fu">perm</span><span class="op">(</span><span class="fl">5</span>,<span class="fl">2</span><span class="op">)</span></span></code></pre></div>
-<pre><code>## [1] 20</code></pre>
-</div>
-</div>
-<div id="independence" class="section level2 unnumbered">
-<h2>2.5 Independence<a class="anchor" aria-label="anchor" href="#independence"><i class="fas fa-link"></i></a>
-</h2>
-<p>Skip everything before “The Multiplication Rule” on p. 86 (until we return to conditional probability later in the semester)</p>
+<p>A/B Testing question from class:</p>
+<div class="sourceCode" id="cb212"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">clicks</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">25</span>, <span class="fl">20</span><span class="op">)</span></span>
+<span><span class="va">people</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">100</span>, <span class="fl">100</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/stats/prop.test.html">prop.test</a></span><span class="op">(</span><span class="va">clicks</span>, <span class="va">people</span>, correct <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
+<pre><code>## 
+##  2-sample test for equality of proportions without continuity correction
+## 
+## data:  clicks out of people
+## X-squared = 0.71685, df = 1, p-value = 0.3972
+## alternative hypothesis: two.sided
+## 95 percent confidence interval:
+##  -0.06553817  0.16553817
+## sample estimates:
+## prop 1 prop 2 
+##   0.25   0.20</code></pre>
 
 </div>
 </div>
+</div>
   <div class="chapter-nav">
-<div class="prev"><a href="ch.-1-descriptive-statistics.html">Ch. 1 Descriptive Statistics</a></div>
-<div class="next"><a href="ch.-3-discrete-distributions.html">Ch. 3 Discrete Distributions</a></div>
+<div class="prev"><a href="ch.-8-tests-of-hypotheses-based-on-a-single-sample.html">Ch. 8 Tests of Hypotheses Based on a Single Sample</a></div>
+<div class="next"><a href="ch.-2-conditional-probability.html">Ch. 2 Conditional Probability</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#ch.-2-probability">Ch. 2 Probability</a></li>
+<li><a class="nav-link" href="#ch.-9-inferences-based-on-two-samples">Ch. 9 Inferences Based on Two Samples</a></li>
+<li><a class="nav-link" href="#z-tests-and-cis-for-a-difference-between-two-population-means">9.1 \(z\) Tests and CI’s for a Difference Between Two Population Means</a></li>
 <li>
-<a class="nav-link" href="#sample-spaces-and-events">2.1 Sample Spaces and Events</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#humor">Humor</a></li></ul>
+<a class="nav-link" href="#inferences-concerning-a-difference-between-population-proportions">9.4 Inferences Concerning a Difference Between Population Proportions</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#r-4">R</a></li></ul>
 </li>
-<li><a class="nav-link" href="#axioms-interpretations-and-properties-of-probability">2.2 Axioms, Interpretations, and Properties of Probability</a></li>
-<li>
-<a class="nav-link" href="#counting-techniques">2.3 Counting Techniques</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#r">R</a></li></ul>
-</li>
-<li><a class="nav-link" href="#independence">2.5 Independence</a></li>
 </ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-<li><a id="book-source" href="https://github.com/jtr13/1201/blob/main/Chapter2.Rmd">View source <i class="fab fa-github"></i></a></li>
-          <li><a id="book-edit" href="https://github.com/jtr13/1201/edit/main/Chapter2.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+<li><a id="book-source" href="https://github.com/jtr13/1201/blob/main/Chapter9.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/jtr13/1201/edit/main/Chapter9.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
         </ul>
 </div>
     </nav>

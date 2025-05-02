@@ -4,17 +4,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Ch. 7 Statistical Intervals Based on a Single Sample | Stat 1201 Resources</title>
+<title>Ch. 13 Nonlinear and Multiple Regression | Stat 1201 Resources</title>
 <meta name="author" content="Joyce Robbins">
-<meta name="description" content="Sections covered: 7.1, 7.2, 7.3 7.1 Basic Properties of Confidence Intervals Skip: “Deriving a Confidence Interval”, pp. 282-284; “Bootstrap Confidence Intervals”, p. 284  7.2 Large-Sample...">
+<meta name="description" content="Sections covered: 13.1 13.1 Assessing Model Adequacy Skip: standardized residuals Residuals plots: know \(e\) vs. \(x\) only Difficulties and remedies: 1. - 4. – know the difficulties, not the...">
 <meta name="generator" content="bookdown 0.43 with bs4_book()">
-<meta property="og:title" content="Ch. 7 Statistical Intervals Based on a Single Sample | Stat 1201 Resources">
+<meta property="og:title" content="Ch. 13 Nonlinear and Multiple Regression | Stat 1201 Resources">
 <meta property="og:type" content="book">
-<meta property="og:url" content="https://jtr13.github.io/1201/ch.-7-statistical-intervals-based-on-a-single-sample.html">
-<meta property="og:description" content="Sections covered: 7.1, 7.2, 7.3 7.1 Basic Properties of Confidence Intervals Skip: “Deriving a Confidence Interval”, pp. 282-284; “Bootstrap Confidence Intervals”, p. 284  7.2 Large-Sample...">
+<meta property="og:url" content="https://jtr13.github.io/1201/ch.-13-nonlinear-and-multiple-regression.html">
+<meta property="og:description" content="Sections covered: 13.1 13.1 Assessing Model Adequacy Skip: standardized residuals Residuals plots: know \(e\) vs. \(x\) only Difficulties and remedies: 1. - 4. – know the difficulties, not the...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ch. 7 Statistical Intervals Based on a Single Sample | Stat 1201 Resources">
-<meta name="twitter:description" content="Sections covered: 7.1, 7.2, 7.3 7.1 Basic Properties of Confidence Intervals Skip: “Deriving a Confidence Interval”, pp. 282-284; “Bootstrap Confidence Intervals”, p. 284  7.2 Large-Sample...">
+<meta name="twitter:title" content="Ch. 13 Nonlinear and Multiple Regression | Stat 1201 Resources">
+<meta name="twitter:description" content="Sections covered: 13.1 13.1 Assessing Model Adequacy Skip: standardized residuals Residuals plots: know \(e\) vs. \(x\) only Difficulties and remedies: 1. - 4. – know the difficulties, not the...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -52,14 +52,14 @@
 <li><a class="" href="ch.-4-continuous-random-variables-and-probability-distributions.html">Ch. 4 Continuous Random Variables and Probability Distributions</a></li>
 <li><a class="" href="ch.-5-random-samples.html">Ch. 5 Random Samples</a></li>
 <li><a class="" href="ch.-6-point-estimation.html">Ch. 6 Point Estimation</a></li>
-<li><a class="active" href="ch.-7-statistical-intervals-based-on-a-single-sample.html">Ch. 7 Statistical Intervals Based on a Single Sample</a></li>
+<li><a class="" href="ch.-7-statistical-intervals-based-on-a-single-sample.html">Ch. 7 Statistical Intervals Based on a Single Sample</a></li>
 <li><a class="" href="ch.-8-tests-of-hypotheses-based-on-a-single-sample.html">Ch. 8 Tests of Hypotheses Based on a Single Sample</a></li>
 <li><a class="" href="ch.-9-inferences-based-on-two-samples.html">Ch. 9 Inferences Based on Two Samples</a></li>
 <li><a class="" href="ch.-2-conditional-probability.html">Ch. 2 Conditional Probability</a></li>
 <li><a class="" href="ch.-5-joint-probability.html">Ch. 5 Joint Probability</a></li>
 <li><a class="" href="ch.-14-chi-squared-test.html">Ch. 14 Chi Squared Test</a></li>
 <li><a class="" href="ch.-12-linear-regression.html">Ch. 12 Linear Regression</a></li>
-<li><a class="" href="ch.-13-nonlinear-and-multiple-regression.html">Ch. 13 Nonlinear and Multiple Regression</a></li>
+<li><a class="active" href="ch.-13-nonlinear-and-multiple-regression.html">Ch. 13 Nonlinear and Multiple Regression</a></li>
 </ul>
 
         <div class="book-extra">
@@ -67,47 +67,34 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="ch.-7-statistical-intervals-based-on-a-single-sample" class="section level1 unnumbered">
-<h1>Ch. 7 Statistical Intervals Based on a Single Sample<a class="anchor" aria-label="anchor" href="#ch.-7-statistical-intervals-based-on-a-single-sample"><i class="fas fa-link"></i></a>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="ch.-13-nonlinear-and-multiple-regression" class="section level1 unnumbered">
+<h1>Ch. 13 Nonlinear and Multiple Regression<a class="anchor" aria-label="anchor" href="#ch.-13-nonlinear-and-multiple-regression"><i class="fas fa-link"></i></a>
 </h1>
-<p>Sections covered: 7.1, 7.2, 7.3</p>
-<div id="basic-properties-of-confidence-intervals" class="section level2 unnumbered">
-<h2>7.1 Basic Properties of Confidence Intervals<a class="anchor" aria-label="anchor" href="#basic-properties-of-confidence-intervals"><i class="fas fa-link"></i></a>
+<p>Sections covered: 13.1</p>
+<div id="assessing-model-adequacy" class="section level2 unnumbered">
+<h2>13.1 Assessing Model Adequacy<a class="anchor" aria-label="anchor" href="#assessing-model-adequacy"><i class="fas fa-link"></i></a>
 </h2>
-<p>Skip: “Deriving a Confidence Interval”, pp. 282-284; “Bootstrap Confidence Intervals”, p. 284</p>
-</div>
-<div id="large-sample-confidence-intervals-for-a-population-mean-and-proportion" class="section level2 unnumbered">
-<h2>7.2 Large-Sample Confidence Intervals for a Population Mean and Proportion<a class="anchor" aria-label="anchor" href="#large-sample-confidence-intervals-for-a-population-mean-and-proportion"><i class="fas fa-link"></i></a>
-</h2>
-<p>You may use: <span class="math inline">\(\hat{p} \pm z_{\alpha/2} \sqrt{\frac{\hat{p}\hat{q}}{n}}\)</span>, rather than the formula (7.10) in the blue box on p. 289 for large sample confidence intervals for proportions, skip p. 290</p>
-<p>You may use the method from class <span class="math inline">\(n = \frac{4z^2\hat{p}\hat{q}}{w^2}\)</span> for the minimum <span class="math inline">\(n\)</span> needed to ensure a particular confidence interval width for proportions, rather than formula (7.12) – both appear on p. 291. As noted in Example 7.9 on p. 291, the easier formula gives a slightly different answer (385 instead of 381).</p>
-<p><a href="https://github.com/jtr13/1201/blob/master/pdfs/LargeSampleCIforPopulationProportion.pdf" target="_blank">Additional textbook material on CI for proportions</a></p>
-<p><a href="https://www.nytimes.com/2016/10/06/upshot/when-you-hear-the-margin-of-error-is-plus-or-minus-3-percent-think-7-instead.html" target="_blank">“When You Hear the Margin of Error Is Plus or Minus 3 Percent, Think 7 Instead”</a>, New York Times, Oct 5, 2016.</p>
-</div>
-<div id="intervals-based-on-a-normal-population-distribution" class="section level2 unnumbered">
-<h2>7.3 Intervals Based on a Normal Population Distribution<a class="anchor" aria-label="anchor" href="#intervals-based-on-a-normal-population-distribution"><i class="fas fa-link"></i></a>
-</h2>
-<p>Use the <span class="math inline">\(t\)</span> distributions.</p>
-<p>Skip “A Prediction Interval for a Single Future Value” p. 299 to the end of the section.</p>
+<p>Skip: standardized residuals</p>
+<p>Residuals plots: know <span class="math inline">\(e\)</span> vs. <span class="math inline">\(x\)</span> only</p>
+<p>Difficulties and remedies: 1. - 4. – know the difficulties, not the remedies</p>
+<p>Skip: weighted least squares (p. 547)</p>
 
 </div>
 </div>
   <div class="chapter-nav">
-<div class="prev"><a href="ch.-6-point-estimation.html">Ch. 6 Point Estimation</a></div>
-<div class="next"><a href="ch.-8-tests-of-hypotheses-based-on-a-single-sample.html">Ch. 8 Tests of Hypotheses Based on a Single Sample</a></div>
+<div class="prev"><a href="ch.-12-linear-regression.html">Ch. 12 Linear Regression</a></div>
+<div class="empty"></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#ch.-7-statistical-intervals-based-on-a-single-sample">Ch. 7 Statistical Intervals Based on a Single Sample</a></li>
-<li><a class="nav-link" href="#basic-properties-of-confidence-intervals">7.1 Basic Properties of Confidence Intervals</a></li>
-<li><a class="nav-link" href="#large-sample-confidence-intervals-for-a-population-mean-and-proportion">7.2 Large-Sample Confidence Intervals for a Population Mean and Proportion</a></li>
-<li><a class="nav-link" href="#intervals-based-on-a-normal-population-distribution">7.3 Intervals Based on a Normal Population Distribution</a></li>
+<li><a class="nav-link" href="#ch.-13-nonlinear-and-multiple-regression">Ch. 13 Nonlinear and Multiple Regression</a></li>
+<li><a class="nav-link" href="#assessing-model-adequacy">13.1 Assessing Model Adequacy</a></li>
 </ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-<li><a id="book-source" href="https://github.com/jtr13/1201/blob/main/Chapter7.Rmd">View source <i class="fab fa-github"></i></a></li>
-          <li><a id="book-edit" href="https://github.com/jtr13/1201/edit/main/Chapter7.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+<li><a id="book-source" href="https://github.com/jtr13/1201/blob/main/Chapter13.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/jtr13/1201/edit/main/Chapter13.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
         </ul>
 </div>
     </nav>
