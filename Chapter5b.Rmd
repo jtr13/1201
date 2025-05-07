@@ -36,7 +36,7 @@ and "Independent Random Variables" pp. 204-205 (discrete case only)
 
 <script src="scripts/corrcoef.js"></script>
 
-## 5.2 Expected Values, Covariance, and Correlation
+## 5.2 Expected Values, Covariance, and Correlation {-}
 
 Skip *everything but* "Covariance" pp. 214-216 and "Correlation" pp. 216-218
 
