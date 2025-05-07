@@ -36,6 +36,13 @@ and "Independent Random Variables" pp. 204-205 (discrete case only)
 
 <script src="scripts/corrcoef.js"></script>
 
+## 5.2 Expected Values, Covariance, and Correlation
+
+Skip *everything but* "Covariance" pp. 214-216 and "Correlation" pp. 216-218
+
+Re: "Covariance" section: focus only on the concept of covariance explained in the text. You do not need to know any of the formulas or examples on pp. 214-215.
+
+
 ## Resources {-}
 
 Correlation and Covariance Visualization
