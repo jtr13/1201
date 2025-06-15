@@ -16,15 +16,14 @@ Source: https://twitter.com/bcrypt/status/1074415553266122752/photo/1
 
 ## 2.3 Counting Techniques {-}
 
-### R {-}
 
-**Factorial**
+* Factorial
 
 ```{r}
 factorial(5)
 ```
 
-**Combinations**
+* Combinations
 
 "5 choose 2" = choose 2 items out of 5
 
@@ -32,7 +31,7 @@ factorial(5)
 choose(5, 2)
 ```
 
-**Permutations**
+* Permutations
 
 There is no built-in function to calculate permutations.  You can multiply the number of combinations by *k!*.
 
