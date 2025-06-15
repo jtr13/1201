@@ -6,6 +6,19 @@ Sections covered: 2.1, 2.2, 2.3, 2.5
 
 ## 2.1 Sample Spaces and Events {-}
 
+It is possible to simulate a coin flip using R.
+Ex: fair coin, 10 flips (size). _Note: we must indicate replace=TRUE since "H" and "T" can be drawn more than once;_ 
+
+```{r}
+sample(x = c("H", "T"), size = 10,  replace = TRUE)
+```
+
+
+Ex: Same conditions as above but now we have a biased coin (probability of heads is 0.8, and the probability of tails is 0.2). 
+```{r}
+sample(x = c("H", "T"), prob = c(.8, .2), size = 10, replace = TRUE)
+```
+
 ### Humor {-}
 
 ![](images/bankrobbers.jpg)
