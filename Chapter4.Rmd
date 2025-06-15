@@ -4,11 +4,10 @@ Sections covered: 4.1, 4.2, 4.3, 4.4 (exponential only)
 
 ## 4.1 Probability density functions {-}
 
-## R {-}
 
 Simulating a uniform distribution
 
-Randomly choose one number from the distribution:
+* Randomly choose one number from the distribution:
 
 $f(x) = .2$ for $0 \leq x \leq 5$, 0 otherwise.
 
@@ -16,14 +15,14 @@ $f(x) = .2$ for $0 \leq x \leq 5$, 0 otherwise.
 runif(n = 1, min = 0, max = 5)
 ```
 
-Take the average of 1000 picks:
+* Take the average of 1000 picks:
 
 ```{r}
 x <- runif(n = 1000, min = 0, max = 5)
 mean(x)
 ```
 
-Draw a histogram of the 1000 picks:
+* Draw a histogram of the 1000 picks:
 ```{r}
 hist(x, las = 1, col = "lightblue")
 ```
@@ -33,13 +32,13 @@ hist(x, las = 1, col = "lightblue")
 
 Using R to help with calculations in Example 4.7, p. 149
 
-Define a function for the cdf (you have to do the integration yourself):
+1. Define a function for the cdf (you have to do the integration yourself):
 
 ```{r}
 F <- function(x) (x/8) + (3/16)*x^2
 ```
 
-Find $F(1.5) - F(1)$
+2. Find $F(1.5) - F(1)$
 
 ```{r}
 F(1.5) - F(1)
@@ -59,7 +58,8 @@ There are many online normal distribution calculators. Note that often you are g
 
 Due to rounding differences in $z$ and $P(Z \leq z)$, solutions using technology will vary from those using a normal table. Both methods are fine.
 
-### R {-}
+We use `pnorm` to find the probability (area under the normal curve for Z < z) and `qnorm` to find the percentile (the value z for a given probability).
+
 
 $P(Z \leq -1)$
 
@@ -110,7 +110,7 @@ or
    c. What is the expected value of $X$?
    d. What is the variance of X?
    
-[Ans]
+[Ans] <br/>
 a. Integrating by hand: $f(x)=.06x + .05$, we get $F(x) = .03x^2+.05x$.
 
 ```{r}
@@ -142,6 +142,7 @@ G(5)-G(0)-E^2
 
    b. What is the probability that reaction time exceeds 2.00 sec?
 
+[Ans] <br/>
 ```{r}
 pnorm((1.75-1.25)/0.46) - pnorm((1-1.25)/0.46)
 1 - pnorm((2-1.25)/0.46)
@@ -150,17 +151,17 @@ pnorm(-(2-1.25)/0.46)
 ```
 ------
 
-3. **(Nonstandard Normal, `qnorm`)** Data collected from an experiment with a specified initial crack
-   length propose a normal distribution with mean value 5.496 mm and standard deviation .067 mm. For this model, what value of final crack depth would be exceeded by only .5% of all cracks? (Textbook 4.18)
+3. **(Nonstandard Normal, `qnorm`)** Data collected from an experiment with a specified initial crack length propose a normal distribution with mean value 5.496 mm and standard deviation .067 mm. For this model, what value of final crack depth would be exceeded by only .5% of all cracks? (Textbook 4.18)
 
+[Ans] <br/>
 ```{r}
 qnorm(0.995, 5.496, .067)
 ```
 ------
 
-4. **(Binom Appproximation)** Suppose that 25% of all students at a large public university receive financial aid. Let $X$ be the number of students in a random sample of size 50 who receive financial
-   aid, sothat *p = .25*. What is the probability that at most 10 students receive aid? (Textbook 4.20)
+4. **(Binom Appproximation)** Suppose that 25% of all students at a large public university receive financial aid. Let $X$ be the number of students in a random sample of size 50 who receive financial aid, so that *p = .25*. What is the probability that at most 10 students receive aid? (Textbook 4.20)
 
+[Ans] <br/>
 ```{r}
 # binom distribution calculation
 pbinom(10, size = 50, prob = 0.25) 
