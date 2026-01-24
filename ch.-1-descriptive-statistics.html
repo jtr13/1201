@@ -7,7 +7,7 @@
 <title>Ch. 1 Descriptive Statistics | Stat 1201 Resources</title>
 <meta name="author" content="Joyce Robbins">
 <meta name="description" content="Sections covered: all (skim 1.1) 1.2 Pictorial and Tabular Methods in Descriptive Statistics Skip: Example 1.7, p. 15 (double-digit leaves) Skip: “Dotplots,” pp. 15-16 Stem-and-leaf plots Ex: The...">
-<meta name="generator" content="bookdown 0.43 with bs4_book()">
+<meta name="generator" content="bookdown 0.46 with bs4_book()">
 <meta property="og:title" content="Ch. 1 Descriptive Statistics | Stat 1201 Resources">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://jtr13.github.io/1201/ch.-1-descriptive-statistics.html">
@@ -140,7 +140,7 @@
 <span>            <span class="fl">675</span>, <span class="fl">699</span>, <span class="fl">699</span>, <span class="fl">725</span>, <span class="fl">725</span>, <span class="fl">745</span>, <span class="fl">799</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/graphics/hist.html">hist</a></span><span class="op">(</span><span class="va">prices</span><span class="op">)</span></span></code></pre></div>
-<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-14-1.png" width="65%" style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-14-1.png" alt="" width="65%" style="display: block; margin: auto;"></div>
 <p><em>Note: histograms are drawn with unbinned data. R does the binning in the process of drawing the histogram. This means that the program chooses the size of the bins for you.</em></p>
 <p>To add specific bin sizes and colors to your histogram, you can use the following syntax:</p>
 <div class="sourceCode" id="cb47"><pre class="downlit sourceCode r">
@@ -148,7 +148,7 @@
 <span>            <span class="fl">675</span>, <span class="fl">699</span>, <span class="fl">699</span>, <span class="fl">725</span>, <span class="fl">725</span>, <span class="fl">745</span>, <span class="fl">799</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/graphics/hist.html">hist</a></span><span class="op">(</span><span class="va">prices</span>, breaks <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">300</span>, <span class="fl">400</span>, <span class="fl">500</span>, <span class="fl">600</span>, <span class="fl">700</span>, <span class="fl">800</span><span class="op">)</span>,</span>
 <span>     col <span class="op">=</span> <span class="st">"lightblue"</span><span class="op">)</span></span></code></pre></div>
-<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-15-1.png" width="65%" style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-15-1.png" alt="" width="65%" style="display: block; margin: auto;"></div>
 </div>
 <div id="density-histogram" class="section level3 unnumbered">
 <h3>Density histogram<a class="anchor" aria-label="anchor" href="#density-histogram"><i class="fas fa-link"></i></a>
@@ -161,7 +161,7 @@
 <span><span class="fu"><a href="https://rdrr.io/r/graphics/hist.html">hist</a></span><span class="op">(</span><span class="va">prices</span>, freq <span class="op">=</span> <span class="cn">FALSE</span>, </span>
 <span>     breaks <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">300</span>, <span class="fl">400</span>, <span class="fl">500</span>, <span class="fl">600</span>, <span class="fl">700</span>, <span class="fl">800</span><span class="op">)</span>,</span>
 <span>     col <span class="op">=</span> <span class="st">"lightblue"</span>, las <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></code></pre></div>
-<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-16-1.png" width="65%" style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-16-1.png" alt="" width="65%" style="display: block; margin: auto;"></div>
 <p>(<code>las = 1</code> makes all the labels horizontal.)</p>
 </div>
 </div>
@@ -233,10 +233,10 @@
 <span>            <span class="fl">599</span>, <span class="fl">665</span>, <span class="fl">675</span>, <span class="fl">699</span>, <span class="fl">699</span>, <span class="fl">725</span>, <span class="fl">725</span>, <span class="fl">745</span>, <span class="fl">799</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/graphics/boxplot.html">boxplot</a></span><span class="op">(</span><span class="va">prices</span><span class="op">)</span></span></code></pre></div>
-<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-21-1.png" width="65%" style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-21-1.png" alt="" width="65%" style="display: block; margin: auto;"></div>
 <div class="sourceCode" id="cb66"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/graphics/boxplot.html">boxplot</a></span><span class="op">(</span><span class="va">prices</span>, horizontal <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
-<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-21-2.png" width="65%" style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-21-2.png" alt="" width="65%" style="display: block; margin: auto;"></div>
 <ul>
 <li>Comparitive boxplots</li>
 </ul>
@@ -247,7 +247,7 @@
 <span><span class="va">Healthy</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">23</span>, <span class="fl">39</span>, <span class="fl">40</span>, <span class="fl">41</span>, <span class="fl">43</span>, <span class="fl">47</span>, <span class="fl">51</span>, <span class="fl">58</span>, <span class="fl">63</span>, <span class="fl">66</span>, <span class="fl">67</span>, <span class="fl">69</span>, <span class="fl">72</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/graphics/boxplot.html">boxplot</a></span><span class="op">(</span><span class="va">PTSD</span>, <span class="va">Healthy</span>, names <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"PTSD"</span>, <span class="st">"Healthy"</span><span class="op">)</span>, horizontal <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
-<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-22-1.png" width="65%" style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-22-1.png" alt="" width="65%" style="display: block; margin: auto;"></div>
 </div>
 </div>
 <div id="practice-exercises" class="section level2 unnumbered">
@@ -274,7 +274,7 @@
 <code class="sourceCode R"><span><span class="co"># Boxplot </span></span>
 <span><span class="co"># '$' extracts the column by name</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/graphics/boxplot.html">boxplot</a></span><span class="op">(</span><span class="va">ToothGrowth</span><span class="op">$</span><span class="va">len</span><span class="op">)</span> </span></code></pre></div>
-<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-23-1.png" width="65%" style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-23-1.png" alt="" width="65%" style="display: block; margin: auto;"></div>
 <div class="sourceCode" id="cb73"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Stem-and-leaf Plot</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/graphics/stem.html">stem</a></span><span class="op">(</span><span class="va">ToothGrowth</span><span class="op">$</span><span class="va">len</span><span class="op">)</span></span></code></pre></div>
@@ -291,12 +291,12 @@
 <div class="sourceCode" id="cb75"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Histogram</span></span>
 <span><span class="va">h</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/graphics/hist.html">hist</a></span><span class="op">(</span><span class="va">ToothGrowth</span><span class="op">$</span><span class="va">len</span><span class="op">)</span></span></code></pre></div>
-<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-23-2.png" width="65%" style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-23-2.png" alt="" width="65%" style="display: block; margin: auto;"></div>
 <div class="sourceCode" id="cb76"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Cumulative Histogram</span></span>
 <span><span class="va">h</span><span class="op">$</span><span class="va">counts</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/cumsum.html">cumsum</a></span><span class="op">(</span><span class="va">h</span><span class="op">$</span><span class="va">counts</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html">plot</a></span><span class="op">(</span><span class="va">h</span><span class="op">)</span></span></code></pre></div>
-<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-23-3.png" width="65%" style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="STAT1201-resource_files/figure-html/unnamed-chunk-23-3.png" alt="" width="65%" style="display: block; margin: auto;"></div>
 <div id="summary-of-r-functions" class="section level3 unnumbered">
 <h3>Summary of R functions<a class="anchor" aria-label="anchor" href="#summary-of-r-functions"><i class="fas fa-link"></i></a>
 </h3>
@@ -351,7 +351,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Stat 1201 Resources</strong>" was written by Joyce Robbins. It was last built on 2025-05-07.</p>
+    <p>"<strong>Stat 1201 Resources</strong>" was written by Joyce Robbins. It was last built on 2026-01-24.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
