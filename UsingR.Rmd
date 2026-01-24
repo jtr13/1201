@@ -55,6 +55,7 @@ The first step in getting started is getting comfortable working in the RStudio 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tQvtYdLvSSg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+Resource from video: [Monash Data Fluency's *Introduction to R*](https://monashdatafluency.github.io/r-intro-2/starting.html)
 
 ### Quick review of material covered in the video, plus additional examples {-}
 
