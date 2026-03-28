@@ -7,17 +7,26 @@ Skip: "The Poisson Distribution as a Limit" (pp. 132-33) and "The Poisson Proces
 There is no direct way in R to calculate the mean and variance of a distribution given its pmf. However we can use R to make the calculations simpler.
 
 ## 3.3 Expected value {-}
-
+In order to calculate the mean using R, you will need to generate 2 different sets of variables for the values (x) and their respective probabilities (px).
 ```{r}
 x <- 1:5
-x
 px <- c(.1, .15, .2, .25, .3)
-px
+```
+
+Then, you multiply these two datasets and find the sum of the weighted probabilities:
+```{r}
 x*px
 sum(x*px)    # E(X)
 ```
 
+You can also do this in the following way:
+```{r}
+weighted.mean(x, px)
+```
+
 ## 3.3 Variance {-}
+You can calculate the variance using R in 2 ways:
+1. Manually computing the variance formula where you find the sum of the squared differences of each value with the mean
 
 ```{r}
 x - 3.5
@@ -26,7 +35,7 @@ x - 3.5
 sum(((x - 3.5)^2)*px)   # V(X)
 ```
 
-## 3.3 Variance (alternative method) {-}
+2. Using the fact that E(X^2) - [E(X)]^2 (find these two values using the formula for expectation):
 ```{r}
 x
 px
