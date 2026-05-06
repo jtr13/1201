@@ -12,7 +12,7 @@ rmd_files: ["index.Rmd", # Introduction {-}
   "Chapter6.Rmd", # Ch. 6 Point Estimation {-}
   "Chapter7.Rmd", # Ch. 7 Statistical Intervals Based on a Single Sample {-}
   "Chapter8.Rmd", # Ch. 8 Tests of Hypotheses Based on a Single Sample {-}
-  "Chapter9.Rmd", # Ch. 9 Inferences Based on Two Samples {-}
+#  "Chapter9.Rmd", # Ch. 9 Inferences Based on Two Samples {-}
   "Chapter2b.Rmd", # Ch. 2 Conditional Probability {-}
   "Chapter5b.Rmd", # Ch. 5 Joint Probability {-}
   "Chapter14.Rmd", # Ch. 14 Chi Squared Test {-}
