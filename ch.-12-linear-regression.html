@@ -17,7 +17,7 @@
 <meta name="twitter:description" content="Sections covered: 12.1, 12.2, 12.5 12.1 The Simple Linear Regression Model  12.2 Estimating Model Parameters Formulas to know from p. 498: \(b_1 = \dfrac{\sum(x_i -\overline{x})(y_i -...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.10.0/transition.js"></script><script src="libs/bs3compat-0.10.0/tabs.js"></script><script src="libs/bs3compat-0.10.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
 <script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
     
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
@@ -54,7 +54,6 @@
 <li><a class="" href="ch.-6-point-estimation.html">Ch. 6 Point Estimation</a></li>
 <li><a class="" href="ch.-7-statistical-intervals-based-on-a-single-sample.html">Ch. 7 Statistical Intervals Based on a Single Sample</a></li>
 <li><a class="" href="ch.-8-tests-of-hypotheses-based-on-a-single-sample.html">Ch. 8 Tests of Hypotheses Based on a Single Sample</a></li>
-<li><a class="" href="ch.-9-inferences-based-on-two-samples.html">Ch. 9 Inferences Based on Two Samples</a></li>
 <li><a class="" href="ch.-2-conditional-probability.html">Ch. 2 Conditional Probability</a></li>
 <li><a class="" href="ch.-5-joint-probability.html">Ch. 5 Joint Probability</a></li>
 <li><a class="" href="ch.-14-chi-squared-test.html">Ch. 14 Chi Squared Test</a></li>
@@ -96,19 +95,19 @@
 <h3>Textbook p. 507 #17<a class="anchor" aria-label="anchor" href="#textbook-p.-507-17"><i class="fas fa-link"></i></a>
 </h3>
 <p>Researchers fitted a simple linear regression model to explain how <span class="math inline">\(Y=\)</span> porosity (%) is related to <span class="math inline">\(X=\)</span> unit weight (pcf) in concrete specimens. Consider the following representative data:</p>
-<div class="sourceCode" id="cb214"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb212"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">99.0</span>, <span class="fl">101.1</span>, <span class="fl">102.7</span>, <span class="fl">103.0</span>, <span class="fl">105.4</span>, <span class="fl">107.0</span>, <span class="fl">108.7</span>, <span class="fl">110.8</span>, <span class="fl">112.1</span>, <span class="fl">112.4</span>, <span class="fl">113.6</span>, <span class="fl">113.8</span>, <span class="fl">115.1</span>, <span class="fl">115.4</span>, <span class="fl">120.0</span><span class="op">)</span></span>
 <span><span class="va">y</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">28.8</span>, <span class="fl">27.9</span>, <span class="fl">27.0</span>, <span class="fl">25.2</span>, <span class="fl">22.8</span>, <span class="fl">21.5</span>, <span class="fl">20.9</span>, <span class="fl">19.6</span>, <span class="fl">17.1</span>, <span class="fl">18.9</span>, <span class="fl">16.0</span>, <span class="fl">16.7</span>, <span class="fl">13.0</span>, <span class="fl">13.6</span>, <span class="fl">10.8</span><span class="op">)</span></span></code></pre></div>
 <p>Using R to find:</p>
 <p><em>Model coefficients</em>, <span class="math inline">\(b_0\)</span> and <span class="math inline">\(b_1\)</span>:</p>
-<div class="sourceCode" id="cb215"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb213"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">mod</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/lm.html">lm</a></span><span class="op">(</span><span class="va">y</span> <span class="op">~</span> <span class="va">x</span><span class="op">)</span></span>
 <span><span class="va">mod</span><span class="op">$</span><span class="va">coefficients</span></span></code></pre></div>
 <pre><code>## (Intercept)           x 
 ## 118.9099168  -0.9047307</code></pre>
 <p>(<span class="math inline">\(b_0\)</span> is listed under <code>(Intercept)</code> and <span class="math inline">\(b_1\)</span> is listed under <code>x</code>.)</p>
 <p><em>Residuals</em></p>
-<div class="sourceCode" id="cb217"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb215"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">mod</span><span class="op">$</span><span class="va">residuals</span></span></code></pre></div>
 <pre><code>##          1          2          3          4          5          6          7 
 ## -0.5415817  0.4583527  1.0059218 -0.5226590 -0.7513055 -0.6037364  0.3343057 
@@ -117,7 +116,7 @@
 ##         15 
 ##  0.4577621</code></pre>
 <p>rounded:</p>
-<div class="sourceCode" id="cb219"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb217"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/Round.html">round</a></span><span class="op">(</span><span class="va">mod</span><span class="op">$</span><span class="va">residuals</span>, <span class="fl">2</span><span class="op">)</span></span></code></pre></div>
 <pre><code>##     1     2     3     4     5     6     7     8     9    10    11    12    13 
 ## -0.54  0.46  1.01 -0.52 -0.75 -0.60  0.33  0.93 -0.39  1.68 -0.13  0.75 -1.78 
@@ -125,33 +124,33 @@
 ## -0.90  0.46</code></pre>
 <p><em>SSR, SSE, SST</em></p>
 <p>SSR (regression sum of squares):</p>
-<div class="sourceCode" id="cb221"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb219"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">SSR</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="op">(</span><span class="va">mod</span><span class="op">$</span><span class="va">fitted.values</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">y</span><span class="op">)</span><span class="op">)</span><span class="op">^</span><span class="fl">2</span><span class="op">)</span></span>
 <span><span class="va">SSR</span></span></code></pre></div>
 <pre><code>## [1] 426.6185</code></pre>
 <p>SSE (error sum of squares):</p>
-<div class="sourceCode" id="cb223"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb221"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">SSE</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="va">mod</span><span class="op">$</span><span class="va">residuals</span><span class="op">^</span><span class="fl">2</span><span class="op">)</span></span>
 <span><span class="va">SSE</span></span></code></pre></div>
 <pre><code>## [1] 11.43883</code></pre>
 <p>SST (total sum of squares):</p>
-<div class="sourceCode" id="cb225"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb223"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">SST</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html">sum</a></span><span class="op">(</span><span class="op">(</span><span class="va">y</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">y</span><span class="op">)</span><span class="op">)</span><span class="op">^</span><span class="fl">2</span><span class="op">)</span></span>
 <span><span class="va">SST</span></span></code></pre></div>
 <pre><code>## [1] 438.0573</code></pre>
 <p>(Check that SSR + SSE = SST)</p>
-<div class="sourceCode" id="cb227"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb225"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">SSR</span> <span class="op">+</span> <span class="va">SSE</span>  </span></code></pre></div>
 <pre><code>## [1] 438.0573</code></pre>
 <ol start="4" style="list-style-type: lower-alpha">
 <li>What proportion of observed variation in porosity can be attributed to the approximate linear relationship between unit weight and porosity?</li>
 </ol>
 <p>Method #1: SSR/SST</p>
-<div class="sourceCode" id="cb229"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb227"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">SSR</span><span class="op">/</span><span class="va">SST</span></span></code></pre></div>
 <pre><code>## [1] 0.9738874</code></pre>
 <p>Method #2: <span class="math inline">\(r^2\)</span></p>
-<div class="sourceCode" id="cb231"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb229"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/stats/cor.html">cor</a></span><span class="op">(</span><span class="va">x</span>, <span class="va">y</span><span class="op">)</span><span class="op">^</span><span class="fl">2</span></span></code></pre></div>
 <pre><code>## [1] 0.9738874</code></pre>
 </div>
@@ -166,11 +165,11 @@
 <p>Interactive visualization: <a href="https://1201.info/ch.-5-joint-probability.html#interactive">Correlation Coefficient</a> (add and remove points)</p>
 <p>Interactive visualization: <a href="https://rpsychologist.com/d3/correlation/">Interpreting Correlations</a></p>
 </div>
-<div id="r-5" class="section level3 unnumbered">
-<h3>R<a class="anchor" aria-label="anchor" href="#r-5"><i class="fas fa-link"></i></a>
+<div id="r-4" class="section level3 unnumbered">
+<h3>R<a class="anchor" aria-label="anchor" href="#r-4"><i class="fas fa-link"></i></a>
 </h3>
 <p>Sample correlation coefficient <span class="math inline">\(r\)</span></p>
-<div class="sourceCode" id="cb233"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb231"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Example 12.15, p. 528</span></span>
 <span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">2.4</span>, <span class="fl">3.4</span>, <span class="fl">4.6</span>, <span class="fl">3.7</span>, <span class="fl">2.2</span>, <span class="fl">3.3</span>, <span class="fl">4.0</span>, <span class="fl">2.1</span><span class="op">)</span></span>
 <span><span class="va">y</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1.33</span>, <span class="fl">2.12</span>, <span class="fl">1.80</span>, <span class="fl">1.65</span>, <span class="fl">2.00</span>, <span class="fl">1.76</span>, <span class="fl">2.11</span>, <span class="fl">1.63</span><span class="op">)</span></span>
@@ -198,7 +197,7 @@
 <li>
 <a class="nav-link" href="#correlation">12.5 Correlation</a><ul class="nav navbar-nav">
 <li><a class="nav-link" href="#resources-4">Resources</a></li>
-<li><a class="nav-link" href="#r-5">R</a></li>
+<li><a class="nav-link" href="#r-4">R</a></li>
 </ul>
 </li>
 </ul>
@@ -218,7 +217,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Stat 1201 Resources</strong>" was written by Joyce Robbins. It was last built on 2026-01-24.</p>
+    <p>"<strong>Stat 1201 Resources</strong>" was written by Joyce Robbins. It was last built on 2026-05-06.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
